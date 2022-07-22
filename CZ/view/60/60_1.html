@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- //bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="../../scss/tci-all.css" />
+    <link rel="stylesheet" href="./style60.css">
+    <title>60_1</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page60" style="margin: 1rem;">
+        <div class="tci-text-center pageContent">
+            <span class="pageContentTitle"><b>建立 採購單<br> Create Purchase Order (SAP)</b></span>
+        </div>
+        <section class='pageQuery'>
+            <div class="pageQueryLeft">
+                <div class="tci-input-group">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text fs-14">直接使用採購單號查詢 Use purchase order
+                            no. to query</span>
+                    </div>
+                    <input type="text" class="tci-form-control fs-14" data-val-length="採購單號 應為10碼">
+                    <button class="tci-btn tci-btn-outline-secondary" type="button">查詢 Query</button>
+                </div>
+            </div>
+            <div class="pageQueryRight">
+                <div class="tci-input-group-prepend tci-mb-2" style="display: block;">
+                    <span class="tci-input-group-text fs-14">PO未送簽清單查詢 PO not sent to sign
+                        list querys</span>
+                </div>
+                <div class="pageQueryRightContent">
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text fs-14">建立日期 Crate Date：</span>
+                        </div>
+                        <input type="text" class="tci-form-control fs-14">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text fs-14">~</span>
+                        </div>
+                        <input type="text" class="tci-form-control fs-14">
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text fs-14">供應商代碼 Supplier No.：</span>
+                        </div>
+                        <input type="text" class="tci-form-control fs-14">
+                    </div>
+                    <div class="tci-input-group tci-mb-2" style="width: 100%;">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text fs-14">採購人員 Purchase staff：</span>
+                        </div>
+                        <select class="tci-form-control">
+                            <option value="">All</option>
+                            <option value="宋玉春">HARU.SUNG宋玉春</option>
+                            <option value="王筱玲">IRENE.WANG王筱玲</option>
+                        </select>
+                        <button class="tci-btn tci-btn-outline-secondary" type="button">查詢 Query</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pageTable">
+            <table class="table table-hover BillInfoTB1">
+                <thead>
+                    <tr style="background-color:#d8c8ae;">
+                        <th colspan="7" style="text-align: center;">PO未送簽清單</th>
+                    </tr>
+                    <tr style="background-color:#d8c8ae">
+                        <th nowrap="nowrap">採購單號</th>
+                        <th nowrap="nowrap">類型</th>
+                        <th nowrap="nowrap">建立日期</th>
+                        <th nowrap="nowrap">廠商代碼</th>
+                        <th nowrap="nowrap">廠商名稱</th>
+                        <th nowrap="nowrap">交易幣別</th>
+                        <th nowrap="nowrap">內容</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr
+                        onclick="javascript: document.getElementById('I_EBELN').value = '5889001524';document.getElementById('form601').submit();">
+                        <td nowrap="nowrap">5889001524</td>
+                        <td nowrap="nowrap">F</td>
+                        <td nowrap="nowrap" >2022/07/20</td>
+                        <td nowrap="nowrap">701883</td>
+                        <td >大江(屏科)S11 楊樺收 (08) 762-9158#5257</td>
+                        <td >TWD</td>
+                        <td nowrap="nowrap">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr style="background-color:#EEE">
+                                        <th>項目</th>
+                                        <th>名稱</th>
+                                        <th>單價</th>
+                                        <th>數量</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td width="10%" nowrap="nowrap">A0002188</td>
+                                        <td>BWX 客供香精- Sukin Hydration-QUENCHING SEA </td>
+                                        <td width="10%" nowrap="nowrap">0</td>
+                                        <td width="10%" nowrap="nowrap">1000 G</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10%" nowrap="nowrap">A0001975</td>
+                                        <td>BXW指定精油-Super Greens-CRANBERRY&amp;SPIRULINA </td>
+                                        <td width="10%" nowrap="nowrap">0</td>
+                                        <td width="10%" nowrap="nowrap">0.3 KG</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td nowrap="nowrap">5889001524</td>
+                        <td nowrap="nowrap">F</td>
+                        <td nowrap="nowrap">2022/07/20</td>
+                        <td nowrap="nowrap">701883</td>
+                        <td>大江(屏科)S11 楊樺收 (08) 762-9158#5257</td>
+                        <td>TWD</td>
+                        <td nowrap="nowrap">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr style="background-color:#EEE">
+                                        <th>項目</th>
+                                        <th>名稱</th>
+                                        <th>單價</th>
+                                        <th>數量</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td width="10%" nowrap="nowrap">A0002188</td>
+                                        <td>BWX 客供香精- Sukin Hydration-QUENCHING SEA </td>
+                                        <td width="10%" nowrap="nowrap">0</td>
+                                        <td width="10%" nowrap="nowrap">1000 G</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10%" nowrap="nowrap">A0001975</td>
+                                        <td>BXW指定精油-Super Greens-CRANBERRY&amp;SPIRULINA </td>
+                                        <td width="10%" nowrap="nowrap">0</td>
+                                        <td width="10%" nowrap="nowrap">0.3 KG</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- //bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    
+        <link rel="stylesheet" href="../../scss/tci-all.css" />
+        <link rel="stylesheet" href="./style.css">
+        <title>條件式篩選</title>
+    </head>
+<body>
+    <div class="container-fluid" id="ConditionalFilter" style="margin: 1rem;">
+        <div class="tci-text-center pageContent">
+            <span class="pageContentTitle"><b>條件式篩選<br> Conditional Filter</b></span>
+        </div>
+        <div style="position:absolute;z-index:2000;" id="dropdownmenu">
+            <button style="background-color: #c3e6cb;padding: 4px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-list" aria-hidden="true"></i> &nbsp; <span id="menuTabName">待核簽</span>
+            </button>
+        </div>
+        <section class='content' style="margin-top:4rem;">
+            <div style="margin: 2rem 0;">
+                <span style="font-size: 1.5rem;">6-7月 [ 平均簽核時間：<b style="color:red"> - </b>小時/筆 ]</span>
+            </div>
+            <div class="query">
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text fs-14">公司別 Company</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option value="">All</option>
+                        <option value="宋玉春">HARU.SUNG宋玉春</option>
+                    </select>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text fs-14">單據別 Documents</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option value="">All</option>
+                        <option value="宋玉春">HARU.SUNG宋玉春</option>
+                    </select>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text fs-14">經辦人 Requester</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option value="">All</option>
+                        <option value="宋玉春">HARU.SUNG宋玉春</option>
+                    </select>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text fs-14">是否為急件 Is it urgent?</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option value="">All</option>
+                        <option value="宋玉春">HARU.SUNG宋玉春</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="tci-text-center">
+            <h3>您目前沒有[待簽核]的單據<br>No [Pending] datas in List</h2>
+        </div>
+    </div>
+</body>
+</html>

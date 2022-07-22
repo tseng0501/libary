@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- //bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="../../scss/tci-all.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>條件式篩選_1</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="ConditionalFilter" style="margin: 1rem;">
+        <div class="tci-text-center pageContent">
+            <span class="pageContentTitle"><b>條件式篩選<br> Conditional Filter</b></span>
+        </div>
+        <div style="position:absolute;z-index:2000;" id="dropdownmenu">
+            <button style="background-color: #c3e6cb;padding: 4px;" class="btn btn-secondary dropdown-toggle"
+                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-list" aria-hidden="true"></i> &nbsp; <span id="menuTabName">待核簽</span>
+            </button>
+        </div>
+        <section class='content' style="margin-top:4rem;">
+            <div style="margin: 2rem 0;">
+                <span style="font-size: 1.5rem;">6-7月</span>
+                <span style="font-size: 1.5rem;">【 平均簽核時間：<b style="color: red;"> 100 </b>小時/筆 】</span>
+                <span style="font-size: 1.5rem;">【 簽核時排名：第 <b style="color: red;"> 65 </b>名（參與排名人數110人） 】</span>
+                <span style="font-size: 1.5rem;">【 平均退簽率 <b style="color: red;"> 0.66% </b> 】</span>
+            </div>
+            <div class="query">
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text fs-14">公司別 Company</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option value="">All</option>
+                        <option value="宋玉春">HARU.SUNG宋玉春</option>
+                    </select>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text fs-14">單據別 Documents</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option value="">All</option>
+                        <option value="宋玉春">HARU.SUNG宋玉春</option>
+                    </select>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text fs-14">經辦人 Requester</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option value="">All</option>
+                        <option value="宋玉春">HARU.SUNG宋玉春</option>
+                    </select>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text fs-14">是否為急件 Is it urgent?</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option value="">All</option>
+                        <option value="宋玉春">HARU.SUNG宋玉春</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="tabs">
+            <div class="tci_01 tci-mt-3" style="width:100%;">
+                <div class="tabsTitle tci-text-center">
+                    <span class="">大江生醫 TCI </span>
+                    <span class="badge">3</span>
+                </div>
+                <div class="row tci-mt-2" style="width:100%;margin: 0;">
+                    <div class="tabsCardBox col-xs-12 col-sm-6 col-md-4 col-lg-3  tci-mt-2">
+                        <div class="" style="border-radius: .4rem;border: 1px solid #ddd;">
+                            <div class="tci-gray100-nh tci-p-2">
+                                <span>請假單_220714-34-A010</span>
+                                <span class="label label-info" style="font-size: 12px;">已列印</span>
+                                <div  style="float: right;display: none;">
+                                    <input type="hidden" value="0">
+                                    <span class="glyphicon glyphicon-heart" style="color: red;"
+                                        onclick="sendMarked('TabCount-8','Tab-8','1','220714-34-A010', event)"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="tci-btn tci-blue-nh" style="text-align: left;width:100%;">
+                                    <p>2022/07/13 09:00 ~ 18:00</p>
+                                    <p>生理假 8 Hours</p>
+                                    <p class="text-hidden">
+                                        事由：身體不舒服3身體不舒服：身體不舒服3身體不舒服：身體不舒服3身體不舒服：身體不舒服3身體不舒服：身體不舒服3身體不舒服</p>
+                                    <p>軟體研發部 Hedy</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabsCardBox col-xs-12 col-sm-6 col-md-4 col-lg-3  tci-mt-2">
+                        <div class="" style="border-radius: .4rem;border: 1px solid #ddd;">
+                            <div class="tci-gray100-nh tci-p-2">
+                                <span>請假單_220714-34-A010</span>
+                                <span class="label label-danger" style="font-size: 12px;">已退簽</span>
+                                <div  style="float: right;">
+                                    <input type="hidden"  value="0">
+                                    <span class="glyphicon glyphicon-heart" style="color: red;"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="tci-btn tci-blue-nh" style="text-align: left;width:100%;">
+                                    <p>2022/07/13 09:00 ~ 18:00</p>
+                                    <p>生理假 8 Hours</p>
+                                    <p class="text-hidden">事由：身體不舒服3身體不舒服</p>
+                                    <p>軟體研發部 Hedy</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabsCardBox col-xs-12 col-sm-6 col-md-4 col-lg-3  tci-mt-2">
+                        <div class="" style="border-radius: .4rem;border: 1px solid #ddd;">
+                            <div class="tci-gray100-nh tci-p-2">
+                                <span>請假單_220714-34-A010</span>
+                                <span class="label label-warning" style="font-size: 12px;">會簽中</span>
+                                <div style="float: right;">
+                                    <input type="hidden"  value="0">
+                                    <span class="glyphicon glyphicon-heart" style="color: red;"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="tci-btn tci-blue-nh" style="text-align: left;width:100%;">
+                                    <p>2022/07/13 09:00 ~ 18:00</p>
+                                    <p>生理假 8 Hours</p>
+                                    <p class="text-hidden">事由：身體不舒服3身體不舒服</p>
+                                    <p>軟體研發部 Hedy</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tci_01 tci-mt-3" style="width:100%;">
+                <div class="tabsTitle tci-text-center">
+                    <span class="">大江基因 TCI </span>
+                    <span class="badge">4</span>
+                </div>
+                <div class="row tci-mt-2" style="width:100%;margin: 0;">
+                    <div class="tabsCardBox col-xs-12 col-sm-6 col-md-4 col-lg-3  tci-mt-2">
+                        <div class="" style="border-radius: .4rem;border: 1px solid #ddd;">
+                            <div class="tci-gray100-nh tci-p-2">
+                                <span>請假單_220714-34-A010</span>
+                                <span class="label label-warning" style="font-size: 12px;">簽核中</span>
+                                <div style="float: right;">
+                                    <input type="hidden" value="0">
+                                    <span class="glyphicon glyphicon-heart" style="color: red;"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="tci-btn tci-blue-nh" style="text-align: left;width:100%;">
+                                    <p>2022/07/13 09:00 ~ 18:00</p>
+                                    <p>生理假 8 Hours</p>
+                                    <p class="text-hidden">事由：身體不舒服3身體不舒服</p>
+                                    <p>軟體研發部 Hedy</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabsCardBox col-xs-12 col-sm-6 col-md-4 col-lg-3  tci-mt-2">
+                        <div class="" style="border-radius: .4rem;border: 1px solid #ddd;">
+                            <div class="tci-gray100-nh tci-p-2">
+                                <span>請假單_220714-34-A010</span>
+                                <span class="label label-success" style="font-size: 12px;">完成簽核</span>
+                                <div style="float: right;">
+                                    <input type="hidden" value="0">
+                                    <span class="glyphicon glyphicon-heart" style="color: red;"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="tci-btn tci-blue-nh" style="text-align: left;width:100%;">
+                                    <p>2022/07/13 09:00 ~ 18:00</p>
+                                    <p>生理假 8 Hours</p>
+                                    <p class="text-hidden">事由：身體不舒服3身體不舒服</p>
+                                    <p>軟體研發部 Hedy</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabsCardBox col-xs-12 col-sm-6 col-md-4 col-lg-3  tci-mt-2">
+                        <div style="border-radius: .4rem;border: 1px solid #ddd;">
+                            <div class="tci-gray100-nh tci-p-2">
+                                <span>請假單_220714-34-A010</span>
+                                <span class="label label-dark" style="font-size: 12px;">已作廢</span>
+                                <div style="float: right;">
+                                    <input type="hidden" value="0">
+                                    <span class="glyphicon glyphicon-heart" style="color: red;"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="tci-btn tci-blue-nh" style="text-align: left;width:100%;">
+                                    <p>2022/07/13 09:00 ~ 18:00</p>
+                                    <p>生理假 8 Hours</p>
+                                    <p class="text-hidden">事由：身體不舒服3身體不舒服</p>
+                                    <p>軟體研發部 Hedy</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabsCardBox col-xs-12 col-sm-6 col-md-4 col-lg-3  tci-mt-2">
+                        <div style="border-radius: .4rem;border: 1px solid #ddd;">
+                            <div class="tci-gray100-nh tci-p-2">
+                                <span>請假單_220714-34-A010</span>
+                                <span class="label label-secondary" style="font-size: 12px;">已存檔</span>
+                                <div style="float: right;">
+                                    <input type="hidden" value="0">
+                                    <span class="glyphicon glyphicon-heart" style="color: red;"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="tci-btn tci-blue-nh" style="text-align: left;width:100%;">
+                                    <p>2022/07/13 09:00 ~ 18:00</p>
+                                    <p>生理假 8 Hours</p>
+                                    <p class="text-hidden">事由：身體不舒服3身體不舒服</p>
+                                    <p>軟體研發部 Hedy</p>
+                                    <!-- 按照原來的寫即可，已寫好span元素的css -->
+                                    <div class="predictBadgeDiv" id="TabApproveFlowIcon-7-220721-34-A002" data-toggle="tooltip" data-view-approve-flow-tabid="7" data-view-approve-flow-bsrid="220721-34-A002" onmouseover="ApproveFlowQuickView('7','1','220721-34-A002',1)" onmouseout="ApproveFlowQuickView('7','1','220721-34-A002',0)" title="" data-original-title="<div class='ApproveFlowTooltip'><div> <div class='ApproveFlowDiv' style='border:solid #F90 1px; color:#F90;'>     <div>         <div style='background:#FF0;'><img src='/TCIOne/Content/Images/Manager.png' width='20' /></div>         <div style='background:#FF0;' class='ApproveFlowSignName'>軟體整合開發部主管</div>     </div>     <div>         <div><img src='/TCIOne/Content/Images/Waiting.Png' width='20' /></div>         <div class='ApproveFlowStatus'>REX.WU<br />吳春隆()<br />Waiting...</div>     </div> </div><div class='ApproveFlowArrow' style='color:#F90;background:#F2F2F3;'><i class='fa fa-arrow-left' aria-hidden='true'></i></div> <div class='ApproveFlowDiv' style='border:solid #090 1px; color:#090;'>     <div>         <div style='background:#0F0;'><img src='/TCIOne/Content/Images/Manager.png' width='20' /></div>         <div style='background:#0F0;' class='ApproveFlowSignName'>軟體研發組主管</div>     </div>     <div>         <div><img src='/TCIOne/Content/Images/Button_OK.PNG' width='20' /></div>         <div class='ApproveFlowStatus'>REX.WU<br />吳春隆()<br />略</div>     </div> </div><div class='ApproveFlowArrow' style='color:#090;background:#F2F2F3;'><i class='fa fa-arrow-left' aria-hidden='true'></i></div> <div class='ApproveFlowDiv' style='border:solid #36F 1px; color:#36F;'>     <div>         <div style='background:#9CF;'><img src='/TCIOne/Content/Images/Contacts.png' width='20' /></div>         <div style='background:#9CF;' class='ApproveFlowSignName'>經辦人</div>     </div>     <div>         <div><img src='/TCIOne/Content/Images/Button_OK.PNG' width='20' /></div>         <div class='ApproveFlowStatus'>HEDY.TSENG<br />曾莞婷()<br />2022/07/21 12:31</div>     </div> </div></div></div>">
+                                        <span class="badge badge-danger predictBadge">12.49hr</span>
+                                        <span class="badge badge-info predictBadge">0hr</span>
+                                         </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

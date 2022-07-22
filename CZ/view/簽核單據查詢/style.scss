@@ -1,0 +1,525 @@
+.pageContent {
+    margin: .5rem;
+
+    .pageContentTitle {
+        font-size: 1rem;
+    }
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.label-dark {
+    background-color: #343a40;
+}
+
+.label-secondary {
+    background-color: #6c757d;
+}
+
+.text-hidden {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text_blue {
+    color: #428bca;
+}
+
+.text_red {
+    color: #af2c02;
+}
+
+.text_green {
+    color: #28a745;
+}
+
+.text_pink {
+    color: #D9006C;
+}
+
+.text_dark {
+    color: #343a40;
+}
+
+.text_gray {
+    color: #6c757d;
+}
+
+.pageTable {
+    overflow-x: auto;
+    margin-top: 1.5rem;
+
+    table {
+        border: 1px solid #ddd;
+        margin-bottom: 0;
+    }
+}
+
+table {
+    td,
+    th {
+        border: 1px solid #ddd;
+    }
+}
+
+.table>tbody>tr>td {
+    vertical-align: inherit;
+}
+
+//簽核單據查詢
+#page_qianhe {
+    .btnGroups {
+        text-align: end;
+    }
+
+
+    .pageQuery {
+        margin-top: 1rem;
+    }
+
+    .pageRequester {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 0.4rem;
+        margin: .5rem 0;
+
+        .tci-input-group {
+            width: 100%;
+
+            .disblock {
+                width: 100%;
+                margin-bottom: .5rem;
+
+                span {
+                    width: 100%;
+                }
+            }
+        }
+
+        .btnName {
+            width: 100%;
+            margin-bottom: .5rem;
+        }
+
+        .requesterD {
+            width: 100%;
+            margin-bottom: .5rem;
+        }
+
+        .requesterD_text {
+            width: 100%;
+            margin-bottom: .5rem;
+
+            span {
+                width: 100%;
+            }
+        }
+
+        .requesterD_btn {
+            width: 100%;
+        }
+    }
+}
+
+//條件式篩選
+#ConditionalFilter {
+    .content {
+
+        .query {
+            margin-top: 1rem;
+        }
+    }
+
+    .tabs {
+        .tabsTitle {
+            border-bottom: #ddd 1px solid;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+    .predictBadgeDiv{
+        position: absolute;
+        bottom: 16px;
+        right: 25px;
+        .badge-danger {
+            background-color: #dc3545;
+        }
+        .badge-info {
+            background-color: #337ab7;
+        }
+    }
+   
+}
+
+//簽核內容
+#WorkFlowContent {
+    .btnGroups_lr {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 50%;
+            border: 1px solid #ddd;
+            height: 30px;
+        }
+    }
+
+    .workflowBox {
+        border: 1px solid #ddd;
+        border-radius: .4rem;
+        padding: 5px;
+
+        .workflowBoxTitle {
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        .pageTable {
+            overflow-x: auto;
+            margin-top: 1.5rem;
+
+            .table {
+                width: 1200px;
+
+                &.yellowTable {
+                    th {
+                        background-color: #fcf8e3;
+                        width: 15%;
+                        border: 1px solid #ddd;
+                    }
+
+                    td {
+                        border: 1px solid #ddd;
+                    }
+                }
+
+                &.blueTable {
+                    th {
+                        background-color: #428bca;
+                        color: #fff;
+                        width: 15%;
+                        border: 1px solid #ddd;
+                    }
+
+                    td {
+                        border: 1px solid #ddd;
+                    }
+                }
+            }
+        }
+    }
+
+    .messageBox {
+
+        .messageBoxContent {
+            font-size: 12px;
+
+            button {
+                width: 150px;
+            }
+        }
+    }
+
+    //簽核意見 
+    .descriptionBox {
+        .descriptionBoxContent {
+            .left {
+                .dropdown {
+                    button {
+                        width: 100%;
+                    }
+                }
+
+                .tci-input-group {
+                    width: 100%;
+                }
+            }
+
+            .right {
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+            }
+        }
+
+    }
+
+    .detailsBox {
+        .work_process {
+            .tci-input-group {
+                margin-bottom: .5rem;
+                width: 250px;
+
+                .tci-input-group-text {
+                    width: 100px;
+                    white-space: normal;
+                    text-align: left;
+                }
+
+                .tci-form-control {
+                    text-align: center;
+                }
+            }
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .items {
+            list-style-type: none;
+            margin: 1px;
+            padding: 1px;
+        }
+
+        .items li {
+            margin: 2px;
+            padding: 2px;
+            border-radius: 3px;
+            display: inline-block;
+            clear: both;
+        }
+
+        .signflow {
+            .list {
+                background-color: lightblue;
+                border: 1px solid gray;
+                cursor: no-drop;
+            }
+
+            .list3 {
+                background-color: lightgray;
+                border: 1px solid gray;
+                margin: 2px;
+                padding: 2px;
+                border-radius: 3px;
+                display: inline-block;
+                cursor: no-drop;
+            }
+        }
+
+        .formFlow {
+            .formFlowGrid {
+                border: 1px solid #ddd;
+                background-color: antiquewhite;
+                padding: 5px;
+                border-radius: .25rem;
+            }
+        }
+    }
+}
+
+//修改簽核單據
+#page_qianheedit {
+
+    .page_table01 {
+        table {
+            th {
+                background-color: #fcf8e3;
+                width: 15%;
+            }
+        }
+    }
+
+    .page_table02 {
+        .BillInfoTB2 {
+            th {
+                background-color: #f5c6cb;
+            }
+        }
+    }
+}
+
+#dropdownmenu{
+    .tci-list-group{
+        .list_btn_title{
+          background-color: #6c757d;
+          color: #fff;
+          &.active{
+
+          }  
+        }
+    }
+}
+@media (min-width: 765px) {
+    .pageContent {
+        .pageContentTitle {
+            font-size: 1.75rem;
+        }
+    }
+
+    //簽核單據查詢
+    #page_qianhe {
+
+        .pageQuery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .tci-input-group {
+                width: 50%;
+            }
+        }
+
+        .pageRequester {
+            .tci-input-group {
+                width: 100%;
+
+                .disblock {
+                    width: calc(100% - 260px);
+                    margin-bottom: 0;
+                }
+            }
+
+            .btnName {
+                width: 260px;
+                margin-bottom: 0;
+                text-align: left;
+            }
+
+            .quickblock {
+                display: flex;
+            }
+
+            .requesterD {
+                width: 260px;
+                margin-bottom: 0rem;
+            }
+
+            .requesterD_text {
+                width: calc(100% - 360px);
+                margin-bottom: 0;
+            }
+
+            .requesterD_btn {
+                width: 100px;
+                margin-bottom: 0;
+            }
+
+        }
+    }
+
+    //條件式篩選
+    #ConditionalFilter {
+        .content {
+            .query {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-input-group {
+                    width: 48%;
+                }
+            }
+        }
+
+        .tabs {
+            .tabsTitle {
+                border-bottom: #ddd 1px solid;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    //簽核內容
+    #WorkFlowContent {
+        .workflowBox {
+            .pageTable {
+                .table {
+                    width: 100%;
+
+                    th {
+                        background-color: #fcf8e3;
+                        width: 15%;
+                        border: 1px solid #ddd;
+                    }
+
+                    td {
+                        border: 1px solid #ddd;
+                    }
+                }
+            }
+        }
+
+        .messageBox {
+            .messageBoxContent {
+                display: flex;
+                font-size: 14px;
+                justify-content: center;
+
+                button {
+                    font-size: 14px;
+                }
+
+                .messagebtn_voice {
+                    margin-left: 1.5rem;
+                }
+            }
+
+            .messageBox_modal {
+                width: 60%;
+                margin: auto;
+                margin-top: 1rem;
+            }
+        }
+
+        //簽核意見 
+        .descriptionBox {
+            .descriptionBoxContent {
+                display: flex;
+                justify-content: center;
+
+                .left {
+                    margin-right: 1rem;
+
+                    .dropdown {
+                        button {
+                            width: 100%;
+                        }
+                    }
+
+                    .tci-input-group {
+                        width: 100%;
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    justify-content: center;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .detailsBox {
+            .work_process {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    //條件式篩選
+    #ConditionalFilter {
+        .content {
+            .query {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-input-group {
+                    width: 22%;
+                }
+            }
+        }
+    }
+}

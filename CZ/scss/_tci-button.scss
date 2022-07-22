@@ -11,147 +11,187 @@
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.tci-btn-primary{
+.tci-btn-primary {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
-    &:hover{
+
+    &:hover {
         color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+        background-color: #0069d9;
+        border-color: #0062cc;
     }
 }
-.tci-btn-blue{
+
+.tci-btn-blue {
     color: #fff;
     background-color: #176ac2;
     border-color: #176ac2;
-    &:hover{
+
+    &:hover {
         color: #fff;
-    background-color: #105aa8;
-    border-color: #105aa8;
+        background-color: #105aa8;
+        border-color: #105aa8;
     }
 }
-.tci-btn-secondary{
+
+.tci-btn-secondary {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
-    &:hover{
+
+    &:hover {
         color: #fff;
-    background-color: #5a6268;
-    border-color: #545b62;
+        background-color: #5a6268;
+        border-color: #545b62;
     }
 }
-.tci-btn-success{
+
+.tci-btn-success {
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    &:hover{
+
+    &:hover {
         color: #fff;
         background-color: #218838;
         border-color: #1e7e34;
     }
 }
-.tci-btn-danger{
+
+.tci-btn-danger {
     color: #fff;
     background-color: #dc3545;
     border-color: #dc3545;
-    &:hover{
+
+    &:hover {
         color: #fff;
         background-color: #c82333;
         border-color: #bd2130;
     }
 }
-.tci-btn-warning{
+
+.tci-btn-warning {
     color: #212529;
     background-color: #ffc107;
     border-color: #ffc107;
-    &:hover{
+
+    &:hover {
         color: #212529;
         background-color: #e0a800;
         border-color: #d39e00;
     }
 
 }
-.tci-btn-dark{
+
+.tci-btn-dark {
     color: #fff;
     background-color: #343a40;
     border-color: #343a40;
-    &:hover{
+
+    &:hover {
         color: #fff;
         background-color: #23272b;
         border-color: #1d2124;
     }
 }
-.tci-btn-outline-primary{
+
+.tci-btn-outline-primary {
     color: #007bff;
     border-color: #007bff;
+
     &:hover {
         color: #fff;
         background-color: #007bff;
         border-color: #007bff;
     }
 }
-.tci-btn-outline-secondary{
+
+.tci-btn-outline-blue {
+    color: #176ac2;
+    border-color: #176ac2;
+
+    &:hover {
+        color: #fff;
+        background-color: #105aa8;
+        border-color: #105aa8;
+    }
+}
+
+.tci-btn-outline-secondary {
     color: #6c757d;
     border-color: #6c757d;
+
     &:hover {
         color: #fff;
         background-color: #6c757d;
         border-color: #6c757d;
     }
 }
-.tci-btn-outline-success{
+
+.tci-btn-outline-success {
     color: #28a745;
     border-color: #28a745;
+
     &:hover {
         color: #fff;
         background-color: #28a745;
         border-color: #28a745;
     }
 }
-.tci-btn-outline-danger{
+
+.tci-btn-outline-danger {
     color: #dc3545;
     border-color: #dc3545;
+
     &:hover {
         color: #fff;
         background-color: #dc3545;
         border-color: #dc3545;
     }
 }
-.tci-btn-outline-warning{
+
+.tci-btn-outline-warning {
     color: #ffc107;
     border-color: #ffc107;
+
     &:hover {
         color: #212529;
         background-color: #ffc107;
         border-color: #ffc107;
     }
 }
-.tci-btn-outline-dark{
+
+.tci-btn-outline-dark {
     color: #343a40;
     border-color: #343a40;
+
     &:hover {
         color: #fff;
         background-color: #343a40;
         border-color: #343a40;
     }
 }
-.tci-btn-orgin{
+
+.tci-btn-orgin {
     color: #fff;
     border-color: #f2602f;
     background-color: #f2602f;
+
     &:hover {
         color: #fff;
         background-color: #c6522b;
         border-color: #c6522b;
     }
 }
-.tci-btn-outline-orgin{
+
+.tci-btn-outline-orgin {
     color: #343a40;
     border-color: #f2602f;
+
     &:hover {
         color: #fff;
         background-color: #f2602f;
@@ -159,28 +199,32 @@
     }
 }
 
-.tci-green100-nh{
+.tci-green100-nh {
     color: #343a40;
     background-color: #c3e6cb;
 }
-.tci-blue100-nh{
+
+.tci-blue100-nh {
     color: #343a40;
     background-color: #b8daff;
 }
-.tci-gray100-nh{
+
+.tci-gray100-nh {
     color: #343a40;
     background-color: #d6d8db;
 }
 
-.tci-green100-nh{
+.tci-green100-nh {
     color: #343a40;
     background-color: #c3e6cb;
 }
-.tci-pink100-nh{
+
+.tci-pink100-nh {
     color: #343a40;
     background-color: #f5c6cb;
 }
-.tci-yellow100-nh{
+
+.tci-yellow100-nh {
     color: #343a40;
     background-color: #ffeeba;
 }

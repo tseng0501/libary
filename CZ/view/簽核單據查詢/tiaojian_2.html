@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- //bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="../../scss/tci-all.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>WorkFlowContent</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="WorkFlowContent" style="margin: 1rem;">
+        <div class="tci-text-center pageContent">
+            <span class="pageContentTitle"><b>簽核內容<br> WorkFlow Content</b></span>
+        </div>
+        <div style="position:absolute;z-index:2000;" >
+            <button style="background-color: #c3e6cb;padding: 4px;" class="btn btn-secondary dropdown-toggle"
+                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-list" aria-hidden="true"></i> &nbsp; <span >待核簽</span>
+            </button>
+        </div>
+        <section>
+            <div class="btnGroups_back" style="text-align: end;">
+                <button class="tci-btn tci-btn-primary"><i class="fa fa-undo" aria-hidden="true"></i> 返回簽核首頁 Back to
+                    Homepage</button>
+            </div>
+            <div class="btnGroups_lr tci-mt-2" style="text-align: center;">
+                <button class="tci-btn tci-btn-secondary"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> 上一筆
+                    Previous order</button>
+                <button class="tci-btn tci-btn-secondary"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>下一筆
+                    Next order</button>
+            </div>
+        </section>
+        <!-- 留言 start -->
+        <section class="workflowBox messageBox tci-mt-3">
+            <div class="workflowBoxTitle text-center tci-yellow100-nh">
+                <span>留言 Message</span>
+            </div>
+            <div class="messageBoxContent">
+                <div class="messagebtn_message tci-mt-3 text-center">
+                    <button type="button"class="tci-btn tci-btn-orgin">
+                        留言<br>Leave message</button>
+                    <ul class="tci-mt-3">
+                        <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                            <ul>
+                                <span style="color: #428bca;">2022/7/21 13:55： 1212</span>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="messagebtn_voice tci-mt-3 text-center">
+                    <button type="button"class="tci-btn tci-btn-orgin">
+                        語言留言<br>Leave voice</button>
+                    <ul class="tci-mt-3">
+                        <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
+                            <ul>
+                                <span style="color: #428bca;">2022/7/21 13:55： 1212</span>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 按下留言按鈕出現 start-->
+                <div class="messageBox_modal">
+                    <div class="tci-input-group tci-mb-3">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">留言對象 Message to：</span>
+                        </div>
+                        <select class="tci-form-control">
+                            <option selected="">Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                    <div class="tci-input-group tci-mb-3">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">留言內容 Message Content：</span>
+                        </div>
+                        <textarea class="tci-form-control"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button class="tci-btn tci-btn-secondary">取消留言 Give up</button>
+                        <button class="tci-btn tci-btn-success">送出留言 Post it</button>
+                    </div>
+                </div>
+            <!-- 按下按鈕出現 end-->
+
+            <!-- 按下語音留言按鈕出現 start-->
+            <div class="messageBox_modal">
+                <div class="tci-input-group tci-mb-3">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">留言對象 Message to：</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option selected="">Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <div class="tci-input-group tci-mb-3">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">錄音檔：</span>
+                    </div>
+                    <input class="tci-form-control" type="file"/>
+                </div>
+                <div class="text-center">
+                    <button class="tci-btn tci-btn-secondary">取消留言 Give up</button>
+                    <button class="tci-btn tci-btn-success">送出留言 Post it</button>
+                </div>
+            </div>
+            <!-- 按下語音留言按鈕出現 end-->
+
+        </section>
+        <!-- 留言 end -->
+
+        <!-- 簽核意見 start-->
+        <section class="workflowBox tci-mt-3 descriptionBox">
+            <div class="workflowBoxTitle text-center tci-yellow100-nh">
+                <span>簽核意見 Description</span>
+            </div>
+            <div class="workflowBoxTitle text-center tci-mt-1">
+                <span style="border: 1px solid red;color:red;padding:0 6px;">此單據已作廢!</span>
+            </div>
+            <div class="descriptionBoxContent">
+                <div class="left">
+                    <div class="dropdown open">
+                        <button class="dropdown-toggle tci-btn tci-btn-blue" type="button" data-toggle="dropdown" data-animations="fadeIn">
+                            通知人員 Notify the staff member(s).&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <!-- 下拉清單 -->
+                        <!-- <ul class="dropdown-menu" style="width: 100%;">
+                            <li style="margin-left:5px;cursor:pointer">
+                                <label><input type="checkbox" class="decisionMsg" value="">所有簽核者 All approvers</label>
+                            </li>
+                            <li style="margin-left:5px;cursor:pointer"><label><input type="checkbox" class="decisionMsg" value="2011A0016">吳春隆(REX.WU)</label></li>
+                        </ul> -->
+                    </div>
+                    <div class="tci-input-group tci-mt-3">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">內容 Content:</span>
+                        </div>
+                        <textarea class="tci-form-control"></textarea>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="dropdown text-center">
+                        <a href="#"style="text-decoration: none">
+                            <i style="color:green" class="fa fa-check fa-4x" aria-hidden="true"></i>
+                            <p style="color: black;">送出單據 Send the Request</p>
+                        </a>
+                    </div>
+                    <div class="dropdown" style="margin-left:25px;margin-right:20px">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeIn" style="background: none;border-width: 0px;text-align: center;text-decoration: none;" aria-expanded="false">
+                            <i style="color:rebeccapurple" class="fa fa-file-text-o fa-4x" aria-hidden="true"></i>
+                            <p style="color:black;">其他 Others</p>
+                        </button>
+                        <ul class="dropdown-menu dropdownhover-bottom">
+                            <li ><a href="#">作廢單據 Cancel the Request</a></li>
+                            <li ><a href="#">標示為急件 Mark a Request as urgent</a></li>
+                            <li ><a href="#">修改單據 Modify a Request</a></li>
+                            <li ><a href="#">轉寄內容 Forward the content</a></li>
+                        </ul>
+                        <!-- 按下轉寄內容 跳出來 -->
+                        <div style="align-self: center;">
+                            <div class="tci-input-group">
+                                <div class="tci-input-group-prepend">
+                                    <span class="tci-input-group-text">收件人：</span>
+                                </div>
+                                <input type="text" class="tci-form-control" />
+                                <div class="tci-input-group-append">
+                                    <button class="tci-btn tci-btn-outline-success" type="button">確認轉寄</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 簽核意見 end-->
+
+        <!-- 單據明細 start-->
+        <section class="workflowBox tci-mt-3 detailsBox">
+            <div class="workflowBoxTitle text-center tci-yellow100-nh">
+                <span>單據明細 Document Details</span>
+            </div>
+            <div class="workflowBoxTitle text-center tci-mt-1">
+                <span style="background-color: #3390e2;color: white;padding: 5px 10px; border-radius: .4rem;">請假單 Attendance Application</span>
+            </div>
+            <div class="pageTable">
+                <table class="table table-hover yellowTable">
+                    <tbody>
+                        <tr>
+                            <th colspan="4" nowrap="nowrap">單據編號-No：220721-34-A003</th>
+                          </tr>
+                          <tr>
+                            <th width="10%" nowrap="nowrap">請假人<br>Leave Applicant</th>
+                            <td width="39%" nowrap="">大江戰士-HEDY.TSENG(曾莞婷)</td>
+                            <th width="10%" nowrap="nowrap">假別<br>Category</th>
+                            <td width="39%" nowrap="">
+                              特別休假<br>Annual Leave
+                              </td>
+                          </tr>
+                          <tr>
+                            <th width="10%" nowrap="nowrap">開始時間<br>Begin From </th>
+                            <td nowrap="">2022/07/21 - 09:00</td>
+                            <th width="10%" nowrap="nowrap">結束日期<br>To</th>
+                            <td nowrap="">2022/07/21 - 18:00</td>
+                          </tr>
+                          <tr>
+                            <th width="10%" nowrap="nowrap">時數計算<br>Calculate</th>
+                            <td colspan="3" nowrap="">
+                              
+                              <table width="100%" cellpadding="3" cellspacing="1" class="table">
+                                <tbody><tr>
+                                  <th nowrap="nowrap">請假日期-Applying Leave Date</th>
+                                  <th nowrap="nowrap">請假時間-Applying Leave Time</th>
+                                  <th nowrap="nowrap">當日班別-Shift Schedule</th>
+                                  <th nowrap="nowrap">間休時間-Lunch Hour</th>
+                                  <th nowrap="nowrap">實請時間-Actual Leave</th>
+                                  <th nowrap="nowrap">時數-Hours To Be accumulated</th>
+                                </tr>
+                                
+                                <tr>
+                                  <td nowrap="nowrap">2022/7/21<br>星期四</td>
+                                  <td nowrap="nowrap">09:00 ~ 18:00</td>
+                                  <td nowrap="nowrap">09:00 ~ 18:00<br>工作日</td>
+                                  <td nowrap="nowrap">12:30 ~ 13:30</td>
+                                  <td nowrap="nowrap">09:00 ~ 18:00</td>
+                                  <td nowrap="nowrap">8.0&nbsp;hr</td>
+                                </tr>
+                                
+                                <tr style="color:#017fbc">
+                                  <th colspan="5" nowrap="nowrap">合計-Total</th>
+                                  <th nowrap="nowrap">8.0&nbsp;hr</th>
+                                </tr>
+                              </tbody>
+                            </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th width="10%"nowrap="nowrap">事由<br>
+                              Reason</th>
+                            <td colspan="3">1231</td>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pageTable">
+                <div style="margin:5px 0;">
+                    <span style="background-color: #3390e2;color: white;padding: 5px 10px;border-radius: 0.4rem;">請假累計 - Accumulated Leave：</span></div>
+                <table class="table table-hover blueTable">
+                    <tbody><tr>
+                        <th width="5%">累計<br>Accumulated Leave</th>
+                        <th valign="middle">特別休假<br>Annual Leave</th>
+                        <th valign="middle">補休<br>Compensatory leave</th>
+                        <th valign="middle">事假<br>Personal Leave</th>
+                        <th valign="middle">普通傷病假<br>Sickness leave</th>
+                        <th valign="middle">公傷假<br>Occupational sickness leave</th>
+                        <th valign="middle">婚假<br>Marital Leave</th>
+                        <th valign="middle">喪假<br>Funeral Leave</th>
+                        <th valign="middle">產假<br>Maternity leave</th>
+                        <th valign="middle">陪產檢及陪產假<br>Pregnancy Checkup Accompaniment And Paternity Leaves</th>
+                        <th valign="middle">生理假<br>Menstrual Leave</th>
+                        <th valign="middle">育嬰假<br>Parental Leave</th>
+                        <th valign="middle">法定公休假<br>Leave for legal regulations</th>
+                        <th valign="middle">家庭照顧假<br>Family Care Leave</th>
+                        <th valign="middle">留職停薪假<br>Unpaid Leave</th>
+                        <th valign="middle">產檢假<br>Leave for pregnancy checkups</th>
+                        <th valign="middle">天災假<br>Natural disaster day-off</th>
+                        <th valign="middle">謀職假<br>Job hunting leave</th>
+                        <th valign="middle">居家作業<br>Work from home</th>
+                        <th valign="middle">原住民族歲時祭儀假<br>Indigenous rituals </th>
+                        <th valign="middle">防疫隔離假<br>Paid leave for home quarantine</th>
+                        <th valign="middle">無薪病假<br>Unpaid sick leave</th>
+                        <th valign="middle">無薪事假<br>Unpaid Personal Leave</th>
+                        <th valign="middle">有薪假(COVID-19,限磐石直接人員)<br>Paid leave for self-health management</th>
+                        <th valign="middle">防疫照顧假<br>Unpaid Family Care Leave</th>
+                        <th valign="middle">哺乳假<br>Leave</th>
+                        </tr>
+                        <tr>
+                        <th width="5%">月累計<br>Monthly Accumulated Leave</th>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        </tr>
+                        <tr>
+                        <th width="5%">年累計<br>Annually Accumulated Leave</th>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        <td valign="middle" style="color:#E00">0&nbsp;hr</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tci-mt-4">
+                <button class="tci-btn tci-btn-warning" style="padding: 10px;font-weight: bold;">調整額外簽核者流程<br>Adjusting the Additional Signer Process</button>
+            </div>
+
+            <!-- 按下“調整額外簽核者流程” 跳出來 start -->
+            <div class="tci-mt-3" style="border: 1px solid rgb(22, 104, 134);padding: 5px;">
+                <div class="formFlow tci-mt-3">
+                <div class="tci-mt-3">
+                    <button class="tci-btn tci-btn-orgin">1. 選擇要加入的人員(重複點選可加入多人) Opt-in people</button>
+                </div>
+                <div class="tci-mt-3">
+                    <div class="formFlowGrid">
+                        <span>2. 將選擇的人員拖曳到下方流程要加入的位置&nbsp;(不能加入到已簽核人員的前面)</span>
+                        <ul  class="items ui-draggable">	
+                            <li class="list availablelist" 
+                            style="cursor: pointer;background-color:orange;padding: 2px 5px;border-radius: .25rem;display: inline-block;"><drag>
+                                <i class="fa fa-address-card-o" aria-hidden="true"></i> 2206A0010-系統維運組-賴亭諴(MIKE.LAI)-mike.lai@tci-bio.com</drag>
+                                <i class="fa fa-times-circle-o" aria-hidden="true" onclick="DelSigner(this);" style="color:red;cursor: pointer;"></i>
+                            </li>
+                            <li class="list availablelist"
+                            style="cursor: pointer;background-color:orange;padding: 2px 5px;border-radius: .25rem;display: inline-block;"><drag>
+                                <i class="fa fa-address-card-o" aria-hidden="true"></i> 2206A0010-系統維運組-賴亭諴(MIKE.LAI)-mike.lai@tci-bio.com</drag>
+                                <i class="fa fa-times-circle-o" aria-hidden="true" onclick="DelSigner(this);" style="color:red;cursor: pointer;"></i>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="signflow tci-mt-3">
+                    <div class="formFlowGrid">
+                        <span style="padding-left:8px">原始簽核流程 Original Signoff Process</span>
+                        <ul class="items ui-sortable">
+                            <li class="list"><i class="fa fa-user" aria-hidden="true"></i> 林詠翔(VINCENT)</li>
+                            <li class="list"><i class="fa fa-user" aria-hidden="true"></i> 王浩駿(JOHNNY.WANG)</li>
+                            <li class="list"><i class="fa fa-user" aria-hidden="true"></i> 吳春隆(REX.WU)</li>
+                            <li class="list"><i class="fa fa-user" aria-hidden="true"></i> 吳春隆(REX.WU)</li>
+                            <div class="list3"><i class="fa fa-address-card-o" aria-hidden="true"></i> 曾莞婷(HEDY.TSENG)</div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tci-mt-3 formFlowGrid">
+                    <span>3. 儲存新流程 Save New Process</span>
+                    <div>
+                        <button class="tci-btn tci-btn-secondary">取消（重新整理頁面）Cancel</button>
+                        <button class="tci-btn tci-btn-success">確定調整流程 Check</button>
+                    </div>
+                </div>
+                </div>
+            <!-- 按下“調整額外簽核者流程” end -->
+            </div>
+            <hr>
+            <div class="tci-mt-3 work_process">
+                <div class="tci-input-group">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">總經理主管</span>
+                    </div>
+                    <div class="tci-form-control">
+                        <span class=""></span><br>
+                        <span class="text_green">免簽核</span>
+                    </div>
+                </div>
+                <div class="tci-input-group">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">戰略數據中心主管</span>
+                    </div>
+                    <div class="tci-form-control">
+                        <span class="">REX.WU 吳春隆()</span><br>
+                        <span class="text_red">未簽核</span>
+                    </div>
+                </div>
+                <div class="tci-input-group">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">軟體整合開發部主管</span>
+                    </div>
+                    <div class="tci-form-control">
+                        <span class="">REX.WU 吳春隆()</span><br>
+                        <span class="text_pink">待簽核</span>
+                    </div>
+                </div>
+                <div class="tci-input-group">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">軟體研發組主管</span>
+                    </div>
+                    <div class="tci-form-control">
+                        <span class="">REX.WU 吳春隆()</span><br>
+                        <span class="text_dark">略</span>
+                    </div>
+                </div>
+                <div class="tci-input-group">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">經辦人</span>
+                    </div>
+                    <div class="tci-form-control">
+                        <span class="">HEDY.TSENG 曾莞婷()</span><br>
+                        <span class="text_pink">待簽核</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- 單據明細 end-->
+
+        <!-- 簽核記錄 start -->
+        <section class="workflowBox tci-mt-3 approvalBox">
+            <div class="workflowBoxTitle text-center tci-yellow100-nh">
+                <span>簽核記錄 Request Approval</span>
+            </div>
+            <ul class="tci-mt-3" style="padding-left:20px;">
+                <li class="text_gray">等待【經辦人】【HEDY.TSENG(曾莞婷) 大江戰士】簽核 Approve</li>
+                <li class="text_gray">等待【經辦人】【HEDY.TSENG(曾莞婷) 大江戰士】簽核 Approve</li>
+            </ul>
+        </section>
+        <!-- 簽核記錄 end -->
+        <!-- 單據附件 start -->
+        <section class="workflowBox tci-mt-3">
+            <div class="workflowBoxTitle text-center tci-yellow100-nh">
+                <span>單據附件 Document Attachment</span>
+            </div>
+            <div>
+                <div class="btnGroups tci-mt-2">
+                    <button class="tci-btn tci-btn-secondary"><i class="fa fa-undo" aria-hidden="true"></i> 左轉90 度</button>
+                    <button class="tci-btn tci-btn-success"><i class="fa fa-retweet" aria-hidden="true"></i> 復原 Recovery</button>
+                    <button class="tci-btn tci-btn-secondary"><i class="fa fa-repeat" aria-hidden="true"></i> 右轉90 度</button>
+                </div>
+                <div class="tci-mt-3">
+                    <span >附件 <b>1</b></span>
+                </div>
+                <div style="width: 100%;">
+                    <img src="https://media.istockphoto.com/photos/happy-shiba-inu-dog-on-yellow-redhaired-japanese-dog-smile-portrait-picture-id1197121742?k=20&m=1197121742&s=612x612&w=0&h=HX4DoFCL1RDlegj3P9w4O2H64sgwKvMP0VSki7sBEtE=" alt="附件1" style="width: 50%;"/>
+                </div>
+            </div>
+        </section>
+        <!-- 單據附件 end -->
+    </div>
+    <!-- <div class="BillInfoLoading" id="BillInfoLoading" style="">
+        <i class="fa fa-spinner fa-pulse" aria-hidden="true"></i> 讀取中 Loading...
+    </div> -->
+</body>
+
+</html>
