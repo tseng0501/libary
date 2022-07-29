@@ -1,0 +1,303 @@
+.modal {
+    table {
+        td {
+            padding: 0.25rem;
+        }
+    }
+
+    .itemAddBehavior {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+
+        .tci-field {
+            width: 100%;
+        }
+
+        .tci-field-value {
+            width: 60%;
+        }
+    }
+}
+
+.table_icon {
+    padding: 0 7px !important;
+    min-width: 50px !important;
+
+    i {
+        color: var(--color-darkkhaki);
+    }
+}
+
+//主內容的背景
+.content_shadow {
+    box-shadow: var(--borderShadow);
+    min-height: calc(100vh - 150px);
+    margin-top: 1rem;
+    border-radius: var(--borderRadius);
+    padding: 10px;
+}
+
+#page_DetailTemplate {
+    .detailTemplate_query {
+        .detailTemplate_flex {
+
+            .tci-field {
+                padding: 5px;
+                border-radius: var(--borderRadius);
+            }
+        }
+
+        .detailTemplate_btn {
+            border-radius: var(--borderRadius);
+            padding: 5px;
+
+            button {
+                width: 100%;
+                padding: 0.3rem 0;
+            }
+        }
+    }
+
+    .detailTemplate_content {
+        @extend .content_shadow;
+
+        //all
+        .table_content {
+            padding: 1rem;
+
+            .table {
+                thead {
+                    background-color: var(--color-darkkhaki);
+                    color: var(--color-snow);
+                }
+
+                .table_icon {
+                    text-align: center;
+
+                    button {
+                        padding: 0;
+                    }
+
+                    i {
+                        box-shadow: 0 4px 8px 0 var(--color-darkkhaki);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        //single
+        .detailTemplate_box {
+            .detailTemplate_contenttitle {
+                background-color: var(--color-darkkhaki);
+                color: var(--color-snow);
+                border-radius: var(--borderRadius);
+                padding: 0.2rem;
+            }
+            .detailTemplate_table {
+                overflow-x: auto;
+
+                .table {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+#page_BehaviorTemplate {
+    .behaviorTemplate_query {
+        .behaviorTemplate_flex {
+
+            .tci-field {
+                padding: 5px;
+                border-radius: var(--borderRadius);
+            }
+        }
+
+        .behaviorTemplate_btn {
+            border-radius: var(--borderRadius);
+            padding: 5px;
+
+            button {
+                width: 100%;
+                padding: 0.3rem 0;
+            }
+        }
+    }
+
+    .behaviorTemplate_content {
+        @extend .content_shadow;
+
+        //all
+        .table_content {
+            padding: 1rem;
+
+            .table {
+                thead {
+                    background-color: var(--color-darkkhaki);
+                    color: var(--color-snow);
+                }
+
+                .table_icon {
+                    text-align: center;
+
+                    button {
+                        padding: 0;
+                    }
+
+                    i {
+                        box-shadow: 0 4px 8px 0 var(--color-darkkhaki);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        //single
+        .behaviorTemplate_box {
+            .behaviorTemplate_contenttitle {
+                background-color: var(--color-darkkhaki);
+                color: var(--color-snow);
+                border-radius: var(--borderRadius);
+                padding: 0.2rem;
+            }
+
+            .behaviorTemplate_table {
+                overflow-x: auto;
+
+                .table {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+#page_ItemTemplate {
+    .itemTemplate_query {
+        .itemTemplate_flex {
+            .tci-field {
+                padding: 5px;
+                border-radius: var(--borderRadius);
+            }
+        }
+
+        .itemTemplate_btn {
+            border-radius: var(--borderRadius);
+            padding: 5px;
+
+            button {
+                width: 100%;
+                padding: 0.3rem 0;
+            }
+        }
+    }
+
+    .itemTemplate_content {
+        @extend .content_shadow;
+
+        .table_content {
+            overflow-x: auto;
+
+            .table {
+                width: 700px;
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_DetailTemplate {
+        .detailTemplate_query {
+            .detailTemplate_flex {
+                display: flex;
+                justify-content: space-between;
+
+                .tci-field {
+                    width: calc(100vw - 150px);
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .detailTemplate_content {
+            .detailTemplate_box {
+                .detailTemplate_table {
+                    overflow-x: auto;
+
+                    .table {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #page_BehaviorTemplate {
+        .behaviorTemplate_query {
+            .behaviorTemplate_flex {
+                display: flex;
+                justify-content: space-between;
+
+                .tci-field {
+                    width: calc(100vw - 150px);
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .behaviorTemplate_content {
+            .behaviorTemplate_box {
+                .behaviorTemplate_table {
+                    overflow-x: auto;
+
+                    .table {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #page_ItemTemplate {
+        .itemTemplate_query {
+            .itemTemplate_flex {
+                display: flex;
+                justify-content: space-between;
+
+                .tci-field {
+                    width: calc(100vw - 150px);
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .itemTemplate_content {
+            .table_content {
+                .table {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .modal {
+
+        .itemAddBehavior {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+
+            .tci-field {
+                width: 46%;
+            }
+
+            .tci-field-value {
+                width: 60%;
+            }
+        }
+    }
+}

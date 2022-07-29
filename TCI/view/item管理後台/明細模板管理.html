@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>明細模板管理</title>
+</head>
+
+<body>
+    <div class="container-fluid mb-3" id="page_DetailTemplate">
+        <div class="tci-text-center pageHeader">
+            <span class="pageHeaderTitle tci-ml-2"><b>明細模板管理</span></b>
+        </div>
+        <section class="detailTemplate_query">
+            <div class="detailTemplate_flex">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">模板名稱：</span>
+                    </div>
+                    <select class="tci-field-value tci-mr-2">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <button class="tci-btn save_btn">查詢</button>
+                </div>
+                <div class="detailTemplate_btn">
+                    <button class="tci-btn tci-btn-darkkhaki" data-toggle="modal"
+                        data-target="#adddetailTemplate">新增樣板</button>
+                </div>
+            </div>
+        </section>
+        <section class="detailTemplate_content">
+            <!-- 選項 All start-->
+            <div class="table_content">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>名稱</th>
+                            <th style="width: 80px;text-align: center;">內容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>公務車</td>
+                            <td>
+                                <button class="tci-btn table_icon" data-toggle="modal" data-target="#dataIcon"
+                                data-toggle="modal" data-target="#deleteTable">
+                                    <i class="fa-solid fa-table"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>筆記型電腦</td>
+                            <td>
+                                <button class="tci-btn table_icon" data-toggle="modal" data-target="#dataIcon"
+                                data-toggle="modal" data-target="#deleteTable">
+                                    <i class="fa-solid fa-table"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 選項 All end -->
+
+            <!-- 單一一個產品 start-->
+            <div style="padding: 1rem;">
+                <div class="detailTemplate_box">
+                <div style="margin-bottom:1rem;text-align:right;">
+                    <button class="tci-btn tci-btn-darkkhaki">新增欄位</button>
+                    <button class="tci-btn save_btn">全部儲存</button>
+                </div>
+                    <div class="detailTemplate_contenttitle">
+                        <span class="pl-2">公務車</span>
+                    </div>
+                    <div class="detailTemplate_table">
+                        <table class="table text-center table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>欄位名稱</th>
+                                    <th>型態</th>
+                                    <th style="width: 70px"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" style="width: 100%;" class="tci-field-value" value="公務車名稱"/></td>
+                                    <td>
+                                        <select style="margin: auto;width: 100%;" class="tci-field-value">
+                                            <option value="">char</option>
+                                            <option value="">int</option>
+                                            <option value="">...</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button class="tci-btn table_icon" data-toggle="modal" data-target="#deleteTable">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" style="width:100%;" class="tci-field-value" value="車型"/></td>
+                                    <td>
+                                        <select style="margin: auto;width: 100%;" class="tci-field-value">
+                                            <option value="">char</option>
+                                            <option value="">int</option>
+                                            <option value="">...</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button class="tci-btn table_icon" data-toggle="modal" data-target="#deleteTable">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 單一一個產品 end-->
+
+        </section>
+    </div>
+
+    <!-- adddetailTemplate -->
+    <div class="modal fade" id="adddetailTemplate" tabindex="-1" role="dialog" aria-labelledby="adddetailTemplateLabel"
+        aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adddetailTemplateLabel">新增明細模板名稱</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">名稱:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
+                    <button type="button" class="tci-btn save_btn">儲存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--All dataIcon -->
+    <div class="modal fade" id="dataIcon" tabindex="-1" role="dialog" aria-labelledby="dataIconLabel"
+        aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dataIconLabel">內容</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">名稱:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <hr>
+
+                    <div style="text-align: right;">
+                        <button class="tci-btn tci-btn-darkkhaki">新增欄位</button>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th>欄位名稱</th>
+                                    <th>型態</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" style="width: 100%;" class="tci-field-value" value="公務車名稱"/></td>
+                                    <td>
+                                        <select style="margin: auto;width: 100%;" class="tci-field-value">
+                                            <option value="">char</option>
+                                            <option value="">int</option>
+                                            <option value="">...</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button class="tci-btn table_icon"
+                                        data-toggle="modal" data-target="#deleteTable">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" style="width:100%;" class="tci-field-value" value="車型"/></td>
+                                    <td>
+                                        <select style="margin: auto;width: 100%;" class="tci-field-value">
+                                            <option value="">char</option>
+                                            <option value="">int</option>
+                                            <option value="">...</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button class="tci-btn table_icon"
+                                        data-toggle="modal" data-target="#deleteTable">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
+                    <button type="button" class="tci-btn save_btn">儲存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- delete -->
+<div class="modal fade" id="deleteTable" tabindex="-1" aria-labelledby="deleteTableLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteTableLabel">刪除</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          是否要刪除此欄位？
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
+          <button type="button" class="tci-btn save_btn">確定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
