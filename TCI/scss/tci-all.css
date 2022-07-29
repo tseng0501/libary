@@ -837,6 +837,71 @@
   border-radius: var(--borderRadius);
   min-width: 200px;
 }
+.tci-card.card-green {
+  color: var(--color-light-green);
+}
+.tci-card.card-green .card-header-green {
+  background-color: var(--color-light-green);
+  color: var(--color-snow);
+}
+.tci-card.card-green .tci-card-body .card-text-green {
+  background-color: var(--color-light-green);
+  color: var(--color-snow);
+  padding: 0.25rem;
+  border-radius: var(--borderRadius);
+}
+.tci-card.card-brown {
+  color: var(--color-sienna);
+}
+.tci-card.card-brown .card-header-brown {
+  background-color: var(--color-sienna);
+  color: var(--color-snow);
+}
+.tci-card.card-brown .tci-card-body .card-text-brown {
+  background-color: var(--color-sienna);
+  color: var(--color-snow);
+  padding: 0.25rem;
+  border-radius: var(--borderRadius);
+}
+.tci-card.card-red {
+  color: var(--color-salmon);
+}
+.tci-card.card-red .card-header-red {
+  background-color: var(--color-salmon);
+  color: var(--color-snow);
+}
+.tci-card.card-red .tci-card-body .card-text-red {
+  background-color: var(--color-salmon);
+  color: var(--color-snow);
+  padding: 0.25rem;
+  border-radius: var(--borderRadius);
+}
+.tci-card.card-gray {
+  color: var(--color-rosybrown);
+}
+.tci-card.card-gray .card-header-gray {
+  background-color: var(--color-rosybrown);
+  color: var(--color-snow);
+}
+.tci-card.card-gray .tci-card-body .card-text-gray {
+  background-color: var(--color-rosybrown);
+  color: var(--color-snow);
+  padding: 0.25rem;
+  border-radius: var(--borderRadius);
+}
+.tci-card.card-blue {
+  color: var(--color-search);
+}
+.tci-card.card-blue .card-header-blue {
+  background-color: var(--color-search);
+  color: var(--color-snow);
+}
+.tci-card.card-blue .tci-card-body .card-text-blue {
+  background-color: var(--color-search);
+  color: var(--color-snow);
+  padding: 0.25rem;
+  border-radius: var(--borderRadius);
+}
 
 .tci-card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
@@ -869,7 +934,8 @@
 }
 
 .tci-card-footer {
-  padding: 0.5rem;
+  padding: 0.2rem;
+  font-size: 0.75rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }

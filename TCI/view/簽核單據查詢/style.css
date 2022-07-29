@@ -182,6 +182,13 @@
 #page_documentQuery .descriptionBox .descriptionBoxContent .dropdown.open button {
   width: 100%;
 }
+#page_documentQuery .detailsBox .detailsBox_rt {
+  color: #fff;
+  padding: 0 6px;
+  background-color: #83a2b4;
+  border-radius: var(--borderRadius);
+  font-size: 14px;
+}
 #page_documentQuery .detailsBox .grayborder {
   border: 1px solid #ddd;
   padding: 10px;
@@ -374,6 +381,10 @@
   }
   #page_documentQuery .detailsBox .work_process .tci-card {
     margin-right: 0.5rem;
+  }
+  #page_documentQuery .work_process_circuit {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media (min-width: 992px) {
