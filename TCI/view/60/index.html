@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>PO未送簽清單</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_createPurchaseOrder">
+        <div class="tci-text-center pageHeader">
+            <span class="pageHeaderTitle ml-2"><b>建立 採購單</span></b>
+        </div>
+        <div class="query mt-3">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">直接使用採購單號查詢</span>
+                </div>
+                <input type="text" class="tci-field-value" style="margin-right: 5px;" />
+                <button class="tci-btn tci-btn-darkkhaki">查詢</button>
+            </div>
+            <hr>
+            <div>
+                <span style="font-weight: bold;"><u>PO未送簽清單查詢</u></span>
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">建立日期</span>
+                </div>
+                <div style="width: 60%;display: flex;justify-content: space-between;">
+                    <input type="text" class="tci-field-value" style="width: 100%;" />
+                    <span style="padding: 0.3rem;">~</span>
+                    <input type="text" class="tci-field-value" style="width: 100%;" />
+                </div>
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">供應商代碼</span>
+                </div>
+                <input type="text" class="tci-field-value" />
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">採購人員</span>
+                </div>
+                <input type="text" class="tci-field-value" />
+            </div>
+            <div style="text-align: end;">
+                <button class="tci-btn tci-btn-darkkhaki">查詢</button>
+            </div>
+        </div>
+        <section class="undeliveredContent mt-3">
+            <div class="tci-text-center undeliveredContent_title">
+                <span class=""><b>PO未送簽清單</span></b>
+            </div>
+            <div class="table_label">
+                <div class="tci-label-group">
+                    <div class="tci-label-text">大江(屏科)S11 楊樺收 (08) 762-9158#5257</div>
+                    <label class="tci-label-top">採購單號</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">A0002188 舊料號</div>
+                    <label class="tci-label-top">類型</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">A0002188 舊料號</div>
+                    <label class="tci-label-top">建立日期</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">A0002188 舊料號</div>
+                    <label class="tci-label-top">廠商代碼</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">A0002188 舊料號</div>
+                    <label class="tci-label-top">廠商名稱</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">A0002188 舊料號</div>
+                    <label class="tci-label-top">交易幣別</label>
+                </div>
+                <div class="tci-label-group content">
+                    <label class="tci-label-top">內容</label>
+                    <div  class="tci-label-text mt-2">
+                        <table class="table table-bordered" style="font-size: 13px;">
+                            <thead>
+                                <tr class="table_thead">
+                                    <th>項目</th>
+                                    <th>名稱</th>
+                                    <th>單價</th>
+                                    <th>數量</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td nowrap="nowrap">A0002737</td>
+                                    <td>34534534534大江生活-大人の生活-琉金煥采葉黃素15ml客供印刷滴管瓶-瓶蓋配件</td>
+                                    <td nowrap="nowrap">0</td>
+                                    <td nowrap="nowrap">3052 PCS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="table_label">
+                <div class="tci-label-group">
+                    <div class="tci-label-text">大江(屏科)S11 楊樺收 (08) 762-9158#5257</div>
+                    <label class="tci-label-top">採購單號</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">A0002188 舊料號</div>
+                    <label class="tci-label-top">類型</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">A0002188 舊料號</div>
+                    <label class="tci-label-top">建立日期</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">A0002188 舊料號</div>
+                    <label class="tci-label-top">廠商代碼</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">A0002188 舊料號</div>
+                    <label class="tci-label-top">廠商名稱</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">A0002188 舊料號</div>
+                    <label class="tci-label-top">交易幣別</label>
+                </div>
+                <div class="tci-label-group content">
+                    <label class="tci-label-top">內容</label>
+                    <div  class="tci-label-text mt-2">
+                        <table class="table table-bordered" style="font-size: 13px;">
+                            <thead>
+                                <tr class="table_thead">
+                                    <th>項目</th>
+                                    <th>名稱</th>
+                                    <th>單價</th>
+                                    <th>數量</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td nowrap="nowrap">A0002737</td>
+                                    <td>34534534534大江生活-大人の生活-琉金煥采葉黃素15ml客供印刷滴管瓶-瓶蓋配件采葉黃素15ml客供印刷滴管瓶-瓶蓋</td>
+                                    <td nowrap="nowrap">0</td>
+                                    <td nowrap="nowrap">3052 PCS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

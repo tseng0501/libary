@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>採購單</title>
+</head>
+
+<body>
+    <div class="container-fluid mb-3" id="page_createPurchaseOrder">
+        <div class="tci-text-center pageHeader">
+            <span class="pageHeaderTitle ml-2"><b>建立 採購單</span></b>
+        </div>
+        <div class="query mt-3">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">直接使用採購單號查詢</span>
+                </div>
+                <input type="text" class="tci-field-value" style="margin-right: 5px;" />
+                <button class="tci-btn tci-btn-darkkhaki">查詢</button>
+            </div>
+            <hr>
+            <div>
+                <span style="font-weight: bold;"><u>PO未送簽清單查詢</u></span>
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">建立日期</span>
+                </div>
+                <div style="width: 60%;display: flex;justify-content: space-between;">
+                    <input type="text" class="tci-field-value" style="width: 100%;" />
+                    <span style="padding: 0.3rem;">~</span>
+                    <input type="text" class="tci-field-value" style="width: 100%;" />
+                </div>
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">供應商代碼</span>
+                </div>
+                <input type="text" class="tci-field-value" />
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">採購人員</span>
+                </div>
+                <input type="text" class="tci-field-value" />
+            </div>
+            <div style="text-align: end;">
+                <button class="tci-btn tci-btn-darkkhaki">查詢</button>
+            </div>
+        </div>
+        <section class="content mt-3">
+            <div class="tci-input-group mb-2">
+                <div class="tci-input-group-prepend">
+                    <span class="tci-input-group-text">單據編號</span>
+                </div>
+                <div class="tci-form-control">123213123</div>
+                <!-- <input type="text" class="tci-form-control" /> -->
+            </div>
+            <div class="content_row">
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">部門別</span>
+                        <button class="ml-2" style="background-color: transparent;border-radius: .25rem;
+                        border: 1px solid #b56824;; color: #b56824;">
+                            <i class="fa-solid fa-building"></i></button>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">採購單號</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">供應商名稱</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">採購文件類型</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">聯絡人</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">採購人員</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">連絡電話</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">傳真號碼</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">發送通知</span>
+                    </div>
+                    <div style="padding-top: 0.5rem;">
+                        <label style="margin-right:1rem;">
+                            <input type="radio" value="1" checked="">是
+                        </label>
+                        <label>
+                            <input type="radio" value="0">否
+                        </label>
+                    </div>
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">銷售員-郵箱</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">銷售員-手機</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">簡訊聯絡人</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">簡訊聯絡人-電話</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">簡訊聯絡人-郵箱</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">簡訊聯絡人-手機</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">交易幣別</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">付款條件</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">表頭註記</span>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">新/舊品</span>
+                    </div>
+                    <div style="width: 100%;">
+                        <div class="mb-2" style="display: flex;">
+                            <select class="tci-form-control" style="width: auto;margin-right: .5rem;">
+                                <option value="1">新</option>
+                                <option value="2">舊</option>
+                            </select>
+                            <select class="tci-form-control">
+                                <option value="1">非單一/指定廠商</option>
+                                <option value="2">單一/指定廠商</option>
+                                <option value="3">舊品採購量增加</option>
+                                <option value="4">舊品改稿</option>
+                                <option value="5">舊品採購量不變</option>
+                                <option value="6">其它原因</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="text" class="tci-form-control" />
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">相關採購代工合約</span>
+                    </div>
+                    <select class="tci-form-control mb-2" style="width: 100%;">
+                        <option value="有合約">有合約</option>
+                        <option value="無合約-採用訂單約定條款">無合約-採用訂單約定條款</option>
+                        <option value="已申請豁免簽約-如附件">已申請豁免簽約-如附件</option>
+                    </select>
+                    <input type="text" class="tci-form-control" />
+                </div>
+
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">採購項目明細</span>
+                        <button class="tci-btn tci-btn-orgin ml-3" style="width: 100%;" data-toggle="modal"
+                            data-target="#supply_satues">供需狀況</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="content_label mt-3">
+            <div class="table_label mb-2">
+                <div class="tci-label-group no">
+                    <div class="tci-label-text">1</div>
+                    <label class="tci-label-top">NO</label>
+                </div>
+                <div class="tci-label-group middle">
+                    <div class="tci-label-text">11000214
+                        舊料號：1F010045002</div>
+                    <label class="tci-label-top">產品代碼</label>
+                </div>
+                <div class="tci-label-group long">
+                    <div class="tci-label-text">Salmon Milt Extract
+                        Salmon Milt Extract
+                        品名:鮭魚精巢(核酸DNA-Na(L)S) (期貨) 規格:0.85 性態別:粉末 產品登入碼:</div>
+                    <label class="tci-label-top">品名/規格/入箱方式</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">900 KG</div>
+                    <label class="tci-label-top">數量/單位</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">14,000</div>
+                    <label class="tci-label-top">單價</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">12,600,000</div>
+                    <label class="tci-label-top">小計</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">
+                        135.<span class="ecNum">622</span>
+                        /789.<span class="ecNum">42</span>
+                        /3,120.<span class="ecNum">27</span>
+                    </div>
+                    <label class="tci-label-top">目前庫存/安全庫存/加總需求</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">3,300</div>
+                    <label class="tci-label-top">採購中數量 (不含本次)</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">建議採購 474.068 KG</div>
+                    <label class="tci-label-top">採購提醒(系統判斷)</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">2022/06/21</div>
+                    <label class="tci-label-top">交貨日期</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">1</div>
+                    <label class="tci-label-top">託工型態</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">1</div>
+                    <label class="tci-label-top">原廠</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">TW</div>
+                    <label class="tci-label-top">交貨地址</label>
+                </div>
+                <div class="tci-label-group">
+                    <button type="button" class="tci-btn tci-btn-grass">近十次採購價</button>
+                </div>
+                <div class="tci-label-group">
+                    <span style="color: red;">合計：</span><b>10,000</b>
+                    <br><span style="color: red;">TWD 總計：</span><b>10,000</b>
+                </div>
+            </div>
+            <div class="table_label mb-2">
+                <div class="tci-label-group no">
+                    <div class="tci-label-text">1</div>
+                    <label class="tci-label-top">NO</label>
+                </div>
+                <div class="tci-label-group middle">
+                    <div class="tci-label-text">11000214
+                        舊料號：1F010045002</div>
+                    <label class="tci-label-top">產品代碼</label>
+                </div>
+                <div class="tci-label-group long">
+                    <div class="tci-label-text">Salmon Milt Extract
+                        Salmon Milt Extract
+                        品名:鮭魚精巢(核酸DNA-Na(L)S) (期貨) 規格:0.85 性態別:粉末 產品登入碼:</div>
+                    <label class="tci-label-top">品名/規格/入箱方式</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">900 KG</div>
+                    <label class="tci-label-top">數量/單位</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">14,000</div>
+                    <label class="tci-label-top">單價</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">12,600,000</div>
+                    <label class="tci-label-top">小計</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">
+                        135.<span class="ecNum">622</span>
+                        /789.<span class="ecNum">42</span>
+                        /3,120.<span class="ecNum">27</span>
+                    </div>
+                    <label class="tci-label-top">目前庫存/安全庫存/加總需求</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">3,300</div>
+                    <label class="tci-label-top">採購中數量 (不含本次)</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">建議採購 474.068 KG</div>
+                    <label class="tci-label-top">採購提醒(系統判斷)</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">2022/06/21</div>
+                    <label class="tci-label-top">交貨日期</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">1</div>
+                    <label class="tci-label-top">託工型態</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">1</div>
+                    <label class="tci-label-top">原廠</label>
+                </div>
+                <div class="tci-label-group">
+                    <div class="tci-label-text">TW</div>
+                    <label class="tci-label-top">交貨地址</label>
+                </div>
+                <div class="tci-label-group">
+                    <button type="button" class="tci-btn tci-btn-grass">近十次採購價</button>
+                </div>
+                <div class="tci-label-group">
+                    <span style="color: red;">合計：</span><b>10,000</b>
+                    <br><span style="color: red;">TWD 總計：</span><b>10,000</b>
+                </div>
+            </div>
+        </section>
+        <section class="mark" style="margin-top: 1.75rem">
+            <div class="tci-mb-2">
+                <span class=""><b>備註 Notes</b></span>
+            </div>
+            <div class="tci-input-group mb-2">
+                <div class="tci-input-group-prepend">
+                    <span class="tci-input-group-text">檔案數</span>
+                </div>
+                <select class="tci-form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="tci-input-group mb-2">
+                <div class="tci-input-group-prepend">
+                    <span class="tci-input-group-text">單據說明(可保持空白)</span>
+                </div>
+                <textarea class="tci-form-control" style="height:100px;"></textarea>
+            </div>
+            <div class="mark_file">
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">檔案</span>
+                    </div>
+                    <input type="FILE" class="tci-form-control">
+                </div>
+                <div class="tci-input-group mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">檔案說明</span>
+                    </div>
+                    <input type="text" class="tci-form-control">
+                </div>
+            </div>
+            <div style="text-align: right;">
+                <button class="tci-btn tci-btn-success mt-3">確認資料，單據存檔</button>
+            </div>
+        </section>
+        <div class="modal" id="supply_satues" tabindex="-1" role="dialog" aria-labelledby="AddButtonModalLabel"
+            aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="AddButtonModalLabel">供需狀況</h5>
+                        <button type="button" class="close" style=" margin-top: -19px;" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="table_label mb-2">
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">2022/07/2</div>
+                                <label class="tci-label-top">日期</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">PMT相依需</div>
+                                <label class="tci-label-top">MRP元素</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">A0002188 舊料號</div>
+                                <label class="tci-label-top">開始/核發日期</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">A0002188 舊料號</div>
+                                <label class="tci-label-top">開單日期</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">A0002188 舊料號</div>
+                                <label class="tci-label-top">MRP要素資料</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">A0002188 舊料號</div>
+                                <label class="tci-label-top">重新排程日</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">A0002188 舊料號</div>
+                                <label class="tci-label-top">例外</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">跌至安全庫存層次以下之庫存</div>
+                                <label class="tci-label-top">例外說明</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">A0002188 舊料號</div>
+                                <label class="tci-label-top">收貨/需求</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">A0002188 舊料號</div>
+                                <label class="tci-label-top">可用數量</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">A0002188 舊料號</div>
+                                <label class="tci-label-top">儲存地點</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">A0002188 舊料號</div>
+                                <label class="tci-label-top">SO類型&留樣資訊 </label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">A0002188 舊料號</div>
+                                <label class="tci-label-top">物料名稱</label>
+                            </div>
+                            <div class="tci-label-group name">
+                                <div class="tci-label-text">麦吉丽-胶原蛋白果味饮品 -内料（g）L0004375</div>
+                                <label class="tci-label-top">顯示品名</label>
+                            </div>
+                            <div class="tci-label-group">
+                                <div class="tci-label-text">000010050135</div>
+                                <label class="tci-label-top">保存工單號</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- ... -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="tci-btn tci-btn-secondary" data-dismiss="modal">關閉</button>
+                        <button type="button" class="tci-btn tci-btn-success">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

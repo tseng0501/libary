@@ -1,0 +1,42 @@
+.tci-card {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--color-snow);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: var(--borderRadius);
+    min-width: 200px;
+}
+.tci-card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.tci-card-header {
+    padding: 0.25rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.tci-card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: .5rem;
+}
+.tci-card-title {
+    margin-bottom: 0.5rem;
+}
+.tci-card-text {
+    font-size: 12px;
+}
+.tci-card-footer:last-child {
+    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+}
+.tci-card-footer {
+    padding: 0.5rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}

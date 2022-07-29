@@ -1,0 +1,36 @@
+//強制不换行、超出顯示省略號
+.fontNoWrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+//標題
+.pageHeader {
+    margin: .5rem 0;
+    border-left: 5px solid var(--color-darkkhaki);
+    box-shadow: var(--borderShadow);
+    border-radius: var(--borderRadius);
+
+    .pageHeaderTitle {
+        font-size: var(--font-size-xs);
+        color: var(--color-darkkhaki);
+    }
+}
+
+.no_style {
+    text-decoration: none;
+    color: #2a2a2a;
+
+    &:hover {
+        text-decoration: none;
+        color: #2a2a2a;
+    }
+}
+@media (min-width: 765px) {
+    .pageHeader {
+        .pageHeaderTitle {
+            font-size: var(--font-size-m);
+        }
+    }
+}

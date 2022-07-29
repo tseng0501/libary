@@ -1,0 +1,83 @@
+#page_leaveForm .tci-field-value,
+#page_leaveForm .tci-form-control {
+  background-color: #EFEFEF;
+}
+#page_leaveForm .form .form-group .tci-field {
+  flex-wrap: wrap;
+}
+#page_leaveForm .form .form-group .tci-field .tci-field-label {
+  width: 100%;
+}
+#page_leaveForm .form .form-group .tci-field .tci-field-value {
+  width: 100%;
+}
+#page_leaveForm .form .form-group .tci-field .dateTime {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+#page_leaveForm .form .form-group .tci-field .dateTime .tci-input-group {
+  width: auto;
+}
+#page_leaveForm .form .form-group .tci-field .dateTime .tci-field-value {
+  width: 42%;
+}
+#page_leaveForm .form .form-group .table_content {
+  width: 100%;
+}
+#page_leaveForm .form .form-group .attachments {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+#page_leaveForm .form .form-group .attachments .tci-bs-input-group {
+  flex-wrap: nowrap;
+}
+
+@media (min-width: 765px) {
+  #page_leaveForm .form .form-group .tci-field {
+    flex-wrap: wrap;
+  }
+  #page_leaveForm .form .form-group .tci-field .tci-field-label {
+    width: 40%;
+  }
+  #page_leaveForm .form .form-group .tci-field .tci-field-value {
+    width: 60%;
+  }
+  #page_leaveForm .form .form-group .tci-field .dateTime {
+    display: flex;
+    width: 60%;
+    flex-wrap: nowrap;
+  }
+  #page_leaveForm .form .form-group .tci-field .dateTime .tci-input-group {
+    width: auto;
+  }
+  #page_leaveForm .form .form-group .tci-field .dateTime .time {
+    width: 85px;
+  }
+  #page_leaveForm .form .form-group .tci-field .dateTime .date {
+    width: 100px;
+  }
+  #page_leaveForm .form .form-group .table_content {
+    width: 60%;
+  }
+  #page_leaveForm .form .form-group .attachments {
+    width: 60%;
+  }
+  #page_leaveForm .form .form-group .attachments .tci-bs-input-group {
+    flex-wrap: nowrap;
+  }
+  #page_leaveForm .form .form-group .attachments .tci-bs-input-group .tci-field-value {
+    width: 100%;
+    background-color: var(--color-snow);
+  }
+}
+@media (min-width: 992px) {
+  #page_leaveForm .form .form-group .tci-field .dateTime .time {
+    width: 120px;
+  }
+  #page_leaveForm .form .form-group .tci-field .dateTime .date {
+    width: 150px;
+  }
+}

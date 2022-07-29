@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>請假單</title>
+</head>
+<body>
+    <div class="container-fluid mb-3" id="page_leaveForm">
+        <div class="tci-text-center pageHeader">
+            <span class="pageHeaderTitle ml-2"><b>建立 請假單</span></b>
+        </div>
+        <section class="form mt-4">
+            <div class="form-group">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">請假人:</span>
+                    </div>
+                    <div class="tci-field-value"><span>曾莞婷-HEDY.TSENG</span></div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">假別:</span>
+                    </div>
+                    <select class="tci-field-value">
+                        <option label="特別休假【月累計:0, 年累計:0】" value="number:0"
+                            selected="selected">特別休假【月累計:0, 年累計:0】</option>
+                        <option label="補休【月累計:0, 年累計:0】" value="number:1">
+                            補休【月累計:0, 年累計:0】</option>
+                        <option label="事假【月累計:0, 年累計:0】" value="number:2">事假
+                           【月累計:0, 年累計:0】</option>
+                        <option label="普通傷病假【月累計:0, 年累計:0】" value="number:3">
+                            普通傷病假【月累計:0, 年累計:0】</option>
+                        <option label="公出【月累計:0, 年累計:0】" value="number:4">公出
+                           【月累計:0, 年累計:0】</option>
+                        <option label="公傷假【月累計:0, 年累計:0】"
+                            value="number:5">公傷假【月累計:0, 年累計:0】
+                        </option>
+                        <option label="婚假【月累計:0, 年累計:0】" value="number:6">婚假
+                           【月累計:0, 年累計:0】</option>
+                        <option label="喪假【月累計:0, 年累計:0】" value="number:7">喪假
+                           【月累計:0, 年累計:0】</option>
+                        <option label="產假【月累計:0, 年累計:0】" value="number:8">產假
+                           【月累計:0, 年累計:0】</option>
+                        <option
+                            label="陪產檢及陪產假【月累計:0, 年累計:0】"
+                            value="number:9">陪產檢及陪產假【月累計Month
+                            Total:0, 年累計:0】</option>
+                        <option label="生理假【月累計:0, 年累計:0】" value="number:10">
+                            生理假【月累計:0, 年累計:0】</option>
+                        <option label="育嬰假【月累計:0, 年累計:0】" value="number:11">育嬰假
+                           【月累計:0, 年累計:0】</option>
+                        <option label="返台假【月累計:0, 年累計:0】" value="number:12">返台假
+                           【月累計:0, 年累計:0】</option>
+                        <option label="法定公休假【月累計:0, 年累計:0】"
+                            value="number:13">法定公休假【月累計:0, 年累計:0】
+                        </option>
+                        <option label="家庭照顧假【月累計:0, 年累計:0】"
+                            value="number:15">家庭照顧假【月累計:0, 年累計:0】</option>
+                        <option label="留職停薪假【月累計:0, 年累計:0】" value="number:16">
+                            留職停薪假【月累計:0, 年累計:0】</option>
+                        <option label="產檢假【月累計:0, 年累計:0】"
+                            value="number:17">產檢假【月累計:0, 年累計:0】
+                        </option>
+                        <option label="天災假【月累計:0, 年累計:0】"
+                            value="number:19">天災假【月累計:0, 年累計:0】
+                        </option>
+                        <option label="謀職假【月累計:0, 年累計:0】" value="number:20">
+                            謀職假【月累計:0, 年累計:0】</option>
+                        <option label="居家作業【月累計:0, 年累計:0】" value="number:22">
+                            居家作業【月累計:0, 年累計:0】</option>
+                        <option label="原住民族歲時祭儀假【月累計:0, 年累計:0】"
+                            value="number:23">原住民族歲時祭儀假【月累計:0, 年累計:0】
+                        </option>
+                        <option label="防疫隔離假 【月累計:0, 年累計:0】"
+                            value="number:25">防疫隔離假 【月累計:0, 年累計Year
+                            Total:0】</option>
+                        <option label="無薪病假 【月累計:0, 年累計:0】"
+                            value="number:26">無薪病假 【月累計:0, 年累計:0】</option>
+                        <option label="無薪事假【月累計:0, 年累計:0】"
+                            value="number:27">無薪事假【月累計:0, 年累計:0】
+                        </option>
+                        <option
+                            label="有薪假(COVID-19,限磐石直接人員)【月累計:0, 年累計:0】"
+                            value="number:28">有薪假(COVID-19,限磐石直接人員)【月累計Month
+                            Total:0, 年累計:0】</option>
+                        <option label="防疫照顧假 【月累計:0, 年累計:0】"
+                            value="number:29">防疫照顧假 【月累計:0, 年累計:0】
+                        </option>
+                        <option label="哺乳假【月累計:0, 年累計:0】" value="number:30">哺乳假 Leave
+                            【月累計:0, 年累計:0】</option>
+                    </select>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left"></span>
+                    </div>
+                    <div style="width: 100%;text-align: end;"><span>2022 剩餘時數 Remaining Hours: 32.0</span></div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">日期時間:</span>
+                    </div>
+                    <div class="dateTime">
+                        <div class="tci-input-group">
+                            <span class="tci-input-group-text">開始</span>
+                        </div>
+                        <input type="text" class="tci-field-value date"/>
+                        <div class="tci-input-group">
+                            <span class="tci-input-group-text">： </span>
+                        </div>
+                        <select class="tci-field-value time">
+                            <option label="09:00" value="string:Thu Jul 21 2022 09:00:00 GMT+0800 (台北標準時間)"
+                                selected="selected">09:00</option>
+                            <option label="09:30" value="string:Thu Jul 21 2022 09:30:00 GMT+0800 (台北標準時間)">09:30
+                            </option>
+                            <option label="10:00" value="string:Thu Jul 21 2022 10:00:00 GMT+0800 (台北標準時間)">10:00
+                            </option>
+                            <option label="10:30" value="string:Thu Jul 21 2022 10:30:00 GMT+0800 (台北標準時間)">10:30
+                            </option>
+                            <option label="11:00" value="string:Thu Jul 21 2022 11:00:00 GMT+0800 (台北標準時間)">11:00
+                            </option>
+                            <option label="11:30" value="string:Thu Jul 21 2022 11:30:00 GMT+0800 (台北標準時間)">11:30
+                            </option>
+                            <option label="12:00" value="string:Thu Jul 21 2022 12:00:00 GMT+0800 (台北標準時間)">12:00
+                            </option>
+                            <option label="12:30" value="string:Thu Jul 21 2022 12:30:00 GMT+0800 (台北標準時間)">12:30
+                            </option>
+                            <option label="13:30" value="string:Thu Jul 21 2022 13:30:00 GMT+0800 (台北標準時間)">13:30
+                            </option>
+                            <option label="14:00" value="string:Thu Jul 21 2022 14:00:00 GMT+0800 (台北標準時間)">14:00
+                            </option>
+                            <option label="14:30" value="string:Thu Jul 21 2022 14:30:00 GMT+0800 (台北標準時間)">14:30
+                            </option>
+                            <option label="15:00" value="string:Thu Jul 21 2022 15:00:00 GMT+0800 (台北標準時間)">15:00
+                            </option>
+                            <option label="15:30" value="string:Thu Jul 21 2022 15:30:00 GMT+0800 (台北標準時間)">15:30
+                            </option>
+                            <option label="16:00" value="string:Thu Jul 21 2022 16:00:00 GMT+0800 (台北標準時間)">16:00
+                            </option>
+                            <option label="16:30" value="string:Thu Jul 21 2022 16:30:00 GMT+0800 (台北標準時間)">16:30
+                            </option>
+                            <option label="17:00" value="string:Thu Jul 21 2022 17:00:00 GMT+0800 (台北標準時間)">17:00
+                            </option>
+                            <option label="17:30" value="string:Thu Jul 21 2022 17:30:00 GMT+0800 (台北標準時間)">17:30
+                            </option>
+                            </select>
+                        <div class="tci-input-group">
+                            <span class="tci-input-group-text">結束</span>
+                        </div>
+                        <input type="text" class="tci-field-value date"/>
+                        <div class="tci-input-group">
+                            <span class="tci-input-group-text">： </span>
+                        </div>
+                        <select class="tci-field-value time">
+                            <option label="09:00" value="string:Thu Jul 21 2022 09:00:00 GMT+0800 (台北標準時間)"
+                                selected="selected">09:00</option>
+                            <option label="09:30" value="string:Thu Jul 21 2022 09:30:00 GMT+0800 (台北標準時間)">09:30
+                            </option>
+                            <option label="10:00" value="string:Thu Jul 21 2022 10:00:00 GMT+0800 (台北標準時間)">10:00
+                            </option>
+                            <option label="10:30" value="string:Thu Jul 21 2022 10:30:00 GMT+0800 (台北標準時間)">10:30
+                            </option>
+                            <option label="11:00" value="string:Thu Jul 21 2022 11:00:00 GMT+0800 (台北標準時間)">11:00
+                            </option>
+                            <option label="11:30" value="string:Thu Jul 21 2022 11:30:00 GMT+0800 (台北標準時間)">11:30
+                            </option>
+                            <option label="12:00" value="string:Thu Jul 21 2022 12:00:00 GMT+0800 (台北標準時間)">12:00
+                            </option>
+                            <option label="12:30" value="string:Thu Jul 21 2022 12:30:00 GMT+0800 (台北標準時間)">12:30
+                            </option>
+                            <option label="13:30" value="string:Thu Jul 21 2022 13:30:00 GMT+0800 (台北標準時間)">13:30
+                            </option>
+                            <option label="14:00" value="string:Thu Jul 21 2022 14:00:00 GMT+0800 (台北標準時間)">14:00
+                            </option>
+                            <option label="14:30" value="string:Thu Jul 21 2022 14:30:00 GMT+0800 (台北標準時間)">14:30
+                            </option>
+                            <option label="15:00" value="string:Thu Jul 21 2022 15:00:00 GMT+0800 (台北標準時間)">15:00
+                            </option>
+                            <option label="15:30" value="string:Thu Jul 21 2022 15:30:00 GMT+0800 (台北標準時間)">15:30
+                            </option>
+                            <option label="16:00" value="string:Thu Jul 21 2022 16:00:00 GMT+0800 (台北標準時間)">16:00
+                            </option>
+                            <option label="16:30" value="string:Thu Jul 21 2022 16:30:00 GMT+0800 (台北標準時間)">16:30
+                            </option>
+                            <option label="17:00" value="string:Thu Jul 21 2022 17:00:00 GMT+0800 (台北標準時間)">17:00
+                            </option>
+                            <option label="17:30" value="string:Thu Jul 21 2022 17:30:00 GMT+0800 (台北標準時間)">17:30
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left"></span>
+                    </div>
+                    <div style="width: 100%;text-align: end;" class="text-danger">
+                        <span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span>
+                        <span> 結束日期時間 不可以早於 開始時間</span>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">請假內容預覽:</span>
+                    </div>
+                    <div class="table_content">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr style="background-color: #e6e0d3;">
+                                    <th class="text-center">請假日期</th>
+                                    <th class="text-center">請假時間</th>
+                                    <th class="text-center">當日班別</th>
+                                    <th class="text-center">間休時間</th>
+                                    <th class="text-center">實請時間</th>
+                                    <th class="text-center">時數</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="warning">
+                                    <td class="text-center ">2022/07/22 (五)</td>
+                                    <td class="text-center ">09:00 ~ 18:00</td>
+                                    <td class="text-center">
+                                        <span>09:00</span>
+                                        <span>18:00</span>
+                                    </td>
+                                    <td class="text-center ">12:30 ~ 13:30
+                                        <span ><br>00:00 ~ 00:00</span>
+                                    </td>
+                                    <td class="text-center">09:00 ~ 18:00</td>
+                                    <td>8.0</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td class="text-center ">2022/07/22 (五)</td>
+                                    <td class="text-center ">09:00 ~ 18:00</td>
+                                    <td class="text-center">
+                                        <span>09:00</span>
+                                        <span>18:00</span>
+                                    </td>
+                                    <td class="text-center ">12:30 ~ 13:30
+                                        <span ><br>00:00 ~ 00:00</span>
+                                    </td>
+                                    <td class="text-center">09:00 ~ 18:00</td>
+                                    <td>8.0</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4" class="text-danger">
+                                        ↑此項目發生右列問題,以致無法請假：
+                                    </th>
+                                    <th colspan="3" class="text-danger">
+                                        <span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 請假起迄時間,已包含在其他請假單:220721-34-A002!</span>
+                                        <span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> </span>
+                                    </th>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="text-danger">
+                                    <td colspan="5">合計 Total:</td>
+                                    <td>8.0</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">事由:</span>
+                    </div>
+                    <textarea class="tci-field-value" rows="3"></textarea>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left mr-3">檔案:</span>
+                        <select class="tci-field-value" style="width:60px; margin-left: 5px;border-radius: .25rem;">
+                            <option label="1" value="number:1" selected="selected">1</option>
+                            <option label="2" value="number:2">2</option>
+                            <option label="3" value="number:3">3</option>
+                            <option label="4" value="number:4">4</option>
+                            <option label="5" value="number:5">5</option>
+                            <option label="6" value="number:6">6</option>
+                            <option label="7" value="number:7">7</option>
+                            <option label="8" value="number:8">8</option>
+                            <option label="9" value="number:9">9</option>
+                            <option label="10" value="number:10">10</option>
+                            <option label="11" value="number:11">11</option>
+                            <option label="12" value="number:12">12</option>
+                            <option label="13" value="number:13">13</option>
+                            <option label="14" value="number:14">14</option>
+                            <option label="15" value="number:15">15</option>
+                            <option label="16" value="number:16">16</option>
+                            <option label="17" value="number:17">17</option>
+                            <option label="18" value="number:18">18</option>
+                            <option label="19" value="number:19">19</option>
+                            <option label="20" value="number:20">20</option>
+                            <option label="21" value="number:21">21</option>
+                            <option label="22" value="number:22">22</option><option label="23" value="number:23">23</option><option label="24" value="number:24">24</option><option label="25" value="number:25">25</option><option label="26" value="number:26">26</option>
+                            <option label="27" value="number:27">27</option><option label="28" value="number:28">28</option>
+                            <option label="29" value="number:29">29</option><option label="30" value="number:30">30</option>
+                        </select>
+                    </div>
+                    <div class="attachments">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">檔案</span>
+                            </div>
+                            <input type="file" class="tci-field-value"/>
+                        </div>
+                        <div class="tci-bs-input-group mb-2">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">檔案說明</span>
+                            </div>
+                            <input type="text" class="tci-field-value"/>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">檔案</span>
+                            </div>
+                            <input type="file" class="tci-field-value"/>
+                        </div>
+                        <div class="tci-bs-input-group mb-2">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">檔案說明</span>
+                            </div>
+                            <input type="text" class="tci-field-value"/>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div style="text-align: right;">
+                <button type="button" class="tci-btn tci-btn-orgin"><i class="fa-solid fa-check"></i>  檢查資料</button>
+                <button type="button" class="tci-btn  tci-btn-success"><i class="fa-solid fa-floppy-disk"></i> 儲存單據</button>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>

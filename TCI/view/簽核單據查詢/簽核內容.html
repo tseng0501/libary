@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>簽核內容</title>
+</head>
+
+<body>
+    <div class="container-fluid mb-3" id="page_documentQuery">
+        <div class="tci-text-center pageHeader" style="position: relative;">
+            <span class="pageHeaderTitle ml-2"><b>簽核內容</span></b>
+            <div style="position:absolute;z-index:99;right: 0;top:0;">
+                <button class="tci-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-list" aria-hidden="true"></i> &nbsp; <span id="menuTabName">查詢單據</span>
+                </button>
+            </div>
+        </div>
+        <section>
+            <div style="text-align: right;">
+                <button class="tci-btn search_btn py-0"><i class="fa fa-undo" aria-hidden="true"></i> 返回簽核首頁</button>
+            </div>
+            <div class="btnGroups_lr">
+                <button class="tci-btn gray_btn"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> 上一筆</button>
+                <button class="tci-btn gray_btn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>下一筆</button>
+            </div>
+        </section>
+        <!-- 留言 start -->
+        <section class="darkBorderCard messageBox">
+            <div class="darkBorderCardTitle text-center">
+                <span>留言</span>
+            </div>
+            <div class="messageBoxContent">
+                <div class="messagebtn_message tci-mt-3 text-center">
+                    <button type="button" class="tci-btn tci-btn-orgin">
+                        留言</button>
+                    <ul class="tci-mt-3">
+                        <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                            <ul>
+                                <span style="color: #428bca;">2022/7/21 13:55： 1212</span>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="messagebtn_voice tci-mt-3 text-center">
+                    <button type="button" class="tci-btn tci-btn-orgin">
+                        語言留言</button>
+                    <ul class="tci-mt-3">
+                        <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
+                            <ul>
+                                <span style="color: #428bca;">2022/7/21 13:55： 1212</span>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 按下留言按鈕出現 start-->
+            <div class="messageBox_modal">
+                <div class="tci-input-group tci-mb-3">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">留言對象：</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option selected="">Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="tci-input-group tci-mb-3">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">留言內容：</span>
+                    </div>
+                    <textarea class="tci-form-control"></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="tci-btn gray_btn">取消留言</button>
+                    <button class="tci-btn save_btn">送出留言</button>
+                </div>
+            </div>
+            <!-- 按下按鈕出現 end-->
+
+            <!-- 按下語音留言按鈕出現 start-->
+            <div class="messageBox_modal">
+                <div class="tci-input-group tci-mb-3">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">留言對象：</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option selected="">Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="tci-input-group tci-mb-3">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">錄音檔：</span>
+                    </div>
+                    <input class="tci-form-control" type="file" />
+                </div>
+                <div class="text-center">
+                    <button class="tci-btn gray_btn">取消留言</button>
+                    <button class="tci-btn save_btn">送出留言</button>
+                </div>
+            </div>
+            <!-- 按下語音留言按鈕出現 end-->
+
+        </section>
+        <!-- 留言 end -->
+
+        <!-- 簽核意見 start-->
+        <section class="darkBorderCard descriptionBox">
+            <div class="darkBorderCardTitle text-center">
+                <span>簽核意見</span>
+            </div>
+            <div class="text-center tci-mt-1">
+                <span style="border: 1px solid red;color:red;padding:0 6px;">此單據已作廢!</span>
+            </div>
+            <div class="descriptionBoxContent">
+                <div class="left mt-2">
+                    <div class="dropdown open">
+                        <button class="dropdown-toggle tci-btn search_btn py-0" type="button" data-toggle="dropdown"
+                            data-animations="fadeIn">
+                            通知人員
+                        </button>
+                        <!-- 下拉清單 -->
+                        <ul class="dropdown-menu">
+                            <li style="margin-left:5px;cursor:pointer">
+                                <label><input type="checkbox" class="decisionMsg" value=""> 所有簽核者</label>
+                            </li>
+                            <li style="margin-left:5px;cursor:pointer">
+                                <label><input type="checkbox" class="decisionMsg" value="2011A0016"> 吳春隆(REX.WU)</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tci-input-group tci-mt-3">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">內容:</span>
+                        </div>
+                        <textarea class="tci-form-control"></textarea>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="dropdown text-center check">
+                        <a href="#" style="text-decoration: none">
+                            <i class="fa-solid fa-check fa-4x" style="color: #5b6835;"></i>
+                            <p style="color: black;">送出單據</p>
+                        </a>
+                    </div>
+
+                    <div class="dropdown text-center">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown"
+                            data-animations="fadeIn"
+                            style="background: none;border-width: 0px;text-align: center;text-decoration: none;"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-file-lines fa-4x" style="color: #9e5331;"></i>
+                            <p style="color:black;">其他</p>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">作廢單據</a>
+                            <a class="dropdown-item" href="#">標示為急件</a>
+                            <a class="dropdown-item" href="#">修改單據</a>
+                            <a class="dropdown-item" href="#">轉寄內容</a>
+                        </div>
+
+                        <!-- 按下轉寄內容 跳出來 -->
+                        <div style="align-self: center;">
+                            <div class="tci-input-group">
+                                <div class="tci-input-group-prepend">
+                                    <span class="tci-input-group-text">收件人：</span>
+                                </div>
+                                <input type="text" class="tci-form-control" />
+                                <div class="tci-input-group-append">
+                                    <button class="tci-btn save_btn" type="button">確認轉寄</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 簽核意見 end-->
+
+        <!-- 單據明細 start-->
+        <section class="darkBorderCard detailsBox">
+            <div class="darkBorderCardTitle">
+                <span>單據明細</span>
+            </div>
+            <div class="text-center tci-mt-1">
+                <span style="background-color: #3390e2;color: white;padding: 5px 10px; border-radius: .4rem;">請假單</span>
+            </div>
+            <div class="pageForm grayborder">
+                <div style="background-color: #ddd;font-weight: bold;">
+                    <span>單據編號-No：220721-34-A003</span>
+                </div>
+                <div class="form01">
+                    <div class="tci-label-group">
+                        <div class="tci-label-text">大江戰士-HEDY.TSENG(曾莞婷)</div>
+                        <label class="tci-label-top">請假人</label>
+                    </div>
+                    <div class="tci-label-group">
+                        <div class="tci-label-text">特別休假</div>
+                        <label class="tci-label-top">假別</label>
+                    </div>
+                    <div class="tci-label-group">
+                        <div class="tci-label-text">2022/07/21 - 09:00</div>
+                        <label class="tci-label-top">開始時間</label>
+                    </div>
+                    <div class="tci-label-group">
+                        <div class="tci-label-text">2022/07/21 - 18:00</div>
+                        <label class="tci-label-top">結束日期</label>
+                    </div>
+                </div>
+                <div>
+                    <div style="background-color: #ddd;font-weight: bold;">
+                        <span>時數計算</span>
+                    </div>
+                    <div class="form01">
+                        <div class="tci-label-group">
+                            <div class="tci-label-text">2022/7/21 星期四</div>
+                            <label class="tci-label-top">請假日期</label>
+                        </div>
+                        <div class="tci-label-group">
+                            <div class="tci-label-text">09:00 ~ 18:00</div>
+                            <label class="tci-label-top">請假時間</label>
+                        </div>
+                        <div class="tci-label-group">
+                            <div class="tci-label-text">09:00 ~ 18:00 工作日</div>
+                            <label class="tci-label-top">當日班別</label>
+                        </div>
+                        <div class="tci-label-group">
+                            <div class="tci-label-text">12:30 ~ 13:30</div>
+                            <label class="tci-label-top">間休時間</label>
+                        </div>
+                        <div class="tci-label-group">
+                            <div class="tci-label-text">09:00 ~ 18:00</div>
+                            <label class="tci-label-top">實請時間</label>
+                        </div>
+                        <div class="tci-label-group">
+                            <div class="tci-label-text">時數</div>
+                            <label class="tci-label-top">8.0 hr</label>
+                        </div>
+                        <div class="finial">
+                            <span>合計</span> <span style="color: #3773eb;font-weight: bold;">8 hr</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center tci-mt-2">
+                <span style="background-color: #3390e2;color: white;padding: 5px 10px; border-radius: .4rem;">
+                    請假累計</span>
+            </div>
+            <div class="detailsBox_form grayborder">
+                <div class="detailsBox_data month mt-2">
+                    <div class="detailsBox_title">
+                        <span>月累計</span>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">特別休假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">補假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">事假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">普通傷病假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">家庭照顧假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">生理假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">產假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">陪產檢及陪產假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">婚假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">喪假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">法定公休假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">公傷假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">育嬰假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">留職停薪假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">產檢假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">天災假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">謀職假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">居家作業:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">無薪病假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">無薪事假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">防疫照顧假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">防疫隔離假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">哺乳假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">原住民族歲時祭儀假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">有薪假(COVID-19,限磐石直接人員):</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                </div>
+            </div>
+            <div class="detailsBox_form grayborder">
+                <div class="detailsBox_data annually mt-2">
+                    <div class="detailsBox_title">
+                        <span>年累計</span>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">特別休假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">補假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">事假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">普通傷病假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">家庭照顧假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">生理假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">產假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">陪產檢及陪產假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">婚假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">喪假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">法定公休假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">公傷假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">育嬰假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">留職停薪假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">產檢假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">天災假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">謀職假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">居家作業:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">無薪病假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">無薪事假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">防疫照顧假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">防疫隔離假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">哺乳假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">原住民族歲時祭儀假:</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">有薪假(COVID-19,限磐石直接人員):</span>
+                        </div>
+                        <div class="tci-field-value">0 hr</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <button class="tci-btn tci-btn-darkkhaki" style="padding: 10px;font-weight: bold;">調整額外簽核者流程</button>
+            </div>
+            <!-- 按下“調整額外簽核者流程” 跳出來 start -->
+            <div class="tci-mt-3" style="border: 1px solid rgb(22, 104, 134);padding: 5px;">
+                <div class="formFlow tci-mt-3">
+                    <div class="tci-mt-3">
+                        <button class="tci-btn tci-btn-orgin" style="padding: 0 1rem;">1. 選擇要加入的人員(重複點選可加入多人)</button>
+                    </div>
+                    <div class="tci-mt-3">
+                        <div class="formFlowGrid">
+                            <span>2. 將選擇的人員拖曳到下方流程要加入的位置&nbsp;(不能加入到已簽核人員的前面)</span>
+                            <ul class="items">
+                                <li class="availablelist"
+                                    style="margin: .1rem;cursor: pointer;background-color:orange;padding: 2px 5px;border-radius: .25rem;display: inline-block;">
+                                    <drag>
+                                        <i class="fa-solid fa-id-card"></i>
+                                        2206A0010-系統維運組-賴亭諴(MIKE.LAI)-mike.lai@tci-bio.com
+                                    </drag>
+                                    <i class="fa-solid fa-circle-xmark" style="color:red;cursor: pointer;"></i>
+                                </li>
+                                <li class="availablelist"
+                                    style="margin: .1rem;cursor: pointer;background-color:orange;padding: 2px 5px;border-radius: .25rem;display: inline-block;">
+                                    <drag>
+                                        <i class="fa-solid fa-id-card"></i>
+                                        2206A0010-系統維運組-賴亭諴(MIKE.LAI)-mike.lai@tci-bio.com
+                                    </drag>
+                                    <i class="fa-solid fa-circle-xmark" style="color:red;cursor: pointer;"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="signflow tci-mt-3">
+                        <div class="formFlowGrid">
+                            <span style="padding-left:8px">原始簽核流程</span>
+                            <ul class="items sortable">
+                                <li class="list"><i class="fa fa-user" aria-hidden="true"></i> 林詠翔(VINCENT)</li>
+                                <li class="list"><i class="fa fa-user" aria-hidden="true"></i> 王浩駿(JOHNNY.WANG)</li>
+                                <li class="list"><i class="fa fa-user" aria-hidden="true"></i> 吳春隆(REX.WU)</li>
+                                <li class="list"><i class="fa fa-user" aria-hidden="true"></i> 吳春隆(REX.WU)</li>
+                                <div class="list3"><i class="fa-solid fa-id-card"></i>
+                                    曾莞婷(HEDY.TSENG)</div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tci-mt-3">
+                        <span>3. 儲存新流程</span>
+                        <div>
+                            <button class="tci-btn tci-btn-regular">取消/重整</button>
+                            <button class="tci-btn save_btn">確定調整流程</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 按下“調整額外簽核者流程” end -->
+            </div>
+            <div class="tci-mt-3 work_process">
+                <div class="tci-card tci-mt-2">
+                    <div class="tci-card-header">總經理主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">林詠翔<br>VINCENT.LIN</p>
+                        <p class="tci-card-text" style="color: var(--color-light-green);">免簽核</p>
+                    </div>
+                </div>
+                <div class="tci-card tci-mt-2">
+                    <div class="tci-card-header">戰略數據中心主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title"> 王浩駿<br>JOHNNY.WANG</p>
+                        <p class="tci-card-text" style="color: var(--color-sienna);">未簽核</p>
+                    </div>
+                </div>
+                <div class="tci-card tci-mt-2">
+                    <div class="tci-card-header">軟體整合開發部主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">吳春隆<br>REX.WU</p>
+                        <p class="tci-card-text" style="color: var(--color-salmon);">待簽核</p>
+                    </div>
+                </div>
+                <div class="tci-card tci-mt-2">
+                    <div class="tci-card-header">軟體研發組主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">吳春隆<br>REX.WU</p>
+                        <p class="tci-card-text" style="color: var(--color-dimgray);">略</p>
+                    </div>
+                </div>
+                <div class="tci-card tci-mt-2">
+                    <div class="tci-card-header">經辦人</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">曾莞婷<br>HEDY.TSENG</p>
+                        <p class="tci-card-text" style="color: var(--color-salmon);">待簽核</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 單據明細 end-->
+
+        <!-- 簽核記錄 start -->
+        <section class="darkBorderCard approvalBox">
+             <div class="darkBorderCardTitle">
+                <span>簽核記錄</span>
+            </div>
+            <ul class="tci-mt-3" style="padding-left:20px;">
+                <li style="color: var(--color-rosybrown);font-size: 12px;">等待【經辦人】【HEDY.TSENG(曾莞婷) 大江戰士】簽核 Approve</li>
+                <li style="color: var(--color-rosybrown);font-size: 12px;">等待【經辦人】【HEDY.TSENG(曾莞婷) 大江戰士】簽核 Approve</li>
+            </ul>
+        </section>
+        <!-- 簽核記錄 end -->
+
+        <!-- 單據附件 start -->
+        <section class="darkBorderCard tci-mt-3">
+            <div class="darkBorderCardTitle">
+                <span>單據附件</span>
+            </div>
+            <div>
+                <div class="btnGroups tci-mt-2">
+                    <button class="tci-btn tci-btn-regular"><i class="fa-solid fa-rotate-left"></i> 90度</button>
+                    <button class="tci-btn tci-btn-success"><i class="fa fa-retweet" aria-hidden="true"></i> 復原</button>
+                    <button class="tci-btn tci-btn-regular"><i class="fa-solid fa-rotate-right"></i> 90度</button>
+                </div>
+                <div class="tci-mt-3">
+                    <span >附件 <b>1</b></span>
+                </div>
+                <div style="width: 100%;">
+                    <img src="https://media.istockphoto.com/photos/happy-shiba-inu-dog-on-yellow-redhaired-japanese-dog-smile-portrait-picture-id1197121742?k=20&m=1197121742&s=612x612&w=0&h=HX4DoFCL1RDlegj3P9w4O2H64sgwKvMP0VSki7sBEtE=" alt="附件1" style="width: 50%;"/>
+                </div>
+            </div>
+        </section>
+        <!-- 單據附件 end -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+#page_createPurchaseOrder {
+    .mark {
+        padding: .5rem;
+        background-color: var(--color-gainsboro);
+        border-radius: var(--borderRadius);
+    }
+
+    .tci-field-text,
+    .tci-input-group-text,
+    .tci-label-top {
+        font-weight: bold;
+    }
+
+    hr {
+        border-top: 1px solid gainsboro;
+    }
+
+    .query {
+        border: 2px solid var(--color-gainsboro);
+        border-radius: .4rem;
+        padding: .3rem;
+    }
+
+    .tci-field-value,
+    .tci-form-control {
+        background-color: #EFEFEF;
+    }
+
+    .content_label {
+        height: 300px;
+        overflow-y: auto;
+
+        .table_label {
+            border: 1px solid var(--color-alge);
+            padding: 5px;
+            border-radius: var(--borderRadius);
+        }
+    }
+
+    table {
+        .table_thead {
+            background-color: var(--color-smoke);
+        }
+
+        th {
+            padding: .25rem;
+        }
+    }
+
+    .undeliveredContent {
+        .undeliveredContent_title {
+            background-color: #aa9767;
+            text-align: center;
+            padding: 5px;
+            color: #fff;
+            border-radius: .25rem;
+        }
+
+        .table_label {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 1rem;
+
+            .tci-label-group {
+                margin-top: 11px;
+
+                &.content {
+                    width: 100%;
+
+                    .tci-label-text {
+                        overflow-x: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    .pageContent {
+        .pageContentTitle {
+            font-size: var(--font-size-lg);
+        }
+    }
+
+    #page_createPurchaseOrder {
+
+        .content {
+            .content_row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-input-group {
+                    width: 30%;
+                }
+            }
+        }
+
+        .content_label {
+            .table_label {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-label-group {
+                    width: 30%;
+                    &.no{
+                        width:5%;
+                    }
+                    &.middle{
+                        width: 90%;
+                    }
+                    &.long{
+                        width: 100%;
+                    }
+                    .ecNum{
+                        font-size: 12px;
+                        border-bottom: 3px double;
+                    }
+                }
+            }
+        }
+
+        .mark {
+            .mark_file {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-input-group {
+                    width: 48%;
+                }
+            }
+        }
+
+        #supply_satues {
+            .table_label {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-label-group {
+                    margin-right: 6px;
+                    width: 30%;
+                }
+            }
+        }
+
+        .modal {
+            hr {
+                border-top: 2px solid var(--color-dimgray);
+            }
+
+            .modal-content {
+                width: 95vw;
+                height: 95vh;
+            }
+        }
+
+        .undeliveredContent {
+            .table_label {
+                .tci-label-group {
+                    width: 30%;
+
+                    &.content {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    #page_createPurchaseOrder {
+        .content {
+            .content_row {
+                .tci-input-group {
+                    width: 24%;
+                }
+            }
+        }
+
+        .content_label {
+            .table_label {
+                .tci-label-group {
+                    width: 23%;
+                }
+            }
+        }
+
+        #supply_satues {
+            .table_label {
+                .tci-label-group {
+                    margin-right: 6px;
+                    width: 23%;
+
+                    &.name {
+                        width: 49%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<i class="fa-solid fa-building"></i>
+<i class="fa-solid fa-check"></i>
+<i class="fa-solid fa-floppy-disk"></i>
+<i class="fa-solid fa-user"></i>
+<i class="fa-solid fa-building-user"></i>
+<i class="fa-solid fa-user-check"></i>
+<i class="fa-solid fa-user-pen"></i>
+<i class="fa-solid fa-table"></i>
+<i class="fa-solid fa-trash-can"></i>
+<i class="fa-solid fa-circle-plus"></i>

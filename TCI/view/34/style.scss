@@ -1,0 +1,123 @@
+#page_leaveForm {
+
+    .tci-field-value,
+    .tci-form-control {
+        background-color: #EFEFEF;
+    }
+
+    .form {
+        .form-group {
+            .tci-field {
+                flex-wrap: wrap;
+
+                .tci-field-label {
+                    width: 100%;
+                }
+
+                .tci-field-value {
+                    width: 100%;
+                }
+
+                .dateTime {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .tci-input-group {
+                        width: auto;
+                    }
+
+                    .tci-field-value {
+                        width: 42%;
+
+                    }
+                }
+            }
+            .table_content{
+                width: 100%;
+            }
+            .attachments{
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                .tci-bs-input-group{
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 765px) {
+    #page_leaveForm {
+
+        .form {
+            .form-group {
+                .tci-field {
+                    flex-wrap: wrap;
+
+                    .tci-field-label {
+                        width: 40%;
+                    }
+
+                    .tci-field-value {
+                        width: 60%;
+                    }
+
+                    .dateTime {
+                        display: flex;
+                        width: 60%;
+                        flex-wrap: nowrap;
+                        .tci-input-group {
+                            width: auto;
+                        }
+
+                        .time {
+                            width: 85px;
+                        }
+
+                        .date {
+                            width: 100px;
+                        }
+                    }
+                }
+                .table_content{
+                    width: 60%;
+                }
+                .attachments{
+                    width: 60%;
+                    .tci-bs-input-group{
+                        flex-wrap: nowrap;
+                        .tci-field-value{
+                            width: 100%;
+                            background-color:var(--color-snow);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (min-width: 992px) {
+    #page_leaveForm {
+        .form {
+            .form-group {
+                .tci-field {
+
+                    .dateTime {
+                        .time {
+                            width: 120px;
+                        }
+
+                        .date {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
