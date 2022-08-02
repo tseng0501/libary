@@ -1,0 +1,38 @@
+.tci-form-control {
+  margin-right: 5px;
+}
+
+@media (min-width: 765px) {
+  #page_requisition .requisition_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_requisition .requisition_form .tci-input-group {
+    width: 48%;
+  }
+  #page_requisition .requisition_formMaterial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_requisition .requisition_formMaterial .tci-input-group {
+    width: 48%;
+  }
+  #page_requisition .requisition_formPackage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_requisition .requisition_formPackage .tci-input-group {
+    width: 48%;
+  }
+  #page_requisition .requisition_formCrop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_requisition .requisition_formCrop .tci-input-group {
+    width: 48%;
+  }
+}

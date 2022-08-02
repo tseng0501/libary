@@ -11,9 +11,9 @@
     <title>請假單</title>
 </head>
 <body>
-    <div class="container-fluid mb-3" id="page_leaveForm">
-        <div class="tci-text-center pageHeader">
-            <span class="pageHeaderTitle ml-2"><b>建立 請假單</span></b>
+    <div class="container-fluid tci-mb-3" id="page_leaveForm">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle tci-ml-2"><b>建立 請假單</b></span>
         </div>
         <section class="form mt-4">
             <div class="form-group">
@@ -199,7 +199,7 @@
                     <div class="tci-field-label">
                         <span class="tci-field-text text-left"></span>
                     </div>
-                    <div style="width: 100%;text-align: end;" class="text-danger">
+                    <div style="width: 100%;text-align: end;color: red;">
                         <span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span>
                         <span> 結束日期時間 不可以早於 開始時間</span>
                     </div>
@@ -248,17 +248,16 @@
                                     <td>8.0</td>
                                 </tr>
                                 <tr>
-                                    <th colspan="4" class="text-danger">
+                                    <th colspan="7" style="text-align: end;color: red;">
                                         ↑此項目發生右列問題,以致無法請假：
-                                    </th>
-                                    <th colspan="3" class="text-danger">
-                                        <span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 請假起迄時間,已包含在其他請假單:220721-34-A002!</span>
-                                        <span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> </span>
+                                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                        請假起迄時間,已包含在其他請假單:220721-34-A002!
+                                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                                     </th>
                                 </tr>
                             </tbody>
                             <tfoot>
-                                <tr class="text-danger">
+                                <tr class="text-danger" style="color: red;">
                                     <td colspan="5">合計 Total:</td>
                                     <td>8.0</td>
                                 </tr>
@@ -274,7 +273,7 @@
                 </div>
                 <div class="tci-field">
                     <div class="tci-field-label">
-                        <span class="tci-field-text text-left mr-3">檔案:</span>
+                        <span class="tci-field-text text-left tci-mr-3">檔案:</span>
                         <select class="tci-field-value" style="width:60px; margin-left: 5px;border-radius: .25rem;">
                             <option label="1" value="number:1" selected="selected">1</option>
                             <option label="2" value="number:2">2</option>

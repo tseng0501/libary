@@ -1,0 +1,105 @@
+#page_generalInvoice .btnIconGroups button {
+  width: 30px;
+}
+#page_generalInvoice .fileBox {
+  border: 3px solid var(--color-rosybrown);
+  border-radius: var(--borderRadius);
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+#page_generalInvoice .fileBox .fileContentNo {
+  width: 40%;
+}
+#page_generalInvoice .orderTableBox {
+  border: 3px solid var(--color-rosybrown);
+  border-radius: var(--borderRadius);
+  margin-top: 0.5rem;
+}
+#page_generalInvoice .addTableBox {
+  border: 1px solid var(--color-rosybrown);
+  border-radius: var(--borderRadius);
+  margin-top: 0.5rem;
+}
+#page_generalInvoice .addTableBox .addTable {
+  display: flex;
+  border: 3px solid var(--color-rosybrown);
+  border-radius: var(--borderRadius);
+  margin: 5px;
+}
+#page_generalInvoice .addTableBox .addTable .addTableNo {
+  width: 70px;
+  background-color: var(--color-rosybrown);
+  margin-right: 0.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+#page_generalInvoice .addTableBox .addTable .addTableNo span {
+  width: 100%;
+  font-weight: bold;
+  color: var(--color-snow);
+}
+#page_generalInvoice .addTableBox .addTableFooter {
+  border: 3px solid var(--color-rosybrown);
+  border-radius: var(--borderRadius);
+  margin: 5px;
+  text-align: right;
+  padding: 5px;
+}
+#page_generalInvoice .addTableBox .addTableFooter .addTableFooterTitle {
+  margin-right: 100px;
+  font-weight: bold;
+  color: var(--color-rosybrown);
+}
+#page_generalInvoice .addTableBox .addTableFooter .addTableFooterText {
+  font-weight: bold;
+  color: var(--color-darkred);
+}
+
+@media (min-width: 765px) {
+  #page_generalInvoice .fileBox .illustrate .fileIllustrate {
+    display: flex;
+  }
+  #page_generalInvoice .fileBox .illustrate .fileIllustrate .tci-input-group {
+    margin-bottom: 0.5rem;
+  }
+  #page_generalInvoice .orderDetailsTitle .orderDetailsTitle_text {
+    display: flex;
+    justify-content: space-between;
+  }
+  #page_generalInvoice .orderDetailsTitle .orderDetailsTitle_text .tci-input-group {
+    width: 49%;
+  }
+  #page_generalInvoice .orderTableBox .orderTable {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  #page_generalInvoice .orderTableBox .orderTable .tci-input-group {
+    width: 30%;
+    margin-right: 1rem;
+  }
+  #page_generalInvoice .addTableBox .addTable .addTableNo {
+    width: 100px;
+  }
+  #page_generalInvoice .addTableBox .addTable .addTableContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  #page_generalInvoice .addTableBox .addTable .addTableContent .tci-input-group {
+    width: 30%;
+    margin-right: 1rem;
+  }
+  #page_generalInvoice .invoiceContent .invoiceForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_generalInvoice .invoiceContent .invoiceForm .tci-input-group {
+    width: 49%;
+  }
+  #page_generalInvoice .invoiceContent .invoiceForm .tci-input-group.mark {
+    width: 100%;
+  }
+}

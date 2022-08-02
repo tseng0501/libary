@@ -13,32 +13,11 @@
     }
 }
 
-//棕色框，棕色背景標題
-.darkBorderCard {
-    margin-top: 1rem;
-    border: 2px solid var(--color-darkkhaki);
-    border-radius: var(--borderRadius);
-    padding: 5px;
-    margin-bottom: .5rem;
-
-    .darkBorderCardTitle {
-        text-align: center;
-        margin-bottom: 1rem;
-        background-color: var(--color-darkkhaki);
-        color: var(--color-snow);
-
-        span {
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-    }
-}
-
 #page_documentQuery {
 
     .tci-field-value,
     .tci-form-control {
-        background-color: #EFEFEF;
+        background-color: var(--color-whitesmoke);
     }
 
     //簽核單據查詢-查詢單據
@@ -232,22 +211,6 @@
             padding: .2rem;
         }
     }
-
-    .descriptionBox {
-        
-        .descriptionBoxContent {
-            .dropdown {
-                &.open {
-                    width: 100%;
-
-                    button {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-    }
-
     .detailsBox {
         .detailsBox_rt{
             color:#fff;
@@ -340,7 +303,9 @@
 
             .tci-input-group {
                 width: 48%;
-
+                &.content {
+                    width: 100%;
+                }
                 &.company {
                     width: 100%;
                 }
@@ -396,7 +361,7 @@
 
             .editDocuments_lists {
                 .tci-field {
-                    flex-wrap: wrap;
+                    flex-wrap: nowrap;
 
                     .tci-field-label {
                         width: 40%;
@@ -451,46 +416,15 @@
 
         //簽核內容  簽核意見 
         .descriptionBox {
-            .descriptionBoxContent {
-                display: flex;
-                justify-content: center;
-
-                .left {
-                    margin-right: 1rem;
-
-                    .dropdown {
-                        button {
-                            width: 100%;
-                        }
-                    }
-
-                    .tci-input-group {
-                        width: 100%;
-                    }
+            .descriptionBoxContent{
+                .descriptionBoxContent_text{
+                    margin: auto;
+                    width: 60%;
                 }
-
-                .right {
+                .descriptionBox_icon{
                     display: flex;
-                    justify-content: center;
-                    padding: 5px;
-
-                    .dropdown {
-                        button {
-                            width: 100%;
-                        }
-
-                        &.check {
-                            width: 40%;
-                        }
-
-                        &.open {
-                            width: 100%;
-
-                            button {
-                                width: 100%;
-                            }
-                        }
-                    }
+                    justify-content: space-evenly;
+                    margin-top: .5rem;
                 }
 
             }
@@ -563,8 +497,9 @@
             .tci-input-group {
                 width: 33%;
 
+                
                 &.company {
-                    width: 65%;
+                    width: 100%;
                 }
             }
         }

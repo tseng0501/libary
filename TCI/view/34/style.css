@@ -1,6 +1,6 @@
 #page_leaveForm .tci-field-value,
 #page_leaveForm .tci-form-control {
-  background-color: #EFEFEF;
+  background-color: var(--color-whitesmoke);
 }
 #page_leaveForm .form .form-group .tci-field {
   flex-wrap: wrap;
@@ -40,14 +40,14 @@
     flex-wrap: wrap;
   }
   #page_leaveForm .form .form-group .tci-field .tci-field-label {
-    width: 40%;
+    width: 25%;
   }
   #page_leaveForm .form .form-group .tci-field .tci-field-value {
-    width: 60%;
+    width: 75%;
   }
   #page_leaveForm .form .form-group .tci-field .dateTime {
     display: flex;
-    width: 60%;
+    width: 75%;
     flex-wrap: nowrap;
   }
   #page_leaveForm .form .form-group .tci-field .dateTime .tci-input-group {
@@ -60,10 +60,10 @@
     width: 100px;
   }
   #page_leaveForm .form .form-group .table_content {
-    width: 60%;
+    width: 75%;
   }
   #page_leaveForm .form .form-group .attachments {
-    width: 60%;
+    width: 75%;
   }
   #page_leaveForm .form .form-group .attachments .tci-bs-input-group {
     flex-wrap: nowrap;

@@ -13,3 +13,10 @@
 <i class="fa-solid fa-user-tie"></i>
 <i class="fa-solid fa-left-long"></i>
 <i class="fa-solid fa-up-long"></i>
+<i class="fa-solid fa-chevron-up"></i>
+<i class="fa-solid fa-chevron-down"></i>
+<i class="fa-solid fa-magnifying-glass"></i>
+<i class="fa-solid fa-plus"></i>
+<i class="fa-solid fa-pen"></i>
+<i class="fa-solid fa-xmark"></i>
+<i class="fa-solid fa-file-invoice"></i>

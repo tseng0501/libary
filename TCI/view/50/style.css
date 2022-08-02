@@ -1,0 +1,10 @@
+@media (min-width: 765px) {
+  #page_tryApplication .form_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_tryApplication .form_item .tci-input-group {
+    width: 49%;
+  }
+}

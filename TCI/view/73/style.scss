@@ -1,0 +1,47 @@
+.tci-form-control {
+    margin-right: 5px;
+}
+@media (min-width: 765px) {
+    #page_requisition {
+        .requisition_form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-input-group {
+                width: 48%;
+            }
+        }
+
+        .requisition_formMaterial {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-input-group {
+                width: 48%;
+            }
+        }
+
+        .requisition_formPackage {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-input-group {
+                width: 48%;
+            }
+        }
+
+        .requisition_formCrop {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-input-group {
+                width: 48%;
+            }
+        }
+
+    }
+}

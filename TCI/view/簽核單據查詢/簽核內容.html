@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <div class="container-fluid mb-3" id="page_documentQuery">
-        <div class="tci-text-center pageHeader" style="position: relative;">
-            <span class="pageHeaderTitle ml-2"><b>簽核內容</span></b>
+    <div class="container-fluid tci-mb-3" id="page_documentQuery">
+        <div class="pageHeader" style="position: relative;">
+            <span class="pageHeaderTitle ml-2"><b>簽核內容</b></span>
             <div style="position:absolute;z-index:99;right: 0;top:0;">
                 <button class="tci-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -126,38 +126,38 @@
                 <span style="border: 1px solid red;color:red;padding:0 6px;">此單據已作廢!</span>
             </div>
             <div class="descriptionBoxContent">
-                <div class="left mt-2">
-                    <div class="dropdown open">
-                        <button class="dropdown-toggle tci-btn search_btn py-0" type="button" data-toggle="dropdown"
-                            data-animations="fadeIn">
-                            通知人員
-                        </button>
-                        <!-- 下拉清單 -->
-                        <ul class="dropdown-menu">
-                            <li style="margin-left:5px;cursor:pointer">
-                                <label><input type="checkbox" class="decisionMsg" value=""> 所有簽核者</label>
-                            </li>
-                            <li style="margin-left:5px;cursor:pointer">
-                                <label><input type="checkbox" class="decisionMsg" value="2011A0016"> 吳春隆(REX.WU)</label>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tci-input-group tci-mt-3">
+                <div class="descriptionBoxContent_text">
+                    <div class="tci-input-group">
                         <div class="tci-input-group-prepend">
-                            <span class="tci-input-group-text">內容:</span>
+                            <span class="tci-input-group-text">內容:&nbsp;
+                                <div class="dropdown open" style="margin-bottom:.5rem;">
+                                    <button class="dropdown-toggle tci-btn search_btn py-0" type="button"
+                                        data-toggle="dropdown" data-animations="fadeIn">
+                                        通知人員
+                                    </button>
+                                    <!-- 下拉清單 -->
+                                    <ul class="dropdown-menu">
+                                        <li style="margin-left:5px;cursor:pointer">
+                                            <label><input type="checkbox" class="decisionMsg" value=""> 所有簽核者</label>
+                                        </li>
+                                        <li style="margin-left:5px;cursor:pointer">
+                                            <label><input type="checkbox" class="decisionMsg" value="2011A0016">
+                                                吳春隆(REX.WU)</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </span>
                         </div>
                         <textarea class="tci-form-control"></textarea>
                     </div>
                 </div>
-                <div class="right">
+                <div class="descriptionBox_icon">
                     <div class="dropdown text-center check">
                         <a href="#" style="text-decoration: none">
                             <i class="fa-solid fa-check fa-4x" style="color: #5b6835;"></i>
                             <p style="color: black;">送出單據</p>
                         </a>
                     </div>
-
                     <div class="dropdown text-center">
                         <button class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown"
                             data-animations="fadeIn"
@@ -638,7 +638,8 @@
                     <div class="tci-card-body">
                         <p class="tci-card-title">林詠翔<br>VINCENT.LIN</p>
                         <div>
-                            <span class="tci-card-text card-text-green"><i class="fa-solid fa-clock"></i>&nbsp; 免簽核</span>
+                            <span class="tci-card-text card-text-green"><i class="fa-solid fa-clock"></i>&nbsp;
+                                免簽核</span>
                         </div>
                     </div>
                     <div class="tci-card-footer"></div>
@@ -648,7 +649,8 @@
                     <div class="tci-card-body">
                         <p class="tci-card-title"> 王浩駿<br>JOHNNY.WANG</p>
                         <div>
-                            <span class="tci-card-text card-text-brown"><i class="fa-solid fa-clock"></i>&nbsp; 未簽核</span>
+                            <span class="tci-card-text card-text-brown"><i class="fa-solid fa-clock"></i>&nbsp;
+                                未簽核</span>
                         </div>
                     </div>
                     <div class="tci-card-footer"></div>
@@ -684,13 +686,12 @@
                     <div class="tci-card-footer">2022/07/21 12:31:32</div>
                 </div>
             </div>
-            </div>
         </section>
         <!-- 單據明細 end-->
 
         <!-- 簽核記錄 start -->
         <section class="darkBorderCard approvalBox">
-             <div class="darkBorderCardTitle">
+            <div class="darkBorderCardTitle">
                 <span>簽核記錄</span>
             </div>
             <ul class="tci-mt-3" style="padding-left:20px;">
@@ -712,10 +713,11 @@
                     <button class="tci-btn tci-btn-regular"><i class="fa-solid fa-rotate-right"></i> 90度</button>
                 </div>
                 <div class="tci-mt-3">
-                    <span >附件 <b>1</b></span>
+                    <span>附件 <b>1</b></span>
                 </div>
                 <div style="width: 100%;">
-                    <img src="https://media.istockphoto.com/photos/happy-shiba-inu-dog-on-yellow-redhaired-japanese-dog-smile-portrait-picture-id1197121742?k=20&m=1197121742&s=612x612&w=0&h=HX4DoFCL1RDlegj3P9w4O2H64sgwKvMP0VSki7sBEtE=" alt="附件1" style="width: 50%;"/>
+                    <img src="https://media.istockphoto.com/photos/happy-shiba-inu-dog-on-yellow-redhaired-japanese-dog-smile-portrait-picture-id1197121742?k=20&m=1197121742&s=612x612&w=0&h=HX4DoFCL1RDlegj3P9w4O2H64sgwKvMP0VSki7sBEtE="
+                        alt="附件1" style="width: 50%;" />
                 </div>
             </div>
         </section>

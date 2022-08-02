@@ -17,7 +17,7 @@
         color: var(--color-darkkhaki);
     }
 }
-
+//超鏈接，沒有底線，字體為黑色
 .no_style {
     text-decoration: none;
     color: #2a2a2a;
@@ -27,10 +27,59 @@
         color: #2a2a2a;
     }
 }
+//棕色框，棕色背景標題
+.darkBorderCard {
+    margin-top: 1rem;
+    border: 2px solid var(--color-darkkhaki);
+    border-radius: var(--borderRadius);
+    padding: 5px;
+    margin-bottom: .5rem;
+
+    .darkBorderCardTitle {
+        text-align: center;
+        margin-bottom: 1rem;
+        background-color: var(--color-darkkhaki);
+        color: var(--color-snow);
+
+        span {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+}
+// 灰色標題背景
+.lightGrayBack{
+    background-color: var(--color-border);
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+//表格底下的“使用者資訊”
+.userCard_info {
+    text-align: right;
+    margin-top: .75rem;
+
+    .user_info {
+        font-size: 10pt;
+        color: #AAA;
+        font-style: italic;
+    }
+}
+//內容分開
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
 @media (min-width: 765px) {
     .pageHeader {
         .pageHeaderTitle {
             font-size: var(--font-size-m);
+        }
+    }
+    .darkBorderCard {
+        .darkBorderCardTitle {
+            span {
+                font-size:1.25rem;
+            }
         }
     }
 }

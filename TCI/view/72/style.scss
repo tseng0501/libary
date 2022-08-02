@@ -1,0 +1,165 @@
+#page_invoiceQuery {
+    .queryContentAll {
+        border: 3px solid var(--color-darkkhaki);
+        border-radius: var(--borderRadius);
+        padding: 5px;
+
+        .tci-form-control {
+            background-color: var(--color-whitesmoke);
+        }
+
+        .queryData {
+            text-align: end;
+        }
+
+        .queryRow {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-form-control {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .tci-input-group {
+                width: 48%;
+            }
+        }
+    }
+}
+
+#page_invoicePaper {
+    .invoiceTable{
+        overflow-x: auto;
+        .tableScroll{
+            width: 900px;
+        }
+    }
+    .fileBox {
+        border: 2px solid var(--color-rosybrown);
+        border-radius: var(--borderRadius);
+        padding: .5rem;
+        margin-top: 1rem;
+
+        .fileContentNo {
+            width: 40%;
+        }
+    }
+
+    .invoiceContainer {
+        margin-top: 1rem;
+
+        .invoiceTitle {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (min-width:765px) {
+    #page_invoiceQuery {
+        .query {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-input-group {
+                width: 48%;
+
+                &.mark {
+                    width: 100%;
+                }
+            }
+        }
+
+        .queryContentAll {
+            .queryRow {
+                .tci-input-group {
+                    width: 32%;
+                }
+            }
+        }
+    }
+
+    #page_invoicePaper {
+        .invoiceTable{
+            overflow-x: auto;
+            .tableScroll{
+                width: 100%;
+            }
+        }
+        .fileBox {
+            .illustrate {
+                .fileIllustrate {
+                    display: flex;
+                    .tci-input-group{
+                        margin-bottom: .5rem;
+                    }
+                }
+            }
+        }
+        .btnGroups {
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+
+        .invoicePaperQuery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            .tci-bs-input-group {
+                width: 48%;
+                margin-right: .5rem;
+            }
+        }
+
+        .invoiceContainer {
+            .invoiceTitle {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    #page_invoiceQuery {
+        .queryContentAll {
+            .queryRow {
+                .tci-input-group {
+                    width: 15%;
+                }
+            }
+        }
+    }
+
+    #page_invoicePaper {
+        .invoicePaperQuery {
+            justify-content: space-between;
+
+            .tci-bs-input-group {
+                width: 30%;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    #page_invoiceQuery {
+        .queryContentAll {
+            .queryRow {
+                justify-content: flex-start;
+
+                .tci-input-group {
+                    width: 12%;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+}

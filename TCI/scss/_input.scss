@@ -167,6 +167,7 @@
     vertical-align: middle;
     background: var(--color-snow);
     border: 1px solid #ced4da;
+    border-radius: var(--borderRadius);
 }
 
 /* form starting stylings ------------------------------- */
@@ -252,7 +253,7 @@
 //最後
 .tci-bs-input-group>.tci-bs-custom-select:not(:first-child),
 .tci-bs-input-group>.tci-bs-form-control:not(:first-child),
-.tci-bs-input-group>.tci-bs-input-group-append>.tci-btn {
+.tci-bs-input-group>.tci-bs-input-group-append>.tci-btn{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -261,7 +262,6 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-
 .tci-bs-input-group:not(.has-validation)>.tci-bs-form-control:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;

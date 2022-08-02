@@ -1,0 +1,27 @@
+#page_createAlternative {
+    .createAlternative_query {
+        .tci-input-group {
+            &.bom {
+                button {
+                    width: 100%;
+                    margin-top: .5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_createAlternative {
+        .createAlternative_query {
+            .tci-input-group {
+                &.bom {
+                    button {
+                        width: auto;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

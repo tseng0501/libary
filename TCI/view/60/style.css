@@ -18,7 +18,7 @@
 }
 #page_createPurchaseOrder .tci-field-value,
 #page_createPurchaseOrder .tci-form-control {
-  background-color: #EFEFEF;
+  background-color: var(--color-whitesmoke);
 }
 #page_createPurchaseOrder .content_label {
   height: 300px;

@@ -2,7 +2,7 @@
 
     .tci-field-value,
     .tci-form-control {
-        background-color: #EFEFEF;
+        background-color: var(--color-whitesmoke);
     }
 
     .form {
@@ -59,16 +59,16 @@
                     flex-wrap: wrap;
 
                     .tci-field-label {
-                        width: 40%;
+                        width: 25%;
                     }
 
                     .tci-field-value {
-                        width: 60%;
+                        width: 75%;
                     }
 
                     .dateTime {
                         display: flex;
-                        width: 60%;
+                        width: 75%;
                         flex-wrap: nowrap;
                         .tci-input-group {
                             width: auto;
@@ -84,10 +84,10 @@
                     }
                 }
                 .table_content{
-                    width: 60%;
+                    width: 75%;
                 }
                 .attachments{
-                    width: 60%;
+                    width: 75%;
                     .tci-bs-input-group{
                         flex-wrap: nowrap;
                         .tci-field-value{

@@ -12,27 +12,9 @@
   font-style: italic;
 }
 
-.darkBorderCard {
-  margin-top: 1rem;
-  border: 2px solid var(--color-darkkhaki);
-  border-radius: var(--borderRadius);
-  padding: 5px;
-  margin-bottom: 0.5rem;
-}
-.darkBorderCard .darkBorderCardTitle {
-  text-align: center;
-  margin-bottom: 1rem;
-  background-color: var(--color-darkkhaki);
-  color: var(--color-snow);
-}
-.darkBorderCard .darkBorderCardTitle span {
-  font-weight: bold;
-  font-size: 1.25rem;
-}
-
 #page_documentQuery .tci-field-value,
 #page_documentQuery .tci-form-control {
-  background-color: #EFEFEF;
+  background-color: var(--color-whitesmoke);
 }
 #page_documentQuery .requester .box {
   border-radius: var(--borderRadius);
@@ -176,12 +158,6 @@
   width: 49%;
   padding: 0.2rem;
 }
-#page_documentQuery .descriptionBox .descriptionBoxContent .dropdown.open {
-  width: 100%;
-}
-#page_documentQuery .descriptionBox .descriptionBoxContent .dropdown.open button {
-  width: 100%;
-}
 #page_documentQuery .detailsBox .detailsBox_rt {
   color: #fff;
   padding: 0 6px;
@@ -248,6 +224,9 @@
   #page_documentQuery .query .tci-input-group {
     width: 48%;
   }
+  #page_documentQuery .query .tci-input-group.content {
+    width: 100%;
+  }
   #page_documentQuery .query .tci-input-group.company {
     width: 100%;
   }
@@ -282,7 +261,7 @@
     text-align: center;
   }
   #page_documentQuery .editDocuments .editDocuments_lists .tci-field {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   #page_documentQuery .editDocuments .editDocuments_lists .tci-field .tci-field-label {
     width: 40%;
@@ -318,35 +297,14 @@
     margin: auto;
     margin-top: 1rem;
   }
-  #page_documentQuery .descriptionBox .descriptionBoxContent {
+  #page_documentQuery .descriptionBox .descriptionBoxContent .descriptionBoxContent_text {
+    margin: auto;
+    width: 60%;
+  }
+  #page_documentQuery .descriptionBox .descriptionBoxContent .descriptionBox_icon {
     display: flex;
-    justify-content: center;
-  }
-  #page_documentQuery .descriptionBox .descriptionBoxContent .left {
-    margin-right: 1rem;
-  }
-  #page_documentQuery .descriptionBox .descriptionBoxContent .left .dropdown button {
-    width: 100%;
-  }
-  #page_documentQuery .descriptionBox .descriptionBoxContent .left .tci-input-group {
-    width: 100%;
-  }
-  #page_documentQuery .descriptionBox .descriptionBoxContent .right {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-  }
-  #page_documentQuery .descriptionBox .descriptionBoxContent .right .dropdown button {
-    width: 100%;
-  }
-  #page_documentQuery .descriptionBox .descriptionBoxContent .right .dropdown.check {
-    width: 40%;
-  }
-  #page_documentQuery .descriptionBox .descriptionBoxContent .right .dropdown.open {
-    width: 100%;
-  }
-  #page_documentQuery .descriptionBox .descriptionBoxContent .right .dropdown.open button {
-    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
   }
   #page_documentQuery .detailsBox .pageForm .form01 {
     display: flex;
@@ -397,7 +355,7 @@
     width: 33%;
   }
   #page_documentQuery .query .tci-input-group.company {
-    width: 65%;
+    width: 100%;
   }
   #page_documentQuery .requester {
     display: flex;

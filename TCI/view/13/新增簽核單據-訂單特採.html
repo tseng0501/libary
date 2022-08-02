@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>新增簽核單據-訂單特採</title>
+</head>
+
+<body>
+    <div class="container-fluid tci-mb-3" id="page_createDocument">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle tci-ml-2"><b>新增 簽核單據</b></span>
+        </div>
+        <div class="darkBorderCard">
+            <div class="darkBorderCardTitle">
+                <span>專用原物料特採申請單</span>
+            </div>
+            <div class="createDocumentTable">
+                <div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">特採類別:</span>
+                        </div>
+                        <div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="orderRadios" id="orderRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="orderRadios1">
+                                    訂單特採
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="orderRadios" id="orderRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="orderRadios2">
+                                    非訂單特採 (非業務單位使用)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">申請單號:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">項目:</span>
+                        </div>
+                        <div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="itemRadios" id="itemRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="itemRadios1">
+                                    原料
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="itemRadios" id="itemRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="itemRadios2">
+                                    包材
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">申請日期:</span>
+                        </div>
+                        <div class="tci-field-value">2022/7/29</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">預計交貨日期<br>(請再往前回推7個工作天):</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">申請部門:</span>
+                        </div>
+                        <div class="tci-field-value">
+                            <button class="tci-btn search_btn" style="padding: 0 .5rem;">更改</button>
+                            <div style="margin: auto .5rem;">軟體研發組</div>
+                        </div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">指定採購部經辦:</span>
+                        </div>
+                        <select class="tci-field-value">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">預估明細編號:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">客戶編號:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">客戶名稱:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">內部訂單號(專案編號):</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">專案名稱:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" disabled
+                            style="background-color: #ddd;border: 1px solid rgb(161, 153, 153);" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">申請原因:</span>
+                        </div>
+                        <div style="width: 60%;">
+                            <select class="tci-field-value" style="width: 100%;">
+                                <option selected>請選擇...</option>
+                                <option value="1">訂單已回簽，BOM表未確認</option>
+                                <option value="2">其他</option>
+                            </select>
+                            <div class="tci-field" style="flex-wrap:wrap">
+                                <div class="tci-field-label">
+                                    <span class="tci-field-text text-left" style="width: 100%;"><b
+                                            style="color: red;">*</b>訂單號碼:</span>
+                                </div>
+                                <input type="text" class="tci-field-value" style="width: 100%;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">工廠別:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">輸入料號:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">產品名稱:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" disabled
+                            style="background-color: #ddd;border: 1px solid rgb(161, 153, 153);" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">訂單數量:</span>
+                        </div>
+                        <div class="tci-field-value" style="justify-content: space-between;">
+                            <div style="margin: auto .5rem;">軟體研發組</div>
+                            <button class="tci-btn gray_btn" style="padding: 0 1rem;">顯示資料</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnGroups" style="text-align: right;">
+                    <button class="tci-btn search_btn">全部清除</button>
+                </div>
+            </div>
+        </div>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
