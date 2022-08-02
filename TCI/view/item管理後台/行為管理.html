@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./tci-all.css">
     <title>行為管理</title>
 </head>
 
 <body>
-    <div class="container-fluid mb-3" id="page_BehaviorTemplate">
-        <div class="tci-text-center pageHeader">
-            <span class="pageHeaderTitle ml-2"><b>行為管理</span></b>
+    <div class="container-fluid tci-mb-3" id="page_BehaviorTemplate">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle tci-ml-2"><b>行為管理</span></b>
         </div>
         <section class="behaviorTemplate_query">
             <div class="behaviorTemplate_flex">
                 <div class="tci-field">
                     <div class="tci-field-label">
-                        <span class="tci-field-text text-left">模板名稱：</span>
+                        <span class="tci-field-text text-left">模版名稱：</span>
                     </div>
                     <select class="tci-field-value mr-2">
-                        <option selected>Choose...</option>
+                        <option selected>All</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="behaviorTemplate_btn">
                     <button class="tci-btn tci-btn-darkkhaki" data-toggle="modal"
-                        data-target="#addbehaviorTemplate">新增樣板</button>
+                        data-target="#addbehaviorTemplate">新增樣版</button>
                 </div>
             </div>
         </section>
@@ -49,7 +49,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>公務車</td>
+                            <td>公務車租借</td>
                             <td>
                                 <button class="tci-btn table_icon" data-toggle="modal" data-target="#behaviordataIcon">
                                     <i class="fa-solid fa-table"></i>
@@ -77,27 +77,19 @@
                         <button class="tci-btn save_btn">全部儲存</button>
                     </div>
                     <div class="behaviorTemplate_contenttitle">
-                        <span class="pl-2">公務車</span>
+                        <span class="pl-2">公務車租借</span>
                     </div>
                     <div class="behaviorTemplate_table">
                         <table class="table text-center table-bordered">
                             <thead>
                                 <tr>
-                                    <th>欄位名稱</th>
-                                    <th>型態</th>
-                                    <th></th>
+                                    <th>行為狀態</th>
+                                    <th style="width: 70px"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><input type="text" style="width: 100%;" class="tci-field-value" value="公務車名稱" />
-                                    </td>
-                                    <td>
-                                        <select style="margin: auto;width: 100%;" class="tci-field-value">
-                                            <option value="">char</option>
-                                            <option value="">int</option>
-                                            <option value="">...</option>
-                                        </select>
+                                    <td><input type="text" style="width: 100%;" class="tci-field-value" value="公務車出租" />
                                     </td>
                                     <td>
                                         <button class="tci-btn table_icon" data-toggle="modal" data-target="#deleteTable">
@@ -106,14 +98,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" style="width:100%;" class="tci-field-value" value="車型" />
-                                    </td>
-                                    <td>
-                                        <select style="margin: auto;width: 100%;" class="tci-field-value">
-                                            <option value="">char</option>
-                                            <option value="">int</option>
-                                            <option value="">...</option>
-                                        </select>
+                                    <td><input type="text" style="width:100%;" class="tci-field-value" value="公務車歸還" />
                                     </td>
                                     <td>
                                         <button class="tci-btn table_icon" data-toggle="modal" data-target="#deleteTable">
@@ -138,7 +123,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addbehaviorTemplateLabel">新增行為模板名稱</h5>
+                    <h5 class="modal-title" id="addbehaviorTemplateLabel">新增行為模版名稱</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -161,7 +146,7 @@
     <!--All behaviordataIcon -->
     <div class="modal fade" id="behaviordataIcon" tabindex="-1" role="dialog" aria-labelledby="behaviordataIconLabel"
         aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="behaviordataIconLabel">內容</h5>
@@ -174,31 +159,23 @@
                         <div class="tci-field-label">
                             <span class="tci-field-text text-left">名稱:</span>
                         </div>
-                        <input type="text" class="tci-field-value" />
+                        <div class="tci-field-value">公務車租借</div>
                     </div>
                     <hr>
                     <div style="text-align: right;">
-                        <button class="tci-btn tci-btn-darkkhaki">新增欄位</button>
+                        <button class="tci-btn tci-btn-darkkhaki">新增狀態</button>
                     </div>
                     <div style="margin-top: 1rem;">
                         <table class="table text-center">
                             <thead>
                                 <tr>
-                                    <th>欄位名稱</th>
-                                    <th>型態</th>
-                                    <th></th>
+                                    <th>行為狀態</th>
+                                    <th style="width: 70px"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><input type="text" style="width: 100%;" class="tci-field-value" value="公務車名稱" />
-                                    </td>
-                                    <td>
-                                        <select style="margin: auto;width: 100%;" class="tci-field-value">
-                                            <option value="">char</option>
-                                            <option value="">int</option>
-                                            <option value="">...</option>
-                                        </select>
+                                    <td><input type="text" style="width: 100%;" class="tci-field-value" value="公務車出租" />
                                     </td>
                                     <td>
                                         <button class="tci-btn table_icon"
@@ -208,14 +185,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" style="width:100%;" class="tci-field-value" value="車型" />
-                                    </td>
-                                    <td>
-                                        <select style="margin: auto;width: 100%;" class="tci-field-value">
-                                            <option value="">char</option>
-                                            <option value="">int</option>
-                                            <option value="">...</option>
-                                        </select>
+                                    <td><input type="text" style="width:100%;" class="tci-field-value" value="公務車歸還" />
                                     </td>
                                     <td>
                                         <button class="tci-btn table_icon"

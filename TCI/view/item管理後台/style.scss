@@ -204,6 +204,11 @@
 
             .table {
                 width: 700px;
+                thead {
+                    background-color: var(--color-darkkhaki);
+                    color: var(--color-snow);
+                }
+
             }
         }
     }

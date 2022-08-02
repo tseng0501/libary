@@ -132,6 +132,10 @@
 #page_ItemTemplate .itemTemplate_content .table_content .table {
   width: 700px;
 }
+#page_ItemTemplate .itemTemplate_content .table_content .table thead {
+  background-color: var(--color-darkkhaki);
+  color: var(--color-snow);
+}
 
 @media (min-width: 765px) {
   #page_DetailTemplate .detailTemplate_query .detailTemplate_flex {
