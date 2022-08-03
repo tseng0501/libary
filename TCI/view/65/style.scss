@@ -1,4 +1,11 @@
 #page_generalInvoice {
+    .tci-input-group{
+        .tci-form-control{
+            &.gray{
+            background-color: var(--color-whitesmoke);
+            }
+        }
+    }
     .btnIconGroups {
         button {
             width: 30px;
@@ -16,12 +23,6 @@
         }
     }
 
-    .orderTableBox {
-        border: 3px solid var(--color-rosybrown);
-        border-radius: var(--borderRadius);
-        margin-top: .5rem;
-    }
-
     .addTableBox {
         border: 1px solid var(--color-rosybrown);
         border-radius: var(--borderRadius);
@@ -29,8 +30,6 @@
 
         .addTable {
             display: flex;
-            border: 3px solid var(--color-rosybrown);
-            border-radius: var(--borderRadius);
             margin: 5px;
 
             .addTableNo {
@@ -46,6 +45,11 @@
                     font-weight: bold;
                     color: var(--color-snow);
                 }
+            }
+            .addTableContent{
+                padding: 5px;
+                border: 3px solid var(--color-rosybrown);
+                border-radius: var(--borderRadius);
             }
         }
 

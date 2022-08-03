@@ -1,3 +1,6 @@
+#page_generalInvoice .tci-input-group .tci-form-control.gray {
+  background-color: var(--color-whitesmoke);
+}
 #page_generalInvoice .btnIconGroups button {
   width: 30px;
 }
@@ -10,11 +13,6 @@
 #page_generalInvoice .fileBox .fileContentNo {
   width: 40%;
 }
-#page_generalInvoice .orderTableBox {
-  border: 3px solid var(--color-rosybrown);
-  border-radius: var(--borderRadius);
-  margin-top: 0.5rem;
-}
 #page_generalInvoice .addTableBox {
   border: 1px solid var(--color-rosybrown);
   border-radius: var(--borderRadius);
@@ -22,8 +20,6 @@
 }
 #page_generalInvoice .addTableBox .addTable {
   display: flex;
-  border: 3px solid var(--color-rosybrown);
-  border-radius: var(--borderRadius);
   margin: 5px;
 }
 #page_generalInvoice .addTableBox .addTable .addTableNo {
@@ -38,6 +34,11 @@
   width: 100%;
   font-weight: bold;
   color: var(--color-snow);
+}
+#page_generalInvoice .addTableBox .addTable .addTableContent {
+  padding: 5px;
+  border: 3px solid var(--color-rosybrown);
+  border-radius: var(--borderRadius);
 }
 #page_generalInvoice .addTableBox .addTableFooter {
   border: 3px solid var(--color-rosybrown);

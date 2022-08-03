@@ -20,3 +20,5 @@
 <i class="fa-solid fa-pen"></i>
 <i class="fa-solid fa-xmark"></i>
 <i class="fa-solid fa-file-invoice"></i>
+<i class="fa-solid fa-circle-question"></i>
+<i class="fa-solid fa-copy"></i>

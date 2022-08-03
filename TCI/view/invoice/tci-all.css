@@ -53,7 +53,6 @@
   border-left: 5px solid var(--color-darkkhaki);
   box-shadow: var(--borderShadow);
   border-radius: var(--borderRadius);
-  padding: 0.5rem 0;
 }
 .pageHeader .pageHeaderTitle {
   font-size: var(--font-size-xs);
@@ -1127,9 +1126,6 @@ table {
 }
 
 .tci-table-bordered {
-  border: 1px solid #dee2e6;
-}
-.tci-table-bordered td, .tci-table-bordered th {
   border: 1px solid #dee2e6;
 }
 

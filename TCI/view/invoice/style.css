@@ -1,0 +1,40 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#page_invoice .tableContent {
+  overflow-x: auto;
+}
+#page_invoice .tableContent .tableScroll {
+  width: 700px;
+}
+#page_invoice .invoice_header {
+  display: flex;
+  justify-content: center;
+}
+#page_invoice .invoice_header .invoice_header_img {
+  margin-right: 0.5rem;
+}
+#page_invoice .invoice_header .invoice_header_img img {
+  width: 50px;
+}
+#page_invoice .invoice_header .invoice_header_text {
+  display: flex;
+  align-items: center;
+}
+#page_invoice .invoice_header .invoice_header_text span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+#page_invoice .tci-table td, #page_invoice .tci-table th {
+  border: 1px solid #dee2e6;
+}
+
+@media (min-width: 765px) {
+  #page_invoice .tableContent {
+    overflow-x: auto;
+  }
+  #page_invoice .tableContent .tableScroll {
+    width: 100%;
+  }
+}

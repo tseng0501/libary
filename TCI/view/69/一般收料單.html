@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>一般收料單</title>
+</head>
+
+<body>
+    <div class="container-fluid tci-mb-3 conditional_page" id="page_goodsReceipt">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle tci-ml-2"><b>一般收料單</b></span>
+        </div>
+        <section class="goodsReceiptQuery tci-mt-4">
+            <div class="goodsReceiptQueryTitle">
+                <span>單據號碼 EIP No.</span>
+            </div>
+            <div class="tci-bs-input-group tci-mb-2 no">
+                <div class="tci-bs-input-group-prepend">
+                    <span class="tci-bs-input-group-text">#</span>
+                </div>
+                <select class="tci-bs-custom-select">
+                    <option selected>#</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="tci-bs-input-group tci-mb-2">
+                <div class="tci-bs-input-group-prepend">
+                    <span class="tci-bs-input-group-text">部門別</span>
+                </div>
+                <div class="tci-bs-custom-select">
+                    <div class="">軟體研發部</div>
+                </div>
+                <!-- 按下申請部門 icon ，跳出 modal 選擇部門 -->
+                <button class="tci-icon gray_btn" style="width: 40px;"><i class="fa-solid fa-building"></i></button>
+            </div>
+            <div class="tci-bs-input-group tci-mb-2">
+                <div class="tci-bs-input-group-prepend">
+                    <span class="tci-bs-input-group-text">業務分組</span>
+                </div>
+                <select class="tci-bs-custom-select">
+                    <option selected>Choose...</option>
+                    <option value="1">M02- HEDY.TSENG 曾莞婷</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="tci-bs-input-group tci-mb-2">
+                <div class="tci-bs-input-group-prepend">
+                    <span class="tci-bs-input-group-text">代工廠生管會簽</span>
+                </div>
+                <select class="tci-bs-custom-select">
+                    <option selected>Choose...</option>
+                    <option value="1">收料至代工廠時選擇</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </section>
+        <section class="goodsReceiptContent">
+            <div class="addTable">
+                <div class="addTableNo"><span>1</span></div>
+                <div class="addTableContent">
+                    <div class="tci-input-group tci-mb-2 w100">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">料號:</span>
+                        </div>
+                        <div class="input_part">
+                            <div class="tci-bs-input-group">
+                                <div class="tci-bs-input-group-prepend">
+                                    <span class="tci-bs-input-group-text">廠別:</span>
+                                </div>
+                                <select class="tci-bs-custom-select">
+                                    <option selected>Choose...</option>
+                                    <option value="1">8505磐石生產s中心</option>
+                                    <option value="2">V505磐石生產中心虛擬廠</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="tci-bs-input-group input_partnumber">
+                                <div class="tci-bs-input-group-prepend">
+                                    <span class="tci-bs-input-group-text">料號:</span>
+                                </div>
+                                <input type="text" class="tci-bs-custom-select" />
+                                <button class="tci-icon search_btn" style="width:40px"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">品名:</span>
+                        </div>
+                        <input type="text" class="tci-form-control gray" disabled />
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">單位:</span>
+                        </div>
+                        <input type="text" class="tci-form-control gray" disabled />
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">單價:</span>
+                        </div>
+                        <input type="text" class="tci-form-control gray" disabled />
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">請領數:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">倉庫:</span>
+                        </div>
+                        <select class="tci-bs-custom-select">
+                            <option>Choose...</option>
+                            <option value="1" selected>400156嘉里大榮物流股份有限公司-岡山物流中心</option>
+                            <option value="2">V505磐石生產中心虛擬廠</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="tci-input-group tci-mb-2 w60">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">異動分類:</span>
+                        </div>
+                        <div class="input_classification">
+                            <div class="tci-bs-input-group">
+                                <div class="tci-bs-input-group-prepend">
+                                    <span class="tci-bs-input-group-text">分類:</span>
+                                </div>
+                                <select class="tci-bs-custom-select">
+                                    <option selected>Choose...</option>
+                                    <option value="1">8505磐石生產s中心</option>
+                                    <option value="2">V505磐石生產中心虛擬廠</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="tci-bs-input-group">
+                                <div class="tci-bs-input-group-prepend">
+                                    <span class="tci-bs-input-group-text">原因:</span>
+                                </div>
+                                <select class="tci-bs-custom-select">
+                                    <option selected>Choose...</option>
+                                    <option value="1">8505磐石生產s中心</option>
+                                    <option value="2">V505磐石生產中心虛擬廠</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="goodsReceiptOther">
+            <div class="total">
+                <span>合計金額:</span>
+                <span class="num">0</span>
+            </div>
+            <div class="mark">
+                <div class="tci-input-group">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">收料備註:</span>
+                    </div>
+                    <textarea class="tci-form-control"></textarea>
+                </div>
+            </div>
+            <div class="btnGroups" style="text-align: right;">
+                <button class="tci-btn save_btn">確認資料，儲存單據</button>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

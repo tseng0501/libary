@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>加班申請單</title>
+</head>
+
+<body>
+    <div class="container-fluid tci-mb-3" id="page_overtimeApplication">
+        <div class="pageHeader tci-mb-4">
+            <span class="pageHeaderTitle tci-ml-2"><b>加班申請單</b></span>
+        </div>
+        <section class="overtimeApplicationQuery">
+            <div class="tci-input-group tci-mb-3 date">
+                <div class="tci-input-group-prepend">
+                    <span class="tci-input-group-text">加班日期:</span>
+                </div>
+                <input type="text" class="tci-form-control" />
+                <span style="font-size: 1.25rem;margin:auto .5rem">~</span>
+                <input type="text" class="tci-form-control" />
+                <button class="tci-btn search_btn">查詢</button>
+            </div>
+        </section>
+        <section class="applicationAddTableBox">
+            <div class="addTable">
+                <div class="addTableNo"><span>1</span></div>
+                <div class="addTableContent">
+                    <div class="tci-input-group tci-mb-2 name">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">員工資訊:</span>
+                        </div>
+                        <div class="tci-form-control gray">軟體研發組-未分組 曾莞婷-HEDY.TSENG</div>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">班別日期:</span>
+                        </div>
+                        <button class="tci-btn tci-btn-darkkhaki" data-toggle="modal"
+                            data-target="#btnClassDateModal">2022/08/01(一)</button>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">班別類型:</span>
+                        </div>
+                        <div class="tci-form-control gray">工作日 0</div>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">班別時間:</span>
+                        </div>
+                        <div class="tci-form-control gray">09:00~18:00 </div>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">班別間休:</span>
+                        </div>
+                        <div class="tci-form-control gray">12:30~13:30 </div>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">簽到記錄:</span>
+                        </div>
+                        <button class="tci-btn darkerror" data-toggle="modal"
+                            data-target="#btnAbnormalModal">刷卡異常</button>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">加班時間:</span>
+                        </div>
+                        <div class="tci-form-control gray">12:30~13:30 </div>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">加班間休:</span>
+                        </div>
+                        <div class="tci-form-control gray">12:30~13:30 </div>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">加班時數:</span>
+                        </div>
+                        <div class="tci-form-control gray">5</div>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">補償方式:</span>
+                        </div>
+                        <select class="tci-bs-custom-select">
+                            <option>Choose...</option>
+                            <option value="1" selected>補休(天災)</option>
+                            <option value="2">給薪(天災)</option>
+                            <option value="3">補休</option>
+                        </select>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">間休時值班:</span>
+                        </div>
+                        <div class="tci-form-control">
+                            <input type="checkbox" style="width: 20px;height:15px" />
+                        </div>
+                    </div>
+                    <div class="tci-input-group tci-mb-2">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">本月已申請(含在途):</span>
+                        </div>
+                        <div class="tci-form-control gray">5</div>
+                    </div>
+                    <div style="width: 100%;">
+                        <button class="tci-icon darkerror"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="applicationMark">
+            <div class="tci-input-group">
+                <div class="tci-input-group-prepend">
+                    <span class="tci-input-group-text">加班事由:</span>
+                </div>
+                <textarea class="tci-form-control"></textarea>
+            </div>
+            <div class="btnGroups" style="text-align: right;margin-top: 1rem;">
+                <button class="tci-btn save_btn">儲存單據</button>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <!-- 班別日期 btnClassDateModal-->
+    <div class="modal fade" id="btnClassDateModal" tabindex="-1" aria-labelledby="btnClassDateModalLabel"
+        aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="btnClassDateModalLabel">考勤記錄</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">員工資訊:</span>
+                        </div>
+                        <div class="tci-field-value" style="background-color:#efefef;">2206A0011-大江戰士-HEDY.TSENG(曾莞婷)
+                        </div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">班別日期:</span>
+                        </div>
+                        <div class="tci-field-value" style="background-color:#efefef;">2022/08/02</div>
+                    </div>
+                    <div>
+                        <div class="darkBorderCard attendance">
+                            <div class="darkBorderCardTitle">
+                                <span>考勤單據記錄</span>
+                            </div>
+                            <div style="text-align: center;">
+                                <span>沒有考勤單據資料</span>
+                            </div>
+                        </div>
+                        <div class="darkBorderCard forgotPunch">
+                            <div class="darkBorderCardTitle">
+                                <span>忘打卡補登記錄</span>
+                            </div>
+                            <div style="text-align: center;">
+                                <span>沒有忘打卡補登記錄</span>
+                            </div>
+                        </div>
+                        <div class="darkBorderCard businessTrip">
+                            <div class="darkBorderCardTitle">
+                                <span>出差申請單</span>
+                            </div>
+                            <div>
+                                <table class="table table-bordered">
+                                    <thead style="text-align: center;" class="save_btn">
+                                        <tr>
+                                            <th>單據編號</th>
+                                            <th>經辦人</th>
+                                            <th>出差日期</th>
+                                            <th>地點</th>
+                                            <th>出差人</th>
+                                            <th>同行人員</th>
+                                            <th>延後出差結束日</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="text-align: center;">
+                                            <td colspan="7">沒有出差申請單資料</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 異常刷卡 btnAbnormalModal-->
+    <div class="modal fade" id="btnAbnormalModal" tabindex="-1" aria-labelledby="btnAbnormalModalLabel"
+        aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="btnAbnormalModalLabel">刷卡記錄</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">日期:</span>
+                        </div>
+                        <div class="tci-field-value" style="background-color:#efefef;">2022/08/02</div>
+                    </div>
+                    <div>
+                        <table class="table table-bordered">
+                            <thead style="text-align: center;" class="save_btn">
+                                <tr>
+                                    <th>員工編號</th>
+                                    <th>英文名</th>
+                                    <th>部門別</th>
+                                    <th>記錄</th>
+                                    <th>地點</th>
+                                </tr>
+                            </thead>
+                            <tbody style="text-align: center;">
+                                <tr>
+                                    <td colspan="7">沒有刷卡記錄</td>
+                                </tr>
+                                <tr>
+                                    <td>2206A011</td>
+                                    <td>HEDY.TSENG</td>
+                                    <td>軟體研發組</td>
+                                    <td>2022/8/3 08:40</td>
+                                    <td>SHB-FACE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
+                    <button type="button" class="tci-btn gray_btn">上一頁</button>
+                    <button type="button" class="tci-btn save_btn">匯出至 Excel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- hedy 有兩個 modal 使用 bs4 套件 -->

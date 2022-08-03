@@ -1,0 +1,47 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#page_invoice {
+    .tableContent{
+        overflow-x: auto;
+        .tableScroll{
+            width: 700px;
+        }
+    }
+    .invoice_header {
+        display: flex;
+        justify-content: center;
+
+        .invoice_header_img {
+            margin-right: .5rem;
+            img {
+                width: 50px;
+            }
+        }
+
+        .invoice_header_text {
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .tci-table{
+        td,th{
+          border: 1px solid #dee2e6;
+        }
+      }
+}
+
+@media (min-width:765px) {
+    #page_invoice {
+        .tableContent{
+            overflow-x: auto;
+            .tableScroll{
+                width: 100%
+            }
+        }
+    }
+}

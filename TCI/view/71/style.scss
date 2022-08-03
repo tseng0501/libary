@@ -1,0 +1,49 @@
+#page_inventoryTransfer {
+    .tci-table th,
+        .tci-table td {
+            padding:.5rem;
+        }
+    .tableScroll {
+        overflow-x: auto;
+        .tci-table{
+            width: 900px;
+        }
+    }
+}
+
+@media (min-width:765px) {
+    #page_inventoryTransfer {
+        .tableScroll {
+            overflow-x: auto;
+            .tci-table{
+                width: 100%;
+            }
+        }
+        .inventoryTransferQuery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-bs-input-group {
+                width: 33%;
+            }
+        }
+
+        .inventoryTransferContent {
+            .query {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-bs-input-group {
+                    width: 50%;
+
+                    &.w100 {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}

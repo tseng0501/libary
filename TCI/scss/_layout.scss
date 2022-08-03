@@ -11,12 +11,14 @@
     border-left: 5px solid var(--color-darkkhaki);
     box-shadow: var(--borderShadow);
     border-radius: var(--borderRadius);
+    padding: .5rem 0;
 
     .pageHeaderTitle {
         font-size: var(--font-size-xs);
         color: var(--color-darkkhaki);
     }
 }
+
 //超鏈接，沒有底線，字體為黑色
 .no_style {
     text-decoration: none;
@@ -27,6 +29,7 @@
         color: #2a2a2a;
     }
 }
+
 //棕色框，棕色背景標題
 .darkBorderCard {
     margin-top: 1rem;
@@ -47,12 +50,14 @@
         }
     }
 }
+
 // 灰色標題背景
-.lightGrayBack{
+.lightGrayBack {
     background-color: var(--color-border);
     font-weight: bold;
     margin-bottom: .5rem;
 }
+
 //表格底下的“使用者資訊”
 .userCard_info {
     text-align: right;
@@ -64,21 +69,50 @@
         font-style: italic;
     }
 }
+
 //內容分開
-.flex_between{
+.flex_between {
     display: flex;
     justify-content: space-between;
 }
+
+// .addTable {
+//     display: flex;
+//     margin: 5px;
+//     .addTableNo {
+//         width: 70px;
+//         background-color: var(--color-rosybrown);
+//         margin-right: .5rem;
+//         text-align: center;
+//         display: flex;
+//         align-items: center;
+//         border-radius: var(--borderRadius);
+//         span {
+//             width: 100%;
+//             font-weight: bold;
+//             color: var(--color-snow);
+//         }
+//     }
+    // .addTableContent{
+    //     padding: 5px;
+    //     border: 3px solid var(--color-rosybrown);
+    //     border-radius: var(--borderRadius);
+    //     .tci-form-control.gray{
+    //         background-color: var(--color-whitesmoke);
+    //     }
+    // }
+// }
 @media (min-width: 765px) {
     .pageHeader {
         .pageHeaderTitle {
             font-size: var(--font-size-m);
         }
     }
+
     .darkBorderCard {
         .darkBorderCardTitle {
             span {
-                font-size:1.25rem;
+                font-size: 1.25rem;
             }
         }
     }
