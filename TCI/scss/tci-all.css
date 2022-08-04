@@ -49,7 +49,7 @@
 }
 
 .pageHeader {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 1.5rem 0;
   border-left: 5px solid var(--color-darkkhaki);
   box-shadow: var(--borderShadow);
   border-radius: var(--borderRadius);
@@ -69,22 +69,47 @@
   color: #2a2a2a;
 }
 
-.darkBorderCard {
-  margin-top: 1rem;
-  border: 2px solid var(--color-darkkhaki);
-  border-radius: var(--borderRadius);
-  padding: 5px;
-  margin-bottom: 0.5rem;
-}
 .darkBorderCard .darkBorderCardTitle {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   background-color: var(--color-darkkhaki);
   color: var(--color-snow);
+  padding: 5px;
+  border-radius: var(--borderRadius);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .darkBorderCard .darkBorderCardTitle span {
   font-weight: bold;
   font-size: 1rem;
+}
+.darkBorderCard .darkBorderCardContent {
+  border: 2px solid var(--color-darkkhaki);
+  border-radius: var(--borderRadius);
+  padding: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.formBox_gray .formBox_title {
+  background-color: var(--color-border);
+  border-radius: var(--borderRadius);
+  font-weight: bold;
+  padding: 2px;
+  margin-bottom: 0.5rem;
+}
+.formBox_gray .formBox_content {
+  border: 3px solid var(--color-whitesmoke);
+  border-radius: var(--borderRadius);
+  padding: 5px;
+  margin-bottom: 0.5rem;
+}
+.formBox_gray .formBox_footer {
+  border: 3px solid var(--color-whitesmoke);
+  border-radius: var(--borderRadius);
+  padding: 5px;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .lightGrayBack {
@@ -1005,12 +1030,17 @@ input[type=radio] {
   position: relative;
   display: block;
   padding-left: 1.25rem;
+  margin-right: 1rem;
+}
+.tci-form-check label {
+  margin-left: 0.5rem;
 }
 
 .tci-form-check-input {
   position: absolute;
-  margin-top: 0.3rem;
   margin-left: -1.25rem;
+  width: 20px;
+  height: 20px;
 }
 
 .tci-form-check-label {
@@ -1020,7 +1050,10 @@ input[type=radio] {
 .tci-form-check-inline {
   display: inline-flex;
   align-items: center;
-  margin-right: 0.75rem;
+  margin-right: 1rem;
+}
+.tci-form-check-inline label {
+  margin-left: 0.5rem;
 }
 
 .tci-text-left {

@@ -1,5 +1,9 @@
 .tci-form-control {
     margin-right: 5px;
+
+    &.checkContent {
+        margin: .5rem 0;
+    }
 }
 @media (min-width: 765px) {
     #page_requisition {

@@ -1,0 +1,53 @@
+#page_leaveVacation .leaveVacationContent .leaveVacationContentTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+#page_leaveVacation .tableScroll {
+  overflow-x: auto;
+}
+#page_leaveVacation .tableScroll .tci-table {
+  width: 990px;
+  text-align: center;
+}
+
+#page_reconfirmLeave .tci-input-group .tci-form-control.gray {
+  background-color: var(--color-whitesmoke);
+}
+
+@media (min-width: 765px) {
+  #page_leaveVacation .tableScroll .tci-table {
+    width: 100%;
+  }
+  #page_reconfirmLeave .reconfirmLeaveContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_reconfirmLeave .reconfirmLeaveContent .tci-input-group {
+    width: 49%;
+  }
+  #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray {
+    width: 100%;
+    color: var(--color-darkred);
+  }
+  #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray .formBox_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray .formBox_content .tci-input-group {
+    width: 33%;
+  }
+  #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray .formBox_footer {
+    color: var(--color-darkred);
+  }
+}
+@media (min-width: 1200px) {
+  #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray .formBox_content {
+    flex-wrap: nowrap;
+  }
+  #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray .formBox_content .tci-input-group {
+    margin-right: 5px;
+  }
+}

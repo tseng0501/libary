@@ -1,7 +1,11 @@
-#page_createPurchaseOrder .mark {
-  padding: 0.5rem;
-  background-color: var(--color-gainsboro);
+#page_createPurchaseOrder .fileBox {
+  border: 2px solid var(--color-rosybrown);
   border-radius: var(--borderRadius);
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+#page_createPurchaseOrder .fileBox .fileContentNo {
+  width: 40%;
 }
 #page_createPurchaseOrder .tci-field-text,
 #page_createPurchaseOrder .tci-input-group-text,
@@ -12,13 +16,7 @@
   border-top: 1px solid gainsboro;
 }
 #page_createPurchaseOrder .query {
-  border: 2px solid var(--color-gainsboro);
-  border-radius: 0.4rem;
   padding: 0.3rem;
-}
-#page_createPurchaseOrder .tci-field-value,
-#page_createPurchaseOrder .tci-form-control {
-  background-color: var(--color-whitesmoke);
 }
 #page_createPurchaseOrder .content_label {
   height: 300px;
@@ -35,13 +33,6 @@
 #page_createPurchaseOrder table th {
   padding: 0.25rem;
 }
-#page_createPurchaseOrder .undeliveredContent .undeliveredContent_title {
-  background-color: #aa9767;
-  text-align: center;
-  padding: 5px;
-  color: #fff;
-  border-radius: 0.25rem;
-}
 #page_createPurchaseOrder .undeliveredContent .table_label {
   display: flex;
   flex-wrap: wrap;
@@ -50,6 +41,7 @@
 }
 #page_createPurchaseOrder .undeliveredContent .table_label .tci-label-group {
   margin-top: 11px;
+  width: 100%;
 }
 #page_createPurchaseOrder .undeliveredContent .table_label .tci-label-group.content {
   width: 100%;
@@ -61,6 +53,12 @@
 @media (min-width: 765px) {
   .pageContent .pageContentTitle {
     font-size: var(--font-size-lg);
+  }
+  #page_createPurchaseOrder .fileBox .illustrate .fileIllustrate {
+    display: flex;
+  }
+  #page_createPurchaseOrder .fileBox .illustrate .fileIllustrate .tci-input-group {
+    margin-bottom: 0.5rem;
   }
   #page_createPurchaseOrder .content .content_row {
     display: flex;
@@ -91,14 +89,6 @@
     font-size: 12px;
     border-bottom: 3px double;
   }
-  #page_createPurchaseOrder .mark .mark_file {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #page_createPurchaseOrder .mark .mark_file .tci-input-group {
-    width: 48%;
-  }
   #page_createPurchaseOrder #supply_satues .table_label {
     display: flex;
     flex-wrap: wrap;
@@ -116,7 +106,10 @@
     height: 95vh;
   }
   #page_createPurchaseOrder .undeliveredContent .table_label .tci-label-group {
-    width: 30%;
+    width: 24%;
+  }
+  #page_createPurchaseOrder .undeliveredContent .table_label .tci-label-group.w100 {
+    width: 100%;
   }
   #page_createPurchaseOrder .undeliveredContent .table_label .tci-label-group.content {
     width: 100%;

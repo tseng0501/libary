@@ -59,16 +59,16 @@
                     flex-wrap: wrap;
 
                     .tci-field-label {
-                        width: 25%;
+                        width: 20%;
                     }
 
                     .tci-field-value {
-                        width: 75%;
+                        width: 80%;
                     }
 
                     .dateTime {
                         display: flex;
-                        width: 75%;
+                        width: 80%;
                         flex-wrap: nowrap;
                         .tci-input-group {
                             width: auto;
@@ -84,10 +84,10 @@
                     }
                 }
                 .table_content{
-                    width: 75%;
+                    width: 80%;
                 }
                 .attachments{
-                    width: 75%;
+                    width: 80%;
                     .tci-bs-input-group{
                         flex-wrap: nowrap;
                         .tci-field-value{

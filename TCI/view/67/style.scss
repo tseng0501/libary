@@ -100,7 +100,7 @@
                 .addTableContent {
                     display: flex;
                     flex-wrap: wrap;
-
+                    justify-content: space-between;
                     .tci-input-group {
                         width: 32%;
                         margin-right: .5rem;

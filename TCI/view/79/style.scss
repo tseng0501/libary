@@ -1,0 +1,32 @@
+#page_coinRequest{
+    .coinList{
+        .tableScroll{
+            overflow-x: auto;
+            .tci-table{
+                width: 990px;
+            }
+        }
+    }
+}
+@media (min-width: 765px) {
+    #page_coinRequest{
+        .coinList{
+            .tableScroll{
+                overflow-x: auto;
+                .tci-table{
+                    width: 100%;
+                }
+            }
+        }
+        .fileBox {
+            .illustrate {
+                .fileIllustrate {
+                    display: flex;
+                    .tci-input-group{
+                        margin-bottom: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}

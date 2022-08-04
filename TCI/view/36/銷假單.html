@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>銷假單</title>
+</head>
+
+<body>
+    <div class="container-fluid tci-mb-3" id="page_leaveVacation">
+        <div class="pageHeader tci-mb-4">
+            <span class="pageHeaderTitle tci-ml-2"><b>銷假單</b></span>
+        </div>
+        <section class="leaveVacationContent">
+            <div class="leaveVacationContentTitle">
+                <span>請選擇想要銷假的請假單</span>
+            </div>
+        </section>
+        <hr>
+        <!-- 沒假單顯示這個 -->
+        <div style="text-align: center;margin: 2rem 0;">
+            <span>沒有可以銷假的請假單</span>
+        </div>
+
+        <!-- 有假單顯示這個 -->
+        <section class="tableScroll tci-mt-2">
+            <table class="tci-table tci-table-bordered">
+                <thead class="save_btn">
+                    <tr>
+                        <th style="width: 16%;white-space: nowrap;">單號</th>
+                        <th style="width: 10%;">假別</th>
+                        <th style="width: 30%;">請假日期</th>
+                        <th style="width: 8%;">時數</th>
+                        <th>事由</th>
+                        <th style="width: 5%;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="white-space: nowrap;">220714-34-A010</td>
+                        <td>生理假</td>
+                        <td>2022/07/13 09:00~2022/07/13 18:00</td>
+                        <td>8</td>
+                        <td>身體不舒服</td>
+                        <td>
+                            <!-- 按下icon 跳到 下一頁 -->
+                            <button class="tci-icon tci-btn-darkkhaki"><i class="fa-solid fa-table"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="white-space: nowrap;">220714-34-A010</td>
+                        <td>生理假</td>
+                        <td>2022/07/13 09:00~2022/07/13 18:00</td>
+                        <td>8</td>
+                        <td>身體不舒服</td>
+                        <td>
+                            <!-- 按下icon 跳到 下一頁 -->
+                            <button class="tci-icon tci-btn-darkkhaki"><i class="fa-solid fa-table"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div style="text-align: right;" class="tci-mt-3">
+            <span style="font-size:10pt; color:#AAA; font-style:italic;">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

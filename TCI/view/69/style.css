@@ -90,6 +90,7 @@
   #page_goodsReceipt .goodsReceiptContent .addTable .addTableContent {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   #page_goodsReceipt .goodsReceiptContent .addTable .addTableContent .tci-input-group {
     width: 23%;

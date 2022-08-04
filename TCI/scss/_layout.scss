@@ -1,3 +1,20 @@
+// body{
+//     box-sizing: border-box;
+//     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+//     font-size: 1rem;
+//     font-weight: 400;
+//     line-height: 1.5;
+//     color: #212529;
+//     text-align: left;
+//     margin: 0;
+// }
+// .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+//     width: 100%;
+//     padding-right: 15px;
+//     padding-left: 15px;
+//     margin-right: auto;
+//     margin-left: auto;
+// }
 //強制不换行、超出顯示省略號
 .fontNoWrap {
     white-space: nowrap;
@@ -7,7 +24,7 @@
 
 //標題
 .pageHeader {
-    margin: .5rem 0;
+    margin: .5rem 0 1.5rem 0;
     border-left: 5px solid var(--color-darkkhaki);
     box-shadow: var(--borderShadow);
     border-radius: var(--borderRadius);
@@ -32,22 +49,59 @@
 
 //棕色框，棕色背景標題
 .darkBorderCard {
-    margin-top: 1rem;
-    border: 2px solid var(--color-darkkhaki);
-    border-radius: var(--borderRadius);
-    padding: 5px;
-    margin-bottom: .5rem;
+    // border: 2px solid var(--color-darkkhaki);
+    // border-radius: var(--borderRadius);
+    // padding: 5px;
 
     .darkBorderCardTitle {
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
         background-color: var(--color-darkkhaki);
         color: var(--color-snow);
+        padding: 5px;
+        border-radius: var(--borderRadius);
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
 
         span {
             font-weight: bold;
             font-size: 1rem;
         }
+    }
+
+    .darkBorderCardContent {
+        border: 2px solid var(--color-darkkhaki);
+        border-radius: var(--borderRadius);
+        padding: 5px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+    }
+}
+
+.formBox_gray {
+    .formBox_title {
+        background-color: var(--color-border);
+        border-radius: var(--borderRadius);
+        font-weight: bold;
+        padding: 2px;
+        margin-bottom: .5rem;
+    }
+
+    .formBox_content {
+        border: 3px solid var(--color-whitesmoke);
+        border-radius: var(--borderRadius);
+        padding: 5px;
+        margin-bottom: .5rem;
+
+    }
+
+    .formBox_footer {
+        border: 3px solid var(--color-whitesmoke);
+        border-radius: var(--borderRadius);
+        padding: 5px;
+        margin-bottom: 1rem;
+        font-weight: bold;
     }
 }
 
@@ -93,14 +147,14 @@
 //             color: var(--color-snow);
 //         }
 //     }
-    // .addTableContent{
-    //     padding: 5px;
-    //     border: 3px solid var(--color-rosybrown);
-    //     border-radius: var(--borderRadius);
-    //     .tci-form-control.gray{
-    //         background-color: var(--color-whitesmoke);
-    //     }
-    // }
+// .addTableContent{
+//     padding: 5px;
+//     border: 3px solid var(--color-rosybrown);
+//     border-radius: var(--borderRadius);
+//     .tci-form-control.gray{
+//         background-color: var(--color-whitesmoke);
+//     }
+// }
 // }
 @media (min-width: 765px) {
     .pageHeader {

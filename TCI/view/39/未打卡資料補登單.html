@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>未打卡資料補登單</title>
+</head>
+
+<body>
+    <div class="container-fluid tci-mb-3" id="page_manuallyAttendance">
+        <div class="pageHeader tci-mb-4">
+            <span class="pageHeaderTitle tci-ml-2"><b>未打卡資料補登單</b></span>
+        </div>
+        <section class="manuallyAttendanceContent">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">申請人:</span>
+                </div>
+                <div class="text">HEDY.TSENG(曾莞婷)</div>
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">部門別:</span>
+                </div>
+                <div class="text">軟體研發組</div>
+            </div>
+            <div class="tci-field application">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">申請打卡時間:</span>
+                </div>
+                <div class="time">
+                    <div style="display: flex;">
+                        <input type="text" class="tci-form-control date" value="2022/02/02" />
+                        <span class="type">日</span>
+                    </div>
+                    <div style="display: flex;">
+                        <select class="tci-form-control">
+                            <option>Choose...</option>
+                            <option value="1" selected>18</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <span class="type">時</span>
+                    </div>
+                    <div style="display: flex;">
+                        <select class="tci-form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <span class="type">分</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">事由:</span>
+                </div>
+                <textarea class="tci-field-value"></textarea>
+            </div>
+        </section>
+        <div class="btnGroups" style="text-align: right;">
+            <button class="tci-btn tci-btn-regular">全部清除</button>
+            <button class="tci-btn save_btn">確認資料，預覽單據</button>
+        </div>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

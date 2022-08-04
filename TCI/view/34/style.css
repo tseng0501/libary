@@ -40,14 +40,14 @@
     flex-wrap: wrap;
   }
   #page_leaveForm .form .form-group .tci-field .tci-field-label {
-    width: 25%;
+    width: 20%;
   }
   #page_leaveForm .form .form-group .tci-field .tci-field-value {
-    width: 75%;
+    width: 80%;
   }
   #page_leaveForm .form .form-group .tci-field .dateTime {
     display: flex;
-    width: 75%;
+    width: 80%;
     flex-wrap: nowrap;
   }
   #page_leaveForm .form .form-group .tci-field .dateTime .tci-input-group {
@@ -60,10 +60,10 @@
     width: 100px;
   }
   #page_leaveForm .form .form-group .table_content {
-    width: 75%;
+    width: 80%;
   }
   #page_leaveForm .form .form-group .attachments {
-    width: 75%;
+    width: 80%;
   }
   #page_leaveForm .form .form-group .attachments .tci-bs-input-group {
     flex-wrap: nowrap;

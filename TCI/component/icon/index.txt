@@ -22,3 +22,4 @@
 <i class="fa-solid fa-file-invoice"></i>
 <i class="fa-solid fa-circle-question"></i>
 <i class="fa-solid fa-copy"></i>
+<i class="fa-solid fa-circle-user"></i>

@@ -1,0 +1,60 @@
+#page_contract .contractContent .tci-field {
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+#page_contract .contractContent .tci-field .tci-field-label {
+  width: 100%;
+}
+#page_contract .contractContent .tci-field .tci-field-value {
+  width: 100%;
+}
+#page_contract .contractContent .tci-field .text {
+  padding: 0.5rem 0;
+  white-space: nowrap;
+}
+#page_contract .contractContent .tci-field .small {
+  width: 100%;
+}
+#page_contract .contractContent .tci-field .longdata {
+  width: 100%;
+}
+#page_contract .contractContent .tci-field .longdata.table {
+  overflow-x: auto;
+}
+#page_contract .contractContent .tci-field .longdata.table .tci-table {
+  width: 700px;
+}
+#page_contract .contractContent .tci-field .longdata.table .tci-table .tci-field-value {
+  width: auto;
+}
+
+@media (min-width: 765px) {
+  #page_contract .contractContent .tci-field {
+    flex-wrap: nowrap;
+  }
+  #page_contract .contractContent .tci-field .tci-field-label {
+    width: 28%;
+  }
+  #page_contract .contractContent .tci-field .tci-field-value {
+    width: 72%;
+  }
+  #page_contract .contractContent .tci-field .text {
+    padding: 0.5rem 0;
+    white-space: nowrap;
+  }
+  #page_contract .contractContent .tci-field .small {
+    width: 72%;
+  }
+  #page_contract .contractContent .tci-field .small input {
+    width: 100%;
+  }
+  #page_contract .contractContent .tci-field .longdata {
+    width: 72%;
+  }
+  #page_contract .contractContent .tci-field .longdata.table {
+    overflow-x: auto;
+  }
+  #page_contract .contractContent .tci-field .longdata.table .tci-table {
+    width: 100%;
+  }
+}

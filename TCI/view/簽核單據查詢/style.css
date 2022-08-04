@@ -12,10 +12,6 @@
   font-style: italic;
 }
 
-#page_documentQuery .tci-field-value,
-#page_documentQuery .tci-form-control {
-  background-color: var(--color-whitesmoke);
-}
 #page_documentQuery .requester .box {
   border-radius: var(--borderRadius);
   border: 2px solid var(--color-gainsboro);
@@ -141,12 +137,16 @@
   padding: 5px;
   margin-bottom: 0.5rem;
 }
+#page_documentQuery .editDocuments_leave .tci-field-value {
+  background-color: var(--color-whitesmoke);
+}
 #page_documentQuery .editDocuments_form .editDocuments_data .tci-field .tci-field-label {
   white-space: normal;
   width: 100%;
 }
 #page_documentQuery .editDocuments_form .editDocuments_data .tci-field .tci-field-value {
   width: 35%;
+  background-color: var(--color-whitesmoke);
 }
 #page_documentQuery .btnGroups_lr {
   display: flex;

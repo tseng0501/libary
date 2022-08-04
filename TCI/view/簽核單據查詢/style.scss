@@ -15,10 +15,10 @@
 
 #page_documentQuery {
 
-    .tci-field-value,
-    .tci-form-control {
-        background-color: var(--color-whitesmoke);
-    }
+    // .tci-field-value,
+    // .tci-form-control {
+    //     background-color: var(--color-whitesmoke);
+    // }
 
     //簽核單據查詢-查詢單據
     .requester {
@@ -172,6 +172,7 @@
 
                 .tci-field-value {
                     width: 100%;
+                    
                 }
             }
         }
@@ -182,6 +183,9 @@
         border-radius: var(--borderRadius);
         padding: 5px;
         margin-bottom: .5rem;
+        .tci-field-value{
+            background-color: var(--color-whitesmoke);
+        }
     }
 
     .editDocuments_form {
@@ -194,6 +198,7 @@
 
                 .tci-field-value {
                     width: 35%;
+                    background-color: var(--color-whitesmoke);
                 }
             }
         }

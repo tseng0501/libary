@@ -67,8 +67,7 @@
                 <div class="tci-input-group mb-2">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">部門別</span>
-                        <button class="ml-2" style="background-color: transparent;border-radius: .25rem;
-                        border: 1px solid #b56824;; color: #b56824;">
+                        <button class="tci-icon tci-ml-2 tci-btn-darkkhaki">
                             <i class="fa-solid fa-building"></i></button>
                     </div>
                     <input type="text" class="tci-form-control" />
@@ -367,51 +366,53 @@
                 </div>
             </div>
         </section>
-        <section class="mark" style="margin-top: 1.75rem">
-            <div class="tci-mb-2">
-                <span class=""><b>備註 Notes</b></span>
-            </div>
-            <div class="tci-input-group mb-2">
+        <section class="fileBox">
+            <div class="tci-input-group tci-mb-2 fileContentNo">
                 <div class="tci-input-group-prepend">
-                    <span class="tci-input-group-text">檔案數</span>
+                    <span class="tci-input-group-text">檔案數:</span>
                 </div>
-                <select class="tci-form-control">
+                <select class="tci-bs-custom-select">
+                    <option selected>Choose...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
                 </select>
             </div>
-            <div class="tci-input-group mb-2">
-                <div class="tci-input-group-prepend">
-                    <span class="tci-input-group-text">單據說明(可保持空白)</span>
-                </div>
-                <textarea class="tci-form-control" style="height:100px;"></textarea>
-            </div>
-            <div class="mark_file">
-                <div class="tci-input-group mb-2">
-                    <div class="tci-input-group-prepend">
-                        <span class="tci-input-group-text">檔案</span>
+            <hr>
+            <div class="illustrate">
+                <div class="fileIllustrate">
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
                     </div>
-                    <input type="FILE" class="tci-form-control">
-                </div>
-                <div class="tci-input-group mb-2">
-                    <div class="tci-input-group-prepend">
-                        <span class="tci-input-group-text">檔案說明</span>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
                     </div>
-                    <input type="text" class="tci-form-control">
                 </div>
-            </div>
-            <div style="text-align: right;">
-                <button class="tci-btn tci-btn-success tci-mt-3">確認資料，單據存檔</button>
+                <div class="fileIllustrate">
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                </div>
             </div>
         </section>
+        <div style="text-align: right;">
+            <button class="tci-btn tci-btn-success tci-mt-3">確認資料，單據存檔</button>
+        </div>
         <div class="modal" id="supply_satues" tabindex="-1" role="dialog" aria-labelledby="AddButtonModalLabel"
             aria-hidden="true" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">

@@ -1,10 +1,14 @@
 #page_createPurchaseOrder {
-    .mark {
-        padding: .5rem;
-        background-color: var(--color-gainsboro);
+    .fileBox {
+        border: 2px solid var(--color-rosybrown);
         border-radius: var(--borderRadius);
-    }
+        padding: .5rem;
+        margin-top: 1rem;
 
+        .fileContentNo {
+            width: 40%;
+        }
+    }
     .tci-field-text,
     .tci-input-group-text,
     .tci-label-top {
@@ -16,14 +20,7 @@
     }
 
     .query {
-        border: 2px solid var(--color-gainsboro);
-        border-radius: .4rem;
         padding: .3rem;
-    }
-
-    .tci-field-value,
-    .tci-form-control {
-        background-color:var(--color-whitesmoke);
     }
 
     .content_label {
@@ -48,14 +45,6 @@
     }
 
     .undeliveredContent {
-        .undeliveredContent_title {
-            background-color: #aa9767;
-            text-align: center;
-            padding: 5px;
-            color: #fff;
-            border-radius: .25rem;
-        }
-
         .table_label {
             display: flex;
             flex-wrap: wrap;
@@ -64,6 +53,7 @@
 
             .tci-label-group {
                 margin-top: 11px;
+                width: 100%;
 
                 &.content {
                     width: 100%;
@@ -75,6 +65,8 @@
             }
         }
     }
+ 
+
 }
 
 @media (min-width: 765px) {
@@ -86,6 +78,16 @@
 
     #page_createPurchaseOrder {
 
+        .fileBox {
+            .illustrate {
+                .fileIllustrate {
+                    display: flex;
+                    .tci-input-group{
+                        margin-bottom: .5rem;
+                    }
+                }
+            }
+        }
         .content {
             .content_row {
                 display: flex;
@@ -106,31 +108,25 @@
 
                 .tci-label-group {
                     width: 30%;
-                    &.no{
-                        width:5%;
+
+                  
+
+                    &.no {
+                        width: 5%;
                     }
-                    &.middle{
+
+                    &.middle {
                         width: 90%;
                     }
-                    &.long{
+
+                    &.long {
                         width: 100%;
                     }
-                    .ecNum{
+
+                    .ecNum {
                         font-size: 12px;
                         border-bottom: 3px double;
                     }
-                }
-            }
-        }
-
-        .mark {
-            .mark_file {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-
-                .tci-input-group {
-                    width: 48%;
                 }
             }
         }
@@ -144,6 +140,7 @@
                 .tci-label-group {
                     margin-right: 6px;
                     width: 30%;
+                    
                 }
             }
         }
@@ -162,8 +159,10 @@
         .undeliveredContent {
             .table_label {
                 .tci-label-group {
-                    width: 30%;
-
+                    width: 24%;
+                    &.w100 {
+                        width: 100%;
+                    }
                     &.content {
                         width: 100%;
                     }

@@ -1,0 +1,21 @@
+#page_coinRequest .coinList .tableScroll {
+  overflow-x: auto;
+}
+#page_coinRequest .coinList .tableScroll .tci-table {
+  width: 990px;
+}
+
+@media (min-width: 765px) {
+  #page_coinRequest .coinList .tableScroll {
+    overflow-x: auto;
+  }
+  #page_coinRequest .coinList .tableScroll .tci-table {
+    width: 100%;
+  }
+  #page_coinRequest .fileBox .illustrate .fileIllustrate {
+    display: flex;
+  }
+  #page_coinRequest .fileBox .illustrate .fileIllustrate .tci-input-group {
+    margin-bottom: 0.5rem;
+  }
+}

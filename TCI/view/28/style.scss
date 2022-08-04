@@ -1,0 +1,84 @@
+#page_contract {
+    .contractContent {
+        .tci-field {
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+
+            .tci-field-label {
+                width: 100%;
+            }
+
+            .tci-field-value {
+                width: 100%;
+            }
+
+            .text {
+                padding: .5rem 0;
+                white-space: nowrap;
+            }
+
+            .small {
+                width: 100%;
+            }
+
+            .longdata {
+                width: 100%;
+
+                &.table {
+                    overflow-x: auto;
+
+                    .tci-table {
+                        width: 700px;
+
+                        .tci-field-value {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_contract {
+        .contractContent {
+            .tci-field {
+                flex-wrap: nowrap;
+
+                .tci-field-label {
+                    width: 28%;
+                }
+
+                .tci-field-value {
+                    width: 72%;
+                }
+
+                .text {
+                    padding: .5rem 0;
+                    white-space: nowrap;
+                }
+
+                .small {
+                    width: 72%;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                .longdata {
+                    width: 72%;
+
+                    &.table {
+                        overflow-x: auto;
+
+                        .tci-table {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
