@@ -1,0 +1,122 @@
+#page_travelExpenseStatement .page_travelExpenseTable .tableScroll {
+  overflow-x: auto;
+}
+#page_travelExpenseStatement .page_travelExpenseTable .tableScroll .tci-table {
+  text-align: center;
+  width: 900px;
+}
+#page_travelExpenseStatement .page_travelExpenseTable .tableScroll .tci-table td,
+#page_travelExpenseStatement .page_travelExpenseTable .tableScroll .tci-table th {
+  font-size: 14px;
+  padding: 5px;
+}
+#page_travelExpenseStatement .page_travelExpenseTable .tableScroll thead {
+  background-color: var(--color-gainsboro);
+  text-align: center;
+}
+#page_travelExpenseStatement .page_travelExpenseTable .tableScroll tbody .paid {
+  color: var(--color-success);
+}
+#page_travelExpenseStatement .page_travelExpenseTable .tableScroll tbody .noAdvance {
+  color: var(--color-gray);
+}
+#page_travelExpenseStatement .page_travelExpenseTable .tableScroll tbody .unpaid {
+  color: var(--color-light-red);
+}
+
+#page_travelExpense .tableScroll {
+  overflow-x: auto;
+}
+#page_travelExpense .tableScroll .tci-table {
+  width: 900px;
+}
+#page_travelExpense .tableScroll .tci-table.paidExpense {
+  width: 1200px;
+}
+#page_travelExpense .journey th {
+  min-width: 100px;
+}
+#page_travelExpense .journey .weekdays_date {
+  text-align: center;
+  font-weight: bold;
+}
+#page_travelExpense .journey .holiday_td {
+  background-color: var(--color-whitesmoke);
+}
+#page_travelExpense .journey .holiday {
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-darkred);
+}
+#page_travelExpense .journey .place {
+  background-color: var(--color-alge);
+  color: var(--color-snow);
+  padding: 2px;
+  border-radius: var(--borderRadius);
+}
+#page_travelExpense .journey .region {
+  color: var(--color-dimgray);
+}
+#page_travelExpense .travelExpenseGroups {
+  display: flex;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+#page_travelExpense .travelExpenseGroups button {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid rgb(102, 90, 78);
+}
+#page_travelExpense .travelExpenseGroups button.active {
+  background-color: rgb(102, 90, 78);
+}
+#page_travelExpense .travelExpense_expenseReport .car_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 765px) {
+  #page_travelExpenseStatement .tableScroll {
+    overflow-x: auto;
+  }
+  #page_travelExpenseStatement .tableScroll .tci-table {
+    width: 100%;
+  }
+  #page_travelExpenseStatement .page_travelExpenseTable .tableScroll .tci-table {
+    width: 100%;
+  }
+  #page_travelExpense .tableScroll {
+    overflow-x: auto;
+  }
+  #page_travelExpense .tableScroll .tci-table {
+    width: 100%;
+  }
+  #page_travelExpense .travelExpenseGroups {
+    flex-wrap: nowrap;
+  }
+  #page_travelExpense .travelExpense_information .travelReal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #page_travelExpense .travelExpense_information .travelReal .tci-bs-input-group {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #page_travelExpense .tableScroll {
+    overflow-x: auto;
+  }
+  #page_travelExpense .tableScroll .tci-table.paidExpense {
+    width: 100%;
+  }
+  #page_travelExpense .travelExpenseGroups {
+    flex-wrap: nowrap;
+  }
+  #page_travelExpense .tableScroll0 table .strokeAdjustment {
+    display: flex;
+  }
+  #page_travelExpense .travelExpense_information .travelReal .tci-bs-input-group {
+    width: 25%;
+  }
+}

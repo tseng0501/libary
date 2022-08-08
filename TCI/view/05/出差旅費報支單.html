@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>出差旅費報支單</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_travelExpenseStatement">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>出差旅費報支單</b></span>
+        </div>
+        <div class="tci-field">
+            <div class="tci-field-label">
+                <span class="tci-field-text text-left">出差申請單號:</span>
+            </div>
+            <select class="tci-field-value">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <hr>
+        <section class="page_travelExpenseTable">
+            <!-- 每一列都可以點進去 -->
+            <div style="font-size:14px;color:var(--color-light-green)">請選擇單號</div>
+            <div class="tableScroll">
+                <table class="tci-table tci-table-bordered" style="padding: 5px;">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%;">單號</th>
+                            <th>經辦人</th>
+                            <th>出差人</th>
+                            <th style="width: 70px;">國內/外</th>
+                            <th>日期</th>
+                            <th>地點</th>
+                            <th style="width: 50px;">天數</th>
+                            <th>預支金</th>
+                            <th style="width: 70px;">付款</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20220202-02-A003</td>
+                            <td>曾曾曾(hedy.tseng)</td>
+                            <td>曾曾曾(hedy.tseng)</td>
+                            <td>國外</td>
+                            <td>2022/08/04 ~ 2022/02/02</td>
+                            <td>阿拉伯大公園-迪拜</td>
+                            <td>4</td>
+                            <td>NTD$0 , NTD$100,000</td>
+                            <td class="paid">已付款</td>
+                        </tr>
+                        <tr>
+                            <td>20220202-02-A003</td>
+                            <td>曾曾曾(hedy.tseng)</td>
+                            <td>曾曾曾(hedy.tseng)</td>
+                            <td>國外</td>
+                            <td>2022/08/04 ~ 2022/02/02</td>
+                            <td>阿拉伯大公園-迪拜</td>
+                            <td>4</td>
+                            <td>NTD$0 , NTD$100,000</td>
+                            <td class="noAdvance">無預支</td>
+                        </tr>
+                        <tr>
+                            <td>20220202-02-A003</td>
+                            <td>曾曾曾(hedy.tseng)</td>
+                            <td>曾曾曾(hedy.tseng)</td>
+                            <td>國外</td>
+                            <td>2022/08/04 ~ 2022/02/02</td>
+                            <td>阿拉伯大公園-迪拜</td>
+                            <td>4</td>
+                            <td>NTD$0 , NTD$100,000</td>
+                            <td class="unpaid">未付款</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <hr>
+        <div style="text-align: right;" class="tci-mt-3">
+            <span style="font-size:10pt; color:#AAA; font-style:italic;">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

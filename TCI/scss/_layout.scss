@@ -15,6 +15,14 @@
 //     margin-right: auto;
 //     margin-left: auto;
 // }
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+body{
+    font-size: .5rem;
+}
 //強制不换行、超出顯示省略號
 .fontNoWrap {
     white-space: nowrap;
@@ -33,6 +41,7 @@
     .pageHeaderTitle {
         font-size: var(--font-size-xs);
         color: var(--color-darkkhaki);
+        margin-left: 1rem;
     }
 }
 
@@ -55,7 +64,7 @@
 
     .darkBorderCardTitle {
         text-align: center;
-        margin-bottom: .5rem;
+        // margin-bottom: .5rem;
         background-color: var(--color-darkkhaki);
         color: var(--color-snow);
         padding: 5px;
@@ -130,6 +139,40 @@
     justify-content: space-between;
 }
 
+//列印的button
+.print_btn {
+    .btnGroups {
+        text-align: center;
+
+        button {
+            width: 100%;
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+.print_table {
+    .tableContent {
+        margin-bottom: 2rem;
+
+        .tci-table-bordered td,
+        .tci-table-bordered th {
+            border: 1px solid #2a2a2a;
+        }
+
+        .tableScroll {
+            overflow-x: auto;
+
+            .tableAuto {
+                width: 900px;
+            }
+        }
+    }
+}
+.btnGroups{
+    text-align: right;
+}
+
 // .addTable {
 //     display: flex;
 //     margin: 5px;
@@ -157,6 +200,9 @@
 // }
 // }
 @media (min-width: 765px) {
+    body{
+        font-size: 1rem;
+    }
     .pageHeader {
         .pageHeaderTitle {
             font-size: var(--font-size-m);
@@ -167,6 +213,59 @@
         .darkBorderCardTitle {
             span {
                 font-size: 1.25rem;
+            }
+        }
+    }
+
+    //列印的button
+    .print_btn {
+        .btnGroups {
+            text-align: center;
+
+            button {
+                width: auto;
+                height: 60px;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+
+    //列印表格
+    .print_table {
+        .tableContent {
+            margin-bottom: 2rem;
+
+            .tci-table-bordered td,
+            .tci-table-bordered th {
+                border: 1px solid #2a2a2a;
+            }
+
+            .tableScroll {
+                .tableAuto {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .print_process {
+
+        // 簽核流程
+        .print_process_circuit {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    //檔案數
+    .fileBox {
+        .illustrate {
+            .fileIllustrate {
+                display: flex;
+
+                .tci-input-group {
+                    margin-bottom: .5rem;
+                }
             }
         }
     }

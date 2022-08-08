@@ -1,0 +1,60 @@
+#page_requestForLineCredit table .tci-form-control.gray {
+  background-color: var(--color-whitesmoke);
+}
+#page_requestForLineCredit .tableScroll {
+  overflow-x: auto;
+}
+#page_requestForLineCredit .tableScroll table {
+  width: 900px;
+}
+#page_requestForLineCredit .tableScroll table th {
+  background-color: var(--color-light-gray);
+}
+#page_requestForLineCredit .requestForLineCreditRating .tci-table tbody th {
+  font-size: 14px;
+}
+#page_requestForLineCredit .requestForLineCreditRating .tci-table tbody button {
+  min-height: 65px;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+@media (min-width: 765px) {
+  #page_requestForLineCredit .tableScroll {
+    overflow-x: auto;
+  }
+  #page_requestForLineCredit .tableScroll table {
+    width: 100%;
+  }
+  #page_requestForLineCredit .requestForLineCreditQuery .requestForLineCreditQuery_row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #page_requestForLineCredit .requestForLineCreditQuery .requestForLineCreditQuery_row .tci-field {
+    width: 48%;
+  }
+  #page_requestForLineCredit .requestForLineCreditCustomer .tci-table .table_row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #page_requestForLineCredit .requestForLineCreditCustomer .tci-table .table_row .tci-bs-input-group {
+    width: 48%;
+    margin-right: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #page_requestForLineCredit .requestForLineCreditCustomer .tci-table .table_row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #page_requestForLineCredit .requestForLineCreditCustomer .tci-table .table_row .tci-bs-input-group {
+    width: 32%;
+    margin-right: 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #page_requestForLineCredit .requestForLineCreditQuery .requestForLineCreditQuery_row .tci-field {
+    width: 23%;
+  }
+}

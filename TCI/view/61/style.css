@@ -1,0 +1,23 @@
+#page_quotation .quotationQuery .tci-field {
+  flex-wrap: wrap;
+}
+#page_quotation .quotationQuery .tci-field .inputquery {
+  width: 100%;
+  display: flex;
+}
+#page_quotation .quotationQuery .tci-field .inputquery input {
+  width: 100%;
+}
+
+@media (min-width: 765px) {
+  #page_quotation .quotationQuery .tci-field {
+    flex-wrap: nowrap;
+  }
+  #page_quotation .quotationQuery .tci-field .inputquery {
+    width: 60%;
+    display: flex;
+  }
+  #page_quotation .quotationQuery .tci-field .inputquery input {
+    width: 100%;
+  }
+}

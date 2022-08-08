@@ -1,0 +1,23 @@
+#page_deliveryCredit .deliveryCreditQuery .tci-field {
+  flex-wrap: wrap;
+}
+#page_deliveryCredit .deliveryCreditQuery .tci-field .inputquery {
+  width: 100%;
+  display: flex;
+}
+#page_deliveryCredit .deliveryCreditQuery .tci-field .inputquery input {
+  width: 100%;
+}
+
+@media (min-width: 765px) {
+  #page_deliveryCredit .deliveryCreditQuery .tci-field {
+    flex-wrap: nowrap;
+  }
+  #page_deliveryCredit .deliveryCreditQuery .tci-field .inputquery {
+    width: 60%;
+    display: flex;
+  }
+  #page_deliveryCredit .deliveryCreditQuery .tci-field .inputquery input {
+    width: 100%;
+  }
+}

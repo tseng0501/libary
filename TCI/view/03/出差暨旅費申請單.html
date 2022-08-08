@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>出差暨旅費申請單</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_businessTravel">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>出差暨旅費申請單</b></span>
+        </div>
+        <section class="businessTravelTable">
+            <div class="tableScroll0">
+                <table class="tci-table tci-table-bordered">
+                    <tbody>
+                        <tr>
+                            <th>經辦人</th>
+                            <td>
+                                <div class="table_row">
+                                    <div class="tci-bs-input-group tci-mb-1 small">
+                                        <div class="tci-bs-input-group-prepend">
+                                            <span class="tci-bs-input-group-text">員工編號:</span>
+                                        </div>
+                                        <div class="tci-form-control">2206A0011</div>
+                                    </div>
+                                    <div class="tci-bs-input-group tci-mb-1">
+                                        <div class="tci-bs-input-group-prepend">
+                                            <span class="tci-bs-input-group-text">姓名:</span>
+                                        </div>
+                                        <div class="tci-form-control">HEDY.TSENG曾莞婷</div>
+
+                                    </div>
+                                    <div class="tci-bs-input-group tci-mb-1">
+                                        <div class="tci-bs-input-group-prepend">
+                                            <span class="tci-bs-input-group-text">部門別:&nbsp;
+                                                <button class="tci-icon tci-btn-darkkhaki"><i
+                                                        class="fa-solid fa-building"></i></button>
+                                            </span>
+                                        </div>
+                                        <div class="tci-form-control">軟體研發組</div>
+                                    </div>
+                                    <div class="tci-bs-input-group tci-mb-1 small">
+                                        <div class="tci-bs-input-group-prepend">
+                                            <span class="tci-bs-input-group-text">分機:</span>
+                                        </div>
+                                        <div class="tci-form-control">22222222</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>出差人員&nbsp;<button class="tci-icon tci-btn-darkkhaki">
+                                    <i class="fa-solid fa-person"></i></button>
+                            </th>
+                            <td>2206A0011-曾莞婷(HEDY.TSENG)</td>
+                        </tr>
+                        <tr>
+                            <th>國內/國外</th>
+                            <td>
+                                <select class="tci-bs-custom-select" style="width: 100px;">
+                                    <option selected>國內</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>返台</th>
+                            <td>
+                                <div>
+                                    <div class="tci-form-check tci-form-check-inline">
+                                        <input class="tci-form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1" checked>
+                                        <label class="tci-form-check-label" for="exampleRadios1">
+                                            是
+                                        </label>
+                                    </div>
+                                    <div class="tci-form-check tci-form-check-inline">
+                                        <input class="tci-form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                        <label class="tci-form-check-label" for="exampleRadios2">
+                                            否
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>同行人員&nbsp;<button class="tci-icon tci-btn-darkkhaki">
+                                    <i class="fa-solid fa-people-group"></i></button>
+                            </th>
+                            <!-- 5個以上 顯示 勾選了5個人員資料 -->
+                            <td>2206A0011-曾莞婷(HEDY.TSENG)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="formBox_gray tci-mb-4 itinerary">
+                <div class="formBox_title">
+                    <span>行程內容</span>
+                </div>
+                <div class="formBox_content itineraryContent">
+                    <div class="formBox_date">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">開始日期:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">結束日期:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">出差地點:</span>
+                            </div>
+                            <select class="tci-field-value">
+                                <option selected>阿拉伯聯合大公園</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">出差地區:</span>
+                            </div>
+                            <select class="tci-field-value">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="tci-btn search_btn">新增行程資料</button>
+                    </div>
+                    <div class="tci-text-center">
+                        <span>行程(共計<span style="font-weight: bold;color: var(--color-darkGreen);">20</span>天)</span>
+                    </div>
+                    <hr>
+                    <div class="tableScroll">
+                        <table class="tci-table tci-table-bordered journey">
+                            <thead>
+                                <tr style="text-align: center;">
+                                    <th style="color: var(--color-darkred);background-color: var(--color-whitesmoke);">
+                                        星期天</th>
+                                    <th>星期一</th>
+                                    <th>星期二</th>
+                                    <th>星期三</th>
+                                    <th>星期四</th>
+                                    <th>星期五</th>
+                                    <th style="color: var(--color-darkred);background-color: var(--color-whitesmoke);">
+                                        星期六</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="holiday_td">
+                                        <div class="holiday"><span>8/10</span></div>
+                                    </td>
+                                    <td>
+                                        <div class="weekdays_date"><span>8/10</span></div>
+                                        <div>
+                                            <span class="place">阿拉伯聯合大公國</span><br>
+                                            <span class="region">阿布達比</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="weekdays_date"><span>8/10</span></div>
+                                        <div>
+                                            <span class="place">阿拉伯聯合大公國</span><br>
+                                            <span class="region">阿布達比</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="weekdays_date"><span>8/10</span></div>
+                                        <div>
+                                            <span class="place">阿拉伯聯合大公國</span><br>
+                                            <span class="region">阿布達比</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="weekdays_date"><span>8/10</span></div>
+                                        <div>
+                                            <span class="place">阿拉伯聯合大公國</span><br>
+                                            <span class="region">阿布達比</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="weekdays_date"><span>8/10</span></div>
+                                        <div>
+                                            <span class="place">阿拉伯聯合大公國</span><br>
+                                            <span class="region">阿布達比</span>
+                                        </div>
+                                    </td>
+                                    <td class="holiday_td">
+                                        <div class="holiday"><span>8/10</span></div>
+                                        <div>
+                                            <span class="place">阿拉伯聯合大公國</span><br>
+                                            <span class="region">阿布達比</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="btnGroups" style="text-align: right;">
+                                <tr>
+                                    <td colspan="7">
+                                        <button class="tci-btn gray_btn">重新設定行程資料</button>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="formBox_gray reason tci-mb-4">
+                <div class="formBox_title">
+                    <span>事由</span>
+                </div>
+                <div class="formBox_content reasonContent">
+                    <div class="visit">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">拜訪客戶:</span>
+                            </div>
+                            <div class="tci-field-content">
+                                <input type="text" class="tci-field-value" />
+                                <span style="margin: auto;">~</span>
+                                <input type="text" class="tci-field-value" />
+                                <button class="tci-btn search_btn">加入</button>
+                            </div>
+                        </div>
+                        <div class="tableScroll">
+                            <table class="tci-table tci-table-bordered">
+                                <thead>
+                                    <th class="date">拜訪期間</th>
+                                    <th>此次拜訪支援哪個業務(選填)</th>
+                                    <th>CRM客戶</th>
+                                    <th>拜訪目的</th>
+                                    <th>預計效益</th>
+                                    <th style="width:50px"></th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="tci-field-content">
+                                                <input type="text" class="tci-form-control" />
+                                                <span style="margin: auto;">~</span>
+                                                <input type="text" class="tci-form-control" />
+                                            </div>
+                                        </td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td>
+                                            <button class="tci-icon darkerror"><i
+                                                    class="fa-solid fa-trash-can"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="participate">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">參加展覽:</span>
+                            </div>
+                            <div class="tci-field-content">
+                                <input type="text" class="tci-field-value" />
+                                <span style="margin: auto;">~</span>
+                                <input type="text" class="tci-field-value" />
+                                <button class="tci-btn search_btn">加入</button>
+                            </div>
+                        </div>
+                        <div class="tableScroll">
+                            <table class="tci-table tci-table-bordered">
+                                <thead>
+                                    <th class="date">拜訪期間</th>
+                                    <th>展覽名稱</th>
+                                    <th>拜訪目的</th>
+                                    <th>預計效益</th>
+                                    <th style="width:50px"></th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="tci-field-content">
+                                                <input type="text" class="tci-form-control" />
+                                                <span style="margin: auto;">~</span>
+                                                <input type="text" class="tci-form-control" />
+                                            </div>
+                                        </td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td>
+                                            <button class="tci-icon darkerror"><i
+                                                    class="fa-solid fa-trash-can"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="procurement">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">出國採購:</span>
+                            </div>
+                            <div class="tci-field-content">
+                                <input type="text" class="tci-field-value" />
+                                <span style="margin: auto;">~</span>
+                                <input type="text" class="tci-field-value" />
+                                <button class="tci-btn search_btn">加入</button>
+                            </div>
+                        </div>
+                        <div class="tableScroll">
+                            <table class="tci-table tci-table-bordered">
+                                <thead>
+                                    <th class="date">拜訪期間</th>
+                                    <th>供應商名稱</th>
+                                    <th>拜訪目的</th>
+                                    <th>預計效益</th>
+                                    <th style="width:50px"></th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="tci-field-content">
+                                                <input type="text" class="tci-form-control" />
+                                                <span style="margin: auto;">~</span>
+                                                <input type="text" class="tci-form-control" />
+                                            </div>
+                                        </td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td>
+                                            <button class="tci-icon darkerror"><i
+                                                    class="fa-solid fa-trash-can"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="others">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">其他事由:</span>
+                            </div>
+                            <div class="tci-field-content">
+                                <input type="text" class="tci-field-value" />
+                                <span style="margin: auto;">~</span>
+                                <input type="text" class="tci-field-value" />
+                                <button class="tci-btn search_btn">加入</button>
+                            </div>
+                        </div>
+                        <div class="tableScroll">
+                            <table class="tci-table tci-table-bordered">
+                                <thead>
+                                    <th class="date">拜訪期間</th>
+                                    <th>事由</th>
+                                    <th>事由說明</th>
+                                    <th>預計效益</th>
+                                    <th style="width:50px"></th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="tci-field-content">
+                                                <input type="text" class="tci-form-control" />
+                                                <span style="margin: auto;">~</span>
+                                                <input type="text" class="tci-form-control" />
+                                            </div>
+                                        </td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td> <input type="text" class="tci-form-control" /></td>
+                                        <td>
+                                            <button class="tci-icon darkerror"><i
+                                                    class="fa-solid fa-trash-can"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formBox_gray agency tci-mb-4">
+                <div class="formBox_title">
+                    <span>代辦需求</span>
+                </div>
+
+                <div class="formBox_content agencyContent">
+                    <div style="margin-bottom:2rem; color:var(--color-darkred)">
+                        <span>提示:若有『非自費』支付之"機票/住宿/簽證/護照"等費用時,請務必勾選下方對應之代辦事項。</span>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <div class="tci-form-check tci-form-check-inline">
+                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                    value="option1">&nbsp;
+                                <span class="tci-field-text text-left">代辦機票:</span>
+                            </div>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <div class="tci-form-check tci-form-check-inline">
+                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                    value="option1">&nbsp;
+                                <span class="tci-field-text text-left">代辦住宿:</span>
+                            </div>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <div class="tci-form-check tci-form-check-inline">
+                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                    value="option1">&nbsp;
+                                <span class="tci-field-text text-left">代辦簽證:</span>
+                            </div>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <div class="tci-form-check tci-form-check-inline">
+                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                    value="option1">&nbsp;
+                                <span class="tci-field-text text-left">代辦護照:</span>
+                            </div>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <div class="tci-form-check tci-form-check-inline">
+                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                    value="option1">&nbsp;
+                                <span class="tci-field-text text-left">專車接送(接機):</span>
+                            </div>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <div class="tci-form-check tci-form-check-inline">
+                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                    value="option1">&nbsp;
+                                <span class="tci-field-text text-left">專車接送(搭機):</span>
+                            </div>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <div class="tci-form-check tci-form-check-inline">
+                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                    value="option1">&nbsp;
+                                <span class="tci-field-text text-left">代辦保險:</span>
+                            </div>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <div class="tci-form-check tci-form-check-inline">
+                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                    value="option1">&nbsp;
+                                <span class="tci-field-text text-left">其他代辦:</span>
+                            </div>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                </div>
+            </div>
+            <div class="formBox_gray advance">
+                <div class="formBox_title">
+                    <span>預支旅費(單人)</span>
+                </div>
+                <div class="formBox_content advanceContent">
+                    <div class="tci-mb-2">
+                        <button class="tci-btn search_btn"><i class="fa-solid fa-plus"></i>&nbsp; 新增其他幣別及金額</button>
+                    </div>
+                    <div>
+                        <div style="display: flex;">
+                            <select class="tci-bs-custom-select" style="width: 200px;">
+                                <option selected>馬來西亞幣</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <input type="text" class="tci-form-control" value="10,000,000" />
+                            <button class="tci-icon darkerror" style="width: 60px;"><i
+                                    class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="btnGroups" style="text-align: right;">
+                    <button class="tci-btn save_btn">確認，預覽內容</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

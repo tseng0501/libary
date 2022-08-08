@@ -1,0 +1,153 @@
+#dropdownMenuButton {
+  background-color: var(--color-gainsboro);
+  padding: 4px;
+  color: var(--color-darkGreen);
+  font-weight: bold;
+}
+
+#page_documentContent .detailsBox .detailsBoxContent .detailsBox_companytext {
+  color: #fff;
+  padding: 0 6px;
+  background-color: #83a2b4;
+  border-radius: var(--borderRadius);
+  font-size: 14px;
+}
+#page_documentContent .detailsBox .detailsBoxContent .detailsBoxForm .formBox_content .tci-field .tci-field-label {
+  width: 25%;
+}
+#page_documentContent .detailsBox .detailsBoxContent .detailsBoxForm .formBox_content .tci-field .tci-field-value {
+  width: 85%;
+}
+#page_documentContent .detailsBox .detailsBoxContent .detailsBoxForm .formBox_content .tci-field .tci-field-value.gray {
+  background-color: var(--color-whitesmoke);
+}
+#page_documentContent .detailsBox .detailsBoxContent .tableScroll {
+  overflow-x: auto;
+}
+#page_documentContent .detailsBox .detailsBoxContent .tableScroll .tci-table {
+  width: 800px;
+}
+#page_documentContent .detailsBox .detailsBoxContent .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_title {
+  background-color: #ddd;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  border-radius: var(--borderRadius);
+}
+#page_documentContent .detailsBox .detailsBoxContent .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field .tci-field-label {
+  width: 100%;
+  white-space: normal;
+}
+#page_documentContent .detailsBox .detailsBoxContent .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field .tci-field-value {
+  width: 30%;
+  background-color: var(--color-whitesmoke);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#page_documentContent .detailsBox .detailsBoxContent .formFlow .formFlowGrid {
+  border: 1px solid #ddd;
+  background-color: antiquewhite;
+  padding: 5px;
+  border-radius: 0.25rem;
+}
+#page_documentContent .detailsBox .detailsBoxContent .formFlow .items {
+  list-style-type: none;
+  margin: 1px;
+  padding: 1px;
+}
+#page_documentContent .detailsBox .detailsBoxContent .formFlow .signflow .sortable li {
+  margin: 2px;
+  padding: 2px;
+  border-radius: 3px;
+  display: inline-block;
+  clear: both;
+}
+#page_documentContent .detailsBox .detailsBoxContent .formFlow .signflow .sortable .list {
+  background-color: lightblue;
+  border: 1px solid gray;
+  cursor: no-drop;
+}
+#page_documentContent .detailsBox .detailsBoxContent .formFlow .signflow .sortable .list3 {
+  background-color: lightgray;
+  border: 1px solid gray;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: no-drop;
+}
+
+@media (min-width: 765px) {
+  #page_documentContent .messageBox .messageBoxContent {
+    display: flex;
+    justify-content: center;
+  }
+  #page_documentContent .descriptionBox .descriptionBox_content {
+    display: flex;
+    justify-content: center;
+  }
+  #page_documentContent .descriptionBox .descriptionBox_content .descriptionBox_icon {
+    display: flex;
+    justify-content: center;
+  }
+  #page_documentContent .descriptionBox .descriptionBox_content .descriptionBox_icon .check {
+    margin: 0 1.5rem;
+  }
+  #page_documentContent .detailsBox .detailsBoxContent .detailsBox_companytext {
+    color: #fff;
+    padding: 0 6px;
+    background-color: #83a2b4;
+    border-radius: var(--borderRadius);
+    font-size: 14px;
+  }
+  #page_documentContent .detailsBox .detailsBoxContent .detailsBoxForm .formBox_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_documentContent .detailsBox .detailsBoxContent .detailsBoxForm .formBox_content .tci-field {
+    width: 48%;
+  }
+  #page_documentContent .detailsBox .detailsBoxContent .tableScroll .tci-table {
+    width: 100%;
+  }
+  #page_documentContent .detailsBox .detailsBoxContent .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_documentContent .detailsBox .detailsBoxContent .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field {
+    width: 48%;
+  }
+  #page_documentContent .detailsBox .detailsBoxContent .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field .tci-field-label {
+    width: 70%;
+  }
+  #page_documentContent .detailsBox .detailsBoxContent .work_process {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #page_documentContent .detailsBox .detailsBoxContent .work_process .tci-card {
+    margin-right: 0.5rem;
+  }
+  #page_documentContent .work_process_circuit {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 992px) {
+  #page_documentContent .detailsBox .detailsBoxContent .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field {
+    width: 32%;
+  }
+  #page_documentContent .detailsBox .detailsBoxContent .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field .tci-field-value {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  #page_documentContent .detailsBox .detailsBoxContent .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field {
+    width: 22%;
+  }
+  #page_documentContent .detailsBox .detailsBoxContent .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field .tci-field-value {
+    width: 40%;
+  }
+}

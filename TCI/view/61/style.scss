@@ -1,0 +1,31 @@
+#page_quotation{
+    .quotationQuery{
+        .tci-field{
+            flex-wrap: wrap;
+            .inputquery{
+                width: 100%;
+                display: flex;
+                input{
+                width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:765px) {
+    #page_quotation{
+        .quotationQuery{
+            .tci-field{
+                flex-wrap: nowrap;
+                .inputquery{
+                    width: 60%;
+                    display: flex;
+                    input{
+                    width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

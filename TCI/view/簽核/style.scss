@@ -1,0 +1,269 @@
+//查詢單據 bar
+#dropdownMenuButton {
+    background-color: var(--color-gainsboro);
+    padding: 4px;
+    color: var(--color-darkGreen);
+    font-weight: bold;
+}
+
+#page_documentContent {
+
+    //單據明細
+    .detailsBox {
+        .detailsBoxContent {
+            .detailsBox_companytext {
+                color: #fff;
+                padding: 0 6px;
+                background-color: #83a2b4;
+                border-radius: var(--borderRadius);
+                font-size: 14px;
+            }
+
+            .detailsBoxForm {
+                .formBox_content {
+
+                    .tci-field {
+                        .tci-field-label {
+                            width: 25%;
+                        }
+
+                        .tci-field-value {
+                            width: 85%;
+
+                            &.gray {
+                                background-color: var(--color-whitesmoke);
+                            }
+                        }
+                    }
+                }
+            }
+
+            //表格
+            .tableScroll {
+                overflow-x: auto;
+
+                .tci-table {
+                    width: 800px;
+                }
+            }
+
+            //請假累計
+            .detailsBoxAccumulated {
+                .detailsBoxholiday {
+                    .detailsBoxholiday_title {
+                        background-color: #ddd;
+                        margin-bottom: 1rem;
+                        font-weight: bold;
+                        padding: .5rem 0 .5rem .5rem;
+                        border-radius: var(--borderRadius);
+                    }
+
+                    .detailsBoxholiday_content {
+                        .tci-field {
+                            .tci-field-label {
+                                width: 100%;
+                                white-space: normal;
+                            }
+
+                            .tci-field-value {
+                                width: 30%;
+                                background-color: var(--color-whitesmoke);
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                    }
+                }
+            }
+            .formFlow {
+                .formFlowGrid {
+                    border: 1px solid #ddd;
+                    background-color: antiquewhite;
+                    padding: 5px;
+                    border-radius: 0.25rem;
+                }
+    
+                .items {
+                    list-style-type: none;
+                    margin: 1px;
+                    padding: 1px;
+                }
+    
+                .signflow {
+                    .sortable {
+                        li {
+                            margin: 2px;
+                            padding: 2px;
+                            border-radius: 3px;
+                            display: inline-block;
+                            clear: both;
+                        }
+    
+                        .list {
+                            background-color: lightblue;
+                            border: 1px solid gray;
+                            cursor: no-drop;
+                        }
+    
+                        .list3 {
+                            background-color: lightgray;
+                            border: 1px solid gray;
+                            margin: 2px;
+                            padding: 2px;
+                            border-radius: 3px;
+                            display: inline-block;
+                            cursor: no-drop;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media (min-width:765px) {
+    #page_documentContent {
+
+        //留言
+        .messageBox {
+            .messageBoxContent {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        //簽核意見
+        .descriptionBox {
+            .descriptionBox_content {
+                display: flex;
+                justify-content: center;
+
+                .descriptionBox_icon {
+                    display: flex;
+                    justify-content: center;
+
+                    .check {
+                        margin: 0 1.5rem;
+                    }
+                }
+            }
+        }
+
+        //單據明細
+        .detailsBox {
+            .detailsBoxContent {
+                .detailsBox_companytext {
+                    color: #fff;
+                    padding: 0 6px;
+                    background-color: #83a2b4;
+                    border-radius: var(--borderRadius);
+                    font-size: 14px;
+                }
+
+                .detailsBoxForm {
+                    .formBox_content {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+
+                        .tci-field {
+                            width: 48%;
+                        }
+                    }
+                }
+
+                .tableScroll {
+                    .tci-table {
+                        width: 100%;
+                    }
+                }
+
+                //請假累計
+                .detailsBoxAccumulated {
+                    .detailsBoxholiday {
+                        .detailsBoxholiday_content {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+
+                            .tci-field {
+                                width: 48%;
+
+                                .tci-field-label {
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .work_process {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .tci-card{
+                        margin-right: .5rem;
+                    }
+                }
+            }
+        }
+        
+        // 簽核流程
+        .work_process_circuit{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    #page_documentContent {
+
+        //單據明細
+        .detailsBox {
+            .detailsBoxContent {
+
+                //請假累計
+                .detailsBoxAccumulated {
+                    .detailsBoxholiday {
+                        .detailsBoxholiday_content {
+                            .tci-field {
+                                width: 32%;
+
+                                .tci-field-value {
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    #page_documentContent {
+
+        //單據明細
+        .detailsBox {
+            .detailsBoxContent {
+
+                //請假累計
+                .detailsBoxAccumulated {
+                    .detailsBoxholiday {
+                        .detailsBoxholiday_content {
+                            .tci-field {
+                                width: 22%;
+
+                                .tci-field-value {
+                                    width: 40%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

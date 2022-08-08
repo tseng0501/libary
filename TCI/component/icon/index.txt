@@ -9,7 +9,6 @@
 <i class="fa-solid fa-trash-can"></i>
 <i class="fa-solid fa-circle-plus"></i>
 <i class="fa-solid fa-clock"></i>
-<i class="fa-solid fa-user">
 <i class="fa-solid fa-user-tie"></i>
 <i class="fa-solid fa-left-long"></i>
 <i class="fa-solid fa-up-long"></i>
@@ -23,3 +22,5 @@
 <i class="fa-solid fa-circle-question"></i>
 <i class="fa-solid fa-copy"></i>
 <i class="fa-solid fa-circle-user"></i>
+<i class="fa-solid fa-people-group"></i>
+<i class="fa-solid fa-person"></i>

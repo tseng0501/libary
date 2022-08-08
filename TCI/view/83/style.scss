@@ -1,0 +1,100 @@
+#page_requestForLineCredit {
+    table {
+        .tci-form-control {
+            &.gray {
+                background-color: var(--color-whitesmoke);
+            }
+        }
+    }
+
+    .tableScroll {
+        overflow-x: auto;
+
+        table {
+            width: 900px;
+            th{
+                background-color: var(--color-light-gray);
+                // color: var(--color-snow);
+            }
+        }
+    }
+    .requestForLineCreditRating{
+        .tci-table{
+            tbody{
+                th{
+                    font-size: 14px;
+                }
+                button{
+                    min-height: 65px;
+                    font-size: 1rem;
+                    padding: .5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_requestForLineCredit {
+        .tableScroll {
+            overflow-x: auto;
+
+            table {
+                width: 100%;
+            }
+        }
+
+        .requestForLineCreditQuery {
+            .requestForLineCreditQuery_row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .tci-field {
+                    width: 48%;
+                }
+            }
+        }
+
+        .requestForLineCreditCustomer {
+            .tci-table {
+                .table_row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .tci-bs-input-group{
+                        width: 48%;
+                        margin-right: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    #page_requestForLineCredit {
+        .requestForLineCreditCustomer {
+            .tci-table {
+                .table_row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .tci-bs-input-group{
+                        width: 32%;
+                        margin-right: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+
+    #page_requestForLineCredit {
+        .requestForLineCreditQuery {
+            .requestForLineCreditQuery_row {
+                .tci-field {
+                    width: 23%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,205 @@
+// 出差旅費報支單
+#page_travelExpenseStatement {
+
+    .page_travelExpenseTable {
+        .tableScroll {
+            overflow-x: auto;
+
+            .tci-table {
+                text-align: center;
+                width: 900px;
+                td,
+                th {
+                    font-size: 14px;
+                    padding: 5px;
+                }
+            }
+
+            thead {
+                background-color: var(--color-gainsboro);
+                text-align: center;
+            }
+
+            tbody {
+                .paid {
+                    color: var(--color-success);
+                }
+
+                .noAdvance {
+                    color: var(--color-gray);
+
+                }
+
+                .unpaid {
+                    color: var(--color-light-red);
+
+                }
+            }
+        }
+    }
+}
+
+#page_travelExpense {
+    .tableScroll {
+        overflow-x: auto;
+
+        .tci-table {
+            width: 900px;
+            &.paidExpense {
+                width: 1200px;
+
+            }
+        }
+    }
+
+    .journey {
+        th {
+            min-width: 100px;
+        }
+
+        .weekdays_date {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .holiday_td {
+            background-color: var(--color-whitesmoke);
+        }
+
+        .holiday {
+            text-align: center;
+            font-weight: bold;
+            color: var(--color-darkred);
+        }
+
+        .place {
+            background-color: var(--color-alge);
+            color: var(--color-snow);
+            padding: 2px;
+            border-radius: var(--borderRadius);
+        }
+
+        .region {
+            color: var(--color-dimgray);
+        }
+    }
+
+    // 按鈕導覽列
+
+    .travelExpenseGroups {
+        display: flex;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+
+        button {
+            width: 100%;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid rgb(102, 90, 78);
+
+            &.active {
+                background-color: rgb(102, 90, 78);
+
+            }
+        }
+    }
+
+    // 新增報支費用
+    .travelExpense_expenseReport {
+        .car_row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (min-width: 765px) {
+
+    // 出差旅費報支單
+    #page_travelExpenseStatement {
+        .tableScroll {
+            overflow-x: auto;
+
+            .tci-table {
+                width: 100%;
+            }
+        }
+
+        .page_travelExpenseTable {
+            .tableScroll {
+                .tci-table {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+
+    #page_travelExpense {
+        .tableScroll {
+            overflow-x: auto;
+
+            .tci-table {
+                width: 100%;
+            }
+        }
+
+        // 按鈕導覽列
+        .travelExpenseGroups {
+            flex-wrap: nowrap;
+        }
+
+        // 代辦資料
+        .travelExpense_information {
+            .travelReal {
+                display: flex;
+                flex-wrap: wrap;
+
+                .tci-bs-input-group {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #page_travelExpense {
+        // 按鈕導覽列
+
+        .tableScroll {
+            overflow-x: auto;
+
+            .tci-table {
+                &.paidExpense {
+                    width: 100%;
+    
+                }
+            }
+        }
+
+        .travelExpenseGroups {
+            flex-wrap: nowrap;
+        }
+
+        .tableScroll0 {
+            table {
+                .strokeAdjustment {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    #page_travelExpense {
+
+        // 代辦資料
+        .travelExpense_information {
+            .travelReal {
+                .tci-bs-input-group {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+#page_purchaseConfirmation .purchaseConfirmationQuery .tci-field {
+  flex-wrap: wrap;
+}
+#page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-value {
+  width: 100%;
+}
+
+@media (min-width: 765px) {
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field {
+    flex-wrap: nowrap;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-value {
+    width: 100%;
+  }
+}
