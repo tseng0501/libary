@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>產品設計需求單</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_productionDesgin">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>產品設計需求單</b></span>
+        </div>
+        <div class="tci-field">
+            <div class="tci-field-label">
+                <span class="tci-field-text text-left">產品名稱:</span>
+            </div>
+            <input type="text" class="tci-field-value" />
+        </div>
+        <!-- 按下產品名稱，出現 -->
+        <section class="copyForm">
+            <div class="copy_input">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">從舊需求單複製:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">預估明細編號:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+            </div>
+            <div style="text-align: right;">
+                <button class="tci-btn search_btn">查詢</button>
+            </div>
+        </section>
+        <hr>
+        <section class="productType darkBorderCard tci-mb-3 allflex">
+            <div class="darkBorderCardTitle">
+                <span>產品類型</span>
+                <span class="tci-pl-0">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="productTypeContent darkBorderCardContent allflexContent">
+                <div class="tci-bs-input-group">
+                    <div class="tci-bs-input-group-prepend">
+                        <span class="tci-bs-input-group-text">
+                            <input type="radio" name="exampleRadios" id="exampleRadios1">
+                        </span>
+                    </div>
+                    <div class="tci-form-control">固態</div>
+                </div>
+                <div class="tci-bs-input-group">
+                    <div class="tci-bs-input-group-prepend">
+                        <span class="tci-bs-input-group-text">
+                            <input type="radio" name="exampleRadios" id="exampleRadios2">
+                        </span>
+                    </div>
+                    <div class="tci-form-control">液態</div>
+                </div>
+                <div class="tci-bs-input-group">
+                    <div class="tci-bs-input-group-prepend">
+                        <span class="tci-bs-input-group-text">
+                            <input type="radio" name="exampleRadios" id="exampleRadios3">
+                        </span>
+                    </div>
+                    <div class="tci-form-control">保養品</div>
+                </div>
+                <div class="tci-bs-input-group">
+                    <div class="tci-bs-input-group-prepend">
+                        <span class="tci-bs-input-group-text">
+                            <input type="radio" name="exampleRadios" id="exampleRadios4">
+                        </span>
+                    </div>
+                    <div class="tci-form-control">其他</div>
+                </div>
+            </div>
+        </section>
+        <!-- productType 選擇完之後顯示 product-->
+        <section class="product darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>產品類型</span>
+                <span class="tci-pl-0">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="productContent darkBorderCardContent">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">你選擇:</span>
+                    </div>
+                    <div class="tci-field-value gray">固態</div>
+                </div>
+                <!-- 返回上一頁 -->
+                <div class="btnGroups">
+                    <button class="tci-btn gray_btn">重新選擇</button>
+                </div>
+            </div>
+        </section>
+        <section class="request darkBorderCard tci-mb-3 allflex">
+            <div class="darkBorderCardTitle">
+                <span>現階段需求</span>
+                <span class="tci-pl-0">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="requestContent darkBorderCardContent allflexContent">
+                <div class="tci-bs-input-group">
+                    <div class="tci-bs-input-group-prepend">
+                        <span class="tci-bs-input-group-text">
+                            <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                        </span>
+                    </div>
+                    <div class="tci-form-control">提案</div>
+                </div>
+                <div class="tci-bs-input-group">
+                    <div class="tci-bs-input-group-prepend">
+                        <span class="tci-bs-input-group-text">
+                            <input type="checkbox" name="exampleRadios" id="exampleRadios2">
+                        </span>
+                    </div>
+                    <div class="tci-form-control">預開配方表</div>
+                </div>
+                <div class="tci-bs-input-group">
+                    <div class="tci-bs-input-group-prepend">
+                        <span class="tci-bs-input-group-text">
+                            <input type="checkbox" name="exampleRadios" id="exampleRadios3">
+                        </span>
+                    </div>
+                    <div class="tci-form-control">打樣</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pd darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>提案負責</span>
+                <span class="tci-pl-0">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="pdContent darkBorderCardContent">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">Please fill in with who is responsible for this
+                            requirement):</span>
+                    </div>
+                    <select class="tci-field-value">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">提案意見:</span>
+                    </div>
+                    <textarea class="tci-field-value"></textarea>
+                </div>
+            </div>
+        </section>
+
+        <section class="requesterDepartment darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>需求單位</span>
+                <span class="tci-pl-0">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="requesterDepartmentContent darkBorderCardContent">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">需求者:</span>
+                    </div>
+                    <div class="tci-field-value gray">TCI-研發設計中心-產品設計部-高效配方設計組-游清源-CHRIS</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clientInformation darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>客戶資訊</span>
+                <span class="tci-pl-0">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="clientInformationContent darkBorderCardContent">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">客戶名稱:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">網站:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">品牌風格:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">主力產品:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">主價格區間:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">銷售地區:</span>
+                    </div>
+                    <div class="country input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">台灣</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">中國</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">日本</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">新加坡</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">馬來西亞</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">印尼</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">美國</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">歐洲</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">澳洲</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                    其他
+                                </span>
+                            </div>
+                            <input type="text" class="tci-form-control">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">主銷售通路:</span>
+                    </div>
+                    <div class="input_long">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">知名品牌組-國際品牌</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">E-Commerce & Live Streaming- TV Shopping</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">連鎖通路組-美(藥)妝</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Retailer-Convenient Retailer</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">連鎖通路組-量販超市</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">連鎖通路組-美容美髮沙龍</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">連鎖通路組-進口貿易商</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">連鎖通路組-藥局 </div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">社群銷售組-全球百大直銷</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">銷售年齡層:</span>
+                    </div>
+                    <div class="age input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">18~24</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">25~30</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">30~35</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">36~40</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">40~50</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">50~60</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">60以上</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">18以下</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">銷售族群性別:</span>
+                    </div>
+                    <div class="gender input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">男性</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">女性</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios3">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">全族群</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">分級:</span>
+                    </div>
+                    <div class="class input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">A</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">B</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios3">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">C</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios3">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">D</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios3">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">E</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios3">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">F</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productDetails darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>產品細節</span>
+                <span class="tci-pl-0">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="productDetailsContent darkBorderCardContent">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">樣本型態:</span>
+                    </div>
+                    <div class="categories input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">LIPOMASK - 面膜</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">LIPOMASK - 眼膜</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">LIPOMASK - 其他部位膜</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">LIPOSENSE</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">LIPOQUEEN</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">保養品-其他</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">敷感:</span>
+                    </div>
+                    <div class="sensations input_long">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">羽毛 <span class="alarm">(Base cost: 38 TWD/kg. HALAL:
+                                    Allowed)</span></div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">浮雲 <span class="alarm">(Base cost: 38 TWD/kg. HALAL:
+                                    Allowed)</span></div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">山泉 <span class="alarm">(Base cost: 38 TWD/kg. HALAL:
+                                    Allowed)</span> </div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">鮭魚精巢 <span class="alarm">(Base cost: 38 TWD/kg. HALAL:
+                                    Allowed)</span></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">部位:</span>
+                    </div>
+                    <div class="part input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">唇</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">頸部</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">肚子</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">大腿</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                    其他
+                                </span>
+                            </div>
+                            <input type="text" class="tci-form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">膜布:</span>
+                    </div>
+                    <div class="maskType input_long">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Standard Biocellulose Mask-A Type</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Standard Biocellulose Mask-B Type</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios3">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">(Semilune Shape) Standard Biocellulose Eye Mask</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios3">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">(Fish Tail Shape) Standard Biocellulose Eye Mask</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios3">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">(C Shape) Standard Biocellulose Eye Mask</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                    其他形狀生物纖維眼膜
+                                </span>
+                            </div>
+                            <input type="text" class="tci-form-control">
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                    其他
+                                </span>
+                            </div>
+                            <input type="text" class="tci-form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">包裝容器:</span>
+                    </div>
+                    <div class="container input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Sachet</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Bottles</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">包裝材質:</span>
+                    </div>
+                    <div class="packaging input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Aluminium Foil</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Acrylics</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field volume">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">容量:</span>
+                    </div>
+                    <div class="valueBtn">
+                        <input type="text" class="tci-field-value" />
+                        <div class="tci-input-group-text">ml</div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">Appointed Ingredients:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">客戶禁用成分列表:</span>
+                    </div>
+                    <div class="blackList input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">無</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">有</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">訴求功能:</span>
+                    </div>
+                    <div class="majorEffect input_long">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Whitening and Brightening</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Anti Wrinkle and Anti-aging</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control"> Anti dullness and removing spots</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">抗橘皮和妊娠紋</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">原料行銷需求:</span>
+                    </div>
+                    <div class="marketing input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">動物實驗</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">細胞實驗</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Clinical</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">特殊專利</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">防腐系統:</span>
+                    </div>
+                    <div class="perservatives input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">無特殊需求</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Paraben-Free</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">無添加</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">其他
+                                </span>
+                            </div>
+                            <input type="text" class="tci-form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">香氣:</span>
+                    </div>
+                    <div class="perfume input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">由RD建議</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">由PD建議(調香)</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">無</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">特殊需求:</span>
+                    </div>
+                    <div class="specialDemands input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">無</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">無動物性原料</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">參考標的:</span>
+                    </div>
+                    <div class="references input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Reference Formulation Code</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control"> Expo Product Code</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Brand Image</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">生產工廠:</span>
+                    </div>
+                    <div class="factory input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">磐石</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">沛富</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">美國猶他生產中心 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">Product Claims (Regulatory Compliance):</span>
+                    </div>
+                    <div class="perfume input_long">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">無鄰苯二甲酸酯類塑化劑(依據歐盟法規)</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">No Synthetic Fragrances</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios2">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Avoid adding ingredients which need warning notes</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios2">其他
+                                </span>
+                            </div>
+                            <input type="text" class="tci-form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricingStrategy darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>訂價策略</span>
+                <span class="tci-pl-0">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="pricingStrategyContent darkBorderCardContent">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">幣別:</span>
+                    </div>
+                    <select class="tci-field-value">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">Retail Price Packaging Spec:</span>
+                    </div>
+                    <div class="spec input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">包/單盒 (粉包、液態包)</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">粒/單瓶 (膠囊、錠劑)</div>
+                        </div>
+
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="checkbox" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Grain/Box (Capsules、Tablets)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">Retail Price Packing Quantity:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">市場末端產品_售價:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">配方成本_單位:</span>
+                    </div>
+                    <div class="unit input_short">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">單包 (粉包、液態包)</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">one(Capsules、Tablets)</div>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">
+                                    <input type="radio" name="exampleRadios" id="exampleRadios1">
+                                </span>
+                            </div>
+                            <div class="tci-form-control">Grain/Box (Capsules、Tablets)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">配方成本_價格(內料含耗損):</span>
+                    </div>
+                    <div class="valueBtn">
+                        <div class="tci-input-group-text">台幣</div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="launchTime darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>預計上市日期</span>
+                <span class="tci-pl-0">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="launchTimeContent darkBorderCardContent">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">日期:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+            </div>
+        </section>
+        <section class="comment darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>備註</span>
+                <span class="tci-pl-0">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="commentContent darkBorderCardContent">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">需求單備註:</span>
+                    </div>
+                    <textarea class="tci-field-value"></textarea>
+                </div>
+            </div>
+        </section>
+        <section class="profit darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>毛利</span>
+                <span class="tci-pl-0">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="profitContent darkBorderCardContent">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">預計接單金額:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">毛利率:</span>
+                    </div>
+                    <div class="valueBtn">
+                        <input type="text" class="tci-field-value" />
+                        <div class="tci-input-group-text">%</div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">預計成本:</span>
+                    </div>
+                    <input type="text" class="tci-field-value gray" readonly="readonly" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">Estimated Gross Profit:</span>
+                    </div>
+                    <input type="text" class="tci-field-value gray" readonly="readonly" />
+                </div>
+            </div>
+        </section>
+        <section class="attachment">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">(10MB以內)附件:</span>
+                </div>
+                <input type="file" class="tci-field-value" />
+            </div>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn save_btn">存檔</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
+
+<!-- hedy 資料太多，沒有寫的很完整，只拿了產品類型中的其中一個做參考 
+一開始顯示只有：產品類型與產品名稱，選擇完之後才有其他資料，我多設計了一個“重新選擇類型按鈕”
+-->

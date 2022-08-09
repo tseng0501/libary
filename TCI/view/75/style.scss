@@ -1,0 +1,184 @@
+#page_productionDesgin {
+    .tci-field-value {
+        &.gray {
+            background-color: var(--color-gainsboro);
+        }
+    }
+    .copyForm {
+        border: 2px solid var(--color-darkkhaki);
+        padding: .5rem;
+        border-radius: var(--borderRadius);
+        box-shadow: var(--borderShadow);
+        margin-bottom: 1rem;
+
+        .copy_input {
+            .tci-field {
+                flex-wrap: wrap;
+
+                .tci-field-label {
+                    width: 100%;
+                }
+
+                .tci-field-value {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .allflex {
+        .allflexContent {
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .tci-bs-input-group {
+                width: 47%;
+                margin-bottom: .5rem;
+
+                .tci-form-control {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .darkBorderCard {
+        .darkBorderCardContent {
+            padding: 1rem;
+        }
+    }
+
+    .tci-field {
+        flex-wrap: wrap;
+
+        .tci-field-label {
+            width: 100%;
+        }
+
+        .tci-field-value {
+            width: 100%;
+        }
+
+        .tci-bs-input-group {
+            margin-bottom: .5rem;
+        }
+
+        .valueBtn {
+            width: 100%;
+            display: flex;
+
+            input {
+                width: 100%;
+            }
+
+            .tci-input-group-text {
+                margin: 0 .5rem;
+            }
+        }
+
+    }
+
+    .input_long {
+        width: 100%;
+
+        .alarm {
+            color: var(--color-darkred);
+        }
+    }
+
+    .input_short {
+        width: 100%;
+    }
+}
+
+@media (min-width: 765px) {
+    #page_productionDesgin {
+        .copyForm {
+            .copy_input {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-field {
+                    width: 45%;
+
+                    .tci-field-label {
+                        width: 40%;
+                    }
+
+                    .tci-field-value {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+
+        .tci-field {
+            .tci-field-label {
+                width: 40%;
+            }
+
+            .tci-field-value {
+                width: 60%;
+            }
+
+            .valueBtn {
+                width: 60%;
+            }
+        }
+
+        .input_long {
+            width: 60%;
+
+            .tci-bs-input-group {
+                width: 100%;
+            }
+        }
+
+        .input_short {
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-bs-input-group {
+                width: 48%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #page_productionDesgin {
+        .tci-field {
+            .tci-field-label {
+                width: 30%;
+            }
+
+            .tci-field-value {
+                width: 70%;
+            }
+
+            .valueBtn {
+                width: 70%;
+            }
+        }
+
+        .input_long {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-bs-input-group {
+                width: 48%;
+            }
+        }
+
+        .input_short {
+            width: 70%;
+        }
+    }
+}
