@@ -1,16 +1,14 @@
-
 :root {
-    --color-dark: #161616;
-    --color-ocean: #416dea;
     --color-grass: #3dd28d;
     --color-snow: #FFFFFF;
-    --color-salmon: #F32C52;
-    --color-sun: #feee7d;
     --color-alge: #7999a9;
-    --color-flower: #353866;
-    --color-smoke: #e4e4e4;
 
-    --color-search:	#003D79;
+    --color-dark: #2a2a2a;
+    --color-dark-blue:#003D79; //查詢
+    --color-dark_red: #9d0f0f; //警告
+    --color-dark_khaki:#aa9767;
+    --color-dark_green:#5b6835;
+
     --color-blue: #3773eb;
     --color-error: #df3a30;
     --color-warning: #e8a210;
@@ -20,31 +18,27 @@
     
     --color-light-blue: #dee4f5;
     --color-light-error: #f4dcd9;
-    --color-light-warning: #f0ebca;  //表格
+    --color-light-warning: #f0ebca;
     --color-light-success: #d2eedc;
-    --color-light-gray:#f4f0d6;
     --color-light-green:#778546;
     --color-light-red: #931e1e;
+    --color-light-gray:#e0dcd4;  //表格
     
     --color-whitesmoke:#efefef;  //輸入框背景
-    --color-gainsboro:#e0dcd4;  //表格
     --color-rosybrown:#9e937e;
-    --color-dimgray:#867562;
-    --color-darkkhaki:#aa9767;
-    --color-darkred: #9d0f0f;
-    --color-darkGreen:#5b6835;
-
-    --color-cream:#fefae0;
     --color-peru:#dda15e;
-    --color-chocolate:#bc6c25;
     --color-sienna:#9c512e;
 
-    --color-border: #ddd;
     --borderShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     --borderRadius: .25rem;
     --borderRadiusCircular: 4rem;
+    --border-color:#ced4da;
 
-    --font-size-xs: 1rem;
-    --font-size-m: 1.5rem;
-    --font-size-lg: 1.75rem;
+    --font-size-xs: 13px;
+    --font-size-sm: 14px;
+    --font-size-md: 1rem;       //16px  
+    --font-size-lg: 1.25rem;   //20px 
+    --font-size-xl: 1.5rem;    //24px
+
+    --font-weight-bg:bold;
 }

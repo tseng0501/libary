@@ -5,7 +5,7 @@
   width: 900px;
 }
 #page_remittance .remittanceTable.tableScroll .tci-table th {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
 }
 #page_remittance .remittanceNumber .tableScroll {
   overflow-x: auto;
@@ -15,7 +15,7 @@
   text-align: center;
 }
 #page_remittance .remittanceNumber .tableScroll .tci-table th {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
 }
 
 #page_remittance_preview .tableScroll {
@@ -25,7 +25,7 @@
   width: 900px;
 }
 #page_remittance_preview .tableScroll .tci-table th {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
 }
 #page_remittance_preview .remittance_previewNumber .tableScroll {
   overflow-x: auto;
@@ -35,7 +35,7 @@
   text-align: center;
 }
 #page_remittance_preview .remittance_previewNumber .tableScroll .tci-table th {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
   text-align: center;
 }
 #page_remittance_preview .fileBox .illustrate .fileIllustrate {

@@ -1,7 +1,3 @@
-#page_leaveForm .tci-field-value,
-#page_leaveForm .tci-form-control {
-  background-color: var(--color-whitesmoke);
-}
 #page_leaveForm .form .form-group .tci-field {
   flex-wrap: wrap;
 }

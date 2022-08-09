@@ -8,6 +8,7 @@
             .tci-table {
                 text-align: center;
                 width: 900px;
+
                 td,
                 th {
                     font-size: 14px;
@@ -16,7 +17,7 @@
             }
 
             thead {
-                background-color: var(--color-gainsboro);
+                background-color: var(--color-light-gray);
                 text-align: center;
             }
 
@@ -45,6 +46,7 @@
 
         .tci-table {
             width: 900px;
+
             &.paidExpense {
                 width: 1200px;
 
@@ -69,7 +71,7 @@
         .holiday {
             text-align: center;
             font-weight: bold;
-            color: var(--color-darkred);
+            color: var(--color-dark_red);
         }
 
         .place {
@@ -109,6 +111,16 @@
         .car_row {
             display: flex;
             flex-wrap: wrap;
+        }
+    }
+    .travelExpense_information{
+        .agency{
+            .agency_item{
+                display: flex;
+                .tci-bs-input-group{
+                    width: 50%;
+                }
+            }
         }
     }
 }
@@ -173,7 +185,7 @@
             .tci-table {
                 &.paidExpense {
                     width: 100%;
-    
+
                 }
             }
         }
@@ -195,6 +207,12 @@
 
         // 代辦資料
         .travelExpense_information {
+            .agency{
+                display: flex;
+                .agency_item{
+                    width:65%
+                }
+            }
             .travelReal {
                 .tci-bs-input-group {
                     width: 25%;

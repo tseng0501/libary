@@ -3,9 +3,17 @@
         overflow-x: auto;
         .tci-table{
             width: 900px;
-            th{
-                background-color: var(--color-light-warning);
+            thead{
+                color: var(--color-snow);
+                background-color: var(--color-rosybrown);
                 text-align: center;
+            }
+            tbody{
+
+                th{
+                    background-color: var(--color-light-gray);
+                    text-align: center;
+                }
             }
         }
     }

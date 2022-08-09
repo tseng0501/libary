@@ -11,7 +11,7 @@
 #page_businessTravel .journey .holiday {
   text-align: center;
   font-weight: bold;
-  color: var(--color-darkred);
+  color: var(--color-dark_red);
 }
 #page_businessTravel .journey .place {
   background-color: var(--color-alge);
@@ -50,7 +50,7 @@
     width: 100%;
   }
   #page_businessTravel .businessTravelTable {
-    font-size: 1rem;
+    font-size: var(--font-size-sm);
   }
   #page_businessTravel .businessTravelTable .tci-table .table_row {
     display: flex;

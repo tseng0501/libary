@@ -12,6 +12,12 @@
   padding: 0.5rem 0;
   white-space: nowrap;
 }
+#page_contract .contractContent .tci-field sub {
+  color: var(--color-light-red);
+}
+#page_contract .contractContent .tci-field .numbertext {
+  color: var(--color-light-green);
+}
 #page_contract .contractContent .tci-field .small {
   width: 100%;
 }
@@ -27,6 +33,10 @@
 #page_contract .contractContent .tci-field .longdata.table .tci-table .tci-field-value {
   width: auto;
 }
+#page_contract .contractContent .tci-field .contactlongdata .longdata_item {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
 
 @media (min-width: 765px) {
   #page_contract .contractContent .tci-field {
@@ -37,10 +47,6 @@
   }
   #page_contract .contractContent .tci-field .tci-field-value {
     width: 72%;
-  }
-  #page_contract .contractContent .tci-field .text {
-    padding: 0.5rem 0;
-    white-space: nowrap;
   }
   #page_contract .contractContent .tci-field .small {
     width: 72%;
@@ -56,5 +62,14 @@
   }
   #page_contract .contractContent .tci-field .longdata.table .tci-table {
     width: 100%;
+  }
+  #page_contract .contractContent .tci-field .contactlongdata {
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #page_contract .contractContent .tci-field .contactlongdata .longdata_item {
+    width: 30%;
+    margin-right: 1rem;
   }
 }

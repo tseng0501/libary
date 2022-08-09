@@ -15,7 +15,7 @@
 }
 #page_requestForLineCredit .requestForLineCreditRating .tci-table tbody button {
   min-height: 65px;
-  font-size: 1rem;
+  font-size: var(--font-size-sm);
   padding: 0.5rem;
 }
 

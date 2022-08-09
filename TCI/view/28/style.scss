@@ -16,7 +16,12 @@
                 padding: .5rem 0;
                 white-space: nowrap;
             }
-
+            sub{
+                color: var(--color-light-red);
+            }
+            .numbertext{
+                color: var(--color-light-green);
+            }
             .small {
                 width: 100%;
             }
@@ -34,6 +39,14 @@
                             width: auto;
                         }
                     }
+                }
+
+            }
+
+            .contactlongdata {
+                .longdata_item {
+                    display: flex;
+                    margin-bottom: .5rem;
                 }
             }
         }
@@ -54,11 +67,6 @@
                     width: 72%;
                 }
 
-                .text {
-                    padding: .5rem 0;
-                    white-space: nowrap;
-                }
-
                 .small {
                     width: 72%;
 
@@ -76,6 +84,18 @@
                         .tci-table {
                             width: 100%;
                         }
+                    }
+
+                }
+
+                .contactlongdata {
+                    width: 72%;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .longdata_item {
+                        width: 30%;
+                        margin-right: 1rem;
                     }
                 }
             }

@@ -13,7 +13,7 @@
         .holiday{
             text-align: center;
             font-weight: bold;
-            color: var(--color-darkred);
+            color: var(--color-dark_red);
         }
         .place{
             background-color: var(--color-alge);
@@ -64,7 +64,7 @@
             }
         }
         .businessTravelTable{
-            font-size: 1rem;
+            font-size: var(--font-size-sm);
             .tci-table{
                 .table_row{
                     display: flex;

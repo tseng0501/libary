@@ -1,8 +1,8 @@
 #page_productionDesgin .tci-field-value.gray {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
 }
 #page_productionDesgin .copyForm {
-  border: 2px solid var(--color-darkkhaki);
+  border: 2px solid var(--color-dark_khaki);
   padding: 0.5rem;
   border-radius: var(--borderRadius);
   box-shadow: var(--borderShadow);
@@ -59,7 +59,7 @@
   width: 100%;
 }
 #page_productionDesgin .input_long .alarm {
-  color: var(--color-darkred);
+  color: var(--color-dark_red);
 }
 #page_productionDesgin .input_short {
   width: 100%;

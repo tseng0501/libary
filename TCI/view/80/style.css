@@ -1,5 +1,5 @@
 #page_rdproposal .rdproposalQuery .tag {
-  color: var(--color-darkred);
+  color: var(--color-dark_red);
 }
 #page_rdproposal .rdproposalQuery .tci-field-value.gray {
   background-color: var(--color-whitesmoke);

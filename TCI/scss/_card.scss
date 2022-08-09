@@ -43,14 +43,14 @@
         }
     }
     &.card-red{
-        color: var(--color-salmon);
+        color: var(--color-dark_red);
         .card-header-red {
-            background-color: var(--color-salmon);
+            background-color: var(--color-dark_red);
             color: var(--color-snow);
         }
         .tci-card-body{
             .card-text-red{
-                background-color: var(--color-salmon);
+                background-color: var(--color-dark_red);
                 color: var(--color-snow);
                 padding: .25rem;
                 border-radius: var(--borderRadius);

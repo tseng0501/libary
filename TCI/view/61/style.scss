@@ -2,12 +2,9 @@
     .quotationQuery{
         .tci-field{
             flex-wrap: wrap;
-            .inputquery{
-                width: 100%;
+            .tci-valueBtn {
                 display: flex;
-                input{
                 width: 100%;
-                }
             }
         }
     }
@@ -18,12 +15,13 @@
         .quotationQuery{
             .tci-field{
                 flex-wrap: nowrap;
-                .inputquery{
-                    width: 60%;
+                .tci-valueBtn {
                     display: flex;
-                    input{
-                    width: 100%;
-                    }
+                    width: 70%;
+                    justify-content: end;
+                }
+                .tci-field-value{
+                    width: 70%;
                 }
             }
         }

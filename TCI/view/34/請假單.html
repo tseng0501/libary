@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../scss/tci-all.css">
@@ -21,7 +21,7 @@
                     <div class="tci-field-label">
                         <span class="tci-field-text text-left">請假人:</span>
                     </div>
-                    <div class="tci-field-value"><span>曾莞婷-HEDY.TSENG</span></div>
+                    <div class="tci-field-value gray"><span>曾莞婷-HEDY.TSENG</span></div>
                 </div>
                 <div class="tci-field">
                     <div class="tci-field-label">
@@ -209,9 +209,9 @@
                         <span class="tci-field-text text-left">請假內容預覽:</span>
                     </div>
                     <div class="table_content">
-                        <table class="table table-bordered">
+                        <table class="tci-table tci-table-bordered">
                             <thead>
-                                <tr style="background-color: var(--color-gainsboro);">
+                                <tr style="background-color: var(--color-light-gray);">
                                     <th class="text-center">請假日期</th>
                                     <th class="text-center">請假時間</th>
                                     <th class="text-center">當日班別</th>
@@ -257,7 +257,7 @@
                                 </tr>
                             </tbody>
                             <tfoot>
-                                <tr class="text-danger" style="color: red;">
+                                <tr style="color: var(--color-light-red);font-weight: bold;">
                                     <td colspan="5">合計 Total:</td>
                                     <td>8.0</td>
                                 </tr>
@@ -273,8 +273,8 @@
                 </div>
                 <div class="tci-field">
                     <div class="tci-field-label">
-                        <span class="tci-field-text text-left tci-mr-3">檔案:</span>
-                        <select class="tci-field-value" style="width:60px; margin-left: 5px;border-radius: .25rem;">
+                        <span class="tci-field-text text-left tci-mr-3">檔案:</span><br>
+                        <select class="tci-field-value" style="width:60px;border-radius: .25rem;">
                             <option label="1" value="number:1" selected="selected">1</option>
                             <option label="2" value="number:2">2</option>
                             <option label="3" value="number:3">3</option>
@@ -330,9 +330,9 @@
                 </div>
                
             </div>
-            <div style="text-align: right;">
-                <button type="button" class="tci-btn tci-btn-orgin"><i class="fa-solid fa-check"></i>  檢查資料</button>
-                <button type="button" class="tci-btn  tci-btn-success"><i class="fa-solid fa-floppy-disk"></i> 儲存單據</button>
+            <div class="btnGroups">
+                <button type="button" class="tci-btn bg_drakblue">檢查資料</button>
+                <button type="button" class="tci-btn bg_drakgreen">儲存單據</button>
             </div>
         </section>
     </div>

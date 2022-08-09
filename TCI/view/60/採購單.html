@@ -13,17 +13,19 @@
 </head>
 
 <body>
-    <div class="container-fluid tci-mb-3" id="page_createPurchaseOrder">
+    <div class="container-fluid" id="page_createPurchaseOrder">
         <div class="pageHeader">
-            <span class="pageHeaderTitle tci-ml-2"><b>建立 採購單</b></span>
+            <span class="pageHeaderTitle"><b>建立 採購單</b></span>
         </div>
         <div class="query tci-mt-3">
             <div class="tci-field">
                 <div class="tci-field-label">
                     <span class="tci-field-text">直接使用採購單號查詢</span>
                 </div>
-                <input type="text" class="tci-field-value" style="margin-right: 5px;" />
-                <button class="tci-btn search_btn">查詢</button>
+                <div class="tci-valueBtn">
+                    <input type="text" class="tci-field-value"/>
+                    <button class="tci-btn bg_drakblue">查詢</button>
+                </div>
             </div>
             <hr>
             <div>
@@ -33,10 +35,10 @@
                 <div class="tci-field-label">
                     <span class="tci-field-text">建立日期</span>
                 </div>
-                <div style="width: 60%;display: flex;justify-content: space-between;">
-                    <input type="text" class="tci-field-value" style="width: 100%;" />
+                <div class="tci-valueBtn">
+                    <input type="text" class="tci-field-value"/>
                     <span style="padding: 0.3rem;">~</span>
-                    <input type="text" class="tci-field-value" style="width: 100%;" />
+                    <input type="text" class="tci-field-value"/>
                 </div>
             </div>
             <div class="tci-field">
@@ -52,7 +54,7 @@
                 <input type="text" class="tci-field-value" />
             </div>
             <div style="text-align: end;">
-                <button class="tci-btn search_btn">查詢</button>
+                <button class="tci-btn bg_drakblue">查詢</button>
             </div>
         </div>
         <section class="content tci-mt-3">
@@ -67,7 +69,7 @@
                 <div class="tci-input-group mb-2">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">部門別</span>
-                        <button class="tci-icon tci-ml-2 tci-btn-darkkhaki">
+                        <button class="tci-icon tci-ml-2 bg_darkkhaki">
                             <i class="fa-solid fa-building"></i></button>
                     </div>
                     <input type="text" class="tci-form-control" />
@@ -366,7 +368,23 @@
                 </div>
             </div>
         </section>
-        <section class="fileBox">
+        <hr>
+        <!-- 備註 -->
+        <section class="tci-mt-2">
+            <div>
+                <div class="lightGrayBack" style="font-weight:bold;">
+                    <span>備註</span>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">單據說明:</span><br>
+                        <span style="font-size: var(--font-size-xs);">(可保持空白 May be left blank)</span>
+                    </div>
+                    <textarea class="tci-field-value"></textarea>
+                </div>
+            </div>
+        </section>
+        <section class="fileBox tci-mb-3">
             <div class="tci-input-group-prepend">
                 <span class="tci-input-group-text tci-mr-2">檔案數:</span>
                 <select class="tci-bs-custom-select" style="width:100px">
@@ -408,8 +426,8 @@
                 </div>
             </div>
         </section>
-        <div style="text-align: right;">
-            <button class="tci-btn tci-btn-success tci-mt-3">確認資料，單據存檔</button>
+        <div class="btnGroups ">
+            <button class="tci-btn bg_drakgreen">確認資料，單據存檔</button>
         </div>
         <div class="modal" id="supply_satues" tabindex="-1" role="dialog" aria-labelledby="AddButtonModalLabel"
             aria-hidden="true" data-backdrop="static" data-keyboard="false">
@@ -489,8 +507,8 @@
                         <!-- ... -->
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="tci-btn tci-btn-secondary" data-dismiss="modal">關閉</button>
-                        <button type="button" class="tci-btn tci-btn-success">儲存</button>
+                        <button type="button" class="tci-btn bg_lightgray" data-dismiss="modal">關閉</button>
+                        <button type="button" class="tci-btn bg_drakgreen">儲存</button>
                     </div>
                 </div>
             </div>

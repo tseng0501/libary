@@ -13,17 +13,19 @@
 </head>
 
 <body>
-    <div class="container-fluid tci-mb-3" id="page_createPurchaseOrder">
+    <div class="container-fluid" id="page_createPurchaseOrder">
         <div class="pageHeader">
-            <span class="pageHeaderTitle tci-ml-2"><b>建立 採購單</b></span>
+            <span class="pageHeaderTitle"><b>建立 採購單</b></span>
         </div>
         <div class="query tci-mt-3">
             <div class="tci-field">
                 <div class="tci-field-label">
                     <span class="tci-field-text">直接使用採購單號查詢</span>
                 </div>
-                <input type="text" class="tci-field-value" style="margin-right: 5px;" />
-                <button class="tci-btn search_btn">查詢</button>
+                <div class="tci-valueBtn">
+                    <input type="text" class="tci-field-value"/>
+                    <button class="tci-btn bg_drakblue">查詢</button>
+                </div>
             </div>
             <hr>
             <div>
@@ -33,10 +35,10 @@
                 <div class="tci-field-label">
                     <span class="tci-field-text">建立日期</span>
                 </div>
-                <div style="width: 60%;display: flex;justify-content: space-between;">
-                    <input type="text" class="tci-field-value" style="width: 100%;" />
+                <div class="tci-valueBtn">
+                    <input type="text" class="tci-field-value"/>
                     <span style="padding: 0.3rem;">~</span>
-                    <input type="text" class="tci-field-value" style="width: 100%;" />
+                    <input type="text" class="tci-field-value"/>
                 </div>
             </div>
             <div class="tci-field">
@@ -52,7 +54,7 @@
                 <input type="text" class="tci-field-value" />
             </div>
             <div style="text-align: end;">
-                <button class="tci-btn search_btn">查詢</button>
+                <button class="tci-btn bg_drakblue">查詢</button>
             </div>
         </div>
         <section class="undeliveredContent tci-mt-3 darkBorderCard">
@@ -88,8 +90,8 @@
                 <div class="tci-label-group content">
                     <label class="tci-label-top">內容</label>
                     <div  class="tci-label-text tci-mt-2">
-                        <table class="tci-table tci-table-bordered" style="font-size: 13px;">
-                            <thead class="tci-text-center">
+                        <table class="tci-table tci-table-bordered" style="font-size: var(--font-size-xs);">
+                            <thead class="tci-text-center" style="background-color: var(--color-light-gray);">
                                 <tr class="table_thead">
                                     <th>項目</th>
                                     <th>名稱</th>
@@ -110,6 +112,7 @@
                     
                 </div>
             </div>
+            <hr>
             <div class="table_label">
                 <div class="tci-label-group w100">
                     <div class="tci-label-text">大江(屏科)S11 楊樺收 (08) 762-9158#5257</div>
@@ -138,8 +141,8 @@
                 <div class="tci-label-group content">
                     <label class="tci-label-top">內容</label>
                     <div  class="tci-label-text mt-2">
-                        <table class="tci-table tci-table-bordered" style="font-size: 13px;">
-                            <thead class="tci-text-center">
+                        <table class="tci-table tci-table-bordered" style="font-size: var(--font-size-xs);">
+                            <thead class="tci-text-center" style="background-color: var(--color-light-gray);">
                                 <tr class="table_thead">
                                     <th>項目</th>
                                     <th>名稱</th>

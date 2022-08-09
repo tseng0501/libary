@@ -11,7 +11,7 @@
   padding: 5px;
 }
 #page_travelExpenseStatement .page_travelExpenseTable .tableScroll thead {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
   text-align: center;
 }
 #page_travelExpenseStatement .page_travelExpenseTable .tableScroll tbody .paid {
@@ -46,7 +46,7 @@
 #page_travelExpense .journey .holiday {
   text-align: center;
   font-weight: bold;
-  color: var(--color-darkred);
+  color: var(--color-dark_red);
 }
 #page_travelExpense .journey .place {
   background-color: var(--color-alge);
@@ -74,6 +74,12 @@
 #page_travelExpense .travelExpense_expenseReport .car_row {
   display: flex;
   flex-wrap: wrap;
+}
+#page_travelExpense .travelExpense_information .agency .agency_item {
+  display: flex;
+}
+#page_travelExpense .travelExpense_information .agency .agency_item .tci-bs-input-group {
+  width: 50%;
 }
 
 @media (min-width: 765px) {
@@ -115,6 +121,12 @@
   }
   #page_travelExpense .tableScroll0 table .strokeAdjustment {
     display: flex;
+  }
+  #page_travelExpense .travelExpense_information .agency {
+    display: flex;
+  }
+  #page_travelExpense .travelExpense_information .agency .agency_item {
+    width: 65%;
   }
   #page_travelExpense .travelExpense_information .travelReal .tci-bs-input-group {
     width: 25%;

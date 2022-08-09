@@ -4,13 +4,12 @@
 #page_advancedBilling .advancedBillingQuery .tci-field .tci-field-label {
   width: 100%;
 }
-#page_advancedBilling .advancedBillingQuery .tci-field .valueBtn {
+#page_advancedBilling .advancedBillingQuery .tci-field .tci-valueBtn {
   display: flex;
   width: 100%;
 }
-#page_advancedBilling .advancedBillingQuery .tci-field .valueBtn .tci-field-value {
+#page_advancedBilling .advancedBillingQuery .tci-field .tci-valueBtn .tci-field-value {
   width: 100%;
-  margin-right: 10px;
 }
 #page_advancedBilling .advancedBillingTable {
   overflow-x: auto;
@@ -24,18 +23,18 @@
   color: var(--color-snow);
 }
 #page_advancedBilling .advancedBillingTable .tci-table tbody th {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
 }
 
 @media (min-width: 765px) {
   #page_advancedBilling .advancedBillingQuery .tci-field .tci-field-label {
     width: 40%;
   }
-  #page_advancedBilling .advancedBillingQuery .tci-field .valueBtn {
+  #page_advancedBilling .advancedBillingQuery .tci-field .tci-valueBtn {
     display: flex;
     width: 60%;
   }
-  #page_advancedBilling .advancedBillingQuery .tci-field .valueBtn .tci-field-value {
+  #page_advancedBilling .advancedBillingQuery .tci-field .tci-valueBtn .tci-field-value {
     width: 100%;
   }
   #page_advancedBilling .advancedBillingTable {

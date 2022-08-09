@@ -1,11 +1,8 @@
 #page_quotation .quotationQuery .tci-field {
   flex-wrap: wrap;
 }
-#page_quotation .quotationQuery .tci-field .inputquery {
-  width: 100%;
+#page_quotation .quotationQuery .tci-field .tci-valueBtn {
   display: flex;
-}
-#page_quotation .quotationQuery .tci-field .inputquery input {
   width: 100%;
 }
 
@@ -13,11 +10,12 @@
   #page_quotation .quotationQuery .tci-field {
     flex-wrap: nowrap;
   }
-  #page_quotation .quotationQuery .tci-field .inputquery {
-    width: 60%;
+  #page_quotation .quotationQuery .tci-field .tci-valueBtn {
     display: flex;
+    width: 70%;
+    justify-content: end;
   }
-  #page_quotation .quotationQuery .tci-field .inputquery input {
-    width: 100%;
+  #page_quotation .quotationQuery .tci-field .tci-field-value {
+    width: 70%;
   }
 }

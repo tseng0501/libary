@@ -1,7 +1,7 @@
 #dropdownMenuButton {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
   padding: 4px;
-  color: var(--color-darkGreen);
+  color: var(--color-dark_green);
   font-weight: bold;
 }
 

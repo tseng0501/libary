@@ -14,7 +14,7 @@
 
 #page_documentQuery .requester .box {
   border-radius: var(--borderRadius);
-  border: 2px solid var(--color-gainsboro);
+  border: 2px solid var(--color-light-gray);
   margin-bottom: 1rem;
   padding: 5px;
 }
@@ -24,7 +24,7 @@
   width: 100%;
 }
 #page_documentQuery .requester .requester_title span {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
   border-radius: var(--borderRadius);
   padding: 0 10px;
 }
@@ -69,14 +69,14 @@
 }
 #page_documentQuery .conditional_content {
   border-radius: var(--borderRadius);
-  border: 2px solid var(--color-gainsboro);
+  border: 2px solid var(--color-light-gray);
   margin-top: 10px;
   padding: 0.5rem;
 }
 #page_documentQuery .conditional_content .conditional_tabs {
   text-align: center;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: var(--font-size-sm);
 }
 #page_documentQuery .conditional_content .conditional_tabs .badge {
   border-radius: var(--borderRadiusCircular);
@@ -86,11 +86,11 @@
 #page_documentQuery .conditional_content .conditional_box {
   border-radius: var(--borderRadius);
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: var(--font-size-sm);
   margin-bottom: 0.4rem;
 }
 #page_documentQuery .conditional_content .conditional_box .conditional_contenttitle {
-  background-color: var(--color-darkkhaki);
+  background-color: var(--color-dark_khaki);
   color: var(--color-snow);
   border-radius: var(--borderRadius);
   padding: 0.2rem;
@@ -107,7 +107,7 @@
   background-color: var(--color-search);
 }
 #page_documentQuery .conditional_content .conditional_box .conditional_contenttitle .label.green {
-  background-color: var(--color-darkGreen);
+  background-color: var(--color-dark_green);
 }
 #page_documentQuery .conditional_content .conditional_box .conditional_contenttitle .label.dark {
   background-color: var(--color-gray);
@@ -120,7 +120,7 @@
   border-radius: var(--borderRadius);
 }
 #page_documentQuery .conditional_content .conditional_box .conditional_btn p {
-  color: var(--color-darkkhaki);
+  color: var(--color-dark_khaki);
 }
 #page_documentQuery .editDocuments .editDocuments_lists .tci-field {
   flex-wrap: wrap;
@@ -132,7 +132,7 @@
   width: 100%;
 }
 #page_documentQuery .editDocuments_leave {
-  border: 2px solid var(--color-darkkhaki);
+  border: 2px solid var(--color-dark_khaki);
   border-radius: var(--borderRadius);
   padding: 5px;
   margin-bottom: 0.5rem;
@@ -235,7 +235,7 @@
   }
   #page_documentQuery .conditionalFilter .conditionalFilter_box .conditionalFilter_text.month {
     font-weight: bold;
-    color: var(--color-darkGreen);
+    color: var(--color-dark_green);
   }
   #page_documentQuery .conditionalFilter .conditionalFilter_query {
     display: flex;
@@ -423,14 +423,14 @@
   }
 }
 #dropdownMenuButton {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
   padding: 4px;
-  color: var(--color-darkGreen);
+  color: var(--color-dark_green);
   font-weight: bold;
 }
 
 .multi-level .panel-heading {
-  background-color: var(--color-darkkhaki);
+  background-color: var(--color-dark_khaki);
   color: var(--color-snow);
 }
 .multi-level .panel-heading .panel-title {
@@ -443,10 +443,10 @@
   padding-bottom: 4px;
 }
 .multi-level table td:hover {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
 }
 .multi-level table .current {
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
 }
 .multi-level .badge {
   border-radius: var(--borderRadiusCircular);

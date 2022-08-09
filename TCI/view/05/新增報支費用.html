@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../scss/tci-all.css">
-    <title>旅費報支單</title>
+    <title>新增報支費用</title>
 </head>
 
 <body>
@@ -18,24 +18,24 @@
             <span class="pageHeaderTitle tci-ml-2"><b>旅費報支單</b></span>
         </div>
         <div class="btnGroups">
-            <button class="tci-btn gray_btn">重新查詢</button>
+            <button class="tci-btn bg_lightgray">重新查詢</button>
         </div>
         <section class="travelExpenseGroups">
-            <button class="tci-btn tci-btn-darkkhaki">出差申請單內容</button>
-            <button class="tci-btn tci-btn-darkkhaki">代辦資料</button>
-            <button class="tci-btn tci-btn-darkkhaki">新增報支費用</button>
-            <button class="tci-btn tci-btn-darkkhaki">已報支明細</button>
+            <button class="tci-btn bg_darkkhaki">出差申請單內容</button>
+            <button class="tci-btn bg_darkkhaki">代辦資料</button>
+            <button class="tci-btn bg_darkkhaki">新增報支費用</button>
+            <button class="tci-btn bg_darkkhaki">已報支明細</button>
 
         </section>
         <section class="travelExpense_expenseReport tci-mt-1">
             <div class="tableScroll">
                 <table class="tci-table tci-table-bordered">
-                    <thead style="text-align:center;background-color: var(--color-gainsboro);">
+                    <thead style="text-align:center;background-color: var(--color-light-gray);">
                         <th colspan="3">新增報支費用</th>
                     </thead>
                     <tbody>
                         <tr>
-                            <th style="width: 7%;">日期</th>
+                            <th style="width: 10%;">日期</th>
                             <td>
                                 <div style="display: flex;">
                                     <select class="tci-form-control" style="width: 150px;">
@@ -52,9 +52,9 @@
                                 <div>
                                     <a href="/TCI/BillSign/SOP/旅費報支SOP.ppt" target="_blank">如何報支?</a>
                                     <br>
-                                    <button class="tci-btn search_btn tci-mb-1">輸入資料</button>
+                                    <button class="tci-btn bg_drakblue tci-mb-1">輸入資料</button>
                                     <br>
-                                    <button class="tci-btn tci-btn-darkkhaki">上傳附件</button>
+                                    <button class="tci-btn bg_darkkhaki">上傳附件</button>
                                 </div>
                             </td>
                         </tr>
@@ -188,12 +188,12 @@
             </div>
             <div class="tableScroll">
                 <table class="tci-table tci-table-bordered">
-                    <thead style="text-align:center;background-color: var(--color-gainsboro);">
+                    <thead style="text-align:center;background-color: var(--color-light-gray);">
                         <th colspan="2">兌換外幣</th>
                     </thead>
                     <tbody>
                         <tr>
-                            <th style="width: 7%;">金額來源</th>
+                            <th style="width: 10%;">金額來源</th>
                             <td>
                                 <div style="display: flex;">
                                     <select class="tci-form-control" style="width: 150px;">
@@ -246,23 +246,23 @@
                     <tfoot>
                         <tr>
                             <td colspan="2" style="text-align: right;">
-                                <button class="tci-btn search_btn">輸入資料</button>
+                                <button class="tci-btn bg_drakblue">輸入資料</button>
                             </td>
                         </tr>
                     </tfoot>
                 </table>
             </div>
-            <div style="text-align: center;color: var(--color-darkred);">
-                <span>只有出差單經辦人,才能儲存報支單</span>
-            </div>
-            <hr>
-            <div style="text-align: right;" class="tci-mt-3">
-                <span style="font-size:10pt; color:#AAA; font-style:italic;">
-                    <u><b>使用者資訊：</b>
-                        <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
-                </span>
-            </div>
         </section>
+        <div style="text-align: center;color: var(--color-dark_red);">
+            <span>只有出差單經辦人,才能儲存報支單</span>
+        </div>
+        <hr>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->

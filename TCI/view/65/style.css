@@ -54,7 +54,7 @@
 }
 #page_generalInvoice .addTableBox .addTableFooter .addTableFooterText {
   font-weight: bold;
-  color: var(--color-darkred);
+  color: var(--color-dark_red);
 }
 
 @media (min-width: 765px) {

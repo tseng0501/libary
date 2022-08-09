@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../scss/tci-all.css">
-    <title>旅費報支單</title>
+    <title>出差申請單內容</title>
 </head>
 
 <body>
@@ -18,13 +18,13 @@
             <span class="pageHeaderTitle tci-ml-2"><b>旅費報支單</b></span>
         </div>
         <div class="btnGroups">
-            <button class="tci-btn gray_btn">重新查詢</button>
+            <button class="tci-btn bg_lightgray">重新查詢</button>
         </div>
         <section class="travelExpenseGroups">
-            <button class="tci-btn tci-btn-darkkhaki">出差申請單內容</button>
-            <button class="tci-btn tci-btn-darkkhaki">代辦資料</button>
-            <button class="tci-btn tci-btn-darkkhaki">新增報支費用</button>
-            <button class="tci-btn tci-btn-darkkhaki">已報支明細</button>
+            <button class="tci-btn bg_darkkhaki">出差申請單內容</button>
+            <button class="tci-btn bg_darkkhaki">代辦資料</button>
+            <button class="tci-btn bg_darkkhaki">新增報支費用</button>
+            <button class="tci-btn bg_darkkhaki">已報支明細</button>
 
         </section>
         <section class="travelExpenseTable tci-mt-1">
@@ -60,21 +60,21 @@
                 </div>
                 <div class="formBox_content itineraryContent">
                     <div class="tci-text-center">
-                        <span>行程(共計<span style="font-weight: bold;color: var(--color-darkGreen);">20</span>天)</span>
+                        <span>行程(共計<span style="font-weight: bold;color: var(--color-dark_green);">20</span>天)</span>
                     </div>
                     <hr>
                     <div class="tableScroll">
                         <table class="tci-table tci-table-bordered journey">
                             <thead>
                                 <tr style="text-align: center;">
-                                    <th style="color: var(--color-darkred);background-color: var(--color-whitesmoke);">
+                                    <th style="color: var(--color-dark_red);background-color: var(--color-whitesmoke);">
                                         星期天</th>
                                     <th>星期一</th>
                                     <th>星期二</th>
                                     <th>星期三</th>
                                     <th>星期四</th>
                                     <th>星期五</th>
-                                    <th style="color: var(--color-darkred);background-color: var(--color-whitesmoke);">
+                                    <th style="color: var(--color-dark_red);background-color: var(--color-whitesmoke);">
                                         星期六</th>
                                 </tr>
                             </thead>
@@ -151,11 +151,11 @@
                             <th>
                                 <div>
                                     <span>NTD 0</span>
-                                    <span style="margin-left:4rem;"> 本幣 → 外幣匯率：<span style="color: var(--color-darkred);">1</span></span>
+                                    <span style="margin-left:4rem;"> 本幣 → 外幣匯率：<span style="color: var(--color-dark_red);">1</span></span>
                                 </div>
                                 <div>
                                     <span>NTD 0</span>
-                                    <span style="margin-left:4rem;"> 本幣 → 外幣匯率：<span style="color: var(--color-darkred);">1</span></span>
+                                    <span style="margin-left:4rem;"> 本幣 → 外幣匯率：<span style="color: var(--color-dark_red);">1</span></span>
                                 </div>
                             </th>
                         </tr>
@@ -230,23 +230,23 @@
                     <tfoot class="btnGroups" style="text-align: right;">
                         <tr>
                             <td colspan="2">
-                                <button class="tci-btn save_btn">儲存</button>
+                                <button class="tci-btn bg_drakgreen">儲存</button>
                             </td>
                         </tr>
                     </tfoot>
                 </table>
             </div>
-            <div style="text-align: center;color: var(--color-darkred);">
-                <span>只有出差單經辦人,才能儲存報支單</span>
-            </div>
-            <hr>
-            <div style="text-align: right;" class="tci-mt-3">
-                <span style="font-size:10pt; color:#AAA; font-style:italic;">
-                    <u><b>使用者資訊：</b>
-                        <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
-                </span>
-            </div>
         </section>
+        <div style="text-align: center;color: var(--color-dark_red);">
+            <span>只有出差單經辦人,才能儲存報支單</span>
+        </div>
+        <hr>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->

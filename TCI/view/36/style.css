@@ -29,7 +29,7 @@
   }
   #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray {
     width: 100%;
-    color: var(--color-darkred);
+    color: var(--color-dark_red);
   }
   #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray .formBox_content {
     display: flex;
@@ -38,9 +38,6 @@
   }
   #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray .formBox_content .tci-input-group {
     width: 33%;
-  }
-  #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray .formBox_footer {
-    color: var(--color-darkred);
   }
 }
 @media (min-width: 1200px) {

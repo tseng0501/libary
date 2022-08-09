@@ -4,8 +4,13 @@
 #page_purchaseOrder .tableScroll .tci-table {
   width: 900px;
 }
-#page_purchaseOrder .tableScroll .tci-table th {
-  background-color: var(--color-light-warning);
+#page_purchaseOrder .tableScroll .tci-table thead {
+  color: var(--color-snow);
+  background-color: var(--color-rosybrown);
+  text-align: center;
+}
+#page_purchaseOrder .tableScroll .tci-table tbody th {
+  background-color: var(--color-light-gray);
   text-align: center;
 }
 

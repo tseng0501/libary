@@ -1,9 +1,18 @@
 #page_overtimeApplication{
     .overtimeApplicationQuery{
         .date{
-            button{
-                width: 100%;
-                margin-top: .5rem;
+           display: flex;
+           width: 100%;
+            .tci-valueBtn{
+                display: flex;
+                flex-wrap: wrap;
+                .time{
+                    display: flex;
+                }
+                button{
+                    width: 100%;
+                    margin-top: .5rem;
+                }
             }
         }
     }
@@ -44,9 +53,20 @@
     #page_overtimeApplication{
         .overtimeApplicationQuery{
             .date{
-                button{
-                    width: auto;
-                    margin-top: 0;
+                justify-content: space-between;
+                .tci-input-group-prepend{
+                    width:30%
+                }
+                .tci-valueBtn{
+                    width: 70%;
+                    justify-content: end;
+                    .time{
+                        display: flex;
+                    }
+                    button{
+                        width: auto;
+                        margin-top: 0;
+                    }
                 }
             }
         }

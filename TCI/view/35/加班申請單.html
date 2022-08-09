@@ -13,19 +13,23 @@
 </head>
 
 <body>
-    <div class="container-fluid tci-mb-3" id="page_overtimeApplication">
-        <div class="pageHeader tci-mb-4">
-            <span class="pageHeaderTitle tci-ml-2"><b>加班申請單</b></span>
+    <div class="container-fluid" id="page_overtimeApplication">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>加班申請單</b></span>
         </div>
         <section class="overtimeApplicationQuery">
             <div class="tci-input-group tci-mb-3 date">
                 <div class="tci-input-group-prepend">
                     <span class="tci-input-group-text">加班日期:</span>
                 </div>
-                <input type="text" class="tci-form-control" />
-                <span style="font-size: 1.25rem;margin:auto .5rem">~</span>
-                <input type="text" class="tci-form-control" />
-                <button class="tci-btn search_btn">查詢</button>
+                <div class="tci-valueBtn">
+                    <div class="time">
+                        <input type="text" class="tci-form-control" />
+                        <span style="font-size: var(--font-size-lg);margin:auto .5rem">~</span>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                    <button class="tci-btn bg_drakblue">查詢</button>
+                </div>
             </div>
         </section>
         <section class="applicationAddTableBox">
@@ -42,7 +46,7 @@
                         <div class="tci-input-group-prepend">
                             <span class="tci-input-group-text">班別日期:</span>
                         </div>
-                        <button class="tci-btn tci-btn-darkkhaki" data-toggle="modal"
+                        <button class="tci-btn bg_darkkhaki" data-toggle="modal"
                             data-target="#btnClassDateModal">2022/08/01(一)</button>
                     </div>
                     <div class="tci-input-group tci-mb-2">
@@ -67,7 +71,7 @@
                         <div class="tci-input-group-prepend">
                             <span class="tci-input-group-text">簽到記錄:</span>
                         </div>
-                        <button class="tci-btn darkerror" data-toggle="modal"
+                        <button class="tci-btn bg_darkerror" data-toggle="modal"
                             data-target="#btnAbnormalModal">刷卡異常</button>
                     </div>
                     <div class="tci-input-group tci-mb-2">
@@ -114,7 +118,7 @@
                         <div class="tci-form-control gray">5</div>
                     </div>
                     <div style="width: 100%;">
-                        <button class="tci-icon darkerror"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="tci-icon bg_darkerror"><i class="fa-solid fa-trash-can"></i></button>
                     </div>
                 </div>
             </div>
@@ -127,18 +131,15 @@
                 <textarea class="tci-form-control"></textarea>
             </div>
             <div class="btnGroups" style="text-align: right;margin-top: 1rem;">
-                <button class="tci-btn save_btn">儲存單據</button>
+                <button class="tci-btn bg_drakgreen">儲存單據</button>
             </div>
         </section>
     </div>
 
-
-
-
     <!-- 班別日期 btnClassDateModal-->
     <div class="modal fade" id="btnClassDateModal" tabindex="-1" aria-labelledby="btnClassDateModalLabel"
         aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-xl" style="max-width: 95%;">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="btnClassDateModalLabel">考勤記錄</h5>
@@ -182,8 +183,8 @@
                                 <span>出差申請單</span>
                             </div>
                             <div>
-                                <table class="table table-bordered">
-                                    <thead style="text-align: center;" class="save_btn">
+                                <table class="tci-table tci-table-bordered">
+                                    <thead style="text-align: center;background-color: var(--color-light-gray);">
                                         <tr>
                                             <th>單據編號</th>
                                             <th>經辦人</th>
@@ -205,7 +206,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
+                    <button type="button" class="tci-btn bg_lightgray" data-dismiss="modal">關閉</button>
                 </div>
             </div>
         </div>
@@ -214,7 +215,7 @@
     <!-- 異常刷卡 btnAbnormalModal-->
     <div class="modal fade" id="btnAbnormalModal" tabindex="-1" aria-labelledby="btnAbnormalModalLabel"
         aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-xl" style="max-width: 95%;">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="btnAbnormalModalLabel">刷卡記錄</h5>
@@ -230,8 +231,8 @@
                         <div class="tci-field-value" style="background-color:#efefef;">2022/08/02</div>
                     </div>
                     <div>
-                        <table class="table table-bordered">
-                            <thead style="text-align: center;" class="save_btn">
+                        <table class="tci-table tci-table-bordered">
+                            <thead style="text-align: center;background-color: var(--color-light-gray);">
                                 <tr>
                                     <th>員工編號</th>
                                     <th>英文名</th>
@@ -256,9 +257,9 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
-                    <button type="button" class="tci-btn gray_btn">上一頁</button>
-                    <button type="button" class="tci-btn save_btn">匯出至 Excel</button>
+                    <button type="button" class="tci-btn bg_lightgray" data-dismiss="modal">關閉</button>
+                    <button type="button" class="tci-btn bg_lightgray">上一頁</button>
+                    <button type="button" class="tci-btn bg_drakgreen">匯出至 Excel</button>
                 </div>
             </div>
         </div>

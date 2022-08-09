@@ -1,19 +1,17 @@
-body{
+body {
     box-sizing: border-box;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: var(--font-size-sm);
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
     text-align: left;
 }
+
 *,
 ::after,
 ::before {
     box-sizing: border-box;
-}
-body{
-    font-size: .5rem;
 }
 //強制不换行、超出顯示省略號
 .fontNoWrap {
@@ -25,14 +23,14 @@ body{
 //標題
 .pageHeader {
     margin: .5rem 0 1.5rem 0;
-    border-left: 5px solid var(--color-darkkhaki);
+    border-left: 5px solid var(--color-dark_khaki);
     box-shadow: var(--borderShadow);
     border-radius: var(--borderRadius);
     padding: .5rem 0;
 
     .pageHeaderTitle {
-        font-size: var(--font-size-xs);
-        color: var(--color-darkkhaki);
+        font-size: var(--font-size-md);
+        color: var(--color-dark_khaki);
         margin-left: 1rem;
     }
 }
@@ -40,24 +38,19 @@ body{
 //超鏈接，沒有底線，字體為黑色
 .no_style {
     text-decoration: none;
-    color: #2a2a2a;
+    color: var(--color-dark);
 
     &:hover {
         text-decoration: none;
-        color: #2a2a2a;
+        color: var(--color-dark);
     }
 }
 
 //棕色框，棕色背景標題
 .darkBorderCard {
-    // border: 2px solid var(--color-darkkhaki);
-    // border-radius: var(--borderRadius);
-    // padding: 5px;
-
     .darkBorderCardTitle {
         text-align: center;
-        // margin-bottom: .5rem;
-        background-color: var(--color-darkkhaki);
+        background-color: var(--color-dark_khaki);
         color: var(--color-snow);
         padding: 5px;
         border-radius: var(--borderRadius);
@@ -66,23 +59,22 @@ body{
 
         span {
             font-weight: bold;
-            font-size: 1rem;
+            font-size: var(--font-size-sm);
         }
     }
 
     .darkBorderCardContent {
-        border: 2px solid var(--color-darkkhaki);
+        border: 2px solid var(--color-dark_khaki);
         border-radius: var(--borderRadius);
         padding: 5px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-
     }
 }
-
+//灰色框
 .formBox_gray {
     .formBox_title {
-        background-color: var(--color-border);
+        background-color: var(--color-whitesmoke);
         border-radius: var(--borderRadius);
         font-weight: bold;
         padding: 2px;
@@ -94,7 +86,6 @@ body{
         border-radius: var(--borderRadius);
         padding: 5px;
         margin-bottom: .5rem;
-
     }
 
     .formBox_footer {
@@ -108,7 +99,7 @@ body{
 
 // 灰色標題背景
 .lightGrayBack {
-    background-color: var(--color-border);
+    background-color: var(--color-whitesmoke);
     font-weight: bold;
     margin-bottom: .5rem;
 }
@@ -119,7 +110,7 @@ body{
     margin-top: .75rem;
 
     .user_info {
-        font-size: 10pt;
+        font-size: var(--font-size-xs);
         color: #AAA;
         font-style: italic;
     }
@@ -149,7 +140,7 @@ body{
 
         .tci-table-bordered td,
         .tci-table-bordered th {
-            border: 1px solid #2a2a2a;
+            border: 1px solid var(--color-dark);
         }
 
         .tableScroll {
@@ -161,7 +152,8 @@ body{
         }
     }
 }
-.btnGroups{
+
+.btnGroups {
     text-align: right;
 }
 
@@ -192,12 +184,13 @@ body{
 // }
 // }
 @media (min-width: 765px) {
-    body{
-        font-size: 1rem;
+    body {
+        font-size: var(--font-size-md);
     }
+
     .pageHeader {
         .pageHeaderTitle {
-            font-size: var(--font-size-m);
+            font-size: var(--font-size-xl);
         }
     }
 
@@ -229,7 +222,7 @@ body{
 
             .tci-table-bordered td,
             .tci-table-bordered th {
-                border: 1px solid #2a2a2a;
+                border: 1px solid var(--color-dark);
             }
 
             .tableScroll {

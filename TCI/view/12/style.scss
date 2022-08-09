@@ -19,7 +19,7 @@
             .point {
                 display: flex;
                 padding: 0.2rem;
-                background-color: var(--color-gainsboro);
+                background-color: var(--color-light-gray);
                 border-radius: 0.25rem;
             }
         }
@@ -27,12 +27,11 @@
         .tci-table {
             td {
                 text-align: center;
-
             }
 
             th {
                 text-align: center;
-                background-color: var(--color-gainsboro);
+                background-color: var(--color-light-gray);
             }
         }
     }
@@ -66,9 +65,9 @@
             .advancedPaymentData_content {
                 display: flex;
                 flex-wrap: wrap;
-
+                justify-content: space-between;
                 .tci-field {
-                    width: 50%;
+                    width: 48%;
 
                     .tci-field-label {
                         width: 25%;
@@ -97,13 +96,12 @@
 
         .advancedPayment {
             .paymentContent {
-                
-                .check {
+                .block{
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
                     .tci-field {
-                        width: 30%;
+                        width: 48%;
 
                         .tci-field-label {
                             width: 20%;
@@ -112,99 +110,20 @@
                         .tci-field-value {
                             width: 80%;
                         }
-                    }
+                    } 
                 }
-                .cash{
+                .block2{
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
                     .tci-field {
-                        width: 40%;
+                        width: 48%;
                         .tci-field-label {
-                            width: 35%;
-                        }
-
-                        .tci-field-value {
-                            width: 65%;
-                        }
-                    }
-                }
-                .company{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    .tci-field {
-                        width: 40%;
-                        .tci-field-label {
-                            width: 35%;
-                        }
-
-                        .tci-field-value {
-                            width: 65%;
-                        }
-                    }
-                }
-                .card{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    .tci-field {
-                        width: 30%;
-
-                        .tci-field-label {
-                            width: 20%;
-                        }
-
-                        .tci-field-value {
-                            width: 80%;
-                        }
-                    }
-                }
-                .employee{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    .tci-field {
-                        width: 35%;
-
-                        .tci-field-label {
-                            width: 30%
+                            width: 30%;
                         }
 
                         .tci-field-value {
                             width: 70%;
-                        }
-                    }
-                }
-                .counter{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    .tci-field {
-                        width: 35%;
-
-                        .tci-field-label {
-                            width: 30%
-                        }
-
-                        .tci-field-value {
-                            width: 70%;
-                        }
-                    }
-                }
-                .person{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    .tci-field {
-                        width: 30%;
-
-                        .tci-field-label {
-                            width: 20%;
-                        }
-
-                        .tci-field-value {
-                            width: 80%;
                         }
                     }
                 }
@@ -213,16 +132,29 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 
     #page_advancedPayment {
         .advancedPayment {
             .paymentContent {
-                .company{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
+                .block2{
+                    justify-content: flex-start;
                     .tci-field {
+                        margin-right: 1rem;
+                        width: 48%;
+                        .tci-field-label {
+                            width: 25%;
+                        }
+
+                        .tci-field-value {
+                            width: 75%;
+                        }
+                    }
+                }
+                .block{
+                    justify-content: flex-start;
+                    .tci-field {
+                        margin-right: 1rem;
                         width: 23%;
                         .tci-field-label {
                             width: 25%;

@@ -9,6 +9,7 @@
             width: 40%;
         }
     }
+
     .tci-field-text,
     .tci-input-group-text,
     .tci-label-top {
@@ -21,6 +22,11 @@
 
     .query {
         padding: .3rem;
+
+        .tci-valueBtn {
+            display: flex;
+            width: 100%;
+        }
     }
 
     .content_label {
@@ -65,7 +71,7 @@
             }
         }
     }
- 
+
 
 }
 
@@ -77,17 +83,33 @@
     }
 
     #page_createPurchaseOrder {
+        .tci-field-label {
+            width: 30%;
+        }
+
+        .query {
+            .tci-valueBtn {
+                display: flex;
+                width: 70%;
+                justify-content: end;
+            }
+            .tci-field-value{
+                width: 70%;
+            }
+        }
 
         .fileBox {
             .illustrate {
                 .fileIllustrate {
                     display: flex;
-                    .tci-input-group{
+
+                    .tci-input-group {
                         margin-bottom: .5rem;
                     }
                 }
             }
         }
+
         .content {
             .content_row {
                 display: flex;
@@ -109,7 +131,7 @@
                 .tci-label-group {
                     width: 30%;
 
-                  
+
 
                     &.no {
                         width: 5%;
@@ -140,7 +162,7 @@
                 .tci-label-group {
                     margin-right: 6px;
                     width: 30%;
-                    
+
                 }
             }
         }
@@ -160,9 +182,11 @@
             .table_label {
                 .tci-label-group {
                     width: 24%;
+
                     &.w100 {
                         width: 100%;
                     }
+
                     &.content {
                         width: 100%;
                     }

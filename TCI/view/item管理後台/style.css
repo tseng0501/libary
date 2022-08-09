@@ -19,7 +19,7 @@
   min-width: 50px !important;
 }
 .table_icon i {
-  color: var(--color-darkkhaki);
+  color: var(--color-dark_khaki);
 }
 
 .content_shadow, #page_ItemTemplate .itemTemplate_content, #page_BehaviorTemplate .behaviorTemplate_content, #page_DetailTemplate .detailTemplate_content {
@@ -46,7 +46,7 @@
   padding: 1rem;
 }
 #page_DetailTemplate .detailTemplate_content .table_content .table thead {
-  background-color: var(--color-darkkhaki);
+  background-color: var(--color-dark_khaki);
   color: var(--color-snow);
 }
 #page_DetailTemplate .detailTemplate_content .table_content .table .table_icon {
@@ -56,11 +56,11 @@
   padding: 0;
 }
 #page_DetailTemplate .detailTemplate_content .table_content .table .table_icon i {
-  box-shadow: 0 4px 8px 0 var(--color-darkkhaki);
+  box-shadow: 0 4px 8px 0 var(--color-dark_khaki);
   cursor: pointer;
 }
 #page_DetailTemplate .detailTemplate_content .detailTemplate_box .detailTemplate_contenttitle {
-  background-color: var(--color-darkkhaki);
+  background-color: var(--color-dark_khaki);
   color: var(--color-snow);
   border-radius: var(--borderRadius);
   padding: 0.2rem;
@@ -88,7 +88,7 @@
   padding: 1rem;
 }
 #page_BehaviorTemplate .behaviorTemplate_content .table_content .table thead {
-  background-color: var(--color-darkkhaki);
+  background-color: var(--color-dark_khaki);
   color: var(--color-snow);
 }
 #page_BehaviorTemplate .behaviorTemplate_content .table_content .table .table_icon {
@@ -98,11 +98,11 @@
   padding: 0;
 }
 #page_BehaviorTemplate .behaviorTemplate_content .table_content .table .table_icon i {
-  box-shadow: 0 4px 8px 0 var(--color-darkkhaki);
+  box-shadow: 0 4px 8px 0 var(--color-dark_khaki);
   cursor: pointer;
 }
 #page_BehaviorTemplate .behaviorTemplate_content .behaviorTemplate_box .behaviorTemplate_contenttitle {
-  background-color: var(--color-darkkhaki);
+  background-color: var(--color-dark_khaki);
   color: var(--color-snow);
   border-radius: var(--borderRadius);
   padding: 0.2rem;
@@ -133,7 +133,7 @@
   width: 700px;
 }
 #page_ItemTemplate .itemTemplate_content .table_content .table thead {
-  background-color: var(--color-darkkhaki);
+  background-color: var(--color-dark_khaki);
   color: var(--color-snow);
 }
 

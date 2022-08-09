@@ -18,23 +18,23 @@
             <span class="pageHeaderTitle"><b>暫支單</b></span>
         </div>
         <section class="advancedPaymentData">
-            <div style="text-align: right;font-size:13px;">
+            <div style="text-align: right;font-size:var(--font-size-xs);">
                 <span>日期:<span>2022/8/8</span></span>
             </div>
             <div class="advancedPaymentData_content">
                 <div class="tci-field">
                     <div class="tci-field-label">
                         <span class="tci-field-text text-left">部門別:&nbsp;
-                            <button class="tci-icon tci-btn-darkkhaki"><i class="fa-solid fa-building"></i></button>
+                            <button class="tci-icon bg_darkkhaki"><i class="fa-solid fa-building"></i></button>
                         </span>
                     </div>
-                    <input type="text" class="tci-field-value" style="border: none;" disabled value="軟體研發組" />
+                    <input type="text" class="tci-field-value gray" disabled value="軟體研發組" />
                 </div>
                 <div class="tci-field">
                     <div class="tci-field-label">
                         <span class="tci-field-text text-left">單據編號:</span>
                     </div>
-                    <input type="text" class="tci-field-value" style="border: none;color: var(--color-search);" disabled
+                    <input type="text" class="tci-field-value gray" style="color: var(--color-search);" disabled
                         value="訂單完成時自動填寫" />
                 </div>
             </div>
@@ -111,7 +111,7 @@
             <!-- 改變 check ,cash... -->
             <div class="paymentContent formBox_content">
                 <!-- 支票 -->
-                <div class="check">
+                <div class="check block">
                     <div class="tci-field">
                         <div class="tci-field-label">
                             <span class="tci-field-text text-left">抬頭:</span>
@@ -146,11 +146,11 @@
 
                 </div>
                 <!-- 領現 -->
-                <div class="cash">
+                <div class="cash block2">
                     <div class="tci-field">
                         <div class="tci-field-label">
                             <span class="tci-field-text text-left">領款人:&nbsp;
-                                <button class="tci-icon search_btn"><i class="fa-solid fa-circle-user"></i></button>
+                                <button class="tci-icon bg_drakblue"><i class="fa-solid fa-circle-user"></i></button>
 
                             </span>
                         </div>
@@ -164,7 +164,7 @@
                     </div>
                 </div>
                 <!-- 公司T/T -->
-                <div class="company">
+                <div class="company block">
                     <div class="tci-field">
                         <div class="tci-field-label">
                             <span class="tci-field-text text-left">匯入公司:</span>
@@ -192,7 +192,7 @@
                 </div>
 
                 <!-- 公司卡 -->
-                <div class="card">
+                <div class="card block">
                     <div class="tci-field">
                         <div class="tci-field-label">
                             <span class="tci-field-text text-left">卡別:</span>
@@ -221,7 +221,7 @@
                 </div>
 
                 <!-- 員工 -->
-                <div class="counter">
+                <div class="counter block2">
                     <div class="tci-field">
                         <div class="tci-field-label">
                             <span class="tci-field-text text-left">員工:</span>
@@ -235,9 +235,8 @@
                         <input type="text" class="tci-field-value" />
                     </div>
                 </div>
-
                 <!-- 臨櫃繳款 -->
-                <div class="counter">
+                <div class="counter block2">
                     <div class="tci-field">
                         <div class="tci-field-label">
                             <span class="tci-field-text text-left">抬頭:</span>
@@ -252,7 +251,7 @@
                     </div>
                 </div>
                 <!-- 個人 -->
-                <div class="person">
+                <div class="person block">
                     <div class="tci-field">
                         <div class="tci-field-label">
                             <span class="tci-field-text text-left">帳戶名稱:</span>
@@ -274,12 +273,12 @@
                 </div>
             </div>
         </section>
-        <div class="btnGroups" style="text-align: right;margin-top: .5rem;">
-            <button class="tci-btn gray_btn">全部清除</button>
-            <button class="tci-btn save_btn">資料確認，儲存單據</button>
+        <div class="btnGroups">
+            <button class="tci-btn bg_lightgray">全部清除</button>
+            <button class="tci-btn bg_drakgreen">確認資料，儲存單據</button>
         </div>
-        <div style="text-align: right;" class="tci-mt-3">
-            <span style="font-size:10pt; color:#AAA; font-style:italic;">
+        <div class="userCard_info">
+            <span class="user_info">
                 <u><b>使用者資訊：</b>
                     <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
             </span>

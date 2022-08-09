@@ -1,23 +1,34 @@
-#page_createDocument .createDocumentTable .tci-field-label {
+#page_purchaseRequisition .purchaseTable .tci-field-label {
   white-space: normal;
 }
-#page_createDocument .createDocumentTable .createDocumentTable_form {
+#page_purchaseRequisition .purchaseTable .reason {
+  width: 100%;
+}
+#page_purchaseRequisition .purchaseTable .purchaseTable_form {
   padding: 1rem;
 }
 
+@media (min-width: 765px) {
+  #page_purchaseRequisition .purchaseTable .reason {
+    width: 60%;
+  }
+  #page_purchaseRequisition .purchaseTable .reason .tci-field-value {
+    width: 100%;
+  }
+}
 @media (min-width: 1200px) {
-  #page_createDocument .createDocumentTable .createDocumentTable_form {
+  #page_purchaseRequisition .purchaseTable .purchaseTable_form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #page_createDocument .createDocumentTable .createDocumentTable_form .tci-field {
+  #page_purchaseRequisition .purchaseTable .purchaseTable_form .tci-field {
     width: 48%;
   }
-  #page_createDocument .createDocumentTable .createDocumentTable_form .tci-field .tci-field-label {
+  #page_purchaseRequisition .purchaseTable .purchaseTable_form .tci-field .tci-field-label {
     width: 22%;
   }
-  #page_createDocument .createDocumentTable .createDocumentTable_form .tci-field .tci-field-value {
+  #page_purchaseRequisition .purchaseTable .purchaseTable_form .tci-field .tci-field-value {
     width: 77%;
   }
 }

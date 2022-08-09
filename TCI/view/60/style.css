@@ -18,6 +18,10 @@
 #page_createPurchaseOrder .query {
   padding: 0.3rem;
 }
+#page_createPurchaseOrder .query .tci-valueBtn {
+  display: flex;
+  width: 100%;
+}
 #page_createPurchaseOrder .content_label {
   height: 300px;
   overflow-y: auto;
@@ -53,6 +57,17 @@
 @media (min-width: 765px) {
   .pageContent .pageContentTitle {
     font-size: var(--font-size-lg);
+  }
+  #page_createPurchaseOrder .tci-field-label {
+    width: 30%;
+  }
+  #page_createPurchaseOrder .query .tci-valueBtn {
+    display: flex;
+    width: 70%;
+    justify-content: end;
+  }
+  #page_createPurchaseOrder .query .tci-field-value {
+    width: 70%;
   }
   #page_createPurchaseOrder .fileBox .illustrate .fileIllustrate {
     display: flex;

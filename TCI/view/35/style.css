@@ -1,4 +1,15 @@
-#page_overtimeApplication .overtimeApplicationQuery .date button {
+#page_overtimeApplication .overtimeApplicationQuery .date {
+  display: flex;
+  width: 100%;
+}
+#page_overtimeApplication .overtimeApplicationQuery .date .tci-valueBtn {
+  display: flex;
+  flex-wrap: wrap;
+}
+#page_overtimeApplication .overtimeApplicationQuery .date .tci-valueBtn .time {
+  display: flex;
+}
+#page_overtimeApplication .overtimeApplicationQuery .date .tci-valueBtn button {
   width: 100%;
   margin-top: 0.5rem;
 }
@@ -33,7 +44,20 @@
 }
 
 @media (min-width: 765px) {
-  #page_overtimeApplication .overtimeApplicationQuery .date button {
+  #page_overtimeApplication .overtimeApplicationQuery .date {
+    justify-content: space-between;
+  }
+  #page_overtimeApplication .overtimeApplicationQuery .date .tci-input-group-prepend {
+    width: 30%;
+  }
+  #page_overtimeApplication .overtimeApplicationQuery .date .tci-valueBtn {
+    width: 70%;
+    justify-content: end;
+  }
+  #page_overtimeApplication .overtimeApplicationQuery .date .tci-valueBtn .time {
+    display: flex;
+  }
+  #page_overtimeApplication .overtimeApplicationQuery .date .tci-valueBtn button {
     width: auto;
     margin-top: 0;
   }

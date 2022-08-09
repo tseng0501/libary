@@ -14,7 +14,7 @@
 #page_advancedPayment .advancedPaymentTable .pointData .point {
   display: flex;
   padding: 0.2rem;
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
   border-radius: 0.25rem;
 }
 #page_advancedPayment .advancedPaymentTable .tci-table td {
@@ -22,7 +22,7 @@
 }
 #page_advancedPayment .advancedPaymentTable .tci-table th {
   text-align: center;
-  background-color: var(--color-gainsboro);
+  background-color: var(--color-light-gray);
 }
 #page_advancedPayment .advancedPaymentOrder .orderBox {
   margin: 1rem 0;
@@ -42,9 +42,10 @@
   #page_advancedPayment .advancedPaymentData .advancedPaymentData_content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   #page_advancedPayment .advancedPaymentData .advancedPaymentData_content .tci-field {
-    width: 50%;
+    width: 48%;
   }
   #page_advancedPayment .advancedPaymentData .advancedPaymentData_content .tci-field .tci-field-label {
     width: 25%;
@@ -61,118 +62,60 @@
   #page_advancedPayment .advancedPaymentOrder .orderContent .order .tci-input-group-text {
     margin: 0 0.5rem;
   }
-  #page_advancedPayment .advancedPayment .paymentContent .check {
+  #page_advancedPayment .advancedPayment .paymentContent .block {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #page_advancedPayment .advancedPayment .paymentContent .check .tci-field {
-    width: 30%;
+  #page_advancedPayment .advancedPayment .paymentContent .block .tci-field {
+    width: 48%;
   }
-  #page_advancedPayment .advancedPayment .paymentContent .check .tci-field .tci-field-label {
+  #page_advancedPayment .advancedPayment .paymentContent .block .tci-field .tci-field-label {
     width: 20%;
   }
-  #page_advancedPayment .advancedPayment .paymentContent .check .tci-field .tci-field-value {
+  #page_advancedPayment .advancedPayment .paymentContent .block .tci-field .tci-field-value {
     width: 80%;
   }
-  #page_advancedPayment .advancedPayment .paymentContent .cash {
+  #page_advancedPayment .advancedPayment .paymentContent .block2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #page_advancedPayment .advancedPayment .paymentContent .cash .tci-field {
-    width: 40%;
+  #page_advancedPayment .advancedPayment .paymentContent .block2 .tci-field {
+    width: 48%;
   }
-  #page_advancedPayment .advancedPayment .paymentContent .cash .tci-field .tci-field-label {
-    width: 35%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .cash .tci-field .tci-field-value {
-    width: 65%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .company {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field {
-    width: 40%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field .tci-field-label {
-    width: 35%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field .tci-field-value {
-    width: 65%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .card .tci-field {
+  #page_advancedPayment .advancedPayment .paymentContent .block2 .tci-field .tci-field-label {
     width: 30%;
   }
-  #page_advancedPayment .advancedPayment .paymentContent .card .tci-field .tci-field-label {
-    width: 20%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .card .tci-field .tci-field-value {
-    width: 80%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .employee {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .employee .tci-field {
-    width: 35%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .employee .tci-field .tci-field-label {
-    width: 30%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .employee .tci-field .tci-field-value {
+  #page_advancedPayment .advancedPayment .paymentContent .block2 .tci-field .tci-field-value {
     width: 70%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .counter {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .counter .tci-field {
-    width: 35%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .counter .tci-field .tci-field-label {
-    width: 30%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .counter .tci-field .tci-field-value {
-    width: 70%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .person {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .person .tci-field {
-    width: 30%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .person .tci-field .tci-field-label {
-    width: 20%;
-  }
-  #page_advancedPayment .advancedPayment .paymentContent .person .tci-field .tci-field-value {
-    width: 80%;
   }
 }
-@media (min-width: 1200px) {
-  #page_advancedPayment .advancedPayment .paymentContent .company {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+@media (min-width: 992px) {
+  #page_advancedPayment .advancedPayment .paymentContent .block2 {
+    justify-content: flex-start;
   }
-  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field {
-    width: 23%;
+  #page_advancedPayment .advancedPayment .paymentContent .block2 .tci-field {
+    margin-right: 1rem;
+    width: 48%;
   }
-  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field .tci-field-label {
+  #page_advancedPayment .advancedPayment .paymentContent .block2 .tci-field .tci-field-label {
     width: 25%;
   }
-  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field .tci-field-value {
+  #page_advancedPayment .advancedPayment .paymentContent .block2 .tci-field .tci-field-value {
+    width: 75%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .block {
+    justify-content: flex-start;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .block .tci-field {
+    margin-right: 1rem;
+    width: 23%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .block .tci-field .tci-field-label {
+    width: 25%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .block .tci-field .tci-field-value {
     width: 75%;
   }
 }

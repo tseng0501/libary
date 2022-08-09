@@ -21,7 +21,7 @@
             <div class="tci-field">
                 <div class="tci-field-label">
                     <span class="tci-field-text text-left">部門別:&nbsp;
-                        <button class="tci-icon tci-btn-darkkhaki"><i class="fa-solid fa-building"></i></button>
+                        <button class="tci-icon bg_darkkhaki"><i class="fa-solid fa-building"></i></button>
                     </span>
                 </div>
                 <div class="text">軟體研發組</div>
@@ -41,18 +41,20 @@
                         <div style="flex-wrap: wrap;">
                             <div style="display: flex;">
                                 <input type="text" class="tci-field-value" />
-                                <button class="tci-icon search_btn" style="width: 40px;"><i
+                                <button class="tci-icon bg_drakblue" style="width: 40px;"><i
                                         class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
                             <sub class="text">若無請採單，請填寫專案編號</sub>
                         </div>
-                        <span>11031377 百岳特-味丹黃金微藻（簡體）</span>
+                        <span class="numbertext">11031377 百岳特-味丹黃金微藻（簡體）</span>
                     </div>
                 </div>
             </div>
             <div class="tci-field">
                 <div class="tci-field-label">
-                    <span class="tci-field-text text-left">合約類型:</span>
+                    <span class="tci-field-text text-left">合約類型:</span>&nbsp;
+                    <button class="tci-btn bg_drakblue" style="padding: 0 0.3rem;">合約類型簽核設定</button>
+                    <button class="tci-btn bg_darkkhaki" style="padding: 0 0.3rem;">權限管理</button>
                 </div>
                 <div class="longdata">
                     <select class="tci-bs-custom-select">
@@ -247,12 +249,13 @@
                     </div>
                 </div>
             </div>
+            <!-- 合約類型選擇：制式 就會跳出來 -->
             <div class="tci-field">
                 <div class="tci-field-label">
                     <span class="tci-field-text text-left">線上制式合約:</span>
                 </div>
-                <div class="longdata">
-                    <div style="display: flex;">
+                <div class="contactlongdata">
+                    <div class="longdata_item">
                         <span class="text">語言：</span>
                         <select class="tci-bs-custom-select">
                             <option selected>MYR馬來西亞幣</option>
@@ -261,7 +264,7 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div style="display: flex;">
+                    <div class="longdata_item">
                         <span class="text">對象：</span>
                         <select class="tci-bs-custom-select">
                             <option selected>MYR馬來西亞幣</option>
@@ -270,7 +273,7 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div style="display: flex;">
+                    <div class="longdata_item">
                         <span class="text">地區：</span>
                         <select class="tci-bs-custom-select">
                             <option selected>MYR馬來西亞幣</option>
@@ -279,7 +282,7 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div style="display: flex;">
+                    <div class="longdata_item">
                         <span class="text">單雙方-期間：</span>
                         <select class="tci-bs-custom-select">
                             <option selected>MYR馬來西亞幣</option>
@@ -288,7 +291,7 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div style="display: flex;">
+                    <div class="longdata_item">
                         <span class="text">產品類型：</span>
                         <select class="tci-bs-custom-select">
                             <option selected>MYR馬來西亞幣</option>
@@ -297,8 +300,8 @@
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div style="margin-top:.5rem;">
-                        <button class="tci-btn search_btn">載入線上制式合約</button>
+                    <div>
+                        <button class="tci-btn bg_drakblue">載入線上制式合約</button>
                     </div>
                 </div>
             </div>
@@ -372,15 +375,14 @@
                 </div>
             </div>
         </section>
-        <div class="btnGroups" style="text-align: right;">
-            <button class="tci-btn gray_btn">全部清除</button>
-            <button class="tci-btn save_btn">確認資料，預覽資料</button>
+        <div class="btnGroups">
+            <button class="tci-btn bg_lightgray">全部清除</button>
+            <button class="tci-btn bg_drakgreen">確認資料，預覽資料</button>
         </div>
         <div class="userCard_info">
             <span class="user_info">
                 <u><b>使用者資訊：</b>
-                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span>
-                </u>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
             </span>
         </div>
     </div>
