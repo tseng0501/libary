@@ -1,0 +1,239 @@
+#page_advancedPayment {
+    .advancedPaymentTable {
+        .pointData {
+            display: flex;
+            margin-bottom: 1rem;
+            justify-content: end;
+
+            .tci-input-group-text {
+                font-size: 14px;
+
+            }
+
+            .tci-form-control {
+                font-size: 14px;
+                margin: 0 1rem;
+                padding: .2rem;
+            }
+
+            .point {
+                display: flex;
+                padding: 0.2rem;
+                background-color: var(--color-gainsboro);
+                border-radius: 0.25rem;
+            }
+        }
+
+        .tci-table {
+            td {
+                text-align: center;
+
+            }
+
+            th {
+                text-align: center;
+                background-color: var(--color-gainsboro);
+            }
+        }
+    }
+
+    .advancedPaymentOrder {
+        .orderBox {
+            margin: 1rem 0;
+        }
+
+        .orderTitle {
+            font-weight: bold;
+            background-color: var(--color-dimgray);
+            color: var(--color-snow);
+            padding: .3rem;
+            border-radius: var(--borderRadius);
+        }
+    }
+
+    .advancedPayment {
+        .payment {
+            display: flex;
+        }
+    }
+}
+
+
+@media (min-width: 765px) {
+
+    #page_advancedPayment {
+        .advancedPaymentData {
+            .advancedPaymentData_content {
+                display: flex;
+                flex-wrap: wrap;
+
+                .tci-field {
+                    width: 50%;
+
+                    .tci-field-label {
+                        width: 25%;
+                    }
+
+                    .tci-field-value {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+
+        .advancedPaymentOrder {
+            .orderContent {
+                display: flex;
+
+                .order {
+                    display: flex;
+
+                    .tci-input-group-text {
+                        margin: 0 .5rem;
+                    }
+                }
+            }
+        }
+
+        .advancedPayment {
+            .paymentContent {
+                
+                .check {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .tci-field {
+                        width: 30%;
+
+                        .tci-field-label {
+                            width: 20%;
+                        }
+
+                        .tci-field-value {
+                            width: 80%;
+                        }
+                    }
+                }
+                .cash{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .tci-field {
+                        width: 40%;
+                        .tci-field-label {
+                            width: 35%;
+                        }
+
+                        .tci-field-value {
+                            width: 65%;
+                        }
+                    }
+                }
+                .company{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .tci-field {
+                        width: 40%;
+                        .tci-field-label {
+                            width: 35%;
+                        }
+
+                        .tci-field-value {
+                            width: 65%;
+                        }
+                    }
+                }
+                .card{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .tci-field {
+                        width: 30%;
+
+                        .tci-field-label {
+                            width: 20%;
+                        }
+
+                        .tci-field-value {
+                            width: 80%;
+                        }
+                    }
+                }
+                .employee{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .tci-field {
+                        width: 35%;
+
+                        .tci-field-label {
+                            width: 30%
+                        }
+
+                        .tci-field-value {
+                            width: 70%;
+                        }
+                    }
+                }
+                .counter{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .tci-field {
+                        width: 35%;
+
+                        .tci-field-label {
+                            width: 30%
+                        }
+
+                        .tci-field-value {
+                            width: 70%;
+                        }
+                    }
+                }
+                .person{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .tci-field {
+                        width: 30%;
+
+                        .tci-field-label {
+                            width: 20%;
+                        }
+
+                        .tci-field-value {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    #page_advancedPayment {
+        .advancedPayment {
+            .paymentContent {
+                .company{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .tci-field {
+                        width: 23%;
+                        .tci-field-label {
+                            width: 25%;
+                        }
+
+                        .tci-field-value {
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

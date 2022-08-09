@@ -1,0 +1,77 @@
+#page_advancedBilling {
+    .advancedBillingQuery {
+        .tci-field {
+            flex-wrap: wrap;
+
+            .tci-field-label {
+                width: 100%;
+            }
+
+            .valueBtn {
+                display: flex;
+                width: 100%;
+
+                .tci-field-value {
+                    width: 100%;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .advancedBillingTable {
+        overflow-x: auto;
+
+        .tci-table {
+            width: 700px;
+            text-align: center;
+
+            thead {
+                background-color: var(--color-rosybrown);
+                color: var(--color-snow);
+            }
+
+            tbody {
+                th {
+                    background-color: var(--color-gainsboro);
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_advancedBilling {
+        .advancedBillingQuery {
+            .tci-field {
+                .tci-field-label {
+                    width: 40%;
+                }
+
+                .valueBtn {
+                    display: flex;
+                    width: 60%;
+
+                    .tci-field-value {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .advancedBillingTable {
+            overflow-x: auto;
+
+            .tci-table {
+                width: 100%;
+
+                th {
+                    text-align: center;
+                }
+
+                thead {}
+            }
+        }
+    }
+}

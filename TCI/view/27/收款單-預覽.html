@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>收款單-預覽</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_remittance_preview">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>收款單-預覽</b></span>
+        </div>
+        <section class="remittance_previewTable tableScroll">
+            <table class="tci-table tci-table-bordered">
+                <tbody>
+                    <tr>
+                        <th>單據類型</th>
+                        <td>銷貨收款</td>
+                        <th>申請部門</th>
+                        <td>軟體研發組</td>
+                    </tr>
+                    <!-- 一般收款 -->
+                    <tr>
+                        <th>收款對象編號</th>
+                        <td>343453</td>
+                        <th>收款對象名稱</th>
+                        <td>343453</td>
+                    </tr>
+                    <!-- 銷貨收款 -->
+                    <tr>
+                        <th>客戶編號</th>
+                        <td>343453</td>
+                        <th>製單日期</th>
+                        <td>2022/8/8</td>
+                    </tr>
+                    <tr>
+                        <th>客戶名稱</th>
+                        <td>xxxxx</td>
+                        <th>付款條件</th>
+                        <td>軟體研發組</td>
+                    </tr>
+                    <tr>
+                        <th>業務分組</th>
+                        <td>M03</td>
+                        <th>付款內容</th>
+                        <td>
+                            支票號碼：<span>34345</span><br>
+                           金額：<span style="color: var(--color-darkred);">222</span>&nbsp; 到期/匯款日：<span>2022/20/22</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="remittance_previewNumber">
+            <div class="formBox_gray">
+                <div class="formBox_title">
+                    <span style="display: flex;">
+                        <span class="tci-input-group-text">項次</span>&nbsp;
+                        <select class="tci-form-control" style="width:100px">
+                            <option selected>100</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="formBox_content tableScroll">
+                    <table class="tci-table tci-table-bordered">
+                        <tbody>
+                            <tr>
+                                <th style="width:17%;">#</th>
+                                <th style="width:20%;">類別</th>
+                                <th>專案號碼</th>
+                                <th colspan="2">產品名稱/摘要說明</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>應收</td>
+                                <td>234234</td>
+                                <td colspan="2">大江生活牛奶公司</td>
+                            </tr>
+                            <tr>
+                                <th>發票日/出口日</th>
+                                <th>發票號碼</th>
+                                <th>幣別/金額</th>
+                                <th>開立AR訂金發票</th>
+                                <th>備註</th>
+                            </tr>
+                            <tr>
+                                <td>2022/22/22</td>
+                                <td>123242343</td>
+                                <td>NTD 100.00</td>
+                                <td>否</td>
+                                <td>xxxxx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="tci-table tci-table-bordered">
+                        <tbody>
+                            <tr>
+                                <th style="width:17%;">#</th>
+                                <th style="width:20%;">類別</th>
+                                <th>專案號碼</th>
+                                <th colspan="2">產品名稱/摘要說明</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>應收</td>
+                                <td>234234</td>
+                                <td colspan="2">大江生活牛奶公司</td>
+                            </tr>
+                            <tr>
+                                <th>發票日/出口日</th>
+                                <th>發票號碼</th>
+                                <th>幣別/金額</th>
+                                <th>開立AR訂金發票</th>
+                                <th>備註</th>
+                            </tr>
+                            <tr>
+                                <td>2022/22/22</td>
+                                <td>123242343</td>
+                                <td>NTD 100.00</td>
+                                <td>否</td>
+                                <td>xxxxx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="color: var(--color-darkred);font-weight: bold;">
+                        <span >合計：</span>
+                        <span>200</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section style="border: 3px solid var(--color-whitesmoke);
+        border-radius: var(--borderRadius);
+        margin-bottom: .5rem;
+        padding: 5px;">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">單據說明:</span>
+                </div>
+                <textarea class="tci-field-value"></textarea>
+            </div>
+        </section>
+        <section class="fileBox">
+            <div class="tci-input-group tci-mb-2 fileContentNo">
+                <div class="tci-input-group-prepend">
+                    <span class="tci-input-group-text tci-mr-2">檔案數:</span>
+                    <select class="tci-bs-custom-select" style="width:100px">
+                        <option selected>100</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div class="illustrate">
+                <div class="fileIllustrate">
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                </div>
+                <div class="fileIllustrate">
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="btnGroups" style="text-align: right;margin-top: .5rem;">
+            <button class="tci-btn gray_btn">上一頁</button>
+            <button class="tci-btn save_btn">單據存檔</button>
+        </div>
+        <div style="text-align: right;" class="tci-mt-3">
+            <span style="font-size:10pt; color:#AAA; font-style:italic;">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

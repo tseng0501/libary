@@ -1,0 +1,37 @@
+#page_acceptanceForm{
+    .acceptanceFormQuery{
+        .tci-field{
+            flex-wrap: wrap;
+            .tci-field-label{
+                width: 100%;
+            }
+            .tci-valuebtn{
+                display: flex;
+                width: 100%;
+                .tci-field-value{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_acceptanceForm{
+        .acceptanceFormQuery{
+            .tci-field{
+                flex-wrap: nowrap;
+                .tci-field-label{
+                    width: 40%;
+                }
+                .tci-valuebtn{
+                    width: 60%;
+                    justify-content: flex-end;
+                    .tci-field-value{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}

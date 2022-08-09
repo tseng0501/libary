@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>研發提案申請單</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_rdproposal">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>研發提案申請單</b></span>
+        </div>
+        <section class="rdproposalQuery">
+            <section class="data">
+                <div class="data_left">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">部門別:</span>
+                        </div>
+                        <input type="text" class="tci-field-value gray" disabled />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">提案人:</span>
+                        </div>
+                        <input type="text" class="tci-field-value gray" disabled />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">研發類別<b class="tag">*</b>:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">提案名稱<b class="tag">*</b>:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">品名<b class="tag">*</b>:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">學名<b class="tag">*</b>:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">別名<b class="tag">*</b>:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                </div>
+                <div class="data_right">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">提案品項照片:</span>
+                        </div>
+                        <div>
+                            <select class="tci-field-value">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <span>照片1<b class="tag">*</b>:</span>
+                            <div>
+                                <input style="line-height: 30px;float: left;" type="file">
+                            </div>
+                            <span>照片2<b class="tag">*</b>:</span>
+                            <div>
+                                <input style="line-height: 30px;float: left;" type="file">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="data100">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">故事性(特點)<b class="tag">*</b>:</span>
+                    </div>
+                    <textarea class="tci-field-value" rows="6"></textarea>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">法規<b class="tag">*</b>:</span>
+                    </div>
+                    <div class="textContent">
+                        <div class="eatContent">
+                            <div class="tci-mb-1">
+                                <span
+                                    style="background-color: var(--color-rosybrown);color: var(--color-snow);">【食品-食用性】</span>
+                            </div>
+                            <div class="country">
+                                <span class="tci-input-group-text">台灣:</span>
+                                <div class="valueBtn">
+                                    <select class="tci-form-control">
+                                        <option selected>使用</option>
+                                        <option value="1">不可使用</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <input type="text" class="tci-form-control" />
+                                </div>
+                            </div>
+                            <div class="country">
+                                <span class="tci-input-group-text">中國:</span>
+                                <div class="valueBtn">
+                                    <select class="tci-form-control">
+                                        <option selected>不可使用</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <input type="text" class="tci-form-control" />
+                                </div>
+                            </div>
+                            <div class="country">
+                                <span class="tci-input-group-text">美國:</span>
+                                <div class="valueBtn">
+                                    <select class="tci-form-control">
+                                        <option selected>Choose...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <input type="text" class="tci-form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="careContent">
+                            <div class="tci-mb-1">
+                                <span
+                                    style="background-color: var(--color-rosybrown);color: var(--color-snow);">【保養品-INCI】</span>
+                            </div>
+                            <div class="country">
+                            </div>
+                            <div class="country">
+                                <span class="tci-input-group-text">中國:</span>
+                                <div class="valueBtn">
+                                    <div class="tci-form-check tci-form-check-inline">
+                                        <input class="tci-form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1" checked>
+                                        <label class="tci-form-check-label" for="exampleRadios1">
+                                            無
+                                        </label>
+                                    </div>
+                                    <div class="tci-form-check tci-form-check-inline">
+                                        <input class="tci-form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                        <label class="tci-form-check-label" for="exampleRadios2">
+                                            有
+                                        </label>
+                                    </div>
+                                    <input type="text" class="tci-form-control" />
+
+                                </div>
+                            </div>
+                            <div class="country">
+                                <span class="tci-input-group-text">美國:</span>
+                                <div class="valueBtn">
+                                    <div class="tci-form-check tci-form-check-inline">
+                                        <input class="tci-form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1" checked>
+                                        <label class="tci-form-check-label" for="exampleRadios1">
+                                            無
+                                        </label>
+                                    </div>
+                                    <div class="tci-form-check tci-form-check-inline">
+                                        <input class="tci-form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                        <label class="tci-form-check-label" for="exampleRadios2">
+                                            有
+                                        </label>
+                                    </div>
+                                    <input type="text" class="tci-form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">供應商<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field priceGroups">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">參考價格<b class="tag">*</b>:</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option selected>NTD</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="price" style="display: flex;">
+                        <input type="text" class="tci-field-value" />
+                        <span class="tci-input-group-text">/</span>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">年產量<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">已知應用<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field priceGroups">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">研發預算<b class="tag">*</b>:</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option selected>NTD</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="price" style="display: flex;">
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                </div>
+                <div class="tci-field priceGroups">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">預計效益<b class="tag">*</b>:</span>
+                    </div>
+                    <select class="tci-form-control">
+                        <option selected>NTD</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="price" style="display: flex;">
+                        <input type="text" class="tci-field-value" />
+                        <span class="tci-input-group-text">/</span>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">建議開發類別/訴求<b class="tag">*</b>:</span>
+                    </div>
+                    <div class="categoryGroups">
+                        <div class="tci-form-check">
+                            <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="tci-form-check-label" for="inlineCheckbox1">食品</label>
+                            <input type="text" class="tci-field-value gray" readonly="readonly"/>
+                        </div>
+                        <div class="tci-form-check">
+                            <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="tci-form-check-label" for="inlineCheckbox1">保養品</label>
+                            <input type="text" class="tci-field-value gray" readonly="readonly"/>
+                        </div>
+                        <div class="tci-form-check">
+                            <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="tci-form-check-label" for="inlineCheckbox1">其他</label>
+                            <input type="text" class="tci-field-value gray" readonly="readonly"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label ">
+                        <span class="tci-field-text text-left">建議目標客戶<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label ">
+                        <span class="tci-field-text text-left">市售相關產品<b class="tag">*</b>:</span>
+                    </div>
+                    <div class="tci-form-check tci-form-check-inline">
+                        <input class="tci-form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="tci-form-check-label" for="exampleRadios1">無</label>
+                    </div>
+                    <div class="tci-form-check tci-form-check-inline">
+                        <input class="tci-form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="tci-form-check-label" for="exampleRadios2">有</label>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">其他輔助說明:</span>
+                    </div>
+                    <div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">音頻(.mp3):</span>
+                            </div>
+                            <input type="file" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">影片(.mp4):</span>
+                            </div>
+                            <input type="file" class="tci-field-value" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn save_btn">資料確認，儲存單據</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

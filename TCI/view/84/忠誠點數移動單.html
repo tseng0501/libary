@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>忠誠點數異動單</title>
+</head>
+
+<body>
+    <div class="container-fluid tci-mb-3" id="page_loyaltyPoint">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle tci-ml-2"><b>忠誠點數異動單</b></span>
+        </div>
+        <section class="loyaltyPointAdd tci-mb-3">
+            <div class="darkBorderCard">
+                <div class="darkBorderCardTitle">
+                    <span>新增點數異動單</span>
+                </div>
+                <div class="darkBorderCardContent loyaltyPointAddContent">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">客戶類別:</span>
+                        </div>
+                        <div class="tci-form-check tci-form-check-inline">
+                            <input class="tci-form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1" checked>
+                            <label class="tci-form-check-label" for="exampleRadios1">
+                                客戶
+                            </label>
+                        </div>
+                        <div class="tci-form-check tci-form-check-inline">
+                            <input class="tci-form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                            <label class="tci-form-check-label" for="exampleRadios2">
+                                集團
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">CRM ID/名稱<b style="color: var(--color-darkred);">*</b>:</span>
+                        </div>
+                        <select class="tci-field-value">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">服務項目:&nbsp;
+                                <button class="tci-icon save_btn"><i class="fa-solid fa-pen"></i></button>
+                            </span>
+                        </div>
+                        <div class="table_content">
+                            <table class="tci-table tci-table-bordered">
+                                <thead>
+                                    <tr style="background-color: var(--color-gainsboro);">
+                                        <th>服務項目</th>
+                                        <th>兌換點數</th>
+                                        <th>項目負責人</th>
+                                        <th>部門名稱</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>IRB人體實驗及發表論文一篇（40人）</td>
+                                        <td>8000</td>
+                                        <td>CANDICE.LIN</td>
+                                        <td>功效驗證實驗室</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IRB人體實驗及發表論文一篇（40人）</td>
+                                        <td>8000</td>
+                                        <td>CANDICE.LIN</td>
+                                        <td>功效驗證實驗室</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IRB人體實驗及發表論文一篇（40人）</td>
+                                        <td>8000</td>
+                                        <td>CANDICE.LIN</td>
+                                        <td>功效驗證實驗室</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IRB人體實驗及發表論文一篇（40人）</td>
+                                        <td>8000</td>
+                                        <td>CANDICE.LIN</td>
+                                        <td>功效驗證實驗室</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IRB人體實驗及發表論文一篇（40人）</td>
+                                        <td>8000</td>
+                                        <td>CANDICE.LIN</td>
+                                        <td>功效驗證實驗室</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IRB人體實驗及發表論文一篇（40人）</td>
+                                        <td>8000</td>
+                                        <td>CANDICE.LIN</td>
+                                        <td>功效驗證實驗室</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">當前點數餘額:</span>
+                        </div>
+                        <input type="text" class="tci-field-value gray" disabled />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">異動點數:</span>
+                        </div>
+                        <input type="text" class="tci-field-value gray" disabled />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">異動後點數餘額:</span>
+                        </div>
+                        <input type="text" class="tci-field-value gray" disabled value="12500" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">備註:</span>
+                        </div>
+                        <textarea class="tci-field-value"></textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="historyfile tci-mb-3">
+            <div class="darkBorderCard">
+                <div class="darkBorderCardTitle">
+                    <span>歷史異動明細</span>
+                </div>
+                <div class="darkBorderCardContent">
+                </div>
+            </div>
+        </section>
+
+
+        <div class="btnGroups">
+            <button class="tci-btn save_btn">儲存單據</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

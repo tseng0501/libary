@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>職務薪資異動單</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_dutyPayroll">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>職務薪資異動單</b></span>
+        </div>
+       
+        <section>
+            <table class="tci-table tci-table-bordered">
+                <tbody>
+                    <tr>
+                        <th>項目</th>
+                        <td>
+                            <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="checkbox" id="Appointment" value="option1">
+                                <label class="tci-form-check-label" for="Appointment">任用</label>
+                              </div>
+                              <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="checkbox" id="Probationary" value="option2">
+                                <label class="tci-form-check-label" for="Probationary">試用期滿</label>
+                              </div>
+                              <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="checkbox" id="Reinstatement" value="option1">
+                                <label class="tci-form-check-label" for="Reinstatement">職務異動</label>
+                              </div>
+                              <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="checkbox" id="Probationary" value="option2">
+                                <label class="tci-form-check-label" for="Probationary"> 留停復職</label>
+                              </div>
+                              <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="checkbox" id="department" value="option1">
+                                <label class="tci-form-check-label" for="department"> 部門調動</label>
+                              </div>
+                              <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="checkbox" id="Promotion" value="option2">
+                                <label class="tci-form-check-label" for="Promotion">晉升</label>
+                              </div>
+                              <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="checkbox" id="Demotion" value="option1">
+                                <label class="tci-form-check-label" for="Demotion">降職</label>
+                              </div>
+                              <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="checkbox" id="adjustment" value="option2">
+                                <label class="tci-form-check-label" for="adjustment">薪資調整</label>
+                              </div>
+                              <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="checkbox" id="Overseas" value="option1">
+                                <label class="tci-form-check-label" for="Overseas">外派</label>
+                              </div>
+                              <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="checkbox" id="Change" value="option2">
+                                <label class="tci-form-check-label" for="Change">公司轉調</label>
+                              </div>
+                              <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="checkbox" id="Return " value="option2">
+                                <label class="tci-form-check-label" for="Return ">離職回任</label>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>姓名&nbsp;
+                            <button class="tci-icon search_btn"><i class="fa-solid fa-circle-user"></i></button>
+                        </th>
+                        <td><span>xxxx</span></td>
+                    </tr>
+                    <tr>
+                        <th>異動生效日</th>
+                        <td><input type="text" class="tci-form-control" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn save_btn">讀取資料</button>
+        </div>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span>
+                </u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

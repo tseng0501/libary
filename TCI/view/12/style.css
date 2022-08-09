@@ -1,0 +1,178 @@
+#page_advancedPayment .advancedPaymentTable .pointData {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: end;
+}
+#page_advancedPayment .advancedPaymentTable .pointData .tci-input-group-text {
+  font-size: 14px;
+}
+#page_advancedPayment .advancedPaymentTable .pointData .tci-form-control {
+  font-size: 14px;
+  margin: 0 1rem;
+  padding: 0.2rem;
+}
+#page_advancedPayment .advancedPaymentTable .pointData .point {
+  display: flex;
+  padding: 0.2rem;
+  background-color: var(--color-gainsboro);
+  border-radius: 0.25rem;
+}
+#page_advancedPayment .advancedPaymentTable .tci-table td {
+  text-align: center;
+}
+#page_advancedPayment .advancedPaymentTable .tci-table th {
+  text-align: center;
+  background-color: var(--color-gainsboro);
+}
+#page_advancedPayment .advancedPaymentOrder .orderBox {
+  margin: 1rem 0;
+}
+#page_advancedPayment .advancedPaymentOrder .orderTitle {
+  font-weight: bold;
+  background-color: var(--color-dimgray);
+  color: var(--color-snow);
+  padding: 0.3rem;
+  border-radius: var(--borderRadius);
+}
+#page_advancedPayment .advancedPayment .payment {
+  display: flex;
+}
+
+@media (min-width: 765px) {
+  #page_advancedPayment .advancedPaymentData .advancedPaymentData_content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #page_advancedPayment .advancedPaymentData .advancedPaymentData_content .tci-field {
+    width: 50%;
+  }
+  #page_advancedPayment .advancedPaymentData .advancedPaymentData_content .tci-field .tci-field-label {
+    width: 25%;
+  }
+  #page_advancedPayment .advancedPaymentData .advancedPaymentData_content .tci-field .tci-field-value {
+    width: 75%;
+  }
+  #page_advancedPayment .advancedPaymentOrder .orderContent {
+    display: flex;
+  }
+  #page_advancedPayment .advancedPaymentOrder .orderContent .order {
+    display: flex;
+  }
+  #page_advancedPayment .advancedPaymentOrder .orderContent .order .tci-input-group-text {
+    margin: 0 0.5rem;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .check {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .check .tci-field {
+    width: 30%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .check .tci-field .tci-field-label {
+    width: 20%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .check .tci-field .tci-field-value {
+    width: 80%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .cash {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .cash .tci-field {
+    width: 40%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .cash .tci-field .tci-field-label {
+    width: 35%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .cash .tci-field .tci-field-value {
+    width: 65%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field {
+    width: 40%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field .tci-field-label {
+    width: 35%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field .tci-field-value {
+    width: 65%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .card .tci-field {
+    width: 30%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .card .tci-field .tci-field-label {
+    width: 20%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .card .tci-field .tci-field-value {
+    width: 80%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .employee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .employee .tci-field {
+    width: 35%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .employee .tci-field .tci-field-label {
+    width: 30%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .employee .tci-field .tci-field-value {
+    width: 70%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .counter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .counter .tci-field {
+    width: 35%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .counter .tci-field .tci-field-label {
+    width: 30%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .counter .tci-field .tci-field-value {
+    width: 70%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .person {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .person .tci-field {
+    width: 30%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .person .tci-field .tci-field-label {
+    width: 20%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .person .tci-field .tci-field-value {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  #page_advancedPayment .advancedPayment .paymentContent .company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field {
+    width: 23%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field .tci-field-label {
+    width: 25%;
+  }
+  #page_advancedPayment .advancedPayment .paymentContent .company .tci-field .tci-field-value {
+    width: 75%;
+  }
+}

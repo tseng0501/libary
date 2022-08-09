@@ -1,0 +1,115 @@
+#page_remittance {
+    .remittanceTable {
+        &.tableScroll {
+            overflow-x: auto;
+
+            .tci-table {
+                width: 900px;
+
+                th {
+                    background-color: var(--color-gainsboro);
+                }
+            }
+        }
+    }
+
+    .remittanceNumber {
+        .tableScroll {
+            overflow-x: auto;
+
+            .tci-table {
+                width: 900px;
+                text-align: center;
+                th {
+                    background-color: var(--color-gainsboro);
+                }
+            }
+        }
+    }
+
+}
+
+#page_remittance_preview {
+    .tableScroll {
+        overflow-x: auto;
+
+        .tci-table {
+            width: 900px;
+            th {
+                background-color: var(--color-gainsboro);
+            }
+        }
+    }
+
+    .remittance_previewNumber {
+        .tableScroll {
+            overflow-x: auto;
+
+            .tci-table {
+                width: 900px;
+                text-align: center;
+                th {
+                    background-color: var(--color-gainsboro);
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .fileBox {
+        .illustrate {
+            .fileIllustrate {
+                display: flex;
+
+                .tci-input-group {
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_remittance {
+        .remittanceTable {
+            &.tableScroll {
+                .tci-table {
+                    width: 100%;
+
+                }
+            }
+        }
+
+        .remittanceNumber {
+            .tableScroll {
+                overflow-x: auto;
+
+                .tci-table {
+                    width: 100%;
+                  
+                }
+            }
+        }
+    }
+
+    #page_remittance_preview {
+        .tableScroll {
+            overflow-x: auto;
+
+            .tci-table {
+                width: 100%;
+
+            }
+        }
+        .remittance_previewNumber {
+            .tableScroll {
+                overflow-x: auto;
+
+                .tci-table {
+                    width: 100%;
+                  
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+#page_rdproposal .rdproposalQuery .tag {
+  color: var(--color-darkred);
+}
+#page_rdproposal .rdproposalQuery .tci-field-value.gray {
+  background-color: var(--color-whitesmoke);
+}
+#page_rdproposal .rdproposalQuery .tci-field {
+  flex-wrap: wrap;
+}
+#page_rdproposal .rdproposalQuery .tci-field .tci-field-label {
+  width: 100%;
+}
+#page_rdproposal .rdproposalQuery .tci-field .tci-field-value {
+  width: 100%;
+}
+#page_rdproposal .rdproposalQuery .data100 .textContent {
+  width: 100%;
+}
+#page_rdproposal .rdproposalQuery .data100 .textContent .eatContent {
+  margin-bottom: 1rem;
+}
+#page_rdproposal .rdproposalQuery .data100 .textContent .eatContent .country .valueBtn {
+  display: flex;
+}
+#page_rdproposal .rdproposalQuery .data100 .textContent .eatContent .country .valueBtn select {
+  width: 130px;
+}
+#page_rdproposal .rdproposalQuery .data100 .textContent .careContent .country .valueBtn {
+  display: flex;
+}
+#page_rdproposal .rdproposalQuery .data100 .textContent .careContent .country .valueBtn select {
+  width: 130px;
+}
+#page_rdproposal .rdproposalQuery .data100 .categoryGroups {
+  width: 100%;
+}
+#page_rdproposal .rdproposalQuery .data100 .categoryGroups .tci-form-check {
+  display: flex;
+}
+#page_rdproposal .rdproposalQuery .data100 .categoryGroups .tci-form-check .tci-form-check-label {
+  padding-top: 0.2rem;
+  width: 60px;
+}
+
+@media (min-width: 765px) {
+  #page_rdproposal .rdproposalQuery .tci-field {
+    flex-wrap: wrap;
+  }
+  #page_rdproposal .rdproposalQuery .tci-field .tci-field-label {
+    width: 42%;
+  }
+  #page_rdproposal .rdproposalQuery .tci-field .tci-field-value {
+    width: 57%;
+  }
+  #page_rdproposal .rdproposalQuery .data {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #page_rdproposal .rdproposalQuery .data .data_left {
+    width: 48%;
+  }
+  #page_rdproposal .rdproposalQuery .data .data_right {
+    width: 48%;
+  }
+  #page_rdproposal .rdproposalQuery .data100 .tci-field .tci-field-label {
+    width: 20%;
+  }
+  #page_rdproposal .rdproposalQuery .data100 .tci-field .tci-field-value {
+    width: 80%;
+  }
+  #page_rdproposal .rdproposalQuery .data100 .textContent {
+    width: 65%;
+  }
+  #page_rdproposal .rdproposalQuery .data100 .textContent .eatContent .country {
+    display: flex;
+  }
+  #page_rdproposal .rdproposalQuery .data100 .textContent .eatContent .country .tci-input-group-text {
+    margin: 0 1rem;
+  }
+  #page_rdproposal .rdproposalQuery .data100 .textContent .careContent .country {
+    display: flex;
+  }
+  #page_rdproposal .rdproposalQuery .data100 .textContent .careContent .country .tci-input-group-text {
+    margin: 0 1rem;
+  }
+  #page_rdproposal .rdproposalQuery .data100 .priceGroups .tci-form-control {
+    width: 20%;
+  }
+  #page_rdproposal .rdproposalQuery .data100 .categoryGroups {
+    width: 70%;
+  }
+  #page_rdproposal .rdproposalQuery .data100 .categoryGroups .tci-form-check {
+    display: flex;
+  }
+  #page_rdproposal .rdproposalQuery .data100 .categoryGroups .tci-form-check .tci-form-check-label {
+    padding-top: 0.2rem;
+    width: 60px;
+  }
+}

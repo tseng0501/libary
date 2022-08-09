@@ -1,0 +1,70 @@
+#page_remittance .remittanceTable.tableScroll {
+  overflow-x: auto;
+}
+#page_remittance .remittanceTable.tableScroll .tci-table {
+  width: 900px;
+}
+#page_remittance .remittanceTable.tableScroll .tci-table th {
+  background-color: var(--color-gainsboro);
+}
+#page_remittance .remittanceNumber .tableScroll {
+  overflow-x: auto;
+}
+#page_remittance .remittanceNumber .tableScroll .tci-table {
+  width: 900px;
+  text-align: center;
+}
+#page_remittance .remittanceNumber .tableScroll .tci-table th {
+  background-color: var(--color-gainsboro);
+}
+
+#page_remittance_preview .tableScroll {
+  overflow-x: auto;
+}
+#page_remittance_preview .tableScroll .tci-table {
+  width: 900px;
+}
+#page_remittance_preview .tableScroll .tci-table th {
+  background-color: var(--color-gainsboro);
+}
+#page_remittance_preview .remittance_previewNumber .tableScroll {
+  overflow-x: auto;
+}
+#page_remittance_preview .remittance_previewNumber .tableScroll .tci-table {
+  width: 900px;
+  text-align: center;
+}
+#page_remittance_preview .remittance_previewNumber .tableScroll .tci-table th {
+  background-color: var(--color-gainsboro);
+  text-align: center;
+}
+#page_remittance_preview .fileBox .illustrate .fileIllustrate {
+  display: flex;
+}
+#page_remittance_preview .fileBox .illustrate .fileIllustrate .tci-input-group {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 765px) {
+  #page_remittance .remittanceTable.tableScroll .tci-table {
+    width: 100%;
+  }
+  #page_remittance .remittanceNumber .tableScroll {
+    overflow-x: auto;
+  }
+  #page_remittance .remittanceNumber .tableScroll .tci-table {
+    width: 100%;
+  }
+  #page_remittance_preview .tableScroll {
+    overflow-x: auto;
+  }
+  #page_remittance_preview .tableScroll .tci-table {
+    width: 100%;
+  }
+  #page_remittance_preview .remittance_previewNumber .tableScroll {
+    overflow-x: auto;
+  }
+  #page_remittance_preview .remittance_previewNumber .tableScroll .tci-table {
+    width: 100%;
+  }
+}

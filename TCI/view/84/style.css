@@ -1,0 +1,43 @@
+@charset "UTF-8";
+#page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field {
+  flex-wrap: wrap;
+}
+#page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .tci-field-label {
+  width: 100%;
+}
+#page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .tci-field-value {
+  width: 100%;
+}
+#page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .tci-field-value.gray {
+  background-color: var(--color-whitesmoke);
+}
+#page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .table_content {
+  width: 100%;
+}
+#page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .table_content .tci-table tbody {
+  overflow-y: auto; /*設定卷軸 auto 是有超過我的高度的時候才會出現卷軸*/
+  height: 100px; /*自己設定*/
+  display: block;
+}
+#page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .table_content .tci-table tr {
+  width: 100%;
+  display: inline-table;
+}
+#page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .table_content th {
+  text-align: center;
+}
+
+@media (min-width: 765px) {
+  #page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .tci-field-label {
+    width: 25%;
+  }
+  #page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .tci-field-value {
+    width: 75%;
+  }
+  #page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .tci-field-value.gray {
+    background-color: var(--color-whitesmoke);
+  }
+  #page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .table_content {
+    width: 75%;
+  }
+}

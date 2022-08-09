@@ -1,0 +1,153 @@
+#page_rdproposal {
+    .rdproposalQuery {
+        .tag {
+            color: var(--color-darkred);
+        }
+
+        .tci-field-value {
+            &.gray {
+                background-color: var(--color-whitesmoke);
+            }
+        }
+
+        .tci-field {
+            flex-wrap: wrap;
+
+            .tci-field-label {
+                width: 100%;
+            }
+
+            .tci-field-value {
+                width: 100%;
+            }
+        }
+
+        .data100 {
+            .textContent {
+                width: 100%;
+
+                .eatContent {
+                    margin-bottom: 1rem;
+
+                    .country {
+                        .valueBtn {
+                            display: flex;
+
+                            select {
+                                width: 130px;
+                            }
+                        }
+                    }
+                }
+
+                .careContent {
+                    .country {
+                        .valueBtn {
+                            display: flex;
+
+                            select {
+                                width: 130px;
+                            }
+                        }
+                    }
+                }
+            }
+            .categoryGroups {
+                width: 100%;
+                .tci-form-check {
+                    display: flex;
+                    .tci-form-check-label{
+                        padding-top: .2rem;
+                        width: 60px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_rdproposal {
+        .rdproposalQuery {
+            .tci-field {
+                flex-wrap: wrap;
+
+                .tci-field-label {
+                    width: 42%;
+                }
+
+                .tci-field-value {
+                    width: 57%;
+                }
+            }
+
+            .data {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .data_left {
+                    width: 48%;
+                }
+
+                .data_right {
+                    width: 48%;
+                }
+            }
+
+            .data100 {
+                .tci-field {
+                    .tci-field-label {
+                        width: 20%;
+                    }
+
+                    .tci-field-value {
+                        width: 80%;
+                    }
+                }
+
+                .textContent {
+                    width: 65%;
+
+                    .eatContent {
+                        .country {
+                            display: flex;
+
+                            .tci-input-group-text {
+                                margin: 0 1rem;
+                            }
+                        }
+                    }
+
+                    .careContent {
+                        .country {
+                            display: flex;
+
+                            .tci-input-group-text {
+                                margin: 0 1rem;
+                            }
+                        }
+                    }
+                }
+
+                .priceGroups {
+                    .tci-form-control {
+                        width: 20%;
+                    }
+                }
+
+                .categoryGroups {
+                    width: 70%;
+                    .tci-form-check {
+                        display: flex;
+                        .tci-form-check-label{
+                            padding-top: .2rem;
+                            width: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

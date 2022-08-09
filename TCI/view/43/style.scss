@@ -1,0 +1,22 @@
+#page_purchaseOrder{
+    .tableScroll{
+        overflow-x: auto;
+        .tci-table{
+            width: 900px;
+            th{
+                background-color: var(--color-light-warning);
+                text-align: center;
+            }
+        }
+    }
+}
+@media (min-width:765px) {
+    #page_purchaseOrder{
+        .tableScroll{
+            overflow-x: auto;
+            .tci-table{
+                width: 100%;
+            }
+        }
+    }
+}
