@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>A/R貨項通知單</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_reserveInvoice">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>A/R貨項通知單</b></span>
+        </div>
+        <section class="reserveInvoiceQuery">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">請輸入A/R貸項通知單編號:</span>
+                </div>
+                <input type="number" class="tci-field-value" />
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">訂單類型:</span>
+                </div>
+                <select class="tci-field-value">
+                    <option selected>ZC01 折讓申請單</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_drakblue">查詢</button>
+        </div>
+        <hr>
+        <section class="notExist">
+            <div style="text-align: center;">
+                <span style="font-size: var(--font-size-lg);">此銷售單(銷退/AR貸項)不存在!</span>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

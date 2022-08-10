@@ -1,0 +1,134 @@
+.text_red {
+  color: var(--color-error);
+}
+
+#dropdownMenuButton {
+  background-color: var(--color-light-gray);
+  padding: 4px;
+  color: var(--color-dark-green);
+  font-weight: bold;
+}
+
+#page_documentQuery .conditionalFilter {
+  margin-top: 10px;
+}
+#page_documentQuery .conditionalFilter .conditionalFilter_box {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-light-gray);
+  padding: 0.5rem;
+  border-radius: var(--borderRadius);
+}
+#page_documentQuery .conditionalFilter .conditionalFilter_box .conditionalFilter_text {
+  width: 100%;
+}
+#page_documentQuery .conditionalFilter .conditionalFilter_query {
+  border-radius: var(--borderRadius);
+  margin-top: 10px;
+  padding: 0.5rem;
+}
+#page_documentQuery .conditionalFilter .conditionalFilter_query .tci-input-group .tci-input-group-prepend {
+  width: 35%;
+}
+#page_documentQuery .conditionalContent {
+  margin-top: 10px;
+  padding: 0.5rem;
+}
+#page_documentQuery .conditionalContent .conditional_tabs .badge {
+  border-radius: var(--borderRadiusCircular);
+  background-color: var(--color-light-green);
+  color: var(--color-snow);
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box {
+  border-radius: var(--borderRadius);
+  padding: 0.5rem;
+  font-size: var(--font-size-sm);
+  margin-bottom: 0.4rem;
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_contenttitle {
+  background-color: var(--color-rosybrown);
+  color: var(--color-snow);
+  border-radius: var(--borderRadius);
+  padding: 0.2rem;
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_contenttitle .label {
+  font-size: 10px;
+  padding: 3px 5px;
+  border-radius: var(--borderRadius);
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_contenttitle .label.red {
+  background-color: var(--color-dark-red);
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_contenttitle .label.blue {
+  background-color: var(--color-dark-blue);
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_contenttitle .label.lightblue {
+  background-color: var(--color-blue);
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_contenttitle .label.green {
+  background-color: var(--color-dark-green);
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_contenttitle .label.dark {
+  background-color: var(--color-dark);
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_contenttitle .label.yellow {
+  background-color: var(--color-peru);
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_btn {
+  border-radius: var(--borderRadius);
+  border: 2px solid var(--color-light-gray);
+  position: relative;
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_btn .btnCheck {
+  text-align: left;
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_btn .btnCheck p {
+  margin-bottom: 5px;
+  padding-top: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+#page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_btn .predictBadgeSearchDiv {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-width: 765px) {
+  #page_documentQuery .conditionalFilter .conditionalFilter_box .conditionalFilter_text {
+    width: auto;
+  }
+  #page_documentQuery .conditionalFilter .conditionalFilter_box .conditionalFilter_text.month {
+    font-weight: bold;
+    color: var(--color-dark-green);
+  }
+  #page_documentQuery .conditionalFilter .conditionalFilter_query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_documentQuery .conditionalFilter .conditionalFilter_query .tci-input-group {
+    width: 48%;
+  }
+  #page_documentQuery .conditionalContent .conditional_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  #page_documentQuery .conditionalContent .conditional_flex .conditional_box {
+    width: 48%;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 992px) {
+  #page_documentQuery .conditionalFilter .conditionalFilter_query .tci-input-group {
+    width: 24%;
+  }
+  #page_documentQuery .conditionalContent .conditional_flex .conditional_box {
+    width: 32%;
+  }
+}

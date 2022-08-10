@@ -2,7 +2,7 @@
   width: 100%;
 }
 #page_manuallyAttendance .manuallyAttendanceContent .application .time .type {
-  margin: auto;
+  margin: auto 1rem;
 }
 
 @media (min-width: 765px) {

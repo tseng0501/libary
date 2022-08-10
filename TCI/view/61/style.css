@@ -19,3 +19,18 @@
     width: 70%;
   }
 }
+#page_quotation_signoff .detailsBoxContent .tableScroll {
+  overflow-x: auto;
+}
+#page_quotation_signoff .detailsBoxContent .tableScroll table {
+  width: 900px;
+}
+#page_quotation_signoff .detailsBoxContent .tableScroll table tbody th {
+  background-color: var(--color-whitesmoke);
+}
+
+@media (min-width: 765px) {
+  #page_quotation_signoff .detailsBoxContent .tableScroll table {
+    width: 100%;
+  }
+}

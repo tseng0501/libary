@@ -2,7 +2,7 @@
   background-color: var(--color-light-gray);
 }
 #page_productionDesgin .copyForm {
-  border: 2px solid var(--color-dark_khaki);
+  border: 2px solid var(--color-dark-khaki);
   padding: 0.5rem;
   border-radius: var(--borderRadius);
   box-shadow: var(--borderShadow);
@@ -59,7 +59,7 @@
   width: 100%;
 }
 #page_productionDesgin .input_long .alarm {
-  color: var(--color-dark_red);
+  color: var(--color-dark-red);
 }
 #page_productionDesgin .input_short {
   width: 100%;

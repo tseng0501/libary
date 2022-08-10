@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <div class="container-fluid tci-mb-3" id="page_ItemTemplate">
+    <div class="container-fluid" id="page_ItemTemplate">
         <div class="pageHeader">
-            <span class="pageHeaderTitle tci-ml-2"><b>item 管理</span></b>
+            <span class="pageHeaderTitle"><b>item 管理</span></b>
         </div>
         <section class="itemTemplate_query">
             <div class="itemTemplate_flex">
@@ -23,13 +23,15 @@
                     <div class="tci-field-label">
                         <span class="tci-field-text text-left">Item 名稱：</span>
                     </div>
-                    <select class="tci-field-value tci-mr-2">
-                        <option selected>All</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                    <button class="tci-btn bg_drakgreen">查詢</button>
+                    <div class="tci-valueBtn">
+                        <select class="tci-field-value">
+                            <option selected>All</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <button class="tci-btn bg_drakgreen">查詢</button>
+                    </div>
                 </div>
                 <div class="itemTemplate_btn">
                     <button class="tci-btn bg_darkkhaki" data-toggle="modal" data-target="#additemTemplate">新增
@@ -59,8 +61,7 @@
                                 <button class="tci-btn table_icon" data-toggle="modal" data-target="#edititemTemplate">
                                     <i class="fa-solid fa-pencil"></i>
                                 </button>
-                                <button class="tci-btn table_icon" data-toggle="modal" data-target="#deleteItemTable"
-                                    >
+                                <button class="tci-btn trash_icon" data-toggle="modal" data-target="#deleteItemTable">
                                     <i class="fa-solid fa-trash-can"></i>
                                 </button>
                             </td>
@@ -74,7 +75,7 @@
                                 <button class="tci-btn table_icon" data-toggle="modal" data-target="#edititemTemplate">
                                     <i class="fa-solid fa-pencil"></i>
                                 </button>
-                                <button class="tci-btn table_icon" data-toggle="modal" data-target="#deleteItemTable">
+                                <button class="tci-btn trash_icon" data-toggle="modal" data-target="#deleteItemTable">
                                     <i class="fa-solid fa-trash-can"></i>
                                 </button>
                             </td>
@@ -147,7 +148,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- edititemTemplate -->
     <div class="modal fade" id="edititemTemplate" tabindex="-1" role="dialog" aria-labelledby="edititemTemplateLabel"
         aria-hidden="true" data-backdrop="static">
@@ -212,7 +213,8 @@
     </div>
 
     <!-- deleteItemTable -->
-    <div class="modal fade" id="deleteItemTable" tabindex="-1" aria-labelledby="deleteItemTableLabel" aria-hidden="true">
+    <div class="modal fade" id="deleteItemTable" tabindex="-1" aria-labelledby="deleteItemTableLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>修改簽核單據</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_documentEdit">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>修改 簽核單據</b></span>
+        </div>
+
+        <section class="editDocuments darkBorderCard">
+            <div class="editDocuments_title darkBorderCardTitle">
+                <span>更新請假單</span>
+            </div>
+            <div class="darkBorderCardContent editDocuments_lists">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">請假人:</span>
+                    </div>
+                    <div class="tci-field-value">
+                        <span>
+                            大江戰士-HEDY.TSENG(曾莞婷)&nbsp;
+                        </span>
+                        <button type="button" class="tci-btn bg_drakblue" style="padding: 0 .5rem;">EIP個人行事曆</button>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">假別:</span>
+                    </div>
+                    <select class="tci-field-value">
+                        <option value="0" selected="Selected">特別休假, 年累計, 月累計</option>
+                        <option value="1">補休, 年累計, 月累計</option>
+                        <option value="2">事假, 年累計, 月累計</option>
+                        <option value="3">普通傷病假, 年累計, 月累計</option>
+                        <option value="15">家庭照顧假, 年累計, 月累計</option>
+                        <option value="10">生理假, 年累計, 月累計</option>
+                        <option value="8">產假, 年累計, 月累計</option>
+                        <option value="9">陪產檢及陪產假, 年累計, 月累計</option>
+                        <option value="6">婚假, 年累計, 月累計</option>
+                        <option value="7">喪假, 年累計, 月累計</option>
+                        <option value="13">法定公休假, 年累計, 月累計</option>
+                        <option value="5">公傷假, 年累計, 月累計</option>
+                        <option value="11">育嬰假, 年累計, 月累計</option>
+                        <option value="16">留職停薪假, 年累計, 月累計</option>
+                        <option value="17">產檢假, 年累計, 月累計</option>
+                        <option value="19">天災假, 年累計, 月累計</option>
+                        <option value="20">謀職假, 年累計, 月累計</option>
+                        <option value="22">居家作業, 年累計, 月累計</option>
+                        <option value="23">原住民族歲時祭儀假, 年累計, 月累計</option>
+                        <option value="26">無薪病假, 年累計, 月累計</option>
+                        <option value="27">無薪事假, 年累計, 月累計</option>
+                        <option value="28">有薪假(COVID-19,限磐石直接人員), 年累計, 月累計</option>
+                        <option value="29">防疫照顧假, 年累計, 月累計</option>
+                        <option value="25">防疫隔離假, 年累計, 月累計</option>
+                        <option value="30">哺乳假, 年累計, 月累計</option>
+                    </select>
+                </div>
+                <div class="tci-field textarea">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">事由:</span>
+                    </div>
+                    <textarea class="tci-field-value"></textarea>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">代理簽核:</span>
+                    </div>
+                    <div class="tci-field-value">
+                        <input type="checkbox" />
+                        <span>(我的請假期間，代理人可以代簽核我的單據)</span>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">代理人設定:</span>
+                    </div>
+                    <div class="tci-field-value">
+                        <input type="checkbox" />
+                        <span>如果其他公司也有此代理人資料,也一併異動</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="editDocuments_leave tci-mt-3">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">我剩餘的 特休/補休 時數:</span>
+                </div>
+                <div class="tci-field-value">0 / 0</div>
+            </div>
+        </section>
+        <section class="editDocuments_form tci-mb-3">
+            <div class="editDocuments_data month darkBorderCard">
+                <div class="editDocuments_title darkBorderCardTitle">
+                    <span>月累計</span>
+                </div>
+                <div class="darkBorderCardContent editDocuments_datacontent">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">特別休假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">補假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">事假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">普通傷病假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">家庭照顧假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">生理假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">產假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">陪產檢及陪產假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">婚假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">喪假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">法定公休假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">公傷假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">育嬰假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">留職停薪假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">產檢假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">天災假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">謀職假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">居家作業:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">無薪病假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">無薪事假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">防疫照顧假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">防疫隔離假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">哺乳假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">原住民族歲時祭儀假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">有薪假(COVID-19,限磐石直接人員):</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="editDocuments_form tci-mb-3">
+            <div class="editDocuments_data year darkBorderCard">
+                <div class="editDocuments_title darkBorderCardTitle">
+                    <span>年累計</span>
+                </div>
+                <div class="darkBorderCardContent editDocuments_datacontent">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">特別休假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">補假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">事假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">普通傷病假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">家庭照顧假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">生理假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">產假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">陪產檢及陪產假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">婚假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">喪假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">法定公休假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">公傷假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">育嬰假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">留職停薪假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">產檢假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">天災假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">謀職假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">居家作業:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">無薪病假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">無薪事假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">防疫照顧假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">防疫隔離假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">哺乳假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">原住民族歲時祭儀假:</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">有薪假(COVID-19,限磐石直接人員):</span>
+                        </div>
+                        <div class="tci-field-value gray">0 hr</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_lightgray">全部清除</button>
+            <button class="tci-btn bg_drakgreen">確認資料，預覽單據</button>
+        </div>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

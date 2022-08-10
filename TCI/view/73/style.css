@@ -1,8 +1,8 @@
 .tci-form-control {
   margin-right: 5px;
 }
-.tci-form-control.checkContent {
-  margin: 0.5rem 0;
+.tci-form-control.checkContent .tci-form-check {
+  margin: 0.5rem;
 }
 
 @media (min-width: 765px) {

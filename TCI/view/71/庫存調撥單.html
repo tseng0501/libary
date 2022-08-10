@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <div class="container-fluid tci-mb-3" id="page_inventoryTransfer">
+    <div class="container-fluid" id="page_inventoryTransfer">
         <div class="pageHeader">
-            <span class="pageHeaderTitle tci-ml-2"><b>庫存調撥單</b></span>
+            <span class="pageHeaderTitle"><b>庫存調撥單</b></span>
         </div>
         <section class="inventoryTransferQuery">
             <div class="tci-bs-input-group tci-mb-2">
@@ -31,19 +31,18 @@
             </div>
             <div class="tci-bs-input-group tci-mb-2">
                 <div class="tci-bs-input-group-prepend">
-                    <span class="tci-bs-input-group-text">申請部門</span>
+                    <span class="tci-bs-input-group-text">申請部門&nbsp;
+                        <!-- 按下申請部門 icon ，跳出 modal 選擇部門 -->
+                        <button class="tci-icon bg_lightgray"><i class="fa-solid fa-building"></i></button>
+                    </span>
                 </div>
-                <div class="tci-bs-custom-select">
-                    <div class="">軟體研發部</div>
-                </div>
-                <!-- 按下申請部門 icon ，跳出 modal 選擇部門 -->
-                <button class="tci-icon bg_lightgray" style="width: 40px;"><i class="fa-solid fa-building"></i></button>
+                <div class="tci-form-control">軟體研發部</div>
             </div>
             <div class="tci-bs-input-group tci-mb-2">
                 <div class="tci-bs-input-group-prepend">
                     <span class="tci-bs-input-group-text">預計調撥日</span>
                 </div>
-                <input type="text" class="tci-bs-custom-select" />
+                <input type="text" class="tci-form-control" />
             </div>
         </section>
         <hr>
@@ -84,12 +83,12 @@
                     </select>
                 </div>
                 <div>
-                    <span style="color:red;font-size: 12px;">※請先選定【調出倉庫】，因為更改【調出倉庫】時會清空下方列表唷！</span>
+                    <span style="color:red;font-size:var(--font-size-xs);">※請先選定【調出倉庫】，因為更改【調出倉庫】時會清空下方列表唷！</span>
                 </div>
             </div>
             <div class="tableScroll tci-mt-3">
                 <table class="tci-table tci-table-bordered">
-                    <thead class="bg_darkkhaki" style="text-align: center;">
+                    <thead style="text-align: center;background-color: var(--color-light-gray);">
                         <tr>
                             <th>#</th>
                             <th>料號</th>
@@ -175,10 +174,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="btnGroups" style="text-align: right;">
-                <button class="tci-btn bg_drakgreen">確認資料，儲存單據</button>
-            </div>
         </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_drakgreen">確認資料，儲存單據</button>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->

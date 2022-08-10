@@ -1,0 +1,18 @@
+#page_paymentList{
+    .tci-valueBtn{
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media (min-width:765px) {
+    #page_paymentList{
+        .tci-input-group-prepend{
+            width: 30%;
+        }
+        .tci-valueBtn{
+            width: 70%;
+        }
+    }
+    
+}

@@ -1,0 +1,194 @@
+.text_red {
+    color: var(--color-error);
+}
+
+//查詢單據 bar
+#dropdownMenuButton {
+    background-color: var(--color-light-gray);
+    padding: 4px;
+    color: var(--color-dark-green);
+    font-weight: bold;
+}
+
+#page_documentQuery {
+
+    //條件查詢
+    .conditionalFilter {
+        margin-top: 10px;
+
+        .conditionalFilter_box {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: var(--color-light-gray);
+            padding: .5rem;
+            border-radius: var(--borderRadius);
+
+            .conditionalFilter_text {
+                width: 100%;
+            }
+
+        }
+
+        .conditionalFilter_query {
+            border-radius: var(--borderRadius);
+            margin-top: 10px;
+            padding: .5rem;
+
+            .tci-input-group {
+                .tci-input-group-prepend {
+                    width: 35%;
+                }
+            }
+        }
+    }
+
+    .conditionalContent {
+        margin-top: 10px;
+        padding: .5rem;
+
+        .conditional_tabs {
+            .badge {
+                border-radius: var(--borderRadiusCircular);
+                background-color: var(--color-light-green);
+                color: var(--color-snow);
+            }
+        }
+
+        .conditional_flex {
+            .conditional_box {
+                border-radius: var(--borderRadius);
+                padding: .5rem;
+                font-size: var(--font-size-sm);
+                margin-bottom: .4rem;
+
+                .conditional_contenttitle {
+                    background-color: var(--color-rosybrown);
+                    color: var(--color-snow);
+                    border-radius: var(--borderRadius);
+                    padding: .2rem;
+
+                    .label {
+                        font-size: 10px;
+                        padding: 3px 5px;
+                        border-radius: var(--borderRadius);
+
+                        &.red {
+                            background-color: var(--color-dark-red);
+                        }
+
+                        &.blue {
+                            background-color: var(--color-dark-blue);
+                        }
+
+                        &.lightblue {
+                            background-color: var(--color-blue);
+                        }
+
+                        &.green {
+                            background-color: var(--color-dark-green);
+                        }
+
+                        &.dark {
+                            background-color: var(--color-dark);
+                        }
+
+                        &.yellow {
+                            background-color: var(--color-peru);
+                        }
+                    }
+                }
+
+                .conditional_btn {
+                    border-radius: var(--borderRadius);
+                    border: 2px solid var(--color-light-gray);
+                    position: relative;
+
+                    .btnCheck {
+                        text-align: left;
+                        width: 100%;
+                        padding: .3rem .5rem;
+
+                        p {
+                            margin-bottom: 5px;
+                            padding-top: 5px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .predictBadgeSearchDiv {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_documentQuery {
+
+        //條件查詢
+        .conditionalFilter {
+            .conditionalFilter_box {
+                .conditionalFilter_text {
+                    width: auto;
+
+                    &.month {
+                        font-weight: bold;
+                        color: var(--color-dark-green);
+                    }
+                }
+            }
+
+            .conditionalFilter_query {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-input-group {
+                    width: 48%;
+                }
+            }
+        }
+
+        .conditionalContent {
+            .conditional_flex {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+
+                .conditional_box {
+                    width: 48%;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #page_documentQuery {
+
+        //條件查詢
+        .conditionalFilter {
+            .conditionalFilter_query {
+                .tci-input-group {
+                    width: 24%;
+                }
+            }
+        }
+
+        .conditionalContent {
+            .conditional_flex {
+                .conditional_box {
+                    width: 32%;
+                }
+            }
+        }
+    }
+}

@@ -1,25 +1,26 @@
 #page_generalInvoice {
-    .tci-input-group{
-        .tci-form-control{
-            &.gray{
-            background-color: var(--color-whitesmoke);
+    .tag {
+        color: var(--color-light-red);
+    }
+
+    .tci-input-group {
+        .tci-form-control {
+            &.gray {
+                background-color: var(--color-whitesmoke);
             }
         }
     }
+
     .btnIconGroups {
         button {
             width: 30px;
         }
     }
 
-    .fileBox {
-        border: 3px solid var(--color-rosybrown);
-        border-radius: var(--borderRadius);
-        margin: .5rem;
-        padding: .5rem;
-
-        .fileContentNo {
-            width: 40%;
+    .details {
+        input {
+            width: 100%;
+            margin-bottom: .5rem;
         }
     }
 
@@ -33,7 +34,7 @@
             margin: 5px;
 
             .addTableNo {
-                width: 70px;
+                width: 50px;
                 background-color: var(--color-rosybrown);
                 margin-right: .5rem;
                 text-align: center;
@@ -46,7 +47,8 @@
                     color: var(--color-snow);
                 }
             }
-            .addTableContent{
+
+            .addTableContent {
                 padding: 5px;
                 border: 3px solid var(--color-rosybrown);
                 border-radius: var(--borderRadius);
@@ -66,9 +68,10 @@
                 color: var(--color-rosybrown);
             }
 
-            .addTableFooterText {
+            .addTableFooterText,
+            .addTableFooterTitle {
                 font-weight: bold;
-                color: var(--color-dark_red);
+                color: var(--color-dark-red);
             }
         }
     }
@@ -76,58 +79,10 @@
 
 @media (min-width:765px) {
     #page_generalInvoice {
-        .fileBox {
-            .illustrate {
-                .fileIllustrate {
-                    display: flex;
-                    .tci-input-group{
-                        margin-bottom: .5rem;
-                    }
-                }
-            }
-        }
-
-        .orderDetailsTitle {
-            .orderDetailsTitle_text {
-                display: flex;
-                justify-content: space-between;
-
-                .tci-input-group {
-                    width: 49%;
-                }
-            }
-        }
-
-
-        .orderTableBox {
-            .orderTable {
-                display: flex;
-                flex-wrap: wrap;
-                padding: 5px;
-
-                .tci-input-group {
-                    width: 30%;
-                    margin-right: 1rem;
-                }
-            }
-        }
-
-        .addTableBox {
-            .addTable {
-                .addTableNo {
-                    width: 100px;
-                }
-
-                .addTableContent {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: flex-start;
-
-                    .tci-input-group {
-                        width: 30%;
-                        margin-right: 1rem;
-                    }
-                }
+        .details {
+            input {
+                width: 60%;
+                margin-bottom: 0;
             }
         }
 
@@ -144,6 +99,102 @@
                         width: 100%;
 
                     }
+                }
+            }
+        }
+
+        .addTableBox {
+            .addTable {
+                .addTableNo {
+                    width: 100px;
+                }
+
+                .addTableContent {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    .tci-input-group {
+                        width: 31%;
+                        margin-right: 5px;
+                        &.type {
+                            width: 63%;
+                            .tci-input-group-text{
+                                margin: 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .orderTableBox {
+            .orderTable {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 5px;
+
+                .tci-input-group {
+                    width: 30%;
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+        .orderDetailsTitle {
+            .orderDetailsTitle_text {
+                display: flex;
+                justify-content: space-between;
+
+                .tci-input-group {
+                    width: 49%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    #page_generalInvoice {
+        .invoiceContent {
+            .invoiceForm {
+                justify-content: flex-start;
+
+                .tci-input-group {
+                    width: 32%;
+                    margin-right: 10px;
+
+                    &.data_short {
+                        width: 16%;
+                    }
+                }
+            }
+        }
+
+        .addTableBox {
+            .addTable {
+                .addTableNo {
+                    width: 60px;
+                }
+
+                .addTableContent {
+                    .tci-input-group {
+                        width: 16%;
+                        &.type {
+                            width: 49%;
+                            .tci-input-group-text{
+                                margin: 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .orderTableBox {
+            .orderTable {
+                .tci-input-group {
+                    width: 24%;
+                    margin-right: 10px;
                 }
             }
         }

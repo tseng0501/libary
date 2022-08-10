@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>銷售訂單簽核</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_purchaseConfirmation_signoff">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>銷售訂單簽核</b></span>
+        </div>
+
+        <!-- 單據明細 -->
+        <section class="darkBorderCard detailsBox tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>單據明細</span>
+                <span class="tci-pl-0 ">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="detailsBoxContent darkBorderCardContent">
+                <div class="detailsBox_company tci-mt-1 tci-mb-2" style="text-align: right;">
+                    <span class="detailsBox_companytext"
+                        style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">百岳特國際貿易(上海)</span>
+                </div>
+                <div class="tableScroll0">
+                    <table class="tci-table tci-table-bordered">
+                        <thead
+                            style="background-color: var(--color-rosybrown);color: var(--color-snow);text-align: center;">
+                            <tr>
+                                <th colspan="4">銷售訂單</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>客戶編號</th>
+                                <td>10002472</td>
+                                <th>單據號碼</th>
+                                <td>1100003433 &nbsp;
+                                    <span style="color:white;border-radius:5px;background-color:red;border:1px solid #CCC;padding:5px;font-size:12pt;">ZN05	大江基因正式訂單</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>客戶名稱</th>
+                                <td>尚佳医魔法生物科技（大连市）有限责任公司</td>
+                                <th>製單日期</th>
+                                <td>2022/8/10 上午 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <th>聯絡人</th>
+                                <td>10002472</td>
+                                <th>報價有效期限</th>
+                                <td>1100003433</td>
+                            </tr>
+                            <tr>
+                                <th>地址</th>
+                                <td>10002472</td>
+                                <th>交易幣別</th>
+                                <td>1100003433</td>
+                            </tr>
+                            <tr>
+                                <th>電話</th>
+                                <td>10002472</td>
+                                <th>匯率</th>
+                                <td>1100003433</td>
+                            </tr>
+                            <tr>
+                                <th>傳真</th>
+                                <td>10002472</td>
+                                <th>業務分組</th>
+                                <td>1100003433</td>
+                            </tr>
+                            <tr>
+                                <th>預收款開立發票</th>
+                                <td>10002472</td>
+                                <th>舊品版改</th>
+                                <td>1100003433</td>
+                            </tr>
+                            <tr>
+                                <th>付款條件</th>
+                                <td>10002472</td>
+                                <th>交貨凍結</th>
+                                <td>1100003433</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tableScroll0">
+                    <table class="tci-table tci-table-bordered">
+                        <thead
+                            style="background-color: var(--color-rosybrown);color: var(--color-snow);text-align: center;">
+                            <tr>
+                                <th colspan="4">信用額度資訊</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>信用狀態</th>
+                                <td>尚佳医魔法生物科技（大连市）有限责任公司</td>
+                                <th>核定授信額度</th>
+                                <td>2022/8/10 上午 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <th>Commodities Provided
+                                    (Invoices Not Provided Yet)</th>
+                                <td>10002472</td>
+                                <th>Payment Required
+                                    (Accounting Items Not Created Yet)</th>
+                                <td>1100003433</td>
+                            </tr>
+                            <tr>
+                                <th>應收款項餘額</th>
+                                <td>10002472</td>
+                                <th>可用授信額度</th>
+                                <td>Available LOC</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tableScroll">
+                    <table class="tci-table tci-table-bordered">
+                        <thead
+                            style="background-color: var(--color-rosybrown);color: var(--color-snow);text-align: center;">
+                            <tr>
+                                <th>#</th>
+                                <th>新/舊品</th>
+                                <th>料號</th>
+                                <th>品名 / 規格</th>
+                                <th>單位</th>
+                                <th>訂購數量</th>
+                                <th>單價/PC</th>
+                                <th>小計</th>
+                                <th>備註</th>
+                                <th>本次毛利%</th>
+                                <th>確稿日期%</th>
+                                <th>交貨日期%</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1100003433</td>
+                                <td>尚佳医-胶原蛋白肽果汁饮料TDN-25ml7包54盒-1T</td>
+                                <td>ml</td>
+                                <td>233333</td>
+                                <td>33333</td>
+                                <td>487,999.65</td>
+                                <td>1100003433</td>
+                                <td>1100003433</td>
+                                <td><span class="warningTag">低毛利 Low Profit</span></td>
+                                <td>1100003433</td>
+                                <td>1100003433</td>
+                            </tr>
+                            <tr>
+                                <td colspan="7" style="text-align: right;">稅</td>
+                                <td colspan="5">63,439.95</td>
+                            </tr>
+                            <tr>
+                                <td colspan="7">本幣總計</td>
+                                <td colspan="5">551,439.6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <section class="small_mark" style="font-size: 13px;padding: 0 10px;">
+                        <p style="font-weight:bold;">備註：</p>
+                        <span></span>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

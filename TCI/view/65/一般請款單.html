@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <div class="container-fluid tci-mb-3" id="page_generalInvoice">
-        <div class="pageHeader" style="position: relative;">
-            <span class="pageHeaderTitle tci-ml-2"><b>一般請款單</b></span>
+    <div class="container-fluid" id="page_generalInvoice">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>一般請款單</b></span>
         </div>
 
-        <section style="margin: .5rem;" class="invoiceContent darkBorderCard">
+        <section class="invoiceContent darkBorderCard tci-mb-3">
             <div class="darkBorderCardTitle">
                 <span>單據資訊</span>
                 <!-- 展開縮放，icon 切換 -->
@@ -42,7 +42,7 @@
                 </div>
                 <div class="tci-input-group tci-mb-2">
                     <div class="tci-input-group-prepend">
-                        <span class="tci-input-group-text">部門別:</span>
+                        <span class="tci-input-group-text">部門別<b class="tag">*</b>:</span>
                     </div>
                     <input type="text" class="tci-form-control" disabled />
                     <button class="tci-btn-icon bg_drakblue" style="width: 40px;"><i
@@ -50,7 +50,7 @@
                 </div>
                 <div class="tci-input-group tci-mb-2">
                     <div class="tci-input-group-prepend">
-                        <span class="tci-input-group-text">公司統編:</span>
+                        <span class="tci-input-group-text">公司統編<b class="tag">*</b>:</span>
                     </div>
                     <select class="tci-bs-custom-select">
                         <option>Choose...</option>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="tci-input-group tci-mb-2">
                     <div class="tci-input-group-prepend">
-                        <span class="tci-input-group-text">幣別:</span>
+                        <span class="tci-input-group-text">幣別<b class="tag">*</b>:</span>
                     </div>
                     <div style="display: flex;width: 100%;">
                         <select class="tci-bs-custom-select">
@@ -92,15 +92,15 @@
                     </div>
                     <input type="text" class="tci-form-control" value="大江生醫股份有限公司" disabled />
                 </div>
-                <div class="tci-input-group tci-mb-2">
+                <div class="tci-input-group tci-mb-2 data_short">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">過帳日期:</span>
                     </div>
                     <input type="text" class="tci-form-control" value="大江生醫股份有限公司" disabled />
                 </div>
-                <div class="tci-input-group tci-mb-2">
+                <div class="tci-input-group tci-mb-2 data_short">
                     <div class="tci-input-group-prepend">
-                        <span class="tci-input-group-text">付款方式:</span>
+                        <span class="tci-input-group-text">付款方式<b class="tag">*</b>:</span>
                     </div>
                     <select class="tci-bs-custom-select">
                         <option selected>Choose...</option>
@@ -117,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section style="margin: .5rem;" class="billContent darkBorderCard">
+        <section class="billContent darkBorderCard tci-mb-3">
             <div class="darkBorderCardTitle">
                 <span>票據明細</span>
                 <!-- 展開縮放，icon 切換 -->
@@ -127,7 +127,7 @@
                 </span>
             </div>
             <div class="darkBorderCardContent">
-                <div class="tci-input-group tci-mb-2">
+                <div class="tci-input-group tci-mb-2 details">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">批次匯入票據明細:</span>
                     </div>
@@ -138,13 +138,13 @@
                 <div class="btnIconGroups">
                     <!-- 一開始 加 筆 ，按下"加",出現“勾”&"X"消失"筆"，按下“勾”,出現“筆”，消失“X” -->
                     <button class="tci-icon bg_drakgreen"><i class="fa-solid fa-plus"></i></button>
-                    <button class="tci-icon tci-btn-regular"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="tci-icon bg_darkred"><i class="fa-solid fa-xmark"></i></button>
                     <button class="tci-icon bg_drakblue"><i class="fa-solid fa-check"></i></button>
                     <button class="tci-icon bg_drakblue"><i class="fa-solid fa-pen"></i></button>
                 </div>
                 <div class="addTableBox">
                     <div class="addTable">
-                        <div class="addTableNo"><span>1</span></div>
+                        <div class="addTableNo"><span>88</span></div>
                         <div class="addTableContent">
                             <div class="tci-input-group tci-mb-2">
                                 <div class="tci-input-group-prepend">
@@ -190,7 +190,7 @@
                                 <input type="text" class="tci-form-control" value="83224836" />
                             </div>
                             <div style="width: 100%;">
-                                <button class="tci-icon bg_darkerror"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"><i class="fa-solid fa-trash-can"></i></button>
                             </div>
                         </div>
                     </div>
@@ -241,7 +241,7 @@
                                 <input type="text" class="tci-form-control" value="1234567890" />
                             </div>
                             <div style="width: 100%;">
-                                <button class="tci-icon bg_darkerror"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"><i class="fa-solid fa-trash-can"></i></button>
                             </div>
                         </div>
                     </div>
@@ -252,7 +252,7 @@
                 </div>
             </div>
         </section>
-        <section style="margin: .5rem;" class="paymentContent darkBorderCard">
+        <section class="paymentContent darkBorderCard tci-mb-3">
             <div class="darkBorderCardTitle">
                 <span>請款明細</span>
                 <!-- 展開縮放，icon 切換 -->
@@ -262,7 +262,7 @@
                 </span>
             </div>
             <div class="darkBorderCardContent">
-                <div class="tci-input-group tci-mb-2">
+                <div class="tci-input-group tci-mb-2 details">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">批次匯入票據明細:</span>
                     </div>
@@ -273,7 +273,7 @@
                 <div class="btnIconGroups">
                     <!-- 一開始 加 筆 ，按下"加",出現“勾”&"X"消失"筆"，按下“勾”,出現“筆”，消失“X” -->
                     <button class="tci-icon bg_drakgreen"><i class="fa-solid fa-plus"></i></button>
-                    <button class="tci-icon tci-btn-regular"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="tci-icon bg_darkred"><i class="fa-solid fa-xmark"></i></button>
                     <button class="tci-icon bg_drakblue"><i class="fa-solid fa-check"></i></button>
                     <button class="tci-icon bg_drakblue"><i class="fa-solid fa-pen"></i></button>
                 </div>
@@ -281,18 +281,32 @@
                     <div class="addTable">
                         <div class="addTableNo"><span>1</span></div>
                         <div class="addTableContent">
-                            <div class="tci-input-group tci-mb-2">
+                            <div class="tci-input-group tci-mb-2 type">
                                 <div class="tci-input-group-prepend">
                                     <span class="tci-input-group-text">請款類型:</span>
                                 </div>
                                 <div style="display: flex;width:100%" >
                                     <select class="tci-bs-custom-select">
-                                        <option selected>Choose...</option>
+                                        <option selected>悠遊(聯名卡)</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
                                     <button class="tci-icon bg_drakblue" style="width:40px"><i class="fa-solid fa-circle-question"></i></button>
+                                    <span class="tci-input-group-text">起</span>
+                                     <select class="tci-bs-custom-select" style="width: 100px;">
+                                        <option selected>台北</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <span class="tci-input-group-text">迄</span>
+                                     <select class="tci-bs-custom-select" style="width: 100px;">
+                                        <option selected>台北</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="tci-input-group tci-mb-2">
@@ -340,7 +354,7 @@
                                 <input type="text" class="tci-form-control" value="83224836" />
                             </div>
                             <div style="width: 100%;">
-                                <button class="tci-icon bg_darkerror"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"><i class="fa-solid fa-trash-can"></i></button>
                                 <button class="tci-icon bg_darkkhaki"><i class="fa-solid fa-copy"></i></button>
 
                             </div>
@@ -353,7 +367,7 @@
                 </div>
             </div>
         </section>
-        <section style="margin: .5rem;" class="orderDetailsContent darkBorderCard">
+        <section class="orderDetailsContent darkBorderCard tci-mb-3">
             <div class="darkBorderCardTitle">
                 <span>請採單明細</span>
                 <!-- 展開縮放，icon 切換 -->
@@ -431,8 +445,8 @@
                 </div>
             </div>
         </section>
-        <section class="fileBox">
-            <div class="tci-input-group tci-mb-2 fileContentNo">
+        <section class="fileBox tci-mb-3">
+            <div class="tci-input-group fileContentNo">
                 <div class="tci-input-group-prepend">
                     <span class="tci-input-group-text tci-mr-2">檔案數:</span>
                     <select class="tci-bs-custom-select" style="width:100px">
@@ -475,11 +489,11 @@
                 </div>
             </div>
         </section>
-        <div class="btnGroups" style="text-align: right;margin-right: .5rem;">
+        <div class="btnGroups">
             <button class="tci-btn bg_drakgreen">確認資料，儲存單據</button>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>

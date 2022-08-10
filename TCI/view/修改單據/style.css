@@ -1,0 +1,38 @@
+#page_documentEdit .editDocuments_data .editDocuments_datacontent .tci-field {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#page_documentEdit .editDocuments_data .editDocuments_datacontent .tci-field .tci-field-label {
+  width: 45%;
+}
+#page_documentEdit .editDocuments_data .editDocuments_datacontent .tci-field .tci-field-value {
+  width: 45%;
+}
+
+@media (min-width: 765px) {
+  #page_documentEdit .editDocuments_data .editDocuments_datacontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_documentEdit .editDocuments_data .editDocuments_datacontent .tci-field {
+    width: 32%;
+  }
+  #page_documentEdit .editDocuments_data .editDocuments_datacontent .tci-field .tci-field-label {
+    width: 52%;
+  }
+  #page_documentEdit .editDocuments_data .editDocuments_datacontent .tci-field .tci-field-value {
+    width: 48%;
+  }
+}
+@media (min-width: 992px) {
+  #page_documentEdit .editDocuments_data .editDocuments_datacontent .tci-field {
+    width: 24%;
+  }
+  #page_documentEdit .editDocuments_data .editDocuments_datacontent .tci-field .tci-field-label {
+    width: 52%;
+  }
+  #page_documentEdit .editDocuments_data .editDocuments_datacontent .tci-field .tci-field-value {
+    width: 48%;
+  }
+}

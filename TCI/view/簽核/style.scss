@@ -2,7 +2,7 @@
 #dropdownMenuButton {
     background-color: var(--color-light-gray);
     padding: 4px;
-    color: var(--color-dark_green);
+    color: var(--color-dark-green);
     font-weight: bold;
 }
 
@@ -11,28 +11,18 @@
     //單據明細
     .detailsBox {
         .detailsBoxContent {
-            .detailsBox_companytext {
-                color: #fff;
-                padding: 0 6px;
-                background-color: #83a2b4;
-                border-radius: var(--borderRadius);
-                font-size: 14px;
-            }
-
             .detailsBoxForm {
                 .formBox_content {
 
                     .tci-field {
+                        flex-wrap: nowrap;
+
                         .tci-field-label {
                             width: 25%;
                         }
 
                         .tci-field-value {
                             width: 85%;
-
-                            &.gray {
-                                background-color: var(--color-whitesmoke);
-                            }
                         }
                     }
                 }
@@ -60,22 +50,21 @@
 
                     .detailsBoxholiday_content {
                         .tci-field {
+                            flex-wrap: nowrap;
+                            justify-content: space-between;
+
                             .tci-field-label {
-                                width: 100%;
-                                white-space: normal;
+                                width: 45%;
                             }
 
                             .tci-field-value {
-                                width: 30%;
-                                background-color: var(--color-whitesmoke);
-                                white-space: nowrap;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
+                                width: 45%;
                             }
                         }
                     }
                 }
             }
+
             .formFlow {
                 .formFlowGrid {
                     border: 1px solid #ddd;
@@ -83,13 +72,13 @@
                     padding: 5px;
                     border-radius: 0.25rem;
                 }
-    
+
                 .items {
                     list-style-type: none;
                     margin: 1px;
                     padding: 1px;
                 }
-    
+
                 .signflow {
                     .sortable {
                         li {
@@ -99,13 +88,13 @@
                             display: inline-block;
                             clear: both;
                         }
-    
+
                         .list {
                             background-color: lightblue;
                             border: 1px solid gray;
                             cursor: no-drop;
                         }
-    
+
                         .list3 {
                             background-color: lightgray;
                             border: 1px solid gray;
@@ -118,7 +107,7 @@
                     }
                 }
             }
-            
+
         }
     }
 }
@@ -187,29 +176,34 @@
                             display: flex;
                             flex-wrap: wrap;
                             justify-content: space-between;
-
                             .tci-field {
-                                width: 48%;
-
+                                width: 32%;
+                                justify-content: space-between;
                                 .tci-field-label {
-                                    width: 70%;
+                                    width: 52%;
+                                }
+                    
+                                .tci-field-value {
+                                    width: 48%;
                                 }
                             }
                         }
                     }
                 }
+
                 .work_process {
                     display: flex;
                     flex-wrap: wrap;
-                    .tci-card{
+
+                    .tci-card {
                         margin-right: .5rem;
                     }
                 }
             }
         }
-        
+
         // 簽核流程
-        .work_process_circuit{
+        .work_process_circuit {
             display: flex;
             flex-wrap: wrap;
         }
@@ -228,36 +222,13 @@
                     .detailsBoxholiday {
                         .detailsBoxholiday_content {
                             .tci-field {
-                                width: 32%;
-
-                                .tci-field-value {
-                                    width: 60%;
+                                width: 24%;
+                                .tci-field-label {
+                                    width: 52%;
                                 }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width:1200px) {
-    #page_documentContent {
-
-        //單據明細
-        .detailsBox {
-            .detailsBoxContent {
-
-                //請假累計
-                .detailsBoxAccumulated {
-                    .detailsBoxholiday {
-                        .detailsBoxholiday_content {
-                            .tci-field {
-                                width: 22%;
-
+                    
                                 .tci-field-value {
-                                    width: 40%;
+                                    width: 48%;
                                 }
                             }
                         }

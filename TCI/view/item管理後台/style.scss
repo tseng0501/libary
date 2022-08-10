@@ -26,10 +26,17 @@
     min-width: 50px !important;
 
     i {
-        color: var(--color-dark_khaki);
+        color: var(--color-dark-khaki);
     }
 }
+.trash_icon{
+    padding: 0 7px !important;
+    min-width: 50px !important;
 
+    i {
+        color: var(--color-dark-red);
+    }
+}
 //主內容的背景
 .content_shadow {
     box-shadow: var(--borderShadow);
@@ -46,6 +53,10 @@
             .tci-field {
                 padding: 5px;
                 border-radius: var(--borderRadius);
+                .tci-valueBtn{
+                    display: flex;
+                    width: 100%;
+                }
             }
         }
 
@@ -69,7 +80,7 @@
 
             .table {
                 thead {
-                    background-color: var(--color-dark_khaki);
+                    background-color: var(--color-dark-khaki);
                     color: var(--color-snow);
                 }
 
@@ -81,7 +92,7 @@
                     }
 
                     i {
-                        box-shadow: 0 4px 8px 0 var(--color-dark_khaki);
+                        box-shadow: 0 4px 8px 0 var(--color-dark-khaki);
                         cursor: pointer;
                     }
                 }
@@ -91,7 +102,7 @@
         //single
         .detailTemplate_box {
             .detailTemplate_contenttitle {
-                background-color: var(--color-dark_khaki);
+                background-color: var(--color-dark-khaki);
                 color: var(--color-snow);
                 border-radius: var(--borderRadius);
                 padding: 0.2rem;
@@ -114,6 +125,10 @@
             .tci-field {
                 padding: 5px;
                 border-radius: var(--borderRadius);
+                .tci-valueBtn{
+                    display: flex;
+                    width: 100%;
+                }
             }
         }
 
@@ -137,7 +152,7 @@
 
             .table {
                 thead {
-                    background-color: var(--color-dark_khaki);
+                    background-color: var(--color-dark-khaki);
                     color: var(--color-snow);
                 }
 
@@ -149,7 +164,7 @@
                     }
 
                     i {
-                        box-shadow: 0 4px 8px 0 var(--color-dark_khaki);
+                        box-shadow: 0 4px 8px 0 var(--color-dark-khaki);
                         cursor: pointer;
                     }
                 }
@@ -159,7 +174,7 @@
         //single
         .behaviorTemplate_box {
             .behaviorTemplate_contenttitle {
-                background-color: var(--color-dark_khaki);
+                background-color: var(--color-dark-khaki);
                 color: var(--color-snow);
                 border-radius: var(--borderRadius);
                 padding: 0.2rem;
@@ -182,7 +197,12 @@
             .tci-field {
                 padding: 5px;
                 border-radius: var(--borderRadius);
+                .tci-valueBtn{
+                    display: flex;
+                    width: 100%;
+                }
             }
+           
         }
 
         .itemTemplate_btn {
@@ -205,7 +225,7 @@
             .table {
                 width: 700px;
                 thead {
-                    background-color: var(--color-dark_khaki);
+                    background-color: var(--color-dark-khaki);
                     color: var(--color-snow);
                 }
 
@@ -224,6 +244,12 @@
                 .tci-field {
                     width: calc(100vw - 150px);
                     margin-bottom: 0;
+                    .tci-valueBtn{
+                        width: 70%;
+                        .tci-field-value{
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -249,6 +275,12 @@
                 .tci-field {
                     width: calc(100vw - 150px);
                     margin-bottom: 0;
+                    .tci-valueBtn{
+                        width: 70%;
+                        .tci-field-value{
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
@@ -275,6 +307,12 @@
                 .tci-field {
                     width: calc(100vw - 150px);
                     margin-bottom: 0;
+                    .tci-valueBtn{
+                        width: 70%;
+                        .tci-field-value{
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }

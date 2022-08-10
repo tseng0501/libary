@@ -1,51 +1,19 @@
-.text_red {
-    color: var(--color-error);
+//查詢單據 bar
+#dropdownMenuButton {
+    background-color: var(--color-light-gray);
+    padding: 4px;
+    color: var(--color-dark-green);
+    font-weight: bold;
 }
-
-.userCard_info {
-    text-align: right;
-    margin-top: .75rem;
-
-    .user_info {
-        font-size: 10pt;
-        color: #AAA;
-        font-style: italic;
-    }
-}
-
 #page_documentQuery {
 
-    // .tci-field-value,
-    // .tci-form-control {
-    //     background-color: var(--color-whitesmoke);
-    // }
-
     //簽核單據查詢-查詢單據
-    .requester {
+    .documentrequester {
         .box {
             border-radius: var(--borderRadius);
             border: 2px solid var(--color-light-gray);
             margin-bottom: 1rem;
             padding: 5px;
-        }
-
-        .requester_title {
-            padding: 5px;
-            border-radius: var(--borderRadius);
-            width: 100%;
-
-            span {
-                background-color: var(--color-light-gray);
-                border-radius: var(--borderRadius);
-                padding: 0 10px;
-            }
-
-            .requester_icon {
-                padding: 0 5px;
-                width: 25px;
-                height: 25px;
-                border-radius: 4rem;
-            }
         }
 
         .requester_people {
@@ -54,438 +22,78 @@
             justify-content: space-between;
             margin-bottom: .5rem;
 
-            .tci-field-value {
-                width: 48%;
+            .requester_title {
+                padding: 5px;
+                border-radius: var(--borderRadius);
+                width: 100%;
+
+                span {
+                    background-color: var(--color-light-gray);
+                    border-radius: var(--borderRadius);
+                    padding: 0 10px;
+                }
+
+                .requester_icon {
+                    padding: 0 5px;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 4rem;
+                }
+            }
+
+            .requester_value {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .tci-field-value {
+                    width: 48%;
+                }
             }
         }
 
         .requester_btn {
             width: 100%;
+            margin-bottom: 1rem;
 
             button {
                 width: 100%;
             }
         }
     }
-
-    //條件查詢
-    .conditionalFilter {
-        margin-top: 10px;
-
-        .conditionalFilter_box {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: var(--color-light-gray);
-            padding: .5rem;
-            border-radius: var(--borderRadius);
-
-            .conditionalFilter_text {
-                width: 100%;
-            }
-
-        }
-
-        .conditionalFilter_query {
-            border-radius: var(--borderRadius);
-            margin-top: 10px;
-            padding: .5rem;
-        }
-    }
-
-    .conditional_content {
-        border-radius: var(--borderRadius);
-        border: 2px solid var(--color-light-gray);
-        margin-top: 10px;
-        padding: .5rem;
-
-        .conditional_tabs {
-            text-align: center;
-            font-weight: bold;
-            font-size: var(--font-size-sm);
-
-            .badge {
-                border-radius: var(--borderRadiusCircular);
-                background-color: var(--color-light-green);
-                color: var(--color-snow);
-            }
-        }
-
-        .conditional_box {
-            border-radius: var(--borderRadius);
-            padding: .5rem;
-            font-size: var(--font-size-sm);
-            margin-bottom: .4rem;
-
-            .conditional_contenttitle {
-                background-color: var(--color-dark_khaki);
-                color: var(--color-snow);
-                border-radius: var(--borderRadius);
-                padding: .2rem;
-
-                .label {
-                    font-size: 10px;
-                    padding: 3px;
-                    border-radius: var(--borderRadius);
-
-                    &.red {
-                        background-color: var(--color-error);
-                    }
-
-                    &.blue {
-                        background-color: var(--color-search);
-                    }
-
-                    &.green {
-                        background-color: var(--color-dark_green);
-                    }
-
-                    &.dark {
-                        background-color: var(--color-gray);
-                    }
-
-                    &.yellow {
-                        background-color: var(--color-peru);
-                    }
-                }
-            }
-
-            .conditional_btn {
-                background-color: var(--color-light-gray);
-                border-radius: var(--borderRadius);
-
-                p {
-                    color: var(--color-dark_khaki);
-                }
-            }
-        }
-    }
-
-    //修改簽核單據
-    .editDocuments {
-        .editDocuments_lists {
-            .tci-field {
-                flex-wrap: wrap;
-
-                .tci-field-label {
-                    width: 100%;
-                }
-
-                .tci-field-value {
-                    width: 100%;
-                    
-                }
-            }
-        }
-    }
-
-    .editDocuments_leave {
-        border: 2px solid var(--color-dark_khaki);
-        border-radius: var(--borderRadius);
-        padding: 5px;
-        margin-bottom: .5rem;
-        .tci-field-value{
-            background-color: var(--color-whitesmoke);
-        }
-    }
-
-    .editDocuments_form {
-        .editDocuments_data {
-            .tci-field {
-                .tci-field-label {
-                    white-space: normal;
-                    width: 100%;
-                }
-
-                .tci-field-value {
-                    width: 35%;
-                    background-color: var(--color-whitesmoke);
-                }
-            }
-        }
-    }
-
-    //簽核內容
-    .btnGroups_lr {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        margin-top: .5rem;
-
-        button {
-            width: 49%;
-            padding: .2rem;
-        }
-    }
-    .detailsBox {
-        .detailsBox_rt{
-            color:#fff;
-            padding:0 6px;
-            background-color: #83a2b4;
-            border-radius: var(--borderRadius);
-            font-size: 14px;
-        }
-        .grayborder {
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-top: 1rem;
-        }
-
-        .detailsBox_form {
-            .detailsBox_data {
-                .detailsBox_title {
-                    background-color: #ddd;
-                    margin-bottom: 1rem;
-                    font-weight: bold;
-                }
-
-                .tci-field {
-                    .tci-field-label {
-                        width: 100%;
-                        white-space: normal;
-                    }
-
-                    .tci-field-value {
-                        width: 30%;
-                    }
-                }
-            }
-        }
-
-        .formFlow {
-            .formFlowGrid {
-                border: 1px solid #ddd;
-                background-color: antiquewhite;
-                padding: 5px;
-                border-radius: 0.25rem;
-            }
-
-            .items {
-                list-style-type: none;
-                margin: 1px;
-                padding: 1px;
-            }
-
-            .signflow {
-                .sortable {
-                    li {
-                        margin: 2px;
-                        padding: 2px;
-                        border-radius: 3px;
-                        display: inline-block;
-                        clear: both;
-                    }
-
-                    .list {
-                        background-color: lightblue;
-                        border: 1px solid gray;
-                        cursor: no-drop;
-                    }
-
-                    .list3 {
-                        background-color: lightgray;
-                        border: 1px solid gray;
-                        margin: 2px;
-                        padding: 2px;
-                        border-radius: 3px;
-                        display: inline-block;
-                        cursor: no-drop;
-                    }
-                }
-            }
-        }
-
-    }
 }
 
 @media (min-width: 765px) {
     #page_documentQuery {
-
-        //簽核單據查詢-查詢單據
-        .query {
+        .documentQuery {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
 
             .tci-input-group {
                 width: 48%;
-                &.content {
-                    width: 100%;
-                }
-                &.company {
-                    width: 100%;
-                }
             }
         }
 
-        //條件查詢
-        .conditionalFilter {
-            .conditionalFilter_box {
-                .conditionalFilter_text {
+        .documentrequester {
+
+            .requester_people {
+                justify-content: space-between;
+
+                .requester_title {
                     width: auto;
-
-                    &.month {
-                        font-weight: bold;
-                        color: var(--color-dark_green);
-                    }
-                }
-            }
-
-            .conditionalFilter_query {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-
-                .tci-input-group {
-                    width: 48%;
-                }
-            }
-        }
-
-        .conditional_content {
-            .conditional_tabs {
-                font-size: 1.5rem;
-            }
-
-            .conditional_flex {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-
-                .conditional_box {
-                    width: 48%;
-                    margin-right: .5rem;
-                }
-            }
-        }
-
-        //修改簽核單據
-        .editDocuments {
-            .editDocuments_title {
-                text-align: center;
-            }
-
-            .editDocuments_lists {
-                .tci-field {
-                    flex-wrap: nowrap;
-
-                    .tci-field-label {
-                        width: 40%;
-                    }
-
-                    .tci-field-value {
-                        width: 60%;
-                    }
-                }
-            }
-        }
-
-        .editDocuments_form {
-            .editDocuments_data {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-
-                .editDocuments_title {
-                    width: 100%;
                 }
 
-                .tci-field {
-                    width: 48%;
-
-                    .tci-field-label {
-                        width: 70%;
-                        white-space: normal;
-                    }
-
-                    .tci-field-value {
-                        width: 30%;
-                    }
-                }
-            }
-        }
-
-        //簽核內容 留言
-        .messageBox {
-            .messageBoxContent {
-                display: flex;
-                text-align: center;
-                justify-content: space-evenly;
-            }
-
-            .messageBox_modal {
-                width: 60%;
-                margin: auto;
-                margin-top: 1rem;
-            }
-        }
-
-        //簽核內容  簽核意見 
-        .descriptionBox {
-            .descriptionBoxContent{
-                .descriptionBoxContent_text{
-                    margin: auto;
-                    width: 60%;
-                }
-                .descriptionBox_icon{
+                .requester_value {
+                    width: 70%;
                     display: flex;
-                    justify-content: space-evenly;
-                    margin-top: .5rem;
-                }
-
-            }
-        }
-
-        //簽核內容 單據明細
-        .detailsBox {
-            .pageForm {
-                .form01 {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: flex-start;
-
-                    .tci-label-group {
-                        width: 48%;
-                        margin-right: .5rem;
-                    }
-                }
-            }
-
-            .detailsBox_form {
-                .detailsBox_data {
-                    display: flex;
-                    flex-wrap: wrap;
                     justify-content: space-between;
 
-                    .detailsBox_title {
+                    .tci-field-value {
                         width: 100%;
                     }
-
-                    .tci-field {
-                        width: 48%;
-
-                        .tci-field-label {
-                            width: 70%;
-                            white-space: normal;
-                        }
-
-                        .tci-field-value {
-                            width: 30%;
-                        }
-                    }
                 }
             }
-
-            .work_process {
-                display: flex;
-                flex-wrap: wrap;
-                .tci-card{
-                    margin-right: .5rem;
-                }
-            }
-        }
-        .work_process_circuit{
-            display: flex;
-            flex-wrap: wrap;
         }
     }
 }
@@ -493,170 +101,26 @@
 @media (min-width: 992px) {
     #page_documentQuery {
 
-        //簽核單據查詢-查詢單據
-        .query {
+
+        .documentrequester {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-
-            .tci-input-group {
-                width: 33%;
-
-                
-                &.company {
-                    width: 100%;
-                }
-            }
-        }
-
-        //簽核單據查詢-查詢單據
-        .requester {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            .requester_title {
-                min-width: 140px;
-                width: auto;
-            }
 
             .box {
-                width: 48%;
-                padding: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                width: 49%;
             }
 
             .requester_people {
-                .tci-field-value {
-                    width: 35%;
-                }
-            }
-        }
-
-        //條件查詢
-        .conditionalFilter {
-            .conditionalFilter_query {
-                .tci-input-group {
-                    width: 23%;
-                }
-            }
-        }
-
-        .conditional_content {
-            .conditional_flex {
-                .conditional_box {
-                    width: 32%;
-                }
-            }
-        }
-
-        //修改簽核單據
-        .editDocuments_form {
-            .editDocuments_data {
-                .editDocuments_title {
-                    width: 100%;
-                }
-
-                .tci-field {
-                    width: 32%;
-
-                    .tci-field-label {
-                        width: 70%;
-                        white-space: normal;
-                    }
-
-                    .tci-field-value {
-                        width: 60%;
+                width: 100%;
+                &.short {
+                    .requester_value{
+                        width: 53%;
                     }
                 }
             }
         }
-
-        //簽核內容 單據明細
-        .detailsBox {
-            .detailsBox_form {
-                .detailsBox_data {
-                    .detailsBox_title {
-                        width: 100%;
-                    }
-
-                    .tci-field {
-                        width: 32%;
-
-                        .tci-field-label {
-                            width: 70%;
-                            white-space: normal;
-                        }
-
-                        .tci-field-value {
-                            width: 60%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    #page_documentQuery {
-
-        //簽核單據查詢-查詢單據
-        .query {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            .tci-input-group {
-                width: 24%;
-
-                &.content {
-                    width: 49%;
-                }
-
-                &.company {
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
-//查詢單據 bar
-#dropdownMenuButton {
-    background-color: var(--color-light-gray);
-    padding: 4px;
-    color: var(--color-dark_green);
-    font-weight: bold;
-}
-
-.multi-level {
-    .panel-heading {
-        background-color: var(--color-dark_khaki);
-        color: var(--color-snow);
-
-        .panel-title {
-            text-align: center;
-            font-weight: bold;
-            padding: 5px;
-        }
-    }
-
-    table {
-        td {
-            padding-top: 4px;
-            padding-bottom: 4px;
-
-            &:hover {
-                background-color: var(--color-light-gray);
-            }
-        }
-
-        .current {
-            background-color: var(--color-light-gray);
-        }
-    }
-
-    .badge {
-        border-radius: var(--borderRadiusCircular);
     }
 }

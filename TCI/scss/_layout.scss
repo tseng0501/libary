@@ -23,14 +23,14 @@ body {
 //標題
 .pageHeader {
     margin: .5rem 0 1.5rem 0;
-    border-left: 5px solid var(--color-dark_khaki);
+    border-left: 5px solid var(--color-dark-khaki);
     box-shadow: var(--borderShadow);
     border-radius: var(--borderRadius);
     padding: .5rem 0;
 
     .pageHeaderTitle {
         font-size: var(--font-size-md);
-        color: var(--color-dark_khaki);
+        color: var(--color-dark-khaki);
         margin-left: 1rem;
     }
 }
@@ -50,7 +50,7 @@ body {
 .darkBorderCard {
     .darkBorderCardTitle {
         text-align: center;
-        background-color: var(--color-dark_khaki);
+        background-color: var(--color-dark-khaki);
         color: var(--color-snow);
         padding: 5px;
         border-radius: var(--borderRadius);
@@ -64,7 +64,7 @@ body {
     }
 
     .darkBorderCardContent {
-        border: 2px solid var(--color-dark_khaki);
+        border: 2px solid var(--color-dark-khaki);
         border-radius: var(--borderRadius);
         padding: 5px;
         border-top-left-radius: 0;
@@ -156,7 +156,15 @@ body {
 .btnGroups {
     text-align: right;
 }
-
+.warningTag{
+    background-color: #ff8658;
+    border-radius: var(--borderRadius);
+    padding: 1px 4px 1px 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    color: var(--color-snow);
+    font-weight: 900;
+}
 // .addTable {
 //     display: flex;
 //     margin: 5px;

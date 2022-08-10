@@ -1,0 +1,26 @@
+#page_reserveInvoice {
+    .reserveInvoiceQuery {
+        .tci-field {}
+    }
+}
+
+@media (min-width:765px) {
+    #page_reserveInvoice {
+        .reserveInvoiceQuery {
+            display: flex;
+            justify-content: space-between;
+            .tci-field {
+                width: 48%;
+                justify-content: space-between;
+
+                .tci-field-label {
+                    width: 50%;
+                }
+
+                .tci-field-value {
+                    width:50%;
+                }
+            }
+        }
+    }
+}

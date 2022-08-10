@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
     <style>
 
     </style>
 </head>
 <body>
-    <button class="tci-btn dropdown-toggle" type="button" 
-    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button id="dropdownMenuButton" class="tci-btn dropdown-toggle" type="button" 
+     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fa fa-list" aria-hidden="true"></i> &nbsp; <span id="menuTabName">查詢單據</span>
     </button>
     <div class="dropdown-menu multi-level" aria-labelledby="dropdownMenu">
@@ -28,7 +28,7 @@
                 </div>
                 <div>
                     <div class="panel-body">
-                        <table class="table">
+                        <table class="tci-table">
                                 <tbody>
                                     <tr>
                                         <td>
@@ -42,13 +42,13 @@
                                     <td data-target="#Tab-0">
                                         &nbsp;
                                         <a href="#" class="no_style">待核銷單據</a>&nbsp;
-                                        <span style="display:none" class="badge badge-danger">0</span>
+                                        <span style="" class="badge badge-danger">2</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td data-target="#Tab-1" class="current">
                                         &nbsp;
-                                        <a href="#" class="no_style ">已存檔</a>&nbsp;
+                                        <a href="#" class="no_style">已存檔</a>&nbsp;
                                         <span style="display:none" class="badge badge-danger ">0</span>
                                     </td>
                                 </tr>

@@ -27,3 +27,31 @@
         }
     }
 }
+
+// 簽核
+#page_quotation_signoff{
+    .detailsBoxContent{
+        .tableScroll{
+            overflow-x: auto;
+            table{
+                width: 900px;
+                tbody{
+                    th{
+                        background-color: var(--color-whitesmoke);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:765px) {
+    #page_quotation_signoff{
+        .detailsBoxContent{
+            .tableScroll{
+                table{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

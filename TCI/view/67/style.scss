@@ -1,38 +1,29 @@
 #page_goodsIssue {
-    .goodsIssueContent {
-        .tci-input-group {
-            .tci-form-control {
-                &.gray {
-                    background-color: var(--color-whitesmoke);
+
+    .goodsIssueTable{
+        overflow-x: auto;
+        .tci-table{
+            width: 900px;
+            tbody{
+                th{
+                    color: var(--color-sienna);
+                    // background-color: var(--color-light-gray);
+                }
+                .tci-form-control{
+                    padding: 0 .5rem;
+                }
+            }
+            .input_part{
+                .btnGroups_company{
+                    width: 100%;
+                    button{
+                    width: 100%;
+                    }
                 }
             }
         }
-
-        .input_part {
-            width: 100%;
-        }
-
-        .input_classification {
-            width: 100%;
-        }
-
-        .addTable {
-            margin-bottom: .5rem;
-            .addTableNo {
-                text-align: center;
-                font-size: 1.25rem;
-                font-weight: bold;
-                background-color: var(--color-rosybrown);
-                color: var(--color-snow);
-                border-radius: var(--borderRadius);
-            }
-            .addTableContent{
-                padding: 5px;
-                border-radius: var(--borderRadius);
-                border: 3px solid var(--color-rosybrown);
-            }
-        }
     }
+    
     .goodsIssueOther{
         .total{
             padding: 5px;
@@ -63,56 +54,9 @@
             }
         }
 
-        .goodsIssueContent {
-
-            .input_part {
-                display: flex;
-
-                .tci-bs-input-group {
-                    flex-wrap: inherit;
-
-                    &.input_partnumber {
-                        width: 65%;
-                    }
-                }
-            }
-
-            .input_classification {
-                display: flex;
-                flex-wrap: wrap;
-                .tci-bs-input-group{
-                    width: 50%;
-                }
-            }
-
-            .addTable {
-                display: flex;
-
-                .addTableNo {
-                    font-size: 1.5rem;
-                    width: 100px;
-                    margin-right: .5rem;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                .addTableContent {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    .tci-input-group {
-                        width: 32%;
-                        margin-right: .5rem;
-
-                        &.w100 {
-                            width: 100%;
-                        }
-                        &.w60{
-                            width: 65%;
-                        }
-                    }
-                }
+        .goodsIssueTable{
+            .tci-table{
+                width: 100%;
             }
         }
     }
@@ -130,18 +74,13 @@
             }
         }
 
-        .goodsIssueContent {
-            .addTable {
-                .addTableContent {
-                    .tci-input-group {
-                        width: 19%;
-                        margin-right: 5px;
-
-                        &.w100 {
-                            width: 100%;
-                        }
-                        &.w60{
-                            width: 58%;
+        .goodsIssueTable{
+            .tci-table{
+                .input_part{
+                    .btnGroups_company{
+                        width: auto;
+                        button{
+                        width: auto;
                         }
                     }
                 }

@@ -29,7 +29,7 @@
   }
   #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray {
     width: 100%;
-    color: var(--color-dark_red);
+    color: var(--color-dark-red);
   }
   #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray .formBox_content {
     display: flex;

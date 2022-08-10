@@ -1,0 +1,40 @@
+#page_allEmployees .allEmployeesQuery .tci-bs-input-group {
+  flex-wrap: nowrap;
+  margin-bottom: 1rem;
+}
+#page_allEmployees .allEmployeesQuery .tci-bs-input-group .tci-valueBtn {
+  display: flex;
+  flex-wrap: wrap;
+}
+#page_allEmployees .allEmployeesQuery .tci-bs-input-group .tci-valueBtn button {
+  width: 100%;
+}
+#page_allEmployees .allEmployeeCompany {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  padding: 5px;
+  border-radius: var(--borderRadius);
+  background-color: var(--color-dark-khaki);
+  color: var(--color-snow);
+}
+
+@media (min-width: 765px) {
+  #page_allEmployees .allEmployeesQuery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #page_allEmployees .allEmployeesQuery .tci-bs-input-group {
+    width: 60%;
+    margin-right: 1rem;
+  }
+  #page_allEmployees .allEmployeesQuery .tci-bs-input-group.auto {
+    width: auto;
+  }
+  #page_allEmployees .allEmployeesQuery .tci-bs-input-group .tci-valueBtn {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  #page_allEmployees .allEmployeesQuery .tci-bs-input-group .tci-valueBtn button {
+    width: 220px;
+  }
+}

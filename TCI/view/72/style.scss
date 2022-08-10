@@ -1,6 +1,6 @@
 #page_invoiceQuery {
     .queryContentAll {
-        border: 3px solid var(--color-dark_khaki);
+        border: 3px solid var(--color-dark-khaki);
         border-radius: var(--borderRadius);
         padding: 5px;
 
@@ -70,7 +70,7 @@
                 width: 48%;
 
                 &.mark {
-                    width: 100%;
+                    width: 48%;
                 }
             }
         }
@@ -109,7 +109,7 @@
         .invoicePaperQuery {
             display: flex;
             flex-wrap: wrap;
-            justify-content: flex-start;
+            justify-content: space-between;
 
             .tci-bs-input-group {
                 width: 48%;
@@ -127,6 +127,15 @@
 
 @media (min-width:992px) {
     #page_invoiceQuery {
+        .query {
+            .tci-input-group {
+                width: 30%;
+
+                &.mark {
+                    width: 30%;;
+                }
+            }
+        }
         .queryContentAll {
             .queryRow {
                 .tci-input-group {

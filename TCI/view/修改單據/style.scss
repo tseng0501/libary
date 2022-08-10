@@ -1,0 +1,57 @@
+#page_documentEdit {
+    .editDocuments_data {
+        .editDocuments_datacontent{
+            .tci-field {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+    
+                .tci-field-label {
+                    width: 45%;
+                }
+    
+                .tci-field-value {
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+@media (min-width:765px) {
+    #page_documentEdit {
+        .editDocuments_data {
+            .editDocuments_datacontent{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .tci-field {
+                    width: 32%;
+                    .tci-field-label {
+                        width: 52%;
+                    }
+        
+                    .tci-field-value {
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:992px) {
+    #page_documentEdit {
+        .editDocuments_data {
+            .editDocuments_datacontent{
+                .tci-field {
+                    width: 24%;
+                    .tci-field-label {
+                        width: 52%;
+                    }
+        
+                    .tci-field-value {
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }
+}

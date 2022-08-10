@@ -4,9 +4,9 @@
   --color-alge: #7999a9;
   --color-dark: #2a2a2a;
   --color-dark-blue:#003D79;
-  --color-dark_red: #9d0f0f;
-  --color-dark_khaki:#aa9767;
-  --color-dark_green:#5b6835;
+  --color-dark-red: #9d0f0f;
+  --color-dark-khaki:#aa9767;
+  --color-dark-green:#5b6835;
   --color-blue: #3773eb;
   --color-error: #df3a30;
   --color-warning: #e8a210;
@@ -60,14 +60,14 @@ body {
 
 .pageHeader {
   margin: 0.5rem 0 1.5rem 0;
-  border-left: 5px solid var(--color-dark_khaki);
+  border-left: 5px solid var(--color-dark-khaki);
   box-shadow: var(--borderShadow);
   border-radius: var(--borderRadius);
   padding: 0.5rem 0;
 }
 .pageHeader .pageHeaderTitle {
   font-size: var(--font-size-md);
-  color: var(--color-dark_khaki);
+  color: var(--color-dark-khaki);
   margin-left: 1rem;
 }
 
@@ -82,7 +82,7 @@ body {
 
 .darkBorderCard .darkBorderCardTitle {
   text-align: center;
-  background-color: var(--color-dark_khaki);
+  background-color: var(--color-dark-khaki);
   color: var(--color-snow);
   padding: 5px;
   border-radius: var(--borderRadius);
@@ -94,7 +94,7 @@ body {
   font-size: var(--font-size-sm);
 }
 .darkBorderCard .darkBorderCardContent {
-  border: 2px solid var(--color-dark_khaki);
+  border: 2px solid var(--color-dark-khaki);
   border-radius: var(--borderRadius);
   padding: 5px;
   border-top-left-radius: 0;
@@ -167,6 +167,16 @@ body {
 
 .btnGroups {
   text-align: right;
+}
+
+.warningTag {
+  background-color: #ff8658;
+  border-radius: var(--borderRadius);
+  padding: 1px 4px 1px 4px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: var(--color-snow);
+  font-weight: 900;
 }
 
 @media (min-width: 765px) {
@@ -677,7 +687,7 @@ body {
 }
 
 .bg_drakgreen {
-  background-color: var(--color-dark_green);
+  background-color: var(--color-dark-green);
   color: var(--color-snow);
 }
 .bg_drakgreen:hover {
@@ -692,17 +702,17 @@ body {
   background-color: #0066CC;
 }
 
-.bg_darkerror {
-  background-color: var(--color-dark_red);
+.bg_darkred {
+  background-color: var(--color-dark-red);
   color: var(--color-snow);
 }
-.bg_darkerror:hover {
+.bg_darkred:hover {
   background-color: var(--color-light-red);
 }
 
 .bg_darkkhaki {
   color: var(--color-snow);
-  background: var(--color-dark_khaki);
+  background: var(--color-dark-khaki);
 }
 .bg_darkkhaki:hover {
   background-color: rgb(102, 90, 78);
@@ -1047,14 +1057,14 @@ body {
   border-radius: var(--borderRadius);
 }
 .tci-card.card-red {
-  color: var(--color-dark_red);
+  color: var(--color-dark-red);
 }
 .tci-card.card-red .card-header-red {
-  background-color: var(--color-dark_red);
+  background-color: var(--color-dark-red);
   color: var(--color-snow);
 }
 .tci-card.card-red .tci-card-body .card-text-red {
-  background-color: var(--color-dark_red);
+  background-color: var(--color-dark-red);
   color: var(--color-snow);
   padding: 0.25rem;
   border-radius: var(--borderRadius);
@@ -1073,14 +1083,14 @@ body {
   border-radius: var(--borderRadius);
 }
 .tci-card.card-blue {
-  color: var(--color-search);
+  color: var(--color-dark-blue);
 }
 .tci-card.card-blue .card-header-blue {
-  background-color: var(--color-search);
+  background-color: var(--color-dark-blue);
   color: var(--color-snow);
 }
 .tci-card.card-blue .tci-card-body .card-text-blue {
-  background-color: var(--color-search);
+  background-color: var(--color-dark-blue);
   color: var(--color-snow);
   padding: 0.25rem;
   border-radius: var(--borderRadius);

@@ -1,0 +1,32 @@
+#dropdownMenuButton {
+  background-color: var(--color-light-gray);
+  padding: 4px;
+  color: var(--color-dark-green);
+  font-weight: bold;
+}
+
+.multi-level .panel-heading {
+  background-color: var(--color-dark-khaki);
+  color: var(--color-snow);
+}
+.multi-level .panel-heading .panel-title {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+.multi-level table {
+  margin-bottom: 0;
+}
+.multi-level table td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.multi-level table td:hover {
+  background-color: var(--color-light-gray);
+}
+.multi-level table .current {
+  background-color: var(--color-light-gray);
+}
+.multi-level .badge {
+  border-radius: var(--borderRadiusCircular);
+}

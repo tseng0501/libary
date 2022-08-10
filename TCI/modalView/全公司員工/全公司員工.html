@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>全公司員工</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_allEmployees">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>全公司員工</b></span>
+        </div>
+        <section class="allEmployeesQuery">
+            <div class="tci-bs-input-group">
+                <div class="tci-bs-input-group-prepend">
+                    <span class="tci-bs-input-group-text">快速查詢:</span>
+                </div>
+                <div class="tci-valueBtn">
+                    <input type="text" class="tci-form-control" />
+                    <button class="tci-btn bg_lightgray">取消已選擇項目</button>
+                </div>
+            </div>
+            <div class="tci-bs-input-group auto">
+                <div class="tci-bs-input-group-prepend">
+                    <span class="tci-bs-input-group-text">快速查詢:</span>
+                </div>
+                <select class="tci-form-control" style="width: 150px;">
+                    <option selected>轉調公司</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </section>
+        <section class="allEmployeeCompany">
+            <span>大江生醫</span>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

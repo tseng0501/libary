@@ -1,0 +1,56 @@
+#page_allEmployees {
+    .allEmployeesQuery {
+        .tci-bs-input-group {
+            flex-wrap: nowrap;
+            margin-bottom: 1rem;
+
+            .tci-valueBtn {
+                display: flex;
+                flex-wrap: wrap;
+
+                .tci-form-control {
+                    // width: 100%;
+                }
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .allEmployeeCompany{
+        font-size: var(--font-size-lg);
+        font-weight: bold;
+        padding: 5px;
+        border-radius: var(--borderRadius);
+        // border: 1px solid var(--color-dark-khaki);
+        background-color: var(--color-dark-khaki);
+        color: var(--color-snow);
+    }
+}
+
+@media (min-width:765px) {
+    #page_allEmployees {
+        .allEmployeesQuery {
+            display: flex;
+            flex-wrap: wrap;
+
+            .tci-bs-input-group {
+                width: 60%;
+                margin-right: 1rem;
+
+                &.auto {
+                    width: auto;
+                }
+
+                .tci-valueBtn {
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    button {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}

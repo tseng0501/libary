@@ -1,0 +1,40 @@
+//查詢單據 bar
+#dropdownMenuButton {
+    background-color: var(--color-light-gray);
+    padding: 4px;
+    color: var(--color-dark-green);
+    font-weight: bold;
+}
+
+.multi-level {
+    .panel-heading {
+        background-color: var(--color-dark-khaki);
+        color: var(--color-snow);
+
+        .panel-title {
+            text-align: center;
+            font-weight: bold;
+            padding: 5px;
+        }
+    }
+
+    table {
+        margin-bottom: 0;
+        td {
+            padding-top: 4px;
+            padding-bottom: 4px;
+
+            &:hover {
+                background-color: var(--color-light-gray);
+            }
+        }
+
+        .current {
+            background-color: var(--color-light-gray);
+        }
+    }
+
+    .badge {
+        border-radius: var(--borderRadiusCircular);
+    }
+}

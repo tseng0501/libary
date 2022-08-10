@@ -1,6 +1,8 @@
-#page_salesReturnNotice {
-    .salesReturnNoticeQuery {
+#page_purchaseConfirmation {
+    .purchaseConfirmationQuery {
         .tci-field {
+            flex-wrap: wrap;
+
             .tci-field-value {
                 width: 100%;
             }
@@ -9,13 +11,24 @@
 }
 
 @media (min-width:765px) {
-    #page_salesReturnNotice {
-        .salesReturnNoticeQuery {
+    #page_purchaseConfirmation {
+        .purchaseConfirmationQuery {
             .tci-field {
+                flex-wrap: nowrap;
+
                 .tci-field-value {
                     width: 100%;
                 }
             }
         }
+    }
+}
+// 簽核
+#page_purchaseConfirmation_signoff{
+
+}
+@media (min-width:765px) {
+    #page_purchaseConfirmation_signoff {
+        
     }
 }

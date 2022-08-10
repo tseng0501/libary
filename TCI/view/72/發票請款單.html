@@ -13,17 +13,16 @@
 </head>
 
 <body>
-    <div class="container-fluid tci-mb-3" id="page_invoicePaper">
-        <div class="invoicePaperQuery tci-mt-2">
+    <div class="container-fluid tci-mt-2" id="page_invoicePaper">
+        <div class="invoicePaperQuery">
             <div class="tci-bs-input-group tci-mb-2">
                 <div class="tci-bs-input-group-prepend">
-                    <span class="tci-bs-input-group-text">申請部門</span>
+                    <span class="tci-bs-input-group-text">申請部門&nbsp;
+                        <!-- 按下申請部門 icon ，跳出 modal 選擇部門 -->
+                        <button class="tci-icon bg_darkkhaki"><i class="fa-solid fa-building"></i></button>
+                    </span>
                 </div>
-                <div class="tci-bs-custom-select">
-                    <div class="">軟體研發部</div>
-                </div>
-                <!-- 按下申請部門 icon ，跳出 modal 選擇部門 -->
-                <button class="tci-icon bg_darkkhaki" style="width: 40px;"><i class="fa-solid fa-building"></i></button>
+                <div class="tci-form-control">軟體研發部</div>
             </div>
             <div class="tci-bs-input-group tci-mb-2">
                 <div class="tci-bs-input-group-prepend">
@@ -187,7 +186,7 @@
                 <span style="font-size:12px;">檢驗: A=合格允收，R=退貨，S=全檢，U=急料特允，W=不合格特允，5=免檢驗，倉庫:ACM1=磐石S12原料倉</span>
             </div>
         </section>
-        <section class="fileBox">
+        <section class="fileBox tci-mb-3">
             <div class="tci-input-group tci-mb-2 fileContentNo">
                 <div class="tci-input-group-prepend">
                     <span class="tci-input-group-text tci-mr-2">檔案數:</span>
@@ -231,7 +230,7 @@
                 </div>
             </div>
         </section>
-        <div class="btnGroups" style="text-align: right;margin-top: .5rem;">
+        <div class="btnGroups">
             <button class="tci-btn bg_drakblue">重新查詢</button>
             <button class="tci-btn bg_drakgreen">確認資料，儲存單據</button>
         </div>

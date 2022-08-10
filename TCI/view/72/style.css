@@ -1,5 +1,5 @@
 #page_invoiceQuery .queryContentAll {
-  border: 3px solid var(--color-dark_khaki);
+  border: 3px solid var(--color-dark-khaki);
   border-radius: var(--borderRadius);
   padding: 5px;
 }
@@ -57,7 +57,7 @@
     width: 48%;
   }
   #page_invoiceQuery .query .tci-input-group.mark {
-    width: 100%;
+    width: 48%;
   }
   #page_invoiceQuery .queryContentAll .queryRow .tci-input-group {
     width: 32%;
@@ -81,7 +81,7 @@
   #page_invoicePaper .invoicePaperQuery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   #page_invoicePaper .invoicePaperQuery .tci-bs-input-group {
     width: 48%;
@@ -92,6 +92,12 @@
   }
 }
 @media (min-width: 992px) {
+  #page_invoiceQuery .query .tci-input-group {
+    width: 30%;
+  }
+  #page_invoiceQuery .query .tci-input-group.mark {
+    width: 30%;
+  }
   #page_invoiceQuery .queryContentAll .queryRow .tci-input-group {
     width: 15%;
   }

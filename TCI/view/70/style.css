@@ -1,13 +1,13 @@
-#page_createAlternative .paymentListQuery .tci-valueBtn {
+#page_issueProduction .issueQuery .tci-valueBtn {
   display: flex;
   width: 100%;
 }
 
 @media (min-width: 765px) {
-  #page_createAlternative .paymentListQuery .tci-input-group-prepend {
+  #page_issueProduction .issueQuery .tci-input-group-prepend {
     width: 30%;
   }
-  #page_createAlternative .paymentListQuery .tci-valueBtn {
+  #page_issueProduction .issueQuery .tci-valueBtn {
     display: flex;
     width: 70%;
     justify-content: end;

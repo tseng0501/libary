@@ -2,7 +2,9 @@
     margin-right: 5px;
 
     &.checkContent {
-        margin: .5rem 0;
+        .tci-form-check{
+            margin: .5rem;
+        }
     }
 }
 @media (min-width: 765px) {

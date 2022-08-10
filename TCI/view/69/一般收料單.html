@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <div class="container-fluid tci-mb-3" id="page_goodsReceipt">
+    <div class="container-fluid" id="page_goodsReceipt">
         <div class="pageHeader">
-            <span class="pageHeaderTitle tci-ml-2"><b>一般收料單</b></span>
+            <span class="pageHeaderTitle"><b>一般收料單</b></span>
         </div>
         <section class="goodsReceiptQuery tci-mt-4">
             <div class="goodsReceiptQueryTitle">
@@ -34,13 +34,12 @@
             </div>
             <div class="tci-bs-input-group tci-mb-2">
                 <div class="tci-bs-input-group-prepend">
-                    <span class="tci-bs-input-group-text">部門別</span>
+                    <span class="tci-bs-input-group-text">部門別&nbsp;
+                        <!-- 按下申請部門 icon ，跳出 modal 選擇部門 -->
+                    <button class="tci-icon bg_darkkhaki"><i class="fa-solid fa-building"></i></button>
+                    </span>
                 </div>
-                <div class="tci-bs-custom-select">
-                    <div class="">軟體研發部</div>
-                </div>
-                <!-- 按下申請部門 icon ，跳出 modal 選擇部門 -->
-                <button class="tci-icon bg_darkkhaki" style="width: 40px;"><i class="fa-solid fa-building"></i></button>
+                    <div class="tci-form-control">軟體研發部</div>
             </div>
             <div class="tci-bs-input-group tci-mb-2">
                 <div class="tci-bs-input-group-prepend">
@@ -162,7 +161,7 @@
             </div>
         </section>
         <section class="goodsReceiptOther">
-            <div class="total">
+            <div class="total" style="color: var(--color-light-red);">
                 <span>合計金額:</span>
                 <span class="num">0</span>
             </div>
@@ -174,7 +173,7 @@
                     <textarea class="tci-form-control"></textarea>
                 </div>
             </div>
-            <div class="btnGroups" style="text-align: right;">
+            <div class="btnGroups">
                 <button class="tci-btn bg_drakgreen">確認資料，儲存單據</button>
             </div>
         </section>

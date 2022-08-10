@@ -1,5 +1,5 @@
-#page_createAlternative{
-    .paymentListQuery{
+#page_issueProduction{
+    .issueQuery{
         .tci-valueBtn {
             display: flex;
             width: 100%;
@@ -8,8 +8,8 @@
 }
 @media (min-width: 765px) {
 
-    #page_createAlternative{
-        .paymentListQuery{
+    #page_issueProduction{
+        .issueQuery{
                .tci-input-group-prepend{
                 width: 30%;
                } 

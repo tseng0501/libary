@@ -263,7 +263,7 @@
 }
 
 .bg_drakgreen {
-    background-color: var(--color-dark_green);
+    background-color: var(--color-dark-green);
     color: var(--color-snow);
 
     &:hover {
@@ -280,8 +280,8 @@
     }
 }
 
-.bg_darkerror {
-    background-color: var(--color-dark_red);
+.bg_darkred {
+    background-color: var(--color-dark-red);
     color: var(--color-snow);
 
     &:hover {
@@ -290,7 +290,7 @@
 }
 .bg_darkkhaki {
     color: var(--color-snow);
-    background: var(--color-dark_khaki);
+    background: var(--color-dark-khaki);
 
     &:hover {
         background-color: rgb(102, 90, 78);
