@@ -32,7 +32,7 @@
                         </select>
                         <button class="tci-btn bg_drakgreen">查詢</button>
                     </div>
-                  
+
                 </div>
                 <div class="behaviorTemplate_btn">
                     <button class="tci-btn bg_darkkhaki" data-toggle="modal"
@@ -44,7 +44,7 @@
             <!-- 選項 All start-->
             <div class="table_content">
                 <table class="tci-table tci-table-bordered">
-                    <thead>
+                    <thead style="background-color: var(--color-light-gray);">
                         <tr>
                             <th>名稱</th>
                             <th style="width: 80px;text-align: center;">內容</th>
@@ -53,18 +53,20 @@
                     <tbody>
                         <tr>
                             <td>公務車租借</td>
-                            <td>
-                                <button class="tci-btn table_icon" data-toggle="modal" data-target="#behaviordataIcon">
-                                    <i class="fa-solid fa-table"></i>
-                                </button>
+                            <td style="text-align: center;">
+                                <button class="tci-icon bg_drakblue" data-toggle="modal" data-target="#behaviordataIcon"
+                                    data-toggle="modal" data-target="#behaviordataIconTable"><i
+                                        class="fa-solid fa-table"></i></button>
+
                             </td>
                         </tr>
                         <tr>
                             <td>筆記型電腦</td>
-                            <td>
-                                <button class="tci-btn table_icon" data-toggle="modal" data-target="#behaviordataIcon">
-                                    <i class="fa-solid fa-table"></i>
-                                </button>
+                            <td style="text-align: center;">
+                                <button class="tci-icon bg_drakblue" data-toggle="modal" data-target="#behaviordataIcon"
+                                    data-toggle="modal" data-target="#behaviordataIconTable"><i
+                                        class="fa-solid fa-table"></i></button>
+
                             </td>
                         </tr>
                     </tbody>
@@ -74,17 +76,20 @@
 
             <!-- 單一一個產品 start-->
             <div style="padding: 1rem;">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">名稱:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" value="公務車租借" />
+                </div>
                 <div class="behaviorTemplate_box">
                     <div style="margin-bottom:1rem;text-align:right;">
-                        <button class="tci-btn bg_darkkhaki">新增欄位</button>
+                        <button class="tci-btn bg_darkkhaki">新增狀態</button>
                         <button class="tci-btn bg_drakgreen">全部儲存</button>
-                    </div>
-                    <div class="behaviorTemplate_contenttitle">
-                        <span class="pl-2">公務車租借</span>
                     </div>
                     <div class="behaviorTemplate_table">
                         <table class="tci-table text-center tci-table-bordered">
-                            <thead>
+                            <thead style="background-color: var(--color-light-gray);">
                                 <tr>
                                     <th>行為狀態</th>
                                     <th style="width: 70px"></th>
@@ -95,8 +100,8 @@
                                     <td><input type="text" style="width: 100%;" class="tci-field-value" value="公務車出租" />
                                     </td>
                                     <td>
-                                        <button class="tci-btn trash_icon" data-toggle="modal" data-target="#deleteTable">
-                                            <i class="fa-solid fa-trash-can"></i>
+                                        <button class="tci-icon bg_darkred" data-toggle="modal"
+                                            data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i>
                                         </button>
                                     </td>
                                 </tr>
@@ -104,17 +109,17 @@
                                     <td><input type="text" style="width:100%;" class="tci-field-value" value="公務車歸還" />
                                     </td>
                                     <td>
-                                        <button class="tci-btn trash_icon" data-toggle="modal" data-target="#deleteTable">
-                                            <i class="fa-solid fa-trash-can"></i>
+                                        <button class="tci-icon bg_darkred" data-toggle="modal"
+                                            data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i>
                                         </button>
                                     </td>
                                 </tr>
+
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-
             <!-- 單一一個產品 end-->
 
         </section>
@@ -123,7 +128,7 @@
     <!-- addbehaviorTemplate -->
     <div class="modal fade" id="addbehaviorTemplate" tabindex="-1" role="dialog"
         aria-labelledby="addbehaviorTemplateLabel" aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="addbehaviorTemplateLabel">新增行為模版名稱</h5>
@@ -138,6 +143,44 @@
                         </div>
                         <input type="text" class="tci-field-value" />
                     </div>
+                    <div class="behaviorTemplate_box">
+                        <div style="margin-bottom:1rem;text-align:right;">
+                            <button class="tci-btn bg_darkkhaki">新增狀態</button>
+                            <button class="tci-btn bg_drakgreen">全部儲存</button>
+                        </div>
+                        <div class="behaviorTemplate_table">
+                            <table class="tci-table text-center tci-table-bordered">
+                                <thead style="background-color: var(--color-light-gray);">
+                                    <tr>
+                                        <th>行為狀態</th>
+                                        <th style="width: 70px"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text" style="width: 100%;" class="tci-field-value"
+                                                value="公務車出租" />
+                                        </td>
+                                        <td>
+                                            <button class="tci-icon bg_darkred" data-toggle="modal"
+                                                data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" style="width:100%;" class="tci-field-value"
+                                                value="公務車歸還" />
+                                        </td>
+                                        <td>
+                                            <button class="tci-icon bg_darkred" data-toggle="modal"
+                                                data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
@@ -149,7 +192,7 @@
     <!--All behaviordataIcon -->
     <div class="modal fade" id="behaviordataIcon" tabindex="-1" role="dialog" aria-labelledby="behaviordataIconLabel"
         aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="behaviordataIconLabel">內容</h5>
@@ -162,7 +205,7 @@
                         <div class="tci-field-label">
                             <span class="tci-field-text text-left">名稱:</span>
                         </div>
-                        <div class="tci-field-value gray">公務車租借</div>
+                        <input type="text" class="tci-field-value" value="公務車租借">
                     </div>
                     <hr>
                     <div style="text-align: right;">
@@ -170,7 +213,7 @@
                     </div>
                     <div style="margin-top: 1rem;">
                         <table class="table text-center">
-                            <thead>
+                            <thead style="background-color: var(--color-light-gray);">
                                 <tr>
                                     <th>行為狀態</th>
                                     <th style="width: 70px"></th>
@@ -181,9 +224,8 @@
                                     <td><input type="text" style="width: 100%;" class="tci-field-value" value="公務車出租" />
                                     </td>
                                     <td>
-                                        <button class="tci-btn trash_icon"
-                                        data-toggle="modal" data-target="#deleteTable">
-                                            <i class="fa-solid fa-trash-can"></i>
+                                        <button class="tci-icon bg_darkred" data-toggle="modal"
+                                            data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i>
                                         </button>
                                     </td>
                                 </tr>
@@ -191,9 +233,8 @@
                                     <td><input type="text" style="width:100%;" class="tci-field-value" value="公務車歸還" />
                                     </td>
                                     <td>
-                                        <button class="tci-btn trash_icon"
-                                        data-toggle="modal" data-target="#deleteTable">
-                                            <i class="fa-solid fa-trash-can"></i>
+                                        <button class="tci-icon bg_darkred" data-toggle="modal"
+                                            data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i>
                                         </button>
                                     </td>
                                 </tr>
@@ -210,25 +251,25 @@
     </div>
 
     <!-- delete -->
-<div class="modal fade" id="deleteTable" tabindex="-1" aria-labelledby="deleteTableLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="deleteTableLabel">刪除</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <div class="modal fade" id="deleteTable" tabindex="-1" aria-labelledby="deleteTableLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteTableLabel">刪除</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    是否要刪除此欄位？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
+                    <button type="button" class="tci-btn bg_drakgreen">確定</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          是否要刪除此欄位？
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
-          <button type="button" class="tci-btn bg_drakgreen">確定</button>
-        </div>
-      </div>
     </div>
-  </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

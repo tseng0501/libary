@@ -42,7 +42,7 @@
         <section class="itemTemplate_content">
             <div class="table_content">
                 <table class="table table-bordered">
-                    <thead>
+                    <thead style="background-color: var(--color-light-gray);">
                         <tr>
                             <th>Item 名稱</th>
                             <th>明細樣版</th>
@@ -57,13 +57,9 @@
                             <td>公務車</td>
                             <td>公務車租借</td>
                             <td>QR Code</td>
-                            <td>
-                                <button class="tci-btn table_icon" data-toggle="modal" data-target="#edititemTemplate">
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <button class="tci-btn trash_icon" data-toggle="modal" data-target="#deleteItemTable">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </button>
+                            <td style="text-align: center;">
+                                <button class="tci-icon bg_drakblue"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -71,13 +67,9 @@
                             <td>電腦</td>
                             <td>維修</td>
                             <td>QR Code</td>
-                            <td>
-                                <button class="tci-btn table_icon" data-toggle="modal" data-target="#edititemTemplate">
-                                    <i class="fa-solid fa-pencil"></i>
-                                </button>
-                                <button class="tci-btn trash_icon" data-toggle="modal" data-target="#deleteItemTable">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </button>
+                            <td style="text-align: center;">
+                                <button class="tci-icon bg_drakblue"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                     </tbody>
@@ -165,7 +157,7 @@
                         <div class="tci-field-label">
                             <span class="tci-field-text text-left">Item 名稱:</span>
                         </div>
-                        <div class="tci-field-value">公務車管理</div>
+                        <input type="text" class="tci-field-value" value="公務車管理">
                     </div>
                     <div class="tci-field">
                         <div class="tci-field-label">

@@ -29,14 +29,7 @@
         color: var(--color-dark-khaki);
     }
 }
-.trash_icon{
-    padding: 0 7px !important;
-    min-width: 50px !important;
 
-    i {
-        color: var(--color-dark-red);
-    }
-}
 //主內容的背景
 .content_shadow {
     box-shadow: var(--borderShadow);
@@ -78,35 +71,10 @@
         .table_content {
             padding: 1rem;
 
-            .table {
-                thead {
-                    background-color: var(--color-dark-khaki);
-                    color: var(--color-snow);
-                }
-
-                .table_icon {
-                    text-align: center;
-
-                    button {
-                        padding: 0;
-                    }
-
-                    i {
-                        box-shadow: 0 4px 8px 0 var(--color-dark-khaki);
-                        cursor: pointer;
-                    }
-                }
-            }
         }
 
         //single
         .detailTemplate_box {
-            .detailTemplate_contenttitle {
-                background-color: var(--color-dark-khaki);
-                color: var(--color-snow);
-                border-radius: var(--borderRadius);
-                padding: 0.2rem;
-            }
             .detailTemplate_table {
                 overflow-x: auto;
 
@@ -149,37 +117,10 @@
         //all
         .table_content {
             padding: 1rem;
-
-            .table {
-                thead {
-                    background-color: var(--color-dark-khaki);
-                    color: var(--color-snow);
-                }
-
-                .table_icon {
-                    text-align: center;
-
-                    button {
-                        padding: 0;
-                    }
-
-                    i {
-                        box-shadow: 0 4px 8px 0 var(--color-dark-khaki);
-                        cursor: pointer;
-                    }
-                }
-            }
         }
 
         //single
         .behaviorTemplate_box {
-            .behaviorTemplate_contenttitle {
-                background-color: var(--color-dark-khaki);
-                color: var(--color-snow);
-                border-radius: var(--borderRadius);
-                padding: 0.2rem;
-            }
-
             .behaviorTemplate_table {
                 overflow-x: auto;
 
@@ -224,11 +165,6 @@
 
             .table {
                 width: 700px;
-                thead {
-                    background-color: var(--color-dark-khaki);
-                    color: var(--color-snow);
-                }
-
             }
         }
     }
