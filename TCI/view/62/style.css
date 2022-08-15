@@ -13,3 +13,39 @@
     width: 100%;
   }
 }
+#page_purchaseConfirmation_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_purchaseConfirmation_signoff .tableScroll .tableContent {
+  width: 1200px;
+}
+
+#page_purchaseConfirmation_print .print_table {
+  overflow-x: auto;
+}
+#page_purchaseConfirmation_print .print_table .tableContent {
+  width: 1200px;
+}
+#page_purchaseConfirmation_print .print_table .tableContent #SalesOrderBarcode {
+  text-align: end;
+}
+#page_purchaseConfirmation_print .print_table .tableContent .tci-table.noborder {
+  margin-bottom: 0;
+}
+#page_purchaseConfirmation_print .print_table .tableContent .tci-table.noborder th,
+#page_purchaseConfirmation_print .print_table .tableContent .tci-table.noborder td {
+  padding: 0;
+  border: none;
+}
+#page_purchaseConfirmation_print .print_table .tableContent .tci-table.noborder th {
+  text-align: right;
+}
+
+@media (min-width: 992px) {
+  #page_purchaseConfirmation_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+  #page_purchaseConfirmation_print .print_table .tableContent {
+    width: 100%;
+  }
+}

@@ -1,11 +1,33 @@
-#page_createAlternative .createAlternative_query .tci-input-group.bom button {
+#page_changeRequest .changeRequestQuery .tci-input-group.bom button {
   width: 100%;
   margin-top: 0.5rem;
 }
 
 @media (min-width: 765px) {
-  #page_createAlternative .createAlternative_query .tci-input-group.bom button {
+  #page_changeRequest .changeRequestQuery .tci-input-group.bom button {
     width: auto;
     margin-top: 0;
+  }
+}
+#page_changeRequest_signoff .tableScroll0 {
+  overflow-x: auto;
+}
+#page_changeRequest_signoff .tableScroll0 .tableContent {
+  width: 900px;
+}
+
+#page_changeRequest_print .print_table {
+  overflow-x: auto;
+}
+#page_changeRequest_print .print_table .tableContent {
+  width: 900px;
+}
+
+@media (min-width: 992px) {
+  #page_changeRequest_signoff .tableScroll0 .tableContent {
+    width: 100%;
+  }
+  #page_changeRequest_print .print_table .tableContent {
+    width: 100%;
   }
 }

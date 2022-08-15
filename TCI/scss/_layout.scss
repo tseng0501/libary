@@ -13,6 +13,7 @@ body {
 ::before {
     box-sizing: border-box;
 }
+
 //強制不换行、超出顯示省略號
 .fontNoWrap {
     white-space: nowrap;
@@ -71,6 +72,7 @@ body {
         border-top-right-radius: 0;
     }
 }
+
 //灰色框
 .formBox_gray {
     .formBox_title {
@@ -135,6 +137,8 @@ body {
 }
 
 .print_table {
+    margin-top: 1rem;
+
     .tableContent {
         margin-bottom: 2rem;
 
@@ -156,7 +160,8 @@ body {
 .btnGroups {
     text-align: right;
 }
-.warningTag{
+
+.warningTag {
     background-color: #ff8658;
     border-radius: var(--borderRadius);
     padding: 1px 4px 1px 4px;
@@ -164,6 +169,10 @@ body {
     margin-right: 2px;
     color: var(--color-snow);
     font-weight: 900;
+}
+.ecNum {
+    font-size: 12px;
+    border-bottom: 3px double;
 }
 // .addTable {
 //     display: flex;
@@ -241,13 +250,10 @@ body {
         }
     }
 
-    .print_process {
-
-        // 簽核流程
-        .print_process_circuit {
-            display: flex;
-            flex-wrap: wrap;
-        }
+    // 簽核流程
+    .print_process_circuit {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     //檔案數

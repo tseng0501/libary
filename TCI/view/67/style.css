@@ -60,3 +60,25 @@
     width: auto;
   }
 }
+#page_goodsIssue_signoff .tableScroll0 {
+  overflow-x: auto;
+}
+#page_goodsIssue_signoff .tableScroll0 .tableContent {
+  width: 1200px;
+}
+
+#page_goodsReceipt_print .print_table {
+  overflow-x: auto;
+}
+#page_goodsReceipt_print .print_table .tableContent {
+  width: 1200px;
+}
+
+@media (min-width: 992px) {
+  #page_goodsIssue_signoff .tableScroll0 .tableContent {
+    width: 100%;
+  }
+  #page_goodsReceipt_print .print_table .tableContent {
+    width: 100%;
+  }
+}

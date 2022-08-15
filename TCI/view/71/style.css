@@ -36,3 +36,25 @@
     width: 100%;
   }
 }
+#page_inventoryTransfer_signoff .tableScroll0 {
+  overflow-x: auto;
+}
+#page_inventoryTransfer_signoff .tableScroll0 table {
+  width: 900px;
+}
+
+#page_inventoryTransfer_print .print_table {
+  overflow-x: auto;
+}
+#page_inventoryTransfer_print .print_table .tableContent {
+  width: 900px;
+}
+
+@media (min-width: 765px) {
+  #page_inventoryTransfer_signoff .tableScroll0 table {
+    width: 100%;
+  }
+  #page_inventoryTransfer_print .print_table .tableContent {
+    width: 100%;
+  }
+}

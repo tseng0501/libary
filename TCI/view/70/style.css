@@ -13,3 +13,25 @@
     justify-content: end;
   }
 }
+#page_issueProduction_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_issueProduction_signoff .tableScroll .tableContent {
+  width: 1200px;
+}
+
+#page_issueProduction_print .print_table {
+  overflow-x: auto;
+}
+#page_issueProduction_print .print_table .tableContent {
+  width: 1200px;
+}
+
+@media (min-width: 992px) {
+  #page_issueProduction_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+  #page_issueProduction_print .print_table .tableContent {
+    width: 100%;
+  }
+}

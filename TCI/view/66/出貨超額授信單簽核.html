@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>出貨超額授信單簽核</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_inventoryTransfer_signoff">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>出貨超額授信單-簽核</b></span>
+        </div>
+
+        <!-- 單據明細 -->
+        <section class="darkBorderCard detailsBox tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>單據明細</span>
+                <span class="tci-pl-0 ">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="detailsBoxContent darkBorderCardContent">
+                <div class="detailsBox_company tci-mt-1 tci-mb-2" style="text-align: right;">
+                    <span class="detailsBox_companytext"
+                        style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">百岳特國際貿易(上海)</span>
+                </div>
+                <div class="tableScroll0">
+                    <div class="tableContent">
+                        <div
+                            style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;background-color: var(--color-light-red);color: var(--color-snow);">
+                            <span>信用額度超額訊息</span>
+                        </div>
+                        <table class="tci-table tci-table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">出貨單號</th>
+                                    <td colspan="7">220607-71-A002</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);">客戶編號</th>
+                                    <td colspan="2">10002238</td>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);">客戶名稱</th>
+                                    <td colspan="2">陳品有限公司</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);">信用額度超額幣別</th>
+                                    <td colspan="2">10002238</td>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);">核定授信額度</th>
+                                    <td colspan="2">陳品有限公司</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);">已出貨未開票</th>
+                                    <td colspan="2">10002238</td>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);">已請款未立帳</th>
+                                    <td colspan="2">陳品有限公司</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);">應收款項餘額</th>
+                                    <td colspan="2">10002238</td>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);">可用授信額度</th>
+                                    <td colspan="2">-146,394.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="tci-table tci-table-bordered">
+                            <tbody>
+                                <tr style="text-align: center;background-color: var(--color-light-gray);">
+                                    <th>No</th>
+                                    <th>產品編號 </th>
+                                    <th>產品名稱/規格</th>
+                                    <th>出貨數量</th>
+                                    <th>單位</th>
+                                    <th>業務分組</th>
+                                    <th>付款條件</th>
+                                    <th>小計</th>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td>1</td>
+                                    <td>34011669</td>
+                                    <td>陳品-燕麥清新舒敏卸妝乳250g</td>
+                                    <td>9,313.00</td>
+                                    <td>PCS</td>
+                                    <td>M102</td>
+                                    <td>月結30天</td>
+                                    <td>718,730.78</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr style="color: var(--color-light-red);text-align: right;">
+                                    <th colspan="7">本幣總計TWD</th>
+                                    <th>718,730.78</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>一般領料單簽核</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_goodsIssue_signoff">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>一般領料單-簽核</b></span>
+        </div>
+
+        <!-- 單據明細 -->
+        <section class="darkBorderCard detailsBox tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>單據明細</span>
+                <span class="tci-pl-0 ">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="detailsBoxContent darkBorderCardContent">
+                <div class="detailsBox_company tci-mt-1 tci-mb-2" style="text-align: right;">
+                    <span class="detailsBox_companytext"
+                        style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">百岳特國際貿易(上海)</span>
+                </div>
+                <div class="tableScroll0">
+                    <div class="tableContent">
+                        <div
+                            style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
+                            <span>一般領料單資料</span>
+                        </div>
+                        <table class="tci-table tci-table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);">電子簽核編號</th>
+                                    <td colspan="10">220607-71-A002</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);">申請部門</th>
+                                    <td colspan="2">產前安定性組</td>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);"> 申請人</th>
+                                    <td colspan="2">趙唯廷(WENDY.CHAO)</td>
+                                    <th colspan="2" style="background-color: var(--color-light-gray);"> 申請日期</th>
+                                    <td colspan="2">2022/4/1 下午 01:14:37</td>
+                                </tr>
+                                <tr style="background-color: var(--color-light-gray);">
+                                    <th>NO</th>
+                                    <th>料號</th>
+                                    <th>品名</th>
+                                    <th>批號</th>
+                                    <th>供應商批號</th>
+                                    <th>單位</th>
+                                    <th>單價</th>
+                                    <th>倉庫</th>
+                                    <th>請領數</th>
+                                    <th>請領單位</th>
+                                    <th>異動分類</th>
+                                    <th>SAP專案號</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>30000848
+                                        <button type="button" title="MRP供需狀況"
+                                            style="border-radius:5px;background-color:lightblue;color:blue;cursor: pointer;">MRP?</button>
+                                    </td>
+                                    <td>丹鳳牡丹萃取液(C)(創)_E</td>
+                                    <td>20210916</td>
+                                    <td></td>
+                                    <td>g</td>
+                                    <td>100</td>
+                                    <td>磐石保養品原料倉-低溫(WBM2)</td>
+                                    <td>500.0000</td>
+                                    <td>QODM實驗室 (88060300)</td>
+                                    <td>研發領用
+                                        原因 :打樣使用</td>
+                                    <td>880400654
+                                        QODM實驗室一般耗材</td>
+                                </tr>
+                                <tr id="MD04TableBItem_1">
+                                    <td colspan="12">
+                                        <table class="tci-table tci-table-bordered">
+                                            <thead style="background-color: var(--color-light-gray);">
+                                                <tr>
+                                                    <th>日期</th>
+                                                    <th>MRP元素</th>
+                                                    <th>開始/核發日期</th>
+                                                    <th>開單日期</th>
+                                                    <th>MRP要素資料</th>
+                                                    <th>重新排程日</th>
+                                                    <th>例外</th>
+                                                    <th>例外說明</th>
+                                                    <th>收貨/需求</th>
+                                                    <th>可用數量</th>
+                                                    <th>儲存地點</th>
+                                                    <th>SO類型&留樣資訊</th>
+                                                    <th>業務員資訊</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody style="text-align: center;">
+                                                <tr>
+                                                    <td>2022/08/16</td>
+                                                    <td>庫存</td>
+                                                    <td>2022/08/16</td>
+                                                    <td>庫存</td>
+                                                    <td>2022/08/16</td>
+                                                    <td>30500707</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>-27,285.212</td>
+                                                    <td>30.250</td>
+                                                    <td>WBM2</td>
+                                                    <td></td>
+                                                    <td>Scrap:0.00%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr style="text-align: right;color: var(--color-light-red);">
+                                    <th colspan="11">合計金額:</th>
+                                    <th>163</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="12" class="small_mark" style="font-size: 13px;padding: 0 10px;">收料備註:</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

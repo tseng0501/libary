@@ -118,3 +118,15 @@
     margin-right: 5px;
   }
 }
+#page_invoiceQuery_signoff .tableScroll0 {
+  overflow-x: auto;
+}
+#page_invoiceQuery_signoff .tableScroll0 .tableContent {
+  width: 900px;
+}
+
+@media (min-width: 765px) {
+  #page_invoiceQuery_signoff .tableScroll0 .tableContent {
+    width: 100%;
+  }
+}

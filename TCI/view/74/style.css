@@ -11,3 +11,25 @@
     width: 70%;
   }
 }
+#page_workOrder_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_workOrder_signoff .tableScroll .tableContent {
+  width: 765px;
+}
+
+#page_workOrder_print .print_table {
+  overflow-x: auto;
+}
+#page_workOrder_print .print_table .tableContent {
+  width: 765px;
+}
+
+@media (min-width: 765px) {
+  #page_workOrder_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+  #page_workOrder_print .print_table .tableContent {
+    width: 100%;
+  }
+}

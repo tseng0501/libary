@@ -1,7 +1,8 @@
-#page_quotation{
-    .quotationQuery{
-        .tci-field{
+#page_quotation {
+    .quotationQuery {
+        .tci-field {
             flex-wrap: wrap;
+
             .tci-valueBtn {
                 display: flex;
                 width: 100%;
@@ -11,16 +12,18 @@
 }
 
 @media (min-width:765px) {
-    #page_quotation{
-        .quotationQuery{
-            .tci-field{
+    #page_quotation {
+        .quotationQuery {
+            .tci-field {
                 flex-wrap: nowrap;
+
                 .tci-valueBtn {
                     display: flex;
                     width: 70%;
                     justify-content: end;
                 }
-                .tci-field-value{
+
+                .tci-field-value {
                     width: 70%;
                 }
             }
@@ -29,14 +32,16 @@
 }
 
 // 簽核
-#page_quotation_signoff{
-    .detailsBoxContent{
-        .tableScroll{
+#page_quotation_signoff {
+    .detailsBoxContent {
+        .tableScroll {
             overflow-x: auto;
-            table{
+
+            table {
                 width: 900px;
-                tbody{
-                    th{
+
+                tbody {
+                    th {
                         background-color: var(--color-whitesmoke);
                     }
                 }
@@ -44,14 +49,67 @@
         }
     }
 }
+
+#page_quotation_print {
+    .print_btn {
+        .choose {
+            width: 100%;
+        }
+    }
+
+    .print_table {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 1200px;
+
+            #SalesOrderBarcode {
+                text-align: end;
+            }
+
+            .tci-table {
+                &.noborder {
+                    margin-bottom: 0;
+
+                    th,
+                    td {
+                        padding: 0;
+                        border: none;
+                    }
+
+                    th {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width:765px) {
-    #page_quotation_signoff{
-        .detailsBoxContent{
-            .tableScroll{
-                table{
+    #page_quotation_signoff {
+        .detailsBoxContent {
+            .tableScroll {
+                table {
                     width: 100%;
                 }
             }
         }
+    }
+
+    #page_quotation_print {
+        .print_btn {
+            .choose {
+                width: 200px;
+                margin: auto;
+            }
+        }
+
+        .print_table {
+            .tableContent {
+                width: 100%
+            }
+        }
+
     }
 }

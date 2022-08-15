@@ -15,3 +15,37 @@
         }
     }
 }
+//簽核 列印
+#page_workOrder_signoff{
+    .tableScroll{
+
+        overflow-x: auto;
+        .tableContent{
+            width:765px;
+        }
+    }
+}
+#page_workOrder_print{
+    .print_table{
+        overflow-x: auto;
+        .tableContent{
+            width:765px;
+        }
+    }
+}
+@media (min-width:765px) {
+    #page_workOrder_signoff{
+        .tableScroll{
+            .tableContent{
+                width:100%;
+            }
+        }
+    }
+    #page_workOrder_print{
+        .print_table{
+            .tableContent{
+                width:100%;
+            }
+        }
+    }
+}

@@ -1,7 +1,6 @@
-#page_createAlternative {
-    .createAlternative_query {
+#page_changeRequest {
+    .changeRequestQuery {
         .tci-input-group {
-           
             &.bom {
                 button {
                     width: 100%;
@@ -13,8 +12,8 @@
 }
 
 @media (min-width: 765px) {
-    #page_createAlternative {
-        .createAlternative_query {
+    #page_changeRequest {
+        .changeRequestQuery {
             .tci-input-group {
                 &.bom {
                     button {
@@ -22,6 +21,47 @@
                         margin-top: 0;
                     }
                 }
+            }
+        }
+    }
+}
+
+// 簽核，列印
+#page_changeRequest_signoff {
+    .tableScroll0 {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 900px;
+        }
+    }
+}
+
+#page_changeRequest_print {
+    .print_table {
+
+        overflow-x: auto;
+
+        .tableContent {
+            width: 900px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #page_changeRequest_signoff {
+        .tableScroll0 {
+            .tableContent {
+                width: 100%;
+            }
+        }
+    }
+
+    #page_changeRequest_print {
+        .print_table {
+
+            .tableContent {
+                width: 100%;
             }
         }
     }

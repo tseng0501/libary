@@ -29,8 +29,39 @@
   background-color: var(--color-whitesmoke);
 }
 
+#page_quotation_print .print_btn .choose {
+  width: 100%;
+}
+#page_quotation_print .print_table {
+  overflow-x: auto;
+}
+#page_quotation_print .print_table .tableContent {
+  width: 1200px;
+}
+#page_quotation_print .print_table .tableContent #SalesOrderBarcode {
+  text-align: end;
+}
+#page_quotation_print .print_table .tableContent .tci-table.noborder {
+  margin-bottom: 0;
+}
+#page_quotation_print .print_table .tableContent .tci-table.noborder th,
+#page_quotation_print .print_table .tableContent .tci-table.noborder td {
+  padding: 0;
+  border: none;
+}
+#page_quotation_print .print_table .tableContent .tci-table.noborder th {
+  text-align: right;
+}
+
 @media (min-width: 765px) {
   #page_quotation_signoff .detailsBoxContent .tableScroll table {
+    width: 100%;
+  }
+  #page_quotation_print .print_btn .choose {
+    width: 200px;
+    margin: auto;
+  }
+  #page_quotation_print .print_table .tableContent {
     width: 100%;
   }
 }

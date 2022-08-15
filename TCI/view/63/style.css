@@ -7,3 +7,25 @@
     width: 100%;
   }
 }
+#page_salesReturnNotice_signoff .tableScroll0 {
+  overflow-x: auto;
+}
+#page_salesReturnNotice_signoff .tableScroll0 .tableContent {
+  width: 900px;
+}
+
+#page_salesReturnNotice_print .print_table {
+  overflow-x: auto;
+}
+#page_salesReturnNotice_print .print_table .tableContent {
+  width: 900px;
+}
+
+@media (min-width: 765px) {
+  #page_salesReturnNotice_signoff .tableScroll0 .tableContent {
+    width: 100%;
+  }
+  #page_salesReturnNotice_print .print_table .tableContent {
+    width: 100%;
+  }
+}

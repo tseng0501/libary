@@ -1,11 +1,14 @@
 #page_inventoryTransfer {
+
     .tci-table th,
-        .tci-table td {
-            padding:.5rem;
-        }
+    .tci-table td {
+        padding: .5rem;
+    }
+
     .tableScroll {
         overflow-x: auto;
-        .tci-table{
+
+        .tci-table {
             width: 900px;
         }
     }
@@ -15,10 +18,12 @@
     #page_inventoryTransfer {
         .tableScroll {
             overflow-x: auto;
-            .tci-table{
+
+            .tci-table {
                 width: 100%;
             }
         }
+
         .inventoryTransferQuery {
             display: flex;
             flex-wrap: wrap;
@@ -45,5 +50,39 @@
             }
         }
     }
+}
 
+// 簽核&列印
+#page_inventoryTransfer_signoff {
+    .tableScroll0 {
+        overflow-x: auto;
+
+        table {
+            width: 900px;
+        }
+    }
+}
+#page_inventoryTransfer_print{
+    .print_table{
+        overflow-x: auto;
+        .tableContent{
+            width: 900px;
+        }
+    }
+}
+@media (min-width:765px) {
+    #page_inventoryTransfer_signoff {
+        .tableScroll0 {
+            table {
+                width: 100%;
+            }
+        }
+    }
+    #page_inventoryTransfer_print{
+        .print_table{
+            .tableContent{
+                width: 100%;
+            }
+        }
+    }
 }

@@ -182,3 +182,24 @@
         }
     }
 }
+//簽核 列印
+.tagDiv{
+    line-height: 30px;
+}
+.tag_green{
+    background-color: var(--color-light-green);
+    color: var(--color-snow);
+    border-radius: var(--borderRadius);
+    padding: 3px 5px;
+    margin: 5px;
+    font-size: var(--font-size-sm);
+}
+.tag_sienna{
+    background-color: var(--color-sienna);
+    color: var(--color-snow);
+    border-radius: var(--borderRadius);
+    padding: 3px 5px;
+    margin: 5px;
+    font-size: var(--font-size-sm);
+}
+

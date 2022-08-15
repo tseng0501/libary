@@ -1,18 +1,20 @@
-#page_issueProduction{
-    .issueQuery{
+#page_issueProduction {
+    .issueQuery {
         .tci-valueBtn {
             display: flex;
             width: 100%;
         }
     }
 }
+
 @media (min-width: 765px) {
 
-    #page_issueProduction{
-        .issueQuery{
-               .tci-input-group-prepend{
+    #page_issueProduction {
+        .issueQuery {
+            .tci-input-group-prepend {
                 width: 30%;
-               } 
+            }
+
             .tci-valueBtn {
                 display: flex;
                 width: 70%;
@@ -20,4 +22,42 @@
             }
         }
     }
+}
+
+#page_issueProduction_signoff {
+    .tableScroll {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 1200px;
+        }
+    }
+}
+
+#page_issueProduction_print {
+    .print_table {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 1200px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #page_issueProduction_signoff {
+        .tableScroll {
+            .tableContent {
+                width: 100%;
+            }
+        }
+    }
+    #page_issueProduction_print {
+    .print_table {
+        .tableContent {
+            width: 100%;
+
+        }
+    }
+}
 }

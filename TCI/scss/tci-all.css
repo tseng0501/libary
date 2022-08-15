@@ -151,6 +151,9 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.print_table {
+  margin-top: 1rem;
+}
 .print_table .tableContent {
   margin-bottom: 2rem;
 }
@@ -177,6 +180,11 @@ body {
   margin-right: 2px;
   color: var(--color-snow);
   font-weight: 900;
+}
+
+.ecNum {
+  font-size: 12px;
+  border-bottom: 3px double;
 }
 
 @media (min-width: 765px) {
@@ -207,7 +215,7 @@ body {
   .print_table .tableContent .tableScroll .tableAuto {
     width: 100%;
   }
-  .print_process .print_process_circuit {
+  .print_process_circuit {
     display: flex;
     flex-wrap: wrap;
   }
@@ -1106,6 +1114,7 @@ body {
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  font-size: var(--font-size-sm);
 }
 
 .tci-card-body {
@@ -1116,6 +1125,7 @@ body {
 
 .tci-card-title {
   margin-bottom: 0.5rem;
+  font-size: var(--font-size-sm);
 }
 
 .tci-card-text {
@@ -1254,6 +1264,7 @@ th {
 
 table {
   border-collapse: collapse;
+  font-size: 14px;
 }
 
 .tci-table thead th {

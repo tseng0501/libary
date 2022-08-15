@@ -93,7 +93,8 @@
                 width: 70%;
                 justify-content: end;
             }
-            .tci-field-value{
+
+            .tci-field-value {
                 width: 70%;
             }
         }
@@ -225,6 +226,68 @@
                         width: 49%;
                     }
                 }
+            }
+        }
+    }
+}
+
+#page_createPurchaseOrder_signoff {
+    .tableScroll0 {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 900px;
+        }
+    }
+
+    .tableScroll {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 1200px;
+        }
+    }
+}
+
+#page_createPurchaseOrder_print {
+    .print_table {
+        overflow-x: auto;
+        .tableContent {
+            width: 900px;
+            .noborder {
+
+                th,
+                td {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_createPurchaseOrder_signoff {
+        .tableScroll0 {
+            .tableContent {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #page_createPurchaseOrder_signoff {
+        .tableScroll {
+            .tableContent {
+                width: 100%;
+            }
+        }
+    }
+    #page_createPurchaseOrder_print {
+        .print_table {
+            overflow-x: auto;
+            .tableContent {
+                width: 100%;
             }
         }
     }

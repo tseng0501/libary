@@ -145,3 +145,43 @@
     width: 49%;
   }
 }
+#page_createPurchaseOrder_signoff .tableScroll0 {
+  overflow-x: auto;
+}
+#page_createPurchaseOrder_signoff .tableScroll0 .tableContent {
+  width: 900px;
+}
+#page_createPurchaseOrder_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_createPurchaseOrder_signoff .tableScroll .tableContent {
+  width: 1200px;
+}
+
+#page_createPurchaseOrder_print .print_table {
+  overflow-x: auto;
+}
+#page_createPurchaseOrder_print .print_table .tableContent {
+  width: 900px;
+}
+#page_createPurchaseOrder_print .print_table .tableContent .noborder th,
+#page_createPurchaseOrder_print .print_table .tableContent .noborder td {
+  border: none;
+}
+
+@media (min-width: 765px) {
+  #page_createPurchaseOrder_signoff .tableScroll0 .tableContent {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  #page_createPurchaseOrder_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+  #page_createPurchaseOrder_print .print_table {
+    overflow-x: auto;
+  }
+  #page_createPurchaseOrder_print .print_table .tableContent {
+    width: 100%;
+  }
+}

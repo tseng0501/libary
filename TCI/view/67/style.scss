@@ -1,41 +1,47 @@
 #page_goodsIssue {
 
-    .goodsIssueTable{
+    .goodsIssueTable {
         overflow-x: auto;
-        .tci-table{
+
+        .tci-table {
             width: 900px;
-            tbody{
-                th{
+
+            tbody {
+                th {
                     color: var(--color-sienna);
                     // background-color: var(--color-light-gray);
                 }
-                .tci-form-control{
+
+                .tci-form-control {
                     padding: 0 .5rem;
                 }
             }
-            .input_part{
-                .btnGroups_company{
+
+            .input_part {
+                .btnGroups_company {
                     width: 100%;
-                    button{
-                    width: 100%;
+
+                    button {
+                        width: 100%;
                     }
                 }
             }
         }
     }
-    
-    .goodsIssueOther{
-        .total{
+
+    .goodsIssueOther {
+        .total {
             padding: 5px;
             border-radius: var(--borderRadius);
             border: 3px solid var(--color-rosybrown);
             margin-bottom: .5rem;
             display: flex;
-            justify-content:space-between;
+            justify-content: space-between;
             margin-bottom: .5rem;
             font-weight: bold;
         }
-        .mark{
+
+        .mark {
             margin-bottom: .5rem;
             padding: 5px;
         }
@@ -54,8 +60,8 @@
             }
         }
 
-        .goodsIssueTable{
-            .tci-table{
+        .goodsIssueTable {
+            .tci-table {
                 width: 100%;
             }
         }
@@ -74,16 +80,57 @@
             }
         }
 
-        .goodsIssueTable{
-            .tci-table{
-                .input_part{
-                    .btnGroups_company{
+        .goodsIssueTable {
+            .tci-table {
+                .input_part {
+                    .btnGroups_company {
                         width: auto;
-                        button{
-                        width: auto;
+
+                        button {
+                            width: auto;
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+
+// 簽核 列印
+#page_goodsIssue_signoff {
+    .tableScroll0 {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 1200px;
+        }
+    }
+}
+
+#page_goodsReceipt_print {
+    .print_table {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 1200px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    #page_goodsIssue_signoff {
+        .tableScroll0 {
+            .tableContent {
+                width: 100%;
+            }
+        }
+    }
+
+    #page_goodsReceipt_print {
+        .print_table {
+            .tableContent {
+                width: 100%;
             }
         }
     }
