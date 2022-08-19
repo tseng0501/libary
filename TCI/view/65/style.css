@@ -135,3 +135,23 @@
     margin-right: 10px;
   }
 }
+#page_generalInvoice_signoff .tableScroll {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+#page_generalInvoice_signoff .tableScroll .tableContent {
+  width: 765px;
+}
+
+@media (min-width: 765px) {
+  #page_generalInvoice_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+  #page_generalInvoice_signoff .tableScroll .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  #page_generalInvoice_signoff .tableScroll .content .tci-input-group {
+    width: 48%;
+  }
+}

@@ -81,3 +81,20 @@
         }
     }
 }
+#page_leaveVacation_signoff{
+    .tableScroll{
+        overflow-x: auto;
+        .tableContent{
+            width: 765px;
+        }
+    }
+}
+@media (min-width: 765px) {
+    #page_leaveVacation_signoff{
+        .tableScroll{
+            .tableContent{
+                width: 100%;
+            }
+        }
+    }
+}

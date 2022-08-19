@@ -48,3 +48,15 @@
     margin-right: 5px;
   }
 }
+#page_leaveVacation_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_leaveVacation_signoff .tableScroll .tableContent {
+  width: 765px;
+}
+
+@media (min-width: 765px) {
+  #page_leaveVacation_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+}

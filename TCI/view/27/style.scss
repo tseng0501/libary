@@ -113,3 +113,47 @@
         }
     }
 }
+#page_remittance_signoff{
+    .tableScroll{
+        overflow-x: auto;
+        .tableContent0{
+            width: 765px;
+        }
+        .tableContent{
+            width: 1200px;
+        }
+    }
+}
+#page_remittance_print{
+    .tableScroll{
+        overflow-x: auto;
+        .tableAuto{
+            width: 1200px;
+        }
+    }
+}
+@media (min-width: 765px) {
+    #page_remittance_signoff{
+        .tableScroll{
+            .tableContent0{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    #page_remittance_signoff{
+        .tableScroll{
+            .tableContent{
+                width: 100%;
+            }
+        }
+    }
+    #page_remittance_print{
+        .tableScroll{
+            .tableAuto{
+                width: 100%;
+            }
+        }
+    }
+}

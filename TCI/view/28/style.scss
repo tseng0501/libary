@@ -102,3 +102,22 @@
         }
     }
 }
+//簽核列印
+#page_contract_signoff{
+    .tableScroll{
+        overflow-x: auto;
+        .tableContent{
+            width: 765px;
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_contract_signoff{
+        .tableScroll{
+            .tableContent{
+                width: 100%;
+            }
+        }
+    }
+}

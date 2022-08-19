@@ -1,0 +1,30 @@
+#page_oldgoodsReceipt_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_oldgoodsReceipt_signoff .tableScroll .tableContent {
+  width: 992px;
+}
+
+#page_oldgoodsReceipt_print .print_table .tableContent {
+  margin-bottom: 0;
+}
+#page_oldgoodsReceipt_print .print_table .tableContent .tableScroll {
+  overflow-x: auto;
+}
+#page_oldgoodsReceipt_print .print_table .tableContent .tableScroll .tableAuto {
+  width: 1400px;
+}
+
+@media (min-width: 992px) {
+  #page_oldgoodsReceipt_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+  #page_oldgoodsReceipt_print .print_table .tableContent .tableScroll .tableAuto.manager {
+    width: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  #page_oldgoodsReceipt_print .print_table .tableContent .tableScroll .tableAuto {
+    width: 100%;
+  }
+}

@@ -30,3 +30,35 @@
         }
     }
 }
+#page_coinRequest_signoff{
+    .tableScroll{
+        overflow-x: auto;
+        .tableContent{
+            width: 765px;
+        }
+    }
+}
+#page_coinRequest_print{
+    .print_table{
+        overflow-x: auto;
+        .tableContent{
+            width: 765px;
+        }
+    }
+}
+@media (min-width: 765px) {
+    #page_coinRequest_signoff{
+        .tableScroll{
+            .tableContent{
+                width: 100%;
+            }
+        }
+    }
+    #page_coinRequest_print{
+        .print_table{
+            .tableContent{
+                width: 100%;
+            }
+        }
+    }
+}

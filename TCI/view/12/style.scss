@@ -66,6 +66,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+
                 .tci-field {
                     width: 48%;
 
@@ -96,10 +97,11 @@
 
         .advancedPayment {
             .paymentContent {
-                .block{
+                .block {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
+
                     .tci-field {
                         width: 48%;
 
@@ -110,14 +112,17 @@
                         .tci-field-value {
                             width: 80%;
                         }
-                    } 
+                    }
                 }
-                .block2{
+
+                .block2 {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
+
                     .tci-field {
                         width: 48%;
+
                         .tci-field-label {
                             width: 30%;
                         }
@@ -137,11 +142,13 @@
     #page_advancedPayment {
         .advancedPayment {
             .paymentContent {
-                .block2{
+                .block2 {
                     justify-content: flex-start;
+
                     .tci-field {
                         margin-right: 1rem;
                         width: 48%;
+
                         .tci-field-label {
                             width: 25%;
                         }
@@ -151,11 +158,14 @@
                         }
                     }
                 }
-                .block{
+
+                .block {
                     justify-content: flex-start;
+
                     .tci-field {
                         margin-right: 1rem;
                         width: 23%;
+
                         .tci-field-label {
                             width: 25%;
                         }
@@ -165,6 +175,26 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+#page_advancedPayment_signoff {
+    .tableScroll {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 992px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #page_advancedPayment_signoff {
+        .tableScroll {
+            .tableContent {
+                width: 100%;
             }
         }
     }

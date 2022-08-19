@@ -98,3 +98,37 @@
         }
     }
 }
+
+#page_requestForLineCredit_signoff{
+    .tableScroll{
+        overflow-x: auto;
+        .tableContent{
+            width: 900px;
+        }
+    }
+}
+#page_requestForLineCredit_print{
+    .print_table{
+        overflow-x: auto;
+        .tableContent{
+            width: 900px;
+        }
+    }
+}
+@media (min-width: 765px) {
+    #page_requestForLineCredit_signoff{
+        .tableContent{
+            .tableContent{
+                width: 100%;
+            }
+        }
+    }
+    #page_requestForLineCredit_print{
+        .print_table{
+            overflow-x: auto;
+            .tableContent{
+                width: 100%;
+            }
+        }
+    }
+}

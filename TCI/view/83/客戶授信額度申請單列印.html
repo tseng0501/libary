@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>客戶授信額度申請單列印</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_requestForLineCredit_print">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>客戶授信額度申請單-列印</b></span>
+        </div>
+        <section class="btnTop tci-mb-3">
+          <div class="btnGroups">
+                <button class="tci-btn bg_darkblue"><i class="fa fa-undo" aria-hidden="true"></i> 關閉單據內容</button>
+            </div>
+            <div class="btnGroups_lr" style="justify-content: space-between;display: flex;margin-top: .5rem;">
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-left"
+                        aria-hidden="true"></i> 上一筆</button>
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-right"
+                        aria-hidden="true"></i>下一筆</button>
+            </div>
+        </section>
+        <section class="print_btn">
+            <div class="btnGroups">
+                <button class="tci-btn bg_darkkhaki">顯示簽核記錄</button>
+                <button class="tci-btn bg_darkkhaki">列印單據</button>
+                <button class="tci-btn bg_darkkhaki">單據列印格式?</button>
+            </div>
+            <div style="width: 100%;text-align: center;">
+                <img src="https://media.istockphoto.com/photos/happy-shiba-inu-dog-on-yellow-redhaired-japanese-dog-smile-portrait-picture-id1197121742?k=20&m=1197121742&s=612x612&w=0&h=HX4DoFCL1RDlegj3P9w4O2H64sgwKvMP0VSki7sBEtE="
+                    alt="附件1" style="width: 50%;" />
+            </div>
+        </section>
+        <hr>
+        <section class="print_table">
+            <div>
+                <div class="tableContent">
+                    <div class="tableScroll">
+                        <div class="tableAuto">
+                            <div style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
+                                <span>大江生醫股份有限公司 客戶授信額度申請單</span>
+                            </div>
+                            <div
+                            style="
+                              text-align: center;
+                              font-size: var(--font-size-xl);
+                              font-weight: bold;
+                              margin-bottom: 1rem;
+                            "
+                          >
+                            <span>客戶授信額度申請單資料</span>
+                          </div>
+                          <div>
+                            <div style="display: flex; justify-content: space-between">
+                                <div>
+                                  <span>單號:</span>
+                                  <span>220721-83-Q001</span>
+                                </div>
+                                <div>
+                                  <span>填表日期:</span>
+                                  <span>220505-72-G001</span>
+                                </div>
+                              </div>
+                              <div style="display: flex; justify-content: space-between">
+                                <div>
+                                  <span>申請原因:</span>
+                                  <span>初次申請</span>
+                                </div>
+                                <div>
+                                  <span> 首次交易日期:</span>
+                                  <span>220505-72-G001</span>
+                                </div>
+                              </div>
+                          </div>
+                          <table class="tci-table tci-table-bordered">
+                            <thead style="text-align: center">
+                              <tr>
+                                <th colspan="6" style="font-size: var(--font-size-md)">
+                                  客戶基本資料
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  客戶幣別
+                                </th>
+                                <td colspan="5">USD美金</td>
+                              </tr>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  客戶名稱
+                                </th>
+                                <td>LifeVantage</td>
+                                <th style="background-color: var(--color-light-gray)">
+                                  營利事業統一編號
+                                </th>
+                                <td>NA</td>
+                                <th style="background-color: var(--color-light-gray)">
+                                  設立時間
+                                </th>
+                                <td>2022/02/33</td>
+                              </tr>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  地址
+                                </th>
+                                <td>3300 Triumph Blvd Suite 700, Lehi, UT</td>
+                                <th style="background-color: var(--color-light-gray)">
+                                  電話
+                                </th>
+                                <td>801-357-9795</td>
+                                <th style="background-color: var(--color-light-gray)">
+                                  負責人
+                                </th>
+                                <td>曾莞婷(HEDY.TSENG)</td>
+                              </tr>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  聯絡人
+                                </th>
+                                <td>8014329382</td>
+                                <th style="background-color: var(--color-light-gray)">
+                                  聯絡電話
+                                </th>
+                                <td>801-357-9795</td>
+                                <th style="background-color: var(--color-light-gray)">
+                                  傳真電話
+                                </th>
+                                <td>NA</td>
+                              </tr>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  登記資本額
+                                </th>
+                                <td>0</td>
+                                <th style="background-color: var(--color-light-gray)">
+                                  實收資本額
+                                </th>
+                                <td>0</td>
+                                <th style="background-color: var(--color-light-gray)">
+                                  員工人數
+                                </th>
+                                <td>NA</td>
+                              </tr>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  經營型態
+                                </th>
+                                <td colspan="5">8014329382</td>
+                              </tr>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  採購產品類別
+                                </th>
+                                <td colspan="5">8014329382</td>
+                              </tr>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  預計採購金額
+                                </th>
+                                <td colspan="5">年度：2022最高：1,442,000／月,平均：0</td>
+                              </tr>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  銷售產品類別
+                                </th>
+                                <td colspan="5">Drink</td>
+                              </tr>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  實際採購金額
+                                </th>
+                                <td colspan="5">
+                                  時間：自 2022/04/01 至 2022/07/21 金額：1,442,000
+                                </td>
+                              </tr>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  主要往來銀行
+                                </th>
+                                <td colspan="5">Bank of America</td>
+                              </tr>
+                              <tr>
+                                <th style="background-color: var(--color-light-gray)">
+                                  付款情形
+                                </th>
+                                <td colspan="5">優(無延遲)</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                            <table class="tci-table tci-table-bordered">
+                              <thead style="text-align: center">
+                                <tr>
+                                  <th colspan="6" style="font-size: var(--font-size-md)">
+                                    授信條件申請
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    原付款條件
+                                  </th>
+                                  <td>RD36:RP04-出貨前付清</td>
+                                </tr>
+                                <tr>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    擬授信額度
+                                  </th>
+                                  <td>
+                                    <span>
+                                      期間：自 2022/07/01 至 2023/07/01<br />
+                                      額度：USD美金 670,000
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    原授信額度
+                                  </th>
+                                  <td>USD美金 0</td>
+                                </tr>
+                                <tr>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    變更原因
+                                  </th>
+                                  <td>
+                                    Apply new payment term(NET 30) and TCI credit for
+                                    Lifevantage.
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table class="tci-table tci-table-bordered">
+                              <thead style="text-align: center">
+                                <tr>
+                                  <th colspan="6" style="font-size: var(--font-size-md)">
+                                    授信單位意見
+                                  </th>
+                                </tr>
+                                <tr>
+                                  <th
+                                    style="
+                                      background-color: var(--color-light-gray);
+                                      width: 10%;
+                                    "
+                                  >
+                                    評等分類
+                                  </th>
+                                  <th
+                                    style="
+                                      background-color: var(--color-light-gray);
+                                      width: 13%;
+                                    "
+                                  >
+                                    評等項目
+                                  </th>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    計分標準
+                                  </th>
+                                  <th
+                                    style="
+                                      background-color: var(--color-light-gray);
+                                      width: 8%;
+                                    "
+                                  >
+                                    得分
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th
+                                    rowspan="5"
+                                    style="background-color: var(--color-light-gray)"
+                                  >
+                                    發展前途
+                                  </th>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    公司設立時間
+                                  </th>
+                                  <td>USD美金 0</td>
+                                  <td style="text-align: center">0.000</td>
+                                </tr>
+                                <tr>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    實收資本額
+                                  </th>
+                                  <td>USD美金 0</td>
+                                  <td style="text-align: center">0.000</td>
+                                </tr>
+                                <tr>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    經營型態
+                                  </th>
+                                  <td>USD美金 0</td>
+                                  <td style="text-align: center">0.000</td>
+                                </tr>
+                                <tr>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    業務成長
+                                  </th>
+                                  <td>USD美金 0</td>
+                                  <td style="text-align: center">0.000</td>
+                                </tr>
+                                <tr>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    主要往來銀行資本適足率
+                                  </th>
+                                  <td>USD美金 0</td>
+                                  <td style="text-align: center">0.000</td>
+                                </tr>
+                                <tr>
+                                  <th
+                                    rowspan="3"
+                                    style="background-color: var(--color-light-gray)"
+                                  >
+                                    與公司往來情形
+                                  </th>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    合作時間
+                                  </th>
+                                  <td>USD美金 0</td>
+                                  <td style="text-align: center">0.000</td>
+                                </tr>
+                                <tr>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    年交易額
+                                  </th>
+                                  <td>USD美金 0</td>
+                                  <td style="text-align: center">0.000</td>
+                                </tr>
+                                <tr>
+                                  <th style="background-color: var(--color-light-gray)">
+                                    付款情形
+                                  </th>
+                                  <td>USD美金 0</td>
+                                  <td style="text-align: center">0.000</td>
+                                </tr>
+                              </tbody>
+                              <tfoot style="text-align: right">
+                                <tr>
+                                  <th colspan="3">總分</th>
+                                  <th>0.000</th>
+                                </tr>
+                              </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
+<!-- hedy 手機向上的那個icon 也可不做，統一向左 -->

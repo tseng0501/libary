@@ -41,3 +41,20 @@
     width: 75%;
   }
 }
+#page_loyaltyPoint_signoff .tableScroll {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+#page_loyaltyPoint_signoff .tableScroll .tableContent {
+  width: 900px;
+}
+#page_loyaltyPoint_signoff .tableScroll .tableContent .tableContentAuto {
+  overflow-y: auto;
+  height: 350px;
+}
+
+@media (min-width: 765px) {
+  #page_loyaltyPoint_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+}

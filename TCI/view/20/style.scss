@@ -69,7 +69,44 @@
                     text-align: center;
                 }
 
-                thead {}
+            }
+        }
+    }
+}
+
+//簽核 列印
+#page_advancedBilling_signoff {
+    .tableScroll {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 992px;
+        }
+    }
+}
+
+#page_advancedBilling_print {
+    .print_table {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 992px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #page_advancedBilling_signoff {
+        .tableScroll {
+            .tableContent {
+                width: 100%;
+            }
+        }
+    }
+    #page_advancedBilling_print {
+        .print_table {
+            .tableContent {
+                width: 100%;
             }
         }
     }

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>工作移交清單簽核</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_jobhandover_signoff">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>工作移交清單-簽核</b></span>
+        </div>
+
+        <!-- 單據明細 -->
+        <section class="darkBorderCard detailsBox tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>單據明細</span>
+                <span class="tci-pl-0 ">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="detailsBoxContent darkBorderCardContent">
+                <div class="detailsBox_company tci-mt-1 tci-mb-2" style="text-align: right;">
+                    <span class="detailsBox_companytext"
+                        style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">百岳特國際貿易(上海)</span>
+                </div>
+                <div class="tableScroll">
+                    <div class="tableContent">
+                        <div class="btnGroups">
+                            <button class="tci-btn bg_darkgreen" data-bs-toggle="modal" data-bs-target="#JobHandoverModal">工作移交流程說明</button>
+                        </div>
+                        <div
+                            style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
+                            <span>大江生醫股份有限公司 工作移交清單</span>
+                        </div>
+                        <table class="tci-table tci-table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);width: 16%;">單據編號</th>
+                                    <td colspan="3">220706-28-A003</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">員工編號</th>
+                                    <td>2103G0001</td>
+                                    <th style="background-color: var(--color-light-gray);">員工姓名</th>
+                                    <td>支援整合組</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">職稱</th>
+                                    <td>大江戰士</td>
+                                    <th style="background-color: var(--color-light-gray);">部門名稱</th>
+                                    <td>細胞科學驗證實驗室</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">到職日期</th>
+                                    <td>2021/3/8 (年資：1.4年)</td>
+                                    <th style="background-color: var(--color-light-gray);">最後工作日</th>
+                                    <td>2022/08/12</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">離職原因</th>
+                                    <td colspan="3">求學深造</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tableScroll">
+                    <div class="tableContent">
+                        <div style="text-align: center;color: var(--color-light-green);font-weight: bold;">
+                            <span>以下[應移交事項]需各部門會簽，各交接人負有確認之責，請務必嚴肅以待</span>
+                        </div>
+                        <table class="tci-table tci-table-bordered">
+                            <thead>
+                                <tr style="background-color: var(--color-light-gray);text-align: center;">
+                                    <th>NO</th>
+                                    <th>會簽部門</th>
+                                    <th>應移交事項</th>
+                                    <th>接收人</th>
+                                </tr>
+                            </thead>
+                            <tbody style="text-align: center;">
+                                <tr>
+                                    <td>1</td>
+                                    <td>人資部</td>
+                                    <td>簽呈歸檔、教育訓練文件歸檔、薪資結算(含休假、圓夢方案等)、退保。</td>
+                                    <td>
+                                        <div>人力資源部-VALEN.WANG王禹晴</div>
+                                        <div style="color: var(--color-blue);">已同意</div>
+                                        <div>2022/8/1221:31</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>綜合服務部</td>
+                                    <td>簽呈歸檔、教育訓練文件歸檔、薪資結算(含休假、圓夢方案等)、退保。</td>
+                                    <td>
+                                        <div>人力資源部-VALEN.WANG王禹晴</div>
+                                        <div style="color: var(--color-blue);">已同意</div>
+                                        <div>2022/8/1221:31</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tableScroll">
+                    <div class="tableContent">
+                        <div style="text-align: center;color: var(--color-light-green);font-weight: bold;">
+                            <span>以下欄位請經辦人與交接人完整對接，待處理業務後續將轉由交接人承接</span>
+                        </div>
+                        <table class="tci-table tci-table-bordered">
+                            <thead>
+                                <tr style="background-color: var(--color-light-gray);text-align: center;">
+                                    <th>所屬部門移交項目</th>
+                                    <th>內容重點目</th>
+                                    <th>交接人目</th>
+                                </tr>
+                            </thead>
+                            <tbody style="text-align: center;">
+                                <tr>
+                                    <td>所有電腦內資訊</td>
+                                    <td>電腦內資訊不可逕行刪除，並對路徑及其內外部之對應做說明</td>
+                                    <td>細胞科學驗證實驗室-JASON.LEE李東翰</td>
+                                </tr>
+                                <tr>
+                                    <td>重要業務往來電子郵件</td>
+                                    <td>保留備份及通知客戶移轉至交接人事宜完成</td>
+                                    <td>細胞科學驗證實驗室-JASON.LEE李東翰</td>
+                                </tr>
+                                <tr>
+                                    <td>待處理單據</td>
+                                    <td colspan="2">
+                                        <table class="tci-table tci-table-bordered">
+                                            <thead>
+                                                <tr style="background-color: var(--color-light-gray);text-align: center;">
+                                                    <th>單據清單</th>
+                                                    <th>處理方式</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>無</td>
+                                                    <td style="color: var(--color-light-red);">需簽核</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>無</td>
+                                                    <td style="color: var(--color-light-red);">需作廢</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>無</td>
+                                                    <td style="color: var(--color-light-red);">需等待<br>完成簽核</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>無</td>
+                                                    <td>請交接人追蹤</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>無</td>
+                                                    <td>請交接人追蹤<br>後續單據</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><button class="tci-btn bg_lightgray">查看近一個月經手單據</button></td>
+                                                    <td>關注</td>
+                                                </tr>
+                                            </tbody>
+                                           
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" style="font-size: var(--font-size-xs);">
+                                        <span><b>備註：</b></span><br>
+                                        <span>
+                                            1.	各交接人需詳加確認離職人員之移交事項是否確實、完整，倘未盡通常之注意義務致交接未確實，或後續內部稽核查核資料不全，各交接人及主管需負連帶責任(即各自對離職人員應履行之義務負全部之責任)。
+                                            <br>2.	離職人員需移交離職申請單、工作移交檢核表予人資部歸檔後，始完成離職手續。 
+                                        </span>
+
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>暫支請(退)款單簽核</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_advancedBilling_signoff">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>暫支請(退)款單-簽核</b></span>
+        </div>
+
+        <!-- 單據明細 -->
+        <section class="darkBorderCard detailsBox tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>單據明細</span>
+                <span class="tci-pl-0 ">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="detailsBoxContent darkBorderCardContent">
+                <div class="detailsBox_company tci-mt-1 tci-mb-2" style="text-align: right;">
+                    <span class="detailsBox_companytext"
+                        style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">百岳特國際貿易(上海)</span>
+                </div>
+                <div class="tableScroll">
+                    <div class="tableContent">
+                        <div
+                            style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
+                            <span>大江生醫股份有限公司 暫支請(退)款單</span>
+                        </div>
+                        <div style="display: flex;justify-content:space-between">
+                            <div>
+                                <span><b>單據編號：</b></span><span>220504-20-0001</span>
+                            </div>
+                            <div>
+                                <span><b>發票號碼：</b></span><span>220504-20-0001</span>
+                            </div>
+                            <div>
+                                <span><b>日期：</b></span><span>2022/5/4 上午 11:24:09</span>
+                            </div>
+                        </div>
+                        <table class="tci-table tci-table-bordered">
+                            <thead>
+                              <tr style="background-color: var(--color-light-gray);text-align: center;">
+                                <th>NO</th>
+                                <th>摘要說明</th>
+                                <th style="width:10%;">幣別</th>
+                                <th>金額</th>
+                                <th>項目歸屬</th>
+                                <th>費用分類</th>
+                                <th>專案編號</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="text-align: center;">
+                                   <td>1</td>
+                                   <td>BAT委託Intertek稽核</td>
+                                   <td>NTD</td>
+                                   <td>100,644.00</td>
+                                   <td>劉盈均(YIN.LIU)&nbsp;<span style="color: var(--color-blue);">已同意</span></td>
+                                    <td>檢驗費</td>
+                                    <td>無</td>
+                                </tr>
+                                <tr style="text-align: center;background-color: var(--color-dark-red);color: var(--color-snow);">
+                                    <td>1</td>
+                                    <td>暫支款</td>
+                                    <td>NTD</td>
+                                    <td>100,644.00</td>
+                                    <td>黃唯欣(TOMMY.HUANG)</td>
+                                     <td>暫支單220401-12-0003(減項)</td>
+                                     <td>無</td>
+                                 </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr style="text-align: right;color: var(--color-light-red);">
+                                    <th colspan="2">合計</th>
+                                    <td style="text-align: center;">NTD</td>
+                                    <td>0.00</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;">相關文件</th>
+                                    <td colspan="5">如無固定資產採購申請/合同，請說明原因</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">付款方式</th>
+                                    <td colspan="2">匯入公司<div>0000700001全國公證檢驗股份有限公司</div></td>
+                                    <th>匯入日期</th>
+                                    <td>匯入日期<div>2022/04/15</div></td>
+                                    <td>帳戶<div>141118094304-中國信託商業銀行中山分行-中信銀中山</div></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

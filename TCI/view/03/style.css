@@ -41,7 +41,7 @@
   padding: 0;
 }
 #page_businessTravel .reason .reasonContent table thead {
-  background-color: var(--color-light-warning);
+  background-color: var(--color-light-gray);
   text-align: center;
 }
 
@@ -98,15 +98,11 @@
     width: 70%;
   }
   #page_businessTravel .reason .reasonContent table thead {
-    background-color: var(--color-light-warning);
+    background-color: var(--color-light-gray);
     text-align: center;
   }
   #page_businessTravel .reason .reasonContent table thead .date {
     width: 10%;
-  }
-  table thead {
-    background-color: var(--color-light-warning);
-    text-align: center;
   }
 }
 @media (min-width: 1200px) {
@@ -115,5 +111,52 @@
   }
   #page_businessTravel .businessTravelTable .tci-table .table_row .tci-bs-input-group.small {
     width: 20%;
+  }
+}
+table .visitTag {
+  font-size: var(--font-size-xs);
+  background-color: var(--color-dark-khaki);
+  color: var(--color-snow);
+  border-radius: var(--borderRadius);
+}
+table .exhibitionTag {
+  font-size: var(--font-size-xs);
+  background-color: var(--color-dark-blue);
+  color: var(--color-snow);
+  border-radius: var(--borderRadius);
+}
+table .abroadTag {
+  font-size: var(--font-size-xs);
+  background-color: var(--color-orgin);
+  color: var(--color-snow);
+  border-radius: var(--borderRadius);
+}
+table .otherTag {
+  font-size: var(--font-size-xs);
+  background-color: var(--color-dark-green);
+  color: var(--color-snow);
+  border-radius: var(--borderRadius);
+}
+
+#page_businessTravel_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_businessTravel_signoff .tableScroll .tableContent {
+  width: 992px;
+}
+
+#page_businessTravel_print .print_table {
+  overflow-x: auto;
+}
+#page_businessTravel_print .print_table .tableContent {
+  width: 992px;
+}
+
+@media (min-width: 992px) {
+  #page_businessTravel_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+  #page_businessTravel_print .print_table .tableContent {
+    width: 100%;
   }
 }

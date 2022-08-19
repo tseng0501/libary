@@ -119,3 +119,15 @@
     width: 75%;
   }
 }
+#page_advancedPayment_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_advancedPayment_signoff .tableScroll .tableContent {
+  width: 992px;
+}
+
+@media (min-width: 992px) {
+  #page_advancedPayment_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+}

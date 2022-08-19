@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>一般物品驗收單簽核</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_acceptanceForm_signoff">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>一般物品驗收單-簽核</b></span>
+        </div>
+
+        <!-- 簽核意見 start-->
+        <section class="descriptionBox darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>簽核意見</span>
+                <!-- 展開縮放，icon 切換 -->
+                <span class="tci-pl-0 ">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="darkBorderCardContent">
+                <!-- <div class="descriptionBox_invalid tci-text-center">
+                        <span style="border: 1px solid #931e1e;background-color:#931e1e;padding:0 6px;color: var(--color-snow);font-weight: bold;">此單據已作廢!</span>
+                    </div> -->
+                <div class="descriptionBox_invalid tci-text-center">
+                    <span
+                        style="border: 1px solid #003D79;background-color:#003D79;padding:0 6px;color: var(--color-snow);font-weight: bold;">此單據已列印</span>
+                </div>
+                <div class="next_signer">
+                    <div class="tci-bs-input-group">
+                        <div class="tci-bs-input-group-prepend">
+                            <span class="tci-bs-input-group-text">選擇下一位簽核者:</span>
+                        </div>
+                        <select class="tci-bs-custom-select">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="descriptionBox_content">
+                    <div class="descriptionBox_notice">
+                        <div class="tci-input-group">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">內容:&nbsp;
+                                    <div class="dropdown" style="margin-bottom:.5rem;">
+                                        <button class="dropdown-toggle tci-btn bg_darkblue" type="button"
+                                            data-bs-toggle="dropdown" data-animations="fadeIn">
+                                            通知人員
+                                        </button>
+                                        <!-- 下拉清單 -->
+                                        <ul class="dropdown-menu">
+                                            <li style="margin-left:5px;cursor:pointer">
+                                                <label><input type="checkbox" class="decisionMsg" value="">
+                                                    所有簽核者</label>
+                                            </li>
+                                            <li style="margin-left:5px;cursor:pointer">
+                                                <label><input type="checkbox" class="decisionMsg" value="2011A0016">
+                                                    吳春隆(REX.WU)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </span>
+                            </div>
+                            <textarea class="tci-form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="descriptionBox_icon tci-text-center">
+                        <div class="dropdown check">
+                            <a href="#" style="text-decoration: none">
+                                <i class="fa-solid fa-check fa-4x" style="color: #5b6835;"></i>
+                                <p style="color: black;">同意簽核</p>
+                            </a>
+                        </div>
+                        <div class="dropdown check">
+                            <a href="#" style="text-decoration: none">
+                                <i class="fa-solid fa-xmark fa-4x" style="color: #9d0f0f;"></i>
+                                <p style="color: black;">不同意</p>
+                            </a>
+                        </div>
+                        <div class="dropdown file">
+                            <button class="tci-btn" data-bs-toggle="dropdown" data-hover="dropdown"
+                                data-animations="fadeIn"
+                                style="background: none;border-width: 0px;text-align: center;text-decoration: none;padding: 0;"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-file-lines fa-4x" style="color: #b8aba2;"></i>
+                                <p style="color:black;margin-top: .5rem;">其他</p>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">作廢單據</a>
+                                <a class="dropdown-item" href="#">標示為急件</a>
+                                <a class="dropdown-item" href="#">修改單據</a>
+                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-target="#forwardContentModal">轉寄內容</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 簽核意見 end-->
+
+        <!-- 單據明細 -->
+        <section class="darkBorderCard detailsBox tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>單據明細</span>
+                <span class="tci-pl-0 ">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="detailsBoxContent darkBorderCardContent">
+                <div class="detailsBox_company tci-mt-1 tci-mb-2" style="text-align: right;">
+                    <span class="detailsBox_companytext"
+                        style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">百岳特國際貿易(上海)</span>
+                </div>
+                <div class="tableScroll0">
+                    <div class="tableContent">
+                        <div
+                            style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
+                            <span>大江生醫股份有限公司 一般物品驗收單</span>
+                        </div>
+                        <table class="tci-table tci-table-bordered">
+                            <thead>
+                                <tr
+                                    style="background-color: var(--color-rosybrown);color: var(--color-snow);text-align: center;font-size: var(--font-size-md);">
+                                    <th colspan="4">依據一般物品請採單</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);width: 15%;">單據編號</th>
+                                    <td>220401-43-0007</td>
+                                    <th style="background-color: var(--color-light-gray);width: 15%;">請購日期</th>
+                                    <td>2022/4/1</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">類別</th>
+                                    <td>庶務用品：設備零件、試驗溶劑</td>
+                                    <th style="background-color: var(--color-light-gray);">專案代號</th>
+                                    <td>原料</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">請購部門</th>
+                                    <td>S5/S9設備組</td>
+                                    <th style="background-color: var(--color-light-gray);">請購人員</th>
+                                    <td>PAUL.SUN(孫揚謙)</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">請購品名</th>
+                                    <td>S17-沛富廠-錠劑硬度計-共一台</td>
+                                    <th style="background-color: var(--color-light-gray);">數量</th>
+                                    <td>1 批 </td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">用途</th>
+                                    <td>S17-沛富廠-錠劑硬度計-共一台</td>
+                                    <th style="background-color: var(--color-light-gray);">預計使用日期</th>
+                                    <td>2022/05/13</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">建議廠商</th>
+                                    <td colspan="3">
+                                        <div>
+                                            <span>廠商:</span><span></span>
+                                        </div>
+                                        <div>
+                                            <span>原因:</span><span>長期配合廠商</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">預估金額 (含稅)</th>
+                                    <td colspan="3">NTD 29,925.0</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">採購人員</th>
+                                    <td colspan="3">孫揚謙</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        <table class="tci-table tci-table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4">詢價記錄</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="background-color: var(--color-light-gray);width: 15%;">
+                                                        廠商名稱</th>
+                                                    <td>德記</td>
+                                                    <th style="background-color: var(--color-light-gray);width: 15%;">金額
+                                                    </th>
+                                                    <td>29,925</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="background-color: var(--color-light-gray);">廠商名稱</th>
+                                                    <td>無</td>
+                                                    <th style="background-color: var(--color-light-gray);">金額</th>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="background-color: var(--color-light-gray);">廠商名稱</th>
+                                                    <td>無</td>
+                                                    <th style="background-color: var(--color-light-gray);">金額</th>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="background-color: var(--color-light-gray);">廠商名稱</th>
+                                                    <td>無</td>
+                                                    <th style="background-color: var(--color-light-gray);">金額</th>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="background-color: var(--color-light-gray);">廠商名稱</th>
+                                                    <td>無</td>
+                                                    <th style="background-color: var(--color-light-gray);">金額</th>
+                                                    <td>0</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="4">最終選定廠商</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="background-color: var(--color-light-gray);width: 15%;">
+                                                        廠商名稱</th>
+                                                    <td>德記</td>
+                                                    <th style="background-color: var(--color-light-gray);width: 15%;">金額
+                                                    </th>
+                                                    <td>29,925</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="background-color: var(--color-light-gray);width: 15%;">
+                                                        選定原因</th>
+                                                    <td colspan="3">長期配合廠商</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tableScroll">
+                    <div class="tableContent">
+                        <table class="tci-table tci-table-bordered">
+                            <thead>
+                                <tr
+                                    style="background-color: var(--color-rosybrown);color: var(--color-snow);text-align: center;font-size: var(--font-size-md);">
+                                    <th colspan="4">一般物品驗收單</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">單據號碼</th>
+                                    <td>220503-16-0001</td>
+                                    <th style="background-color: var(--color-light-gray);">類別</th>
+                                    <td>A08庶務用品：設備零件、試驗溶劑</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">驗收方式</th>
+                                    <td>最終驗收</td>
+                                    <th style="background-color: var(--color-light-gray);">一般物品採購單號</th>
+                                    <td>220401-43-0007</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">交貨日期</th>
+                                    <td>2022/04/13</td>
+                                    <th style="background-color: var(--color-light-gray);">請購部門</th>
+                                    <td>S5/S9設備組</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">廠商編號</th>
+                                    <td>220503-16-0001</td>
+                                    <th style="background-color: var(--color-light-gray);">廠商名稱</th>
+                                    <td>德記</td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">項目</th>
+                                    <td colspan="3">
+                                        <table class="tci-table">
+                                            <tbody>
+                                                <tr>
+                                                    <th rowspan="3"  style="text-align: center;vertical-align: inherit;">1</th>
+                                                    <th>財產編號</th>
+                                                    <td>未攤銷費用/費用化不入資產</td>
+                                                    <th>固定資產分類</th>
+                                                    <td>費用化(雜費) </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>品名</th>
+                                                    <td>S17-沛富廠-錠劑硬度計-共一台</td>
+                                                    <th>數量</th>
+                                                    <td>12</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>擺放位置 </th>
+                                                    <td>S17</td>
+                                                    <th>驗收結果</th>
+                                                    <td>驗收判定 result合格-經產線主管確認合格</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color: var(--color-light-gray);">備註</th>
+                                    <td colspan="3"></td>
+                                </tr>
+                            </tbody>
+                          
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>簽核流程</span>
+                <span class="tci-pl-0 ">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="darkBorderCardContent print_process_circuit">
+                <div class="tci-card tci-mt-2 card-green">
+                    <div class="tci-card-header card-header-green"><i class="fa-solid fa-user-tie"></i> 總經理主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">林詠翔<br>VINCENT.LIN</p>
+                        <div>
+                            <span class="tci-card-text card-text-green"><i class="fa-solid fa-clock"></i>&nbsp;
+                                免簽核</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer"></div>
+                </div>
+                <!-- 手機以上 -->
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <!-- 手機 向上 Icon -->
+                <!-- <span style="text-align:center;">
+                        <i class="fa-solid fa-up-long fa-2x" style="width: 100%;"></i>
+                    </span> -->
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 戰略數據中心主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title"> 王浩駿<br>JOHNNY.WANG</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-clock"></i>&nbsp;
+                                未簽核</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer"></div>
+                </div>
+
+                <!-- 手機以上 -->
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <!-- 手機 向上 Icon -->
+                <!-- <span style="text-align:center;">
+                        <i class="fa-solid fa-up-long fa-2x" style="width: 100%;"></i>
+                    </span> -->
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 軟體整合開發部主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">吳春隆<br>REX.WU</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-clock"></i>&nbsp; 同意</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer">2022/07/21 12:31:32</div>
+                </div>
+                <!-- 手機以上 -->
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <!-- 手機 向上 Icon -->
+                <!-- <span style="text-align:center;">
+                        <i class="fa-solid fa-up-long fa-2x" style="width: 100%;"></i>
+                    </span> -->
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 軟體研發組主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">吳春隆<br>REX.WU</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-check"></i>&nbsp; 同意</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer">2022/07/21 12:31:32</div>
+                </div>
+                <!-- 手機以上 -->
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <!-- 手機 向上 Icon -->
+                <!-- <span style="text-align:center;">
+                        <i class="fa-solid fa-up-long fa-2x" style="width: 100%;"></i>
+                    </span> -->
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user"></i> 經辦人</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">曾莞婷<br>HEDY.TSENG</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-check"></i>&nbsp; 送出</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer">2022/07/21 12:31:32</div>
+                </div>
+            </div>
+        </section>
+        <!-- 單據附件 start -->
+        <section class="darkBorderCard tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>單據附件</span>
+                <!-- 展開縮放，icon 切換 -->
+                <span class="tci-pl-0 ">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <div class="darkBorderCardContent">
+                <div style="text-align: center;margin: 1rem 0;">
+                    <span style="font-weight: bold;">沒有附件</span>
+                </div>
+            </div>
+        </section>
+        <!-- 單據附件 end -->
+
+        <!-- 簽核記錄 start -->
+        <section class="darkBorderCard approvalBox tci-mb-3">
+            <div class="darkBorderCardTitle">
+                <span>簽核記錄</span>
+                <!-- 展開縮放，icon 切換 -->
+                <span class="tci-pl-0 ">
+                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
+                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
+                </span>
+            </div>
+            <ul class="darkBorderCardContent" style="padding-left:20px;margin-top: 0;">
+                <li style="color: var(--color-rosybrown);font-size: 14px;">2022/7/21 上午 11:35:21【經辦人-HEDY.TSENG(曾莞婷)工程師】
+                    <span style="font-size:12px;color: #949495;font-weight: bold;">上傳附件：新增1個附件</span>
+                </li>
+                <li style="color: var(--color-rosybrown);font-size: 14px;">2022/7/21 上午 11:35:21【經辦人-HEDY.TSENG(曾莞婷)工程師】
+                    <span style="font-size:12px;color: var(--color-dark-green);font-weight: bold;">已簽核：送出單據</span>
+                </li>
+                <li style="color: var(--color-sienna);font-size: 14px;">等待【軟體整合開發部主管-REX.WU(吳春隆)部門主管】簽核
+                </li>
+            </ul>
+        </section>
+        <!-- 簽核記錄 end -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

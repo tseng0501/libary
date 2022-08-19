@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>clientList</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_clientList">
+        <div class="query">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">客戶名稱:</span>
+                </div>
+                <div class="valueBtn">
+                    <select class="tci-field-value">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <button class="tci-btn bg_darkblue">查詢</button>
+                </div>
+            </div>
+            <div class="btnGroups">
+                <!-- <button class="tci-btn bg_darkgreen" data-toggle="modal" data-target="#">清單</button> -->
+                <button class="tci-btn tci-btn-warning" data-toggle="modal" data-target="#makeModal">預覽</button>
+                <button class="tci-btn bg_darkblue" data-toggle="modal" data-target="#">模板管理</button>
+            </div>
+        </div>
+        <div class="panelCard">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #9e937e;color:#fff;">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#a">單據：111</a>
+                        </h4>
+                    </div>
+                    <div id="a" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <span>單據：111</span>
+                            <table class="tci-table tci-table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th style="background-color:#e0dcd4;">單據編號</th>
+                                        <td>1231231</td>
+                                        <th style="background-color:#e0dcd4;">單據編號</th>
+                                        <td>1231231</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="background-color:#e0dcd4;">單據編號</th>
+                                        <td>1231231</td>
+                                        <th style="background-color:#e0dcd4;">單據編號</th>
+                                        <td>1231231</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="background-color:#e0dcd4;">單據編號</th>
+                                        <td>1231231</td>
+                                        <th style="background-color:#e0dcd4;">單據編號</th>
+                                        <td>1231231</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div id="ReceivingExpenseDiv" style="margin-top:2rem;">
+                                <div class="tableScroll">
+                                    <table class="tci-table tci-table-bordered">
+                                        <thead>
+                                            <tr style="background-color:#e0dcd4;">
+                                                <th>項目</th>
+                                                <th>名稱</th>
+                                                <th>數量</th>
+                                                <th>備註</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" class="checkbox-invoiceItems"
+                                                        style="width: 20px;height: 20px;"></td>
+                                                <td>XXXXXA面膜</td>
+                                                <td>50 / <input type="text" style="width: 100px;"></td>
+                                                <td>34</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="checkbox-invoiceItems"
+                                                        style="width: 20px;height: 20px;"></td>
+                                                <td>XXXXXA面膜</td>
+                                                <td>50 / <input type="text" style="width: 100px;"></td>
+                                                <td>34</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #9e937e;color:#fff;">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#b">單據：222</a>
+                        </h4>
+                    </div>
+                    <div id="b" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <span>資訊：222</span>
+                            <div id="ReceivingExpenseDiv2">
+                                <div class="tableScroll">
+                                    <table class="tci-table tci-table-bordered">
+                                        <thead>
+                                            <tr style="background-color:#e0dcd4;">
+                                                <th>項目</th>
+                                                <th>名稱</th>
+                                                <th>數量</th>
+                                                <th>備註</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" class="checkbox-invoiceItems"
+                                                        style="width: 20px;height: 20px;"></td>
+                                                <td>XXXXXA面膜</td>
+                                                <td>50 / <input type="text" style="width: 100px;"></td>
+                                                <td>34</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="checkbox-invoiceItems"
+                                                        style="width: 20px;height: 20px;"></td>
+                                                <td>XXXXXA面膜</td>
+                                                <td>50 / <input type="text" style="width: 100px;"></td>
+                                                <td>34</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- makeModal -->
+    <div class="modal fade" id="makeModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">預覽</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="tableScoll_data">
+                        <table class="tci-table tci-table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th style="background-color:#e0dcd4;">單據：111</th>
+                                    <td>
+                                        <button class="btn" style="cursor: auto;">
+                                            <div>XXXXXA面膜</div>
+                                            <span>20</span>
+                                        </button>
+                                        <button class="btn" style="cursor: auto;">
+                                            <div>XXXXXA面膜</div>
+                                            <span>20</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th style="background-color:#e0dcd4;">單據：222</th>
+                                    <td>
+                                        <button class="btn" style="cursor: auto;">
+                                            <div>XXXXXA面膜</div>
+                                            <span>20</span>
+                                        </button>
+                                        <button class="btn" style="cursor: auto;">
+                                            <div>XXXXXA面膜</div>
+                                            <span>20</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tableScoll">
+                        <table class="tci-table tci-table-bordered">
+                            <thead>
+                                <tr style="background-color:#e0dcd4;text-align: center;">
+                                    <th>內涵項目</th>
+                                    <th>Invoice</th>
+                                    <th>Packing List</th>
+                                </tr>
+                            </thead>
+                            <tbody style="text-align: center;">
+                                <tr>
+                                    <td>TCI</td>
+                                    <td class="check_center">
+                                        <input class="" type="checkbox" id="inlineCheckbox1"
+                                            style="width: 20px;height: 20px;" value="option1">
+                                    </td>
+                                    <td class="check_center">
+                                        <input class="" type="checkbox" id="inlineCheckbox1"
+                                            style="width: 20px;height: 20px;" value="option1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>TCI</td>
+                                    <td class="check_center">
+                                        <input class="" type="checkbox" id="inlineCheckbox1"
+                                            style="width: 20px;height: 20px;" value="option1">
+                                    </td>
+                                    <td class="check_center">
+                                        <input class="" type="checkbox" id="inlineCheckbox1"
+                                            style="width: 20px;height: 20px;" value="option1">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn bg_lightgray" data-dismiss="modal">關閉</button>
+                    <button type="button" class="tci-btn bg_darkgreen" data-dismiss="modal">確定</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/popper.js/2.11.5/umd/popper.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

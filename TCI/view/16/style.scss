@@ -1,14 +1,17 @@
-#page_acceptanceForm{
-    .acceptanceFormQuery{
-        .tci-field{
+#page_acceptanceForm {
+    .acceptanceFormQuery {
+        .tci-field {
             flex-wrap: wrap;
-            .tci-field-label{
+
+            .tci-field-label {
                 width: 100%;
             }
-            .tci-valuebtn{
+
+            .tci-valuebtn {
                 display: flex;
                 width: 100%;
-                .tci-field-value{
+
+                .tci-field-value {
                     width: 100%;
                 }
             }
@@ -17,20 +20,75 @@
 }
 
 @media (min-width: 765px) {
-    #page_acceptanceForm{
-        .acceptanceFormQuery{
-            .tci-field{
+    #page_acceptanceForm {
+        .acceptanceFormQuery {
+            .tci-field {
                 flex-wrap: nowrap;
-                .tci-field-label{
+
+                .tci-field-label {
                     width: 40%;
                 }
-                .tci-valuebtn{
+
+                .tci-valuebtn {
                     width: 60%;
                     justify-content: flex-end;
-                    .tci-field-value{
+
+                    .tci-field-value {
                         width: 60%;
                     }
                 }
+            }
+        }
+    }
+
+    //簽核意見
+    .descriptionBox {
+        .descriptionBox_content {
+            display: flex;
+            justify-content: center;
+
+            .descriptionBox_icon {
+                display: flex;
+                justify-content: center;
+
+                .check {
+                    margin: 0 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+#page_acceptanceForm_signoff {
+    .next_signer {
+        margin: .5rem 0;
+    }
+
+    .tableScroll {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 992px;
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_acceptanceForm_signoff {
+
+        .next_signer {
+            margin: .5rem 0;
+            display: flex;
+            justify-content: center;
+
+            .tci-bs-input-group {
+                width: 50%;
+            }
+        }
+
+        .tableScroll {
+            .tableContent {
+                width: 100%;
             }
         }
     }

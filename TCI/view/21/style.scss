@@ -1,0 +1,78 @@
+//簽核 列印
+#page_oldgoodsIssue_signoff {
+    .tableScroll {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 992px;
+        }
+    }
+}
+
+#page_oldgoodsIssue_print {
+    .print_table {
+        .tableContent {
+            margin-bottom: 0;
+
+            .tableScroll {
+                overflow-x: auto;
+
+                .tableAuto {
+                    width: 1200px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_oldgoodsIssue_print {
+        .print_table {
+            .tableContent {
+                .tableScroll {
+                    .tableAuto {
+                        &.manager{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #page_oldgoodsIssue_signoff {
+        .tableScroll {
+            .tableContent {
+                width: 100%;
+            }
+        }
+    }
+    #page_oldgoodsIssue_print {
+        .print_table {
+            .tableContent {
+                .tableScroll {
+                    .tableAuto {
+                        &.manager{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    #page_oldgoodsIssue_print {
+        .print_table {
+            .tableContent {
+                .tableScroll {
+                    .tableAuto {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

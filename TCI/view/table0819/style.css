@@ -1,0 +1,175 @@
+#page_light .query .tci-field .valueBtn {
+  display: flex;
+}
+
+#page_dataFlow .cardContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+#page_dataFlow .cardContent .block {
+  display: flex;
+}
+#page_dataFlow .cardContent .tci-card {
+  min-width: 162px;
+  margin-bottom: 30px;
+  margin-right: 5px;
+  width: 162px;
+}
+#page_dataFlow .cardContent .tci-card .tci-card-body {
+  margin: auto;
+  flex: inherit;
+}
+#page_dataFlow .cardContent .tci-card .tci-card-body .tci-card-title {
+  font-weight: bold;
+  font-size: var(--font-size-md);
+}
+#page_dataFlow .cardContent .tci-card .tci-card-body button {
+  padding: 3px 5px;
+}
+#page_dataFlow .cardContent .circleWidth {
+  width: 162px;
+}
+#page_dataFlow .cardContent .circleWidth .tci-cardradius {
+  border: #2a2a2a 1px solid;
+  min-width: 165px;
+  border-radius: 40rem;
+  position: relative;
+  height: 160px;
+}
+#page_dataFlow .cardContent .circleWidth .tci-cardradius .circleName {
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-size-md);
+  font-weight: bold;
+}
+
+@media (min-width: 765px) {
+  #page_dataFlow .cardContent .tci-card {
+    width: 200px;
+  }
+  #page_dataFlow .cardContent .circleWidth {
+    width: 200px;
+  }
+  #page_dataFlow .cardContent .circleWidth .tci-cardradius {
+    width: 165px;
+    margin: auto;
+  }
+}
+#page_dataFlow2 .cardContent {
+  position: relative;
+}
+#page_dataFlow2 .cardContent .tci-card {
+  position: absolute;
+  min-height: 100px;
+  width: 200px;
+}
+
+@media (min-width: 1200px) {
+  #page_dataFlow .cardContent {
+    width: 1200px;
+    margin: auto;
+  }
+}
+#page_steps {
+  font-size: 14px;
+}
+#page_steps .one::before {
+  content: "";
+  width: 20px;
+  height: 5px;
+  background-color: var(--color-dark-green);
+  position: absolute;
+  top: 19px;
+  right: 60px;
+}
+#page_steps .two::before {
+  content: "";
+  width: 20px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  top: 42px;
+  right: 60px;
+}
+#page_steps .steps {
+  margin-top: 2rem;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+#page_steps .steps li {
+  float: left;
+  flex: inherit;
+  position: relative;
+  margin-bottom: 15rem;
+  width: 100%;
+}
+#page_steps .steps li.more {
+  margin-bottom: 29rem;
+}
+#page_steps .step-num {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  color: var(--color-snow);
+  background-color: #b9b9b9;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid rgb(224, 224, 224);
+}
+#page_steps .step_active .step-num {
+  background-color: #f3862d;
+}
+#page_steps .step_pass .step-num {
+  background-color: #2ad613;
+}
+#page_steps .step-sub {
+  width: 100%;
+  position: absolute;
+}
+#page_steps .step_card {
+  line-height: 2;
+  background-color: var(--color-light-gray);
+  border-radius: var(--borderRadius);
+  padding: 5px;
+  box-shadow: var(--borderShadow);
+  margin: 1rem auto;
+  width: 90%;
+}
+#page_steps .step_card .step_card_title {
+  font-size: var(--font-size-md);
+  font-weight: bold;
+}
+#page_steps .step_card .line_one {
+  height: 5px;
+  background-color: var(--color-dark-green);
+}
+#page_steps .step_card .line_two {
+  height: 5px;
+  background-color: var(--color-light-red);
+}
+#page_steps .greenTag {
+  font-size: var(--font-size-xs);
+  background-color: var(--color-dark-khaki);
+  color: var(--color-snow);
+  border-radius: var(--borderRadius);
+  padding: 0 5px;
+}
+
+@media (min-width: 765px) {
+  #page_steps .steps {
+    padding: revert;
+  }
+  #page_steps .steps li {
+    width: 195px;
+  }
+}

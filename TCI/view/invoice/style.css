@@ -1,40 +1,69 @@
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
 #page_invoice .tableContent {
   overflow-x: auto;
 }
 #page_invoice .tableContent .tableScroll {
-  width: 700px;
+  width: 992px;
 }
-#page_invoice .invoice_header {
+
+#page_clientList {
+  padding-top: 1rem;
+}
+#page_clientList .query {
+  margin-bottom: 0.5rem;
+}
+#page_clientList .query .valueBtn {
   display: flex;
-  justify-content: center;
+  width: 100%;
 }
-#page_invoice .invoice_header .invoice_header_img {
-  margin-right: 0.5rem;
+#page_clientList .tableScroll {
+  overflow-x: auto;
 }
-#page_invoice .invoice_header .invoice_header_img img {
-  width: 50px;
+#page_clientList .tableScroll .tci-table {
+  width: 765px;
 }
-#page_invoice .invoice_header .invoice_header_text {
+#page_clientList .panelCard .panelData {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 }
-#page_invoice .invoice_header .invoice_header_text span {
-  font-size: 1.25rem;
-  font-weight: bold;
+#page_clientList .panelCard .panelData .tci-field {
+  margin-right: 1rem;
 }
-#page_invoice .tci-table td, #page_invoice .tci-table th {
-  border: 1px solid #dee2e6;
+
+.modal .tableScoll_data {
+  height: 150px;
+  overflow-y: auto;
+  margin-bottom: 1.5rem;
+}
+.modal .tableScoll {
+  height: 400px;
+  overflow-y: auto;
+}
+.modal .checkTag {
+  text-align: center;
+  min-width: auto;
+  border: 1px solid #2a2a2a;
+  width: auto;
 }
 
 @media (min-width: 765px) {
-  #page_invoice .tableContent {
+  #page_invoice .tableContent .tableScroll {
+    width: 100%;
+  }
+  #page_clientList .query {
+    display: flex;
+    justify-content: space-between;
+  }
+  #page_clientList .query .valueBtn {
+    display: flex;
+    width: 70%;
+  }
+  #page_clientList .query .tci-field {
+    width: 40%;
+  }
+  #page_clientList .tableScroll {
     overflow-x: auto;
   }
-  #page_invoice .tableContent .tableScroll {
+  #page_clientList .tableScroll .tci-table {
     width: 100%;
   }
 }

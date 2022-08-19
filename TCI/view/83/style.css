@@ -58,3 +58,28 @@
     width: 23%;
   }
 }
+#page_requestForLineCredit_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_requestForLineCredit_signoff .tableScroll .tableContent {
+  width: 900px;
+}
+
+#page_requestForLineCredit_print .print_table {
+  overflow-x: auto;
+}
+#page_requestForLineCredit_print .print_table .tableContent {
+  width: 900px;
+}
+
+@media (min-width: 765px) {
+  #page_requestForLineCredit_signoff .tableContent .tableContent {
+    width: 100%;
+  }
+  #page_requestForLineCredit_print .print_table {
+    overflow-x: auto;
+  }
+  #page_requestForLineCredit_print .print_table .tableContent {
+    width: 100%;
+  }
+}

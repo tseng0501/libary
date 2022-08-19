@@ -1,53 +1,65 @@
-#page_businessTravel{
-    .journey{
-        th{
+#page_businessTravel {
+    .journey {
+        th {
             min-width: 100px;
         }
-        .weekdays_date{
+
+        .weekdays_date {
             text-align: center;
             font-weight: bold;
         }
-        .holiday_td{
+
+        .holiday_td {
             background-color: var(--color-whitesmoke);
         }
-        .holiday{
+
+        .holiday {
             text-align: center;
             font-weight: bold;
             color: var(--color-dark-red);
         }
-        .place{
+
+        .place {
             background-color: var(--color-alge);
             color: var(--color-snow);
             padding: 2px;
             border-radius: var(--borderRadius);
         }
-        .region{
+
+        .region {
             color: var(--color-dimgray);
         }
     }
-    .tableScroll{
+
+    .tableScroll {
         overflow-x: auto;
-        .tci-table{
+
+        .tci-table {
             width: 900px;
         }
     }
-    .businessTravelTable{
+
+    .businessTravelTable {
         font-size: .5rem;
     }
-    .reason{
-        .reasonContent{
-            .tci-field{
+
+    .reason {
+        .reasonContent {
+            .tci-field {
                 flex-wrap: wrap;
-                .tci-field-content{
+
+                .tci-field-content {
                     display: flex;
                 }
             }
-            .tci-form-control{
+
+            .tci-form-control {
                 padding: 0;
             }
-            table{
-                thead{
-                    background-color: var(--color-light-warning);
+
+            table {
+                thead {
+                    background-color: var(--color-light-gray);
                     text-align: center;
                 }
             }
@@ -57,49 +69,57 @@
 
 
 @media (min-width: 765px) {
-    #page_businessTravel{
-        .tableScroll{
-            .tci-table{
+    #page_businessTravel {
+        .tableScroll {
+            .tci-table {
                 width: 100%;
             }
         }
-        .businessTravelTable{
+
+        .businessTravelTable {
             font-size: var(--font-size-sm);
-            .tci-table{
-                .table_row{
+
+            .tci-table {
+                .table_row {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    
-                    .tci-bs-input-group{
+
+                    .tci-bs-input-group {
                         width: 48%;
                     }
                 }
             }
         }
-        .itinerary{
-            .itineraryContent{
-                .formBox_date{
+
+        .itinerary {
+            .itineraryContent {
+                .formBox_date {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    .tci-field{
+
+                    .tci-field {
                         width: 48%;
-                        .tci-field-label{
+
+                        .tci-field-label {
                             width: 30%;
                         }
-                        .tci-field-value{
+
+                        .tci-field-value {
                             width: 70%;
                         }
                     }
                 }
             }
         }
-        .reason{
-            .reasonContent{
-                .tci-field{
+
+        .reason {
+            .reasonContent {
+                .tci-field {
                     flex-wrap: wrap;
-                    .tci-field-content{
+
+                    .tci-field-content {
                         display: flex;
                         width: 60%;
                     }
@@ -107,64 +127,61 @@
             }
         }
     }
-    
+
 }
+
 @media (min-width: 992px) {
-    
-    #page_businessTravel{
-        .itinerary{
-            .itineraryContent{
-                .formBox_date{
+
+    #page_businessTravel {
+        .itinerary {
+            .itineraryContent {
+                .formBox_date {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    .tci-field{
+
+                    .tci-field {
                         width: 25%;
-                        .tci-field-label{
+
+                        .tci-field-label {
                             width: 25%;
                         }
-                        .tci-field-value{
+
+                        .tci-field-value {
                             width: 70%;
                         }
                     }
                 }
             }
         }
-        .reason{
-            .reasonContent{
-                table{
-                    thead{
-                        background-color: var(--color-light-warning);
+
+        .reason {
+            .reasonContent {
+                table {
+                    thead {
+                        background-color: var(--color-light-gray);
                         text-align: center;
-                        .date{
-                           width: 10%; 
+
+                        .date {
+                            width: 10%;
                         }
                     }
                 }
             }
         }
     }
-
-
-    table{
-        thead{
-            background-color: var(--color-light-warning);
-            text-align: center;
-            .date{
-
-            }
-        }
-    }
 }
+
 @media (min-width: 1200px) {
-    #page_businessTravel{
-        
-        .businessTravelTable{
-            .tci-table{
-                .table_row{
-                    .tci-bs-input-group{
+    #page_businessTravel {
+
+        .businessTravelTable {
+            .tci-table {
+                .table_row {
+                    .tci-bs-input-group {
                         width: 30%;
-                        &.small{
+
+                        &.small {
                             width: 20%;
                         }
                     }
@@ -172,5 +189,70 @@
             }
         }
     }
-    
+}
+table {
+    .visitTag {
+        font-size: var(--font-size-xs);
+        background-color: var(--color-dark-khaki);
+        color: var(--color-snow);
+        border-radius: var(--borderRadius);
+    }
+
+    .exhibitionTag {
+        font-size: var(--font-size-xs);
+        background-color: var(--color-dark-blue);
+        color: var(--color-snow);
+        border-radius: var(--borderRadius);
+    }
+
+    .abroadTag {
+        font-size: var(--font-size-xs);
+        background-color: var(--color-orgin);
+        color: var(--color-snow);
+        border-radius: var(--borderRadius);
+    }
+
+    .otherTag {
+        font-size: var(--font-size-xs);
+        background-color: var(--color-dark-green);
+        color: var(--color-snow);
+        border-radius: var(--borderRadius);
+    }
+}
+
+#page_businessTravel_signoff {
+
+    .tableScroll {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 992px;
+        }
+    }
+}
+#page_businessTravel_print{
+    .print_table{
+        overflow-x: auto;
+
+        .tableContent {
+            width: 992px;
+        }
+    }
+}
+@media (min-width: 992px) {
+
+    #page_businessTravel_signoff {
+        .tableScroll {
+            .tableContent {
+                width: 100%;
+            }
+        }
+    }
+    #page_businessTravel_print{
+        .print_table{
+            .tableContent {
+                width: 100%;
+            }
+        }
+    }
 }

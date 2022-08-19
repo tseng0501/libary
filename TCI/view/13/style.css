@@ -32,3 +32,25 @@
     width: 77%;
   }
 }
+#page_purchaseRequisition_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_purchaseRequisition_signoff .tableScroll .tableContent {
+  width: 1200px;
+}
+
+#page_purchaseRequisition_print .tableScroll {
+  overflow-x: auto;
+}
+#page_purchaseRequisition_print .tableScroll .tableAuto {
+  width: 992px;
+}
+
+@media (min-width: 992px) {
+  #page_purchaseRequisition_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+  #page_purchaseRequisition_print .tableScroll .tableAuto {
+    width: 100%;
+  }
+}

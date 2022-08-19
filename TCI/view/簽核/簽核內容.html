@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../scss/tci-all.css">
@@ -24,8 +24,8 @@
             </div>
         </div>
         <section class="btnTop tci-mb-3">
-            <div style="text-align: right;">
-                <button class="tci-btn bg_drakblue"><i class="fa fa-undo" aria-hidden="true"></i> 關閉單據內容</button>
+            <div class="btnGroups">
+                <button class="tci-btn bg_darkblue"><i class="fa fa-undo" aria-hidden="true"></i> 關閉單據內容</button>
             </div>
             <div class="btnGroups_lr" style="justify-content: space-between;display: flex;margin-top: .5rem;">
                 <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-left"
@@ -102,7 +102,7 @@
                             <div class="tci-input-group-prepend">
                                 <span class="tci-input-group-text">內容:&nbsp;
                                     <div class="dropdown open" style="margin-bottom:.5rem;">
-                                        <button class="dropdown-toggle tci-btn bg_drakblue py-0" type="button"
+                                        <button class="dropdown-toggle tci-btn bg_darkblue py-0" type="button"
                                             data-toggle="dropdown" data-animations="fadeIn">
                                             通知人員
                                         </button>
@@ -620,7 +620,7 @@
                                 <span>3. 儲存新流程</span>
                                 <div>
                                     <button class="tci-btn tci-btn-regular">取消/重整</button>
-                                    <button class="tci-btn bg_drakgreen">確定調整流程</button>
+                                    <button class="tci-btn bg_darkgreen">確定調整流程</button>
                                 </div>
                             </div>
                         </div>
@@ -772,7 +772,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="tci-btn bg_lightgray" data-dismiss="modal">取消</button>
-                    <button type="button" class="tci-btn bg_drakgreen">送出</button>
+                    <button type="button" class="tci-btn bg_darkgreen">送出</button>
                 </div>
             </div>
         </div>
@@ -812,7 +812,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="tci-btn bg_lightgray" data-dismiss="modal">取消</button>
-                    <button type="button" class="tci-btn bg_drakgreen">送出</button>
+                    <button type="button" class="tci-btn bg_darkgreen">送出</button>
                 </div>
             </div>
         </div>
@@ -841,13 +841,15 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="tci-btn bg_lightgray" data-dismiss="modal">取消</button>
-                    <button type="button" class="tci-btn bg_drakgreen">確認轉寄</button>
+                    <button type="button" class="tci-btn bg_darkgreen">確認轉寄</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

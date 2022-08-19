@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>工作移交清單列印</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_jobhandover_print">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>工作移交清單-列印</b></span>
+        </div>
+        <section class="btnTop tci-mb-3">
+            <div class="btnGroups">
+                <button class="tci-btn bg_darkblue"><i class="fa fa-undo" aria-hidden="true"></i> 關閉單據內容</button>
+            </div>
+            <div class="btnGroups_lr" style="justify-content: space-between;display: flex;margin-top: .5rem;">
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-left"
+                        aria-hidden="true"></i> 上一筆</button>
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-right"
+                        aria-hidden="true"></i>下一筆</button>
+            </div>
+        </section>
+        <section class="print_btn">
+            <div class="btnGroups">
+                <button class="tci-btn bg_darkkhaki">顯示簽核記錄</button>
+                <button class="tci-btn bg_darkkhaki">列印單據</button>
+                <button class="tci-btn bg_darkkhaki">單據列印格式?</button>
+            </div>
+            <div style="width: 100%;text-align: center;">
+                <img src="https://media.istockphoto.com/photos/happy-shiba-inu-dog-on-yellow-redhaired-japanese-dog-smile-portrait-picture-id1197121742?k=20&m=1197121742&s=612x612&w=0&h=HX4DoFCL1RDlegj3P9w4O2H64sgwKvMP0VSki7sBEtE="
+                    alt="附件1" style="width: 50%;" />
+            </div>
+        </section>
+        <hr>
+        <section class="print_table">
+            <div>
+                <div class="tableContent" style="margin-bottom:0;">
+                    <div class="tableScroll">
+                        <div class="tableAuto">
+                            <div style="text-align: center;font-size:1.5rem;font-weight: bold;margin-bottom: 2rem;">
+                                <span>大江生醫股份有限公司 工作移交清單</span>
+                            </div>
+                            <table class="tci-table tci-table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th style="background-color: var(--color-light-gray);width: 16%;">單據編號</th>
+                                        <td colspan="3">220706-28-A003</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="background-color: var(--color-light-gray);">員工編號</th>
+                                        <td>2103G0001</td>
+                                        <th style="background-color: var(--color-light-gray);">員工姓名</th>
+                                        <td>支援整合組</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="background-color: var(--color-light-gray);">職稱</th>
+                                        <td>大江戰士</td>
+                                        <th style="background-color: var(--color-light-gray);">部門名稱</th>
+                                        <td>細胞科學驗證實驗室</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="background-color: var(--color-light-gray);">到職日期</th>
+                                        <td>2021/3/8 (年資：1.4年)</td>
+                                        <th style="background-color: var(--color-light-gray);">最後工作日</th>
+                                        <td>2022/08/12</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="background-color: var(--color-light-gray);">離職原因</th>
+                                        <td colspan="3">求學深造</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tableContent" style="margin-bottom:0;">
+                    <div class="tableScroll">
+                        <div class="tableAuto">
+                            <div style="text-align: center;color: var(--color-light-green);font-weight: bold;">
+                                <span>以下[應移交事項]需各部門會簽，各交接人負有確認之責，請務必嚴肅以待</span>
+                            </div>
+                            <table class="tci-table tci-table-bordered">
+                                <thead>
+                                    <tr style="background-color: var(--color-light-gray);text-align: center;">
+                                        <th>NO</th>
+                                        <th>會簽部門</th>
+                                        <th>應移交事項</th>
+                                        <th>接收人</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="text-align: center;">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>人資部</td>
+                                        <td>簽呈歸檔、教育訓練文件歸檔、薪資結算(含休假、圓夢方案等)、退保。</td>
+                                        <td>
+                                            <div>人力資源部-VALEN.WANG王禹晴</div>
+                                            <div style="color: var(--color-blue);">已同意</div>
+                                            <div>2022/8/1221:31</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>綜合服務部</td>
+                                        <td>簽呈歸檔、教育訓練文件歸檔、薪資結算(含休假、圓夢方案等)、退保。</td>
+                                        <td>
+                                            <div>人力資源部-VALEN.WANG王禹晴</div>
+                                            <div style="color: var(--color-blue);">已同意</div>
+                                            <div>2022/8/1221:31</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="tableContent" style="margin-bottom:0;">
+                    <div class="tableScroll">
+                        <div class="tableAuto">
+                            <div style="text-align: center;color: var(--color-light-green);font-weight: bold;">
+                                <span>以下欄位請經辦人與交接人完整對接，待處理業務後續將轉由交接人承接</span>
+                            </div>
+                            <table class="tci-table tci-table-bordered">
+                                <thead>
+                                    <tr style="background-color: var(--color-light-gray);text-align: center;">
+                                        <th>所屬部門移交項目</th>
+                                        <th>內容重點目</th>
+                                        <th>交接人目</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="text-align: center;">
+                                    <tr>
+                                        <td>所有電腦內資訊</td>
+                                        <td>電腦內資訊不可逕行刪除，並對路徑及其內外部之對應做說明</td>
+                                        <td>細胞科學驗證實驗室-JASON.LEE李東翰</td>
+                                    </tr>
+                                    <tr>
+                                        <td>重要業務往來電子郵件</td>
+                                        <td>保留備份及通知客戶移轉至交接人事宜完成</td>
+                                        <td>細胞科學驗證實驗室-JASON.LEE李東翰</td>
+                                    </tr>
+                                    <tr>
+                                        <td>待處理單據</td>
+                                        <td colspan="2">
+                                            <table class="tci-table tci-table-bordered">
+                                                <thead>
+                                                    <tr style="background-color: var(--color-light-gray);text-align: center;">
+                                                        <th>單據清單</th>
+                                                        <th>處理方式</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>無</td>
+                                                        <td style="color: var(--color-light-red);">需簽核</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>無</td>
+                                                        <td style="color: var(--color-light-red);">需作廢</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>無</td>
+                                                        <td style="color: var(--color-light-red);">需等待<br>完成簽核</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>無</td>
+                                                        <td>請交接人追蹤</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>無</td>
+                                                        <td>請交接人追蹤<br>後續單據</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><button class="tci-btn bg_lightgray">查看近一個月經手單據</button></td>
+                                                        <td>關注</td>
+                                                    </tr>
+                                                </tbody>
+                                               
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>重要業務文件資料夾<br><span>共 0 份</span></td>
+                                        <td colspan="2">
+                                            <table class="tci-table tci-table-bordered">
+                                                <thead>
+                                                    <tr style="background-color: var(--color-light-gray);text-align: center;">
+                                                        <th style="width: 9%;">#</th>
+                                                        <th>交接內容</th>
+                                                        <th>交接人</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>交接人/監交人</td>
+                                        <td colspan="2" style="color: var(--color-light-red);">細胞科學驗證實驗室-JASON.LEE李東翰/細胞科學驗證實驗室-SINDY.WU吳函芳</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="3" style="font-size: var(--font-size-xs);">
+                                            <span><b>備註：</b></span><br>
+                                            <span>
+                                                1.	各交接人需詳加確認離職人員之移交事項是否確實、完整，倘未盡通常之注意義務致交接未確實，或後續內部稽核查核資料不全，各交接人及主管需負連帶責任(即各自對離職人員應履行之義務負全部之責任)。
+                                                <br>2.	離職人員需移交離職申請單、工作移交檢核表予人資部歸檔後，始完成離職手續。 
+                                            </span>
+    
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="print_process">
+            <div class="print_process_circuit">
+                <div class="tci-card tci-mt-2 card-green">
+                    <div class="tci-card-header card-header-green"><i class="fa-solid fa-user-tie"></i> 總經理主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">林詠翔<br>VINCENT.LIN</p>
+                        <div>
+                            <span class="tci-card-text card-text-green"><i class="fa-solid fa-clock"></i>&nbsp;
+                                免簽核</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer"></div>
+                </div>
+                <!-- 手機以上 -->
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <!-- 手機 向上 Icon -->
+                <!-- <span style="text-align:center;">
+                    <i class="fa-solid fa-up-long fa-2x" style="width: 100%;"></i>
+                </span> -->
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 戰略數據中心主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title"> 王浩駿<br>JOHNNY.WANG</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-clock"></i>&nbsp;
+                                未簽核</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer"></div>
+                </div>
+
+                <!-- 手機以上 -->
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <!-- 手機 向上 Icon -->
+                <!-- <span style="text-align:center;">
+                    <i class="fa-solid fa-up-long fa-2x" style="width: 100%;"></i>
+                </span> -->
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 軟體整合開發部主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">吳春隆<br>REX.WU</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-clock"></i>&nbsp; 同意</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer"></div>
+                </div>
+                <!-- 手機以上 -->
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <!-- 手機 向上 Icon -->
+                <!-- <span style="text-align:center;">
+                    <i class="fa-solid fa-up-long fa-2x" style="width: 100%;"></i>
+                </span> -->
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 軟體研發組主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">吳春隆<br>REX.WU</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-check"></i>&nbsp; 同意</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer"></div>
+                </div>
+                <!-- 手機以上 -->
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <!-- 手機 向上 Icon -->
+                <!-- <span style="text-align:center;">
+                    <i class="fa-solid fa-up-long fa-2x" style="width: 100%;"></i>
+                </span> -->
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user"></i> 經辦人</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">曾莞婷<br>HEDY.TSENG</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-check"></i>&nbsp; 送出</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer">2022/07/21 12:31:32</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- 簽核記錄 start -->
+        <section class="approvalBox tci-mb-3">
+            <div class="">
+                <ul class="" style="padding-left:20px;">
+                    <li style="color: var(--color-rosybrown);font-size: 14px;">等待【經辦人】【HEDY.TSENG(曾莞婷) 大江戰士】簽核
+                        <span style="font-size:12px;color: #949495;font-weight: bold;">上傳附件：新增1個附件</span></li>
+                    <li style="color: var(--color-rosybrown);font-size: 14px;">2022/6/1 下午 02:28:48【經辦人-BENNY.SU(蘇雅雯)管理師】
+                        <span style="font-size:12px;color: var(--color-dark-green);font-weight: bold;">已簽核：送出單據</span></li>
+                </ul>
+            </div>
+        </section>
+        <!-- 簽核記錄 end -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
+<!-- hedy 手機向上的那個icon 也可不做，統一向左 -->

@@ -13,134 +13,167 @@
 </head>
 
 <body>
-    <div class="container-fluid tci-mb-3" id="page_invoice">
-        <div class="invoice_header">
-            <div class="invoice_header_img">
-                <img src="./TCI.png" alt="img">
-            </div>
+    <div class="position_card" style="width: 100%;height: 40px;background-color: rgba(255,255,255,0.9);
+padding: 3px;text-align: end;border-radius: 0.375rem;position:sticky;top:0;">
+        <button class="tci-btn bg_darkblue" style="background-color:#003D79;
+    color:#ffffff;">清單</button>
+        <button class="tci-btn bg_darkgreen" style="background-color: #5b6835;
+    color: #ffffff;">儲存</button>
+        <button class="tci-btn bg_darkred" style="background-color: #9d0f0f;
+    color: #ffffff;">PDF</button>
+    </div>
+    <div class="container" id="page_invoice" style="">
+        <div class="invoice_header" style="text-align: center;">
             <div class="invoice_header_text">
-                <span>TCI Boitech LLC</span>
+                <span style="font-size: 30px;
+                font-weight: bold;">TCI Boitech LLC</span>
             </div>
         </div>
-       
         <section class="tableContent">
             <table class="tci-table tableScroll">
                 <thead>
                     <tr>
-                        <th colspan="8" style="text-align: center;">615 Arapeen Drive, Suite 205 Salt Lake City, Utah 84108 </th>
+                        <th colspan="8" style="text-align: center;border: 1px solid #dee2e6;padding: 3px;">615 Arapeen
+                            Drive, Suite 205 Salt Lake City, Utah
+                            84108 </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Invoice Number</td>
-                        <td colspan="2">PO1000493</td>
-                        <td colspan="2">Invoice Date</td>
-                        <td colspan="3">2021.09.30</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">Invoice Number</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">PO1000493</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">Invoice Date</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="3">2021.09.30</td>
                     </tr>
                     <tr>
-                        <th colspan="8" style="text-align: center;font-size: 2rem;">Invoice</th>
+                        <th colspan="8"
+                            style="text-align: center;font-size: 28px;border: 1px solid #dee2e6;padding: 3px;">Invoice
+                        </th>
                     </tr>
                     <tr>
-                        <td>Client Name:</td>
-                        <td colspan="2">Isagenix International</td>
-                        <td colspan="2">Contact person:</td>
-                        <td colspan="3"><u>Account payable</u></td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">Client Name:</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">Isagenix International</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">Contact person:</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="3"><u>Account payable</u></td>
                     </tr>
                     <tr>
-                        <td>Billing Address:</td>
-                        <td colspan="2">155 E. Rivulon Blvd. Gilbert, AZ 85297 USA</td>
-                        <td colspan="2">TEL:</td>
-                        <td colspan="3">123456789</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">Billing Address:</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">155 E. Rivulon Blvd. Gilbert, AZ
+                            85297 USA</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">TEL:</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="3">123456789</td>
                     </tr>
                     <tr>
-                        <td>Email:</td>
-                        <td colspan="2"><a href="mailto:">accounts.payable@isagenixcorp.com</a></td>
-                        <td colspan="2">shipping Address: </td>
-                        <td colspan="3">155 E. Rivulon Blvd. Gilbert, AZ 85297 USA</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">Email:</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2"><a
+                                href="mailto:">accounts.payable@isagenixcorp.com</a></td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">shipping Address: </td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="3">155 E. Rivulon Blvd. Gilbert, AZ
+                            85297 USA</td>
                     </tr>
                     <tr style="text-align: center;background-color: #ddd3bc;">
-                        <th>Item Number</th>
-                        <th colspan="2">Product Name/Specfication</th>
-                        <th>Unit Price</th>
-                        <th>Quantity</th>
-                        <th>Amounts<br>(USD)</th>
-                        <th>Status</th>
-                        <th>Due date</th>
+                        <th style="border: 1px solid #dee2e6;padding: 3px;">Item Number</th>
+                        <th style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">Product Name/Specfication</th>
+                        <th style="border: 1px solid #dee2e6;padding: 3px;">Unit Price</th>
+                        <th style="border: 1px solid #dee2e6;padding: 3px;">Quantity</th>
+                        <th style="border: 1px solid #dee2e6;padding: 3px;">Amounts<br>(USD)</th>
+                        <th style="border: 1px solid #dee2e6;padding: 3px;">Status</th>
+                        <th style="border: 1px solid #dee2e6;padding: 3px;">Due date</th>
                     </tr>
                     <tr style="text-align: center;">
-                        <td>1</td>
-                        <td colspan="2">Isagenix-Collagen Elixir GDN(50ml10b)MX</td>
-                        <td>9.02</td>
-                        <td>1,566</td>
-                        <td>14,125,32</td>
-                        <td>Unpaid</td>
-                        <td>2021/12/30</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">1</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">Isagenix-Collagen Elixir
+                            GDN(50ml10b)MX</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">9.02</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">1,566</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">14,125,32</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">Unpaid</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">2021/12/30</td>
                     </tr>
                     <tr>
-                        <td colspan="3"></td>
-                        <td colspan="2">Total amount:</td>
-                        <td colspan="3">$14,125,32</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="3"></td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">Total amount:</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="3">$14,125,32</td>
                     </tr>
                     <tr style="font-size: 20px; color:#df3a30;">
-                        <td colspan="3"></td>
-                        <th colspan="2">Balance payment:</th>
-                        <th colspan="3">$14,125,32</th>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="3"></td>
+                        <th style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">Balance payment:</th>
+                        <th style="border: 1px solid #dee2e6;padding: 3px;" colspan="3">$14,125,32</th>
                     </tr>
                     <tr>
-                        <td colspan="8">
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="8">
                             <span>
                                 <b>Remarks</b><br>
                                 1. Payment due date: 2021/12/30<br>
-                                2. In case of payment being done by any other currencies except the issued Invoice currency, the conversion would be calculated under "Ex-Change Rate" of Invoice issuance date.<br>
+                                2. In case of payment being done by any other currencies except the issued Invoice
+                                currency, the conversion would be calculated under "Ex-Change Rate" of Invoice issuance
+                                date.<br>
                                 3. The unit price mentioned in this invoice is valid for the above-ordered quantity.<br>
-                                4. This quotation includes the content, the raw materials, the manufacturing, the labor expense, and the packaging of 4-color-printed bottle label and box.
+                                4. This quotation includes the content, the raw materials, the manufacturing, the labor
+                                expense, and the packaging of 4-color-printed bottle label and box.
                             </span>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="8">
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="8">
                             <span>
                                 <b>Terms & Condition</b><br>
-                                <b><u>Terms of Sale:</u></b> The Proforma Invoice is prepared under CIF Term per INCOTERMS 2010.<br>
+                                <b><u>Terms of Sale:</u></b> The Proforma Invoice is prepared under CIF Term per
+                                INCOTERMS 2010.<br>
                                 <b><u>Shipping Method:</u></b> DDP AZ, by ocean freight.<br>
                                 <b><u>Payment Term:</u></b> Net 30<br>
-                                <b><u>Storage:</u></b>  If the Goods are not shipped within <b><u>15 days</u></b> after notification has been made to Buyer that it is ready for dispatch, for any reason beyondTCI’s control, including Buyer’s failure to give shipping instructions, TCI may store the Goods at Buyer’s risk and expense in a warehouse or on TCI’s premises, and Buyer shall pay all handling, transportation and storage costs at the prevailing commercial rates promptly following TCI’s submission of invoices for such costs.
+                                <b><u>Storage:</u></b> If the Goods are not shipped within <b><u>15 days</u></b> after
+                                notification has been made to Buyer that it is ready for dispatch, for any reason
+                                beyondTCI’s control, including Buyer’s failure to give shipping instructions, TCI may
+                                store the Goods at Buyer’s risk and expense in a warehouse or on TCI’s premises, and
+                                Buyer shall pay all handling, transportation and storage costs at the prevailing
+                                commercial rates promptly following TCI’s submission of invoices for such costs.
                             </span>
                         </td>
                     </tr>
                     <tr>
-                        <th colspan="8">FOR YOUR REMITTANCE, FOLLOWING IS OUR BANKING INFORMATION:</th>
+                        <th style="border: 1px solid #dee2e6;padding: 3px;" colspan="8">FOR YOUR REMITTANCE, FOLLOWING
+                            IS OUR BANKING INFORMATION:</th>
                     </tr>
                     <tr>
-                        <td>BANK: </td>
-                        <td colspan="3">EAST WEST BANK</td>
-                        <td colspan="2">SWIFT CODE: </td>
-                        <td colspan="2">EWBKUS66XXX</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">BANK: </td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="3">EAST WEST BANK</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">SWIFT CODE: </td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">EWBKUS66XXX</td>
                     </tr>
                     <tr>
-                        <td>ADDRESS: </td>
-                        <td colspan="7">9300 FLAIR DRIVE, 4TH FLOOR, EL MONTE, CA 91731</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">ADDRESS: </td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="7">9300 FLAIR DRIVE, 4TH FLOOR, EL
+                            MONTE, CA 91731</td>
                     </tr>
                     <tr>
-                        <td>A/C NAME: </td>
-                        <td colspan="7">TCI BIOTECH LLC</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;">A/C NAME: </td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="7">TCI BIOTECH LLC</td>
                     </tr>
                     <tr>
-                        <td colspan="2">Accoutn Number: </td>
-                        <td colspan="2">8029011585</td>
-                        <td colspan="2">Routing Number: </td>
-                        <td colspan="2">322070381</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">Accoutn Number: </td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">8029011585</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">Routing Number: </td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="2">322070381</td>
                     </tr>
                     <tr>
-                        <td colspan="3"></td>
-                        <th colspan="5" style="padding: 5rem 1rem;border-bottom: 2px dashed var(--color-dark);">TCI Biotech</th>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="3"></td>
+                        <th colspan="5"
+                            style="padding: 5rem 5px;border-bottom: 2px dashed var(--color-dark);border: 1px solid #dee2e6;">
+                            TCI
+                            Biotech</th>
                     </tr>
                     <tr>
-                        <td colspan="3"></td>
-                        <td colspan="5" style="font-style:italic;">Authorized Signature</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="3"></td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="5" style="font-style:italic;">
+                            Authorized Signature</td>
                     </tr>
                     <tr style="text-align: center;font-size:12px">
-                        <td colspan="8">BY AFFIXING SIGNATURE ON THIS PRO-FORMA INVOICE, THE BOTH PARTIES (BUYER & SELLER) AGREE AND CERTIFY THAT THE INFORMATION ABOVE IS CORRECT AND THAT THE FUNDS INVOLVED ARE SOLELY FOR THE ABOVE MENTIONED GOODS TRANSACTION. THE BUYER CERTIFY THAT THE FUNDS ARE CLEAN AND FREE FROM ANY ENCUMBRANCES.</td>
+                        <td style="border: 1px solid #dee2e6;padding: 3px;" colspan="8">BY AFFIXING SIGNATURE ON THIS
+                            PRO-FORMA INVOICE, THE BOTH PARTIES (BUYER &
+                            SELLER) AGREE AND CERTIFY THAT THE INFORMATION ABOVE IS CORRECT AND THAT THE FUNDS INVOLVED
+                            ARE SOLELY FOR THE ABOVE MENTIONED GOODS TRANSACTION. THE BUYER CERTIFY THAT THE FUNDS ARE
+                            CLEAN AND FREE FROM ANY ENCUMBRANCES.</td>
                     </tr>
                 </tbody>
             </table>

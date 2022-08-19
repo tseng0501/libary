@@ -3,7 +3,8 @@
         .tci-field-label {
             white-space: normal;
         }
-        .reason{
+
+        .reason {
             width: 100%;
         }
 
@@ -12,18 +13,21 @@
         }
     }
 }
+
 @media (min-width: 765px) {
     #page_purchaseRequisition {
         .purchaseTable {
-            .reason{
+            .reason {
                 width: 60%;
-                .tci-field-value{
+
+                .tci-field-value {
                     width: 100%;
                 }
             }
         }
     }
 }
+
 @media (min-width: 1200px) {
     #page_purchaseRequisition {
         .purchaseTable {
@@ -31,18 +35,53 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-    
+
                 .tci-field {
                     width: 48%;
-    
+
                     .tci-field-label {
                         width: 22%;
                     }
-    
+
                     .tci-field-value {
                         width: 77%;
                     }
                 }
+            }
+        }
+    }
+}
+
+#page_purchaseRequisition_signoff {
+    .tableScroll {
+        overflow-x: auto;
+
+        .tableContent {
+            width: 1200px;
+        }
+    }
+}
+#page_purchaseRequisition_print{
+    .tableScroll {
+        overflow-x: auto;
+
+        .tableAuto {
+            width: 992px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    #page_purchaseRequisition_signoff {
+        .tableScroll {
+            .tableContent {
+                width: 100%;
+            }
+        }
+    }
+    #page_purchaseRequisition_print{
+        .tableScroll{
+            .tableAuto {
+                width: 100%;
             }
         }
     }

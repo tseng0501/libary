@@ -1,0 +1,201 @@
+body {
+    background-color: #e0dcd4;
+}
+
+#page_notfound {
+    .notfound_header {
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2rem;
+
+        .pageHeaderTitle {
+            font-size: 24px;
+        }
+
+        .small_title {
+            margin-top: 2rem;
+            font-size: var(--font-size-sm);
+        }
+
+        .small_title_english {
+            margin: auto;
+        }
+
+        button {
+            box-shadow: var(--borderShadow);
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+        .text_content {
+            margin-top: 1rem;
+            width: 100%;
+            margin-right: 2rem;
+            line-height: 1.5;
+            padding: 5px;
+            border-radius: 0.25rem;
+            box-shadow: var(--borderShadow);
+            background-color: var(--color-snow);
+            padding: 15px 14px;
+            color: var(--color-dark-green);
+            font-weight: bold;
+            height: 300px;
+            overflow: auto;
+            .text_content_title {
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                font-size: 18px;
+            }
+
+            .text {
+                font-size: 16px;
+                text-align: left;
+            }
+        }
+    }
+
+    .img_content {
+        width: 100%;
+        text-align: center;
+        margin: auto 0;
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 765px) {
+
+    #page_notfound {
+        .notfound_header {
+            .pageHeaderTitle {
+                font-size: 34px;
+            }
+
+            .small_title_english {
+                max-width: 65%;
+            }
+        }
+
+        .content {
+            flex-direction: initial;
+
+            .text_content {
+                margin: auto 0;
+                width: 45%;
+                .text_content_title {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .img_content {
+            width: 45%;
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #page_notfound {
+        .content {
+            .text_content {
+                line-height: 2.5;
+            }
+        }
+    }
+}
+
+// text-align: center;
+// background-image: url('shutterstock_4.png');
+// background-repeat: no-repeat;
+// background-attachment: fixed;
+// background-position: center;
+// background-size: cover;
+
+#page_notfound2 {
+    text-align: center;
+    background-image: url('shutterstock_4.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 98vh;
+    width: 100%;
+
+    .notfound_header {
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // margin-top: 2rem;
+
+        .pageHeaderTitle {
+            font-size: 24px;
+        }
+
+        .small_title {
+            margin-top: 2rem;
+            font-size: var(--font-size-sm);
+        }
+
+        .small_title_english {
+            margin: auto;
+        }
+    }
+
+    .content2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+        .text_content {
+            margin-top: 2rem;
+            width: 100%;
+            margin-right: 2rem;
+            line-height: 1.5;
+            text-align: left;
+
+            .text_content_title {
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 2rem;
+                font-size: 18px;
+            }
+
+            .text {
+                font-size: 16px;
+                margin-bottom: 2rem;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_notfound2 {
+        .content2 {
+            .text_content {
+                width: 55%;
+                margin-left: 2rem;
+            }
+        }
+    }
+}
