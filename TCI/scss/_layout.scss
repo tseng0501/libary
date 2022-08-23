@@ -13,7 +13,9 @@ body {
 ::before {
     box-sizing: border-box;
 }
-
+// .icon_arrow{
+//     transform:rotate(90deg)
+// }
 //強制不换行、超出顯示省略號
 .fontNoWrap {
     white-space: nowrap;

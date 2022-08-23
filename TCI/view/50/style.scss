@@ -1,15 +1,36 @@
+@media (min-width: 765px) { 
+    #page_tryApplication {
+        .form_item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
+            .tci-input-group {
+                width: 49%;
+            }
+        }
+    }
 
-@media (min-width: 765px) {
-#page_tryApplication{
-    .form_item{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .tci-input-group{
-            width: 49%;
+}
+
+// 簽核 列印
+#page_tryApplication_signoff {
+    .tableScroll {
+        overflow-x: auto;
+
+        .tci-table {
+            width: 992px;
         }
     }
 }
-    
+
+@media (min-width: 765px) { 
+    #page_tryApplication_signoff {
+        .tableScroll {
+            .tci-table {
+                width: 100%;
+            }
+        }
+    }
+
 }

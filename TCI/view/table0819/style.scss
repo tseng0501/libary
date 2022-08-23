@@ -1,11 +1,58 @@
 #page_light {
     .query {
         .tci-field {
-            .valueBtn {
+            .tci-valueBtn {
                 display: flex;
             }
         }
     }
+
+    .tableScroll {
+        overflow-x: auto;
+
+        .tci-table {
+            width: 1200px;
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    #page_light {
+        .query {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-field {
+                width: 45%;
+
+                .tci-field-label {
+                    width: 35%;
+                }
+
+                .tci-field-value {
+                    width: 65%;
+                }
+
+                .tci-valueBtn {
+                    width: 65%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #page_light {
+        .tableScroll {
+            overflow-x: auto;
+
+            .tci-table {
+                width: 100%;
+            }
+        }
+    }
+
 }
 
 #page_dataFlow {
@@ -111,26 +158,13 @@
 }
 
 ////
+.container {
+    width: 1170px;
+}
+
 #page_steps {
-font-size: 14px;
-    .one::before{
-        content: "";
-        width: 20px;
-        height: 5px;
-        background-color: var(--color-dark-green);
-        position: absolute;
-        top: 19px;
-        right: 60px;
-    }
-    .two::before{
-        content: "";
-        width: 20px;
-        height: 5px;
-        background-color: red;
-        position: absolute;
-        top: 42px;
-        right: 60px;
-    }
+    font-size: 14px;
+
     .steps {
         margin-top: 2rem;
         text-align: center;
@@ -138,16 +172,18 @@ font-size: 14px;
         display: flex;
         flex-wrap: wrap;
         padding: 0 5px;
-    }
 
-    .steps li {
-        float: left;
-        flex: inherit;
-        position: relative;
-        margin-bottom: 15rem;
-        width: 100%;
-        &.more {
-            margin-bottom: 29rem;
+        // justify-content: center;
+        li {
+            float: left;
+            flex: inherit;
+            position: relative;
+            margin-bottom: 10rem;
+            width: 100%;
+
+            &.more {
+                margin-bottom: 29rem;
+            }
         }
     }
 
@@ -160,12 +196,13 @@ font-size: 14px;
         line-height: 30px;
         border-radius: 50%;
         text-align: center;
-        border: 2px solid rgba(224, 224, 224, 1);
+        // border: 2px solid rgba(224, 224, 224, 1);
     }
 
     .step_active .step-num {
-        background-color: #f3862d;
+        background-color: #fff100; //#f3862d;
     }
+
     .step_pass .step-num {
         background-color: #2ad613;
     }
@@ -184,15 +221,18 @@ font-size: 14px;
         box-shadow: var(--borderShadow);
         margin: 1rem auto;
         width: 90%;
+
         .step_card_title {
-            font-size: var(--font-size-md);
             font-weight: bold;
+            cursor: pointer;
         }
-        .line_one{
+
+        .line_one {
             height: 5px;
             background-color: var(--color-dark-green);
         }
-        .line_two{
+
+        .line_two {
             height: 5px;
             background-color: var(--color-light-red);
         }
@@ -205,16 +245,242 @@ font-size: 14px;
         border-radius: var(--borderRadius);
         padding: 0 5px;
     }
+
+    .borderbox {
+        // border: 2px #2a2a2a solid;
+        padding: 2rem 0;
+        border-radius: var(--borderRadius);
+        flex-basis: min-content;
+    }
+
+    .boxIcon {
+        height: 100%;
+        margin: auto 0;
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 765px) {
     #page_steps {
-        .steps{
-            padding: revert;
-
-        }
         .steps li {
             width: 195px; //280
+        }
+    }
+}
+/* 当屏幕为竖屏时应用的样式 */
+@media screen and  (orientation:  portrait){
+    /*要横屏显示的内容的外层盒子*/
+    #page_test3 {
+        /* 设置基准点为左上角 */
+        transform-origin:top left;
+        /* 以左上角为基准点，顺时针旋转90度 然后沿Y轴反方向平移100% */
+        /* 为什么沿Y轴，因为旋转使坐标轴方向发生了变化 */
+        transform: rotate(90deg) translateY(-100%);
+        /*设置元素的宽度为 100%父元素的高度 并提高样式优先级 */
+        width: 100vh !important;
+         /*设置元素的宽度为 100%父元素的宽度  并提高样式优先级 */
+        height: 100vw !important; 
+    }
+}
+
+//page_test3
+
+#page_test3 {
+    margin: 2rem auto;
+
+    .content {
+        overflow-x: auto;
+
+        .cardContent {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+            justify-content: space-around;
+
+            .block {
+                display: flex;
+                width: 22%;
+                margin-bottom: 1rem;
+            }
+
+            .tci-card {
+                min-width: 162px;
+                margin-right: 5px;
+                width: 190px;
+
+                .tci-card-body {
+                    margin: auto;
+                    flex: inherit;
+
+                    .tci-card-title {
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+
+                    button {
+                        padding: 3px 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .box {
+        min-width: 220px;
+        text-align: center;
+    }
+
+    .step_card {
+        line-height: 2;
+        background-color: var(--color-light-gray);
+        border-radius: var(--borderRadius);
+        padding: 5px;
+        box-shadow: var(--borderShadow);
+        margin: 1rem auto;
+        width: 90%;
+
+        .step_card_title {
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .line_one {
+            height: 5px;
+            background-color: var(--color-dark-green);
+        }
+
+        .line_two {
+            height: 5px;
+            background-color: var(--color-light-red);
+        }
+    }
+
+    .greenTag {
+        font-size: var(--font-size-xs);
+        background-color: var(--color-dark-khaki);
+        color: var(--color-snow);
+        border-radius: var(--borderRadius);
+        padding: 0 5px;
+    }
+
+    .step-num {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        color: var(--color-snow);
+        background-color: #b9b9b9;
+        line-height: 30px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .step_active .step-num {
+        background-color: #fff100; //#f3862d;
+        color: var(--color-drak);
+    }
+
+    .step_pass .step-num {
+        background-color: #2ad613;
+    }
+
+
+
+    .modal-dialog {
+        width: 95%;
+
+        .modal-body {
+            display: flex;
+        }
+
+        .modal_arrow {
+            background-color: var(--color-dark-blue);
+            color: #fff;
+            margin: auto .5rem;
+            padding: 2rem 1rem;
+            border-radius: var(--borderRadius);
+        }
+
+        .modal_card {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #b9b9b9;
+            padding: 8px;
+            margin-bottom: 1rem;
+            border-radius: var(--borderRadius);
+
+            &.secound {
+                background-color: antiquewhite;
+                border-radius: var(--borderRadius);
+
+                .box {
+                    margin: auto;
+
+                }
+            }
+
+            .box {
+                position: relative;
+
+                &.end {
+                    // border: 2px solid #2a2a2a;
+                    // padding: 5px;
+
+                }
+
+                .end {
+                    bottom: -10px;
+                    position: absolute;
+                    right: 12px;
+                }
+            }
+
+            .block {
+                display: flex;
+                margin-bottom: 1rem;
+
+                &.end {
+                    border: 2px solid #2a2a2a;
+                    padding: 5px;
+                }
+            }
+
+            .block_row {
+                flex-flow: column;
+                border: 3px dashed saddlebrown;
+            }
+
+            .tci-card {
+                min-width: 162px;
+                margin-right: 5px;
+                width: 190px;
+
+                .tci-card-body {
+                    margin: auto;
+                    flex: inherit;
+
+                    .tci-card-title {
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+
+                    button {
+                        padding: 3px 5px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+    #page_test3 {
+        .content {
+
+            .cardContent {
+                width: 100%;
+            }
         }
     }
 }

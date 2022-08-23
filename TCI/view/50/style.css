@@ -8,3 +8,15 @@
     width: 49%;
   }
 }
+#page_tryApplication_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_tryApplication_signoff .tableScroll .tci-table {
+  width: 992px;
+}
+
+@media (min-width: 765px) {
+  #page_tryApplication_signoff .tableScroll .tci-table {
+    width: 100%;
+  }
+}

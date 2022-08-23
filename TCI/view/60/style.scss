@@ -252,8 +252,10 @@
 #page_createPurchaseOrder_print {
     .print_table {
         overflow-x: auto;
+
         .tableContent {
             width: 900px;
+
             .noborder {
 
                 th,
@@ -273,6 +275,16 @@
             }
         }
     }
+
+    #page_createPurchaseOrder_print {
+        .choose {
+            display: flex;
+            justify-content: center;
+            select{
+                width: 300px;
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -283,9 +295,11 @@
             }
         }
     }
+
     #page_createPurchaseOrder_print {
         .print_table {
             overflow-x: auto;
+
             .tableContent {
                 width: 100%;
             }
