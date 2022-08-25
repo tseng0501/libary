@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./tci-all.css">
@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="page_ItemTemplate">
+    <div class="container-fluid" id="page_ItemTemplate" style="line-height: 2;">
         <div class="pageHeader">
-            <span class="pageHeaderTitle"><b>item 管理</span></b>
+            <span class="pageHeaderTitle" style="font-size: 24px;"><b>item 管理</span></b>
         </div>
         <section class="itemTemplate_query">
             <div class="itemTemplate_flex">
@@ -24,12 +24,7 @@
                         <span class="tci-field-text text-left">Item 名稱：</span>
                     </div>
                     <div class="tci-valueBtn">
-                        <select class="tci-field-value">
-                            <option selected>All</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
+                        <input type="text" class="tci-field-value" value="text" />
                         <button class="tci-btn bg_darkgreen">查詢</button>
                     </div>
                 </div>
@@ -84,10 +79,10 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="additemTemplateLabel">新增 item 名稱</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+                    <h5 class="modal-title" id="additemTemplateLabel">新增 item 名稱</h5>
                 </div>
                 <div class="modal-body">
                     <div class="tci-field">
@@ -111,25 +106,17 @@
                             <div class="tci-field-label">
                                 <span class="tci-field-text text-left">明細樣版 :</span>
                             </div>
-                            <select class="tci-field-value">
-                                <option value="公務車">公務車</option>
-                                <option value="電腦">電腦</option>
-                                <option value="123">213</option>
-                            </select>
+                            <input type="text" class="tci-field-value" value="text" />
                         </div>
                         <div>
-                            <span style="font-size: 1.5rem;padding: 0 5px;"> <i class="fa-solid fa-circle-plus"></i>
+                            <span style="font-size: 2rem;padding: 0 5px;"> <i class="fa-solid fa-circle-plus"></i>
                             </span>
                         </div>
                         <div class="tci-field">
                             <div class="tci-field-label">
                                 <span class="tci-field-text text-left">行為樣版 :</span>
                             </div>
-                            <select class="tci-field-value">
-                                <option value="出租">公務車租借</option>
-                                <option value="維修">維修</option>
-                                <option value="報廢">報廢</option>
-                            </select>
+                            <input type="text" class="tci-field-value" value="text" />
                         </div>
                     </div>
                 </div>
@@ -147,10 +134,10 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="edititemTemplateLabel">編輯 item 名稱</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+                    <h5 class="modal-title" id="edititemTemplateLabel">編輯 item 名稱</h5>
                 </div>
                 <div class="modal-body">
                     <div class="tci-field">
@@ -174,25 +161,17 @@
                             <div class="tci-field-label">
                                 <span class="tci-field-text text-left">明細樣版 :</span>
                             </div>
-                            <select class="tci-field-value">
-                                <option value="公務車">公務車</option>
-                                <option value="電腦">電腦</option>
-                                <option value="123">213</option>
-                            </select>
+                            <input type="text" class="tci-field-value" value="text" />
                         </div>
                         <div>
-                            <span style="font-size: 1.5rem;padding: 0 5px;"> <i class="fa-solid fa-circle-plus"></i>
+                            <span style="font-size: 2rem;padding: 0 5px;"> <i class="fa-solid fa-circle-plus"></i>
                             </span>
                         </div>
                         <div class="tci-field">
                             <div class="tci-field-label">
                                 <span class="tci-field-text text-left">行為樣版 :</span>
                             </div>
-                            <select class="tci-field-value">
-                                <option value="出租">公務車租借</option>
-                                <option value="維修">維修</option>
-                                <option value="報廢">報廢</option>
-                            </select>
+                            <input type="text" class="tci-field-value" value="text" />
                         </div>
                     </div>
                 </div>
@@ -210,10 +189,10 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="deleteItemTableLabel">刪除</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+                    <h5 class="modal-title" id="deleteItemTableLabel">刪除</h5>
                 </div>
                 <div class="modal-body">
                     是否要刪除？
@@ -226,7 +205,8 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -160,73 +160,97 @@
                     <h4 class="modal-title">預覽</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="tableScoll_data">
-                        <table class="tci-table tci-table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th style="background-color:#e0dcd4;">單據：111</th>
-                                    <td>
-                                        <button class="btn" style="cursor: auto;">
-                                            <div>XXXXXA面膜</div>
-                                            <span>20</span>
-                                        </button>
-                                        <button class="btn" style="cursor: auto;">
-                                            <div>XXXXXA面膜</div>
-                                            <span>20</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th style="background-color:#e0dcd4;">單據：222</th>
-                                    <td>
-                                        <button class="btn" style="cursor: auto;">
-                                            <div>XXXXXA面膜</div>
-                                            <span>20</span>
-                                        </button>
-                                        <button class="btn" style="cursor: auto;">
-                                            <div>XXXXXA面膜</div>
-                                            <span>20</span>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="modal_flex">
+                        <div class="modal_flex_left">
+                            <div class="tableScoll_data">
+                                <table class="tci-table tci-table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="background-color:#e0dcd4;">單據：111</th>
+                                            <td>
+                                                <button class="btn"
+                                                    style="cursor: auto;width: 100%;margin-bottom: .5rem;">
+                                                    <div>XXXXXA面膜</div>
+                                                    <span>20</span>
+                                                </button>
+                                                <button class="btn"
+                                                    style="cursor: auto;width: 100%;margin-bottom: .5rem;">
+                                                    <div>XXXXXA面膜</div>
+                                                    <span>20</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th style="background-color:#e0dcd4;">單據：222</th>
+                                            <td>
+                                                <button class="btn"
+                                                    style="cursor: auto;width: 100%;margin-bottom: .5rem;">
+                                                    <div>XXXXXA面膜</div>
+                                                    <span>20</span>
+                                                </button>
+                                                <button class="btn"
+                                                    style="cursor: auto;width: 100%;margin-bottom: .5rem;">
+                                                    <div>XXXXXA面膜</div>
+                                                    <span>20</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tableScoll">
+                                <table class="tci-table tci-table-bordered">
+                                    <thead>
+                                        <tr style="background-color:#e0dcd4;text-align: center;">
+                                            <th>內涵項目</th>
+                                            <th>Invoice</th>
+                                            <th>Packing List</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="text-align: center;">
+                                        <tr>
+                                            <td>TCI</td>
+                                            <td class="check_center">
+                                                <input class="" type="checkbox" id="inlineCheckbox1"
+                                                    style="width: 20px;height: 20px;" value="option1">
+                                            </td>
+                                            <td class="check_center">
+                                                <input class="" type="checkbox" id="inlineCheckbox1"
+                                                    style="width: 20px;height: 20px;" value="option1">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>TCI</td>
+                                            <td class="check_center">
+                                                <input class="" type="checkbox" id="inlineCheckbox1"
+                                                    style="width: 20px;height: 20px;" value="option1">
+                                            </td>
+                                            <td class="check_center">
+                                                <input class="" type="checkbox" id="inlineCheckbox1"
+                                                    style="width: 20px;height: 20px;" value="option1">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="lineRight"></div>
+                        <div class="modal_flex_right">
+                            <div style="text-align: center;font-size: 22px;font-weight: bold;box-shadow: var(--borderShadow);
+                            border-radius: var(--borderRadius);padding: 0.5rem 0;margin: 1rem 3rem;">
+                                <span>模板</span>
+                            </div>
+                            <ul style="overflow-y: auto;height: 500px;">
+                                <li style="margin-bottom: .5rem;"><button type="button" class="tci-btn bg_darkgreen"
+                                        style="padding: 0 1rem;">2022/22/22
+                                        13:00</button></li>
+                                <li style="margin-bottom: .5rem;"><button type="button" class="tci-btn bg_darkgreen"
+                                        style="padding: 0 1rem;">2022/22/22
+                                        13:00</button></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="tableScoll">
-                        <table class="tci-table tci-table-bordered">
-                            <thead>
-                                <tr style="background-color:#e0dcd4;text-align: center;">
-                                    <th>內涵項目</th>
-                                    <th>Invoice</th>
-                                    <th>Packing List</th>
-                                </tr>
-                            </thead>
-                            <tbody style="text-align: center;">
-                                <tr>
-                                    <td>TCI</td>
-                                    <td class="check_center">
-                                        <input class="" type="checkbox" id="inlineCheckbox1"
-                                            style="width: 20px;height: 20px;" value="option1">
-                                    </td>
-                                    <td class="check_center">
-                                        <input class="" type="checkbox" id="inlineCheckbox1"
-                                            style="width: 20px;height: 20px;" value="option1">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>TCI</td>
-                                    <td class="check_center">
-                                        <input class="" type="checkbox" id="inlineCheckbox1"
-                                            style="width: 20px;height: 20px;" value="option1">
-                                    </td>
-                                    <td class="check_center">
-                                        <input class="" type="checkbox" id="inlineCheckbox1"
-                                            style="width: 20px;height: 20px;" value="option1">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="tci-btn bg_lightgray" data-dismiss="modal">關閉</button>

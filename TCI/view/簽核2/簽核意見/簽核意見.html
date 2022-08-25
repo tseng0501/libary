@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>簽核意見</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_signOffContent">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>簽核意見</b></span>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlush">
+            <!-- 簽核意見 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="description">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-description" aria-expanded="true"
+                        aria-controls="panelsStayOpen-description">
+                        <span>簽核意見</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-description" class="accordion-collapse collapse show"
+                    aria-labelledby="description">
+                    <div class="accordion-body">
+                        <div class="descriptionBox_invalid tci-text-center">
+                            <span style="border: 1px solid #003D79;background-color:#003D79;padding:0 6px;color: var(--color-snow);font-weight: bold;">此單據已列印</span>
+                        </div>
+                        <div class="descriptionBoxContent">
+                            <div class="descriptionBox_notice">
+                                <div class="tci-input-group">
+                                    <div class="tci-input-group-prepend">
+                                        <span class="tci-input-group-text">內容:&nbsp;
+                                            <div class="dropdown open" style="margin-bottom:.5rem;">
+                                                <button class="dropdown-toggle tci-btn bg_darkblue py-0" type="button"
+                                                    data-bs-toggle="dropdown" data-animations="fadeIn">
+                                                    通知人員
+                                                </button>
+                                                <!-- 下拉清單 -->
+                                                <ul class="dropdown-menu">
+                                                    <li style="margin-left:5px;cursor:pointer">
+                                                        <label><input type="checkbox" class="decisionMsg" value="">
+                                                            所有簽核者</label>
+                                                    </li>
+                                                    <li style="margin-left:5px;cursor:pointer">
+                                                        <label><input type="checkbox" class="decisionMsg" value="2011A0016">
+                                                            吳春隆(REX.WU)</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <textarea class="tci-form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="descriptionBox_icon tci-text-center">
+                                <div class="dropdown check">
+                                    <a href="#" style="text-decoration: none">
+                                        <i class="fa-solid fa-check fa-4x" style="color: #5b6835;"></i>
+                                        <p style="color: black;">同意簽核</p>
+                                    </a>
+                                </div>
+                                <div class="dropdown check">
+                                    <a href="#" style="text-decoration: none">
+                                        <i class="fa-solid fa-xmark fa-4x" style="color: #9d0f0f;"></i>
+                                        <p style="color: black;">不同意</p>
+                                    </a>
+                                </div>
+                                <div class="dropdown file">
+                                    <div class="dropdown">
+                                        <button class="tci-btn" type="button" data-animations="fadeIn" data-hover="dropdown"
+                                        style="background: none;border-width: 0px;text-align: center;text-decoration: none;padding: 0;"
+                                        data-bs-toggle="dropdown" aria-expanded="false" id="dropdownbtn">
+                                            <i class="fa-solid fa-file-lines fa-4x" style="color: #b8aba2;"></i>
+                                            <p style="color:black;margin-top: .5rem;">其他</p>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">作廢單據</a></li>
+                                          <li><a class="dropdown-item" href="#">標示為急件</a></li>
+                                          <li><a class="dropdown-item" href="#">修改單據</a></li>
+                                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#forwardContentModal">轉寄內容</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

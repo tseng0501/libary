@@ -15,7 +15,7 @@
   background-color: var(--color-whitesmoke);
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_leaveVacation .tableScroll .tci-table {
     width: 100%;
   }
@@ -52,10 +52,10 @@
   overflow-x: auto;
 }
 #page_leaveVacation_signoff .tableScroll .tableContent {
-  width: 765px;
+  width: 768px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_leaveVacation_signoff .tableScroll .tableContent {
     width: 100%;
   }

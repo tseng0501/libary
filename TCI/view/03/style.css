@@ -45,7 +45,7 @@
   text-align: center;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_businessTravel .tableScroll .tci-table {
     width: 100%;
   }

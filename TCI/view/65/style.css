@@ -56,7 +56,7 @@
   color: var(--color-dark-red);
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_generalInvoice .details input {
     width: 60%;
     margin-bottom: 0;
@@ -116,7 +116,7 @@
     margin-right: 10px;
   }
   #page_generalInvoice .invoiceContent .invoiceForm .tci-input-group.data_short {
-    width: 16%;
+    width: 15%;
   }
   #page_generalInvoice .addTableBox .addTable .addTableNo {
     width: 60px;
@@ -140,10 +140,10 @@
   margin-bottom: 2rem;
 }
 #page_generalInvoice_signoff .tableScroll .tableContent {
-  width: 765px;
+  width: 768px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_generalInvoice_signoff .tableScroll .tableContent {
     width: 100%;
   }

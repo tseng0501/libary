@@ -1,0 +1,43 @@
+#page_projectInformation_modal .projectInformationQuery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#page_projectInformation_modal .projectInformationQuery .tci-field {
+  width: 100%;
+  justify-content: space-between;
+}
+#page_projectInformation_modal .projectInformationQuery .tci-field .tci-field-label {
+  width: auto;
+}
+#page_projectInformation_modal .projectInformationQuery .tci-field.long {
+  width: 100%;
+}
+#page_projectInformation_modal .tableScoll {
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 60vh;
+}
+#page_projectInformation_modal .tableScoll .tci-table {
+  width: 992px;
+}
+
+@media (min-width: 768px) {
+  #page_projectInformation_modal .projectInformationQuery {
+    justify-content: flex-end;
+  }
+  #page_projectInformation_modal .projectInformationQuery .tci-field {
+    width: auto;
+    justify-content: flex-start;
+    margin-right: 5px;
+  }
+  #page_projectInformation_modal .projectInformationQuery .tci-field.long {
+    width: auto;
+  }
+  #page_projectInformation_modal .projectInformationQuery .tci-field.long .tci-field-value {
+    width: 250px;
+  }
+  #page_projectInformation_modal .tableScoll .tci-table {
+    width: 100%;
+  }
+}

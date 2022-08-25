@@ -5,7 +5,7 @@
   margin: auto 1rem;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_manuallyAttendance .manuallyAttendanceContent .application .time {
     display: flex;
     width: 60%;

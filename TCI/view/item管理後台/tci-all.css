@@ -18,7 +18,7 @@
   --color-light-warning: #f0ebca;
   --color-light-success: #d2eedc;
   --color-light-green:#778546;
-  --color-light-red: #931e1e;
+  --color-light-red: #ff0000;
   --color-light-gray:#e0dcd4;
   --color-whitesmoke:#efefef;
   --color-rosybrown:#9e937e;
@@ -30,7 +30,7 @@
   --border-color:#ced4da;
   --font-size-xs: 13px;
   --font-size-sm: 14px;
-  --font-size-md: 1rem;
+  --font-size-md: 16px;
   --font-size-lg: 1.25rem;
   --font-size-xl: 1.5rem;
   --font-weight-bg:bold;
@@ -151,6 +151,9 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.print_table {
+  margin-top: 1rem;
+}
 .print_table .tableContent {
   margin-bottom: 2rem;
 }
@@ -169,7 +172,22 @@ body {
   text-align: right;
 }
 
-@media (min-width: 765px) {
+.warningTag {
+  background-color: #ff8658;
+  border-radius: var(--borderRadius);
+  padding: 1px 4px 1px 4px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: var(--color-snow);
+  font-weight: 900;
+}
+
+.ecNum {
+  font-size: 12px;
+  border-bottom: 3px double;
+}
+
+@media (min-width: 768px) {
   body {
     font-size: var(--font-size-md);
   }
@@ -197,7 +215,7 @@ body {
   .print_table .tableContent .tableScroll .tableAuto {
     width: 100%;
   }
-  .print_process .print_process_circuit {
+  .print_process_circuit {
     display: flex;
     flex-wrap: wrap;
   }
@@ -827,7 +845,7 @@ body {
   background-color: var(--color-whitesmoke);
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   .tci-field-label {
     width: 30%;
   }
@@ -1096,6 +1114,7 @@ body {
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  font-size: var(--font-size-sm);
 }
 
 .tci-card-body {
@@ -1106,6 +1125,7 @@ body {
 
 .tci-card-title {
   margin-bottom: 0.5rem;
+  font-size: var(--font-size-sm);
 }
 
 .tci-card-text {
@@ -1239,11 +1259,11 @@ input[type=radio] {
 
 th {
   text-align: inherit;
-  text-align: -webkit-match-parent;
 }
 
 table {
   border-collapse: collapse;
+  font-size: 14px;
 }
 
 .tci-table thead th {
@@ -1253,8 +1273,8 @@ table {
 
 .tci-table td, .tci-table th {
   padding: 0.5rem;
-  vertical-align: top;
   border-top: 1px solid #dee2e6;
+  vertical-align: inherit;
 }
 
 .tci-table-striped tbody tr:nth-of-type(odd) {
@@ -1270,4 +1290,61 @@ table {
 
 .tci-table-bordered thead td, .tci-table-bordered thead th {
   border-bottom-width: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+p,
+li,
+a {
+  font-size: var(--font-size-xs);
+}
+
+.pagination {
+  text-align: end;
+}
+
+.pagination ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 5px 18px;
+  color: var(--color-dark);
+}
+
+.p1 a:first-of-type,
+.p1 a:last-of-type,
+.p1 .is-active {
+  background-color: var(--color-dark-khaki);
+  border-radius: var(--borderRadius);
+  color: var(--color-snow);
+  font-weight: bold;
+}
+
+/* TWO */
+.p2 a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  text-align: center;
+}
+
+.p2 a.is-active {
+  background-color: var(--color-dark-khaki);
+  border-radius: 100%;
+  color: var(--color-snow);
 }

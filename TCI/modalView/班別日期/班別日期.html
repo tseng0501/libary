@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>班別日期</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_btnClassDate_modal">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>班別日期</b></span>
+        </div>
+        <button class="tci-btn bg_darkblue" data-bs-toggle="modal" data-bs-target="#btnClassDateModal">班別日期</button>
+        <section class="btnClassDateQuery">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">員工資訊:</span>
+                </div>
+                <div class="tci-field-value" style="background-color:#efefef;">2206A0011-大江戰士-HEDY.TSENG(曾莞婷)
+                </div>
+            </div>
+            <div class="tci-field date">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">班別日期:</span>
+                </div>
+                <div class="tci-field-value" style="background-color:#efefef;">2022/22/22</div>
+            </div>
+        </section>
+        <section>
+            <div class="darkBorderCard attendance">
+                <div class="darkBorderCardTitle">
+                    <span>考勤單據記錄</span>
+                </div>
+                <div class="darkBorderCardContent" style="text-align: center;margin-bottom: 1.5rem;">
+                    <span class="">沒有考勤單據資料</span>
+                </div>
+            </div>
+            <div class="darkBorderCard forgotPunch">
+                <div class="darkBorderCardTitle">
+                    <span>忘打卡補登記錄</span>
+                </div>
+                <div class="darkBorderCardContent" style="text-align: center;margin-bottom: 1.5rem;">
+                    <span class="">沒有忘打卡補登記錄</span>
+                </div>
+            </div>
+            <div class="darkBorderCard businessTrip">
+                <div class="darkBorderCardTitle">
+                    <span>出差申請單</span>
+                </div>
+                <div class="darkBorderCardContent">
+                    <!-- 表格 -->
+                    <div class="tableSrcoll">
+                        <table class="tci-table tci-table-bordered">
+                            <thead style="text-align: center;background-color: var(--color-light-gray);">
+                                <tr>
+                                    <th>單據編號</th>
+                                    <th>經辦人</th>
+                                    <th>出差日期</th>
+                                    <th>地點</th>
+                                    <th>出差人</th>
+                                    <th>同行人員</th>
+                                    <th>延後出差結束日</th>
+                                </tr>
+                            </thead>
+                            <tbody style="text-align: center;">
+                                <tr style="text-align: center;">
+                                    <td colspan="7">沒有出差申請單資料</td>
+                                </tr>
+                                <tr>
+                                    <th>單據編號</th>
+                                    <th>經辦人</th>
+                                    <th>出差日期</th>
+                                    <th>地點</th>
+                                    <th>出差人</th>
+                                    <th>同行人員</th>
+                                    <th>延後出差結束日</th>
+                                </tr>
+                                <tr>
+                                    <th>單據編號</th>
+                                    <th>經辦人</th>
+                                    <th>出差日期</th>
+                                    <th>地點</th>
+                                    <th>出差人</th>
+                                    <th>同行人員</th>
+                                    <th>延後出差結束日</th>
+                                </tr>
+                                <tr>
+                                    <th>單據編號</th>
+                                    <th>經辦人</th>
+                                    <th>出差日期</th>
+                                    <th>地點</th>
+                                    <th>出差人</th>
+                                    <th>同行人員</th>
+                                    <th>延後出差結束日</th>
+                                </tr>
+                                <tr>
+                                    <th>單據編號</th>
+                                    <th>經辦人</th>
+                                    <th>出差日期</th>
+                                    <th>地點</th>
+                                    <th>出差人</th>
+                                    <th>同行人員</th>
+                                    <th>延後出差結束日</th>
+                                </tr>
+                                <tr>
+                                    <th>單據編號</th>
+                                    <th>經辦人</th>
+                                    <th>出差日期</th>
+                                    <th>地點</th>
+                                    <th>出差人</th>
+                                    <th>同行人員</th>
+                                    <th>延後出差結束日</th>
+                                </tr>
+                                <tr>
+                                    <th>單據編號</th>
+                                    <th>經辦人</th>
+                                    <th>出差日期</th>
+                                    <th>地點</th>
+                                    <th>出差人</th>
+                                    <th>同行人員</th>
+                                    <th>延後出差結束日</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 班別日期 modal-->
+        <div class="modal fade" id="btnClassDateModal" tabindex="-1" aria-labelledby="btnClassDateModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="btnClassDateModalLabel">考勤記錄</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <section class="btnClassDateQuery">
+                            <div class="tci-field">
+                                <div class="tci-field-label">
+                                    <span class="tci-field-text text-left">員工資訊:</span>
+                                </div>
+                                <div class="tci-field-value" style="background-color:#efefef;">2206A0011-大江戰士-HEDY.TSENG(曾莞婷)
+                                </div>
+                            </div>
+                            <div class="tci-field date">
+                                <div class="tci-field-label">
+                                    <span class="tci-field-text text-left">班別日期:</span>
+                                </div>
+                                <div class="tci-field-value" style="background-color:#efefef;">2022/22/22</div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="darkBorderCard attendance">
+                                <div class="darkBorderCardTitle">
+                                    <span>考勤單據記錄</span>
+                                </div>
+                                <div class="darkBorderCardContent" style="text-align: center;margin-bottom: 1.5rem;">
+                                    <span class="">沒有考勤單據資料</span>
+                                </div>
+                            </div>
+                            <div class="darkBorderCard forgotPunch">
+                                <div class="darkBorderCardTitle">
+                                    <span>忘打卡補登記錄</span>
+                                </div>
+                                <div class="darkBorderCardContent" style="text-align: center;margin-bottom: 1.5rem;">
+                                    <span class="">沒有忘打卡補登記錄</span>
+                                </div>
+                            </div>
+                            <div class="darkBorderCard businessTrip">
+                                <div class="darkBorderCardTitle">
+                                    <span>出差申請單</span>
+                                </div>
+                                <div class="darkBorderCardContent">
+                                    <!-- 表格 -->
+                                    <div class="tableSrcoll">
+                                        <table class="tci-table tci-table-bordered">
+                                            <thead style="text-align: center;background-color: var(--color-light-gray);">
+                                                <tr>
+                                                    <th>單據編號</th>
+                                                    <th>經辦人</th>
+                                                    <th>出差日期</th>
+                                                    <th>地點</th>
+                                                    <th>出差人</th>
+                                                    <th>同行人員</th>
+                                                    <th>延後出差結束日</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody style="text-align: center;">
+                                                <tr style="text-align: center;">
+                                                    <td colspan="7">沒有出差申請單資料</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>單據編號</td>
+                                                    <td>hedy.tseng 曾莞婷</td>
+                                                    <td>2022/22/22</td>
+                                                    <td>台北市內湖區港前路</td>
+                                                    <td>hedy.tseng 曾莞婷</td>
+                                                    <td>hedy.tseng 曾莞婷</td>
+                                                    <td>2022/22/22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>單據編號</td>
+                                                    <td>經辦人</td>
+                                                    <td>出差日期</td>
+                                                    <td>地點</td>
+                                                    <td>出差人</td>
+                                                    <td>同行人員</td>
+                                                    <td>延後出差結束日</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>單據編號</td>
+                                                    <td>經辦人</td>
+                                                    <td>出差日期</td>
+                                                    <td>地點</td>
+                                                    <td>出差人</td>
+                                                    <td>同行人員</td>
+                                                    <td>延後出差結束日</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>單據編號</td>
+                                                    <td>經辦人</td>
+                                                    <td>出差日期</td>
+                                                    <td>地點</td>
+                                                    <td>出差人</td>
+                                                    <td>同行人員</td>
+                                                    <td>延後出差結束日</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>單據編號</td>
+                                                    <td>經辦人</td>
+                                                    <td>出差日期</td>
+                                                    <td>地點</td>
+                                                    <td>出差人</td>
+                                                    <td>同行人員</td>
+                                                    <td>延後出差結束日</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>單據編號</td>
+                                                    <td>經辦人</td>
+                                                    <td>出差日期</td>
+                                                    <td>地點</td>
+                                                    <td>出差人</td>
+                                                    <td>同行人員</td>
+                                                    <td>延後出差結束日</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="tci-btn bg_lightgray" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="tci-btn bg_darkgreen">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

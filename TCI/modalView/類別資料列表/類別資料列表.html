@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>類別資料列表</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_categoryDataList_modal">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>類別資料列表</b></span>
+        </div>
+        <button class="tci-btn bg_darkblue" data-bs-toggle="modal" data-bs-target="#cardSwipeModal">類別資料列表</button>
+        <section>
+            <!-- 表格 -->
+            <div class="tableSrcoll" style="overflow-y: auto;height:500px">
+                <table class="tci-table tci-table-bordered">
+                    <tbody>
+                        <tr>
+                            <th rowspan="9" style="width: 10%;background-color: rgb(255, 204, 51);text-align: center;">General affairs</th>
+                            <td colspan="2" style="background-color: rgb(255, 255, 204);">(1)印刷品、紙類：例如彩盒、貼紙、DM、紙箱、鋁袋等(SAP項目號碼以8P開頭者)。</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="16" style="width: 10%;background-color: #6ea54a;color: #fff;text-align: center;">固定資產</th>
+                            <td colspan="2" style="background-color: #add198;">土地</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: #add198;">機器</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: #add198;">運輸</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" style="background-color: #add198;">生財</td>
+                            <td style="background-color: #d2eedc;">a.辦公室</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #d2eedc;">b.辦公室</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #d2eedc;">c.辦公室</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #d2eedc;">d.辦公室</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"  style="background-color: #add198;">裝潢設備</td>
+                            <td style="background-color: #d2eedc;">a.裝潢設備</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #d2eedc;">b.裝潢設計費用</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: #add198;">磨具設備</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="background-color: #add198;">五星資產</td>
+                        </tr>
+                        <tr>
+                            <td  rowspan="4" style="background-color: #add198;">未攤銷費用</td>
+                            <td style="background-color: #d2eedc;">a.電腦軟體承保</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #d2eedc;">b.磨具設計費用</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #d2eedc;">c.辦公室</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #d2eedc;">d.辦公室</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- 班別日期 modal-->
+        <div class="modal fade" id="cardSwipeModal" tabindex="-1" aria-labelledby="cardSwipeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cardSwipeModalLabel">類別資料列表</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <section>
+                            <!-- 表格 -->
+                            <div class="tableSrcoll" style="overflow-y: auto;height:500px">
+                                <table class="tci-table tci-table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th rowspan="9" style="width: 10%;background-color: rgb(255, 204, 51);text-align: center;">General affairs</th>
+                                            <td colspan="2" style="background-color: rgb(255, 255, 204);">(1)印刷品、紙類：例如彩盒、貼紙、DM、紙箱、鋁袋等(SAP項目號碼以8P開頭者)。</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: rgb(255, 255, 204);">印刷品</td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="16" style="width: 10%;background-color: #6ea54a;color: #fff;text-align: center;">固定資產</th>
+                                            <td colspan="2" style="background-color: #add198;">土地</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: #add198;">機器</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: #add198;">運輸</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4" style="background-color: #add198;">生財</td>
+                                            <td style="background-color: #d2eedc;">a.辦公室</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #d2eedc;">b.資訊設備：電腦主機、液晶螢幕、筆記型電腦、印表機、影印機、電話等。</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #d2eedc;">c.辦公室</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #d2eedc;">d.辦公室</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2"  style="background-color: #add198;">裝潢設備</td>
+                                            <td style="background-color: #d2eedc;">a.裝潢設備</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #d2eedc;">b.裝潢設計費用</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: #add198;">磨具設備</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="background-color: #add198;">五星資產</td>
+                                        </tr>
+                                        <tr>
+                                            <td  rowspan="4" style="background-color: #add198;">未攤銷費用</td>
+                                            <td style="background-color: #d2eedc;">a.電腦軟體承保</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #d2eedc;">b.磨具設計費用</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #d2eedc;">c.辦公室</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #d2eedc;">d.辦公室</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="tci-btn bg_lightgray" data-bs-dismiss="modal">關閉</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

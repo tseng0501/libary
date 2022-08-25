@@ -1,0 +1,71 @@
+//簽核
+#accordionFlush {
+  .accordion-item{
+    margin-bottom: 1rem;
+  }
+    .accordion-button {
+        background-color: var(--color-dark-khaki);
+        color: var(--color-snow);
+        border-radius: 0.25rem;
+        text-align: center;
+        display: block;
+        font-weight: bold;
+        font-size: var(--font-size-lg);
+    }
+
+    .accordion-collapse {
+        border: 2px solid var(--color-dark-khaki);
+        border-radius: var(--borderRadius);
+        padding: 5px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-bottom: 1rem;
+    }
+    .accordion-body{
+        padding: 5px;
+    }
+}
+// 簽核流程
+.processBoxContent {
+
+    i {
+        transform: rotate(90deg);
+    }
+}
+@media (min-width: 768px) {
+    
+    //留言
+    .messageBoxContent {
+        display: flex;
+        justify-content: center;
+    }
+
+    // 簽核流程
+    .processBoxContent {
+        display: flex;
+        flex-wrap: wrap;
+
+        i {
+            transform: rotate(0deg);
+        }
+
+        .tci-card {
+            min-width: 150px;
+        }
+    }
+
+    //簽核意見
+    .descriptionBoxContent {
+        display: flex;
+        justify-content: center;
+
+        .descriptionBox_icon {
+            display: flex;
+            justify-content: center;
+
+            .check {
+                margin: 0 1.5rem;
+            }
+        }
+    }
+}

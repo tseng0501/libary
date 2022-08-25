@@ -77,7 +77,7 @@
     }
 }
 
-@media (min-width:765px) {
+@media (min-width:768px) {
     #page_generalInvoice {
         .details {
             input {
@@ -164,7 +164,7 @@
                     margin-right: 10px;
 
                     &.data_short {
-                        width: 16%;
+                        width: 15%;
                     }
                 }
             }
@@ -205,12 +205,12 @@
         overflow-x: auto;
         margin-bottom: 2rem;
         .tableContent{
-            width: 765px;
+            width: 768px;
         }
     }
 }
 
-@media (min-width:765px) {
+@media (min-width:768px) {
     #page_generalInvoice_signoff{
         .tableScroll{
             .tableContent{

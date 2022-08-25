@@ -3,7 +3,7 @@
   margin-top: 0.5rem;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_changeRequest .changeRequestQuery .tci-input-group.bom button {
     width: auto;
     margin-top: 0;

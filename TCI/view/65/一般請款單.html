@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../scss/tci-all.css">
@@ -32,19 +32,19 @@
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">公司:</span>
                     </div>
-                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" disabled />
+                    <input type="text" class="tci-form-control gray" value="大江生醫股份有限公司" disabled />
                 </div>
                 <div class="tci-input-group tci-mb-2">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">文件日期:</span>
                     </div>
-                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" disabled />
+                    <input type="text" class="tci-form-control gray" value="大江生醫股份有限公司" disabled />
                 </div>
                 <div class="tci-input-group tci-mb-2">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">部門別<b class="tag">*</b>:</span>
                     </div>
-                    <input type="text" class="tci-form-control" disabled />
+                    <input type="text" class="tci-form-control gray" disabled />
                     <button class="tci-btn-icon bg_darkblue" style="width: 40px;"><i
                             class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
@@ -70,45 +70,259 @@
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <span class="tci-input-group-text" style="margin: 0 1rem;">匯率</span>
-                        <input type="text" class="tci-form-control" value="大江生醫股份有限公司" disabled />
+                        <div class="tci-input-group-prepend" style="width: auto;">
+                            <!-- <span class="tci-input-group-text">幣別<b class="tag">*</b>:</span> -->
+                            <span class="tci-input-group-text" style="margin: 0 1rem;">匯率</span>
+                        </div>
+                        <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
                     </div>
                 </div>
                 <div class="tci-input-group tci-mb-2">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">請款金額(NTD):</span>
                     </div>
-                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" disabled />
+                    <input type="text" class="tci-form-control gray" value="大江生醫股份有限公司" disabled />
                 </div>
                 <div class="tci-input-group tci-mb-2">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">請款金額(NTD):</span>
                     </div>
-                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" disabled />
+                    <input type="text" class="tci-form-control gray" value="大江生醫股份有限公司" disabled />
                 </div>
                 <div class="tci-input-group tci-mb-2">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">稅額(NTD):</span>
                     </div>
-                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" disabled />
+                    <input type="text" class="tci-form-control gray" value="大江生醫股份有限公司" disabled />
                 </div>
                 <div class="tci-input-group tci-mb-2 data_short">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">過帳日期:</span>
                     </div>
-                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" disabled />
+                    <input type="text" class="tci-form-control gray" value="大江生醫股份有限公司" disabled />
                 </div>
                 <div class="tci-input-group tci-mb-2 data_short">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">付款方式<b class="tag">*</b>:</span>
                     </div>
                     <select class="tci-bs-custom-select">
-                        <option selected>Choose...</option>
-                        <option value="1">One</option>
+                        <option selected>支票</option>
+                        <option value="1">領現</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
                 </div>
+                <!-- 支票 -->
+                <!-- <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">抬頭<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control gray" disabled />
+                    <button class="tci-btn-icon bg_darkblue" style="width: 40px;"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">支票兌現日<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">回郵:</span>
+                    </div>
+                    <div>
+                        <div class="tci-form-check tci-form-check-inline">
+                            <input class="tci-form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="tci-form-check-label" for="exampleRadios1">
+                              有
+                            </label>
+                          </div>
+                          <div class="tci-form-check tci-form-check-inline">
+                            <input class="tci-form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="tci-form-check-label" for="exampleRadios2">
+                              無
+                            </label>
+                          </div>
+                    </div>
+                </div> -->
+                <!-- 領現 -->
+                <!-- <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">領款人<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control gray" disabled />
+                    <button class="tci-btn-icon bg_darkblue" style="width: 40px;"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">付款條件:</span>
+                    </div>
+                    <input type="text" class="tci-form-control gray" value="开票后15天付款" disabled />
+                </div> -->
+                <!-- 公司 -->
+                <!-- <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">匯入公司<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control gray" disabled />
+                    <button class="tci-btn-icon bg_darkblue" style="width: 40px;"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">經辦指定付款日<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">帳戶<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">付款條件:</span>
+                    </div>
+                    <input type="text" class="tci-form-control gray" value="大江生醫股份有限公司" />
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">匯入銀行:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div> -->
+                <!-- 公司卡 -->
+                <!-- <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">卡別<b class="tag">*</b>:</span>
+                    </div>
+                    <select class="tci-bs-custom-select">
+                        <option selected>支票</option>
+                        <option value="1">領現</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">簽字人<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">簽帳日期<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div> -->
+                <!-- 員工 -->
+                <!-- <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">領款人<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control gray" disabled />
+                    <button class="tci-btn-icon bg_darkblue" style="width: 40px;"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">付款條件:</span>
+                    </div>
+                    <input type="text" class="tci-form-control gray" value="大江生醫股份有限公司" />
+                </div> -->
+
+                <!-- 臨櫃繳款 -->
+                <!-- <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">抬頭<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control gray" disabled />
+                    <button class="tci-btn-icon bg_darkblue" style="width: 40px;"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">經辦指定付款日:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div> -->
+
+
+                <!-- 非員工個人 -->
+                <!-- <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">帳戶名稱<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control gray" disabled />
+                    <button class="tci-btn-icon bg_darkblue" style="width: 40px;"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">經辦指定付款日:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">帳戶:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div> -->
+
+                <!-- AE卡 -->
+                <!-- <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">卡號<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">簽字人<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">簽帳日期<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div> -->
+
+                <!-- 自動扣款 -->
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">抬頭<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control gray" disabled />
+                    <button class="tci-btn-icon bg_darkblue" style="width: 40px;"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">扣款日期<b class="tag">*</b>:</span>
+                    </div>
+                    <input type="text" class="tci-form-control" value="大江生醫股份有限公司" />
+                </div>
+
+                 <!-- 信用狀 -->
+                 <div class="tci-input-group tci-mb-2">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text">付款條件:</span>
+                    </div>
+                    <select class="tci-bs-custom-select">
+                        <option selected>支票</option>
+                        <option value="1">領現</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <!-- /////////// -->
                 <div class="tci-input-group tci-mb-2 mark">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text">請款備註:</span>
@@ -285,23 +499,24 @@
                                 <div class="tci-input-group-prepend">
                                     <span class="tci-input-group-text">請款類型:</span>
                                 </div>
-                                <div style="display: flex;width:100%" >
+                                <div style="display: flex;width:100%">
                                     <select class="tci-bs-custom-select">
                                         <option selected>悠遊(聯名卡)</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
-                                    <button class="tci-icon bg_darkblue" style="width:40px"><i class="fa-solid fa-circle-question"></i></button>
+                                    <button class="tci-icon bg_darkblue" style="width:40px"><i
+                                            class="fa-solid fa-circle-question"></i></button>
                                     <span class="tci-input-group-text">起</span>
-                                     <select class="tci-bs-custom-select" style="width: 100px;">
+                                    <select class="tci-bs-custom-select" style="width: 100px;">
                                         <option selected>台北</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
                                     <span class="tci-input-group-text">迄</span>
-                                     <select class="tci-bs-custom-select" style="width: 100px;">
+                                    <select class="tci-bs-custom-select" style="width: 100px;">
                                         <option selected>台北</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -325,15 +540,16 @@
                                 <div class="tci-input-group-prepend">
                                     <span class="tci-input-group-text">歸屬人:</span>
                                 </div>
-                                <input type="text" class="tci-form-control gray" value="1234567890" disabled/>
-                                <button class="tci-icon bg_darkblue" style="width:40px"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <input type="text" class="tci-form-control gray" value="1234567890" disabled />
+                                <button class="tci-icon bg_darkblue" style="width:40px"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
 
                             </div>
                             <div class="tci-input-group tci-mb-2">
                                 <div class="tci-input-group-prepend">
                                     <span class="tci-input-group-text">成本中心:</span>
                                 </div>
-                                <input type="text" class="tci-form-control gray" value="1234567890" disabled/>
+                                <input type="text" class="tci-form-control gray" value="1234567890" disabled />
                             </div>
                             <div class="tci-input-group tci-mb-2">
                                 <div class="tci-input-group-prepend">
@@ -494,8 +710,9 @@
         </div>
     </div>
     <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
 <!-- hedy 1. 請採單明細：不清楚舊表格內容是怎樣的，所以大概畫
 2. 有三個 modal 沒做 -->

@@ -31,7 +31,7 @@
   flex-wrap: nowrap;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_leaveForm .form .form-group .tci-field {
     flex-wrap: wrap;
   }

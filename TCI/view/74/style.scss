@@ -5,7 +5,7 @@
     }
 }
 
-@media (min-width:765px) {
+@media (min-width:768px) {
     #page_workOrder{
         .tci-input-group-prepend{
             width: 30%;
@@ -21,7 +21,7 @@
 
         overflow-x: auto;
         .tableContent{
-            width:765px;
+            width:768px;
         }
     }
 }
@@ -29,11 +29,11 @@
     .print_table{
         overflow-x: auto;
         .tableContent{
-            width:765px;
+            width:768px;
         }
     }
 }
-@media (min-width:765px) {
+@media (min-width:768px) {
     #page_workOrder_signoff{
         .tableScroll{
             .tableContent{

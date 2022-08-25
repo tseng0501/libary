@@ -1,0 +1,135 @@
+#page_signOffContent .pageHeader {
+  position: relative;
+}
+#page_signOffContent .pageHeader .dropdownContent {
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  top: 0;
+}
+#page_signOffContent .pageHeader .dropdownContent #dropdownbtn {
+  background-color: var(--color-light-gray);
+  padding: 4px;
+  color: var(--color-dark-green);
+  font-weight: bold;
+}
+
+.tableScroll {
+  overflow-x: auto;
+}
+.tableScroll .tci-table {
+  width: 768px;
+}
+
+.detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_title {
+  background-color: #ddd;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  border-radius: var(--borderRadius);
+}
+.detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field .tci-field-label {
+  width: 45%;
+}
+.detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field .tci-field-value {
+  width: 45%;
+}
+
+.formFlow .formFlowGrid {
+  border: 1px solid #ddd;
+  background-color: antiquewhite;
+  padding: 5px;
+  border-radius: 0.25rem;
+}
+.formFlow .items {
+  list-style-type: none;
+  margin: 1px;
+  padding: 1px;
+}
+.formFlow .signflow .sortable li {
+  margin: 2px;
+  padding: 2px;
+  border-radius: 3px;
+  display: inline-block;
+  clear: both;
+}
+.formFlow .signflow .sortable .list {
+  background-color: lightblue;
+  border: 1px solid gray;
+  cursor: no-drop;
+}
+.formFlow .signflow .sortable .list3 {
+  background-color: lightgray;
+  border: 1px solid gray;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: no-drop;
+}
+
+@media (min-width: 768px) {
+  .messageBoxContent {
+    display: flex;
+    justify-content: center;
+  }
+  .descriptionBoxContent {
+    display: flex;
+    justify-content: center;
+  }
+  .descriptionBoxContent .descriptionBox_icon {
+    display: flex;
+    justify-content: center;
+  }
+  .descriptionBoxContent .descriptionBox_icon .check {
+    margin: 0 1.5rem;
+  }
+  .tableScroll {
+    overflow-x: auto;
+  }
+  .tableScroll .tci-table {
+    width: 100%;
+  }
+  .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field {
+    width: 32%;
+    justify-content: space-between;
+  }
+  .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field .tci-field-label {
+    width: 52%;
+  }
+  .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field .tci-field-value {
+    width: 48%;
+  }
+  .work_process {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .work_process .tci-card {
+    margin-right: 0.5rem;
+    min-width: 155px;
+  }
+  .work_process_circuit {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 992px) {
+  .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field {
+    width: 24%;
+  }
+  .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field .tci-field-label {
+    width: 52%;
+  }
+  .detailsBoxAccumulated .detailsBoxholiday .detailsBoxholiday_content .tci-field .tci-field-value {
+    width: 48%;
+  }
+}

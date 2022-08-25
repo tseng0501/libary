@@ -19,7 +19,7 @@
   padding: 0.5rem;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_requestForLineCredit .tableScroll {
     overflow-x: auto;
   }
@@ -72,7 +72,7 @@
   width: 900px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_requestForLineCredit_signoff .tableContent .tableContent {
     width: 100%;
   }

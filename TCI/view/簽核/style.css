@@ -70,7 +70,7 @@
   cursor: no-drop;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_documentContent .messageBox .messageBoxContent {
     display: flex;
     justify-content: center;

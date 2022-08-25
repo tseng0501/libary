@@ -9,7 +9,7 @@
   width: 900px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_inventoryTransfer .tableScroll {
     overflow-x: auto;
   }
@@ -50,7 +50,7 @@
   width: 900px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_inventoryTransfer_signoff .tableScroll0 table {
     width: 100%;
   }

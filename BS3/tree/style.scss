@@ -1,0 +1,125 @@
+ul {
+    margin: 0px 0px 0px 5px;
+    list-style: none;
+    line-height: 2em;
+    font-family: Arial;
+
+    li {
+        font-size: 16px;
+        position: relative;
+        white-space: nowrap;
+        line-height: 4rem;
+
+        .current {
+            background-color: var(--color-orgin);
+            color: var(--color-snow);
+        }
+    }
+}
+
+.panel_container {
+    margin-bottom: 2rem;
+
+    .tree_container {
+        width: 100%;
+        background-color: #f2f2f3;
+        border-radius: .5rem;
+        height: 750px;
+        overflow-y: auto;
+
+        .tree_content {
+            overflow-x: auto;
+
+            .tci-btn {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .box_container {
+        width: 100%;
+        height: 750px;
+        overflow-y: auto;
+
+        .btnGroup {
+            display: flex;
+        }
+
+        .box_content {
+            width: 100%;
+            margin-bottom: 1rem;
+
+            .box_title {
+                padding: 0.75rem;
+                text-align: center;
+                background-color: #f2f2f3;
+                margin-bottom: 1rem;
+                font-weight: 700;
+            }
+
+            .box_text_name {
+                text-align: center;
+                font-weight: 700;
+
+            }
+
+            .box_text {
+                min-height: 80px;
+
+                label {
+                    border-radius: 1.4rem;
+                    padding: 0.5rem 0.75rem;
+                    border: 1px solid #a8a8a9;
+                    color: #2a2a2a;
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+
+                p {
+                    padding: 0.5rem;
+                    border-radius: .5rem;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+#edit_data {
+    .modal_box_content {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+}
+
+.modal-backdrop {
+    opacity: .8;
+}
+
+.panel-heading {
+    background-color: #f2f2f3;
+}
+
+.panel-gray {
+    border-color: #f2f2f3;
+}
+
+@media screen and (min-width: 765px) {
+    .panel_container {
+        display: flex;
+        justify-content: space-between;
+
+        .tree_container {
+            width: 58%;
+        }
+
+        .box_container {
+            width: 40%;
+
+            .box_content {
+                width: 100%;
+            }
+        }
+    }
+}

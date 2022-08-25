@@ -16,7 +16,7 @@
     }
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
     #page_light {
         .query {
             display: flex;
@@ -116,7 +116,7 @@
 
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
     #page_dataFlow {
         .cardContent {
             .tci-card {
@@ -260,7 +260,7 @@
     }
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
     #page_steps {
         .steps li {
             width: 195px; //280
@@ -286,8 +286,6 @@
 //page_test3
 
 #page_test3 {
-    margin: 2rem auto;
-
     .content {
         overflow-x: auto;
 

@@ -38,7 +38,7 @@
   display: flex;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_advancedPayment .advancedPaymentData .advancedPaymentData_content {
     display: flex;
     flex-wrap: wrap;

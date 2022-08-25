@@ -43,7 +43,7 @@
   background-color: var(--color-whitesmoke);
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_overtimeApplication .overtimeApplicationQuery .date {
     justify-content: space-between;
   }

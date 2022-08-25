@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_purchaseOrder .tableScroll {
     overflow-x: auto;
   }
@@ -26,17 +26,17 @@
   overflow-x: auto;
 }
 #page_purchaseOrder_signoff .tableScroll .tableContent {
-  width: 765px;
+  width: 768px;
 }
 
 #page_purchaseOrder_print .tableScroll {
   overflow-x: auto;
 }
 #page_purchaseOrder_print .tableScroll .tableAuto {
-  width: 765px;
+  width: 768px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_purchaseOrder_signoff .tableScroll .tableContent {
     width: 100%;
   }

@@ -1,0 +1,46 @@
+.modal {
+    .query {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .tci-field {
+            width: 49%;
+
+            &.long {
+                width: 100%;
+                justify-content: space-between;
+                .tci-field-label {
+                    width: 25%;
+                }
+
+                .tci-field-value {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (min-width:768px) {
+    .modal {
+        .query {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-field {
+                width: 49%;
+
+                &.long {
+                    .tci-field-label {
+                        width: 15%;
+                    }
+
+                    .tci-field-value {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="./tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>下拉</title>
+
+</head>
+
+<body>
+
+    <!-- <div class="container"> -->
+    <!-- <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu" style="padding: 5px;">
+
+            <li>
+                <div class="checkbox">
+                    <label><input type="checkbox" style="width:20px;height: 20px;margin: 0;margin-left: -20px;"><span
+                            style="margin:5px">Remember</span></label>
+                </div>
+            </li>
+            <li>
+                <div class="checkbox">
+                    <label><input type="checkbox" style="width:20px;height: 20px;margin: 0;margin-left: -20px;"><span
+                            style="margin:5px">Remember</span></label>
+                </div>
+            </li>
+        </ul>
+    </div> -->
+    <!-- </div> -->
+
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">新增物料群組</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">新增物料群組</h4>
+                </div> 
+                <div class="modal-body">
+                    <div class="query">
+                        <div class="tci-field long">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">群組名稱:</span>
+                            </div>
+                            <input type="text" class="tci-field-value"/>
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">劑型:</span>
+                            </div>
+                            <select class="tci-field-value">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">料號:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">中文名:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">英文名:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">工廠:</span>
+                            </div>
+                            <div class="dropdown">
+                                <button class="tci-btn bg_darkblue dropdown-toggle" type="button" data-toggle="dropdown">工廠
+                                    <span class="caret"></span></button>
+                                <ul class="dropdown-menu" style="padding: 5px;">
+                                    <li>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" style="width:20px;height: 20px;margin: 0;margin-left: -20px;"><span
+                                                    style="margin:5px">Remember</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" style="width:20px;height: 20px;margin: 0;margin-left: -20px;"><span
+                                                    style="margin:5px">Remember</span></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">銷售國家:</span>
+                            </div>
+                            <div class="dropdown">
+                                <button class="tci-btn bg_darkblue dropdown-toggle" type="button" data-toggle="dropdown">銷售國家
+                                    <span class="caret"></span></button>
+                                <ul class="dropdown-menu" style="padding: 5px;">
+                                    <li>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" style="width:20px;height: 20px;margin: 0;margin-left: -20px;"><span
+                                                    style="margin:5px">Remember</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" style="width:20px;height: 20px;margin: 0;margin-left: -20px;"><span
+                                                    style="margin:5px">Remember</span></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tci-field long">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">複製群組:</span>
+                            </div>
+                            <select class="tci-field-value">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn bg_lightgray" data-dismiss="modal">關閉</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#edit_materials_table_model">編輯物料群組</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="edit_materials_table_model" role="dialog" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">編輯物料群組</h4>
+                </div> 
+                <div class="modal-body">
+                    <div class="query">
+                        <div class="tci-field long">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">群組名稱:</span>
+                            </div>
+                            <input type="text" class="tci-field-value"/>
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">料號:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">中文名:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">英文名:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">銷售國家:</span>
+                            </div>
+                            <select class="tci-field-value">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="tci-field long">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">複製群組:</span>
+                            </div>
+                            <div class="valueBtn" style="width: 85%;display: flex;">
+                                <select class="tci-field-value" style="width: 87%;">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <button class="tci-btn bg_darkgreen">確定</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnGroups" style="width: 100%;">
+                        <button class="tci-btn bg_darkblue" style="width: 100%;">搜尋</button>
+                    </div>
+                    <hr>
+                    <section>
+                        <div class="tableScroll" style="overflow-y: auto;height: 150px;">
+                            <table class="tci-table tci-table-bordered">
+                                <thead style="text-align: center;background-color: var(--color-light-gray);">
+                                    <tr>
+                                        <th scope="col">料號</th>
+                                        <th scope="col">品名</th>
+                                        <th scope="col">英文品名</th>
+                                        <th scope="col">工廠</th>
+                                        <th scope="col">規格</th>
+                                        <th scope="col">數量</th>
+                                        <th scope="col">單價</th>
+                                        <th scope="col">單位</th>
+                                        <th scope="col">幣別</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody style="text-align: center;">
+                                    <tr>
+                                        <td>22222254</td>
+                                        <td>皮萃取液萃取液</td>
+                                        <td>solal buckwehts chess ehsll</td>
+                                        <td>大江生醫</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>0.88</td>
+                                        <td>G</td>
+                                        <td>TWD</td>
+                                        <td><button class="tci-icon bg_darkgreen"><i class="fa fa-plus" aria-hidden="true"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22222254</td>
+                                        <td>皮萃取液萃取液</td>
+                                        <td>solal buckwehts chess ehsll</td>
+                                        <td>大江生醫</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>0.88</td>
+                                        <td>G</td>
+                                        <td>TWD</td>
+                                        <td><button class="tci-icon bg_darkgreen"><i class="fa fa-plus" aria-hidden="true"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22222254</td>
+                                        <td>皮萃取液萃取液</td>
+                                        <td>solal buckwehts chess ehsll</td>
+                                        <td>大江生醫</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>0.88</td>
+                                        <td>G</td>
+                                        <td>TWD</td>
+                                        <td><button class="tci-icon bg_darkgreen"><i class="fa fa-plus" aria-hidden="true"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22222254</td>
+                                        <td>皮萃取液萃取液</td>
+                                        <td>solal buckwehts chess ehsll</td>
+                                        <td>大江生醫</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>0.88</td>
+                                        <td>G</td>
+                                        <td>TWD</td>
+                                        <td><button class="tci-icon bg_darkgreen"><i class="fa fa-plus" aria-hidden="true"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr>
+                        <div class="tableScroll"style="overflow-y: auto;height: 150px;">
+                            <table class="tci-table tci-table-bordered">
+                                <thead style="text-align: center;background-color: var(--color-light-gray);">
+                                    <tr>
+                                        <th scope="col">料號</th>
+                                        <th scope="col">品名</th>
+                                        <th scope="col">英文品名</th>
+                                        <th scope="col">工廠</th>
+                                        <th scope="col">規格</th>
+                                        <th scope="col">數量</th>
+                                        <th scope="col">單價</th>
+                                        <th scope="col">單位</th>
+                                        <th scope="col">幣別</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody style="text-align: center;">
+                                    <tr>
+                                        <td>22222254</td>
+                                        <td>皮萃取液萃取液</td>
+                                        <td>solal buckwehts chess ehsll</td>
+                                        <td>大江生醫</td>
+                                        <td>2</td>
+                                        <td><input type="text" style="width: 60px;border: 1px solid var(--border-color);padding: 3px;
+                                            border-radius: var(--borderRadius);"></td>
+                                        <td>0.88</td>
+                                        <td>G</td>
+                                        <td>TWD</td>
+                                        <td><button class="tci-icon bg_darkred"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22222254</td>
+                                        <td>皮萃取液萃取液</td>
+                                        <td>solal buckwehts chess ehsll</td>
+                                        <td>大江生醫</td>
+                                        <td>2</td>
+                                        <td><input type="text" style="width: 60px;border: 1px solid var(--border-color);padding: 3px;
+                                            border-radius: var(--borderRadius);"></td>
+                                        <td>0.88</td>
+                                        <td>G</td>
+                                        <td>TWD</td>
+                                        <td><button class="tci-icon bg_darkred"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22222254</td>
+                                        <td>皮萃取液萃取液</td>
+                                        <td>solal buckwehts chess ehsll</td>
+                                        <td>大江生醫</td>
+                                        <td>2</td>
+                                        <td><input type="text" style="width: 60px;border: 1px solid var(--border-color);padding: 3px;
+                                            border-radius: var(--borderRadius);"></td>
+                                        <td>0.88</td>
+                                        <td>G</td>
+                                        <td>TWD</td>
+                                        <td><button class="tci-icon bg_darkred"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22222254</td>
+                                        <td>皮萃取液萃取液</td>
+                                        <td>solal buckwehts chess ehsll</td>
+                                        <td>大江生醫</td>
+                                        <td>2</td>
+                                        <td><input type="text" style="width: 60px;border: 1px solid var(--border-color);padding: 3px;
+                                            border-radius: var(--borderRadius);"></td>
+                                        <td>0.88</td>
+                                        <td>G</td>
+                                        <td>TWD</td>
+                                        <td><button class="tci-icon bg_darkred"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22222254</td>
+                                        <td>皮萃取液萃取液</td>
+                                        <td>solal buckwehts chess ehsll</td>
+                                        <td>大江生醫</td>
+                                        <td>2</td>
+                                        <td><input type="text" style="width: 60px;border: 1px solid var(--border-color);padding: 3px;
+                                            border-radius: var(--borderRadius);"></td>
+                                        <td>0.88</td>
+                                        <td>G</td>
+                                        <td>TWD</td>
+                                        <td><button class="tci-icon bg_darkred"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>22222254</td>
+                                        <td>皮萃取液萃取液</td>
+                                        <td>solal buckwehts chess ehsll</td>
+                                        <td>大江生醫</td>
+                                        <td>2</td>
+                                        <td><input type="text" style="width: 60px;border: 1px solid var(--border-color);padding: 3px;
+                                            border-radius: var(--borderRadius);"></td>
+                                        <td>0.88</td>
+                                        <td>G</td>
+                                        <td>TWD</td>
+                                        <td><button class="tci-icon bg_darkred"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn bg_lightgray" data-dismiss="modal">關閉</button>
+                    <button type="button" class="tci-btn bg_darkgreen">儲存</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

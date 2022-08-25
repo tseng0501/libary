@@ -187,7 +187,7 @@ body {
   border-bottom: 3px double;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   body {
     font-size: var(--font-size-md);
   }
@@ -845,7 +845,7 @@ body {
   background-color: var(--color-whitesmoke);
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   .tci-field-label {
     width: 30%;
   }

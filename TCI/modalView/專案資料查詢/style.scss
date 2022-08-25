@@ -1,0 +1,58 @@
+#page_projectInformation_modal {
+    .projectInformationQuery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .tci-field {
+            width: 100%;
+            justify-content: space-between;
+
+            .tci-field-label {
+                width: auto;
+            }
+
+            &.long {
+                width: 100%;
+            }
+        }
+    }
+
+    .tableScoll {
+        overflow-x: auto;
+        overflow-y: auto;
+        height: 60vh;
+
+        .tci-table {
+            width: 992px;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    #page_projectInformation_modal {
+        .projectInformationQuery {
+            justify-content: flex-end;
+
+            .tci-field {
+                width: auto;
+                justify-content: flex-start;
+                margin-right: 5px;
+
+                &.long {
+                    width: auto;
+
+                    .tci-field-value {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+
+        .tableScoll {
+            .tci-table {
+                width: 100%;
+            }
+        }
+    }
+}

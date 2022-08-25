@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_salesReturnNotice .salesReturnNoticeQuery .tci-field .tci-field-value {
     width: 100%;
   }
@@ -21,7 +21,7 @@
   width: 900px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_salesReturnNotice_signoff .tableScroll0 .tableContent {
     width: 100%;
   }

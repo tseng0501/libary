@@ -1,4 +1,4 @@
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_tryApplication .form_item {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +15,7 @@
   width: 992px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_tryApplication_signoff .tableScroll .tci-table {
     width: 100%;
   }

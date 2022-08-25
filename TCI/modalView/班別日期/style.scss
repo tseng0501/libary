@@ -1,0 +1,32 @@
+#page_btnClassDate_modal {
+    .tableSrcoll{
+        overflow-y: auto;
+        height: 200px;
+    }
+}
+
+@media (min-width:768px) {
+    #page_btnClassDate_modal {
+        .btnClassDateQuery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-field {
+                width: 68%;
+
+                &.date {
+                    width: 30%;
+                }
+
+                .tci-field-label {
+                    width: 30%;
+                }
+
+                .tci-field-value {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@
   width: 990px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_coinRequest .coinList .tableScroll {
     overflow-x: auto;
   }
@@ -23,17 +23,17 @@
   overflow-x: auto;
 }
 #page_coinRequest_signoff .tableScroll .tableContent {
-  width: 765px;
+  width: 768px;
 }
 
 #page_coinRequest_print .print_table {
   overflow-x: auto;
 }
 #page_coinRequest_print .print_table .tableContent {
-  width: 765px;
+  width: 768px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_coinRequest_signoff .tableScroll .tableContent {
     width: 100%;
   }

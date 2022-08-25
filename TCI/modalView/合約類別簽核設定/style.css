@@ -1,0 +1,31 @@
+#page_contractType_modal .contractTypeQuery .add .tci-valueBtn {
+  width: 100%;
+}
+#page_contractType_modal .contractTypeQuery .add .tci-valueBtn .tci-field-value {
+  width: 100%;
+}
+#page_contractType_modal .contractTypeQuery .tci-input-group {
+  margin-bottom: 0.5rem;
+}
+#page_contractType_modal .contractTypeQuery .tci-input-group .tci-form-control.gray {
+  background-color: var(--color-whitesmoke);
+}
+
+@media (min-width: 768px) {
+  #page_contractType_modal .contractTypeQuery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_contractType_modal .contractTypeQuery .add {
+    width: 100%;
+  }
+  #page_contractType_modal .contractTypeQuery .add .tci-valueBtn {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #page_contractType_modal .contractTypeQuery .tci-input-group {
+    width: 48%;
+  }
+}

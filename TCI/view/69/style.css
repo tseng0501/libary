@@ -51,7 +51,7 @@
   padding: 5px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_goodsReceipt .goodsReceiptQuery {
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +130,7 @@
   width: 900px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_goodsReceipt_signoff .tableScroll0 .tableContent {
     width: 100%;
   }

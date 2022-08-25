@@ -25,7 +25,7 @@
         overflow-x: auto;
 
         .tci-table {
-            width: 765px;
+            width: 768px;
         }
     }
 
@@ -39,6 +39,7 @@
             }
         }
     }
+ 
 }
 
 .modal {
@@ -59,9 +60,16 @@
         border: 1px solid #2a2a2a;
         width: auto;
     }
+   
+      .modal_flex{
+        .modal_flex_right{
+            background-color: var(--color-light-gray);
+            border-radius: var(--borderRadius);
+        }
+      }
 }
 
-@media (min-width:765px) {
+@media (min-width:768px) {
     #page_invoice {
         .tableContent {
             .tableScroll {
@@ -90,6 +98,26 @@
 
             .tci-table {
                 width: 100%;
+            }
+        }
+    }
+    .modal{
+        #lineRight::after {
+            content: "";
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            margin: auto 1rem;
+            background: #F0F0F0;
+          }
+        .modal_flex{
+            display: flex;justify-content: space-between;
+            .modal_flex_left{
+                width: 60%;
+            }
+            .modal_flex_right{
+                width:35%;
             }
         }
     }

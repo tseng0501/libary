@@ -5,7 +5,7 @@
   width: 100%;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field {
     flex-wrap: nowrap;
   }

@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_acceptanceForm .acceptanceFormQuery .tci-field {
     flex-wrap: nowrap;
   }
@@ -48,7 +48,7 @@
   width: 992px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_acceptanceForm_signoff .next_signer {
     margin: 0.5rem 0;
     display: flex;

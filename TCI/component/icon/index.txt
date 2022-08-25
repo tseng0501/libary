@@ -27,3 +27,7 @@
 <i class="fa-solid fa-outdent"></i> 全部展開
 <i class="fa-solid fa-indent"></i> 全部收合
 <i class="fa-solid fa-circle-exclamation"></i>  圓圈裡面的有！
+<i class="fa-solid fa-backward-step"></i>
+<i class="fa-solid fa-caret-left"></i>
+<i class="fa-solid fa-caret-right"></i>
+<i class="fa-solid fa-forward-step"></i>

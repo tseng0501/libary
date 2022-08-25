@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>留言</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_signOffContent">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>留言</b></span>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlush">
+            <!-- 留言 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="messageBox">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-messageBox" aria-expanded="true"
+                        aria-controls="panelsStayOpen-messageBox">
+                        <span>留言</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-messageBox" class="accordion-collapse collapse show"
+                    aria-labelledby="messageBox">
+                    <div class="accordion-body messageBoxContent">
+                        <div class="messagebtn_message tci-mt-3 message" style="text-align: center;
+                        display: flex;
+                        padding: 5px;
+                        margin: 0 1rem;
+                        border-radius: var(--borderRadius);">
+                            <button type="button" class="tci-btn tci-btn-orgin" data-bs-toggle="modal"
+                                data-bs-target="#messageBoxModal">
+                                留言</button>
+                            <ul class="tci-mt-3" style="list-style-type: decimal;
+                            padding-top: 5px;
+                            padding-right: 5px;
+                            background-color: var(--color-light-gray);
+                            margin: 0;
+                            overflow-y: auto;
+                            height: 100px;">
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: #428bca;">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: #428bca;">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: #428bca;">2022/7/21 13:55： 1212</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="messagebtn_voice tci-mt-3 message" style="text-align: center;
+                        display: flex;
+                        padding: 5px;
+                        margin: 0 1rem;
+                        border-radius: var(--borderRadius);">
+                            <button type="button" class="tci-btn tci-btn-orgin" data-bs-toggle="modal"
+                                data-bs-target="#voiceMessageBoxModal">
+                                語言留言</button>
+                            <ul class="tci-mt-3" style="list-style-type: decimal;
+                            padding-top: 5px;
+                            padding-right: 5px;
+                            background-color: var(--color-light-gray);
+                            margin: 0;
+                            overflow-y: auto;
+                            height: 100px;">
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
+                                    <p style="color: #428bca;">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
+                                    <p style="color: #428bca;">2022/7/21 13:55： 1212</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="messageBoxModal" tabindex="-1" aria-labelledby="messageBoxModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="messageBoxModalLabel">留言</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="messageBox_modal">
+                            <div class="tci-input-group tci-mb-3">
+                                <div class="tci-input-group-prepend">
+                                    <span class="tci-input-group-text">留言對象：</span>
+                                </div>
+                                <select class="tci-form-control">
+                                    <option selected="">Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="tci-input-group tci-mb-3">
+                                <div class="tci-input-group-prepend">
+                                    <span class="tci-input-group-text">留言內容：</span>
+                                </div>
+                                <textarea class="tci-form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn bg_lightgray" data-bs-dismiss="modal">取消</button>
+                        <button type="button" class="btn bg_darkgreen">送出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="voiceMessageBoxModal" tabindex="-1" aria-labelledby="voiceMessageBoxModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="voiceMessageBoxModalLabel">語音留言</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="messageBox_modal">
+                            <div class="tci-input-group tci-mb-3">
+                                <div class="tci-input-group-prepend">
+                                    <span class="tci-input-group-text">留言對象：</span>
+                                </div>
+                                <select class="tci-form-control">
+                                    <option selected="">Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="tci-input-group tci-mb-3">
+                                <div class="tci-input-group-prepend">
+                                    <span class="tci-input-group-text">錄音檔：</span>
+                                </div>
+                                <input class="tci-form-control" type="file" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn bg_lightgray" data-bs-dismiss="modal">取消</button>
+                        <button type="button" class="btn bg_darkgreen">送出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

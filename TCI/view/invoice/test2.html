@@ -1,0 +1,137 @@
+<div class='container' id='page_invoice' style='width:680px;'>
+    <div class='invoice_header' style='text-align: center;'>
+        <div class='invoice_header_text'>
+            <span id='TCITitle' style='font-size: 30px;
+        font-weight: bold;'>${TCITitle}</span>
+        </div>
+    </div>
+    <section class='tableContent' style='width:680px;'>
+        <table class='tci-table tableScroll' style='margin-bottom: 0;width:680px;'>
+            <thead>
+                <tr>
+                    <th id='TCICompanyAddr' colspan='4' style='text-align: center;border: 1px solid #dee2e6;padding: 3px;'>
+                        ${TCICompanyAddr}
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>Invoice NumberNumber Number</td>
+                    <td id='InvoiceNO' style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>${InvoiceNO}</td>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>Invoice Date</td>
+                    <td id='InvioceDate' style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>${InvioceDate}</td>
+                </tr>
+                <tr>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>Client Name:</td>
+                    <td id='ClientName' style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>ClientName</td>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>Contact person:</td>
+                    <td id='ContactPerson' style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>${ContactPerson}</td>
+                </tr>
+                <tr>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>Billing Address:</td>
+                    <td id='BillingAddress' style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>
+                        ${BillingAddress}
+                    </td>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>TEL:</td>
+                    <td id='Tel' style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>${Tel}</td>
+                </tr>
+                <tr>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>Email:</td>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>
+                        <p id='Email' >${Email}</p>
+                    </td>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>Consignee and address: </td>
+                    <td id='ConsigneeAndAddress' style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>
+                        ${ConsigneeAndAddress}
+                    </td>
+                </tr>
+                <tr>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>Notify party:</td>
+                    <td id='NotifyParty' style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>${NotifyParty}</td>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>SHIP TO:</td>
+                    <td id='SHIPTO' style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>${SHIPTO}</td>
+                </tr>
+                <tr>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>TCI PO number:</td>
+                    <td id='TCIPONumber' style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>${TCIPONumber}</td>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>client po number: </td>
+                    <td id='ClientPONumber' style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>${TCIPONumber}</td>
+                </tr>
+                <tr>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>PACKING LIST NO.:</td>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>${PACKINGLISTNO}</td>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'></td>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class='tci-table tableScroll' style='margin-bottom: 0;width:680px;' >
+            <tbody>
+                <tr style='text-align: center;background-color: #ddd3bc;'>
+                    <th style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;width: 200px;'>Product Name</th>
+                    <th style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;width: 50px;'>Unit Price</th>
+                    <th style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;width: 50px;'>Quantity </th>
+                    <th style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;width: 50px;'>Amounts<br />(USD)</th>
+                    <th style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;width: 70px;'>Due date</th>
+                    <th style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;width: 50px;'>pallet #</th>
+                    <th style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;width: 50px;'>CTN</th>
+                    <th style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;width: 50px;'>Q’TY </th>
+                    <th style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;width: 50px;'>N.W.</th>
+                    <th style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;width: 50px;'> G.W.</th>
+
+                </tr>
+                <tr style='text-align: center;' ng-repeat='item in chooseInvoiceDetail'>
+                    <td style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;' data-item='InvoiceDetail' data-itemtype='ProductName'>
+                        {{item.MAKTX}}
+                    </td>
+                    <td style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;' data-item='InvoiceDetail' data-itemtype='UnitPrice'>UnitPrice</td>
+                    <td style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;' data-item='InvoiceDetail' data-itemtype='Quantity'>Quantity </td>
+                    <td style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;' data-item='InvoiceDetail' data-itemtype='TotalAmount'>Amounts</td>
+                    <td style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;' data-item='InvoiceDetail' data-itemtype='PaymentDueDate'>Due date</td>
+                    <td style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;' data-item='InvoiceDetail' data-itemtype='PalletSharp'>{{item.pallet}}</td>
+                    <td style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;' data-item='InvoiceDetail' data-itemtype='CTN'>CTN</td>
+                    <td style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;' data-item='InvoiceDetail' data-itemtype='QTY'>{{item.QTY}}</td>
+                    <td style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;' data-item='InvoiceDetail' data-itemtype='NW'>{{item.NW}}</td>
+                    <td style='border: 1px solid #dee2e6;padding: 2px;font-size: 12px;' data-item='InvoiceDetail' data-itemtype='GW'>{{item.GW}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class='tci-table tableScroll' style='margin-bottom: 0;width:680px;'>
+            <tbody>
+                <tr>
+                    <th style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>Remarks</th>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;'>
+                        <span id='Remark'>
+                            ${Remark}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th style='border: 1px solid #dee2e6;padding: 3px;width: 150px;'>Terms & Condition</th>
+                    <td style='border: 1px solid #dee2e6;padding: 3px;'>
+                        <span id='TermsAndCondition'>
+                            ${TermsAndCondition}
+                        </span>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <table class='tci-table tableScroll' style='margin-bottom: 0;width:680px;'>
+            <tbody>
+                <tr>
+                    <th style='border: 1px solid #dee2e6;padding: 3px;width: 300px;'></th>
+                    <td style='border: 1px solid #dee2e6; padding: 3px; height: 200px; line-height: 200px; font-style: italic;'>
+                        TCI Biotech
+                    </td>
+                </tr>
+                <tr>
+                    <th style='border: 1px solid #dee2e6;padding: 3px;width: 300px;'></th>
+                    <td style='border: 1px solid #dee2e6; padding: 3px; font-style: italic;'>
+                        Authorized Signature
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>

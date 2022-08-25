@@ -13,6 +13,7 @@ body {
 ::before {
     box-sizing: border-box;
 }
+
 // .icon_arrow{
 //     transform:rotate(90deg)
 // }
@@ -120,12 +121,6 @@ body {
     }
 }
 
-//內容分開
-.flex_between {
-    display: flex;
-    justify-content: space-between;
-}
-
 //列印的button
 .print_btn {
     .btnGroups {
@@ -172,37 +167,13 @@ body {
     color: var(--color-snow);
     font-weight: 900;
 }
+
 .ecNum {
     font-size: 12px;
     border-bottom: 3px double;
 }
-// .addTable {
-//     display: flex;
-//     margin: 5px;
-//     .addTableNo {
-//         width: 70px;
-//         background-color: var(--color-rosybrown);
-//         margin-right: .5rem;
-//         text-align: center;
-//         display: flex;
-//         align-items: center;
-//         border-radius: var(--borderRadius);
-//         span {
-//             width: 100%;
-//             font-weight: bold;
-//             color: var(--color-snow);
-//         }
-//     }
-// .addTableContent{
-//     padding: 5px;
-//     border: 3px solid var(--color-rosybrown);
-//     border-radius: var(--borderRadius);
-//     .tci-form-control.gray{
-//         background-color: var(--color-whitesmoke);
-//     }
-// }
-// }
-@media (min-width: 765px) {
+
+@media (min-width: 768px) {
     body {
         font-size: var(--font-size-md);
     }
@@ -251,13 +222,6 @@ body {
             }
         }
     }
-
-    // 簽核流程
-    .print_process_circuit {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     //檔案數
     .fileBox {
         .illustrate {
@@ -271,3 +235,4 @@ body {
         }
     }
 }
+

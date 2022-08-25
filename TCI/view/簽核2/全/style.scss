@@ -1,0 +1,193 @@
+#page_signOffContent {
+    .pageHeader {
+        position: relative;
+
+        .dropdownContent {
+            position: absolute;
+            z-index: 99;
+            right: 0;
+            top: 0;
+
+            #dropdownbtn {
+                background-color: var(--color-light-gray);
+                padding: 4px;
+                color: var(--color-dark-green);
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+//表格
+.tableScroll {
+    overflow-x: auto;
+
+    .tci-table {
+        width: 768px;
+    }
+}
+
+//請假累計
+.detailsBoxAccumulated {
+    .detailsBoxholiday {
+        .detailsBoxholiday_title {
+            background-color: #ddd;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            padding: .5rem 0 .5rem .5rem;
+            border-radius: var(--borderRadius);
+        }
+
+        .detailsBoxholiday_content {
+            .tci-field {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+
+                .tci-field-label {
+                    width: 45%;
+                }
+
+                .tci-field-value {
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+
+.formFlow {
+    .formFlowGrid {
+        border: 1px solid #ddd;
+        background-color: antiquewhite;
+        padding: 5px;
+        border-radius: 0.25rem;
+    }
+
+    .items {
+        list-style-type: none;
+        margin: 1px;
+        padding: 1px;
+    }
+
+
+
+    .signflow {
+        .sortable {
+            li {
+                margin: 2px;
+                padding: 2px;
+                border-radius: 3px;
+                display: inline-block;
+                clear: both;
+            }
+
+            .list {
+                background-color: lightblue;
+                border: 1px solid gray;
+                cursor: no-drop;
+            }
+
+            .list3 {
+                background-color: lightgray;
+                border: 1px solid gray;
+                margin: 2px;
+                padding: 2px;
+                border-radius: 3px;
+                display: inline-block;
+                cursor: no-drop;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .messageBoxContent {
+        display: flex;
+        justify-content: center;
+    }
+
+    .descriptionBoxContent {
+        display: flex;
+        justify-content: center;
+
+        .descriptionBox_icon {
+            display: flex;
+            justify-content: center;
+
+            .check {
+                margin: 0 1.5rem;
+            }
+        }
+    }
+
+    //表格
+    .tableScroll {
+        overflow-x: auto;
+
+        .tci-table {
+            width: 100%;
+        }
+    }
+
+    //請假累計
+    .detailsBoxAccumulated {
+        .detailsBoxholiday {
+            .detailsBoxholiday_content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-field {
+                    width: 32%;
+                    justify-content: space-between;
+
+                    .tci-field-label {
+                        width: 52%;
+                    }
+
+                    .tci-field-value {
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }
+
+    // 簽核流程
+    .work_process {
+        display: flex;
+        flex-wrap: wrap;
+
+        .tci-card {
+            margin-right: .5rem;
+            min-width: 155px;
+        }
+    }
+
+    .work_process_circuit {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:992px) {
+    //請假累計
+
+    .detailsBoxAccumulated {
+        .detailsBoxholiday {
+            .detailsBoxholiday_content {
+                .tci-field {
+                    width: 24%;
+
+                    .tci-field-label {
+                        width: 52%;
+                    }
+
+                    .tci-field-value {
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }
+}

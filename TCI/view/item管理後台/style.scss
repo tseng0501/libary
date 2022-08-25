@@ -49,13 +49,16 @@
                 .tci-valueBtn{
                     display: flex;
                     width: 100%;
+                    input{
+                        margin-right: 0.5rem;
+                    }
                 }
             }
         }
 
         .detailTemplate_btn {
             border-radius: var(--borderRadius);
-            padding: 5px;
+            padding: 2px;
 
             button {
                 width: 100%;
@@ -96,14 +99,16 @@
                 .tci-valueBtn{
                     display: flex;
                     width: 100%;
+                    input{
+                        margin-right: 0.5rem;
+                    }
                 }
             }
         }
 
         .behaviorTemplate_btn {
             border-radius: var(--borderRadius);
-            padding: 5px;
-
+            padding: 2px;
             button {
                 width: 100%;
                 padding: 0.3rem 0;
@@ -141,6 +146,9 @@
                 .tci-valueBtn{
                     display: flex;
                     width: 100%;
+                    input{
+                        margin-right: 0.5rem;
+                    }
                 }
             }
            
@@ -148,8 +156,7 @@
 
         .itemTemplate_btn {
             border-radius: var(--borderRadius);
-            padding: 5px;
-
+            padding: 2px;
             button {
                 width: 100%;
                 padding: 0.3rem 0;
@@ -170,7 +177,7 @@
     }
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
     #page_DetailTemplate {
         .detailTemplate_query {
             .detailTemplate_flex {
@@ -178,7 +185,7 @@
                 justify-content: space-between;
 
                 .tci-field {
-                    width: calc(100vw - 150px);
+                    width: calc(100vw - 130px);
                     margin-bottom: 0;
                     .tci-valueBtn{
                         width: 70%;
@@ -209,7 +216,7 @@
                 justify-content: space-between;
 
                 .tci-field {
-                    width: calc(100vw - 150px);
+                    width: calc(100vw - 130px);
                     margin-bottom: 0;
                     .tci-valueBtn{
                         width: 70%;
@@ -241,7 +248,7 @@
                 justify-content: space-between;
 
                 .tci-field {
-                    width: calc(100vw - 150px);
+                    width: calc(100vw - 130px);
                     margin-bottom: 0;
                     .tci-valueBtn{
                         width: 70%;

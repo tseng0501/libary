@@ -38,9 +38,12 @@
   display: flex;
   width: 100%;
 }
+#page_DetailTemplate .detailTemplate_query .detailTemplate_flex .tci-field .tci-valueBtn input {
+  margin-right: 0.5rem;
+}
 #page_DetailTemplate .detailTemplate_query .detailTemplate_btn {
   border-radius: var(--borderRadius);
-  padding: 5px;
+  padding: 2px;
 }
 #page_DetailTemplate .detailTemplate_query .detailTemplate_btn button {
   width: 100%;
@@ -64,9 +67,12 @@
   display: flex;
   width: 100%;
 }
+#page_BehaviorTemplate .behaviorTemplate_query .behaviorTemplate_flex .tci-field .tci-valueBtn input {
+  margin-right: 0.5rem;
+}
 #page_BehaviorTemplate .behaviorTemplate_query .behaviorTemplate_btn {
   border-radius: var(--borderRadius);
-  padding: 5px;
+  padding: 2px;
 }
 #page_BehaviorTemplate .behaviorTemplate_query .behaviorTemplate_btn button {
   width: 100%;
@@ -90,9 +96,12 @@
   display: flex;
   width: 100%;
 }
+#page_ItemTemplate .itemTemplate_query .itemTemplate_flex .tci-field .tci-valueBtn input {
+  margin-right: 0.5rem;
+}
 #page_ItemTemplate .itemTemplate_query .itemTemplate_btn {
   border-radius: var(--borderRadius);
-  padding: 5px;
+  padding: 2px;
 }
 #page_ItemTemplate .itemTemplate_query .itemTemplate_btn button {
   width: 100%;
@@ -105,13 +114,13 @@
   width: 700px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_DetailTemplate .detailTemplate_query .detailTemplate_flex {
     display: flex;
     justify-content: space-between;
   }
   #page_DetailTemplate .detailTemplate_query .detailTemplate_flex .tci-field {
-    width: calc(100vw - 150px);
+    width: calc(100vw - 130px);
     margin-bottom: 0;
   }
   #page_DetailTemplate .detailTemplate_query .detailTemplate_flex .tci-field .tci-valueBtn {
@@ -131,7 +140,7 @@
     justify-content: space-between;
   }
   #page_BehaviorTemplate .behaviorTemplate_query .behaviorTemplate_flex .tci-field {
-    width: calc(100vw - 150px);
+    width: calc(100vw - 130px);
     margin-bottom: 0;
   }
   #page_BehaviorTemplate .behaviorTemplate_query .behaviorTemplate_flex .tci-field .tci-valueBtn {
@@ -151,7 +160,7 @@
     justify-content: space-between;
   }
   #page_ItemTemplate .itemTemplate_query .itemTemplate_flex .tci-field {
-    width: calc(100vw - 150px);
+    width: calc(100vw - 130px);
     margin-bottom: 0;
   }
   #page_ItemTemplate .itemTemplate_query .itemTemplate_flex .tci-field .tci-valueBtn {

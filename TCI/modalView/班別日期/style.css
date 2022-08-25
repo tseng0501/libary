@@ -1,0 +1,24 @@
+#page_btnClassDate_modal .tableSrcoll {
+  overflow-y: auto;
+  height: 200px;
+}
+
+@media (min-width: 768px) {
+  #page_btnClassDate_modal .btnClassDateQuery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_btnClassDate_modal .btnClassDateQuery .tci-field {
+    width: 68%;
+  }
+  #page_btnClassDate_modal .btnClassDateQuery .tci-field.date {
+    width: 30%;
+  }
+  #page_btnClassDate_modal .btnClassDateQuery .tci-field .tci-field-label {
+    width: 30%;
+  }
+  #page_btnClassDate_modal .btnClassDateQuery .tci-field .tci-field-value {
+    width: 70%;
+  }
+}

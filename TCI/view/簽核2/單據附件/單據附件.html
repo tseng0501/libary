@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../../scss/tci-all.css">
+    <title>簽核記錄</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_signOffContent">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>簽核記錄</b></span>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlush">
+         <!-- 單據附件 -->
+         <div class="accordion-item">
+            <h2 class="accordion-header" id="attachmentBox">
+                <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-attachmentBox" aria-expanded="true"
+                    aria-controls="panelsStayOpen-attachmentBox">
+                    <span>單據附件 </span>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-attachmentBox" class="accordion-collapse collapse show"
+                aria-labelledby="attachmentBox">
+                <div class="accordion-body attachmentBoxContent">
+                        <div class="btnGroups tci-mt-2" style="text-align: center;">
+                            <button class="tci-btn tci-btn-regular"><i class="fa-solid fa-rotate-left"></i> 90度</button>
+                            <button class="tci-btn tci-btn-success"><i class="fa fa-retweet" aria-hidden="true"></i> 復原</button>
+                            <button class="tci-btn tci-btn-regular"><i class="fa-solid fa-rotate-right"></i> 90度</button>
+                        </div>
+                        <div class="tci-mt-3" style="text-align: center;">
+                            <span>附件 <b>1</b></span>
+                        </div>
+                        <div style="width: 100%;text-align: center;">
+                            <img src="https://media.istockphoto.com/photos/happy-shiba-inu-dog-on-yellow-redhaired-japanese-dog-smile-portrait-picture-id1197121742?k=20&m=1197121742&s=612x612&w=0&h=HX4DoFCL1RDlegj3P9w4O2H64sgwKvMP0VSki7sBEtE="
+                                alt="附件1" style="width: 50%;" />
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

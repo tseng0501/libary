@@ -5,7 +5,7 @@
   margin: 0.5rem;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_requisition .requisition_form {
     display: flex;
     flex-wrap: wrap;

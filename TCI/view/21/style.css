@@ -15,7 +15,7 @@
   width: 1200px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_oldgoodsIssue_print .print_table .tableContent .tableScroll .tableAuto.manager {
     width: 100%;
   }

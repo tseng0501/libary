@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_deliveryCredit .deliveryCreditQuery .tci-field .tci-valueBtn {
     display: flex;
     width: 70%;

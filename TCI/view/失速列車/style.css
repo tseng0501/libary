@@ -9,7 +9,7 @@
   width: 1200px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_light .query {
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +83,7 @@
   font-weight: bold;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_dataFlow .cardContent .tci-card {
     width: 200px;
   }
@@ -194,7 +194,7 @@
   font-size: 20px;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_steps .steps li {
     width: 195px;
   }
@@ -213,9 +213,6 @@
     /*设置元素的宽度为 100%父元素的宽度  并提高样式优先级 */
     height: 100vw !important;
   }
-}
-#page_test3 {
-  margin: 2rem auto;
 }
 #page_test3 .content {
   overflow-x: auto;

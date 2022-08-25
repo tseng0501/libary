@@ -1,0 +1,4 @@
+#companyCompilationModal .tableScoll {
+  overflow-y: auto;
+  height: 400px;
+}

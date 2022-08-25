@@ -54,7 +54,7 @@
   overflow-x: auto;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   .pageContent .pageContentTitle {
     font-size: var(--font-size-lg);
   }
@@ -169,7 +169,7 @@
   border: none;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   #page_createPurchaseOrder_signoff .tableScroll0 .tableContent {
     width: 100%;
   }
