@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>合約-確認</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_contract_createView">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>合約-確認</b></span>
+        </div>
+
+        <section>
+            <table class="tci-table tci-table-bordered">
+                <tbody>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">部門別</th>
+                        <td>系統維運組</td>
+                        <th rowspan="2" style="background-color: var(--color-light-gray);">相關單據</th>
+                        <td>請購/請採單號：<span></span></td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">合約類型</th>
+                        <td>非制式－委託製造合約</td>
+                        <td>專案編號：<span></span></td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">合約名稱</th>
+                        <td colspan="3">test</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">合約對象</th>
+                        <td colspan="3">
+                            <div>
+                                <b>甲方</b>：大江生醫股份有限公司 / <b>E-Mail</b>：Stanley.Huang@TCI-Bio.Com /<b>簽署順序</b> ：1<br/>
+                                <b>乙方</b>：大江生醫股份有限公司 /<b>E-Mail</b>： / <b>簽署順序</b>：2
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">罰則</th>
+                        <td colspan="3">test</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">合約起迄日</th>
+                        <td colspan="3">2022/08/30~2099/12/31</td>
+                    </tr>
+
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">合約關聯</th>
+                        <td colspan="3">此合約為主約</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">到期續約</th>
+                        <td colspan="3">否</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">合約金額</th>
+                        <td colspan="3">NTD 100</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">合約摘要內容</th>
+                        <td colspan="3">34444</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">需要送雲端簽核</th>
+                        <td colspan="3">是</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">用印需求</th>
+                        <td colspan="3">總經理章, 銀行往來章</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="fileBox formBox_gray">
+            <div class="tci-input-group tci-mb-2 fileContentNo formBox_title" style="margin-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+                <div class="tci-input-group-prepend">
+                    <span class="tci-input-group-text tci-mr-2">檔案數:</span>
+                    <select class="tci-bs-custom-select" style="width:100px">
+                        <option selected>100</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="illustrate formBox_content" style="border-top-left-radius: 0;">
+                <div class="fileIllustrate">
+                    <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">序號:</span>
+                        </div>
+                        <div class="tci-form-control gray">1</div>
+                    </div>
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <select class="tci-form-control">
+                            <option selected>送 Adobe Sign 合約</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="fileIllustrate ">
+                    <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">序號:</span>
+                        </div>
+                        <div class="tci-form-control gray">2</div>
+                    </div>
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <select class="tci-form-control">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_lightgray">回上一頁</button>
+            <button class="tci-btn bg_darkgreen">單據存檔</button>
+        </div>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+

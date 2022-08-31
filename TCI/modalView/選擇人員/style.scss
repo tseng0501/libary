@@ -1,0 +1,19 @@
+.selectMoreQuery {
+   display: flex;
+   flex-wrap: wrap;
+}
+.selectMoreContent{
+   overflow-y: auto;
+   height: 500px;
+}
+@media (min-width:768px) {
+   .selectMoreQuery {
+      display: flex;
+      flex-wrap: wrap;
+
+      .tci-bs-input-group {
+         width: 30%;
+      }
+   }
+ 
+}

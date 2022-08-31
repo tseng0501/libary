@@ -14,132 +14,293 @@
 
 <body>
     <div class="container-fluid" id="page_goodsIssue_signoff">
-        <div class="pageHeader">
+        <div class="pageHeader" style="position: relative;">
             <span class="pageHeaderTitle"><b>一般領料單-簽核</b></span>
+            <!-- 查詢bar -->
         </div>
-
-        <!-- 單據明細 -->
-        <section class="darkBorderCard detailsBox tci-mb-3">
-            <div class="darkBorderCardTitle">
-                <span>單據明細</span>
-                <span class="tci-pl-0 ">
-                    <span class=""><i class="fa-solid fa-chevron-up"></i></span>
-                    <!-- <span class=""><i class="fa-solid fa-chevron-down"></i></span> -->
-                </span>
+        <!-- 上下頁 -->
+        <section class="btnTop tci-mb-3">
+            <div class="btnGroups">
+                <button class="tci-btn bg_darkblue"><i class="fa fa-undo" aria-hidden="true"></i> 關閉單據內容</button>
             </div>
-            <div class="detailsBoxContent darkBorderCardContent">
-                <div class="detailsBox_company tci-mt-1 tci-mb-2" style="text-align: right;">
-                    <span class="detailsBox_companytext"
-                        style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">百岳特國際貿易(上海)</span>
-                </div>
-                <div class="tableScroll0">
-                    <div class="tableContent">
-                        <div
-                            style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
-                            <span>一般領料單資料</span>
+            <div class="btnGroups_lr" style="justify-content: space-between;display: flex;margin-top: .5rem;">
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-left"
+                        aria-hidden="true"></i> 上一筆</button>
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-right"
+                        aria-hidden="true"></i>下一筆</button>
+            </div>
+        </section>
+
+        <div class="accordion accordion-flush" id="accordionFlush">
+            <!-- 留言 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="messageBox">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-messageBox" aria-expanded="true"
+                        aria-controls="panelsStayOpen-messageBox">
+                        <span>留言</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-messageBox" class="accordion-collapse collapse show"
+                    aria-labelledby="messageBox">
+                    <div class="accordion-body messageBoxContent">
+                        <div class="messagebtn_message tci-mt-3 message" style="text-align: center;
+                    display: flex;
+                    padding: 5px;
+                    margin: 0 1rem;
+                    border-radius: var(--borderRadius);">
+                            <button type="button" class="tci-btn tci-btn-orgin" data-bs-toggle="modal"
+                                data-bs-target="#messageBoxModal">
+                                留言</button>
+                            <ul class="tci-mt-3" style="list-style-type: decimal;
+                        padding-top: 5px;
+                        padding-right: 5px;
+                        background-color: var(--color-light-gray);
+                        margin: 0;
+                        overflow-y: auto;
+                        height: 100px;">
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                            </ul>
                         </div>
-                        <table class="tci-table tci-table-bordered">
-                            <tbody>
-                                <tr>
-                                    <th colspan="2" style="background-color: var(--color-light-gray);">電子簽核編號</th>
-                                    <td colspan="10">220607-71-A002</td>
-                                </tr>
-                                <tr>
-                                    <th colspan="2" style="background-color: var(--color-light-gray);">申請部門</th>
-                                    <td colspan="2">產前安定性組</td>
-                                    <th colspan="2" style="background-color: var(--color-light-gray);"> 申請人</th>
-                                    <td colspan="2">趙唯廷(WENDY.CHAO)</td>
-                                    <th colspan="2" style="background-color: var(--color-light-gray);"> 申請日期</th>
-                                    <td colspan="2">2022/4/1 下午 01:14:37</td>
-                                </tr>
-                                <tr style="background-color: var(--color-light-gray);">
-                                    <th>NO</th>
-                                    <th>料號</th>
-                                    <th>品名</th>
-                                    <th>批號</th>
-                                    <th>供應商批號</th>
-                                    <th>單位</th>
-                                    <th>單價</th>
-                                    <th>倉庫</th>
-                                    <th>請領數</th>
-                                    <th>請領單位</th>
-                                    <th>異動分類</th>
-                                    <th>SAP專案號</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>30000848
-                                        <button type="button" title="MRP供需狀況"
-                                            style="border-radius:5px;background-color:lightblue;color:blue;cursor: pointer;">MRP?</button>
-                                    </td>
-                                    <td>丹鳳牡丹萃取液(C)(創)_E</td>
-                                    <td>20210916</td>
-                                    <td></td>
-                                    <td>g</td>
-                                    <td>100</td>
-                                    <td>磐石保養品原料倉-低溫(WBM2)</td>
-                                    <td>500.0000</td>
-                                    <td>QODM實驗室 (88060300)</td>
-                                    <td>研發領用
-                                        原因 :打樣使用</td>
-                                    <td>880400654
-                                        QODM實驗室一般耗材</td>
-                                </tr>
-                                <tr id="MD04TableBItem_1">
-                                    <td colspan="12">
-                                        <table class="tci-table tci-table-bordered">
-                                            <thead style="background-color: var(--color-light-gray);">
-                                                <tr>
-                                                    <th>日期</th>
-                                                    <th>MRP元素</th>
-                                                    <th>開始/核發日期</th>
-                                                    <th>開單日期</th>
-                                                    <th>MRP要素資料</th>
-                                                    <th>重新排程日</th>
-                                                    <th>例外</th>
-                                                    <th>例外說明</th>
-                                                    <th>收貨/需求</th>
-                                                    <th>可用數量</th>
-                                                    <th>儲存地點</th>
-                                                    <th>SO類型&留樣資訊</th>
-                                                    <th>業務員資訊</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody style="text-align: center;">
-                                                <tr>
-                                                    <td>2022/08/16</td>
-                                                    <td>庫存</td>
-                                                    <td>2022/08/16</td>
-                                                    <td>庫存</td>
-                                                    <td>2022/08/16</td>
-                                                    <td>30500707</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>-27,285.212</td>
-                                                    <td>30.250</td>
-                                                    <td>WBM2</td>
-                                                    <td></td>
-                                                    <td>Scrap:0.00%</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr style="text-align: right;color: var(--color-light-red);">
-                                    <th colspan="11">合計金額:</th>
-                                    <th>163</th>
-                                </tr>
-                                <tr>
-                                    <th colspan="12" class="small_mark" style="font-size: 13px;padding: 0 10px;">收料備註:</th>
-                                </tr>
-                            </tfoot>
-                        </table>
+                        <div class="messagebtn_voice tci-mt-3 message" style="text-align: center;
+                    display: flex;
+                    padding: 5px;
+                    margin: 0 1rem;
+                    border-radius: var(--borderRadius);">
+                            <button type="button" class="tci-btn tci-btn-orgin" data-bs-toggle="modal"
+                                data-bs-target="#voiceMessageBoxModal">
+                                語言留言</button>
+                            <ul class="tci-mt-3" style="list-style-type: decimal;
+                        padding-top: 5px;
+                        padding-right: 5px;
+                        background-color: var(--color-light-gray);
+                        margin: 0;
+                        overflow-y: auto;
+                        height: 100px;">
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- 簽核意見 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="description">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-description" aria-expanded="true"
+                        aria-controls="panelsStayOpen-description">
+                        <span>簽核意見</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-description" class="accordion-collapse collapse show"
+                    aria-labelledby="description">
+                    <div class="accordion-body">
+                        <div class="descriptionBox_invalid tci-text-center tci-mb-2">
+                            <span
+                                style="border: 1px solid #003D79;background-color:#003D79;padding:0 6px;color: var(--color-snow);font-weight: bold;">此單據已列印</span>
+                        </div>
+                        <div class="descriptionBoxContent">
+                            <div class="descriptionBox_notice">
+                                <div class="tci-input-group">
+                                    <div class="tci-input-group-prepend">
+                                        <span class="tci-input-group-text">內容:&nbsp;
+                                            <div class="dropdown open" style="margin-bottom:.5rem;">
+                                                <button class="dropdown-toggle tci-btn bg_darkblue py-0" type="button"
+                                                    data-bs-toggle="dropdown" data-animations="fadeIn">
+                                                    通知人員
+                                                </button>
+                                                <!-- 下拉清單 -->
+                                                <ul class="dropdown-menu">
+                                                    <li style="margin-left:5px;cursor:pointer">
+                                                        <label><input type="checkbox" class="decisionMsg" value="">
+                                                            所有簽核者</label>
+                                                    </li>
+                                                    <li style="margin-left:5px;cursor:pointer">
+                                                        <label><input type="checkbox" class="decisionMsg"
+                                                                value="2011A0016">
+                                                            吳春隆(REX.WU)</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <textarea class="tci-form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="descriptionBox_icon tci-text-center">
+                                <div class="dropdown file">
+                                    <div class="dropdown">
+                                        <button class="tci-btn" type="button" data-animations="fadeIn"
+                                            data-hover="dropdown"
+                                            style="background: none;border-width: 0px;text-align: center;text-decoration: none;padding: 0;"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="dropdownbtn">
+                                            <i class="fa-solid fa-file-lines fa-4x" style="color: #b8aba2;"></i>
+                                            <p style="color:black;margin-top: .5rem;">其他</p>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">作廢單據</a></li>
+                                            <li><a class="dropdown-item" href="#">標示為急件</a></li>
+                                            <li><a class="dropdown-item" href="#">修改單據</a></li>
+                                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#forwardContentModal">轉寄內容</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 單據明細 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="detailsBox">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-detailsBox" aria-expanded="true"
+                        aria-controls="panelsStayOpen-detailsBox">
+                        <span>單據明細</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-detailsBox" class="accordion-collapse collapse show"
+                    aria-labelledby="detailsBox">
+                    <div class="accordion-body detailsBoxContent">
+                        <div class="detailsBox_company tci-mt-1 tci-mb-2" style="text-align: right;">
+                            <span class="detailsBox_companytext"
+                                style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">大江生醫</span>
+                        </div>
+                        <div class="tableScroll0">
+                            <div class="tableContent">
+                                <div
+                                    style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
+                                    <span>大江生醫股份有限公司 一般領料單資料</span>
+                                </div>
+                                <table class="tci-table tci-table-bordered" style="margin-bottom: 0;">
+                                    <tbody>
+                                        <tr>
+                                            <th style="background-color: var(--color-light-gray);">電子簽核編號</th>
+                                            <td>220607-71-A002</td>
+                                            <th style="background-color: var(--color-light-gray);">申請部門</th>
+                                            <td>產前安定性組</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="background-color: var(--color-light-gray);"> 申請人</th>
+                                            <td>趙唯廷(WENDY.CHAO)</td>
+                                            <th style="background-color: var(--color-light-gray);"> 申請日期</th>
+                                            <td>2022/4/1 下午 01:14:37</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tableScroll">
+                            <div class="tableContent">
+                                <table class="tci-table tci-table-bordered">
+                                    <tbody>
+                                        <tr style="background-color: var(--color-light-gray);">
+                                            <th>NO</th>
+                                            <th>料號</th>
+                                            <th>品名</th>
+                                            <th>批號</th>
+                                            <th>供應商批號</th>
+                                            <th>單位</th>
+                                            <th>單價</th>
+                                            <th>倉庫</th>
+                                            <th>請領數</th>
+                                            <th>請領單位</th>
+                                            <th>異動分類</th>
+                                            <th>SAP專案號</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30000848
+                                                <button type="button" title="MRP供需狀況"
+                                                    style="border-radius:5px;background-color:lightblue;color:blue;cursor: pointer;">MRP?</button>
+                                            </td>
+                                            <td>丹鳳牡丹萃取液(C)(創)_E</td>
+                                            <td>20210916</td>
+                                            <td></td>
+                                            <td>g</td>
+                                            <td>100</td>
+                                            <td>磐石保養品原料倉-低溫(WBM2)</td>
+                                            <td>500.0000</td>
+                                            <td>QODM實驗室 (88060300)</td>
+                                            <td>研發領用
+                                                原因 :打樣使用</td>
+                                            <td>880400654
+                                                QODM實驗室一般耗材</td>
+                                        </tr>
+                                        <tr id="MD04TableBItem_1">
+                                            <td colspan="12">
+                                                <table class="tci-table tci-table-bordered">
+                                                    <thead style="background-color: var(--color-light-gray);">
+                                                        <tr>
+                                                            <th>日期</th>
+                                                            <th>MRP元素</th>
+                                                            <th>開始/核發日期</th>
+                                                            <th>開單日期</th>
+                                                            <th>MRP要素資料</th>
+                                                            <th>重新排程日</th>
+                                                            <th>例外</th>
+                                                            <th>例外說明</th>
+                                                            <th>收貨/需求</th>
+                                                            <th>可用數量</th>
+                                                            <th>儲存地點</th>
+                                                            <th>SO類型&留樣資訊</th>
+                                                            <th>業務員資訊</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody style="text-align: center;">
+                                                        <tr>
+                                                            <td>2022/08/16</td>
+                                                            <td>庫存</td>
+                                                            <td>2022/08/16</td>
+                                                            <td>庫存</td>
+                                                            <td>2022/08/16</td>
+                                                            <td>30500707</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td>-27,285.212</td>
+                                                            <td>30.250</td>
+                                                            <td>WBM2</td>
+                                                            <td></td>
+                                                            <td>Scrap:0.00%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr style="text-align: right;color: var(--color-light-red);">
+                                            <th colspan="11">合計金額:</th>
+                                            <th>163</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="12" class="small_mark"
+                                                style="font-size: var(--font-size-xs);padding: 0 10px;">收料備註:
+                                            </th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

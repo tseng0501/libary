@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <title>一般請款單01-列印</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_generalInvoice01_print">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>一般請款單01-列印</b></span>
+        </div>
+        <section class="btnTop tci-mb-3">
+            <div class="btnGroups">
+                <button class="tci-btn bg_darkblue"><i class="fa fa-undo" aria-hidden="true"></i> 關閉單據內容</button>
+            </div>
+            <div class="btnGroups_lr" style="justify-content: space-between;display: flex;margin-top: .5rem;">
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-left"
+                        aria-hidden="true"></i> 上一筆</button>
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-right"
+                        aria-hidden="true"></i>下一筆</button>
+            </div>
+        </section>
+        <section class="print_btn">
+            <div class="btnGroups">
+                <button class="tci-btn bg_darkkhaki">顯示簽核記錄</button>
+                <button class="tci-btn bg_darkkhaki">列印單據</button>
+                <button class="tci-btn bg_darkkhaki">單據列印格式?</button>
+            </div>
+            <div style="width: 100%;text-align: center;">
+                <img src="https://media.istockphoto.com/photos/happy-shiba-inu-dog-on-yellow-redhaired-japanese-dog-smile-portrait-picture-id1197121742?k=20&m=1197121742&s=612x612&w=0&h=HX4DoFCL1RDlegj3P9w4O2H64sgwKvMP0VSki7sBEtE="
+                    alt="附件1" style="width: 50%;" />
+            </div>
+        </section>
+        <hr>
+        <section class="print_table">
+            <div class="tableContent">
+                <div class="tableScroll">
+                    <div class="tableAuto">
+                        <div
+                            style="text-align: center;font-size: var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
+                            <span>大江生醫股份有限公司 一般請款單</span>
+                        </div>
+                        <table class="tci-table" style="margin-bottom:0;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 40%;border-top: 0;"><strong>單據編號：</strong>220811-01-A001</td>
+                                    <td style="width:30%;border-top: 0;"><strong>請款單位：</strong>專案管理組</td>
+                                    <td style="width: 30%;text-align: right;border-top: 0;">
+                                        <strong>日期：</strong>2022/8/11 下午 04:28:01</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-top: 0;"><strong>發票號碼：</strong>Eerrrffffffff</td>
+                                    <td style="border-top: 0;"><strong>傳票編號：</strong></td>
+                                    <td style="border-top: 0;">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="tci-table tci-table-bordered">
+                            <thead style="text-align: center;background-color:var(--color-light-gray);">
+                                <tr>
+                                    <th>NO</th>
+                                    <th>費用分類</th>
+                                    <th>項目歸屬</th>
+                                    <th>摘要說明</th>
+                                    <th>專案編號</th>
+                                    <th>幣別</th>
+                                    <th>金額</th>
+                                </tr>
+                            </thead>
+                            <tbody style="text-align: center;">
+                                <tr>
+                                    <td>1</td>
+                                    <td>租金支出</td>
+                                    <td>專案管理組</td>
+                                    <td>Tret</td>
+                                    <td>1</td>
+                                    <td>NTD</td>
+                                    <td>10.00</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr style="text-align: right;color:var(--color-light-red)">
+                                    <th colspan="5">合計</th>
+                                    <th style="text-align: center;">NTD</th>
+                                    <th>40.00</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        <span>付款方式</span><br>
+                                        <span style="color: var(--color-light-red);">支票</span>
+                                    </th>
+                                    <th colspan="2">
+                                        <span>抬頭</span><br>
+                                        <span style="color: var(--color-light-red);">Test</span>
+                                    </th>
+                                    <th colspan="2">
+                                        <span>到期日</span><br>
+                                        <span style="color: var(--color-light-red);">2022/08/11</span>
+                                    </th>
+                                    <th>
+                                        <span>回郵</span><br>
+                                        <span style="color: var(--color-light-red);">無</span>
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="print_process">
+            <div class="processBoxContent">
+                <div class="tci-card tci-mt-2 card-green">
+                    <div class="tci-card-header card-header-green"><i class="fa-solid fa-user-tie"></i> 總經理主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">林詠翔<br />VINCENT.LIN</p>
+                        <div>
+                            <span class="tci-card-text card-text-green"><i class="fa-solid fa-clock"></i>&nbsp;
+                                免簽核</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer"></div>
+                </div>
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 戰略數據中心主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title"> 王浩駿<br />JOHNNY.WANG</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-clock"></i>&nbsp;
+                                未簽核</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer"></div>
+                </div>
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 軟體整合開發部主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">吳春隆<br />REX.WU</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-clock"></i>&nbsp; 同意</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer"></div>
+                </div>
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 軟體研發組主管</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">吳春隆<br />REX.WU</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-check"></i>&nbsp; 同意</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer"></div>
+                </div>
+                <span style="text-align: center;margin: auto 1rem;">
+                    <i class="fa-solid fa-left-long fa-2x"></i>
+                </span>
+                <div class="tci-card tci-mt-2 card-blue">
+                    <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user"></i> 經辦人</div>
+                    <div class="tci-card-body">
+                        <p class="tci-card-title">曾莞婷<br />HEDY.TSENG</p>
+                        <div>
+                            <span class="tci-card-text card-text-blue"><i class="fa-solid fa-check"></i>&nbsp; 送出</span>
+                        </div>
+                    </div>
+                    <div class="tci-card-footer">2022/07/21 12:31:32</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- 簽核記錄 start -->
+        <section class="approvalBox tci-mb-3">
+            <div class="">
+                <ul class="" style="padding-left:20px;">
+                    <li style="color: var(--color-rosybrown);font-size: 14px;">等待【經辦人】【HEDY.TSENG(曾莞婷) 大江戰士】簽核
+                        <span style="font-size:12px;color: #949495;font-weight: bold;">上傳附件：新增1個附件</span>
+                    </li>
+                    <li style="color: var(--color-rosybrown);font-size: 14px;">2022/6/1 下午
+                        02:28:48【經辦人-BENNY.SU(蘇雅雯)管理師】
+                        <span style="font-size:12px;color: var(--color-dark-green);font-weight: bold;">已簽核：送出單據</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 簽核記錄 end -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+<!-- hedy 手機向上的那個icon 也可不做，統一向左 -->

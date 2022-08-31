@@ -24,7 +24,7 @@
     justify-content: flex-end;
   }
   #page_acceptanceForm .acceptanceFormQuery .tci-field .tci-valuebtn .tci-field-value {
-    width: 60%;
+    width: 100%;
   }
   .descriptionBox .descriptionBox_content {
     display: flex;
@@ -38,9 +38,6 @@
     margin: 0 1.5rem;
   }
 }
-#page_acceptanceForm_signoff .next_signer {
-  margin: 0.5rem 0;
-}
 #page_acceptanceForm_signoff .tableScroll {
   overflow-x: auto;
 }
@@ -49,14 +46,6 @@
 }
 
 @media (min-width: 768px) {
-  #page_acceptanceForm_signoff .next_signer {
-    margin: 0.5rem 0;
-    display: flex;
-    justify-content: center;
-  }
-  #page_acceptanceForm_signoff .next_signer .tci-bs-input-group {
-    width: 50%;
-  }
   #page_acceptanceForm_signoff .tableScroll .tableContent {
     width: 100%;
   }

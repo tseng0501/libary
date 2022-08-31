@@ -13,7 +13,9 @@ body {
 ::before {
     box-sizing: border-box;
 }
-
+.container-fluid{
+    margin-bottom: 2rem;
+}
 // .icon_arrow{
 //     transform:rotate(90deg)
 // }

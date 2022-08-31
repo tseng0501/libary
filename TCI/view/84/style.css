@@ -15,8 +15,10 @@
   width: 100%;
 }
 #page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .table_content .tci-table tbody {
-  overflow-y: auto; /*設定卷軸 auto 是有超過我的高度的時候才會出現卷軸*/
-  height: 100px; /*自己設定*/
+  overflow-y: auto;
+  /*設定卷軸 auto 是有超過我的高度的時候才會出現卷軸*/
+  height: 100px;
+  /*自己設定*/
   display: block;
 }
 #page_loyaltyPoint .loyaltyPointAdd .loyaltyPointAddContent .tci-field .table_content .tci-table tr {
@@ -50,7 +52,7 @@
 }
 #page_loyaltyPoint_signoff .tableScroll .tableContent .tableContentAuto {
   overflow-y: auto;
-  height: 350px;
+  height: 300px;
 }
 
 @media (min-width: 768px) {

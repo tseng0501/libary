@@ -23,149 +23,122 @@
                     <span class="tci-field-text">直接使用採購單號查詢</span>
                 </div>
                 <div class="tci-valueBtn">
-                    <input type="text" class="tci-field-value"/>
+                    <input type="text" class="tci-field-value" />
                     <button class="tci-btn bg_darkblue">查詢</button>
                 </div>
             </div>
             <hr>
             <div>
-                <span style="font-weight: bold;"><u>PO未送簽清單查詢</u></span>
+                <span style="font-weight: bold;font-size: var(--font-size-md);"><u>PO未送簽清單查詢</u></span>
             </div>
-            <div class="tci-field">
-                <div class="tci-field-label">
-                    <span class="tci-field-text">建立日期</span>
-                </div>
-                <div class="tci-valueBtn">
-                    <input type="text" class="tci-field-value"/>
-                    <span style="padding: 0.3rem;">~</span>
-                    <input type="text" class="tci-field-value"/>
-                </div>
-            </div>
-            <div class="tci-field">
-                <div class="tci-field-label">
-                    <span class="tci-field-text">供應商代碼</span>
-                </div>
-                <input type="text" class="tci-field-value" />
-            </div>
-            <div class="tci-field">
-                <div class="tci-field-label">
-                    <span class="tci-field-text">採購人員</span>
-                </div>
-                <input type="text" class="tci-field-value" />
-            </div>
-            <div style="text-align: end;">
-                <button class="tci-btn bg_darkblue">查詢</button>
-            </div>
-        </div>
-        <section class="undeliveredContent tci-mt-3 darkBorderCard">
-            <div class="darkBorderCardTitle">
-                <span class=""><b>PO未送簽清單</span></b>
-            </div>
-            <div class="darkBorderCardContent">
-            <div class="table_label">
-                <div class="tci-label-group w100">
-                    <div class="tci-label-text">大江(屏科)S11 楊樺收 (08) 762-9158#5257</div>
-                    <label class="tci-label-top">採購單號</label>
-                </div>
-                <div class="tci-label-group">
-                    <div class="tci-label-text">A0002188 舊料號</div>
-                    <label class="tci-label-top">類型</label>
-                </div>
-                <div class="tci-label-group">
-                    <div class="tci-label-text">A0002188 舊料號</div>
-                    <label class="tci-label-top">建立日期</label>
-                </div>
-                <div class="tci-label-group">
-                    <div class="tci-label-text">A0002188 舊料號</div>
-                    <label class="tci-label-top">廠商代碼</label>
-                </div>
-                <div class="tci-label-group">
-                    <div class="tci-label-text">A0002188 舊料號</div>
-                    <label class="tci-label-top">交易幣別</label>
-                </div>
-                <div class="tci-label-group w100">
-                    <div class="tci-label-text">A0002188 舊料號</div>
-                    <label class="tci-label-top">廠商名稱</label>
-                </div>
-                <div class="tci-label-group content">
-                    <label class="tci-label-top">內容</label>
-                    <div  class="tci-label-text tci-mt-2">
-                        <table class="tci-table tci-table-bordered" style="font-size: var(--font-size-xs);">
-                            <thead class="tci-text-center" style="background-color: var(--color-light-gray);">
-                                <tr class="table_thead">
-                                    <th>項目</th>
-                                    <th>名稱</th>
-                                    <th style="width: 7%;">單價</th>
-                                    <th>數量</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td nowrap="nowrap">A0002737</td>
-                                    <td>34534534534大江生活-大人の生活-琉金煥采葉黃素15ml客供印刷滴管瓶-瓶蓋配件</td>
-                                    <td nowrap="nowrap">0</td>
-                                    <td nowrap="nowrap">3052 PCS</td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <div class="query_flex">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text">Crate Date</span>
                     </div>
-                    
-                </div>
-            </div>
-            <hr>
-            <div class="table_label">
-                <div class="tci-label-group w100">
-                    <div class="tci-label-text">大江(屏科)S11 楊樺收 (08) 762-9158#5257</div>
-                    <label class="tci-label-top">採購單號</label>
-                </div>
-                <div class="tci-label-group">
-                    <div class="tci-label-text">A0002188 舊料號</div>
-                    <label class="tci-label-top">類型</label>
-                </div>
-                <div class="tci-label-group">
-                    <div class="tci-label-text">A0002188 舊料號</div>
-                    <label class="tci-label-top">建立日期</label>
-                </div>
-                <div class="tci-label-group">
-                    <div class="tci-label-text">A0002188 舊料號</div>
-                    <label class="tci-label-top">廠商代碼</label>
-                </div>
-                <div class="tci-label-group">
-                    <div class="tci-label-text">A0002188 舊料號</div>
-                    <label class="tci-label-top">交易幣別</label>
-                </div>
-                <div class="tci-label-group w100">
-                    <div class="tci-label-text">A0002188 舊料號</div>
-                    <label class="tci-label-top">廠商名稱</label>
-                </div>
-                <div class="tci-label-group content">
-                    <label class="tci-label-top">內容</label>
-                    <div  class="tci-label-text mt-2">
-                        <table class="tci-table tci-table-bordered" style="font-size: var(--font-size-xs);">
-                            <thead class="tci-text-center" style="background-color: var(--color-light-gray);">
-                                <tr class="table_thead">
-                                    <th>項目</th>
-                                    <th>名稱</th>
-                                    <th style="width: 7%;">單價</th>
-                                    <th>數量</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td nowrap="nowrap">A0002737</td>
-                                    <td>34534534534大江生活-大人の生活-琉金煥采葉黃素15ml客供印刷滴管瓶-瓶蓋配件采葉黃素15ml客供印刷滴管瓶-瓶蓋</td>
-                                    <td nowrap="nowrap">0</td>
-                                    <td nowrap="nowrap">3052 PCS</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="tci-valueBtn">
+                        <input type="text" class="tci-field-value" value="2022/22/22" />
+                        <span style="padding: 0.3rem;">~</span>
+                        <input type="text" class="tci-field-value" value="2022/22/22" />
                     </div>
-                    
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text">Supplier No.</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text">Purchase staff</span>
+                    </div>
+                    <select class="tci-field-value">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div style="text-align: end;">
+                    <button class="tci-btn bg_darkblue">查詢</button>
                 </div>
             </div>
         </div>
-        </section>
+        <hr>
+        <div class="tableScroll" style="overflow-x: auto;">
+            <div>
+                <span style="font-weight: bold;font-size: var(--font-size-md);">PO未送簽清單</span>
+            </div>
+            <table class="tci-table tci-table-bordered" style="min-width: 992px;">
+                <thead style="text-align: center;background-color:var(--color-light-gray)">
+                    <tr>
+                        <th style="width: 9%;">採購單號</th>
+                        <th style="width: 5%;">類型</th>
+                        <th style="width: 8%;">建立日期</th>
+                        <th style="width: 8%;">廠商代碼</th>
+                        <th>廠商名稱</th>
+                        <th style="width: 7%;">交易幣別</th>
+                        <th>內容</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td style="text-align: center;">5889001550</td>
+                        <td style="text-align: center;">F</td>
+                        <td style="text-align: center;">2022/22/22</td>
+                        <td style="text-align: center;">222222</td>
+                        <td style="text-align: center;">和新疆歐諾個先生收</td>
+                        <td style="text-align: center;">TWD</td>
+                        <td>
+                            <table class="tci-table-bordered">
+                                <thead style="text-align: center;background-color:var(--color-light-gray)">
+                                    <tr>
+                                        <th style="width: 5%;">項目</th>
+                                        <th style="width: auto;">名稱</th>
+                                        <th style="width: 9%;">單價</th>
+                                        <th style="width: 10%;">數量</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="">
+                                    <td style="text-align: center;">A2222222</td>
+                                    <td>AQUAGEN 海洋深層氣泡水(奧地利香蘋愛樂)-客供瓶貼(台灣版) V2</td>
+                                    <td style="text-align: center;">0</td>
+                                    <td style="text-align: center;">22222 PSC</td>
 
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">5889001550</td>
+                        <td style="text-align: center;">F</td>
+                        <td style="text-align: center;">2022/22/22</td>
+                        <td style="text-align: center;">222222</td>
+                        <td style="text-align: center;">和新疆歐諾個先生收</td>
+                        <td style="text-align: center;">TWD</td>
+                        <td>
+                            <table class="tci-table-bordered">
+                                <thead style="text-align: center;background-color:var(--color-light-gray)">
+                                    <tr>
+                                        <th style="width: 5%;">項目</th>
+                                        <th style="width: auto;">名稱</th>
+                                        <th style="width: 9%;">單價</th>
+                                        <th style="width: 10%;">數量</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="">
+                                    <td style="text-align: center;">A2222222</td>
+                                    <td>AQUAGEN 海洋深層氣泡水(奧地利香蘋愛樂)-客供瓶貼(台灣版) V2</td>
+                                    <td style="text-align: center;">0</td>
+                                    <td style="text-align: center;">22222 PSC</td>
+
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 

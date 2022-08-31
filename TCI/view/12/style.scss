@@ -43,10 +43,7 @@
 
         .orderTitle {
             font-weight: bold;
-            background-color: var(--color-dimgray);
-            color: var(--color-snow);
             padding: .3rem;
-            border-radius: var(--borderRadius);
         }
     }
 
@@ -87,7 +84,12 @@
 
                 .order {
                     display: flex;
-
+                    flex-wrap: wrap;
+                    width: 50%;
+                    margin-right: 5px;
+                    &.short {
+                        width: 30%;
+                    }
                     .tci-input-group-text {
                         margin: 0 .5rem;
                     }
@@ -95,6 +97,68 @@
             }
         }
 
+        .advancedPayment {
+            .paymentContent {
+                .block {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .tci-field {
+                        width: 48%;
+
+                        .tci-field-label {
+                            width: 20%;
+                        }
+
+                        .tci-field-value {
+                            width: 80%;
+                        }
+                    }
+                }
+
+                .block2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .tci-field {
+                        width: 48%;
+
+                        .tci-field-label {
+                            width: 30%;
+                        }
+
+                        .tci-field-value {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #page_advancedPayment_createView {
+        .advancedPaymentOrder {
+            .orderContent {
+                display: flex;
+
+                .order {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 70%;
+                    margin-right: 5px;
+
+                    &.short {
+                        width: 30%;
+                    }
+
+                    .tci-input-group-text {
+                        margin: 0 .5rem;
+                    }
+                }
+            }
+        }
         .advancedPayment {
             .paymentContent {
                 .block {

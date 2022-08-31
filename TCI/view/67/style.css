@@ -60,10 +60,10 @@
     width: auto;
   }
 }
-#page_goodsIssue_signoff .tableScroll0 {
+#page_goodsIssue_signoff .tableScroll {
   overflow-x: auto;
 }
-#page_goodsIssue_signoff .tableScroll0 .tableContent {
+#page_goodsIssue_signoff .tableScroll .tableContent {
   width: 1200px;
 }
 
@@ -75,7 +75,7 @@
 }
 
 @media (min-width: 992px) {
-  #page_goodsIssue_signoff .tableScroll0 .tableContent {
+  #page_goodsIssue_signoff .tableScroll .tableContent {
     width: 100%;
   }
   #page_goodsReceipt_print .print_table .tableContent {

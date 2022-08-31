@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>查看需求進度</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_viewProgress">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>查看需求進度</b></span>
+        </div>
+        <div
+            style="text-align: center;color:var(--color-snow);background-color: var(--color-dark-red);margin-bottom: 1rem;">
+            <span><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;您已透過其他的瀏覽器視窗切換到其他公司,不同於目前頁面的「」,請注意操作&nbsp;<i
+                    class="fa-solid fa-triangle-exclamation"></i></span>
+        </div>
+        <div class="btnGroups" style="margin-bottom:1rem;">
+            <button class="tci-btn bg_darkblue"><i class="fa-solid fa-filter"></i>&nbsp;資料篩選</button>
+            <button class="tci-btn bg_darkgreen"><i class="fa-solid fa-gear"></i>&nbsp;PD 工作組長設定</button>
+            <button class="tci-btn bg_darkgreen"><i class="fa-solid fa-gear"></i>&nbsp;PD 分組設定</button>
+        </div>
+
+        <section>
+            <div class="tci-field">
+                <select class="tci-form-control" style="width:400px">
+                    <option selected>所有需求者</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <table class="tci-table tci-table-bordered">
+                <tbody>
+                    <tr>
+                        <th>關鍵字</th>
+                        <td><input type="text" value="220303-75-0010"></td>
+                    </tr>
+                    <tr>
+                        <th>劑型</th>
+                        <td>
+                            <button class="tci-btn bg_darkblue">固態</button>
+                            <button class="tci-btn bg_darkblue">液態</button>
+                            <button class="tci-btn bg_darkblue">保養品</button>
+                            <button class="tci-btn bg_darkblue">其他</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>需求類型</th>
+                        <td>
+                            <button class="tci-btn bg_darkblue">提案</button>
+                            <button class="tci-btn bg_darkblue">配方</button>
+                            <button class="tci-btn bg_darkblue">包材設計</button>
+                            <button class="tci-btn bg_darkblue">平面設計</button>
+                            <button class="tci-btn bg_darkblue">培訓</button>
+                            <button class="tci-btn bg_darkblue">審稿</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>工作狀態</th>
+                        <td>
+                            <button class="tci-btn bg_darkkhaki">小組長</button>
+                            <button class="tci-btn bg_darkred">待回覆</button>
+                            <button class="tci-btn tci-btn-orgin">已指派</button>
+                            <button class="tci-btn tci-btn-warning">已回覆</button>
+                            <button class="tci-btn bg_darkgreen">已確認</button>
+                            <button class="tci-btn bg_lightgray">待承接</button>
+                            <button class="tci-btn tci-btn-grass">待確認</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>工作類型</th>
+                        <td>
+                            <button class="tci-btn bg_darkblue">提案</button>
+                            <button class="tci-btn bg_darkblue">配方</button>
+                            <button class="tci-btn bg_darkblue">包材設計</button>
+                            <button class="tci-btn bg_darkblue">平面設計</button>
+                            <button class="tci-btn bg_darkblue">培訓</button>
+                            <button class="tci-btn bg_darkblue">審稿</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="tabsSections">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="fromSales-tab" data-bs-toggle="tab"
+                        data-bs-target="#fromSales-tab-pane" type="button" role="tab" aria-controls="fromSales-tab-pane"
+                        aria-selected="true">業務單位需求&nbsp; <span class="badge text-bg-secondary">0</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="fromOtherDept-tab" data-bs-toggle="tab"
+                        data-bs-target="#fromOtherDept-tab-pane" type="button" role="tab"
+                        aria-controls="fromOtherDept-tab-pane" aria-selected="false">其他單位需求&nbsp; <span
+                            class="badge text-bg-secondary">0</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="myWorkList-tab" data-bs-toggle="tab"
+                        data-bs-target="#myWorkList-tab-pane" type="button" role="tab"
+                        aria-controls="myWorkList-tab-pane" aria-selected="false">我的工作&nbsp; <span
+                            class="badge text-bg-secondary">0</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="waitClose-tab" data-bs-toggle="tab"
+                        data-bs-target="#waitClose-tab-pane" type="button" role="tab" aria-controls="waitClose-tab-pane"
+                        aria-selected="false">待結案&nbsp; <span class="badge text-bg-secondary">0</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="samplingList-tab" data-bs-toggle="tab"
+                        data-bs-target="#samplingList-tab-pane" type="button" role="tab"
+                        aria-controls="samplingList-tab-pane" aria-selected="false">打樣逾期&nbsp; <span
+                            class="badge text-bg-secondary">0</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="closed-tab" data-bs-toggle="tab" data-bs-target="#closed-tab-pane"
+                        type="button" role="tab" aria-controls="closed-tab-pane" aria-selected="false">當月已結案&nbsp; <span
+                            class="badge text-bg-secondary">0</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="terminated-tab" data-bs-toggle="tab"
+                        data-bs-target="#terminated-tab-pane" type="button" role="tab"
+                        aria-controls="terminated-tab-pane" aria-selected="false">已終止商機&nbsp; <span
+                            class="badge text-bg-secondary">0</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reject-tab" data-bs-toggle="tab" data-bs-target="#reject-tab-pane"
+                        type="button" role="tab" aria-controls="reject-tab-pane" aria-selected="false">研發退件&nbsp; <span
+                            class="badge text-bg-secondary">0</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="schedule-tab" data-bs-toggle="tab" data-bs-target="#schedule-tab-pane"
+                        type="button" role="tab" aria-controls="schedule-tab-pane" aria-selected="false">工作排程&nbsp;
+                        <span class="badge text-bg-secondary">0</span></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="search-tab" data-bs-toggle="tab" data-bs-target="#search-tab-pane"
+                        type="button" role="tab" aria-controls="search-tab-pane" aria-selected="false">查詢</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="fromSales-tab-pane" role="tabpanel"
+                    aria-labelledby="fromSales-tab" tabindex="0">
+                    <div class="row_display">
+                        <div class="box box_1">
+                            <p>需求單</p>
+                            <div class="tci-card tci-mt-2 card-green" style="cursor: pointer;">
+                                <div class="tci-card-header card-header-green">#液態 Liquid 220202-30-0010
+                                    <label for=""
+                                        style="border-radius: var(--borderRadius);padding:3px;background-color: var(--color-snow);color: var(--color-dark-green);">大江生醫</label>
+                                </div>
+                                <div class="tci-card-body">
+                                    <p class="tci-card-text">NW-Iron Liquid Sachet<br />
+                                        PharmaCare Laboratories</p>
+                                </div>
+                                <div class="tci-card-footer">
+                                    <button class="tci-btn bg_darkblue"
+                                        style="padding: 0 3px;min-width: auto;font-size: var(--font-size-xs);">提案</button>
+                                    <button class="tci-btn bg_darkblue"
+                                        style="padding: 0 3px;min-width: auto;font-size: var(--font-size-xs);">預開</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box box_1">
+                            <p>提案</p>
+                            <div class="tci-btn block"
+                                style="background-color: var(--color-warning);color:var(--color-snow);box-shadow:var(--borderShadow);padding: 4px;border-radius: var(--borderRadius);min-width: 130px;">
+                                <span>
+                                    已指派<br>黃彥喬<br>ALLEN.HUANG<br>2022/03/04
+                                </span>
+                            </div>
+                        </div>
+                        <div class="box box_1">
+                            <p>配方</p>
+                            <button class="tci-btn block"
+                                style="background-color: var(--color-dark-green);color:var(--color-snow);box-shadow:var(--borderShadow);padding: 4px;border-radius: var(--borderRadius);min-width: 130px;">
+                                <span>
+                                    已指派<br>黃彥喬<br>JOHNNY.HUANG<br>2022/03/04
+                                </span>
+                            </button>
+                        </div>
+                        <div class="box box_1">
+                            <p>包材設計</p>
+                            <button class="tci-btn block"
+                                style="background-color: var(--color-snow); box-shadow:var(--borderShadow);padding: 4px;border-radius: var(--borderRadius);min-width: 130px;">
+                                <span>
+                                    等待確認
+                                </span>
+                            </button>
+                        </div>
+                        <div class="box box_1">
+                            <p>平面設計</p>
+                            <button class="tci-btn block"
+                                style="background-color: var(--color-snow); box-shadow:var(--borderShadow);padding: 4px;border-radius: var(--borderRadius);min-width: 130px;">
+                                <span>
+                                    等待確認
+                                </span>
+                            </button>
+                        </div>
+                        <div class="box box_1">
+                            <p>稿件審核</p>
+                            <button class="tci-btn block"
+                                style="background-color: var(--color-snow); box-shadow:var(--borderShadow);padding: 4px;border-radius: var(--borderRadius);min-width: 130px;">
+                                <span>
+                                    等待確認
+                                </span>
+                            </button>
+                        </div>
+                        <div class="box box_1">
+                            <p>培訓</p>
+                            <button class="tci-btn block"
+                                style="background-color: var(--color-snow); box-shadow:var(--borderShadow);padding: 4px;border-radius: var(--borderRadius);min-width: 130px;">
+                                <span>
+                                    等待確認
+                                </span>
+                            </button>
+                        </div>
+                        <div class="box box_1">
+                            <p>打樣管制</p>
+                            <div class="tci-btn block"
+                                style="background-color: var(--color-warning);color:var(--color-snow);box-shadow:var(--borderShadow);padding: 4px;border-radius: var(--borderRadius);min-width: 130px;">
+                                <span>
+                                    已指派<br>黃彥喬<br>ALLEN.HUANG<br>2022/03/04
+                                </span>
+                            </div>
+                        </div>
+                        <div class="box box_1">
+                            <p>CRM商機</p>
+                            <div class="tci-card tci-mt-2 card-green">
+                                <div class="tci-card-header card-header-green">#預估明細編號 79719</div>
+                                <div class="tci-card-body">
+                                    <p class="tci-card-text">M95-鄒曉彤-CAROLYN.TSOU<br />
+                                        PM-楊慧珊-ELLEN.YOUNG</p>
+                                </div>
+                                <div class="tci-card-footer">
+                                    <span>USD 6,452,600.00</span>
+                                    <button class="tci-btn bg_darkblue"
+                                        style="padding: 0 3px;min-width: auto;font-size: var(--font-size-xs);">關鍵聯絡窗口</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="width:100%;">
+                        <iframe src="https://getbootstrap.com/docs/5.2/components/navs-tabs/#tabs;"
+                            style="width: 100%;height: 700px;"></iframe>
+                    </div>
+                    <hr>
+                    <div class="btnGroups">
+                        <button class="tci-btn bg_darkblue"><i class="fa-solid fa-house"></i>&nbsp;返回列表頁</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="fromOtherDept-tab-pane" role="tabpanel"
+                    aria-labelledby="fromOtherDept-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="myWorkList-tab-pane" role="tabpanel" aria-labelledby="myWorkList-tab"
+                    tabindex="0">
+                    <hr>
+                    <div class="btnGroups">
+                        <button class="tci-btn bg_darkblue"><i class="fa-solid fa-house"></i>&nbsp;返回列表頁</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="waitClose-tab-pane" role="tabpanel" aria-labelledby="waitClose-tab"
+                    tabindex="0">
+                    <hr>
+                    <div class="btnGroups">
+                        <button class="tci-btn bg_darkblue"><i class="fa-solid fa-house"></i>&nbsp;返回列表頁</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="samplingList-tab-pane" role="tabpanel" aria-labelledby="samplingList-tab"
+                    tabindex="0">
+                    <hr>
+                    <div class="btnGroups">
+                        <button class="tci-btn bg_darkblue"><i class="fa-solid fa-house"></i>&nbsp;返回列表頁</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="closed-tab-pane" role="tabpanel" aria-labelledby="closed-tab"
+                    tabindex="0">
+                    <hr>
+                    <div class="btnGroups">
+                        <button class="tci-btn bg_darkblue"><i class="fa-solid fa-house"></i>&nbsp;返回列表頁</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="terminated-tab-pane" role="tabpanel" aria-labelledby="terminated-tab"
+                    tabindex="0">
+                    <hr>
+                    <div class="btnGroups">
+                        <button class="tci-btn bg_darkblue"><i class="fa-solid fa-house"></i>&nbsp;返回列表頁</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="reject-tab-pane" role="tabpanel" aria-labelledby="reject-tab"
+                    tabindex="0">
+                    <hr>
+                    <div class="btnGroups">
+                        <button class="tci-btn bg_darkblue"><i class="fa-solid fa-house"></i>&nbsp;返回列表頁</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="schedule-tab-pane" role="tabpanel" aria-labelledby="schedule-tab"
+                    tabindex="0">...</div>
+                <div class="tab-pane fade" id="search-tab-pane" role="tabpanel" aria-labelledby="search-tab"
+                    tabindex="0">
+                    <div class="searchQuery tci-mt-2">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">需求單號:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">需求者名稱:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">產品名稱:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">商機客戶名稱:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">商機客戶負責業務:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">商機預估明細編號:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" />
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="btnGroups">
+                        <button class="tci-btn bg_darkblue"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;查詢</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

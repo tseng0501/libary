@@ -1,8 +1,42 @@
+//查詢單據 bar
+.multi-level {
+    .panel-heading {
+        background-color: var(--color-dark-khaki);
+        color: var(--color-snow);
+
+        .panel-title {
+            text-align: center;
+            font-weight: bold;
+            padding: 5px;
+        }
+    }
+
+    table {
+        margin-bottom: 0;
+        td {
+            padding-top: 4px;
+            padding-bottom: 4px;
+
+            &:hover {
+                background-color: var(--color-light-gray);
+            }
+        }
+
+        .current {
+            background-color: var(--color-light-gray);
+        }
+    }
+
+    .badge {
+        border-radius: var(--borderRadiusCircular);
+    }
+}
 //簽核
 #accordionFlush {
-  .accordion-item{
-    margin-bottom: 1rem;
-  }
+    .accordion-item {
+        margin-bottom: 1rem;
+    }
+
     .accordion-button {
         background-color: var(--color-dark-khaki);
         color: var(--color-snow);
@@ -21,23 +55,46 @@
         border-top-right-radius: 0;
         margin-bottom: 1rem;
     }
-    .accordion-body{
+
+    .accordion-body {
         padding: 5px;
     }
 }
+
+.next_signer {
+    margin: .5rem 0;
+}
+
 // 簽核流程
 .processBoxContent {
 
-    i {
+    .fa-left-long {
         transform: rotate(90deg);
     }
 }
+
+//簽核意見
+.descriptionBoxContent {
+    .descriptionBox_icon {
+        margin: 1rem;
+    }
+}
+
 @media (min-width: 768px) {
-    
+
     //留言
     .messageBoxContent {
         display: flex;
         justify-content: center;
+    }
+
+    .next_signer {
+        display: flex;
+        justify-content: center;
+
+        .tci-bs-input-group {
+            width: 45%;
+        }
     }
 
     // 簽核流程
@@ -45,7 +102,7 @@
         display: flex;
         flex-wrap: wrap;
 
-        i {
+        .fa-left-long {
             transform: rotate(0deg);
         }
 
@@ -62,6 +119,7 @@
         .descriptionBox_icon {
             display: flex;
             justify-content: center;
+            margin: 1rem;
 
             .check {
                 margin: 0 1.5rem;

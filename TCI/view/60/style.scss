@@ -1,23 +1,8 @@
 #page_createPurchaseOrder {
-    .fileBox {
-        border: 2px solid var(--color-rosybrown);
-        border-radius: var(--borderRadius);
-        padding: .5rem;
-        margin-top: 1rem;
-
-        .fileContentNo {
-            width: 40%;
-        }
-    }
-
     .tci-field-text,
     .tci-input-group-text,
     .tci-label-top {
         font-weight: bold;
-    }
-
-    hr {
-        border-top: 1px solid gainsboro;
     }
 
     .query {
@@ -26,17 +11,6 @@
         .tci-valueBtn {
             display: flex;
             width: 100%;
-        }
-    }
-
-    .content_label {
-        height: 300px;
-        overflow-y: auto;
-
-        .table_label {
-            border: 1px solid var(--color-alge);
-            padding: 5px;
-            border-radius: var(--borderRadius);
         }
     }
 
@@ -50,29 +24,20 @@
         }
     }
 
-    .undeliveredContent {
-        .table_label {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 1rem;
+    .tableScroll0 {
+        overflow-x: auto;
 
-            .tci-label-group {
-                margin-top: 11px;
-                width: 100%;
-
-                &.content {
-                    width: 100%;
-
-                    .tci-label-text {
-                        overflow-x: auto;
-                    }
-                }
-            }
+        .tci-table {
+            min-width: 768px;
         }
     }
+    .tableScroll {
+        overflow-x: auto;
 
-
+        .tci-table {
+            min-width: 1024px;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -99,6 +64,15 @@
             }
         }
 
+        .query_flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-field {
+                width: 48%;
+            }
+        }
         .fileBox {
             .illustrate {
                 .fileIllustrate {
@@ -106,49 +80,6 @@
 
                     .tci-input-group {
                         margin-bottom: .5rem;
-                    }
-                }
-            }
-        }
-
-        .content {
-            .content_row {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-
-                .tci-input-group {
-                    width: 30%;
-                }
-            }
-        }
-
-        .content_label {
-            .table_label {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-
-                .tci-label-group {
-                    width: 30%;
-
-
-
-                    &.no {
-                        width: 5%;
-                    }
-
-                    &.middle {
-                        width: 90%;
-                    }
-
-                    &.long {
-                        width: 100%;
-                    }
-
-                    .ecNum {
-                        font-size: 12px;
-                        border-bottom: 3px double;
                     }
                 }
             }
@@ -169,29 +100,9 @@
         }
 
         .modal {
-            hr {
-                border-top: 2px solid var(--color-dimgray);
-            }
-
             .modal-content {
                 width: 95vw;
                 height: 95vh;
-            }
-        }
-
-        .undeliveredContent {
-            .table_label {
-                .tci-label-group {
-                    width: 24%;
-
-                    &.w100 {
-                        width: 100%;
-                    }
-
-                    &.content {
-                        width: 100%;
-                    }
-                }
             }
         }
     }
@@ -200,21 +111,6 @@
 
 @media (min-width: 992px) {
     #page_createPurchaseOrder {
-        .content {
-            .content_row {
-                .tci-input-group {
-                    width: 24%;
-                }
-            }
-        }
-
-        .content_label {
-            .table_label {
-                .tci-label-group {
-                    width: 23%;
-                }
-            }
-        }
 
         #supply_satues {
             .table_label {
@@ -280,7 +176,8 @@
         .choose {
             display: flex;
             justify-content: center;
-            select{
+
+            select {
                 width: 300px;
             }
         }

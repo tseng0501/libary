@@ -29,15 +29,6 @@
 #page_invoicePaper .invoiceTable .tableScroll {
   width: 900px;
 }
-#page_invoicePaper .fileBox {
-  border: 2px solid var(--color-rosybrown);
-  border-radius: var(--borderRadius);
-  padding: 0.5rem;
-  margin-top: 1rem;
-}
-#page_invoicePaper .fileBox .fileContentNo {
-  width: 40%;
-}
 #page_invoicePaper .invoiceContainer {
   margin-top: 1rem;
 }
@@ -54,9 +45,6 @@
     justify-content: space-between;
   }
   #page_invoiceQuery .query .tci-input-group {
-    width: 48%;
-  }
-  #page_invoiceQuery .query .tci-input-group.mark {
     width: 48%;
   }
   #page_invoiceQuery .queryContentAll .queryRow .tci-input-group {
@@ -95,9 +83,6 @@
   #page_invoiceQuery .query .tci-input-group {
     width: 30%;
   }
-  #page_invoiceQuery .query .tci-input-group.mark {
-    width: 30%;
-  }
   #page_invoiceQuery .queryContentAll .queryRow .tci-input-group {
     width: 15%;
   }
@@ -118,15 +103,15 @@
     margin-right: 5px;
   }
 }
-#page_invoiceQuery_signoff .tableScroll0 {
+#page_invoiceQuery_signoff .tableScroll {
   overflow-x: auto;
 }
-#page_invoiceQuery_signoff .tableScroll0 .tableContent {
+#page_invoiceQuery_signoff .tableScroll .tableContent {
   width: 900px;
 }
 
 @media (min-width: 768px) {
-  #page_invoiceQuery_signoff .tableScroll0 .tableContent {
+  #page_invoiceQuery_signoff .tableScroll .tableContent {
     width: 100%;
   }
 }

@@ -1,36 +1,45 @@
 #page_loyaltyPoint {
     .loyaltyPointAdd {
         .loyaltyPointAddContent {
-            .tci-field{
+            .tci-field {
                 flex-wrap: wrap;
-                .tci-field-label{
+
+                .tci-field-label {
                     width: 100%;
                 }
+
                 .tci-field-value {
-                    width:100%;
+                    width: 100%;
+
                     &.gray {
                         background-color: var(--color-whitesmoke);
                     }
                 }
-                .table_content{
-                    width:100%;
-                    .tci-table{
-                        tbody{
-                            overflow-y: auto;/*設定卷軸 auto 是有超過我的高度的時候才會出現卷軸*/
-                            height: 100px;/*自己設定*/
+
+                .table_content {
+                    width: 100%;
+
+                    .tci-table {
+                        tbody {
+                            overflow-y: auto;
+                            /*設定卷軸 auto 是有超過我的高度的時候才會出現卷軸*/
+                            height: 100px;
+                            /*自己設定*/
                             display: block;
                         }
+
                         tr {
                             width: 100%;
                             display: inline-table;
                         }
                     }
-                    th{
+
+                    th {
                         text-align: center;
                     }
                 }
             }
-          
+
         }
     }
 }
@@ -39,43 +48,49 @@
     #page_loyaltyPoint {
         .loyaltyPointAdd {
             .loyaltyPointAddContent {
-                .tci-field{
-                    .tci-field-label{
+                .tci-field {
+                    .tci-field-label {
                         width: 25%;
                     }
+
                     .tci-field-value {
-                        width:75%;
+                        width: 75%;
+
                         &.gray {
                             background-color: var(--color-whitesmoke);
                         }
                     }
-                    .table_content{
-                        width:75%;
+
+                    .table_content {
+                        width: 75%;
                     }
                 }
-              
+
             }
         }
     }
 }
-#page_loyaltyPoint_signoff{
-    .tableScroll{
+
+#page_loyaltyPoint_signoff {
+    .tableScroll {
         overflow-x: auto;
         margin-bottom: 1.5rem;
-        .tableContent{
+
+        .tableContent {
             width: 900px;
-            .tableContentAuto{
+
+            .tableContentAuto {
                 overflow-y: auto;
-                height: 350px;
+                height: 300px;
             }
         }
     }
 }
 
 @media (min-width: 768px) {
-    #page_loyaltyPoint_signoff{
-        .tableScroll{
-            .tableContent{
+    #page_loyaltyPoint_signoff {
+        .tableScroll {
+            .tableContent {
                 width: 100%;
             }
         }

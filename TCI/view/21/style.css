@@ -1,3 +1,43 @@
+#page_oldgoodsIssue .tableScroll {
+  overflow-x: auto;
+}
+#page_oldgoodsIssue .tableScroll .tci-table {
+  width: 768px;
+}
+
+#page_oldgoodsIssue_createView .tableScroll {
+  overflow-x: auto;
+}
+#page_oldgoodsIssue_createView .tableScroll .tci-table {
+  width: 992px;
+}
+
+@media (min-width: 768px) {
+  #page_oldgoodsIssue .oldgoodsIssue_query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_oldgoodsIssue .oldgoodsIssue_query .tci-field {
+    width: 48%;
+  }
+  #page_oldgoodsIssue .tableScroll .tci-table {
+    width: 100%;
+  }
+  #page_oldgoodsIssue_createView .oldgoodsIssue_query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_oldgoodsIssue_createView .oldgoodsIssue_query .tci-field {
+    width: 48%;
+  }
+}
+@media (min-width: 992px) {
+  #page_oldgoodsIssue_createView .tableScroll .tci-table {
+    width: 100%;
+  }
+}
 #page_oldgoodsIssue_signoff .tableScroll {
   overflow-x: auto;
 }

@@ -215,7 +215,7 @@ body {
   .print_table .tableContent .tableScroll .tableAuto {
     width: 100%;
   }
-  .print_process_circuit {
+  .processBoxContent {
     display: flex;
     flex-wrap: wrap;
   }
@@ -1292,13 +1292,6 @@ table {
 
 a {
   text-decoration: none;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
 }
 
 p,

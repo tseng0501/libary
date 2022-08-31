@@ -1,3 +1,43 @@
+#page_oldgoodsReceipt .tableScroll {
+  overflow-x: auto;
+}
+#page_oldgoodsReceipt .tableScroll .tci-table {
+  width: 992px;
+}
+
+#page_oldgoodsReceipt_createView .tableScroll {
+  overflow-x: auto;
+}
+#page_oldgoodsReceipt_createView .tableScroll .tci-table {
+  width: 992px;
+}
+
+@media (min-width: 768px) {
+  #page_oldgoodsReceipt .oldgoodsReceipt_query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_oldgoodsReceipt .oldgoodsReceipt_query .tci-field {
+    width: 48%;
+  }
+  #page_oldgoodsReceipt .tableScroll .tci-table {
+    width: 100%;
+  }
+  #page_oldgoodsReceipt_createView .oldgoodsReceipt_query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_oldgoodsReceipt_createView .oldgoodsReceipt_query .tci-field {
+    width: 48%;
+  }
+}
+@media (min-width: 992px) {
+  #page_oldgoodsReceipt_createView .tableScroll .tci-table {
+    width: 100%;
+  }
+}
 #page_oldgoodsReceipt_signoff .tableScroll {
   overflow-x: auto;
 }

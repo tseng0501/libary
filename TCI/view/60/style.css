@@ -1,19 +1,7 @@
-#page_createPurchaseOrder .fileBox {
-  border: 2px solid var(--color-rosybrown);
-  border-radius: var(--borderRadius);
-  padding: 0.5rem;
-  margin-top: 1rem;
-}
-#page_createPurchaseOrder .fileBox .fileContentNo {
-  width: 40%;
-}
 #page_createPurchaseOrder .tci-field-text,
 #page_createPurchaseOrder .tci-input-group-text,
 #page_createPurchaseOrder .tci-label-top {
   font-weight: bold;
-}
-#page_createPurchaseOrder hr {
-  border-top: 1px solid gainsboro;
 }
 #page_createPurchaseOrder .query {
   padding: 0.3rem;
@@ -22,36 +10,23 @@
   display: flex;
   width: 100%;
 }
-#page_createPurchaseOrder .content_label {
-  height: 300px;
-  overflow-y: auto;
-}
-#page_createPurchaseOrder .content_label .table_label {
-  border: 1px solid var(--color-alge);
-  padding: 5px;
-  border-radius: var(--borderRadius);
-}
 #page_createPurchaseOrder table .table_thead {
   background-color: var(--color-smoke);
 }
 #page_createPurchaseOrder table th {
   padding: 0.25rem;
 }
-#page_createPurchaseOrder .undeliveredContent .table_label {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-#page_createPurchaseOrder .undeliveredContent .table_label .tci-label-group {
-  margin-top: 11px;
-  width: 100%;
-}
-#page_createPurchaseOrder .undeliveredContent .table_label .tci-label-group.content {
-  width: 100%;
-}
-#page_createPurchaseOrder .undeliveredContent .table_label .tci-label-group.content .tci-label-text {
+#page_createPurchaseOrder .tableScroll0 {
   overflow-x: auto;
+}
+#page_createPurchaseOrder .tableScroll0 .tci-table {
+  min-width: 768px;
+}
+#page_createPurchaseOrder .tableScroll {
+  overflow-x: auto;
+}
+#page_createPurchaseOrder .tableScroll .tci-table {
+  min-width: 1024px;
 }
 
 @media (min-width: 768px) {
@@ -69,40 +44,19 @@
   #page_createPurchaseOrder .query .tci-field-value {
     width: 70%;
   }
+  #page_createPurchaseOrder .query_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_createPurchaseOrder .query_flex .tci-field {
+    width: 48%;
+  }
   #page_createPurchaseOrder .fileBox .illustrate .fileIllustrate {
     display: flex;
   }
   #page_createPurchaseOrder .fileBox .illustrate .fileIllustrate .tci-input-group {
     margin-bottom: 0.5rem;
-  }
-  #page_createPurchaseOrder .content .content_row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #page_createPurchaseOrder .content .content_row .tci-input-group {
-    width: 30%;
-  }
-  #page_createPurchaseOrder .content_label .table_label {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #page_createPurchaseOrder .content_label .table_label .tci-label-group {
-    width: 30%;
-  }
-  #page_createPurchaseOrder .content_label .table_label .tci-label-group.no {
-    width: 5%;
-  }
-  #page_createPurchaseOrder .content_label .table_label .tci-label-group.middle {
-    width: 90%;
-  }
-  #page_createPurchaseOrder .content_label .table_label .tci-label-group.long {
-    width: 100%;
-  }
-  #page_createPurchaseOrder .content_label .table_label .tci-label-group .ecNum {
-    font-size: 12px;
-    border-bottom: 3px double;
   }
   #page_createPurchaseOrder #supply_satues .table_label {
     display: flex;
@@ -113,30 +67,12 @@
     margin-right: 6px;
     width: 30%;
   }
-  #page_createPurchaseOrder .modal hr {
-    border-top: 2px solid var(--color-dimgray);
-  }
   #page_createPurchaseOrder .modal .modal-content {
     width: 95vw;
     height: 95vh;
   }
-  #page_createPurchaseOrder .undeliveredContent .table_label .tci-label-group {
-    width: 24%;
-  }
-  #page_createPurchaseOrder .undeliveredContent .table_label .tci-label-group.w100 {
-    width: 100%;
-  }
-  #page_createPurchaseOrder .undeliveredContent .table_label .tci-label-group.content {
-    width: 100%;
-  }
 }
 @media (min-width: 992px) {
-  #page_createPurchaseOrder .content .content_row .tci-input-group {
-    width: 24%;
-  }
-  #page_createPurchaseOrder .content_label .table_label .tci-label-group {
-    width: 23%;
-  }
   #page_createPurchaseOrder #supply_satues .table_label .tci-label-group {
     margin-right: 6px;
     width: 23%;

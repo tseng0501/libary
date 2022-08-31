@@ -215,7 +215,7 @@ body {
   .print_table .tableContent .tableScroll .tableAuto {
     width: 100%;
   }
-  .print_process_circuit {
+  .processBoxContent {
     display: flex;
     flex-wrap: wrap;
   }

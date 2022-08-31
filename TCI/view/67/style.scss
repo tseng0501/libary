@@ -99,7 +99,7 @@
 
 // 簽核 列印
 #page_goodsIssue_signoff {
-    .tableScroll0 {
+    .tableScroll {
         overflow-x: auto;
 
         .tableContent {
@@ -120,7 +120,7 @@
 
 @media (min-width:992px) {
     #page_goodsIssue_signoff {
-        .tableScroll0 {
+        .tableScroll {
             .tableContent {
                 width: 100%;
             }

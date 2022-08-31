@@ -36,10 +36,10 @@
     width: 100%;
   }
 }
-#page_inventoryTransfer_signoff .tableScroll0 {
+#page_inventoryTransfer_signoff .tableScroll {
   overflow-x: auto;
 }
-#page_inventoryTransfer_signoff .tableScroll0 table {
+#page_inventoryTransfer_signoff .tableScroll table {
   width: 900px;
 }
 
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 768px) {
-  #page_inventoryTransfer_signoff .tableScroll0 table {
+  #page_inventoryTransfer_signoff .tableScroll table {
     width: 100%;
   }
   #page_inventoryTransfer_print .print_table .tableContent {

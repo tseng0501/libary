@@ -1,0 +1,102 @@
+#page_viewProgress {
+    .tabsSections {
+        text-align: center;
+        margin: 1rem 0;
+
+        .nav-tabs {
+            padding: 5px 0;
+            white-space: nowrap;
+            overflow-x: auto;
+            display: block;
+        }
+
+        .nav-item {
+            display: inline-block;
+            font-size: var(--font-size-md);
+
+            .nav-link {
+                color: var(--color-dark);
+
+                &.active {
+                    color: var(--color-snow);
+                    background-color: var(--color-dark-khaki);
+                }
+            }
+        }
+    }
+
+    #myTabContent {
+        #fromSales-tab-pane {
+            overflow-x: auto;
+
+            .row_display {
+                width: 992px;
+                display: flex;
+
+                .box {
+                    width: auto;
+                    margin: 1rem .5rem;
+                    padding: .5rem;
+
+                    &.box_1 {
+                        background-color: var(--color-light-blue);
+                    }
+
+                    &.box_2 {
+                        background-color: var(--color-light-error);
+                    }
+
+                    &.box_3 {
+                        background-color: var(--color-light-warning);
+                    }
+
+                    &.box_4 {
+                        background-color: #FFD1A4;
+                    }
+
+                    &.box_5 {
+                        background-color: #A6A6D2;
+                    }
+
+                    &.box_6 {
+                        background-color: #C07AB8;
+                    }
+
+                    &.box_7 {
+                        background-color: #C2C287;
+                    }
+                }
+            }
+        }
+        #search-tab-pane{
+            .searchQuery{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .tci-field{
+                    width: 48%;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+@media (min-width:768px) {
+    #myTabContent {
+        #search-tab-pane{
+            .searchQuery{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .tci-field{
+                    .tci-field-label{
+                        width: 45%;
+                    }
+                    .tci-field-value{
+                        width: 55%;
+                    }
+                }
+            }
+        }
+    }
+}

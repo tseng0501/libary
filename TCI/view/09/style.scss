@@ -1,0 +1,77 @@
+#page_purchaseOrder {
+    .query {
+        .tci-field {
+            .tci-valueBtn {
+                display: flex;
+                width: 100%;
+
+            }
+            &.short {
+                flex-wrap: nowrap;
+            }
+        }
+    }
+}
+
+// @media (min-width:768px) {
+//     #page_purchaseOrder {
+//         .query {
+//             .tci-field {
+//                 .tci-field-label {
+//                     width: 20%;
+//                 }
+
+//                 .tci-valueBtn {
+//                     width: 80%;
+
+//                     .tci-field-value {
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media (min-width:768px) {
+    #page_purchaseOrder {
+        .query {
+            display: flex;
+            justify-content: space-between;
+
+            .tci-field {
+                width: 80%;
+
+                .tci-field-label {
+                    width: 20%;
+                }
+
+                .tci-valueBtn {
+                    width: 80%;
+
+                    .tci-field-value {
+                        width: 100%;
+                    }
+                }
+
+                &.short {
+                    width: 26%;
+                    margin-left: 3rem;
+
+                    .tci-field-label {
+                        width: 40%;
+                    }
+
+                    .tci-valueBtn {
+                        width: 50%;
+
+                        .tci-field-value {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,3 +1,4 @@
+
 .tci-form-control {
     margin-right: 5px;
 
@@ -49,5 +50,23 @@
             }
         }
 
+    }
+}
+
+#page_requisition_signoff{
+    .tableScroll{
+        overflow-x: auto;
+        .tableContent{
+            width: 768px;
+        }
+    }
+}
+@media (min-width: 768px) {
+    #page_requisition_signoff{
+        .tableScroll{
+            .tableContent{
+                width: 100%;
+            }
+        }
     }
 }

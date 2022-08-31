@@ -19,18 +19,161 @@
             <!-- 查詢bar -->
             <div class="dropdownContent" style="position: absolute;z-index: 99;right: 0;top: 0;">
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                        id="dropdownbtn" style="background-color: var(--color-light-gray);
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="dropdownbtn" style="background-color: var(--color-light-gray);
                         padding: 4px;color: var(--color-dark-green);font-weight: bold;">
-                        <i class="fa fa-list" aria-hidden="true"></i>&nbsp; <span class="menuTabName">查詢單據</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <i class="fa fa-list" aria-hidden="true"></i>&nbsp; <span class="menuTabName">查詢單據</span>
+                  </button>
+                  <div class="dropdown-menu multi-level" aria-labelledby="dropdownMenu">
+                    <div class="panel-group" style="min-width: 200px;">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title" style="font-size:11pt">
+                                    我建立的單據
+                                </h4>
+                            </div>
+                            <div>
+                                <div class="panel-body">
+                                    <table class="tci-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">
+                                                        建立新單據
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-target="#Tab-0">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">待核銷單據</a>&nbsp;
+                                                    <span class="badge bg_darkred">2</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-target="#Tab-1" class="current">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">已存檔</a>&nbsp;
+                                                    <span style="display:none" class="badge bg_darkred">0</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-target="#Tab-2">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">會簽中</a>&nbsp;
+                                                    <span style="display:none" class="badge bg_darkred">0</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-target="#Tab-3">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">已退簽</a>&nbsp;
+                                                    <span style="display:none" class="badge bg_darkred">0</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-target="#Tab-5">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">完成簽核</a>&nbsp;
+                                                    <span style="display:none" class="badge bg_darkred">0</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-target="#Tab-6">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">已作廢</a>&nbsp;
+                                                    <span class="badge bg_darkred">1</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-target="#Tab-7">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">簽核中</a>&nbsp;
+                                                    <span style="display:none" class="badge bg_darkred">0</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-target="#Tab-8">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">已列印</a>&nbsp;
+                                                    <span class="badge bg_darkred">20</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel" style="margin-top:2px">
+                            <div class="panel-heading">
+                                <h4 class="panel-title" style="font-size:11pt">
+                                    等我簽核&amp;已簽核單據
+                                </h4>
+                            </div>
+                            <div>
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td data-target="#Tab-9">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">待簽核</a>&nbsp;
+                                                    <span style="display:none" class="badge bg_darkred">0</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-target="#Tab-10">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">已退簽</a>&nbsp;
+                                                    <span style="display:none" class="badge bg_darkred0">0</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-target="#Tab-11">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">已簽核</a>&nbsp;
+                                                    <span style="display:none" class="badge bg_darkred1">0</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel" style="margin-top:2px">
+                            <div class="panel-heading">
+                                <h4 class="panel-title" style="font-size:11pt">
+                                    其他
+                                </h4>
+                            </div>
+                            <div>
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td data-target="#Tab-12">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">已標示</a>&nbsp;
+                                                    <span style="display:none" class="badge bg_darkred2">0</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-target="#Tab-13">
+                                                    &nbsp;
+                                                    <a href="#" class="no_style">查詢單據
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                </div>
+              </div>
         </div>
         <!-- 上下頁 -->
         <section class="btnTop tci-mb-3">
@@ -78,13 +221,13 @@
                             overflow-y: auto;
                             height: 100px;">
                                 <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
-                                    <p style="color: #428bca;">2022/7/21 13:55： 1212</p>
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
                                 </li>
                                 <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
-                                    <p style="color: #428bca;">2022/7/21 13:55： 1212</p>
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
                                 </li>
                                 <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
-                                    <p style="color: #428bca;">2022/7/21 13:55： 1212</p>
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
                                 </li>
                             </ul>
                         </div>
@@ -104,10 +247,10 @@
                             overflow-y: auto;
                             height: 100px;">
                                 <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
-                                    <p style="color: #428bca;">2022/7/21 13:55： 1212</p>
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
                                 </li>
                                 <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
-                                    <p style="color: #428bca;">2022/7/21 13:55： 1212</p>
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
                                 </li>
                             </ul>
                         </div>
@@ -127,7 +270,7 @@
                 <div id="panelsStayOpen-description" class="accordion-collapse collapse show"
                     aria-labelledby="description">
                     <div class="accordion-body">
-                        <div class="descriptionBox_invalid tci-text-center">
+                        <div class="descriptionBox_invalid tci-text-center tci-mb-2">
                             <span style="border: 1px solid #003D79;background-color:#003D79;padding:0 6px;color: var(--color-snow);font-weight: bold;">此單據已列印</span>
                         </div>
                         <div class="descriptionBoxContent">

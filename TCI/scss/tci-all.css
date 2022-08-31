@@ -52,6 +52,10 @@ body {
   box-sizing: border-box;
 }
 
+.container-fluid {
+  margin-bottom: 2rem;
+}
+
 .fontNoWrap {
   white-space: nowrap;
   overflow: hidden;
@@ -790,6 +794,9 @@ body {
   border: 1px solid #ced4da;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.tci-form-control.gray {
+  background-color: var(--color-whitesmoke);
+}
 
 .tci-field {
   display: flex;
@@ -1285,13 +1292,6 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-}
-
 p,
 li,
 a {
@@ -1381,6 +1381,32 @@ a {
   margin-top: 6px;
 }
 
+.multi-level .panel-heading {
+  background-color: var(--color-dark-khaki);
+  color: var(--color-snow);
+}
+.multi-level .panel-heading .panel-title {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+.multi-level table {
+  margin-bottom: 0;
+}
+.multi-level table td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.multi-level table td:hover {
+  background-color: var(--color-light-gray);
+}
+.multi-level table .current {
+  background-color: var(--color-light-gray);
+}
+.multi-level .badge {
+  border-radius: var(--borderRadiusCircular);
+}
+
 #accordionFlush .accordion-item {
   margin-bottom: 1rem;
 }
@@ -1405,8 +1431,16 @@ a {
   padding: 5px;
 }
 
-.processBoxContent i {
+.next_signer {
+  margin: 0.5rem 0;
+}
+
+.processBoxContent .fa-left-long {
   transform: rotate(90deg);
+}
+
+.descriptionBoxContent .descriptionBox_icon {
+  margin: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -1414,11 +1448,18 @@ a {
     display: flex;
     justify-content: center;
   }
+  .next_signer {
+    display: flex;
+    justify-content: center;
+  }
+  .next_signer .tci-bs-input-group {
+    width: 45%;
+  }
   .processBoxContent {
     display: flex;
     flex-wrap: wrap;
   }
-  .processBoxContent i {
+  .processBoxContent .fa-left-long {
     transform: rotate(0deg);
   }
   .processBoxContent .tci-card {
@@ -1431,6 +1472,7 @@ a {
   .descriptionBoxContent .descriptionBox_icon {
     display: flex;
     justify-content: center;
+    margin: 1rem;
   }
   .descriptionBoxContent .descriptionBox_icon .check {
     margin: 0 1.5rem;

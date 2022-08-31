@@ -41,6 +41,26 @@
 }
 
 #page_travelExpense {
+    .traveExpenseSection{
+        text-align: center;
+        margin: 1rem 0;
+        .nav-tabs{
+            padding: 5px 0;
+            white-space: nowrap;
+            overflow-x: auto;
+            display: block;
+        }
+        .nav-item{
+            display: inline-block;
+            .nav-link {
+                color: var(--color-dark);
+                &.active {
+                    color: var(--color-snow);
+                    background-color: var(--color-dark-khaki);
+                }
+            }
+        }
+    }
     .tableScroll {
         overflow-x: auto;
 
@@ -113,11 +133,13 @@
             flex-wrap: wrap;
         }
     }
-    .travelExpense_information{
-        .agency{
-            .agency_item{
+
+    .travelExpense_information {
+        .agency {
+            .agency_item {
                 display: flex;
-                .tci-bs-input-group{
+
+                .tci-bs-input-group {
                     width: 50%;
                 }
             }
@@ -125,7 +147,22 @@
     }
 }
 
+.tableScroll {
+    overflow-x: auto;
+
+    table {
+        width: 992px;
+    }
+}
+
 @media (min-width: 768px) {
+    .tableScroll {
+        overflow-x: auto;
+
+        table {
+            width: 100%;
+        }
+    }
 
     // 出差旅費報支單
     #page_travelExpenseStatement {
@@ -148,6 +185,8 @@
     }
 
     #page_travelExpense {
+       
+
         .tableScroll {
             overflow-x: auto;
 
@@ -207,12 +246,14 @@
 
         // 代辦資料
         .travelExpense_information {
-            .agency{
+            .agency {
                 display: flex;
-                .agency_item{
-                    width:65%
+
+                .agency_item {
+                    width: 65%
                 }
             }
+
             .travelReal {
                 .tci-bs-input-group {
                     width: 25%;

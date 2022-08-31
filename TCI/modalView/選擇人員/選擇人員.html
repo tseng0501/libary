@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>選擇人員</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_selectMore">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>選擇人員</b></span>
+        </div>
+        <button class="tci-btn bg_darkblue" data-bs-toggle="modal" data-bs-target="#selectMoreModal">選擇人員</button>
+        <section class="selectMoreQuery" style="text-align: center;margin: auto;">
+            <div class="tci-bs-input-group">
+                <div class="tci-bs-input-group-prepend">
+                    <span class="tci-bs-input-group-text">公司別:</span>
+                </div>
+                <select class="tci-form-control">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="tci-bs-input-group">
+                <div class="tci-bs-input-group-prepend">
+                    <span class="tci-bs-input-group-text">人員查詢:</span>
+                </div>
+                <input type="text" class="tci-form-control" />
+            </div>
+            <button class="tci-btn bg_darkgreen">顯示非在職人員</button>
+            <button class="tci-btn bg_darkred">清除已選擇的內容</button>
+        </section>
+        <div class="selectMoreContent tci-mt-3">
+            <div class="accordion" id="">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="president">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#president-collapseOne" aria-expanded="true"
+                            aria-controls="president-collapseOne">
+                            董事長
+                        </button>
+                    </h2>
+                    <div id="president-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="president">
+                        <div class="accordion-body">
+                            <div class="tci-form-check tci-form-check-inline">
+                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                    value="option1">
+                                <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                            </div>
+                            <!-- 主管 -->
+                            <div
+                                style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                <span>林詠翔-VINCENT</span>
+                            </div>
+                            <!-- 成員 -->
+                            <div style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                <div style="display: flex;flex-wrap: wrap;">
+                                    <div class="tci-card tci-mt-2 card-blue" style="min-width: auto;margin: 0 .5rem;">
+                                        <div class="tci-card-header card-header-blue">
+                                            <span style="color: var(--color-light-red);"><i
+                                                    class="fa-solid fa-check"></i></span>
+                                            集團董事長
+                                        </div>
+                                        <div class="tci-card-body">
+                                            <p class="tci-card-title"> 王浩駿<br />JOHNNY.WANG</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion" id="">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="generalManager">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#generalManager-collapseOne" aria-expanded="true"
+                                            aria-controls="generalManager-collapseOne">
+                                            總經理
+                                        </button>
+                                    </h2>
+                                    <div id="generalManager-collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="generalManager">
+                                        <div class="accordion-body">
+                                            <div class="tci-form-check tci-form-check-inline">
+                                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                    value="option1">
+                                                <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                            </div>
+                                            <!-- 主管 -->
+                                            <div
+                                                style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                                <span>林詠翔-VINCENT</span>
+                                            </div>
+                                            <!-- 成員 -->
+                                            <div
+                                                style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                                <div style="display: flex;flex-wrap: wrap;">
+
+                                                </div>
+                                            </div>
+                                            <div class="accordion" id="">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="financeDept">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#financeDept-collapseOne"
+                                                            aria-expanded="true"
+                                                            aria-controls="financeDept-collapseOne">
+                                                            財務部
+                                                        </button>
+                                                    </h2>
+                                                    <div id="financeDept-collapseOne"
+                                                        class="accordion-collapse collapse show"
+                                                        aria-labelledby="financeDept">
+                                                        <div class="accordion-body">
+                                                            <div class="tci-form-check tci-form-check-inline">
+                                                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                                    value="option1">
+                                                                <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                                            </div>
+                                                            <!-- 主管 -->
+                                                            <div
+                                                                style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                                <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                                                <span>劉怡君-ANITA.LIU</span>
+                                                            </div>
+                                                            <!-- 成員 -->
+                                                            <div
+                                                                style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                                <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                                                <div style="display: flex;flex-wrap: wrap;">
+                                                                    <div class="tci-card tci-mt-2 card-blue"
+                                                                        style="min-width: auto;margin: 0 .5rem;">
+                                                                        <div class="tci-card-header card-header-blue">
+                                                                            集團董事長</div>
+                                                                        <div class="tci-card-body">
+                                                                            <p class="tci-card-title">
+                                                                                王浩駿<br />JOHNNY.WANG</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="cashierTeam">
+                                                                    <button class="accordion-button" type="button"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#cashierTeam-collapseOne"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="cashierTeam-collapseOne">
+                                                                        出納組
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="cashierTeam-collapseOne"
+                                                                    class="accordion-collapse collapse show"
+                                                                    aria-labelledby="cashierTeam">
+                                                                    <div class="accordion-body">
+                                                                        <div class="tci-form-check tci-form-check-inline">
+                                                                            <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                                                value="option1">
+                                                                            <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                                                        </div>
+                                                                        <!-- 主管 -->
+                                                                        <div
+                                                                            style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                                            <span><i class="fa-solid fa-user"></i>&nbsp;
+                                                                                主管</span>
+                                                                            <span>劉怡君-ANITA.LIU</span>
+                                                                        </div>
+                                                                        <!-- 成員 -->
+                                                                        <div
+                                                                            style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                                            <span><i
+                                                                                    class="fa-solid fa-users"></i>&nbsp;
+                                                                                成員</span>
+                                                                            <div style="display: flex;flex-wrap: wrap;">
+                                                                                <div class="tci-card tci-mt-2 card-blue"
+                                                                                    style="min-width: auto;margin: 0 .5rem;">
+                                                                                    <div
+                                                                                        class="tci-card-header card-header-blue">
+                                                                                        集團董事長</div>
+                                                                                    <div class="tci-card-body">
+                                                                                        <p class="tci-card-title">
+                                                                                            王浩駿<br />JOHNNY.WANG</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="tci-card tci-mt-2 card-blue"
+                                                                                    style="min-width: auto;margin: 0 .5rem;">
+                                                                                    <div
+                                                                                        class="tci-card-header card-header-blue">
+                                                                                        集團董事長</div>
+                                                                                    <div class="tci-card-body">
+                                                                                        <p class="tci-card-title">
+                                                                                            王浩駿<br />JOHNNY.WANG</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="researchDesignCenter">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#researchDesignCenter-collapseOne"
+                                                            aria-expanded="true"
+                                                            aria-controls="researchDesignCenter-collapseOne">
+                                                            研發設計中心
+                                                        </button>
+                                                    </h2>
+                                                    <div id="researchDesignCenter-collapseOne"
+                                                        class="accordion-collapse collapse show"
+                                                        aria-labelledby="researchDesignCenter">
+                                                        <div class="accordion-body">
+                                                            <div class="tci-form-check tci-form-check-inline">
+                                                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                                    value="option1">
+                                                                <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                                            </div>
+                                                            <!-- 主管 -->
+                                                            <div
+                                                                style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                                <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                                                <span>林詠翔-VINCENT</span>
+                                                            </div>
+                                                            <!-- 成員 -->
+                                                            <div
+                                                                style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                                <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                                                <div style="display: flex;flex-wrap: wrap;">
+
+                                                                    <div class="accordion-item">
+                                                                        <h2 class="accordion-header"
+                                                                            id="pineerInnovationInstitute">
+                                                                            <button class="accordion-button"
+                                                                                type="button" data-bs-toggle="collapse"
+                                                                                data-bs-target="#pineerInnovationInstitute-collapseOne"
+                                                                                aria-expanded="true"
+                                                                                aria-controls="pineerInnovationInstitute-collapseOne">
+                                                                                創新先進研究所
+                                                                            </button>
+                                                                        </h2>
+                                                                        <div id="pineerInnovationInstitute-collapseOne"
+                                                                            class="accordion-collapse collapse show"
+                                                                            aria-labelledby="pineerInnovationInstitute">
+                                                                            <div class="accordion-body">
+                                                                                <div class="tci-form-check tci-form-check-inline">
+                                                                                    <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                                                        value="option1">
+                                                                                    <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                                                                </div>
+                                                                                <!-- 主管 -->
+                                                                                <div
+                                                                                    style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                                                    <span><i
+                                                                                            class="fa-solid fa-user"></i>&nbsp;
+                                                                                        主管</span>
+                                                                                    <span>詹淑婷-REBECCA.CHAN</span>
+                                                                                </div>
+                                                                                <!-- 成員 -->
+                                                                                <div
+                                                                                    style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                                                    <span><i
+                                                                                            class="fa-solid fa-users"></i>&nbsp;
+                                                                                        成員</span>
+                                                                                    <div
+                                                                                        style="display: flex;flex-wrap: wrap;">
+                                                                                        <div class="tci-card tci-mt-2 card-blue"
+                                                                                            style="min-width: auto;margin: 0 .5rem;">
+                                                                                            <div
+                                                                                                class="tci-card-header card-header-blue">
+                                                                                                <span
+                                                                                                    style="color: var(--color-light-red);"><i
+                                                                                                        class="fa-solid fa-check"></i></span>
+                                                                                                集團董事長
+                                                                                            </div>
+                                                                                            <div class="tci-card-body">
+                                                                                                <p
+                                                                                                    class="tci-card-title">
+                                                                                                    王浩駿<br />JOHNNY.WANG
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="tci-card tci-mt-2 card-blue"
+                                                                                            style="min-width: auto;margin: 0 .5rem;">
+                                                                                            <div
+                                                                                                class="tci-card-header card-header-blue">
+                                                                                                集團董事長</div>
+                                                                                            <div class="tci-card-body">
+                                                                                                <p
+                                                                                                    class="tci-card-title">
+                                                                                                    王浩駿<br />JOHNNY.WANG
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="tci-card tci-mt-2 card-blue"
+                                                                                            style="min-width: auto;margin: 0 .5rem;">
+                                                                                            <div
+                                                                                                class="tci-card-header card-header-blue">
+                                                                                                集團董事長</div>
+                                                                                            <div class="tci-card-body">
+                                                                                                <p
+                                                                                                    class="tci-card-title">
+                                                                                                    王浩駿<br />JOHNNY.WANG
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="auditDept">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#auditDept-collapseTwo" aria-expanded="true"
+                                        aria-controls="auditDept-collapseTwo">
+                                        稽核室
+                                    </button>
+                                </h2>
+                                <div id="auditDept-collapseTwo" class="accordion-collapse collapse show"
+                                    aria-labelledby="auditDept">
+                                    <div class="accordion-body">
+                                        <div class="tci-form-check tci-form-check-inline">
+                                            <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                        </div>
+                                        <!-- 主管 -->
+                                        <div
+                                            style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                            <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                            <span>林詠翔-VINCENT</span>
+                                        </div>
+                                        <!-- 成員 -->
+                                        <div
+                                            style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                            <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                            <div style="display: flex;flex-wrap: wrap;">
+                                                <div class="tci-card tci-mt-2 card-blue"
+                                                    style="min-width: auto;margin: 0 .5rem;">
+                                                    <div class="tci-card-header card-header-blue">集團董事長</div>
+                                                    <div class="tci-card-body">
+                                                        <p class="tci-card-title"> 王浩駿<br />JOHNNY.WANG</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="financeBankTeam">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#financeBankTeam-collapseThree" aria-expanded="true"
+                                        aria-controls="financeBankTeam-collapseThree">
+                                        銀行財務
+                                    </button>
+                                </h2>
+                                <div id="financeBankTeam-collapseThree" class="accordion-collapse collapse show"
+                                    aria-labelledby="financeBankTeam">
+                                    <div class="accordion-body">
+                                        <div class="tci-form-check tci-form-check-inline">
+                                            <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                        </div>
+                                        <!-- 主管 -->
+                                        <div
+                                            style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                            <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                            <span>林詠翔-VINCENT</span>
+                                        </div>
+                                        <!-- 成員 -->
+                                        <div
+                                            style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                            <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                            <div style="display: flex;flex-wrap: wrap;">
+                                                <div class="tci-card tci-mt-2 card-blue"
+                                                    style="min-width: auto;margin: 0 .5rem;">
+                                                    <div class="tci-card-header card-header-blue">集團董事長</div>
+                                                    <div class="tci-card-body">
+                                                        <p class="tci-card-title"> 王浩駿<br />JOHNNY.WANG</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="selectMoreModal" tabindex="-1" aria-labelledby="selectMoreModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="selectMoreModalLabel">選擇部門</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section class="selectMoreQuery" style="text-align: center;margin: auto;">
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">公司別:</span>
+                            </div>
+                            <select class="tci-form-control">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="tci-bs-input-group">
+                            <div class="tci-bs-input-group-prepend">
+                                <span class="tci-bs-input-group-text">人員查詢:</span>
+                            </div>
+                            <input type="text" class="tci-form-control" />
+                        </div>
+                        <button class="tci-btn bg_darkgreen">顯示非在職人員</button>
+                        <button class="tci-btn bg_darkred">清除已選擇的內容</button>
+                    </section>
+                    <div class="selectMoreContent tci-mt-3">
+                        <div class="accordion" id="">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="president">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#president-collapseOne" aria-expanded="true"
+                                        aria-controls="president-collapseOne">
+                                        董事長
+                                    </button>
+                                </h2>
+                                <div id="president-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="president">
+                                    <div class="accordion-body">
+                                        <div class="tci-form-check tci-form-check-inline">
+                                            <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                        </div>
+                                        <!-- 主管 -->
+                                        <div
+                                            style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                            <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                            <span>林詠翔-VINCENT</span>
+                                        </div>
+                                        <!-- 成員 -->
+                                        <div style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                            <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                            <div style="display: flex;flex-wrap: wrap;">
+                                                <div class="tci-card tci-mt-2 card-blue" style="min-width: auto;margin: 0 .5rem;">
+                                                    <div class="tci-card-header card-header-blue">
+                                                        <span style="color: var(--color-light-red);"><i
+                                                                class="fa-solid fa-check"></i></span>
+                                                        集團董事長
+                                                    </div>
+                                                    <div class="tci-card-body">
+                                                        <p class="tci-card-title"> 王浩駿<br />JOHNNY.WANG</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion" id="">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="generalManager">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#generalManager-collapseOne" aria-expanded="true"
+                                                        aria-controls="generalManager-collapseOne">
+                                                        總經理
+                                                    </button>
+                                                </h2>
+                                                <div id="generalManager-collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="generalManager">
+                                                    <div class="accordion-body">
+                                                        <div class="tci-form-check tci-form-check-inline">
+                                                            <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                                value="option1">
+                                                            <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                                        </div>
+                                                        <!-- 主管 -->
+                                                        <div
+                                                            style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                            <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                                            <span>林詠翔-VINCENT</span>
+                                                        </div>
+                                                        <!-- 成員 -->
+                                                        <div
+                                                            style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                            <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                                            <div style="display: flex;flex-wrap: wrap;">
+            
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion" id="">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="financeDept">
+                                                                    <button class="accordion-button" type="button"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#financeDept-collapseOne"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="financeDept-collapseOne">
+                                                                        財務部
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="financeDept-collapseOne"
+                                                                    class="accordion-collapse collapse show"
+                                                                    aria-labelledby="financeDept">
+                                                                    <div class="accordion-body">
+                                                                        <div class="tci-form-check tci-form-check-inline">
+                                                                            <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                                                value="option1">
+                                                                            <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                                                        </div>
+                                                                        <!-- 主管 -->
+                                                                        <div
+                                                                            style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                                            <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                                                            <span>劉怡君-ANITA.LIU</span>
+                                                                        </div>
+                                                                        <!-- 成員 -->
+                                                                        <div
+                                                                            style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                                            <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                                                            <div style="display: flex;flex-wrap: wrap;">
+                                                                                <div class="tci-card tci-mt-2 card-blue"
+                                                                                    style="min-width: auto;margin: 0 .5rem;">
+                                                                                    <div class="tci-card-header card-header-blue">
+                                                                                        集團董事長</div>
+                                                                                    <div class="tci-card-body">
+                                                                                        <p class="tci-card-title">
+                                                                                            王浩駿<br />JOHNNY.WANG</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="accordion-item">
+                                                                            <h2 class="accordion-header" id="cashierTeam">
+                                                                                <button class="accordion-button" type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#cashierTeam-collapseOne"
+                                                                                    aria-expanded="true"
+                                                                                    aria-controls="cashierTeam-collapseOne">
+                                                                                    出納組
+                                                                                </button>
+                                                                            </h2>
+                                                                            <div id="cashierTeam-collapseOne"
+                                                                                class="accordion-collapse collapse show"
+                                                                                aria-labelledby="cashierTeam">
+                                                                                <div class="accordion-body">
+                                                                                    <div class="tci-form-check tci-form-check-inline">
+                                                                                        <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                                                            value="option1">
+                                                                                        <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                                                                    </div>
+                                                                                    <!-- 主管 -->
+                                                                                    <div
+                                                                                        style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                                                        <span><i class="fa-solid fa-user"></i>&nbsp;
+                                                                                            主管</span>
+                                                                                        <span>劉怡君-ANITA.LIU</span>
+                                                                                    </div>
+                                                                                    <!-- 成員 -->
+                                                                                    <div
+                                                                                        style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                                                        <span><i
+                                                                                                class="fa-solid fa-users"></i>&nbsp;
+                                                                                            成員</span>
+                                                                                        <div style="display: flex;flex-wrap: wrap;">
+                                                                                            <div class="tci-card tci-mt-2 card-blue"
+                                                                                                style="min-width: auto;margin: 0 .5rem;">
+                                                                                                <div
+                                                                                                    class="tci-card-header card-header-blue">
+                                                                                                    集團董事長</div>
+                                                                                                <div class="tci-card-body">
+                                                                                                    <p class="tci-card-title">
+                                                                                                        王浩駿<br />JOHNNY.WANG</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="tci-card tci-mt-2 card-blue"
+                                                                                                style="min-width: auto;margin: 0 .5rem;">
+                                                                                                <div
+                                                                                                    class="tci-card-header card-header-blue">
+                                                                                                    集團董事長</div>
+                                                                                                <div class="tci-card-body">
+                                                                                                    <p class="tci-card-title">
+                                                                                                        王浩駿<br />JOHNNY.WANG</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="researchDesignCenter">
+                                                                    <button class="accordion-button" type="button"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#researchDesignCenter-collapseOne"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="researchDesignCenter-collapseOne">
+                                                                        研發設計中心
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="researchDesignCenter-collapseOne"
+                                                                    class="accordion-collapse collapse show"
+                                                                    aria-labelledby="researchDesignCenter">
+                                                                    <div class="accordion-body">
+                                                                        <div class="tci-form-check tci-form-check-inline">
+                                                                            <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                                                value="option1">
+                                                                            <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                                                        </div>
+                                                                        <!-- 主管 -->
+                                                                        <div
+                                                                            style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                                            <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                                                            <span>林詠翔-VINCENT</span>
+                                                                        </div>
+                                                                        <!-- 成員 -->
+                                                                        <div
+                                                                            style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                                            <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                                                            <div style="display: flex;flex-wrap: wrap;">
+            
+                                                                                <div class="accordion-item">
+                                                                                    <h2 class="accordion-header"
+                                                                                        id="pineerInnovationInstitute">
+                                                                                        <button class="accordion-button"
+                                                                                            type="button" data-bs-toggle="collapse"
+                                                                                            data-bs-target="#pineerInnovationInstitute-collapseOne"
+                                                                                            aria-expanded="true"
+                                                                                            aria-controls="pineerInnovationInstitute-collapseOne">
+                                                                                            創新先進研究所
+                                                                                        </button>
+                                                                                    </h2>
+                                                                                    <div id="pineerInnovationInstitute-collapseOne"
+                                                                                        class="accordion-collapse collapse show"
+                                                                                        aria-labelledby="pineerInnovationInstitute">
+                                                                                        <div class="accordion-body">
+                                                                                            <div class="tci-form-check tci-form-check-inline">
+                                                                                                <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                                                                    value="option1">
+                                                                                                <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                                                                            </div>
+                                                                                            <!-- 主管 -->
+                                                                                            <div
+                                                                                                style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                                                                <span><i
+                                                                                                        class="fa-solid fa-user"></i>&nbsp;
+                                                                                                    主管</span>
+                                                                                                <span>詹淑婷-REBECCA.CHAN</span>
+                                                                                            </div>
+                                                                                            <!-- 成員 -->
+                                                                                            <div
+                                                                                                style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                                                                <span><i
+                                                                                                        class="fa-solid fa-users"></i>&nbsp;
+                                                                                                    成員</span>
+                                                                                                <div
+                                                                                                    style="display: flex;flex-wrap: wrap;">
+                                                                                                    <div class="tci-card tci-mt-2 card-blue"
+                                                                                                        style="min-width: auto;margin: 0 .5rem;">
+                                                                                                        <div
+                                                                                                            class="tci-card-header card-header-blue">
+                                                                                                            <span
+                                                                                                                style="color: var(--color-light-red);"><i
+                                                                                                                    class="fa-solid fa-check"></i></span>
+                                                                                                            集團董事長
+                                                                                                        </div>
+                                                                                                        <div class="tci-card-body">
+                                                                                                            <p
+                                                                                                                class="tci-card-title">
+                                                                                                                王浩駿<br />JOHNNY.WANG
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="tci-card tci-mt-2 card-blue"
+                                                                                                        style="min-width: auto;margin: 0 .5rem;">
+                                                                                                        <div
+                                                                                                            class="tci-card-header card-header-blue">
+                                                                                                            集團董事長</div>
+                                                                                                        <div class="tci-card-body">
+                                                                                                            <p
+                                                                                                                class="tci-card-title">
+                                                                                                                王浩駿<br />JOHNNY.WANG
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="tci-card tci-mt-2 card-blue"
+                                                                                                        style="min-width: auto;margin: 0 .5rem;">
+                                                                                                        <div
+                                                                                                            class="tci-card-header card-header-blue">
+                                                                                                            集團董事長</div>
+                                                                                                        <div class="tci-card-body">
+                                                                                                            <p
+                                                                                                                class="tci-card-title">
+                                                                                                                王浩駿<br />JOHNNY.WANG
+                                                                                                            </p>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="auditDept">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#auditDept-collapseTwo" aria-expanded="true"
+                                                    aria-controls="auditDept-collapseTwo">
+                                                    稽核室
+                                                </button>
+                                            </h2>
+                                            <div id="auditDept-collapseTwo" class="accordion-collapse collapse show"
+                                                aria-labelledby="auditDept">
+                                                <div class="accordion-body">
+                                                    <div class="tci-form-check tci-form-check-inline">
+                                                        <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                            value="option1">
+                                                        <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                                    </div>
+                                                    <!-- 主管 -->
+                                                    <div
+                                                        style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                        <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                                        <span>林詠翔-VINCENT</span>
+                                                    </div>
+                                                    <!-- 成員 -->
+                                                    <div
+                                                        style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                        <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                                        <div style="display: flex;flex-wrap: wrap;">
+                                                            <div class="tci-card tci-mt-2 card-blue"
+                                                                style="min-width: auto;margin: 0 .5rem;">
+                                                                <div class="tci-card-header card-header-blue">集團董事長</div>
+                                                                <div class="tci-card-body">
+                                                                    <p class="tci-card-title"> 王浩駿<br />JOHNNY.WANG</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="financeBankTeam">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#financeBankTeam-collapseThree" aria-expanded="true"
+                                                    aria-controls="financeBankTeam-collapseThree">
+                                                    銀行財務
+                                                </button>
+                                            </h2>
+                                            <div id="financeBankTeam-collapseThree" class="accordion-collapse collapse show"
+                                                aria-labelledby="financeBankTeam">
+                                                <div class="accordion-body">
+                                                    <div class="tci-form-check tci-form-check-inline">
+                                                        <input class="tci-form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                            value="option1">
+                                                        <label class="tci-form-check-label" for="inlineCheckbox1">全選</label>
+                                                    </div>
+                                                    <!-- 主管 -->
+                                                    <div
+                                                        style="padding: 5px;background-color:var(--color-light-green);color:var(--color-snow);margin-bottom: .5rem;">
+                                                        <span><i class="fa-solid fa-user"></i>&nbsp; 主管</span>
+                                                        <span>林詠翔-VINCENT</span>
+                                                    </div>
+                                                    <!-- 成員 -->
+                                                    <div
+                                                        style="padding: 5px;background-color:var(--color-light-gray);margin-bottom: .5rem;">
+                                                        <span><i class="fa-solid fa-users"></i>&nbsp; 成員</span>
+                                                        <div style="display: flex;flex-wrap: wrap;">
+                                                            <div class="tci-card tci-mt-2 card-blue"
+                                                                style="min-width: auto;margin: 0 .5rem;">
+                                                                <div class="tci-card-header card-header-blue">集團董事長</div>
+                                                                <div class="tci-card-body">
+                                                                    <p class="tci-card-title"> 王浩駿<br />JOHNNY.WANG</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn bg_lightgray" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="tci-btn bg_darkgreen">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+#page_generalInvoice01 .generalInvoice01Table .pointData {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: end;
+}
+#page_generalInvoice01 .generalInvoice01Table .pointData .tci-input-group-text {
+  font-size: 14px;
+}
+#page_generalInvoice01 .generalInvoice01Table .pointData .tci-form-control {
+  font-size: 14px;
+  margin: 0 1rem;
+  padding: 0.2rem;
+}
+#page_generalInvoice01 .generalInvoice01Table .pointData .point {
+  display: flex;
+  padding: 0.2rem;
+  background-color: var(--color-light-gray);
+  border-radius: 0.25rem;
+}
+#page_generalInvoice01 .generalInvoice01Table .tci-table td {
+  text-align: center;
+}
+#page_generalInvoice01 .generalInvoice01Table .tci-table th {
+  text-align: center;
+  background-color: var(--color-light-gray);
+}
+#page_generalInvoice01 .generalInvoiceOrder .orderBox {
+  margin: 1rem 0;
+}
+#page_generalInvoice01 .generalInvoiceOrder .orderTitle {
+  font-weight: bold;
+  padding: 0.3rem;
+}
+#page_generalInvoice01 .generalInvoicePayment .payment {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  #page_generalInvoice01 .generalInvoice01_query .generalInvoice01_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_generalInvoice01 .generalInvoice01_query .generalInvoice01_content .tci-field {
+    width: 48%;
+  }
+  #page_generalInvoice01 .generalInvoice01_query .generalInvoice01_content .tci-field .tci-field-label {
+    width: 25%;
+  }
+  #page_generalInvoice01 .generalInvoice01_query .generalInvoice01_content .tci-field .tci-field-value {
+    width: 75%;
+  }
+  #page_generalInvoice01 .generalInvoiceOrder .orderContent {
+    display: flex;
+  }
+  #page_generalInvoice01 .generalInvoiceOrder .orderContent .order {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-right: 5px;
+  }
+  #page_generalInvoice01 .generalInvoiceOrder .orderContent .order .tci-input-group-text {
+    margin: 0 0.5rem;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block .tci-field {
+    width: 48%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block .tci-field .tci-field-label {
+    width: 20%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block .tci-field .tci-field-value {
+    width: 80%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block2 .tci-field {
+    width: 48%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block2 .tci-field .tci-field-label {
+    width: 30%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block2 .tci-field .tci-field-value {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block2 {
+    justify-content: flex-start;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block2 .tci-field {
+    margin-right: 1rem;
+    width: 48%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block2 .tci-field .tci-field-label {
+    width: 25%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block2 .tci-field .tci-field-value {
+    width: 75%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block {
+    justify-content: flex-start;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block .tci-field {
+    margin-right: 1rem;
+    width: 23%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block .tci-field .tci-field-label {
+    width: 25%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block .tci-field .tci-field-value {
+    width: 75%;
+  }
+}

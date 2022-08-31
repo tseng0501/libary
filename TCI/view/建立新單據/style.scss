@@ -1,0 +1,83 @@
+#page_createDocument {
+    .title{
+        text-align: center;
+        position: relative;
+        background-color: var(--color-dark-khaki);
+        padding: 5px;
+        span{
+            padding: 3px 7px;
+            color: var(--color-snow);
+            border-radius: var(--borderRadius);
+        }
+        button{
+            position: absolute;
+            right: 0;
+            font-size: 16px;
+            bottom: 0;
+        }
+    }
+    .content {
+        display: flex;flex-wrap: wrap;
+        .box {
+            width: 100%;
+            display: flex;
+            padding: 1rem;
+            .box_image{
+                padding: .5rem;
+                .box_title{
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+            .box_list {
+                padding: .5rem;
+                min-width: 50%;
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+
+                    li {
+                        display: flex;
+                        margin-bottom: .5rem;
+                        cursor: pointer;
+                        padding: 3px;
+                        .icon {
+                            padding-right: 3px;
+                        }
+                        &:hover {
+                            background-color: var(--color-whitesmoke);
+
+                            .icon {
+                                color: var(--color-orgin);
+                            }
+                            .text{
+                                color: var(--color-orgin);
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:765px) {
+    #page_createDocument {
+        .content {
+            .box {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    #page_createDocument {
+        .content {
+            .box {
+                width: 33%;
+            }
+        }
+    }
+}

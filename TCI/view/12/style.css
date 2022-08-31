@@ -29,10 +29,7 @@
 }
 #page_advancedPayment .advancedPaymentOrder .orderTitle {
   font-weight: bold;
-  background-color: var(--color-dimgray);
-  color: var(--color-snow);
   padding: 0.3rem;
-  border-radius: var(--borderRadius);
 }
 #page_advancedPayment .advancedPayment .payment {
   display: flex;
@@ -58,6 +55,12 @@
   }
   #page_advancedPayment .advancedPaymentOrder .orderContent .order {
     display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-right: 5px;
+  }
+  #page_advancedPayment .advancedPaymentOrder .orderContent .order.short {
+    width: 30%;
   }
   #page_advancedPayment .advancedPaymentOrder .orderContent .order .tci-input-group-text {
     margin: 0 0.5rem;
@@ -88,6 +91,49 @@
     width: 30%;
   }
   #page_advancedPayment .advancedPayment .paymentContent .block2 .tci-field .tci-field-value {
+    width: 70%;
+  }
+  #page_advancedPayment_createView .advancedPaymentOrder .orderContent {
+    display: flex;
+  }
+  #page_advancedPayment_createView .advancedPaymentOrder .orderContent .order {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-right: 5px;
+  }
+  #page_advancedPayment_createView .advancedPaymentOrder .orderContent .order.short {
+    width: 30%;
+  }
+  #page_advancedPayment_createView .advancedPaymentOrder .orderContent .order .tci-input-group-text {
+    margin: 0 0.5rem;
+  }
+  #page_advancedPayment_createView .advancedPayment .paymentContent .block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_advancedPayment_createView .advancedPayment .paymentContent .block .tci-field {
+    width: 48%;
+  }
+  #page_advancedPayment_createView .advancedPayment .paymentContent .block .tci-field .tci-field-label {
+    width: 20%;
+  }
+  #page_advancedPayment_createView .advancedPayment .paymentContent .block .tci-field .tci-field-value {
+    width: 80%;
+  }
+  #page_advancedPayment_createView .advancedPayment .paymentContent .block2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_advancedPayment_createView .advancedPayment .paymentContent .block2 .tci-field {
+    width: 48%;
+  }
+  #page_advancedPayment_createView .advancedPayment .paymentContent .block2 .tci-field .tci-field-label {
+    width: 30%;
+  }
+  #page_advancedPayment_createView .advancedPayment .paymentContent .block2 .tci-field .tci-field-value {
     width: 70%;
   }
 }

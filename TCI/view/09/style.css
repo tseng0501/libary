@@ -1,0 +1,39 @@
+#page_purchaseOrder .query .tci-field .tci-valueBtn {
+  display: flex;
+  width: 100%;
+}
+#page_purchaseOrder .query .tci-field.short {
+  flex-wrap: nowrap;
+}
+
+@media (min-width: 768px) {
+  #page_purchaseOrder .query {
+    display: flex;
+    justify-content: space-between;
+  }
+  #page_purchaseOrder .query .tci-field {
+    width: 80%;
+  }
+  #page_purchaseOrder .query .tci-field .tci-field-label {
+    width: 20%;
+  }
+  #page_purchaseOrder .query .tci-field .tci-valueBtn {
+    width: 80%;
+  }
+  #page_purchaseOrder .query .tci-field .tci-valueBtn .tci-field-value {
+    width: 100%;
+  }
+  #page_purchaseOrder .query .tci-field.short {
+    width: 26%;
+    margin-left: 3rem;
+  }
+  #page_purchaseOrder .query .tci-field.short .tci-field-label {
+    width: 40%;
+  }
+  #page_purchaseOrder .query .tci-field.short .tci-valueBtn {
+    width: 50%;
+  }
+  #page_purchaseOrder .query .tci-field.short .tci-valueBtn .tci-field-value {
+    width: 100%;
+  }
+}

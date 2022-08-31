@@ -34,7 +34,7 @@
                     justify-content: flex-end;
 
                     .tci-field-value {
-                        width: 60%;
+                        width: 100%;
                     }
                 }
             }
@@ -60,9 +60,6 @@
 }
 
 #page_acceptanceForm_signoff {
-    .next_signer {
-        margin: .5rem 0;
-    }
 
     .tableScroll {
         overflow-x: auto;
@@ -75,16 +72,6 @@
 
 @media (min-width: 768px) {
     #page_acceptanceForm_signoff {
-
-        .next_signer {
-            margin: .5rem 0;
-            display: flex;
-            justify-content: center;
-
-            .tci-bs-input-group {
-                width: 50%;
-            }
-        }
 
         .tableScroll {
             .tableContent {

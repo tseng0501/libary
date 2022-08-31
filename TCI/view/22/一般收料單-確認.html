@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>一般收料單-確認</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_oldgoodsReceipt_createView">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>一般收料單-確認</b></span>
+        </div>
+
+        <section class="oldgoodsReceipt_query">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">申請部門&nbsp;<button class="tci-icon bg_darkkhaki"><i class="fa-solid fa-building"></i></button>：</span>
+                </div>
+                <input type="text" class="tci-field-value gray" value="大江-行政服務中心TCI-倪潔莉ILYN.NI" disabled/>
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">業務分組：</span>
+                </div>
+                <select class="tci-field-value">
+                    <option selected>業務事業部-國際流通組</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">申請人：</span>
+                </div>
+                <input type="text" class="tci-field-value gray" value="許田坪(CLOUD.HSU)" disabled/>
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">申請日期：</span>
+                </div>
+                <input type="text" class="tci-field-value gray" value="2022/22/22" disabled/>
+            </div>
+        </section>
+        <section>
+            <div class="tableScroll">
+                <table class="tci-table tci-table-bordered">
+                    <thead style="text-align: center;background-color:var(--color-light-gray)">
+                        <tr>
+                            <th style="width: 80px;">項次</th>
+                            <th style="width: 120px;">料號</th>
+                            <th>品名</th>
+                            <th style="width: 5%;">單位</th>
+                            <th style="width: 8%;">倉庫</th>
+                            <th style="width: 12%;">領料單號</th>
+                            <th style="width: 18%;">專案代號</th>
+                            <th style="width: 8%;">單價</th>
+                            <th style="width: 8%;">請收數量</th>
+                            <th style="width: 8%;">金額</th>
+                            <th style="width: 8%;">用途</th>
+                        </tr>
+                    </thead>
+                    <tbody style="text-align: center;">
+                        <tr>
+                            <td>1</td>
+                            <td>test</td>
+                            <td>取得專案業務取得專案業務</td>
+                            <td>2.00</td>
+                            <td>232323</td>
+                            <td>test</td>
+                            <td>333333</td>
+                            <td>1212</td>
+                            <td>公關品</td>
+                            <td>大江-戰略數據中心</td>
+                            <td>公關品</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr style="text-align: right;color:var(--color-light-red)">
+                            <th colspan="9">合計</th>
+                            <th style="text-align: center;">80.00</th>
+                            <th colspan="3">&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <td colspan="12">收料庫倉儲經辦：<span>(無此人員資料)</span></td>
+                        </tr>
+                        <tr style="font-size:var(--font-size-xs)">
+                            <td colspan="11">領料備註：<br>
+                                <span>test</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <section class="fileBox formBox_gray">
+            <div class="tci-input-group tci-mb-2 fileContentNo formBox_title" style="margin-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+                <div class="tci-input-group-prepend">
+                    <span class="tci-input-group-text tci-mr-2">檔案數:</span>
+                    <select class="tci-bs-custom-select" style="width:100px">
+                        <option selected>100</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="illustrate formBox_content" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                <div class="fileIllustrate">
+                    <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">序號:</span>
+                        </div>
+                        <div class="tci-form-control gray">1</div>
+                    </div>
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                </div>
+                <div class="fileIllustrate ">
+                    <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">序號:</span>
+                        </div>
+                        <div class="tci-form-control gray">1</div>
+                    </div>
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_lightgray">回上一頁</button>
+            <button class="tci-btn bg_darkgreen">單據存檔</button>
+        </div>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

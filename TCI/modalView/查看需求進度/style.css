@@ -1,0 +1,77 @@
+#page_viewProgress .tabsSections {
+  text-align: center;
+  margin: 1rem 0;
+}
+#page_viewProgress .tabsSections .nav-tabs {
+  padding: 5px 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  display: block;
+}
+#page_viewProgress .tabsSections .nav-item {
+  display: inline-block;
+  font-size: var(--font-size-md);
+}
+#page_viewProgress .tabsSections .nav-item .nav-link {
+  color: var(--color-dark);
+}
+#page_viewProgress .tabsSections .nav-item .nav-link.active {
+  color: var(--color-snow);
+  background-color: var(--color-dark-khaki);
+}
+#page_viewProgress #myTabContent #fromSales-tab-pane {
+  overflow-x: auto;
+}
+#page_viewProgress #myTabContent #fromSales-tab-pane .row_display {
+  width: 992px;
+  display: flex;
+}
+#page_viewProgress #myTabContent #fromSales-tab-pane .row_display .box {
+  width: auto;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+}
+#page_viewProgress #myTabContent #fromSales-tab-pane .row_display .box.box_1 {
+  background-color: var(--color-light-blue);
+}
+#page_viewProgress #myTabContent #fromSales-tab-pane .row_display .box.box_2 {
+  background-color: var(--color-light-error);
+}
+#page_viewProgress #myTabContent #fromSales-tab-pane .row_display .box.box_3 {
+  background-color: var(--color-light-warning);
+}
+#page_viewProgress #myTabContent #fromSales-tab-pane .row_display .box.box_4 {
+  background-color: #FFD1A4;
+}
+#page_viewProgress #myTabContent #fromSales-tab-pane .row_display .box.box_5 {
+  background-color: #A6A6D2;
+}
+#page_viewProgress #myTabContent #fromSales-tab-pane .row_display .box.box_6 {
+  background-color: #C07AB8;
+}
+#page_viewProgress #myTabContent #fromSales-tab-pane .row_display .box.box_7 {
+  background-color: #C2C287;
+}
+#page_viewProgress #myTabContent #search-tab-pane .searchQuery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#page_viewProgress #myTabContent #search-tab-pane .searchQuery .tci-field {
+  width: 48%;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  #myTabContent #search-tab-pane .searchQuery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #myTabContent #search-tab-pane .searchQuery .tci-field .tci-field-label {
+    width: 45%;
+  }
+  #myTabContent #search-tab-pane .searchQuery .tci-field .tci-field-value {
+    width: 55%;
+  }
+}

@@ -28,9 +28,8 @@
 
 // 簽核，列印
 #page_changeRequest_signoff {
-    .tableScroll0 {
+    .tableScroll {
         overflow-x: auto;
-
         .tableContent {
             width: 900px;
         }
@@ -39,9 +38,7 @@
 
 #page_changeRequest_print {
     .print_table {
-
         overflow-x: auto;
-
         .tableContent {
             width: 900px;
         }
@@ -50,7 +47,7 @@
 
 @media (min-width: 992px) {
     #page_changeRequest_signoff {
-        .tableScroll0 {
+        .tableScroll {
             .tableContent {
                 width: 100%;
             }
@@ -59,7 +56,6 @@
 
     #page_changeRequest_print {
         .print_table {
-
             .tableContent {
                 width: 100%;
             }

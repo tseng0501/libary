@@ -39,3 +39,15 @@
     width: 48%;
   }
 }
+#page_requisition_signoff .tableScroll {
+  overflow-x: auto;
+}
+#page_requisition_signoff .tableScroll .tableContent {
+  width: 768px;
+}
+
+@media (min-width: 768px) {
+  #page_requisition_signoff .tableScroll .tableContent {
+    width: 100%;
+  }
+}

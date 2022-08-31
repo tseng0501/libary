@@ -117,7 +117,7 @@
 }
 @media (min-width: 768px) {
     #page_requestForLineCredit_signoff{
-        .tableContent{
+        .tableScroll{
             .tableContent{
                 width: 100%;
             }
@@ -125,7 +125,6 @@
     }
     #page_requestForLineCredit_print{
         .print_table{
-            overflow-x: auto;
             .tableContent{
                 width: 100%;
             }

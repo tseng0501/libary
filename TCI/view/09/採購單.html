@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>採購單</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_purchaseOrder">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>採購單</b></span>
+        </div>
+        <div style="text-align: right;font-size: var(--font-size-sm);margin-bottom: 1rem;">
+            <span
+                style="background-color: var(--color-alge);color: var(--color-snow);padding: 5px;border-radius: var(--borderRadius);">公司別：<b>大江生活</b></span>
+        </div>
+        <section class="query">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">單據別:</span>
+                </div>
+                <div class="tci-valueBtn">
+                    <select class="tci-field-value" style="width: 100px;">
+                        <option selected>採購單號</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="tci-field-value">
+                        <option selected>s32229T - 美商優先沛付國際股份有限公司台灣分公司</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tci-field short">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">採購單號:</span>
+                </div>
+                <select class="tci-field-value">
+                    <option selected>1960</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_darkblue">查詢</button>
+            <button class="tci-btn tci-btn-grass">採購單未送簽清單</button>
+        </div>
+        <hr>
+        <section>
+            <div class="tableScroll" style="overflow-x: auto;">
+                <table class="tci-table tci-table-bordered" style="min-width: 768px;">
+                    <tbody>
+                        <tr>
+                            <th style="background-color: var(--color-light-gray);">部門別&nbsp;<button
+                                    class="tci-icon bg_darkkhaki"><i class="fa-solid fa-building"></i></button></th>
+                            <td><b>大江-戰略數據中心</b></td>
+                            <th style="background-color: var(--color-light-gray);">組別</th>
+                            <td>
+                                <select class="tci-form-control" style="width: 150px;">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="background-color: var(--color-light-gray);">廠商名稱</th>
+                            <td>大江生醫股份有限公司</td>
+                            <th style="background-color: var(--color-light-gray);">採購單號</th>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <th style="background-color: var(--color-light-gray);">聯 絡 人</th>
+                            <td>大江生醫股份有限公司</td>
+                            <th style="background-color: var(--color-light-gray);">採購人員</th>
+                            <td>-無銷售人員-</td>
+                        </tr>
+                        <tr>
+                            <th style="background-color: var(--color-light-gray);">傳真號碼</th>
+                            <td>8797-3578</td>
+                            <th style="background-color: var(--color-light-gray);">付款條件</th>
+                            <td>月結60天</td>
+                        </tr>
+                        <tr>
+                            <th style="background-color: var(--color-light-gray);">交貨日期</th>
+                            <td>2016/3/28</td>
+                            <th style="background-color: var(--color-light-gray);">交易幣別</th>
+                            <td>12292039</td>
+                        </tr>
+                        <tr>
+                            <th style="background-color: var(--color-light-gray);">交貨地址</th>
+                            <td colspan="3">台北市內湖區瑞光路258巷51號2樓 114 台灣</td>
+                        </tr>
+                        <tr>
+                            <th style="background-color: var(--color-light-gray);">新/舊品</th>
+                            <td colspan="3">
+                                <div style="display:flex;">
+                                    <select class="tci-form-control" style="width:90px">
+                                        <option selected>新</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <select class="tci-form-control" style="width:200px">
+                                        <option selected>非單一/ 制定廠商</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <span>詢比議價單號：</span>
+                                <div style="display: flex;"><input type="text" class="tci-field-value"
+                                        style="width: 130px;" /><button class="tci-icon bg_darkblue"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button></div>
+                                <div style="display: flex;"><input type="text" class="tci-field-value"
+                                        style="width: 130px;" /><button class="tci-icon bg_darkblue"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button></div>
+                                <div style="display: flex;"><input type="text" class="tci-field-value"
+                                        style="width: 130px;" /><button class="tci-icon bg_darkblue"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="background-color: var(--color-light-gray);">綁定請採單號</th>
+                            <td colspan="3"><input type="text" class="tci-field-value" style="width:200px" /></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="tableScroll" style="overflow-x: auto;">
+                <table class="tci-table tci-table-bordered" style="min-width: 768px;">
+                    <thead style="text-align: center;background-color:var(--color-light-gray)">
+                        <tr>
+                            <th>NO</th>
+                            <th>產品代碼</th>
+                            <th>品名/規格</th>
+                            <th>數量</th>
+                            <th>單位</th>
+                            <th>單價</th>
+                            <th>小計</th>
+                            <th>專案代碼</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="text-align: center;">
+                            <td>1</td>
+                            <td>D41HD0048</td>
+                            <td>特濃胺基酸EX柑橘幼果plus</td>
+                            <td>1,531</td>
+                            <td>1</td>
+                            <td>105.36</td>
+                            <td>473,800</td>
+                            <td>D41HD0048</td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td>1</td>
+                            <td>D41HD0048</td>
+                            <td>特濃胺基酸EX柑橘幼果plus</td>
+                            <td>1,531</td>
+                            <td>1</td>
+                            <td>105.36</td>
+                            <td>473,800</td>
+                            <td>D41HD0048</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr style="text-align: right;color: var(--color-light-red);">
+                            <th colspan="6">合計</th>
+                            <th style="text-align: center;">710,856</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr style="text-align: right;color: var(--color-light-red);">
+                            <th colspan="6">稅額</th>
+                            <th style="text-align: center;">710,856</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr style="text-align: right;color: var(--color-light-red);">
+                            <th colspan="6">總計</th>
+                            <th style="text-align: center;">746,399</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <div style="text-align: center;background-color: var(--color-light-red);color: var(--color-snow);">
+            <span style="font-size: var(--font-size-sm);font-weight: bold;">此單據已申請(單據編號160407-09-0001)</span>
+        </div>
+        <div class="btnGroups  tci-mt-2">
+            <button class="tci-btn bg_darkblue">重新查詢</button>
+            <button class="tci-btn bg_darkgreen">確認資料，預覽資料</button>
+        </div>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

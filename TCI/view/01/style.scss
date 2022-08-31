@@ -1,0 +1,174 @@
+#page_generalInvoice01{
+    .generalInvoice01Table {
+        .pointData {
+            display: flex;
+            margin-bottom: 1rem;
+            justify-content: end;
+
+            .tci-input-group-text {
+                font-size: 14px;
+
+            }
+
+            .tci-form-control {
+                font-size: 14px;
+                margin: 0 1rem;
+                padding: .2rem;
+            }
+
+            .point {
+                display: flex;
+                padding: 0.2rem;
+                background-color: var(--color-light-gray);
+                border-radius: 0.25rem;
+            }
+        }
+
+        .tci-table {
+            td {
+                text-align: center;
+            }
+
+            th {
+                text-align: center;
+                background-color: var(--color-light-gray);
+            }
+        }
+    }
+    .generalInvoiceOrder {
+        .orderBox {
+            margin: 1rem 0;
+        }
+
+        .orderTitle {
+            font-weight: bold;
+            padding: .3rem;
+        }
+    }
+
+    .generalInvoicePayment {
+        .payment {
+            display: flex;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #page_generalInvoice01{
+        .generalInvoice01_query {
+            .generalInvoice01_content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-field {
+                    width: 48%;
+
+                    .tci-field-label {
+                        width: 25%;
+                    }
+
+                    .tci-field-value {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+        .generalInvoiceOrder {
+            .orderContent {
+                display: flex;
+
+                .order {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 50%;
+                    margin-right: 5px;
+
+                    .tci-input-group-text {
+                        margin: 0 .5rem;
+                    }
+                }
+            }
+        }
+        .generalInvoicePayment {
+            .paymentContent {
+                .block {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .tci-field {
+                        width: 48%;
+
+                        .tci-field-label {
+                            width: 20%;
+                        }
+
+                        .tci-field-value {
+                            width: 80%;
+                        }
+                    }
+                }
+
+                .block2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .tci-field {
+                        width: 48%;
+
+                        .tci-field-label {
+                            width: 30%;
+                        }
+
+                        .tci-field-value {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    #page_generalInvoice01 {
+        .generalInvoicePayment {
+            .paymentContent {
+                .block2 {
+                    justify-content: flex-start;
+
+                    .tci-field {
+                        margin-right: 1rem;
+                        width: 48%;
+
+                        .tci-field-label {
+                            width: 25%;
+                        }
+
+                        .tci-field-value {
+                            width: 75%;
+                        }
+                    }
+                }
+
+                .block {
+                    justify-content: flex-start;
+
+                    .tci-field {
+                        margin-right: 1rem;
+                        width: 23%;
+
+                        .tci-field-label {
+                            width: 25%;
+                        }
+
+                        .tci-field-value {
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

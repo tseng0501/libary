@@ -160,7 +160,7 @@
 
 // 簽核&列印
 #page_goodsReceipt_signoff{
-    .tableScroll0{
+    .tableScroll{
         overflow-x: auto;
         .tableContent{
             width: 900px;
@@ -177,7 +177,7 @@
 }
 @media (min-width:768px) {
     #page_goodsReceipt_signoff{
-        .tableScroll0{
+        .tableScroll{
             .tableContent{
                 width: 100%;
             }

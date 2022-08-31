@@ -37,17 +37,6 @@
             width: 900px;
         }
     }
-    .fileBox {
-        border: 2px solid var(--color-rosybrown);
-        border-radius: var(--borderRadius);
-        padding: .5rem;
-        margin-top: 1rem;
-
-        .fileContentNo {
-            width: 40%;
-        }
-    }
-
     .invoiceContainer {
         margin-top: 1rem;
 
@@ -68,10 +57,6 @@
 
             .tci-input-group {
                 width: 48%;
-
-                &.mark {
-                    width: 48%;
-                }
             }
         }
 
@@ -130,10 +115,6 @@
         .query {
             .tci-input-group {
                 width: 30%;
-
-                &.mark {
-                    width: 30%;;
-                }
             }
         }
         .queryContentAll {
@@ -174,7 +155,7 @@
 }
 // 列印
 #page_invoiceQuery_signoff{
-    .tableScroll0{
+    .tableScroll{
         overflow-x: auto;
         .tableContent{
             width: 900px;
@@ -183,7 +164,7 @@
 }
 @media (min-width:768px) {
     #page_invoiceQuery_signoff{
-        .tableScroll0{
+        .tableScroll{
             .tableContent{
                 width: 100%;
             }

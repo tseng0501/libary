@@ -9,10 +9,10 @@
     margin-top: 0;
   }
 }
-#page_changeRequest_signoff .tableScroll0 {
+#page_changeRequest_signoff .tableScroll {
   overflow-x: auto;
 }
-#page_changeRequest_signoff .tableScroll0 .tableContent {
+#page_changeRequest_signoff .tableScroll .tableContent {
   width: 900px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 @media (min-width: 992px) {
-  #page_changeRequest_signoff .tableScroll0 .tableContent {
+  #page_changeRequest_signoff .tableScroll .tableContent {
     width: 100%;
   }
   #page_changeRequest_print .print_table .tableContent {

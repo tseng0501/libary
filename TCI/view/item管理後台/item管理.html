@@ -17,58 +17,188 @@
         <div class="pageHeader">
             <span class="pageHeaderTitle" style="font-size: 24px;"><b>item 管理</span></b>
         </div>
-        <section class="itemTemplate_query">
-            <div class="itemTemplate_flex">
+        <section class="query">
+            <div class="flex">
                 <div class="tci-field">
                     <div class="tci-field-label">
                         <span class="tci-field-text text-left">Item 名稱：</span>
                     </div>
                     <div class="tci-valueBtn">
                         <input type="text" class="tci-field-value" value="text" />
-                        <button class="tci-btn bg_darkgreen">查詢</button>
+                        <button class="tci-btn bg_darkblue">查詢</button>
+                        <button class="tci-btn bg_darkkhaki tci-ml-2" data-toggle="modal" data-target="#additemTemplate">新增
+                            Item</button>
                     </div>
-                </div>
-                <div class="itemTemplate_btn">
-                    <button class="tci-btn bg_darkkhaki" data-toggle="modal" data-target="#additemTemplate">新增
-                        Item</button>
                 </div>
             </div>
         </section>
         <section class="itemTemplate_content">
             <div class="table_content">
-                <table class="table table-bordered">
+                <table class="tci-table tci-table-bordered">
                     <thead style="background-color: var(--color-light-gray);">
                         <tr>
+                            <th style="width: 10%;text-align: center;">序號</th>
                             <th>Item 名稱</th>
-                            <th>明細樣版</th>
-                            <th>行為樣版</th>
+                            <th>明細模版</th>
+                            <th>行為模版</th>
                             <th>條碼方式</th>
                             <th style="width: 140px"></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody style="background-color: var(--color-snow);">
                         <tr>
+                            <td style="text-align: center;">1</td>
                             <td>公務車管理</td>
                             <td>公務車</td>
                             <td>公務車租借</td>
                             <td>QR Code</td>
                             <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
                                 <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
+                            <td style="text-align: center;">2</td>
                             <td>電腦管理</td>
                             <td>電腦</td>
                             <td>維修</td>
                             <td>QR Code</td>
                             <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
                                 <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
+                        <tr>
+                            <td style="text-align: center;">1</td>
+                            <td>公務車管理</td>
+                            <td>公務車</td>
+                            <td>公務車租借</td>
+                            <td>QR Code</td>
+                            <td style="text-align: center;">
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2</td>
+                            <td>電腦管理</td>
+                            <td>電腦</td>
+                            <td>維修</td>
+                            <td>QR Code</td>
+                            <td style="text-align: center;">
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">1</td>
+                            <td>公務車管理</td>
+                            <td>公務車</td>
+                            <td>公務車租借</td>
+                            <td>QR Code</td>
+                            <td style="text-align: center;">
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2</td>
+                            <td>電腦管理</td>
+                            <td>電腦</td>
+                            <td>維修</td>
+                            <td>QR Code</td>
+                            <td style="text-align: center;">
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">1</td>
+                            <td>公務車管理</td>
+                            <td>公務車</td>
+                            <td>公務車租借</td>
+                            <td>QR Code</td>
+                            <td style="text-align: center;">
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2</td>
+                            <td>電腦管理</td>
+                            <td>電腦</td>
+                            <td>維修</td>
+                            <td>QR Code</td>
+                            <td style="text-align: center;">
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">1</td>
+                            <td>公務車管理</td>
+                            <td>公務車</td>
+                            <td>公務車租借</td>
+                            <td>QR Code</td>
+                            <td style="text-align: center;">
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2</td>
+                            <td>電腦管理</td>
+                            <td>電腦</td>
+                            <td>維修</td>
+                            <td>QR Code</td>
+                            <td style="text-align: center;">
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">1</td>
+                            <td>公務車管理</td>
+                            <td>公務車</td>
+                            <td>公務車租借</td>
+                            <td>QR Code</td>
+                            <td style="text-align: center;">
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2</td>
+                            <td>電腦管理</td>
+                            <td>電腦</td>
+                            <td>維修</td>
+                            <td>QR Code</td>
+                            <td style="text-align: center;">
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        
                     </tbody>
                 </table>
+            </div>
+            <div style="text-align: center;width: 100%;">
+                <div class="pagination p3 tci-mt-2">
+                    <button class="tci-icon"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+                    <button class="tci-icon"><i class="fa fa-angle-left" aria-hidden="true"></i></i></button>
+                    <input type="text" class="text_input" /><span class="text_span">/ 40</span>
+
+                    <button class="tci-icon"><i class="fa fa-angle-right" aria-hidden="true"></i></i></button>
+                    <button class="tci-icon"><i class="fa fa-angle-double-right"
+                            aria-hidden="true"></i></button>
+
+                    <select class="text_setect">
+                        <option selected>25</option>
+                        <option value="1">50</option>
+                        <option value="2">70</option>
+                        <option value="3">100</option>
+                    </select>
+                </div>
             </div>
         </section>
 
@@ -76,7 +206,7 @@
     <!-- additemTemplate -->
     <div class="modal fade" id="additemTemplate" tabindex="-1" role="dialog" aria-labelledby="additemTemplateLabel"
         aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -104,7 +234,7 @@
                     <div class="itemAddBehavior">
                         <div class="tci-field">
                             <div class="tci-field-label">
-                                <span class="tci-field-text text-left">明細樣版 :</span>
+                                <span class="tci-field-text text-left">明細模版 :</span>
                             </div>
                             <input type="text" class="tci-field-value" value="text" />
                         </div>
@@ -114,7 +244,7 @@
                         </div>
                         <div class="tci-field">
                             <div class="tci-field-label">
-                                <span class="tci-field-text text-left">行為樣版 :</span>
+                                <span class="tci-field-text text-left">行為模版 :</span>
                             </div>
                             <input type="text" class="tci-field-value" value="text" />
                         </div>
@@ -131,7 +261,7 @@
     <!-- edititemTemplate -->
     <div class="modal fade" id="edititemTemplate" tabindex="-1" role="dialog" aria-labelledby="edititemTemplateLabel"
         aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -159,7 +289,7 @@
                     <div class="itemAddBehavior">
                         <div class="tci-field">
                             <div class="tci-field-label">
-                                <span class="tci-field-text text-left">明細樣版 :</span>
+                                <span class="tci-field-text text-left">明細模版 :</span>
                             </div>
                             <input type="text" class="tci-field-value" value="text" />
                         </div>
@@ -169,7 +299,7 @@
                         </div>
                         <div class="tci-field">
                             <div class="tci-field-label">
-                                <span class="tci-field-text text-left">行為樣版 :</span>
+                                <span class="tci-field-text text-left">行為模版 :</span>
                             </div>
                             <input type="text" class="tci-field-value" value="text" />
                         </div>
@@ -186,7 +316,7 @@
     <!-- deleteItemTable -->
     <div class="modal fade" id="deleteItemTable" tabindex="-1" aria-labelledby="deleteItemTableLabel"
         aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">

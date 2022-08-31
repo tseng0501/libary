@@ -54,7 +54,7 @@
 
 // 簽核&列印
 #page_inventoryTransfer_signoff {
-    .tableScroll0 {
+    .tableScroll {
         overflow-x: auto;
 
         table {
@@ -72,7 +72,7 @@
 }
 @media (min-width:768px) {
     #page_inventoryTransfer_signoff {
-        .tableScroll0 {
+        .tableScroll {
             table {
                 width: 100%;
             }

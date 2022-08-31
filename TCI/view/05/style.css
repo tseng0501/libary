@@ -24,6 +24,26 @@
   color: var(--color-light-red);
 }
 
+#page_travelExpense .traveExpenseSection {
+  text-align: center;
+  margin: 1rem 0;
+}
+#page_travelExpense .traveExpenseSection .nav-tabs {
+  padding: 5px 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  display: block;
+}
+#page_travelExpense .traveExpenseSection .nav-item {
+  display: inline-block;
+}
+#page_travelExpense .traveExpenseSection .nav-item .nav-link {
+  color: var(--color-dark);
+}
+#page_travelExpense .traveExpenseSection .nav-item .nav-link.active {
+  color: var(--color-snow);
+  background-color: var(--color-dark-khaki);
+}
 #page_travelExpense .tableScroll {
   overflow-x: auto;
 }
@@ -82,7 +102,20 @@
   width: 50%;
 }
 
+.tableScroll {
+  overflow-x: auto;
+}
+.tableScroll table {
+  width: 992px;
+}
+
 @media (min-width: 768px) {
+  .tableScroll {
+    overflow-x: auto;
+  }
+  .tableScroll table {
+    width: 100%;
+  }
   #page_travelExpenseStatement .tableScroll {
     overflow-x: auto;
   }
