@@ -1,24 +1,42 @@
 #page_issueProduction {
     .issueQuery {
-        .tci-valueBtn {
-            display: flex;
-            width: 100%;
-        }
-    }
-}
+        .tci-field {
+            flex-wrap: wrap;
+            justify-content: space-between;
 
-@media (min-width: 768px) {
-
-    #page_issueProduction {
-        .issueQuery {
-            .tci-input-group-prepend {
-                width: 30%;
+            .tci-field-label {
+                text-align: left;
             }
 
             .tci-valueBtn {
                 display: flex;
-                width: 70%;
-                justify-content: end;
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+
+    #page_issueProduction {
+        .issueQuery {
+            .tci-field {
+                flex-wrap: nowrap;
+
+                .tci-field-label {
+                    width: 40%;
+                    text-align: right;
+
+                }
+
+                .tci-valueBtn {
+                    display: flex;
+                    width: 55%;
+                    justify-content: end;
+                }
+
+                .tci-field-value {
+                    width: 80%;
+                }
             }
         }
     }

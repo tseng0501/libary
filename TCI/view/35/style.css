@@ -12,13 +12,13 @@
 #page_overtimeApplication .overtimeApplicationQuery .date .tci-valueBtn button {
   width: 100%;
   margin-top: 0.5rem;
+  margin-left: 0.5rem;
 }
 #page_overtimeApplication .applicationAddTableBox {
   margin-top: 0.5rem;
 }
 #page_overtimeApplication .applicationAddTableBox .addTable {
   display: flex;
-  margin: 5px;
 }
 #page_overtimeApplication .applicationAddTableBox .addTable .addTableNo {
   width: 70px;
@@ -49,6 +49,7 @@
   }
   #page_overtimeApplication .overtimeApplicationQuery .date .tci-input-group-prepend {
     width: 30%;
+    justify-content: flex-end;
   }
   #page_overtimeApplication .overtimeApplicationQuery .date .tci-valueBtn {
     width: 70%;
@@ -78,11 +79,17 @@
   }
 }
 @media (min-width: 992px) {
+  #page_overtimeApplication .overtimeApplicationQuery .date .tci-input-group-prepend {
+    width: 50%;
+  }
+  #page_overtimeApplication .overtimeApplicationQuery .date .tci-valueBtn {
+    width: 50%;
+  }
   #page_overtimeApplication .applicationAddTableBox .addTable .addTableContent .tci-input-group {
     width: 18%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #page_overtimeApplication .applicationAddTableBox .addTable .addTableContent .tci-input-group {
     width: 14%;
   }

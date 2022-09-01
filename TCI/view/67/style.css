@@ -7,9 +7,6 @@
 #page_goodsIssue .goodsIssueTable .tci-table tbody th {
   color: var(--color-sienna);
 }
-#page_goodsIssue .goodsIssueTable .tci-table tbody .tci-form-control {
-  padding: 0 0.5rem;
-}
 #page_goodsIssue .goodsIssueTable .tci-table .input_part .btnGroups_company {
   width: 100%;
 }

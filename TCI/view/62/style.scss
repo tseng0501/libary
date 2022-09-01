@@ -13,17 +13,51 @@
 @media (min-width:768px) {
     #page_purchaseConfirmation {
         .purchaseConfirmationQuery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             .tci-field {
-                flex-wrap: nowrap;
+                width: 58%;
+                justify-content: space-between;
+                .tci-field-label {
+                    width: 55%;
+                }
 
                 .tci-field-value {
-                    width: 100%;
+                    width: 45%;
+                }
+
+                &.type {
+                    width: 40%;
+                    margin-left: .5rem;
+                    justify-content: space-between;
                 }
             }
         }
     }
 }
+@media (min-width:992px) {
+    #page_purchaseConfirmation {
+        .purchaseConfirmationQuery {
+            .tci-field {
+                .tci-field-label {
+                    width: 40%;
+                }
 
+                .tci-field-value {
+                    width: 60%;
+                }
+
+                &.type {
+                    width: 40%;
+                    .tci-field-value{
+
+                    }
+                }
+            }
+        }
+    }
+}
 // 簽核
 #page_purchaseConfirmation_signoff {
     .tableScroll {
@@ -38,15 +72,18 @@
 #page_purchaseConfirmation_print {
     .print_table {
         overflow-x: auto;
-        .tableContent {
-            width:1200px;
 
-            #SalesOrderBarcode{
+        .tableContent {
+            width: 1200px;
+
+            #SalesOrderBarcode {
                 text-align: end;
             }
+
             .tci-table {
                 &.noborder {
                     margin-bottom: 0;
+
                     th,
                     td {
                         padding: 0;
@@ -70,10 +107,11 @@
             }
         }
     }
+
     #page_purchaseConfirmation_print {
         .print_table {
-            .tableContent{
-                width:100%;
+            .tableContent {
+                width: 100%;
             }
         }
     }

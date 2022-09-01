@@ -7,6 +7,12 @@
 #page_remittance .remittanceTable.tableScroll .tci-table th {
   background-color: var(--color-light-gray);
 }
+#page_remittance .paytable .tci-field-label {
+  width: 45%;
+}
+#page_remittance .paytable .tci-field-value {
+  width: 55%;
+}
 #page_remittance .remittanceNumber .tableScroll {
   overflow-x: auto;
 }

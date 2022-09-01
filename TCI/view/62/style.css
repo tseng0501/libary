@@ -6,11 +6,36 @@
 }
 
 @media (min-width: 768px) {
+  #page_purchaseConfirmation .purchaseConfirmationQuery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field {
-    flex-wrap: nowrap;
+    width: 58%;
+    justify-content: space-between;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-label {
+    width: 55%;
   }
   #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-value {
-    width: 100%;
+    width: 45%;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type {
+    width: 40%;
+    margin-left: 0.5rem;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-label {
+    width: 40%;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-value {
+    width: 60%;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type {
+    width: 40%;
   }
 }
 #page_purchaseConfirmation_signoff .tableScroll {

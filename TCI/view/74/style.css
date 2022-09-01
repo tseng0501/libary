@@ -1,14 +1,30 @@
-#page_workOrder .tci-valueBtn {
+#page_workOrder .workOrderQuery .tci-field {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#page_workOrder .workOrderQuery .tci-field .tci-field-label {
+  text-align: left;
+}
+#page_workOrder .workOrderQuery .tci-field .tci-valueBtn {
   display: flex;
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  #page_workOrder .tci-input-group-prepend {
-    width: 30%;
+  #page_workOrder .workOrderQuery .tci-field {
+    flex-wrap: nowrap;
   }
-  #page_workOrder .tci-valueBtn {
-    width: 70%;
+  #page_workOrder .workOrderQuery .tci-field .tci-field-label {
+    width: 40%;
+    text-align: right;
+  }
+  #page_workOrder .workOrderQuery .tci-field .tci-valueBtn {
+    display: flex;
+    width: 55%;
+    justify-content: end;
+  }
+  #page_workOrder .workOrderQuery .tci-field .tci-field-value {
+    width: 80%;
   }
 }
 #page_workOrder_signoff .tableScroll {

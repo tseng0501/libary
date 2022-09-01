@@ -14,8 +14,30 @@
             width: 1200px;
         }
     }
+    .up{
+        cursor: pointer;
+        color: var(--color-whitesmoke);
+        :hover{
+            color: var(--color-dark);
+        }
+    }
+    .down{
+        cursor: pointer;
+        color: var(--color-whitesmoke);
+        :hover{
+            color: var(--color-dark);
+        }
+    }
 }
-
+.tci-icon {
+    border-radius: var(--borderRadius);
+    color: var(--color-snow);
+    font-weight: bold;
+    width: 30px;
+    padding: 3px;
+    margin: 0 2px;
+    vertical-align: baseline;
+}
 @media (min-width: 768px) {
     #page_light {
         .query {

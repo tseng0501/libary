@@ -1,6 +1,10 @@
-#page_deliveryCredit{
-    .deliveryCreditQuery{
-        .tci-field{
+#page_deliveryCredit {
+    .deliveryCreditQuery {
+        .tci-field {
+            .tci-field-label {
+                text-align: left;
+            }
+
             .tci-valueBtn {
                 display: flex;
                 width: 100%;
@@ -10,15 +14,43 @@
 }
 
 @media (min-width:768px) {
-    #page_deliveryCredit{
-        .deliveryCreditQuery{
-            .tci-field{
+    #page_deliveryCredit {
+        .deliveryCreditQuery {
+            .tci-field {
+                justify-content: space-between;
+
+                .tci-field-label {
+                    text-align: right;
+                }
+
                 .tci-valueBtn {
                     display: flex;
                     width: 70%;
                     justify-content: end;
                 }
-                .tci-field-value{
+
+                .tci-field-value {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    #page_deliveryCredit {
+        .deliveryCreditQuery {
+            .tci-field {
+                .tci-field-label {
+                    width: 50%;
+                }
+                .tci-valueBtn {
+                    display: flex;
+                    width: 50%;
+                    justify-content: end;
+                }
+
+                .tci-field-value {
                     width: 70%;
                 }
             }

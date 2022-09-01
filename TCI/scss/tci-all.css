@@ -1351,6 +1351,9 @@ a {
   padding: 5px;
   margin: 0 2px;
 }
+.p3 .tci-icon:hover {
+  background-color: var(--color-peru);
+}
 .p3 .text_input {
   width: 60px;
   overflow: hidden;
@@ -1361,7 +1364,9 @@ a {
   padding: 0.2rem 0.5rem;
   font-size: var(--font-size-sm);
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.8;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 .p3 .text_setect {
   width: 70px;
@@ -1374,7 +1379,8 @@ a {
   font-weight: 400;
   line-height: 1.5;
   padding: 0.2rem 0.5rem;
-  height: 40px;
+  height: 35px;
+  vertical-align: middle;
 }
 .p3 .text_span {
   padding: 2px;

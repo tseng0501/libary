@@ -12,6 +12,7 @@
                 button{
                     width: 100%;
                     margin-top: .5rem;
+                    margin-left: .5rem;
                 }
             }
         }
@@ -20,8 +21,6 @@
         margin-top: .5rem;
         .addTable {
             display: flex;
-            
-            margin: 5px;
 
             .addTableNo {
                 width: 70px;
@@ -55,7 +54,8 @@
             .date{
                 justify-content: space-between;
                 .tci-input-group-prepend{
-                    width:30%
+                    width:30%;
+                    justify-content: flex-end;
                 }
                 .tci-valueBtn{
                     width: 70%;
@@ -95,6 +95,16 @@
 }
 @media (min-width: 992px) {
     #page_overtimeApplication{
+        .overtimeApplicationQuery{
+            .date{
+                .tci-input-group-prepend{
+                    width:50%;
+                }
+                .tci-valueBtn{
+                    width: 50%;
+                }
+            }
+        }
         .applicationAddTableBox {
             .addTable {
 
@@ -107,7 +117,7 @@
         }
     }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     #page_overtimeApplication{
         .applicationAddTableBox {
             .addTable {

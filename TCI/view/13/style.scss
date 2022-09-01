@@ -7,22 +7,27 @@
         .reason {
             width: 100%;
         }
-
-        .purchaseTable_form {
-            padding: 1rem;
-        }
     }
+
 }
 
 @media (min-width: 768px) {
     #page_purchaseRequisition {
         .purchaseTable {
             .reason {
-                width: 60%;
+                width: 65%;
 
                 .tci-field-value {
                     width: 100%;
                 }
+            }
+        }
+        .tci-field{
+            .tci-field-label{
+                width: 35%;
+            }
+            .tci-field-value{
+                width: 65%;
             }
         }
     }

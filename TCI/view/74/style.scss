@@ -1,17 +1,43 @@
 #page_workOrder{
-    .tci-valueBtn{
-        display: flex;
-        width: 100%;
+    .workOrderQuery{
+        .tci-field {
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-field-label {
+                text-align: left;
+            }
+
+            .tci-valueBtn {
+                display: flex;
+                width: 100%;
+            }
+        }
     }
 }
 
 @media (min-width:768px) {
     #page_workOrder{
-        .tci-input-group-prepend{
-            width: 30%;
-        }
-        .tci-valueBtn{
-            width: 70%;
+        .workOrderQuery {
+            .tci-field {
+                flex-wrap: nowrap;
+
+                .tci-field-label {
+                    width: 40%;
+                    text-align: right;
+
+                }
+
+                .tci-valueBtn {
+                    display: flex;
+                    width: 55%;
+                    justify-content: end;
+                }
+
+                .tci-field-value {
+                    width: 80%;
+                }
+            }
         }
     }
 }

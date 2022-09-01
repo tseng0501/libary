@@ -8,6 +8,30 @@
 #page_light .tableScroll .tci-table {
   width: 1200px;
 }
+#page_light .up {
+  cursor: pointer;
+  color: var(--color-whitesmoke);
+}
+#page_light .up :hover {
+  color: var(--color-dark);
+}
+#page_light .down {
+  cursor: pointer;
+  color: var(--color-whitesmoke);
+}
+#page_light .down :hover {
+  color: var(--color-dark);
+}
+
+.tci-icon {
+  border-radius: var(--borderRadius);
+  color: var(--color-snow);
+  font-weight: bold;
+  width: 30px;
+  padding: 3px;
+  margin: 0 2px;
+  vertical-align: baseline;
+}
 
 @media (min-width: 768px) {
   #page_light .query {

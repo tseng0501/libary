@@ -16,17 +16,6 @@
         }
     }
 }
-
-#page_reconfirmLeave {
-    .tci-input-group {
-        .tci-form-control {
-            &.gray {
-                background-color: var(--color-whitesmoke);
-            }
-        }
-    }
-}
-
 @media (min-width: 768px) {
     #page_leaveVacation {
 
@@ -68,12 +57,19 @@
 @media (min-width: 1200px) {
     #page_reconfirmLeave {
         .reconfirmLeaveContent {
+            justify-content: flex-start;
+
+            .tci-input-group{
+                width: 24%;
+                margin-right: .5rem;
+            }
             .formBox_gray {
                 .formBox_content {
                     flex-wrap: nowrap;
 
                     .tci-input-group {
                         margin-right: 5px;
+                        width: 25%;
                     }
                 }
 

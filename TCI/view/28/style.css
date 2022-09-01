@@ -4,6 +4,7 @@
 }
 #page_contract .contractContent .tci-field .tci-field-label {
   width: 100%;
+  color: var(--color-dark-blue);
 }
 #page_contract .contractContent .tci-field .tci-field-value {
   width: 100%;

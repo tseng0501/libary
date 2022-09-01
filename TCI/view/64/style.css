@@ -4,14 +4,25 @@
     justify-content: space-between;
   }
   #page_reserveInvoice .reserveInvoiceQuery .tci-field {
-    width: 48%;
+    width: 58%;
     justify-content: space-between;
   }
   #page_reserveInvoice .reserveInvoiceQuery .tci-field .tci-field-label {
-    width: 50%;
+    width: 55%;
   }
   #page_reserveInvoice .reserveInvoiceQuery .tci-field .tci-field-value {
-    width: 50%;
+    width: 45%;
+  }
+  #page_reserveInvoice .reserveInvoiceQuery .tci-field.type {
+    width: 40%;
+    margin-left: 0.5rem;
+    justify-content: space-between;
+  }
+  #page_reserveInvoice .reserveInvoiceQuery .tci-field.type .tci-field-label {
+    width: 30%;
+  }
+  #page_reserveInvoice .reserveInvoiceQuery .tci-field.type .tci-field-value {
+    width: 70%;
   }
 }
 #page_reserveInvoice_signoff .tableScroll0 {

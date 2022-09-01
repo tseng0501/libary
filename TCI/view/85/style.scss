@@ -1,0 +1,38 @@
+    .cardContent {
+        margin-bottom: 1rem;
+
+        .tci-field {
+            .tci-field-label {
+                text-align: left;
+                padding-left: 1rem;
+            }
+        }
+
+        .tci-card-body {
+            justify-content: flex-start;
+
+            .attachmentsContent {
+                text-align: left;
+                button{
+                    margin: 3px;
+                }
+            }
+
+        }
+    }
+
+    @media (min-width:768px) {
+        .cardContent {
+            .tci-card {
+                .tci-card-body {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .tci-field {
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }

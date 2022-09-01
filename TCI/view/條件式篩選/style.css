@@ -132,3 +132,8 @@
     width: 32%;
   }
 }
+@media (min-width: 1200px) {
+  #page_documentQuery .conditionalContent .conditional_flex .conditional_box {
+    width: 24%;
+  }
+}

@@ -4,16 +4,19 @@
 #page_purchaseRequisition .purchaseTable .reason {
   width: 100%;
 }
-#page_purchaseRequisition .purchaseTable .purchaseTable_form {
-  padding: 1rem;
-}
 
 @media (min-width: 768px) {
   #page_purchaseRequisition .purchaseTable .reason {
-    width: 60%;
+    width: 65%;
   }
   #page_purchaseRequisition .purchaseTable .reason .tci-field-value {
     width: 100%;
+  }
+  #page_purchaseRequisition .tci-field .tci-field-label {
+    width: 35%;
+  }
+  #page_purchaseRequisition .tci-field .tci-field-value {
+    width: 65%;
   }
 }
 @media (min-width: 1200px) {

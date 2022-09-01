@@ -18,7 +18,6 @@
   margin-bottom: 0.5rem;
 }
 #page_documentQuery .documentrequester .requester_people .requester_title {
-  padding: 5px;
   border-radius: var(--borderRadius);
   width: 100%;
 }

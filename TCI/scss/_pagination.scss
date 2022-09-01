@@ -62,6 +62,9 @@ a {
         width: 50px;
         padding: 5px;
         margin: 0 2px;
+        &:hover{
+        background-color: var(--color-peru);
+        }
     }
 
     .text_input {
@@ -74,7 +77,9 @@ a {
         padding: 0.2rem 0.5rem;
         font-size: var(--font-size-sm);
         font-weight: 400;
-        line-height: 1.5;
+        line-height: 1.8;
+        margin-right: 5px;
+        vertical-align: middle;
     }
 
     .text_setect {
@@ -88,7 +93,8 @@ a {
         font-weight: 400;
         line-height: 1.5;
         padding: 0.2rem 0.5rem;
-        height: 40px;
+        height: 35px;
+        vertical-align: middle;
     }
     .text_span{
         padding: 2px;margin-top: 6px;

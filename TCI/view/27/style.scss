@@ -13,6 +13,16 @@
         }
     }
 
+    .paytable {
+        .tci-field-label {
+            width: 45%;
+        }
+
+        .tci-field-value {
+            width: 55%;
+        }
+    }
+
     .remittanceNumber {
         .tableScroll {
             overflow-x: auto;
@@ -20,6 +30,7 @@
             .tci-table {
                 width: 900px;
                 text-align: center;
+
                 th {
                     background-color: var(--color-light-gray);
                 }
@@ -35,6 +46,7 @@
 
         .tci-table {
             width: 900px;
+
             th {
                 background-color: var(--color-light-gray);
             }
@@ -48,6 +60,7 @@
             .tci-table {
                 width: 900px;
                 text-align: center;
+
                 th {
                     background-color: var(--color-light-gray);
                     text-align: center;
@@ -86,7 +99,7 @@
 
                 .tci-table {
                     width: 100%;
-                  
+
                 }
             }
         }
@@ -101,57 +114,66 @@
 
             }
         }
+
         .remittance_previewNumber {
             .tableScroll {
                 overflow-x: auto;
 
                 .tci-table {
                     width: 100%;
-                  
+
                 }
             }
         }
     }
 }
-#page_remittance_signoff{
-    .tableScroll{
+
+#page_remittance_signoff {
+    .tableScroll {
         overflow-x: auto;
-        .tableContent0{
+
+        .tableContent0 {
             width: 768px;
         }
-        .tableContent{
+
+        .tableContent {
             width: 1200px;
         }
     }
 }
-#page_remittance_print{
-    .tableScroll{
+
+#page_remittance_print {
+    .tableScroll {
         overflow-x: auto;
-        .tableAuto{
+
+        .tableAuto {
             width: 1200px;
         }
     }
 }
+
 @media (min-width: 768px) {
-    #page_remittance_signoff{
-        .tableScroll{
-            .tableContent0{
+    #page_remittance_signoff {
+        .tableScroll {
+            .tableContent0 {
                 width: 100%;
             }
         }
     }
 }
+
 @media (min-width: 992px) {
-    #page_remittance_signoff{
-        .tableScroll{
-            .tableContent{
+    #page_remittance_signoff {
+        .tableScroll {
+            .tableContent {
                 width: 100%;
             }
         }
     }
-    #page_remittance_print{
-        .tableScroll{
-            .tableAuto{
+
+    #page_remittance_print {
+        .tableScroll {
+            .tableAuto {
                 width: 100%;
             }
         }

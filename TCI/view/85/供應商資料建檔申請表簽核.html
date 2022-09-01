@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>供應商資料建檔申請表-簽核</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_supplierApplicationForm_signoff">
+        <div class="pageHeader" style="position: relative;">
+            <span class="pageHeaderTitle"><b>供應商資料建檔申請表-簽核</b></span>
+            <!-- 查詢bar -->
+        </div>
+        <!-- 上下頁 -->
+        <section class="btnTop tci-mb-3">
+            <div class="btnGroups">
+                <button class="tci-btn bg_darkblue"><i class="fa fa-undo" aria-hidden="true"></i> 關閉單據內容</button>
+            </div>
+            <div class="btnGroups_lr" style="justify-content: space-between;display: flex;margin-top: .5rem;">
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-left"
+                        aria-hidden="true"></i> 上一筆</button>
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-right"
+                        aria-hidden="true"></i>下一筆</button>
+            </div>
+        </section>
+
+        <div class="accordion accordion-flush" id="accordionFlush">
+            <!-- 留言 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="messageBox">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-messageBox" aria-expanded="true"
+                        aria-controls="panelsStayOpen-messageBox">
+                        <span>留言</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-messageBox" class="accordion-collapse collapse show"
+                    aria-labelledby="messageBox">
+                    <div class="accordion-body messageBoxContent">
+                        <div class="messagebtn_message tci-mt-3 message" style="text-align: center;
+            display: flex;
+            padding: 5px;
+            margin: 0 1rem;
+            border-radius: var(--borderRadius);">
+                            <button type="button" class="tci-btn tci-btn-orgin" data-bs-toggle="modal"
+                                data-bs-target="#messageBoxModal">
+                                留言</button>
+                            <ul class="tci-mt-3" style="list-style-type: decimal;
+                padding-top: 5px;
+                padding-right: 5px;
+                background-color: var(--color-light-gray);
+                margin: 0;
+                overflow-y: auto;
+                height: 100px;">
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="messagebtn_voice tci-mt-3 message" style="text-align: center;
+            display: flex;
+            padding: 5px;
+            margin: 0 1rem;
+            border-radius: var(--borderRadius);">
+                            <button type="button" class="tci-btn tci-btn-orgin" data-bs-toggle="modal"
+                                data-bs-target="#voiceMessageBoxModal">
+                                語言留言</button>
+                            <ul class="tci-mt-3" style="list-style-type: decimal;
+                padding-top: 5px;
+                padding-right: 5px;
+                background-color: var(--color-light-gray);
+                margin: 0;
+                overflow-y: auto;
+                height: 100px;">
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 簽核意見 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="description">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-description" aria-expanded="true"
+                        aria-controls="panelsStayOpen-description">
+                        <span>簽核意見</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-description" class="accordion-collapse collapse show"
+                    aria-labelledby="description">
+                    <div class="accordion-body">
+                        <div class="descriptionBox_invalid tci-text-center tci-mb-2">
+                            <span
+                                style="border: 1px solid #003D79;background-color:#003D79;padding:0 6px;color: var(--color-snow);font-weight: bold;">此單據已列印</span>
+                        </div>
+                        <div class="next_signer" style="margin: .5rem 0;">
+                            <div class="tci-bs-input-group">
+                                <div class="tci-bs-input-group-prepend">
+                                    <span class="tci-bs-input-group-text">選擇下一位簽核者:</span>
+                                </div>
+                                <select class="tci-bs-custom-select">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="descriptionBoxContent">
+                            <div class="descriptionBox_notice">
+                                <div class="tci-input-group">
+                                    <div class="tci-input-group-prepend">
+                                        <span class="tci-input-group-text">內容:&nbsp;
+                                            <div class="dropdown open" style="margin-bottom:.5rem;">
+                                                <button class="dropdown-toggle tci-btn bg_darkblue py-0" type="button"
+                                                    data-bs-toggle="dropdown" data-animations="fadeIn">
+                                                    通知人員
+                                                </button>
+                                                <!-- 下拉清單 -->
+                                                <ul class="dropdown-menu">
+                                                    <li style="margin-left:5px;cursor:pointer">
+                                                        <label><input type="checkbox" class="decisionMsg" value="">
+                                                            所有簽核者</label>
+                                                    </li>
+                                                    <li style="margin-left:5px;cursor:pointer">
+                                                        <label><input type="checkbox" class="decisionMsg"
+                                                                value="2011A0016">
+                                                            吳春隆(REX.WU)</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <textarea class="tci-form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="descriptionBox_icon tci-text-center">
+                                <div class="dropdown check">
+                                    <a href="#" style="text-decoration: none">
+                                        <i class="fa-solid fa-check fa-4x" style="color: #5b6835;"></i>
+                                        <p style="color: black;">同意簽核</p>
+                                    </a>
+                                </div>
+                                <div class="dropdown check">
+                                    <a href="#" style="text-decoration: none">
+                                        <i class="fa-solid fa-xmark fa-4x" style="color: #9d0f0f;"></i>
+                                        <p style="color: black;">不同意</p>
+                                    </a>
+                                </div>
+                                <div class="dropdown file">
+                                    <div class="dropdown">
+                                        <button class="tci-btn" type="button" data-animations="fadeIn"
+                                            data-hover="dropdown"
+                                            style="background: none;border-width: 0px;text-align: center;text-decoration: none;padding: 0;"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="dropdownbtn">
+                                            <i class="fa-solid fa-file-lines fa-4x" style="color: #b8aba2;"></i>
+                                            <p style="color:black;margin-top: .5rem;">其他</p>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">作廢單據</a></li>
+                                            <li><a class="dropdown-item" href="#">標示為急件</a></li>
+                                            <li><a class="dropdown-item" href="#">修改單據</a></li>
+                                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#forwardContentModal">轉寄內容</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- 單據明細 -->
+             <div class="accordion-item">
+                <h2 class="accordion-header" id="detailsBox">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-detailsBox" aria-expanded="true"
+                        aria-controls="panelsStayOpen-detailsBox">
+                        <span>單據明細</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-detailsBox" class="accordion-collapse collapse show"
+                    aria-labelledby="detailsBox">
+                    <div class="accordion-body detailsBoxContent">
+                        <div class="detailsBox_company tci-mt-1 tci-mb-2" style="text-align: right;">
+                            <span class="detailsBox_companytext"
+                                style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">大江生醫</span>
+                        </div>
+                        <div class="tableScroll">
+                            <div class="tableContent">
+                                <div
+                                    style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
+                                    <span>大江生醫股份有限公司 供應商資料建檔申請表</span>
+                                </div>
+                                <section class="cardContent">
+                                    <div class="tci-card card-gray">
+                                        <div class="tci-card-header card-header-gray" style="text-align: left;padding: .5rem;">基本資料</div>
+                                        <div class="tci-card-body">
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">所屬公司別</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">供應商名稱</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">供應商電話</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">供應商郵件</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                        
+                                <section class="cardContent">
+                                    <div class="tci-card card-gray">
+                                        <div class="tci-card-header card-header-gray" style="text-align: left;padding: .5rem;">明細資料</div>
+                                        <div class="tci-card-body">
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">統一編號</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">與TCI交易品項</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">供應商性質</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">供應商類型</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">營業項目</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">負責人姓名</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">負責人職位</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">登記資本額</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">產品責任險</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">付款條件</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">付款方式</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">食品業者登錄字號</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">工廠電話</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">工廠登記證號</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                        
+                                <section class="cardContent">
+                                    <div class="tci-card card-gray">
+                                        <div class="tci-card-header card-header-gray" style="text-align: left;padding: .5rem;">聯絡人資訊</div>
+                                        <div class="tci-card-body">
+                                            <span style="width: 100%;text-align:left;font-weight: bold;">※主要聯絡人</span>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">聯絡人職位</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">聯絡人姓名</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">聯絡人電話</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                            <div class="tci-field">
+                                                <div class="tci-field-label">
+                                                    <span class="tci-field-text">聯絡人郵件</span>
+                                                </div>
+                                                <input type="text" class="tci-field-value gray" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="cardContent">
+                                    <div class="tci-card card-gray">
+                                        <div class="tci-card-header card-header-gray" style="text-align: left;padding: .5rem;">相關附件</div>
+                                        <div class="tci-card-body">
+                                            <div class="attachmentsContent">
+                                                <button class="tci-btn bg_darkblue">Company Profile_20220106031203.pdf</button>
+                                                <button class="tci-btn bg_darkblue">Company Profile_20220106031203.pdf</button>
+                                                <button class="tci-btn bg_darkblue">Company Profile_20220106031203.pdf</button>
+                                                <button class="tci-btn bg_darkblue">Company Profile_20220106031203.pdf</button>
+                                                <button class="tci-btn bg_darkblue">Company Profile_20220106031203.pdf</button>
+                                                <button class="tci-btn bg_darkblue">Company Profile_20220106031203.pdf</button>
+                                                <button class="tci-btn bg_darkblue">Company Profile_20220106031203.pdf</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

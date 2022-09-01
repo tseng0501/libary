@@ -17,22 +17,26 @@
         <div class="pageHeader">
             <span class="pageHeaderTitle" style="font-size: 24px;"><b>item 管理</span></b>
         </div>
-        <section class="query">
-            <div class="flex">
-                <div class="tci-field">
-                    <div class="tci-field-label">
-                        <span class="tci-field-text text-left">Item 名稱：</span>
-                    </div>
-                    <div class="tci-valueBtn">
-                        <input type="text" class="tci-field-value" value="text" />
-                        <button class="tci-btn bg_darkblue">查詢</button>
-                        <button class="tci-btn bg_darkkhaki tci-ml-2" data-toggle="modal" data-target="#additemTemplate">新增
-                            Item</button>
+        <div class="btnGroups tci-mb-3">
+            <button class="tci-btn bg_lightgray">明細模版管理</button>
+            <button class="tci-btn tci-btn-warning">行為狀態</button>
+        </div>
+        <section class="itemTemplate_content content">
+            <section class="query tci-mb-4">
+                <div class="flex">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">Item 名稱：</span>
+                        </div>
+                        <div class="tci-valueBtn">
+                            <input type="text" class="tci-field-value" value="text" />
+                            <button class="tci-btn bg_darkblue tci-ml-3">查詢</button>
+                            <button class="tci-btn bg_darkkhaki tci-ml-3" data-toggle="modal" data-target="#additemTemplate">新增
+                                Item</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="itemTemplate_content">
+            </section>
             <div class="table_content">
                 <table class="tci-table tci-table-bordered">
                     <thead style="background-color: var(--color-light-gray);">
@@ -42,7 +46,7 @@
                             <th>明細模版</th>
                             <th>行為模版</th>
                             <th>條碼方式</th>
-                            <th style="width: 140px"></th>
+                            <th style="width: auto"></th>
                         </tr>
                     </thead>
                     <tbody style="background-color: var(--color-snow);">
@@ -54,7 +58,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -65,7 +69,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -76,7 +80,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -87,7 +91,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -98,7 +102,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -109,7 +113,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -120,7 +124,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -131,7 +135,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -142,7 +146,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -153,7 +157,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -164,7 +168,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
@@ -175,7 +179,7 @@
                             <td>QR Code</td>
                             <td style="text-align: center;">
                                 <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#edititemTemplate"> <i class="fa-solid fa-pencil"></i></button>
-                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         
@@ -185,13 +189,12 @@
             <div style="text-align: center;width: 100%;">
                 <div class="pagination p3 tci-mt-2">
                     <button class="tci-icon"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
-                    <button class="tci-icon"><i class="fa fa-angle-left" aria-hidden="true"></i></i></button>
+                    <button class="tci-icon"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
                     <input type="text" class="text_input" /><span class="text_span">/ 40</span>
-
-                    <button class="tci-icon"><i class="fa fa-angle-right" aria-hidden="true"></i></i></button>
-                    <button class="tci-icon"><i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></button>
-
+                    <button class="btn bg_lightgray">跳</button>
+                    
+                    <button class="tci-icon"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    <button class="tci-icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
                     <select class="text_setect">
                         <option selected>25</option>
                         <option value="1">50</option>
@@ -238,7 +241,7 @@
                             </div>
                             <input type="text" class="tci-field-value" value="text" />
                         </div>
-                        <div>
+                        <div style="margin-top:2px;">
                             <span style="font-size: 2rem;padding: 0 5px;"> <i class="fa-solid fa-circle-plus"></i>
                             </span>
                         </div>
@@ -293,7 +296,7 @@
                             </div>
                             <input type="text" class="tci-field-value" value="text" />
                         </div>
-                        <div>
+                        <div style="margin-top:2px;">
                             <span style="font-size: 2rem;padding: 0 5px;"> <i class="fa-solid fa-circle-plus"></i>
                             </span>
                         </div>
@@ -313,8 +316,8 @@
         </div>
     </div>
 
-    <!-- deleteItemTable -->
-    <div class="modal fade" id="deleteItemTable" tabindex="-1" aria-labelledby="deleteItemTableLabel"
+    <!-- deleteTable -->
+    <div class="modal fade" id="deleteTable" tabindex="-1" aria-labelledby="deleteTableLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
@@ -322,7 +325,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h5 class="modal-title" id="deleteItemTableLabel">刪除</h5>
+                    <h5 class="modal-title" id="deleteTableLabel">刪除</h5>
                 </div>
                 <div class="modal-body">
                     是否要刪除？

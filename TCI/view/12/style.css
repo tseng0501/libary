@@ -169,10 +169,10 @@
   overflow-x: auto;
 }
 #page_advancedPayment_signoff .tableScroll .tableContent {
-  width: 992px;
+  min-width: 720px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #page_advancedPayment_signoff .tableScroll .tableContent {
     width: 100%;
   }

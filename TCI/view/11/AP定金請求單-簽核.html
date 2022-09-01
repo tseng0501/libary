@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>A/P定金請求單-簽核</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_acceptanceForm_signoff">
+        <div class="pageHeader" style="position: relative;">
+            <span class="pageHeaderTitle"><b>A/P定金請求單-簽核</b></span>
+            <!-- 查詢bar -->
+        </div>
+        <section class="btnTop tci-mb-3">
+            <div class="btnGroups">
+                <button class="tci-btn bg_darkblue"><i class="fa fa-undo" aria-hidden="true"></i> 關閉單據內容</button>
+            </div>
+            <div class="btnGroups_lr" style="justify-content: space-between;display: flex;margin-top: .5rem;">
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-left"
+                        aria-hidden="true"></i> 上一筆</button>
+                <button class="tci-btn bg_lightgray" style="width: 49%;"><i class="fa fa-long-arrow-right"
+                        aria-hidden="true"></i>下一筆</button>
+            </div>
+        </section>
+
+        <div class="accordion accordion-flush" id="accordionFlush">
+            <!-- 留言 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="messageBox">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-messageBox" aria-expanded="true"
+                        aria-controls="panelsStayOpen-messageBox">
+                        <span>留言</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-messageBox" class="accordion-collapse collapse show"
+                    aria-labelledby="messageBox">
+                    <div class="accordion-body messageBoxContent">
+                        <div class="messagebtn_message tci-mt-3 message" style="text-align: center;
+                        display: flex;
+                        padding: 5px;
+                        margin: 0 1rem;
+                        border-radius: var(--borderRadius);">
+                            <button type="button" class="tci-btn tci-btn-orgin" data-bs-toggle="modal"
+                                data-bs-target="#messageBoxModal">
+                                留言</button>
+                            <ul class="tci-mt-3" style="list-style-type: decimal;
+                            padding-top: 5px;
+                            padding-right: 5px;
+                            background-color: var(--color-light-gray);
+                            margin: 0;
+                            overflow-y: auto;
+                            height: 100px;">
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WUdfsdfs)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="messagebtn_voice tci-mt-3 message" style="text-align: center;
+                        display: flex;
+                        padding: 5px;
+                        margin: 0 1rem;
+                        border-radius: var(--borderRadius);">
+                            <button type="button" class="tci-btn tci-btn-orgin" data-bs-toggle="modal"
+                                data-bs-target="#voiceMessageBoxModal">
+                                語言留言</button>
+                            <ul class="tci-mt-3" style="list-style-type: decimal;
+                            padding-top: 5px;
+                            padding-right: 5px;
+                            background-color: var(--color-light-gray);
+                            margin: 0;
+                            overflow-y: auto;
+                            height: 100px;">
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                                <li>曾莞婷(HEDY.TSENG) → 吳春隆(REX.WU)
+                                    <p style="color: var(--color-blue);">2022/7/21 13:55： 1212</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 簽核意見 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="description">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-description" aria-expanded="true"
+                        aria-controls="panelsStayOpen-description">
+                        <span>簽核意見</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-description" class="accordion-collapse collapse show"
+                    aria-labelledby="description">
+                    <div class="accordion-body">
+                        <div class="descriptionBox_invalid tci-text-center tci-mb-2">
+                            <span
+                                style="border: 1px solid #003D79;background-color:#003D79;padding:0 6px;color: var(--color-snow);font-weight: bold;">此單據已列印</span>
+                        </div>
+                        <div class="descriptionBoxContent">
+                            <div class="descriptionBox_notice">
+                                <div class="tci-input-group">
+                                    <div class="tci-input-group-prepend">
+                                        <span class="tci-input-group-text">內容:&nbsp;
+                                            <div class="dropdown open" style="margin-bottom:.5rem;">
+                                                <button class="dropdown-toggle tci-btn bg_darkblue py-0" type="button"
+                                                    data-bs-toggle="dropdown" data-animations="fadeIn">
+                                                    通知人員
+                                                </button>
+                                                <!-- 下拉清單 -->
+                                                <ul class="dropdown-menu">
+                                                    <li style="margin-left:5px;cursor:pointer">
+                                                        <label><input type="checkbox" class="decisionMsg" value="">
+                                                            所有簽核者</label>
+                                                    </li>
+                                                    <li style="margin-left:5px;cursor:pointer">
+                                                        <label><input type="checkbox" class="decisionMsg"
+                                                                value="2011A0016">
+                                                            吳春隆(REX.WU)</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <textarea class="tci-form-control"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="descriptionBox_icon tci-text-center">
+                                <div class="dropdown file">
+                                    <div class="dropdown">
+                                        <button class="tci-btn" type="button" data-animations="fadeIn"
+                                            data-hover="dropdown"
+                                            style="background: none;border-width: 0px;text-align: center;text-decoration: none;padding: 0;"
+                                            data-bs-toggle="dropdown" aria-expanded="false" id="dropdownbtn">
+                                            <i class="fa-solid fa-file-lines fa-4x" style="color: #b8aba2;"></i>
+                                            <p style="color:black;margin-top: .5rem;">其他</p>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">作廢單據</a></li>
+                                            <li><a class="dropdown-item" href="#">標示為急件</a></li>
+                                            <li><a class="dropdown-item" href="#">修改單據</a></li>
+                                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#forwardContentModal">轉寄內容</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 單據明細 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="detailsBox">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-detailsBox" aria-expanded="true"
+                        aria-controls="panelsStayOpen-detailsBox">
+                        <span>單據明細</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-detailsBox" class="accordion-collapse collapse show"
+                    aria-labelledby="detailsBox">
+                    <div class="accordion-body detailsBoxContent">
+                        <div class="detailsBox_company tci-mt-1 tci-mb-2" style="text-align: right;">
+                            <span class="detailsBox_companytext"
+                                style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">大江生醫</span>
+                        </div>
+                        <div class="tableScroll0">
+                            <div class="tableContent">
+                                <div
+                                    style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
+                                    <span>大江生醫股份有限公司 A/P定金請求單</span>
+                                </div>
+                                <table class="tci-table tci-table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th style="background-color: var(--color-light-gray);width: 20%;">單據編號</th>
+                                            <td>220401-43-0007</td>
+                                            <th style="background-color: var(--color-light-gray);width: 20%;">部門別</th>
+                                            <td>總經理</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="background-color: var(--color-light-gray);width: 20%;">組別</th>
+                                            <td>共用</td>
+                                            <th style="background-color: var(--color-light-gray);width: 20%;">日期</th>
+                                            <td>2022/22/22</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tableScroll">
+                            <div class="tableContent">
+                                <table style="width: 100%;
+                                color: #212529;">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:10%">廠商名稱：</th>
+                                            <td>河北派勒科技有限公司</td>
+                                            <th style="width:10%;">文件日期：</th>
+                                            <td>2022/6/14</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="width:10%;">專案名稱：</th>
+                                            <td>2342435</td>
+                                            <th style="width:10%;"> 文件號碼：</th>
+                                            <td>22</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="tci-table tci-table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>NO</th>
+                                            <th>項目號碼</th>
+                                            <th>品名/規格</th>
+                                            <th>倉庫</th>
+                                            <th>數量</th>
+                                            <th>單位</th>
+                                            <th>單價</th>
+                                            <th>小計</th>
+                                            <th>備註</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>260000004 </td>
+                                            <td>15ml茶色透明精油瓶 & 配件(霧面膠頭、霧面安全環、刻度滴管組裝好) </td>
+                                            <td>T04 </td>
+                                            <td>1404 </td>
+                                            <td>PC </td>
+                                            <td>USD 0.3050 </td>
+                                            <td>USD 428.2200 </td>
+                                            <td> </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2"></td>
+                                            <td colspan="2">
+                                                <table style="width:100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border: 0;width: 20%;">發票日期：</td>
+                                                            <td style="border: 0;">2022/6/14</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border: 0;">發票聯式：</td>
+                                                            <td style="border: 0;">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border: 0;">發票編號：</td>
+                                                            <td style="border: 0;"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td colspan="3">
+                                                <table style="width:100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="border: 0;">數量合計：</td>
+                                                            <td style="border: 0;">5,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border: 0;">付款條件：</td>
+                                                            <td style="border: 0;">訂金50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="border: 0;">付款日期：</td>
+                                                            <td style="border: 0;">2022/6/16</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 簽核流程 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="processBox">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-processBox" aria-expanded="true"
+                        aria-controls="panelsStayOpen-processBox">
+                        <span>簽核流程 </span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-processBox" class="accordion-collapse collapse show"
+                    aria-labelledby="processBox">
+                    <div class="accordion-body processBoxContent">
+                        <div class="tci-card tci-mt-2 card-green">
+                            <div class="tci-card-header card-header-green"><i class="fa-solid fa-user-tie"></i> 總經理主管
+                            </div>
+                            <div class="tci-card-body">
+                                <p class="tci-card-title">林詠翔<br />VINCENT.LIN</p>
+                                <div>
+                                    <span class="tci-card-text card-text-green"><i class="fa-solid fa-clock"></i>&nbsp;
+                                        免簽核</span>
+                                </div>
+                            </div>
+                            <div class="tci-card-footer"></div>
+                        </div>
+                        <span style="text-align: center;margin: auto .5rem;">
+                            <i class="fa-solid fa-left-long fa-2x"></i>
+                        </span>
+                        <div class="tci-card tci-mt-2 card-blue">
+                            <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 戰略數據中心主管
+                            </div>
+                            <div class="tci-card-body">
+                                <p class="tci-card-title"> 王浩駿<br />JOHNNY.WANG</p>
+                                <div>
+                                    <span class="tci-card-text card-text-blue"><i class="fa-solid fa-clock"></i>&nbsp;
+                                        未簽核</span>
+                                </div>
+                            </div>
+                            <div class="tci-card-footer"></div>
+                        </div>
+                        <span style="text-align: center;margin: auto 1rem;">
+                            <i class="fa-solid fa-left-long fa-2x"></i>
+                        </span>
+                        <div class="tci-card tci-mt-2 card-blue">
+                            <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 軟體整合開發部主管
+                            </div>
+                            <div class="tci-card-body">
+                                <p class="tci-card-title">吳春隆<br />REX.WU</p>
+                                <div>
+                                    <span class="tci-card-text card-text-blue"><i class="fa-solid fa-clock"></i>&nbsp;
+                                        同意</span>
+                                </div>
+                            </div>
+                            <div class="tci-card-footer">2022/07/21 12:31:32</div>
+                        </div>
+                        <span style="text-align: center;margin: auto 1rem;">
+                            <i class="fa-solid fa-left-long fa-2x"></i>
+                        </span>
+                        <div class="tci-card tci-mt-2 card-blue">
+                            <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user-tie"></i> 軟體研發組主管
+                            </div>
+                            <div class="tci-card-body">
+                                <p class="tci-card-title">吳春隆<br />REX.WU</p>
+                                <div>
+                                    <span class="tci-card-text card-text-blue"><i class="fa-solid fa-check"></i>&nbsp;
+                                        同意</span>
+                                </div>
+                            </div>
+                            <div class="tci-card-footer">2022/07/21 12:31:32</div>
+                        </div>
+                        <span style="text-align: center;margin: auto 1rem;">
+                            <i class="fa-solid fa-left-long fa-2x"></i>
+                        </span>
+                        <div class="tci-card tci-mt-2 card-blue">
+                            <div class="tci-card-header card-header-blue"><i class="fa-solid fa-user"></i> 經辦人</div>
+                            <div class="tci-card-body">
+                                <p class="tci-card-title">曾莞婷<br />HEDY.TSENG</p>
+                                <div>
+                                    <span class="tci-card-text card-text-blue"><i class="fa-solid fa-check"></i>&nbsp;
+                                        送出</span>
+                                </div>
+                            </div>
+                            <div class="tci-card-footer">2022/07/21 12:31:32</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 單據附件 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="attachmentBox">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-attachmentBox" aria-expanded="true"
+                        aria-controls="panelsStayOpen-attachmentBox">
+                        <span>單據附件 </span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-attachmentBox" class="accordion-collapse collapse show"
+                    aria-labelledby="attachmentBox">
+                    <div class="accordion-body attachmentBoxContent">
+                        <div class="btnGroups tci-mt-2" style="text-align: center;">
+                            <button class="tci-btn tci-btn-regular"><i class="fa-solid fa-rotate-left"></i> 90度</button>
+                            <button class="tci-btn tci-btn-success"><i class="fa fa-retweet" aria-hidden="true"></i>
+                                復原</button>
+                            <button class="tci-btn tci-btn-regular"><i class="fa-solid fa-rotate-right"></i>
+                                90度</button>
+                        </div>
+                        <div class="tci-mt-3" style="text-align: center;">
+                            <span>附件 <b>1</b></span>
+                        </div>
+                        <div style="width: 100%;text-align: center;">
+                            <img src="https://media.istockphoto.com/photos/happy-shiba-inu-dog-on-yellow-redhaired-japanese-dog-smile-portrait-picture-id1197121742?k=20&m=1197121742&s=612x612&w=0&h=HX4DoFCL1RDlegj3P9w4O2H64sgwKvMP0VSki7sBEtE="
+                                alt="附件1" style="width: 50%;" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 簽核記錄 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="approvalBox">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-approvalBox" aria-expanded="true"
+                        aria-controls="panelsStayOpen-approvalBox">
+                        <span>簽核記錄 </span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-approvalBox" class="accordion-collapse collapse show"
+                    aria-labelledby="approvalBox">
+                    <div class="accordion-body approvalBoxContent">
+                        <ul class="" style="padding-left:20px;">
+                            <li style="color: var(--color-rosybrown);font-size: 14px;">等待【經辦人】【HEDY.TSENG(曾莞婷) 大江戰士】簽核
+                            </li>
+                            <li style="color: var(--color-rosybrown);font-size: 14px;">等待【經辦人】【HEDY.TSENG(曾莞婷) 大江戰士】簽核
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

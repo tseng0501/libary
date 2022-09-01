@@ -11,10 +11,6 @@
   text-align: center;
 }
 
-#page_reconfirmLeave .tci-input-group .tci-form-control.gray {
-  background-color: var(--color-whitesmoke);
-}
-
 @media (min-width: 768px) {
   #page_leaveVacation .tableScroll .tci-table {
     width: 100%;
@@ -41,11 +37,19 @@
   }
 }
 @media (min-width: 1200px) {
+  #page_reconfirmLeave .reconfirmLeaveContent {
+    justify-content: flex-start;
+  }
+  #page_reconfirmLeave .reconfirmLeaveContent .tci-input-group {
+    width: 24%;
+    margin-right: 0.5rem;
+  }
   #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray .formBox_content {
     flex-wrap: nowrap;
   }
   #page_reconfirmLeave .reconfirmLeaveContent .formBox_gray .formBox_content .tci-input-group {
     margin-right: 5px;
+    width: 25%;
   }
 }
 #page_leaveVacation_signoff .tableScroll {

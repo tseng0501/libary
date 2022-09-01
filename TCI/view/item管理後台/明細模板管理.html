@@ -17,22 +17,26 @@
         <div class="pageHeader">
             <span class="pageHeaderTitle" style="font-size: 24px;"><b>明細模版管理</span></b>
         </div>
-        <section class="query">
-            <div class="flex">
-                <div class="tci-field">
-                    <div class="tci-field-label">
-                        <span class="tci-field-text text-left">模版名稱：</span>
-                    </div>
-                    <div class="tci-valueBtn">
-                        <input type="text" class="tci-field-value" value="text" />
-                        <button class="tci-btn bg_darkblue">查詢</button>
-                        <button class="tci-btn bg_darkkhaki tci-ml-2" data-toggle="modal"
-                        data-target="#adddetailTemplate">新增樣版</button>
+        <div class="btnGroups tci-mb-3">
+            <button class="tci-btn tci-btn-warning">行為狀態</button>
+            <button class="tci-btn bg_darkgreen">item 管理</button>
+        </div>
+        <section class="detailTemplate_content content">
+            <div class="query tci-mb-4">
+                <div class="flex">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">模版名稱：</span>
+                        </div>
+                        <div class="tci-valueBtn">
+                            <input type="text" class="tci-field-value" value="text" />
+                            <button class="tci-btn bg_darkblue tci-ml-3">查詢</button>
+                            <button class="tci-btn bg_darkkhaki tci-ml-3" data-toggle="modal"
+                                data-target="#adddetailTemplate">新增樣版</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="detailTemplate_content">
             <div class="table_content">
                 <table class="tci-table tci-table-bordered">
                     <thead style="background-color: var(--color-light-gray);">
@@ -47,148 +51,29 @@
                             <td style="text-align: center;">1</td>
                             <td>公務車</td>
                             <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#dataIcon"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
                         <tr>
                             <td style="text-align: center;">1</td>
                             <td>筆記型電腦</td>
                             <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-
+                                <button class="tci-icon tci-btn-warning"  data-toggle="modal" data-target="#dataIcon"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred"  data-toggle="modal" data-target="#deleteItemTable"><i class="fa-solid fa-trash-can"></i></button>
                             </td>
                         </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>公務車</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>筆記型電腦</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>公務車</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>筆記型電腦</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>公務車</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>筆記型電腦</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>公務車</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>筆記型電腦</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>公務車</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>筆記型電腦</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>公務車</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;">1</td>
-                            <td>筆記型電腦</td>
-                            <td style="text-align: center;">
-                                <button class="tci-icon bg_darkblue" data-toggle="modal" data-target="#dataIcon"
-                                    data-toggle="modal" data-target="#dataIconTable"><i
-                                        class="fa-solid fa-table"></i></button>
-
-                            </td>
-                        </tr>
-                    </tbody>
                 </table>
             </div>
             <div style="text-align: center;width: 100%;">
                 <div class="pagination p3 tci-mt-2">
                     <button class="tci-icon"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
-                    <button class="tci-icon"><i class="fa fa-angle-left" aria-hidden="true"></i></i></button>
+                    <button class="tci-icon"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
                     <input type="text" class="text_input" /><span class="text_span">/ 40</span>
-
-                    <button class="tci-icon"><i class="fa fa-angle-right" aria-hidden="true"></i></i></button>
-                    <button class="tci-icon"><i class="fa fa-angle-double-right"
-                            aria-hidden="true"></i></button>
-
+                    <button class="btn bg_lightgray">跳</button>
+                    
+                    <button class="tci-icon"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    <button class="tci-icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
                     <select class="text_setect">
                         <option selected>25</option>
                         <option value="1">50</option>
@@ -197,7 +82,7 @@
                     </select>
                 </div>
             </div>
-            
+
         </section>
     </div>
 

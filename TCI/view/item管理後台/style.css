@@ -3,7 +3,6 @@
 }
 .modal .itemAddBehavior {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
 }
@@ -11,138 +10,63 @@
   width: 100%;
 }
 .modal .itemAddBehavior .tci-field-value {
-  width: 60%;
+  width: 70%;
 }
 
-.table_icon {
-  padding: 0 7px !important;
-  min-width: 50px !important;
-}
-.table_icon i {
-  color: var(--color-dark-khaki);
-}
-
-.content_shadow, #page_ItemTemplate .itemTemplate_content, #page_BehaviorTemplate .behaviorTemplate_content, #page_DetailTemplate .detailTemplate_content {
+.content_shadow, .content {
   box-shadow: var(--borderShadow);
-  min-height: calc(100vh - 150px);
-  margin-top: 1rem;
   border-radius: var(--borderRadius);
   padding: 10px;
 }
 
-.query .flex .tci-field {
-  padding: 5px;
-  border-radius: var(--borderRadius);
+.query {
+  width: 100%;
 }
-.query .flex .tci-field .tci-valueBtn {
+.query .tci-valueBtn {
   display: flex;
   width: 100%;
 }
-.query .flex .tci-field .tci-valueBtn input {
-  margin-right: 0.5rem;
-}
 
-#page_DetailTemplate {
-  position: relative;
-}
-#page_DetailTemplate .detailTemplate_content {
+.content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background-color: #efefef;
-  background-image: url(./for-rent.png);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-position: left bottom;
 }
-#page_DetailTemplate .detailTemplate_content .table_content {
-  padding: 1rem;
+.content .table_content {
   width: 500px;
   overflow-y: auto;
   height: 500px;
-}
-#page_DetailTemplate .detailTemplate_content .detailTemplate_box .detailTemplate_table {
-  overflow-x: auto;
-}
-#page_DetailTemplate .detailTemplate_content .detailTemplate_box .detailTemplate_table .table {
-  width: 400px;
-}
-
-#page_BehaviorTemplate .behaviorTemplate_content {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-#page_BehaviorTemplate .behaviorTemplate_content .table_content {
-  padding: 1rem;
-  width: 500px;
-  overflow-y: auto;
-  height: 500px;
-}
-#page_BehaviorTemplate .behaviorTemplate_content .behaviorTemplate_box .behaviorTemplate_table {
-  overflow-x: auto;
-}
-#page_BehaviorTemplate .behaviorTemplate_content .behaviorTemplate_box .behaviorTemplate_table .table {
-  width: 400px;
-}
-
-#page_ItemTemplate .itemTemplate_content {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-#page_ItemTemplate .itemTemplate_content .table_content {
-  overflow-x: auto;
-  overflow-y: auto;
-  height: 500px;
-}
-#page_ItemTemplate .itemTemplate_content .table_content .tci-table {
-  width: 786px;
 }
 
 @media (min-width: 768px) {
+  .query {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .query .flex {
+    width: 65%;
+  }
+  .query .tci-valueBtn {
     display: flex;
-    justify-content: space-between;
+    width: 80%;
   }
-  .query .flex .tci-field {
-    width: 100%;
-    margin-bottom: 0;
-  }
-  .query .flex .tci-field .tci-field-label {
-    width: 15%;
-  }
-  .query .flex .tci-field .tci-valueBtn {
-    width: 85%;
-  }
-  .query .flex .tci-field .tci-valueBtn .tci-field-value {
-    width: 100%;
-  }
-  #page_DetailTemplate .detailTemplate_content .detailTemplate_box .detailTemplate_table {
-    overflow-x: auto;
-  }
-  #page_DetailTemplate .detailTemplate_content .detailTemplate_box .detailTemplate_table .table {
-    width: 100%;
-  }
-  #page_BehaviorTemplate .behaviorTemplate_content .behaviorTemplate_box .behaviorTemplate_table {
-    overflow-x: auto;
-  }
-  #page_BehaviorTemplate .behaviorTemplate_content .behaviorTemplate_box .behaviorTemplate_table .table {
-    width: 100%;
-  }
-  #page_ItemTemplate .itemTemplate_content .table_content .table {
-    width: 100%;
-  }
-  .modal .itemAddBehavior {
+  .query .tci-field {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
   }
-  .modal .itemAddBehavior .tci-field {
-    width: 46%;
+  .query .tci-field .tci-field-label {
+    width: 20%;
   }
-  .modal .itemAddBehavior .tci-field-value {
-    width: 60%;
+}
+@media (min-width: 992px) {
+  .query .flex {
+    width: 50%;
+  }
+  .query .tci-valueBtn {
+    width: 80%;
+  }
+  .query .tci-field .tci-field-label {
+    width: 18%;
   }
 }
