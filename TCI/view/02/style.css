@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+  #page_invoicePaper02 .query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_invoicePaper02 .query .tci-field {
+    width: 65%;
+    justify-content: space-between;
+  }
+  #page_invoicePaper02 .query .tci-field .tci-field-label {
+    width: 30%;
+  }
+  #page_invoicePaper02 .query .tci-field .tci-valueBtn {
+    width: 70%;
+  }
+  #page_invoicePaper02 .query .tci-field.short {
+    width: 25%;
+  }
+  #page_invoicePaper02 .query .tci-field.short .tci-field-label {
+    width: 70%;
+  }
+  #page_invoicePaper02 .query .tci-field.short .tci-field-value {
+    width: 30%;
+  }
+}

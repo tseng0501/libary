@@ -1,0 +1,57 @@
+#page_depositForm .tci-valueBtn {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #page_depositForm .query {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #page_depositForm .tci-field {
+    width: 30%;
+  }
+  #page_depositForm .tci-field .tci-field-label {
+    width: 30%;
+  }
+  #page_depositForm .tci-field .tci-field-value {
+    width: 150px;
+  }
+  #page_depositForm .tci-field.long {
+    width: 45%;
+  }
+  #page_depositForm .tci-field .tci-valueBtn {
+    width: 70%;
+    display: flex;
+  }
+  #page_depositForm .tci-field .tci-valueBtn .tci-field-value {
+    width: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #page_depositForm .query {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #page_depositForm .tci-field {
+    width: 20%;
+  }
+  #page_depositForm .tci-field .tci-field-label {
+    width: 30%;
+  }
+  #page_depositForm .tci-field .tci-field-value {
+    width: 150px;
+  }
+  #page_depositForm .tci-field.long {
+    width: 45%;
+  }
+  #page_depositForm .tci-field.long .tci-field-label {
+    width: 15%;
+  }
+  #page_depositForm .tci-field .tci-valueBtn {
+    width: 70%;
+    display: flex;
+  }
+  #page_depositForm .tci-field .tci-valueBtn .tci-field-value {
+    width: 200px;
+  }
+}

@@ -1,0 +1,35 @@
+@media (min-width:768px) {
+    #page_invoicePaper02 {
+        .query {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-field {
+                width: 65%;
+                justify-content: space-between;
+
+                .tci-field-label {
+                    width: 30%;
+                }
+
+                .tci-valueBtn {
+                    width: 70%;
+                }
+
+                &.short {
+                    width: 25%;
+
+                    .tci-field-label {
+                        width: 70%;
+                    }
+
+                    .tci-field-value {
+                        width: 30%;
+
+                    }
+                }
+            }
+        }
+    }
+}

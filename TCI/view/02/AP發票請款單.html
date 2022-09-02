@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>A/P發票請款單</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_invoicePaper02">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>A/P發票請款單</b></span>
+        </div>
+        <div style="text-align: right;font-size: var(--font-size-sm);margin-bottom: 1rem;">
+            <span
+                style="background-color: var(--color-alge);color: var(--color-snow);padding: 5px;border-radius: var(--borderRadius);">公司別：<b>大江生活</b></span>
+        </div>
+        <section class="query">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">單據別:</span>
+                </div>
+                <div class="tci-valueBtn" style="display: flex;">
+                    <select class="tci-field-value" style="width: 170px;">
+                        <option selected>收貨採購單</option>
+                        <option value="1">A/P發票-文件號碼</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <input type="text" class="tci-field-value" value="160407-09-0001">
+                </div>
+            </div>
+            <div class="tci-field short">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">收貨採購單:</span>
+                </div>
+                <select class="tci-field-value">
+                    <option selected>有</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_darkblue">查詢</button>
+            <button class="tci-btn tci-btn-grass">A/P 未送簽清單</button>
+        </div>
+        <!-- 選擇其他下拉資料，顯示以下內容 -->
+        <!-- <div style="display: flex;justify-content: end;margin-top: 1rem;">
+            <span style="margin: auto 3px;flex: none;">查詢訂單：</span>
+            <select class="tci-field-value" style="width: 80px;">
+                <option selected>2022</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <span style="margin: auto 3px;flex: none;">年</span>
+            <select class="tci-field-value" style="width: 70px;">
+                <option selected>09</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+            </select>
+            <span style="margin: auto 3px;flex: none;">月</span>
+            <select class="tci-field-value" style="width: 120px;">
+                <option selected>無銷售人員</option>
+                <option value="1">One</option>
+            </select>
+            <span style="margin: auto 3px;flex: none;">銷售人員</span>
+            <button class="tci-btn bg_darkblue">查詢</button>
+        </div> -->
+        <hr>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

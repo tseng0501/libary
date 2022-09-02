@@ -1,0 +1,92 @@
+.modal {
+    table {
+        td {
+            padding: 0.25rem;
+        }
+    }
+
+    .itemAddBehavior {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .tci-field {
+            width: 100%;
+        }
+
+        .tci-field-value {
+            width: 70%;
+        }
+    }
+}
+//主內容的背景
+.content_shadow {
+    box-shadow: var(--borderShadow);
+    border-radius: var(--borderRadius);
+    padding: 10px;
+}
+
+.query {
+    width: 100%;
+
+    .tci-valueBtn {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #efefef;
+    @extend .content_shadow;
+
+    .table_content {
+        width: 500px;
+        overflow-y: auto;
+        height: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .query {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .flex {
+            width: 65%;
+        }
+
+        .tci-valueBtn {
+            display: flex;
+            width: 80%;
+        }
+
+        .tci-field {
+            display: flex;
+
+            .tci-field-label {
+                width: 20%;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .query {
+        .flex {
+            width: 50%;
+        }
+
+        .tci-valueBtn {
+            width: 80%;
+        }
+
+        .tci-field {
+            .tci-field-label {
+                width: 18%;
+            }
+        }
+    }
+}

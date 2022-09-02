@@ -1,0 +1,72 @@
+.modal table td {
+  padding: 0.25rem;
+}
+.modal .itemAddBehavior {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.modal .itemAddBehavior .tci-field {
+  width: 100%;
+}
+.modal .itemAddBehavior .tci-field-value {
+  width: 70%;
+}
+
+.content_shadow, .content {
+  box-shadow: var(--borderShadow);
+  border-radius: var(--borderRadius);
+  padding: 10px;
+}
+
+.query {
+  width: 100%;
+}
+.query .tci-valueBtn {
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #efefef;
+}
+.content .table_content {
+  width: 500px;
+  overflow-y: auto;
+  height: 500px;
+}
+
+@media (min-width: 768px) {
+  .query {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .query .flex {
+    width: 65%;
+  }
+  .query .tci-valueBtn {
+    display: flex;
+    width: 80%;
+  }
+  .query .tci-field {
+    display: flex;
+  }
+  .query .tci-field .tci-field-label {
+    width: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .query .flex {
+    width: 50%;
+  }
+  .query .tci-valueBtn {
+    width: 80%;
+  }
+  .query .tci-field .tci-field-label {
+    width: 18%;
+  }
+}

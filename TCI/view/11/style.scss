@@ -1,0 +1,75 @@
+#page_depositForm {
+    .tci-valueBtn {
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    #page_depositForm {
+        .query {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tci-field {
+            width: 30%;
+
+            .tci-field-label {
+                width: 30%;
+            }
+
+            .tci-field-value {
+                width: 150px;
+            }
+
+            &.long {
+                width: 45%;
+            }
+
+            .tci-valueBtn {
+                width: 70%;
+                display: flex;
+
+                .tci-field-value {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:992px) {
+    #page_depositForm {
+        .query {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tci-field {
+            width: 20%;
+
+            .tci-field-label {
+                width: 30%;
+            }
+
+            .tci-field-value {
+                width: 150px;
+            }
+
+            &.long {
+                width: 45%;
+                .tci-field-label {
+                    width: 15%;
+                }
+            }
+
+            .tci-valueBtn {
+                width: 70%;
+                display: flex;
+
+                .tci-field-value {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+#page_quotation08 .tci-valueBtn {
+  width: 100%;
+  text-align: end;
+}
+#page_quotation08 .tci-valueBtn button {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  #page_quotation08 .tci-field-label {
+    width: 20%;
+  }
+  #page_quotation08 .tci-valueBtn {
+    width: 80%;
+    display: flex;
+  }
+  #page_quotation08 .tci-valueBtn .tci-field-value {
+    width: 200px;
+  }
+  #page_quotation08 .tci-valueBtn button {
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+}

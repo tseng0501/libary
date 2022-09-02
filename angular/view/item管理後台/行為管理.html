@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BehaviorTemplate">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../scripts/angular.min.js"></script>
+    <script src="../../../scripts/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="../../../scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="../../../scripts/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>行為管理-angular</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_behaviorTemplate" ng-controller="template">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle" style="font-size: 24px;"><b>行為管理</span></b>
+        </div>
+        <div class="btnGroups tci-mb-3">
+            <button class="tci-btn bg_lightgray">明細模版管理</button>
+            <button class="tci-btn bg_darkgreen">item 管理</button>
+        </div>
+        <section class="behaviorTemplate_content content">
+            <div class="query tci-mb-4">
+                <div class="flex">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">模版名稱：</span>
+                        </div>
+                        <div class="tci-valueBtn">
+                            <input type="text" class="tci-field-value" value="text" />
+                            <button class="tci-btn bg_darkblue tci-ml-3">查詢</button>
+                            <button class="tci-btn bg_darkkhaki tci-ml-3" data-toggle="modal"
+                                data-target="#addbehaviorTemplate">新增樣版</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table_content">
+                <table class="tci-table tci-table-bordered">
+                    <thead style="background-color: var(--color-light-gray);">
+                        <tr>
+                            <th style="width:  15%;text-align: center;">序號</th>
+                            <th>名稱</th>
+                            <th style="width: 15%;text-align: center;">內容</th>
+                        </tr>
+                    </thead>
+                    <tbody style="background-color: var(--color-snow);">
+                        <tr ng-repeat="data in table_tbody">
+                            <td style="text-align: center;">{{data.id}}</td>
+                            <td>{{data.value}}</td>
+                            <td style="text-align: center;">
+                                <button class="tci-icon tci-btn-warning" data-toggle="modal"
+                                    data-target="#behaviordataIcon"> <i class="fa-solid fa-pencil"></i></button>
+                                <button class="tci-icon bg_darkred" data-toggle="modal" data-target="#deleteTable"><i
+                                        class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="text-align: center;width: 100%;">
+                <div class="pagination p3 tci-mt-2">
+                    <button class="tci-icon"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+                    <button class="tci-icon"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                    <input type="text" class="text_input" /><span class="text_span">/ 40</span>
+                    <button class="btn bg_lightgray">跳</button>
+
+                    <button class="tci-icon"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    <button class="tci-icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                    <select class="text_setect">
+                        <option value ng-repeat="data in pagination">{{data}}</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section ng-controller="BehaviorTemplateModal">
+    <!-- addbehaviorTemplate -->
+    <div class="modal fade" id="addbehaviorTemplate" tabindex="-1" role="dialog"
+        aria-labelledby="addbehaviorTemplateLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title" id="addbehaviorTemplateLabel">新增行為模版名稱</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">名稱:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" />
+                    </div>
+                    <hr>
+                    <div class="behaviorTemplate_box">
+                        <div style="margin-bottom:1rem;text-align:right;">
+                            <button class="tci-btn bg_darkkhaki">新增狀態</button>
+                        </div>
+                        <div class="behaviorTemplate_table">
+                            <table class="tci-table text-center tci-table-bordered">
+                                <thead style="background-color: var(--color-light-gray);">
+                                    <tr>
+                                        <th>行為狀態</th>
+                                        <th style="width: 70px"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="data in tbody_addModal">
+                                        <td><input type="text" style="width: 100%;" class="tci-field-value"
+                                                value="{{data.value}}" />
+                                        </td>
+                                        <td>
+                                            <button class="tci-icon bg_darkred" data-toggle="modal"
+                                                data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
+                    <button type="button" class="tci-btn bg_darkgreen">儲存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--All behaviordataIcon -->
+    <div class="modal fade" id="behaviordataIcon" tabindex="-1" role="dialog" aria-labelledby="behaviordataIconLabel"
+        aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title" id="behaviordataIconLabel">內容</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">名稱:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" value="{{name}}">
+                    </div>
+                    <hr>
+                    <div style="text-align: right;">
+                        <button class="tci-btn bg_darkkhaki">新增狀態</button>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <table class="tci-table text-center tci-table-bordered">
+                            <thead style="background-color: var(--color-light-gray);">
+                                <tr>
+                                    <th>行為狀態</th>
+                                    <th style="width: 70px"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="data in tbody_editModal">
+                                    <td><input type="text" style="width: 100%;" class="tci-field-value" value="{{data.value}}" />
+                                    </td>
+                                    <td>
+                                        <button class="tci-icon bg_darkred" data-toggle="modal"
+                                            data-target="#deleteTable"><i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
+                    <button type="button" class="tci-btn bg_darkgreen">儲存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- delete -->
+    <div class="modal fade" id="deleteTable" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">刪除</h4>
+                </div>
+                <div class="modal-body">
+                    <p>是否要刪除此欄位？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn tci-btn-regular" data-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script>
+        const BehaviorContent = angular.module('BehaviorTemplate', []);
+        BehaviorContent.controller('template', ['$scope', function ($scope) {
+            $scope.table_tbody = [
+                { id: 1, value: '公務車租借' },
+                { id: 2, value: '筆記型電腦租借' }
+            ];
+        }])
+
+         // modal
+         BehaviorContent.controller('BehaviorTemplateModal', ['$scope', function ($scope) {
+            $scope.name = '公務車租借';
+            $scope.tbody_addModal = [
+                { id: 1, value: '公務車出租' },
+                { id: 2, value: '公務車歸還' }
+            ];
+            $scope.tbody_editModal = [
+                { id: 1, value: '公務車出租' },
+                { id: 2, value: '公務車歸還' }
+            ];
+            $scope.pagination = [25, 40, 60, 100]
+        }])
+    </script>
+</body>
+
+</html>
