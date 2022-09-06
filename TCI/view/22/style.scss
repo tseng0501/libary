@@ -27,11 +27,7 @@
                 width: 48%;
             }
         }
-        .tableScroll {
-            .tci-table {
-                width: 100%;
-            }
-        }
+       
     }
     #page_oldgoodsReceipt_createView {
         .oldgoodsReceipt_query {
@@ -48,6 +44,15 @@
 @media (min-width: 992px) {
     #page_oldgoodsReceipt_createView {
         .tableScroll {
+            .tci-table {
+                width: 100%;
+            }
+        }
+    }
+    #page_oldgoodsReceipt{
+        .tableScroll {
+            overflow-x: auto;
+    
             .tci-table {
                 width: 100%;
             }

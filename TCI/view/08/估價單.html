@@ -23,13 +23,151 @@
                     <span class="tci-field-text text-left">估價單號：</span>
                 </div>
                 <div class="tci-valueBtn">
-                    <input type="text" class="tci-field-value" value="0987"/>
+                    <input type="text" class="tci-field-value" value="0987" />
                     <button class="tci-btn bg_lightgray">查詢</button>
                     <button class="tci-btn bg_darkgreen">未送簽估價單列表</button>
                 </div>
             </div>
         </section>
+        <section class="tableScroll">
+            <table class="tci-table tci-table-bordered">
+                <tr>
+                    <th style="background-color: var(--color-light-gray);">部門別&nbsp;
+                        <button class="tci-icon bg_darkkhaki"><i class="fa-solid fa-building"></i></button>
+                    </th>
+                    <td colspan="3">部門別</td>
+                </tr>
+                <tr>
+                    <th style="background-color: var(--color-light-gray);">客戶編號</th>
+                    <td>CT2222</td>
+                    <th style="background-color: var(--color-light-gray);">單據號碼</th>
+                    <td>111</td>
+                </tr>
+                <tr>
+                    <th style="background-color: var(--color-light-gray);">客戶名稱</th>
+                    <td>VIMCON BV</td>
+                    <th style="background-color: var(--color-light-gray);">製單日期</th>
+                    <td>2022/1/1</td>
+                </tr>
+                <tr>
+                    <th style="background-color: var(--color-light-gray);">聯絡人</th>
+                    <td>Vincent Gorissen</td>
+                    <th style="background-color: var(--color-light-gray);">預計交貨日</th>
+                    <td>2022/3/30</td>
+                </tr>
+                <tr>
+                    <th style="background-color: var(--color-light-gray);">地址</th>
+                    <td>CT2222</td>
+                    <th style="background-color: var(--color-light-gray);">交易幣別</th>
+                    <td>111</td>
+                </tr>
+                <tr>
+                    <th style="background-color: var(--color-light-gray);">電話</th>
+                    <td>CT2222</td>
+                    <th style="background-color: var(--color-light-gray);">匯率</th>
+                    <td>111</td>
+                </tr>
+                <tr>
+                    <th style="background-color: var(--color-light-gray);">傳真</th>
+                    <td>CT2222</td>
+                    <th style="background-color: var(--color-light-gray);">業務分組</th>
+                    <td>
+                        <select class="tci-form-control" style="width: auto;">
+                            <option selected>國際流通組</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div style="overflow-x: auto;">
+                <table class="tci-table tci-table-bordered" style="min-width:940px">
+                    <thead>
+                        <tr style="text-align: center;background-color:var(--color-light-gray);">
+                            <th>NO</th>
+                            <th>料號</th>
+                            <th>品名/規格</th>
+                            <th>單位</th>
+                            <th>訂購數量</th>
+                            <th>單價/PC</th>
+                            <th>小計</th>
+                            <th>備註</th>
+                            <th>本次毛利%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>41IM00038</td>
+                            <td>iBeauty -Zennergy collagen energizer(Day)(30bottle,2box/carton)</td>
+                            <td>carton</td>
+                            <td>16200</td>
+                            <td>USD 0.81</td>
+                            <td>USD 13,122.00</td>
+                            <td>預計交貨日2022/3/30</td>
+                            <td>
+                                <div style="display: flex;">
+                                    <input type="text" style="border: 1px solid #ced4da;border-radius: var(--borderRadius);
+                            padding: 0.375rem 0.75rem;width: 90px;margin-right: 5px;" value="0.00"><span
+                                        style="margin: auto 0;">%</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr style="color:var(--color-light-red)">
+                            <th colspan="6" style="text-align: right;">外幣總計</th>
+                            <th>USD 26,244.00</th>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr style="color:var(--color-light-red)">
+                            <th colspan="6" style="text-align: right;">外幣總計</th>
+                            <th>USD 26,244.00</th>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 12px;" colspan="9">
+                                <span><b>備註：</b><br />
+                                    sjdshj
+                                </span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        </section>
+
+        <section class="tableScroll" style="overflow-x: auto;">
+            <div style="min-width: 740px;">
+                <div style="text-align: center;font-size: var(--font-size-lg);font-weight: bold;">
+                    <span>歷史專案毛利</span>
+                </div>
+                <table class="tci-table tci-table-bordered">
+                    <thead>
+                        <tr
+                            style="text-align: center;background-color:var(--color-light-green);color: var(--color-snow);">
+                            <th>產品代碼</th>
+                            <th>專案代碼</th>
+                            <th>專案名稱</th>
+                            <th>成本(NTD)</th>
+                            <th>本次採購價</th>
+                            <th>本次毛利</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th colspan="6" style="text-align: center;">無資料</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
         <div class="btnGroups">
+            <button class="tci-btn bg_darkblue">重新查詢</button>
+            <button class="tci-btn bg_darkgreen">確認資料，預覽單據</button>
         </div>
         <div class="userCard_info">
             <span class="user_info">

@@ -1,32 +1,154 @@
+#page_invoicePaper02{
+
+    .btnBox{
+        background-color: var(--color-light-blue);
+        padding: .5rem;
+        border-radius: var(--borderRadius);
+        button{
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}
 @media (min-width:768px) {
     #page_invoicePaper02 {
         .query {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: flex-end;
 
             .tci-field {
-                width: 65%;
+                width: 70%;
                 justify-content: space-between;
 
+                .tci-field-label {
+                    width: 42%;
+                    text-align: right;
+                }
+
+                .tci-valueBtn {
+                    width: 55%;
+                }
+
+                &.short {
+                    width: 30%;
+
+                    .tci-field-label {
+                        width: 63%;
+                        text-align: right;
+                    }
+
+                    .tci-field-value {
+                        width: 28%;
+
+                    }
+                }
+            }
+        }
+
+        .query2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+
+            .tci-field {
+                width: 43%;
                 .tci-field-label {
                     width: 30%;
                 }
 
-                .tci-valueBtn {
-                    width: 70%;
+                .tci-field-value {
+                    width: 200px;
                 }
-
-                &.short {
-                    width: 25%;
-
+                &.groups {
+                    width: 30%;
                     .tci-field-label {
-                        width: 70%;
+                        width: 30%;
                     }
 
                     .tci-field-value {
-                        width: 30%;
+                        width: 120px;
+                    }
+                }
 
+                &.date {
+                    width: 25%;
+
+                    .tci-field-label {
+                        width: 30%;
+                    }
+
+                    .tci-field-value {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    #page_invoicePaper02 {
+        .query {
+            .tci-field {
+                width: 50%;
+
+                .tci-field-label {
+                    width: 40%;
+                }
+
+                .tci-valueBtn {
+                    width: 60%;
+                }
+
+                &.short {
+                    width: 20%;
+                }
+            }
+
+            .btnGroups {
+                button {
+                    min-width: auto;
+                    padding: 6px;
+                    margin-left: .5rem;
+                }
+            }
+        }
+        .query2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+
+            .tci-field {
+                width: 38%;
+                .tci-field-label {
+                    width: 40%;
+                }
+
+                .tci-field-value {
+                    width: 200px;
+                }
+                &.groups {
+                    width: 23%;
+                    .tci-field-label {
+                        width: 40%;
+                    }
+
+                    .tci-field-value {
+                        width: 120px;
+                    }
+                }
+
+                &.date {
+                    width:20%;
+
+                    .tci-field-label {
+                        width: 40%;
+                    }
+
+                    .tci-field-value {
+                        width: 120px;
                     }
                 }
             }

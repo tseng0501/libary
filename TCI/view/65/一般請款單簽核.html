@@ -204,6 +204,18 @@
                                         <button class="tci-btn bg_darkblue">精簡資訊</button>
                                         <button class="tci-btn bg_darkblue">完整資訊</button>
                                     </div>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="condensed-tab" data-bs-toggle="tab" data-bs-target="#condensed-tab-pane" type="button" role="tab" aria-controls="condensed-tab-pane" aria-selected="true">精簡資訊</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="full-tab" data-bs-toggle="tab" data-bs-target="#full-tab-pane" type="button" role="tab" aria-controls="full-tab-pane" aria-selected="false">完整資訊</button>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="condensed-tab-pane" role="tabpanel" aria-labelledby="condensed-tab" tabindex="0">...</div>
+                                        <div class="tab-pane fade" id="full-tab-pane" role="tabpanel" aria-labelledby="full-tab" tabindex="0">...</div>
+                                      </div>
                                     <div class="tableScroll">
                                         <div class="tableContent">
                                            
@@ -291,14 +303,14 @@
                                             <td style="text-align: center;">DJ05261287</td>
                                             <td style="text-align: center;">2022/07/25</td>
                                             <td style="text-align: center;">台灣普客二四股份有限公司</td>
-                                            <td style="text-align: right;">1,330.00</td>
+                                            <td style="text-align: center;">1,330.00</td>
                                             <td style="text-align: center;">87670630</td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
                                         <tr style="color: var(--color-light-red);text-align: right;">
                                             <th colspan="5">總計</th>
-                                            <th>718,730.78</th>
+                                            <th style="text-align: center;">718,730.78</th>
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -330,7 +342,7 @@
                                             <td style="text-align: center;">DJ05261287</td>
                                             <td style="text-align: center;">2022/07/25</td>
                                             <td style="text-align: center;">台灣普客二四股份有限公司</td>
-                                            <td style="text-align: right;">1,330.00</td>
+                                            <td style="text-align: center;">1,330.00</td>
                                             <td style="text-align: center;">87670630</td>
                                             <td style="text-align: center;">16.DJ05261287</td>
                                             <td style="text-align: center;">87670630</td>
@@ -339,7 +351,7 @@
                                     <tfoot>
                                         <tr style="color: var(--color-light-red);text-align: right;">
                                             <th colspan="3">總計</th>
-                                            <th>718,730.78</th>
+                                            <th style="text-align: center;">718,730.78</th>
                                             <th colspan="6"></th>
                                         </tr>
                                     </tfoot>

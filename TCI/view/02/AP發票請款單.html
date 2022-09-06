@@ -19,12 +19,12 @@
         </div>
         <div style="text-align: right;font-size: var(--font-size-sm);margin-bottom: 1rem;">
             <span
-                style="background-color: var(--color-alge);color: var(--color-snow);padding: 5px;border-radius: var(--borderRadius);">公司別：<b>大江生活</b></span>
+                style="font-size: var(--font-size-xs);background-color: var(--color-alge);color: var(--color-snow);padding: 2px;border-radius: var(--borderRadius);">公司別：<b>大江生活</b></span>
         </div>
         <section class="query">
             <div class="tci-field">
                 <div class="tci-field-label">
-                    <span class="tci-field-text text-left">單據別:</span>
+                    <span class="tci-field-text">單據別:</span>
                 </div>
                 <div class="tci-valueBtn" style="display: flex;">
                     <select class="tci-field-value" style="width: 170px;">
@@ -33,12 +33,12 @@
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-                    <input type="text" class="tci-field-value" value="160407-09-0001">
+                    <input type="text" class="tci-field-value" value="160407-09-0001" style="width: 200px;">
                 </div>
             </div>
             <div class="tci-field short">
                 <div class="tci-field-label">
-                    <span class="tci-field-text text-left">收貨採購單:</span>
+                    <span class="tci-field-text">收貨採購單:</span>
                 </div>
                 <select class="tci-field-value">
                     <option selected>有</option>
@@ -47,11 +47,11 @@
                     <option value="3">Three</option>
                 </select>
             </div>
+            <div class="btnGroups">
+                <button class="tci-btn bg_darkblue">查詢</button>
+                <button class="tci-btn tci-btn-grass">A/P 未送簽清單</button>
+            </div>
         </section>
-        <div class="btnGroups">
-            <button class="tci-btn bg_darkblue">查詢</button>
-            <button class="tci-btn tci-btn-grass">A/P 未送簽清單</button>
-        </div>
         <!-- 選擇其他下拉資料，顯示以下內容 -->
         <!-- <div style="display: flex;justify-content: end;margin-top: 1rem;">
             <span style="margin: auto 3px;flex: none;">查詢訂單：</span>
@@ -76,6 +76,170 @@
             <button class="tci-btn bg_darkblue">查詢</button>
         </div> -->
         <hr>
+        <section class="query2">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">部門別&nbsp;
+                        <button class="tci-icon bg_darkkhaki"><i class="fa-solid fa-building"></i></button>：
+                    </span>
+                </div>
+                <input type="text" class="tci-field-value gray" disabled value="大江-戰略數據中心" />
+            </div>
+            <div class="tci-field groups">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">組別：</span>
+                </div>
+                <select class="tci-field-value">
+                    <option selected>國際流通組</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="tci-field date">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">日期：</span>
+                </div>
+                <input type="text" class="tci-field-value gray" value="2022/22/22" disabled />
+            </div>
+        </section>
+        <section class="btnBox" style="text-align: center;">
+            <button class="tci-btn bg_darkblue">採購單122202-00-0000內容</button>
+            <button class="tci-btn bg_darkblue">採購單122202-00-0000內容</button>
+            <button class="tci-btn bg_darkblue">採購單122202-00-0000內容</button>
+            <button class="tci-btn tci-btn-orgin">收採單122202-00-0000內容</button>
+        </section>
+        <section class="tableScorll" style="overflow-x: auto;margin-top: 1rem;">
+            <div style="min-width: 940px;">
+            <div style="font-size: 13px;">
+                <div style="display: flex;justify-content: space-between;">
+                    <span><b>廠商名稱：</b>美奐有限公司</span>
+                    <span style="width: 200px;"><b>文件日期：</b>2016/11/30</span>
+                </div>
+                <div style="display: flex;justify-content: space-between;">
+                    <span><b>專案名稱：</b>美奐有限公司</span>
+                    <span style="width: 200px;"><b>文件號碼：</b> 878</span>
+                </div>
+            </div>
+            <table class="tci-table-bordered" style="padding: 3px;width:100%;font-size: 13px;">
+                <thead>
+                    <tr style="text-align: center;background-color:var(--color-light-gray);">
+                        <th>NO</th>
+                        <th>項目號碼</th>
+                        <th>專案代號</th>
+                        <th>品名/規格</th>
+                        <th>倉庫</th>
+                        <th>數量</th>
+                        <th>單位</th>
+                        <th>單價</th>
+                        <th>小計</th>
+                        <th>採購單價/數量</th>
+                        <th>備註</th>
+                        <th>檢驗</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;">D35ZZ0021</td>
+                        <td style="text-align: center;">1222</td>
+                        <td>Home Dr.-黃精馬卡帝王錠(550mg/顆，3顆/包，15包/盒)-外盒</td>
+                        <td style="text-align: center;">S9</td>
+                        <td style="text-align: center;">5,250.00 </td>
+                        <td style="text-align: center;">kg</td>
+                        <td style="text-align: center;">NTD 15.5000</td>
+                        <td style="text-align: center;">NTD 79,825</td>
+                        <td style="text-align: center;">NTD 15.5000 / 5,150.00(差異:0.00%)	</td>
+                        <td style="text-align: center;">S9</td>
+                        <td style="text-align: center;">免驗</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;">D35ZZ0021</td>
+                        <td style="text-align: center;">1222</td>
+                        <td>Home Dr.-黃精馬卡帝王錠(550mg/顆，3顆/包，15包/盒)-外盒</td>
+                        <td style="text-align: center;">S9</td>
+                        <td style="text-align: center;">5,250.00 </td>
+                        <td style="text-align: center;">kg</td>
+                        <td style="text-align: center;">NTD 15.5000</td>
+                        <td style="text-align: center;">NTD 79,825</td>
+                        <td style="text-align: center;">NTD 15.5000 / 5,150.00(差異:0.00%)	</td>
+                        <td style="text-align: center;">S9</td>
+                        <td style="text-align: center;">免驗</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" valign="top">
+                            <table style="padding: 5px;width:100%;font-size: 13px;margin-bottom: 0;">
+                              <tbody><tr>
+                                <th style="width: 50%;">發票日期：</th>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <th>發票號碼：</th>
+                                <td></td>
+                              </tr>
+                            </tbody></table>
+                            </td>
+                        <td colspan="3" valign="top">
+                            <table style="padding: 3px;width:100%;font-size: 13px;margin-bottom: 0;">
+                                <tbody>
+                                    <tr>
+                                        <th>數量合計：</th>
+                                        <td>2022/22/22</td>
+                                    </tr>
+                                    <tr>
+                                        <th>付款條件：</th>
+                                        <td>jh-888888</td>
+                                    </tr>
+                                    <tr>
+                                        <th>付款日期：</th>
+                                        <td>jh-888888</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td rowspan="2" colspan="6" valign="top">
+                            <table style="padding: 3px;width:100%;font-size: 13px;margin-bottom: 0;">
+                                <tbody>
+                                    <tr>
+                                        <th>合　計：</th>
+                                        <td style="text-align: right;">37,310.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>訂　金：</th>
+                                        <td style="text-align: right;">月結60天</td>
+                                    </tr>
+                                    <tr>
+                                        <th>稅　額：</th>
+                                        <td style="text-align: right;">2022/22/22</td>
+                                    </tr>
+                                    <tr>
+                                        <th>小　計：</th>
+                                        <td style="text-align: right;">2022/22/22</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>附註：</th>
+                        <td colspan="5">根據 收貨採購單 130. 131. 132. 133. 134. 135. </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6"></td>
+                        <th colspan="3">總計：</th>
+                        <td colspan="5" style="text-align: right;">NTD 484,000</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div style="background-color: var(--color-light-red);color: var(--color-snow);padding: 5px;text-align: center;">
+                <span>此單據已申請(單據編號161208-02-0001)</span>
+            </div>
+        </div>
+        </section>
+
         <div class="userCard_info">
             <span class="user_info">
                 <u><b>使用者資訊：</b>

@@ -1,14 +1,36 @@
-#page_advancedBilling .advancedBillingQuery .tci-field {
-  flex-wrap: wrap;
+.currency .pointData {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: end;
 }
+.currency .pointData .tci-input-group-text {
+  font-size: 14px;
+}
+.currency .pointData .tci-form-control {
+  font-size: 14px;
+  margin: 0 1rem;
+  padding: 0.2rem;
+}
+.currency .pointData .point {
+  display: flex;
+  padding: 0.2rem;
+  background-color: var(--color-light-gray);
+  border-radius: 0.25rem;
+  margin-left: 0.5rem;
+}
+.currency .tci-table td {
+  text-align: center;
+}
+.currency .tci-table th {
+  text-align: center;
+  background-color: var(--color-light-gray);
+}
+
 #page_advancedBilling .advancedBillingQuery .tci-field .tci-field-label {
-  width: 100%;
+  text-align: left;
 }
 #page_advancedBilling .advancedBillingQuery .tci-field .tci-valueBtn {
   display: flex;
-  width: 100%;
-}
-#page_advancedBilling .advancedBillingQuery .tci-field .tci-valueBtn .tci-field-value {
   width: 100%;
 }
 #page_advancedBilling .advancedBillingTable {
@@ -25,17 +47,74 @@
 #page_advancedBilling .advancedBillingTable .tci-table tbody th {
   background-color: var(--color-light-gray);
 }
+#page_advancedBilling .query {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#page_advancedBilling .query .tci-field {
+  width: 48%;
+}
+#page_advancedBilling .query .tci-field.w100 {
+  width: 100%;
+}
 
 @media (min-width: 768px) {
-  #page_advancedBilling .advancedBillingQuery .tci-field .tci-field-label {
+  .advancedPayment .paymentContent .block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .advancedPayment .paymentContent .block .tci-field {
+    width: 48%;
+  }
+  .advancedPayment .paymentContent .block .tci-field .tci-field-label {
+    width: 20%;
+  }
+  .advancedPayment .paymentContent .block .tci-field .tci-field-value {
+    width: 80%;
+  }
+  .advancedPayment .paymentContent .block2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .advancedPayment .paymentContent .block2 .tci-field {
+    width: 48%;
+  }
+  .advancedPayment .paymentContent .block2 .tci-field .tci-field-label {
+    width: 30%;
+  }
+  .advancedPayment .paymentContent .block2 .tci-field .tci-field-value {
+    width: 70%;
+  }
+  .advancedPayment .paymentContent .block3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .advancedPayment .paymentContent .block3 .tci-field {
+    width: 28%;
+  }
+  .advancedPayment .paymentContent .block3 .tci-field .tci-field-label {
     width: 40%;
   }
-  #page_advancedBilling .advancedBillingQuery .tci-field .tci-valueBtn {
-    display: flex;
+  .advancedPayment .paymentContent .block3 .tci-field .tci-field-value {
     width: 60%;
+  }
+  #page_advancedBilling .advancedBillingQuery .tci-field .tci-field-label {
+    justify-content: flex-end;
+    text-align: right;
+    width: 70%;
+  }
+  #page_advancedBilling .advancedBillingQuery .tci-field .tci-valueBtn {
+    width: 30%;
   }
   #page_advancedBilling .advancedBillingQuery .tci-field .tci-valueBtn .tci-field-value {
     width: 100%;
+  }
+  #page_advancedBilling .advancedBillingQuery .tci-field .tci-valueBtn button {
+    margin-left: 0.5rem;
   }
   #page_advancedBilling .advancedBillingTable {
     overflow-x: auto;
@@ -45,6 +124,46 @@
   }
   #page_advancedBilling .advancedBillingTable .tci-table th {
     text-align: center;
+  }
+  #page_advancedBilling .query .tci-field {
+    width: 33%;
+  }
+  #page_advancedBilling .query .tci-field.w100 {
+    width: 33%;
+  }
+  #page_advancedBilling .query .tci-field.w100 .tci-field-label {
+    width: 40%;
+  }
+  #page_advancedBilling .query .tci-field .tci-field-value {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .advancedPayment .paymentContent .block2 .tci-field {
+    margin-right: 1rem;
+    width: 48%;
+  }
+  .advancedPayment .paymentContent .block2 .tci-field .tci-field-label {
+    width: 25%;
+  }
+  .advancedPayment .paymentContent .block2 .tci-field .tci-field-value {
+    width: 75%;
+  }
+  .advancedPayment .paymentContent .block .tci-field {
+    margin-right: 1rem;
+    width: 23%;
+  }
+  .advancedPayment .paymentContent .block .tci-field .tci-field-label {
+    width: 25%;
+  }
+  .advancedPayment .paymentContent .block .tci-field .tci-field-value {
+    width: 75%;
+  }
+  #page_advancedBilling .query .tci-field {
+    width: 26%;
+  }
+  #page_advancedBilling .query .tci-field.w100 {
+    width: 26%;
   }
 }
 #page_advancedBilling_signoff .tableScroll {

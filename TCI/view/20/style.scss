@@ -1,18 +1,52 @@
+.currency {
+    .pointData {
+        display: flex;
+        margin-bottom: 1rem;
+        justify-content: end;
+
+        .tci-input-group-text {
+            font-size: 14px;
+
+        }
+
+        .tci-form-control {
+            font-size: 14px;
+            margin: 0 1rem;
+            padding: .2rem;
+        }
+
+        .point {
+            display: flex;
+            padding: 0.2rem;
+            background-color: var(--color-light-gray);
+            border-radius: 0.25rem;
+            margin-left: .5rem;
+        }
+    }
+
+    .tci-table {
+        td {
+            text-align: center;
+        }
+
+        th {
+            text-align: center;
+            background-color: var(--color-light-gray);
+        }
+    }
+}
+
 #page_advancedBilling {
     .advancedBillingQuery {
         .tci-field {
-            flex-wrap: wrap;
-
             .tci-field-label {
-                width: 100%;
+                text-align: left;
             }
 
             .tci-valueBtn {
                 display: flex;
                 width: 100%;
-
                 .tci-field-value {
-                    width: 100%;
                 }
             }
         }
@@ -38,22 +72,99 @@
             }
         }
     }
+
+    .query {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .tci-field {
+            width: 48%;
+
+            &.w100 {
+                width: 100%;
+            }
+        }
+    }
+
 }
 
 @media (min-width: 768px) {
+    .advancedPayment {
+        .paymentContent {
+            .block {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-field {
+                    width: 48%;
+
+                    .tci-field-label {
+                        width: 20%;
+                    }
+
+                    .tci-field-value {
+                        width: 80%;
+                    }
+                }
+            }
+
+            .block2 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-field {
+                    width: 48%;
+
+                    .tci-field-label {
+                        width: 30%;
+                    }
+
+                    .tci-field-value {
+                        width: 70%;
+                    }
+                }
+            }
+
+            .block3 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .tci-field {
+                    width: 28%;
+
+                    .tci-field-label {
+                        width: 40%;
+                    }
+
+                    .tci-field-value {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+
     #page_advancedBilling {
         .advancedBillingQuery {
             .tci-field {
                 .tci-field-label {
-                    width: 40%;
+                    justify-content: flex-end;
+                    text-align: right;
+                    width: 70%;
                 }
 
                 .tci-valueBtn {
-                    display: flex;
-                    width: 60%;
+                    width: 30%;
 
                     .tci-field-value {
                         width: 100%;
+                    }
+                    button{
+                        margin-left: .5rem;
                     }
                 }
             }
@@ -69,6 +180,73 @@
                     text-align: center;
                 }
 
+            }
+        }
+
+
+        .query {
+            .tci-field {
+                width: 33%;
+
+                &.w100 {
+                    width: 33%;
+                    .tci-field-label {
+                        width: 40%;
+                    }
+                }
+                .tci-field-value {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .advancedPayment {
+        .paymentContent {
+            .block2 {
+
+                .tci-field {
+                    margin-right: 1rem;
+                    width: 48%;
+
+                    .tci-field-label {
+                        width: 25%;
+                    }
+
+                    .tci-field-value {
+                        width: 75%;
+                    }
+                }
+            }
+
+            .block {
+
+                .tci-field {
+                    margin-right: 1rem;
+                    width: 23%;
+
+                    .tci-field-label {
+                        width: 25%;
+                    }
+
+                    .tci-field-value {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+
+    #page_advancedBilling {
+        .query {
+            .tci-field {
+                width: 26%;
+
+                &.w100 {
+                    width: 26%;
+                }
             }
         }
     }
@@ -103,6 +281,7 @@
             }
         }
     }
+
     #page_advancedBilling_print {
         .print_table {
             .tableContent {

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>工作移交清單</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_jobhandover">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>工作移交清單</b></span>
+        </div>
+        <section class="query">
+            <div class="tci-field w100">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">離職人：
+                        <button class="tci-icon bg_darkblue"><i class="fa-solid fa-user"></i></button></span>
+                </div>
+                <input type="text" class="tci-field-value gray" disabled />
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">最後工作日：</span>
+                </div>
+                <input type="text" class="tci-field-value" value="2022/22/22" />
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">離職原因：</span>
+                </div>
+                <select class="tci-field-value">
+                    <option selected>同事/主管無法箱子</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </section>
+        <section>
+            <table class="tci-table tci-table-bordered" style="margin-bottom:0;">
+                <thead>
+                    <tr style="background-color: var(--color-light-gray);">
+                        <th style="text-align: center;">NO</th>
+                        <th style="text-align: center;">會簽部門</th>
+                        <th style="text-align: center;">應移交事項</th>
+                        <th style="text-align: center;">接收人</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">1</td>
+                        <td>
+                            <select class="tci-form-control">
+                                <option selected>同事/主管無法箱子</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </td>
+                        <td>簽呈歸檔、教育訓練文件歸檔、薪資結算(含休假、圓夢方案等)、退保。</td>
+                        <td style="text-align: center;">hhhh.zeng陳陳陳</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">2</td>
+                        <td>
+                            <select class="tci-form-control">
+                                <option selected>同事/主管無法箱子</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </td>
+                        <td>印章、鑰匙、感應卡、座位整理、固資移轉、手機、車輛及其他設備。</td>
+                        <td style="text-align: center;">hhhh.zeng陳陳陳</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">3</td>
+                        <td>
+                            <select class="tci-form-control">
+                                <option selected>同事/主管無法箱子</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </td>
+                        <td>薪資、暫借款、應收帳款等。</td>
+                        <td style="text-align: center;">hhhh.zeng陳陳陳</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">4</td>
+                        <td>
+                            <select class="tci-form-control">
+                                <option selected>同事/主管無法箱子</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </td>
+                        <td>滯收款責任、合約正本，其他法務相關。</td>
+                        <td style="text-align: center;">hhhh.zeng陳陳陳</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tci-table tci-table-bordered">
+                <tbody>
+                    <th style="width: 15%;">交接人&nbsp;
+                        <button class="tci-icon bg_darkblue"><i class="fa-solid fa-user"></i></button>
+                    </th>
+                    <td>hhhh.zeng 陳陳陳</td>
+                    <th style="width: 15%;">監交人&nbsp;
+                        <button class="tci-icon bg_darkblue"><i class="fa-solid fa-user"></i></button>
+                    </th>
+                    <td>hhhh.zeng 陳陳陳</td>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>資訊部經辦</th>
+                        <td colspan="3">
+                            <select class="tci-form-control" style="width: auto;">
+                                <option selected>同事/主管無法箱子</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <table class="tci-table tci-table-bordered">
+                <thead>
+                    <tr style="background-color: var(--color-light-gray);text-align: center;">
+                        <th>NO</th>
+                        <th>休假結算方式</th>
+                        <th>假結算時數</th>
+                        <th>休假限額時數&nbsp;
+                            <button class="tci-icon bg_darkblue">取得限額時數</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody style="text-align: center;">
+                    <tr>
+                        <td>1</td>
+                        <td>休假結算方式</td>
+                        <td>8.0</td>
+                        <td>17</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_darkgreen">確認資料，預覽單據</button>
+        </div>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -50,6 +50,8 @@
   color: var(--color-snow);
   border-radius: var(--borderRadius);
   padding: 0.2rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 #page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_contenttitle .label {
   font-size: 10px;
@@ -66,7 +68,7 @@
   background-color: var(--color-blue);
 }
 #page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_contenttitle .label.green {
-  background-color: var(--color-dark-green);
+  background-color: #5cb85c;
 }
 #page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_contenttitle .label.dark {
   background-color: var(--color-dark);
@@ -78,6 +80,8 @@
   border-radius: var(--borderRadius);
   border: 2px solid var(--color-light-gray);
   position: relative;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 #page_documentQuery .conditionalContent .conditional_flex .conditional_box .conditional_btn .btnCheck {
   text-align: left;

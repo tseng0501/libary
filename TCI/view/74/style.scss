@@ -1,5 +1,5 @@
-#page_workOrder{
-    .workOrderQuery{
+#page_workOrder {
+    .workOrderQuery {
         .tci-field {
             flex-wrap: wrap;
             justify-content: space-between;
@@ -17,60 +17,86 @@
 }
 
 @media (min-width:768px) {
-    #page_workOrder{
+    #page_workOrder {
         .workOrderQuery {
             .tci-field {
-                flex-wrap: nowrap;
-
                 .tci-field-label {
-                    width: 40%;
+                    width: 70%;
                     text-align: right;
 
                 }
 
                 .tci-valueBtn {
                     display: flex;
-                    width: 55%;
+                    width: 30%;
                     justify-content: end;
                 }
 
                 .tci-field-value {
-                    width: 80%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .boxContent {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-field {
+                width: 45%;
+
+                &.w100 {
+                    width: 100%;
+
+                    .tci-field-label {
+                        width: 14%;
+                    }
+
+                    .tci-field-value {
+                        width: 86%;
+                    }
                 }
             }
         }
     }
 }
+
 //簽核 列印
-#page_workOrder_signoff{
-    .tableScroll{
+#page_workOrder_signoff {
+    .tableScroll {
 
         overflow-x: auto;
-        .tableContent{
-            width:768px;
+
+        .tableContent {
+            width: 768px;
         }
     }
 }
-#page_workOrder_print{
-    .print_table{
+
+#page_workOrder_print {
+    .print_table {
         overflow-x: auto;
-        .tableContent{
-            width:768px;
+
+        .tableContent {
+            width: 768px;
         }
     }
 }
+
 @media (min-width:768px) {
-    #page_workOrder_signoff{
-        .tableScroll{
-            .tableContent{
-                width:100%;
+    #page_workOrder_signoff {
+        .tableScroll {
+            .tableContent {
+                width: 100%;
             }
         }
     }
-    #page_workOrder_print{
-        .print_table{
-            .tableContent{
-                width:100%;
+
+    #page_workOrder_print {
+        .print_table {
+            .tableContent {
+                width: 100%;
             }
         }
     }

@@ -1,0 +1,44 @@
+#page_jobhandover .query {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#page_jobhandover .query .tci-field {
+  width: 48%;
+}
+#page_jobhandover .query .tci-field.w100 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #page_jobhandover .query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_jobhandover .query .tci-field {
+    width: 48%;
+  }
+  #page_jobhandover .query .tci-field.w100 {
+    width: 48%;
+  }
+}
+@media (min-width: 992px) {
+  #page_jobhandover .query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_jobhandover .query .tci-field {
+    width: 28%;
+  }
+  #page_jobhandover .query .tci-field.w100 {
+    width: 28%;
+  }
+  #page_jobhandover .query .tci-field .tci-field-label {
+    width: 40%;
+  }
+  #page_jobhandover .query .tci-field .tci-field-value {
+    width: 60%;
+  }
+}

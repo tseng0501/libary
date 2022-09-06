@@ -3,7 +3,7 @@
         overflow-x: auto;
 
         .tci-table {
-            width: 768px;
+            width: 992px;
         }
     }
 }
@@ -27,12 +27,6 @@
                 width: 48%;
             }
         }
-
-        .tableScroll {
-            .tci-table {
-                width: 100%;
-            }
-        }
     }
 
     #page_oldgoodsIssue_createView {
@@ -49,6 +43,15 @@
 }
 
 @media (min-width: 992px) {
+    #page_oldgoodsIssue {
+        .tableScroll {
+            overflow-x: auto;
+    
+            .tci-table {
+                width: 100%;
+            }
+        }
+    }
     #page_oldgoodsIssue_createView {
         .tableScroll {
             .tci-table {
