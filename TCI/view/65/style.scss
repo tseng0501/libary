@@ -20,64 +20,19 @@
     .details {
         input {
             width: 100%;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
         }
     }
-
-    .addTableBox {
-        border: 1px solid var(--color-rosybrown);
-        border-radius: var(--borderRadius);
-        margin-top: .5rem;
-
-        .addTable {
-            display: flex;
-            margin: 5px;
-
-            .addTableNo {
-                width: 50px;
-                background-color: var(--color-rosybrown);
-                margin-right: .5rem;
-                text-align: center;
-                display: flex;
-                align-items: center;
-
-                span {
-                    width: 100%;
-                    font-weight: bold;
-                    color: var(--color-snow);
-                }
-            }
-
-            .addTableContent {
-                padding: 5px;
-                border: 3px solid var(--color-rosybrown);
-                border-radius: var(--borderRadius);
-            }
-        }
-
-        .addTableFooter {
-            border: 3px solid var(--color-rosybrown);
-            border-radius: var(--borderRadius);
-            margin: 5px;
-            text-align: right;
-            padding: 5px;
-
-            .addTableFooterTitle {
-                margin-right: 100px;
-                font-weight: bold;
-                color: var(--color-rosybrown);
-            }
-
-            .addTableFooterText,
-            .addTableFooterTitle {
-                font-weight: bold;
-                color: var(--color-dark-red);
+    .tableScroll {
+        table {
+            th,td{
+                padding: 3px!important;
             }
         }
     }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     #page_generalInvoice {
         .details {
             input {
@@ -97,31 +52,6 @@
 
                     &.mark {
                         width: 100%;
-
-                    }
-                }
-            }
-        }
-
-        .addTableBox {
-            .addTable {
-                .addTableNo {
-                    width: 100px;
-                }
-
-                .addTableContent {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: flex-start;
-                    .tci-input-group {
-                        width: 31%;
-                        margin-right: 5px;
-                        &.type {
-                            width: 60%;
-                            .tci-input-group-text{
-                                margin: 0 5px;
-                            }
-                        }
                     }
                 }
             }
@@ -153,7 +83,7 @@
     }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     #page_generalInvoice {
         .invoiceContent {
             .invoiceForm {
@@ -170,26 +100,6 @@
             }
         }
 
-        .addTableBox {
-            .addTable {
-                .addTableNo {
-                    width: 60px;
-                }
-
-                .addTableContent {
-                    .tci-input-group {
-                        width: 16%;
-                        &.type {
-                            width: 40%;
-                            .tci-input-group-text{
-                                margin: 0 5px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
         .orderTableBox {
             .orderTable {
                 .tci-input-group {
@@ -200,28 +110,52 @@
         }
     }
 }
-#page_generalInvoice_signoff{
-    .tableScroll{
+#page_generalInvoice_signoff {
+    .tableScroll {
         overflow-x: auto;
         margin-bottom: 2rem;
-        .tableContent{
+        .tableContent {
             width: 768px;
         }
     }
 }
 
-@media (min-width:768px) {
-    #page_generalInvoice_signoff{
-        .tableScroll{
-            .tableContent{
+@media (min-width: 768px) {
+    #page_generalInvoice_signoff {
+        .tableScroll {
+            .tableContent {
                 width: 100%;
             }
-            .content{
+            .content {
                 display: flex;
                 justify-content: space-between;
-                .tci-input-group{
+                .tci-input-group {
                     width: 48%;
                 }
+            }
+        }
+        .completeInfo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            padding:.5rem;
+            .tci-field{
+                width: 47%;
+                .tci-valueBtn{
+                    display: flex;
+                    width: 70%;
+                }
+            }
+        }
+        .condensedInfo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            padding:.5rem;
+            .tci-field{
+                width: 46%;
             }
         }
     }

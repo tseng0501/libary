@@ -20,24 +20,258 @@
         <section class="purchaseConfirmationQuery">
             <div class="tci-field">
                 <div class="tci-field-label">
-                    <span class="tci-field-text text-left">請輸入銷售訂單編號:</span>
+                    <span class="tci-field-text">請輸入銷售訂單編號:</span>
                 </div>
-                <input type="number" class="tci-field-value" value="22222222222"/>
+                <input type="number" class="tci-field-value" value="22222222222" />
             </div>
             <div class="tci-field type">
                 <div class="tci-field-label">
-                    <span class="tci-field-text text-left">訂單類型:</span>
+                    <span class="tci-field-text">訂單類型:</span>
                 </div>
-                <select class="tci-field-value">
-                    <option selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <div class="tci-valueBtn">
+                    <select class="tci-field-value">
+                        <option selected>DF03 特殊原料採購訂單</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <button class="tci-btn bg_darkblue">查詢</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="tableContent" style="overflow-x: auto;">
+            <table class="tci-table tci-table-bordered" style="min-width:730px;">
+                <tbody>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);width: 20%;">客戶編號</th>
+                        <td style="width: 25%;">10002472</td>
+                        <th style="background-color: var(--color-light-gray);width: 20%;">單據號碼</th>
+                        <td style="width: 25%;">1100003433<br/>
+                            <span
+                                style="color:white;border-radius:var(--borderRadius);background-color:red;border:1px solid #CCC;padding:2px;font-size:var(--font-size-xs);">ZN05
+                                大江基因正式訂單</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">客戶名稱</th>
+                        <td>尚佳医魔法生物科技（大连市）有限责任公司</td>
+                        <th style="background-color: var(--color-light-gray);">製單日期</th>
+                        <td>2022/8/10 上午 12:00:00</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">聯絡人</th>
+                        <td>10002472</td>
+                        <th style="background-color: var(--color-light-gray);">報價有效期限</th>
+                        <td>1100003433</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">地址</th>
+                        <td>10002472</td>
+                        <th style="background-color: var(--color-light-gray);">交易幣別</th>
+                        <td>1100003433</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">電話</th>
+                        <td>10002472</td>
+                        <th style="background-color: var(--color-light-gray);">匯率</th>
+                        <td>1100003433</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">傳真</th>
+                        <td>10002472</td>
+                        <th style="background-color: var(--color-light-gray);">業務分組</th>
+                        <td>1100003433</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">預收款開立發票</th>
+                        <td>10002472</td>
+                        <th style="background-color: var(--color-light-gray);">舊品版改</th>
+                        <td>1100003433</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">付款條件</th>
+                        <td>10002472</td>
+                        <th style="background-color: var(--color-light-gray);">交貨凍結</th>
+                        <td>1100003433</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <divsection class="tableContent" style="overflow-x: auto;">
+            <table class="tci-table tci-table-bordered" style="min-width:730px;">
+                <thead style="background-color: var(--color-rosybrown);color: var(--color-snow);text-align: center;">
+                    <tr>
+                        <th colspan="4">信用額度資訊</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);width: 20%;">信用狀態</th>
+                        <td>尚佳医魔法生物科技（大连市）有限责任公司</td>
+                        <th style="background-color: var(--color-light-gray);">核定授信額度</th>
+                        <td>2022/8/10 上午 12:00:00</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">已出貨未開票</th>
+                        <td>10002472</td>
+                        <th style="background-color: var(--color-light-gray);">已請款未立帳</th>
+                        <td>1100003433</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">應收款項餘額</th>
+                        <td>10002472</td>
+                        <th style="background-color: var(--color-light-gray);">可用授信額度</th>
+                        <td>Available LOC</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="tableContent" style="overflow-x: auto;">
+            <table class="tci-table tci-table-bordered" style="min-width:970px;">
+                <thead style="background-color: var(--color-light-gray);text-align: center;">
+                    <tr>
+                        <th>#</th>
+                        <th>新/舊品</th>
+                        <th>料號</th>
+                        <th>品名/規格</th>
+                        <th>單位</th>
+                        <th>訂購數量</th>
+                        <th>單價/PC</th>
+                        <th>小計</th>
+                        <th style="width: 8%;">本次毛利%</th>
+                        <th>備註</th>
+                        <th>確稿日期</th>
+                        <th>交貨日期</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;">舊品</td>
+                        <td style="text-align: center;">1100003433</td>
+                        <td>尚佳医-胶原蛋白肽果汁饮料TDN-25ml7包54盒-1T</td>
+                        <td style="text-align: center;">PCS</td>
+                        <td style="text-align: center;">3,204</td>
+                        <td style="text-align: center;">3</td>
+                        <td style="text-align: center;">196,085</td>
+                        <td><span class="warningTag">低毛利</span></td>
+                        <td>(預估編號:79698)</td>
+                        <td style="text-align: center;">2022/10/17</td>
+                        <td style="text-align: center;">2022/10/17</td>
+                    </tr>
+                    <tr id="tableDown" style="text-align: center;">
+                        <td colspan="12">
+                            <table class="tci-table tci-table-bordered">
+                                <thead style="background-color: var(--color-light-gray);">
+                                    <tr>
+                                        <th>研發樣品編號</th>
+                                        <th>加工工序</th>
+                                        <th>組件明細</th>
+                                        <th>品項其他備註</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2100012480</td>
+                                        <td>9100023958</td>
+                                        <td>9100023958</td>
+                                        <td>9100023958</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr style="color: var(--color-light-red);">
+                        <th colspan="7" style="text-align: right;">外幣總計 USD</th>
+                        <th colspan="5">63,439.95</th>
+                    </tr>
+                    <tr style="color: var(--color-light-red);">
+                        <th colspan="7" style="text-align: right;">稅</th>
+                        <th colspan="5">63,439.95</th>
+                    </tr>
+                    <tr style="color: var(--color-light-red);">
+                        <th colspan="7">本幣總計</th>
+                        <th colspan="5">551,439.6</th>
+                    </tr>
+                    <tr style="font-size: var(--font-size-xs);">
+                        <td colspan="12">
+                            <div>備註：</div>
+                            <span>
+                                ●貴司產品之文字宣傳及行銷廣告之責任由貴公司自行負擔。<br />
+                                ●產品名稱或行銷名稱必須符合國家標籤標識的相關法律規定，否則需另行修改。
+                            </span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section class="fileBox formBox_gray">
+            <div class="tci-input-group tci-mb-2 fileContentNo formBox_title"
+                style="margin-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+                <div class="tci-input-group-prepend">
+                    <span class="tci-input-group-text tci-mr-2">檔案數:</span>
+                    <select class="tci-bs-custom-select" style="width:100px">
+                        <option selected>100</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="illustrate formBox_content" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                <div class="fileIllustrate">
+                    <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">序號:</span>
+                        </div>
+                        <div class="tci-form-control gray">1</div>
+                    </div>
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                </div>
+                <div class="fileIllustrate ">
+                    <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">序號:</span>
+                        </div>
+                        <div class="tci-form-control gray">1</div>
+                    </div>
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                </div>
             </div>
         </section>
         <div class="btnGroups">
-            <button class="tci-btn bg_darkblue">查詢</button>
+            <button class="tci-btn bg_darkgreen">確認資料，預覽單據</button>
+        </div>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>

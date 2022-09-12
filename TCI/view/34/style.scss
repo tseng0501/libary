@@ -25,7 +25,6 @@
 
                     .tci-field-value {
                         width: 42%;
-
                     }
                 }
             }
@@ -70,11 +69,11 @@
                         }
 
                         .time {
-                            width: 85px;
+                            width: 180px;
                         }
 
                         .date {
-                            width: 100px;
+                            width: 80%;
                         }
                     }
                 }
@@ -95,24 +94,4 @@
         }
     }
 
-}
-@media (min-width: 992px) {
-    #page_leaveForm {
-        .form {
-            .form-group {
-                .tci-field {
-
-                    .dateTime {
-                        .time {
-                            width: 120px;
-                        }
-
-                        .date {
-                            width: 150px;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }

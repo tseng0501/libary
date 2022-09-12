@@ -17,17 +17,129 @@
         <div class="pageHeader">
             <span class="pageHeaderTitle"><b>待付款清單</b></span>
         </div>
-       <section class="paymentListQuery">
-        <div class="tci-field">
-            <div class="tci-field-label">
-                <span class="tci-field-text">SAP待付款清單群組編號:</span>
+        <section class="paymentListQuery">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">SAP待付款清單群組編號:</span>
+                </div>
+                <div class="tci-valueBtn">
+                    <input type="text" class="tci-field-value" placeholder="請輸入SAP待付款清單群組編號" />
+                    <button class="tci-btn bg_darkblue tci-ml-2">查詢</button>
+                </div>
             </div>
-            <div class="tci-valueBtn">
-                <input type="text" class="tci-field-value" placeholder="請輸入SAP待付款清單群組編號"/>
-                <button class="tci-btn bg_darkblue tci-ml-2">查詢</button>
+            <hr>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">選擇簽核流程部門:<button class="tci-icon bg_darkkhaki"><i
+                                class="fa-solid fa-building"></i></button></span>
+                </div>
+                <input type="text" class="tci-field-value" />
             </div>
+        </section>
+        <section class="tableScroll" style="overflow-x: auto;">
+            <div class="tableContent" style="min-width: 992px;">
+                <div style="display: flex;justify-content:space-between;font-size: var(--font-size-sm);">
+                    <div>
+                        <span><b>SAP編號：</b></span><span>TCI0007856</span>
+                    </div>
+                    <div>
+                        <span><b>建立日期：</b></span><span>2022-09-02</span>
+                    </div>
+                </div>
+                <table class="tci-table tci-table-bordered">
+                    <thead>
+                        <tr
+                            style="text-align: center;background-color:var(--color-rosybrown);color: var(--color-snow);">
+                            <th colspan="7">公司對外付款</th>
+                            <th style="width: 110px;">
+                                <div style="font-size: var(--font-size-xs);display: flex;justify-content: flex-end;">
+                                    <div class="btnGroups">
+                                        <button class="tci-icon bg_darkblue">
+                                            <i class="fa-solid fa-outdent"></i> 全部展開
+                                        </button>
+                                        <!-- <button class="tci-icon"><i class="fa-solid fa-indent"></i> 全部展開</button> -->
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr
+                            style="text-align: center;background-color:var(--color-light-gray);color: var(--color-sienna);">
+                            <th>NO</th>
+                            <th>付款對象</th>
+                            <th>原幣別</th>
+                            <th>原幣別金額</th>
+                            <th>公司幣別金額(TWD)</th>
+                            <th>摘要</th>
+                            <th>付款銀行</th>
+                            <th>付款傳票號碼</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">1</td>
+                            <td style="text-align: center;">其它(雜項)</td>
+                            <td style="text-align: center;">USD</td>
+                            <td style="text-align: right;">6,334</td>
+                            <td style="text-align: right;">190,984</td>
+                            <td>張紫瑩^印尼2022/8月薪資(employee)^IDR 81,756,670*0.00204--</td>
+                            <td>銀存-花旗營業部美金#7209-USD</td>
+                            <td style="text-align: center;">5600008117</td>
+                        </tr>
+                        <tr>
+                            <td colspan="8">
+                                <table class="tci-table tci-table-bordered">
+                                    <thead>
+                                        <tr style="text-align: center;background-color:var(--color-light-gray);">
+                                            <th>類別</th>
+                                            <th>原幣別</th>
+                                            <th>原幣別金額(Total)</th>
+                                            <th>公司幣別金額(Total)</th>
+                                            <th>明細</th>
+                                            <th>付款日期</th>
+                                            <th>會計文件編號</th>
+                                            <th>A/P號碼(SAP)</th>
+                                            <th>EIP單號</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: center;">其他</td>
+                                            <td style="text-align: center;">IDR</td>
+                                            <td style="text-align: right;">81,756,670.00</td>
+                                            <td style="text-align: right;">166,784</td>
+                                            <td>張紫瑩^印尼2022/8月薪資(employee)^IDR 81,756,670*0.00204--</td>
+                                            <td style="text-align: center;">2022/09/02</td>
+                                            <td style="text-align: center;">1000004553</td>
+                                            <td style="text-align: center;">1000004553</td>
+                                            <td style="text-align: center;">1000004553</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr style="color: var(--color-light-red);text-align: right;">
+                                            <th colspan="2">合計</th>
+                                            <th>93,313,989.00</th>
+                                            <th>190,361</th>
+                                            <th colspan="5"></th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr style="color: var(--color-light-red);text-align: right;">
+                            <th colspan="4">合計</th>
+                            <th>190,361</th>
+                            <th colspan="3"></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_darkgreen">確認資料，預覽單據</button>
         </div>
-    </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

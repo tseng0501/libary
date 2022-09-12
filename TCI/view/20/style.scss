@@ -258,7 +258,7 @@
         overflow-x: auto;
 
         .tableContent {
-            width: 992px;
+            width: 768px;
         }
     }
 }
@@ -268,12 +268,12 @@
         overflow-x: auto;
 
         .tableContent {
-            width: 992px;
+            width: 768px;
         }
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     #page_advancedBilling_signoff {
         .tableScroll {
             .tableContent {

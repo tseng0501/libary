@@ -20,22 +20,41 @@
     #page_paymentList{
         .paymentListQuery {
             .tci-field {
-                flex-wrap: nowrap;
-
                 .tci-field-label {
-                    width: 40%;
+                    width: 53%;
                     text-align: right;
+                }
+
+                .tci-valueBtn {
+                    width: 45%;
+                    display: flex;
+                    justify-content: end;
+                    .tci-field-value{
+                        width: 100%;
+                    }
+                }
+
+                .tci-field-value {
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+@media (min-width:992px) {
+    #page_paymentList{
+        .paymentListQuery {
+            .tci-field {
+                .tci-field-label {
+                    width: 63%;
 
                 }
 
                 .tci-valueBtn {
-                    display: flex;
-                    width: 55%;
-                    justify-content: end;
+                    width: 35%;
                 }
-
                 .tci-field-value {
-                    width: 80%;
+                    width: 35%;
                 }
             }
         }

@@ -7,9 +7,20 @@
   #page_tryApplication .form_item .tci-input-group {
     width: 49%;
   }
+  #page_tryApplication_createView .form_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_tryApplication_createView .form_item .tci-input-group {
+    width: 49%;
+  }
 }
 @media (min-width: 992px) {
   #page_tryApplication .form_item .tci-input-group {
+    width: 30%;
+  }
+  #page_tryApplication_createView .form_item .tci-input-group {
     width: 30%;
   }
 }

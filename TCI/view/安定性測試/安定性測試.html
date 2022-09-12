@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>安定性測試</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_stabilityTest">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>安定性測試</b></span>
+        </div>
+        <section class="well">
+            <div class="input-group mb-3" style="min-width: auto;">
+                <span class="input-group-text">公佈</span>
+                <div class="form-control">
+                    <div class="tci-form-check tci-form-check-inline">
+                        <input class="tci-form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="tci-form-check-label" for="exampleRadios2">
+                            是
+                        </label>
+                    </div>
+                    <div class="tci-form-check tci-form-check-inline">
+                        <input class="tci-form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                            value="option3" disabled>
+                        <label class="tci-form-check-label" for="exampleRadios3">
+                            否
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="well">
+            <div class="step mb-3">
+                <span style="font-size: var(--font-size-lg);">Step1:</span>
+            </div>
+            <div class="groups">
+                <div class="input-group mb-3">
+                    <label class="input-group-text">類型<b class="star">*</b></label>
+                    <select class="form-select">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text">產品類型<b class="star">*</b></label>
+                    <select class="form-select">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text">版本</label>
+                    <select class="form-select">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text">需求來源<b class="star">*</b></label>
+                    <select class="form-select">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text">需求部門<b class="star">*</b>&nbsp;
+                        <button class="tci-icon bg_darkkhaki"><i class="fa-solid fa-building"></i></button></label>
+                    <input type="text" class="form-control" value="軟體研發組" disabled>
+
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text">需求人員<b class="star">*</b>&nbsp;
+                        <button class="tci-icon bg_darkblue"><i class="fa-solid fa-user"></i></button></label>
+                    <input type="text" class="form-control" value="軟體研發組" disabled>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">料號<b class="star">*</b></span>
+                    <input type="text" class="form-control" value="軟體研發組">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">品名</span>
+                    <input type="text" class="form-control" value="酵母粉" disabled>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">安定性報告產品名<b class="star">*</b></span>
+                    <input type="text" class="form-control" value="酵母粉安定性測試報告">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">提供原始檢驗報告</span>
+                    <div class="form-control">
+                        <div class="tci-form-check tci-form-check-inline">
+                            <input class="tci-form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                            <label class="tci-form-check-label" for="exampleRadios2">
+                                是
+                            </label>
+                        </div>
+                        <div class="tci-form-check tci-form-check-inline">
+                            <input class="tci-form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                                value="option3" disabled>
+                            <label class="tci-form-check-label" for="exampleRadios3">
+                                否
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">批號<b class="star">*</b></span>
+                    <input type="text" class="form-control" value="軟體研發組">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">試產申請單號</span>
+                    <input type="text" class="form-control" value="">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">客戶編號</span>
+                    <input type="text" class="form-control" value="軟體研發組">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">客戶名稱</span>
+                    <input type="text" class="form-control" value="" disabled>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">內部訂單號</span>
+                    <input type="text" class="form-control" value="軟體研發組">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">內部訂單名稱</span>
+                    <input type="text" class="form-control" value="" disabled>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">生產日期<b class="star">*</b></span>
+                    <input type="text" class="form-control" value="">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">包裝方式<b class="star">*</b></span>
+                    <select class="form-select">
+                        <option selected>36</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">工廠別<b class="star">*</b></span>
+                    <select class="form-select">
+                        <option selected>36</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+
+        </section>
+        <section class="well">
+            <div class="step mb-3">
+                <span style="font-size: var(--font-size-lg);">Step2:</span>
+            </div>
+            <div>
+                <table class="tci-table tci-table-bordered">
+                    <thead>
+                        <tr style="background-color: var(--color-light-gray);">
+                            <th style="width: 20px;"></th>
+                            <th style="width: 35%;">測試方式</th>
+                            <th>測試時間</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input class="" type="checkbox" style="width: 20px;height: 20px;">
+                            </td>
+                            <td>
+                                <h5>Long-term test</h5><br />
+                                <span>25℃±2℃/60% ±5%RH</span>
+                            </td>
+                            <td>
+                                <div class="input-group mb-3" style="width: auto;">
+                                    <label class="input-group-text">M+</label>
+                                    <select class="form-select">
+                                        <option selected>36</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <span class="input-group-text" style="background-color:#eec01b;">自訂義：</span>
+                                <div class="input-group">
+                                    <span class="input-group-text">M+(A)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                    <span class="input-group-text">M+(B)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                    <span class="input-group-text">M+(C)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-text">M+(D)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                    <span class="input-group-text">M+(E)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                    <span class="input-group-text">M+(F)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="" type="checkbox" style="width: 20px;height: 20px;">
+                            </td>
+                            <td>
+                                <h5>Special test</h5><br />
+                                <span>自行輸入</span>
+                                <input type="text"  class="form-control">
+                            </td>
+                            <td>
+                                <div class="input-group mb-3" style="width: auto;">
+                                    <label class="input-group-text">M+</label>
+                                    <select class="form-select">
+                                        <option selected>36</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <span class="input-group-text" style="background-color:#eec01b;">自訂義：</span>
+                                <div class="input-group">
+                                    <span class="input-group-text">M+(A)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                    <span class="input-group-text">M+(B)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                    <span class="input-group-text">M+(C)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-text">M+(D)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                    <span class="input-group-text">M+(E)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                    <span class="input-group-text">M+(F)</span>
+                                    <input type="text" class="form-control" value="" style="width: 50px;">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <div style="text-align:end;color:var(--color-dark-red)">
+                                    <span>1.自訂義僅接受數字及小數點</span><br/>
+                                    <span>2.自訂義測試時間將會產生無法確定的危險!!</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <section class="well">
+            <div class="step mb-3">
+                <span style="font-size: var(--font-size-lg);">Step3:</span>&nbsp;
+                <button class="tci-btn tci-btn-grass">以 Step2 資料減率需求表↓</button>
+            </div>
+            <div style="overflow-x: auto;">
+                <table class="tci-table tci-table-bordered" style="min-width: 960px;">
+                    <thead>
+                        <tr style="background-color: var(--color-rosybrown);color: var(--color-snow);font-size: var(--font-size-md);">
+                            <th colspan="22">Long-term test</th>
+                        </tr>
+                        <tr style="text-align: center;background-color: var(--color-light-gray);">
+                            <th style="vertical-align: middle;">群組</th>
+                            <th style="width: 5%;vertical-align: middle;">項目</th>
+                            <th>M+0 標準值<br/><button class="tci-btn tci-btn-success" style="padding: 0 3px;">帶人</button></th>
+                            <th style="vertical-align: middle;">全選</th>
+                            <th>M +1</th>
+                            <th>M +3</th>
+                            <th>M +6</th>
+                            <th>M +9</th>
+                            <th>M +12</th>
+                            <th>M +18</th>
+                            <th>M +24</th>
+                            <th>M +36</th>
+                            <th>M +42</th>
+                            <th>M +48</th>
+                            <th>M +54</th>
+                            <th>M +A</th>
+                            <th>M +B</th>
+                            <th>M +C</th>
+                            <th>M +D</th>
+                            <th>M +E</th>
+                            <th>M +F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>一般檢測</td>
+                            <td>顏色好</td>
+                            <td>
+                                <span>母值</span><input style="border: 1px solid #ced4da;padding: 2px 0.5rem;width: 40px;margin: 2px;"/>
+                                <span>運算</span><input style="border: 1px solid #ced4da;padding: 2px 0.5rem;width: 40px;margin: 2px;"/><br/>
+                                <span>子值</span><input style="border: 1px solid #ced4da;padding: 2px 0.5rem;width: 40px;margin: 2px;"/>
+                                <span>單位</span><input style="border: 1px solid #ced4da;padding: 2px 0.5rem;width: 40px;margin: 2px;"/>
+                                <input class="form-control"  readonly disabled/>
+                            </td>
+                            <td>
+                                <div style="display: flex;">
+                                    <input class="" type="checkbox" style="width: 20px;height: 20px;"><i class="fa-solid fa-arrow-right"style="margin:auto;"></i>
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">其他</td>
+                            <td colspan="20">
+                                <div class="input-group mb-3">
+                                    <label class="input-group-text">增加</label>
+                                    <select class="form-select">
+                                      <option selected>Choose...</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <label class="input-group-text">項</label>
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input class="" type="text" style="width: 80px;"></td>
+                            <td>
+                                <span>母值</span><input style="border: 1px solid #ced4da;padding: 2px 0.5rem;width: 40px;margin: 2px;"/>
+                                <span>運算</span><input style="border: 1px solid #ced4da;padding: 2px 0.5rem;width: 40px;margin: 2px;"/><br/>
+                                <span>子值</span><input style="border: 1px solid #ced4da;padding: 2px 0.5rem;width: 40px;margin: 2px;"/>
+                                <span>單位</span><input style="border: 1px solid #ced4da;padding: 2px 0.5rem;width: 40px;margin: 2px;"/>
+                                <input class="form-control"  readonly disabled/>
+                            </td>
+                            <td>
+                                <div style="display: flex;">
+                                    <input class="" type="checkbox" style="width: 20px;height: 20px;"><i class="fa-solid fa-arrow-right"style="margin:auto;"></i>
+                                </div>
+                            </td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;"></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                            <td style="text-align: center;"><input class="" type="checkbox" style="width: 20px;height: 20px;" disabled></td>
+                        </tr>
+                        <tr>
+                            <td>其他檢測項目</td>
+                            <td colspan="20">
+                                <div class="input-group">
+                                    <span class="input-group-text">委託檢驗單號</span>
+                                    <input type="text" class="form-control" value="">
+                                    <button class="btn tci-btn-regular" type="button">帶出檢驗項目</button>
+                                    <button class="btn bg_darkgreen" type="button">新增委託檢驗單</button>
+                                </div>
+                                <span style="color: var(--color-dark-red);"> <i class="fa-solid fa-triangle-exclamation"></i>&nbsp;請在建單前，先自行填寫委託檢驗申請單，並於此回填單號</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center">﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌我是分隔線﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌﹌</div>
+        </section>
+
+        <section class="well">
+            <div class="step mb-3">
+                <span style="font-size: var(--font-size-lg);">Step4:</span>
+            </div>
+            <div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">備註:</span>
+                    </div>
+                    <textarea class="tci-field-value"></textarea>
+                </div>
+                <div>
+                    <table class="tci-table tci-table-bordered">
+                        <thead>
+                            <tr style="text-align: center;background-color: var(--color-rosybrown);color: var(--color-snow);font-size: var(--font-size-md);">
+                                <th colspan="7">※ 物性檢測需求量 參考表</th>
+                            </tr>
+                            <tr style="text-align: center;background-color: var(--color-light-gray);">
+                                <th>劑型</th>
+                                <th>果凍</th>
+                                <th>飲料</th>
+                                <th>粉包</th>
+                                <th>錠劑</th>
+                                <th>膠囊</th>
+                                <th>化妝品</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>每1個檢測點</td>
+                                <td>3條</td>
+                                <td>100mL 大容量飲品1瓶 </td>
+                                <td>20g</td>
+                                <td>20g</td>
+                                <td>20g</td>
+                                <td>20g</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <section class="fileBox formBox_gray">
+                <div class="tci-input-group tci-mb-2 fileContentNo formBox_title" style="margin-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text tci-mr-2">檔案數:</span>
+                        <select class="tci-bs-custom-select" style="width:100px">
+                            <option selected>100</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="illustrate formBox_content" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                    <div class="fileIllustrate">
+                        <div class="tci-input-group tci-mr-1" style="width: 15%;">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">序號:</span>
+                            </div>
+                            <div class="tci-form-control gray">1</div>
+                        </div>
+                        <div class="tci-input-group tci-mr-1">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">檔案:</span>
+                            </div>
+                            <input type="file" class="tci-form-control" />
+                        </div>
+                        <div class="tci-input-group">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">檔案說明:</span>
+                            </div>
+                            <input type="text" class="tci-form-control" />
+                        </div>
+                    </div>
+                    <div class="fileIllustrate ">
+                        <div class="tci-input-group tci-mr-1" style="width: 15%;">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">序號:</span>
+                            </div>
+                            <div class="tci-form-control gray">1</div>
+                        </div>
+                        <div class="tci-input-group tci-mr-1">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">檔案:</span>
+                            </div>
+                            <input type="file" class="tci-form-control" />
+                        </div>
+                        <div class="tci-input-group">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">檔案說明:</span>
+                            </div>
+                            <input type="text" class="tci-form-control" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_darkgreen">儲存</button>
+        </div>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

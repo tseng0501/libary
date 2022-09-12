@@ -42,6 +42,11 @@
                             </select>
                         </td>
                     </tr>
+                    <!-- hedy 修改頁面 移除驗收件數，新增單據編號 -->
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">類別</th>
+                        <td colspan="3">47869-998</td> 
+                    </tr>
                     <tr>
                         <th style="background-color: var(--color-light-gray);">類別</th>
                         <td>固定資產</td>
@@ -86,6 +91,7 @@
                                             <th style="width: 80px;">單位</th>
                                             <th style="width: 110px;">擺放位置</th>
                                             <th style="width: 80px;">驗收判定</th>
+                                            <th style="width: 80px;"></th>   
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -116,6 +122,11 @@
                                                     <option value="3">Three</option>
                                                 </select>
                                             </td>
+                                            <td style="text-align: center;">
+                                                <button class="tci-icon tci-btn-warning" data-bs-toggle="modal"
+                                                data-bs-target="#EditModal"><i class="fa-solid fa-pencil"></i></button>
+                                                <button class="tci-icon bg_darkred"><i class="fa-solid fa-trash-can"></i></button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -136,12 +147,6 @@
                 </tbody>
             </table>
         </section>
-        <!-- <section>
-            <div style="text-align: center;font-size: var(--font-size-sm);margin: 2rem;">
-                <p style="color: var(--color-dark-red);">沒有等待您處理的[一般物品採購/請採單據]</p>
-                <p>分次驗收之採購/請採單，請直接輸入採購/請採單號</p>
-            </div>
-        </section> -->
         <div class="btnGroups">
             <button class="tci-btn bg_darkgreen">確認資料，預覽單據</button>
         </div>

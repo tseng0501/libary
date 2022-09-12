@@ -16,7 +16,7 @@
     <div class="container-fluid" id="page_generalInvoice_signoff">
         <div class="pageHeader" style="position: relative;">
             <span class="pageHeaderTitle"><b>一般請款單-簽核</b></span>
-           <!-- 查詢bar -->
+            <!-- 查詢bar -->
         </div>
         <!-- 上下頁 -->
         <section class="btnTop tci-mb-3">
@@ -161,9 +161,12 @@
                                 </div>
                                 <div class="dropdown" style="color: var(--color-light-red);">
                                     <span>若為會簽歸屬人<br>請移至下方找到</span><br>
-                                    <button class="tci-icon bg_darkgreen" style="width: 35px;height:35px;"><i class="fa-solid fa-check"></i></button>
-                                    <button class="tci-icon bg_darkblue" style="width: 35px;height:35px;"><i class="fa-solid fa-left-right"></i></button>
-                                    <button class="tci-icon bg_darkred" style="width: 35px;height:35px;"><i class="fa-solid fa-xmark"></i></button>
+                                    <button class="tci-icon bg_darkgreen" style="width: 35px;height:35px;"><i
+                                            class="fa-solid fa-check"></i></button>
+                                    <button class="tci-icon bg_darkblue" style="width: 35px;height:35px;"><i
+                                            class="fa-solid fa-left-right"></i></button>
+                                    <button class="tci-icon bg_darkred" style="width: 35px;height:35px;"><i
+                                            class="fa-solid fa-xmark"></i></button>
 
                                 </div>
                             </div>
@@ -185,105 +188,195 @@
                     <div class="accordion-body detailsBoxContent">
                         <div class="detailsBox_company tci-mt-1 tci-mb-2" style="text-align: right;">
                             <span class="detailsBox_companytext"
-                            style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">大江生醫</span>
+                                style=" color: #fff;padding: 0 6px;background-color: #83a2b4;border-radius: var(--borderRadius);font-size: 14px;">大江生醫</span>
                             <div
                                 style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
                                 <span>大江生醫股份有限公司 一般請款單</span>
                             </div>
                         </div>
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion_two" id="accordionPanelsStayOpenExample">
                             <div class="accordion-item">
-                              <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    單據資訊 
-                                </button>
-                              </h2>
-                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    <div>
-                                        <button class="tci-btn bg_darkblue">精簡資訊</button>
-                                        <button class="tci-btn bg_darkblue">完整資訊</button>
-                                    </div>
-                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link active" id="condensed-tab" data-bs-toggle="tab" data-bs-target="#condensed-tab-pane" type="button" role="tab" aria-controls="condensed-tab-pane" aria-selected="true">精簡資訊</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="full-tab" data-bs-toggle="tab" data-bs-target="#full-tab-pane" type="button" role="tab" aria-controls="full-tab-pane" aria-selected="false">完整資訊</button>
-                                        </li>
-                                      </ul>
-                                      <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="condensed-tab-pane" role="tabpanel" aria-labelledby="condensed-tab" tabindex="0">...</div>
-                                        <div class="tab-pane fade" id="full-tab-pane" role="tabpanel" aria-labelledby="full-tab" tabindex="0">...</div>
-                                      </div>
-                                    <div class="tableScroll">
-                                        <div class="tableContent">
-                                           
-                                            <table class="tci-table tci-table-bordered">
-                                                <tbody>
-                                                    <tr>
-                                                        <th style="background-color: var(--color-light-gray);">
-                                                            單據號碼<span>(合計已請款)</span></th>
-                                                        <td>10002238</td>
-                                                        <th style="background-color: var(--color-light-gray);">公司</th>
-                                                        <td colspan="3">大江生醫股份有限公司</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th style="background-color: var(--color-light-gray);">文件日期</th>
-                                                        <td>2022/07/02</td>
-                                                        <th style="background-color: var(--color-light-gray);">部門別</th>
-                                                        <td colspan="3">M05</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th style="background-color: var(--color-light-gray);">公司統編</th>
-                                                        <td>10002238-大江生意股份有限公司</td>
-                                                        <th style="background-color: var(--color-light-gray);">幣別</th>
-                                                        <td>新台幣</td>
-                                                        <th style="background-color: var(--color-light-gray);">匯率</th>
-                                                        <td>2</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th style="background-color: var(--color-light-gray);">請款金額 (NTD)</th>
-                                                        <td style="color: var(--color-light-red);font-weight: bold;">9,359.00</td>
-                                                        <th style="background-color: var(--color-light-gray);">請款金額 (NTD)</th>
-                                                        <td colspan="3" style="color: var(--color-light-red);font-weight: bold;">
-                                                            9,359.00
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th style="background-color: var(--color-light-gray);">稅額 (NTD)</th>
-                                                        <td>0.00</td>
-                                                        <th style="background-color: var(--color-light-gray);">過帳日期</th>
-                                                        <td colspan="3">2022/07/02</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th style="background-color: var(--color-light-gray);">付款方式</th>
-                                                        <td>員工1-1</td>
-                                                        <th style="background-color: var(--color-light-gray);">領款人</th>
-                                                        <td colspan="3">邱琮傑(JACK.CHIU)</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th style="background-color: var(--color-light-gray);">付款條件</th>
-                                                        <td colspan="5">开票后15天付款</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th style="background-color: var(--color-light-gray);">請款備註</th>
-                                                        <td colspan="5">9,359.00</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" style="background-color:var(--color-alge);padding: 5px;font-size: var(--font-size-md);"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-information" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-information">
+                                        單據資訊
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-information" style="border: 2px solid var(--color-alge);"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="condensed-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#condensed-tab-pane" type="button" role="tab"
+                                                    aria-controls="condensed-tab-pane"
+                                                    aria-selected="true">精簡資訊</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="full-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#full-tab-pane" type="button" role="tab"
+                                                    aria-controls="full-tab-pane" aria-selected="false">完整資訊(已處理)</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="condensed-tab-pane"
+                                                role="tabpanel" aria-labelledby="condensed-tab" tabindex="0">
+                                                <div class="condensedInfo">
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">公司:</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="大江生醫 股份有限公司" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">部門別:</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="SPD商務組" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">請款金額 (NTD):</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="2,587.00" style="color:var(--color-light-red);text-align: end;font-weight: bold;" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">付款方式:</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="邱琬婷(WANTING.CHIU)" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">請款備註:</span>
+                                                        </div>
+                                                        <textarea
+                                                            class="tci-field-value gray" disabled>8月份跨部門導師餐敘(本次共三位用餐 老師: 黃譯慧 學生: 邱琬婷,林奕褕</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="full-tab-pane" role="tabpanel"
+                                                aria-labelledby="full-tab" tabindex="0">
+                                                <div class="completeInfo">
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">單據號碼(合計已請款):</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="10002238" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">公司:</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="大江生醫 股份有限公司" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">文件日期:</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="2022/22/55" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">	部門別:</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="10002238-大江生意股份有限公司" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">公司統編:</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="大江生醫 股份有限公司" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">幣別:</span>
+                                                        </div>
+                                                        <div class="tci-valueBtn">
+                                                            <input type="text" class="tci-field-value gray" value="新台幣" disabled/>
+                                                            <span style="margin: auto 5px;white-space:nowrap;">匯率</span>
+                                                            <input type="text" class="tci-field-value gray" value="2" disabled/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">請款金額 (NTD):</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="2,587.00" style="color:var(--color-light-red);text-align: end;font-weight: bold;" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">請款金額 (NTD):</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="2,587.00" style="color:var(--color-light-red);text-align: end;font-weight: bold;" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">稅額 (NTD):</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="	0.00" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">過帳日期:</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="2022/07/02" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">付款方式:</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="員工1-1" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">領款人:</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="	邱琮傑(JACK.CHIU)" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">付款條件:</span>
+                                                        </div>
+                                                        <input type="text" class="tci-field-value gray"
+                                                            value="开票后15天付款" disabled/>
+                                                    </div>
+                                                    <div class="tci-field">
+                                                        <div class="tci-field-label">
+                                                            <span class="tci-field-text text-left">請款備註:</span>
+                                                        </div>
+                                                        <textarea class="tci-field-value gray" disabled>8月份跨部門導師餐敘(本次共三位用餐 老師: 黃譯慧 學生: 邱琬婷,林奕褕</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
-                       
+                        </div>
                         <div class="tableScroll">
                             <div class="tableContent">
                                 <table class="tci-table tci-table-bordered">
                                     <thead>
-                                        <tr>
+                                        <tr style="background-color: var(--color-rosybrown);color: var(--color-snow);text-align: center;font-size:var(--font-size-md);">
                                             <th colspan="7">票據明細</th>
                                         </tr>
                                         <tr style="text-align: center;background-color: var(--color-light-gray);">
@@ -320,7 +413,7 @@
                             <div class="tableContent">
                                 <table class="tci-table tci-table-bordered">
                                     <thead>
-                                        <tr>
+                                        <tr style="background-color: var(--color-rosybrown);color: var(--color-snow);text-align: center;font-size:var(--font-size-md);">
                                             <th colspan="9">請款明細</th>
                                         </tr>
                                         <tr style="text-align: center;background-color: var(--color-light-gray);">
@@ -340,7 +433,7 @@
                                             <td style="text-align: center;">1</td>
                                             <td style="text-align: center;">發票</td>
                                             <td style="text-align: center;">DJ05261287</td>
-                                            <td style="text-align: center;">2022/07/25</td>
+                                            <td style="text-align: right;">1,330.00</td>
                                             <td style="text-align: center;">台灣普客二四股份有限公司</td>
                                             <td style="text-align: center;">1,330.00</td>
                                             <td style="text-align: center;">87670630</td>
@@ -351,7 +444,7 @@
                                     <tfoot>
                                         <tr style="color: var(--color-light-red);text-align: right;">
                                             <th colspan="3">總計</th>
-                                            <th style="text-align: center;">718,730.78</th>
+                                            <th>718,730.78</th>
                                             <th colspan="6"></th>
                                         </tr>
                                     </tfoot>
@@ -376,7 +469,7 @@
                             <div class="tableContent">
                                 <table class="tci-table tci-table-bordered">
                                     <thead>
-                                        <tr>
+                                        <tr style="background-color: var(--color-rosybrown);color: var(--color-snow);text-align: center;font-size:var(--font-size-md);">
                                             <th colspan="7">請採單明細</th>
                                         </tr>
                                         <tr style="text-align: center;background-color: var(--color-light-gray);">

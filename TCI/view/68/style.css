@@ -1,12 +1,83 @@
-#page_changeRequest .changeRequestQuery .tci-input-group.bom button {
+#page_changeRequest .input-group .input-group-text {
+  font-size: var(--font-size-sm);
+  padding: 0.25rem 0.3rem;
+}
+#page_changeRequest .input-group select,
+#page_changeRequest .input-group input,
+#page_changeRequest .input-group button {
+  font-size: var(--font-size-sm);
+  padding: 0.25rem 0.3rem;
+}
+#page_changeRequest .input-group .form-control {
+  font-size: var(--font-size-sm);
+  padding: 0.25rem 0.3rem;
+}
+#page_changeRequest .changeRequestQuery .tci-field {
+  justify-content: space-between;
+}
+#page_changeRequest .changeRequestQuery .tci-field .tci-field-label {
+  text-align: left;
+}
+#page_changeRequest .changeRequestQuery .tci-field .tci-valueBtn {
+  display: flex;
   width: 100%;
-  margin-top: 0.5rem;
+}
+#page_changeRequest .changeRequestQuery .tci-field .tci-valueBtn input {
+  width: 100%;
+}
+#page_changeRequest .query .tci-field .valuebox {
+  width: 100%;
+}
+#page_changeRequest .big_title {
+  font-weight: bold;
+  font-size: var(--font-size-lg);
+  background-color: var(--color-light-warning);
+  padding: 1rem;
+}
+#page_changeRequest .rotate_icon i {
+  transform: rotate(90deg);
 }
 
 @media (min-width: 768px) {
-  #page_changeRequest .changeRequestQuery .tci-input-group.bom button {
-    width: auto;
-    margin-top: 0;
+  #page_changeRequest .changeRequestQuery .tci-field .tci-field-label {
+    width: 100%;
+  }
+  #page_changeRequest .query .tci-field .tci-field-label {
+    width: 20%;
+  }
+  #page_changeRequest .query .tci-field .tci-field-value {
+    width: 80%;
+  }
+  #page_changeRequest .query .tci-field .valuebox {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_changeRequest .query .tci-field .valuebox .input-group {
+    width: 49%;
+  }
+  #page_changeRequest .big_title {
+    font-weight: bold;
+    font-size: var(--font-size-lg);
+    background-color: var(--color-light-warning);
+    padding: 1rem;
+    display: flex;
+  }
+  #page_changeRequest .big_title .title_name {
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  #page_changeRequest .rotate_icon i {
+    transform: rotate(0deg);
+  }
+  #page_changeRequest .changeRequestQuery .tci-field .tci-field-label {
+    width: 54%;
+    text-align: right;
+  }
+  #page_changeRequest .changeRequestQuery .tci-field .tci-valueBtn {
+    width: 45%;
   }
 }
 #page_changeRequest_signoff .tableScroll {

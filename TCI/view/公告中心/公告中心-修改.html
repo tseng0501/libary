@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>公告中心-修改</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_announcement_edit">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>公告中心-修改</b></span>
+        </div>
+        <section>
+            <table class="tci-table tci-table-bordered">
+                <tbody>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);width: 20%;">公告時間</th>
+                        <td>2011/3/15 上午 11:17:16</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">部門別</th>
+                        <td>人力資源部</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">公告人</th>
+                        <td>AMY.LEE(李美侖)</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">公告分類</th>
+                        <td>
+                            <select class="tci-form-control">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">有效日期</th>
+                        <td><input type="text" class="tci-form-control" style="width: 150px;"></td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">公告對象</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">強制對象回覆</th>
+                        <td>
+                            <input type="checkbox" style="width: 16px;height:16px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">公告標題</th>
+                        <td><input type="text" class="tci-form-control" value="建廠工程請採驗管理辦法" style="width: 60%;"></td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">公告內容</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">狀態</th>
+                        <td>
+                            <div class="tci-form-check tci-mb-2">
+                                <input class="tci-form-check-input" type="radio" name="exampleRadios"
+                                    id="exampleRadios1" value="option1" checked>
+                                <label class="tci-form-check-label" for="exampleRadios1">
+                                    一般
+                                </label>
+                            </div>
+                            <div class="tci-form-check tci-mb-2">
+                                <input class="tci-form-check-input" type="radio" name="exampleRadios"
+                                    id="exampleRadios2" value="option2">
+                                <label class="tci-form-check-label" for="exampleRadios2">
+                                    重要(紅字)
+                                </label>
+                            </div>
+                            <div class="tci-form-check">
+                                <input class="tci-form-check-input" type="radio" name="exampleRadios"
+                                    id="exampleRadios3" value="option2">
+                                <label class="tci-form-check-label" for="exampleRadios3">
+                                    草稿(暫存訊息)
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_darkgreen">確認資料，預覽單據</button>
+        </div>
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 -
+                        HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<!-- hedy 表格可按下按鈕出現公告內容 -->

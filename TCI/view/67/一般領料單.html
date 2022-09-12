@@ -53,55 +53,64 @@
 
         <!-- 全部的單位 -->
         <section class="btnGroups addUnit tci-mb-1">
-            <span><button class="tci-btn bg_darkkhaki">請領單位</button></span>
+            
         </section>
-        <section class="goodsIssueTable tableScroll">
+        <section class="tableScroll">
             <table class="tci-table tci-table-bordered">
-                <tbody style="text-align: center;">
-                    <tr>
-                        <th>#</th>
-                        <th colspan="2">料號</th>
+                <thead>
+                    <tr style="text-align: center;background-color:var(--color-light-gray);">
+                        <th style="width: 10px;">NO</th>
+                        <th>料號</th>
+                        <th>品名</th>
+                        <th>單位</th>
                         <th style="width: 7%;">單價</th>
                         <th>倉庫</th>
-                        <th>請領單位</th>
+                        <th>請領數</th>
+                        <th><button class="tci-btn bg_darkkhaki" style="padding: 3px 5px;min-width: auto;">請領單位</button></button></span></th>
                         <th>異動分類</th>
+                        <th style="width: auto;">SAP專案號</th>
                     </tr>
+                </thead>
+                <tbody style="text-align: center;">
                     <tr>
-                        <td rowspan="3">1</td>
-                        <td rowspan="2" colspan="2">
+                        <td>1</td>
+                        <td>
                             <div class="input_part">
                                 <div class="tci-bs-input-group">
                                     <div class="tci-bs-input-group-prepend">
-                                        <span class="tci-bs-input-group-text">廠別:</span>
+                                        <span class="tci-bs-input-group-text">廠別</span>
                                     </div>
-                                    <select class="tci-bs-custom-select">
-                                        <option selected>Choose...</option>
+                                    <select class="tci-bs-custom-select"  style="border-bottom-right-radius:0;border-top-right-radius:0;">
+                                        <option selected>V505磐石生產中心虛擬廠</option>
                                         <option value="1">8505磐石生產s中心</option>
                                         <option value="2">V505磐石生產中心虛擬廠</option>
                                         <option value="3">Three</option>
                                     </select>
-                                    <div class="btnGroups_company">
-                                        <button class="tci-btn bg_darkkhaki">MRP?</button>
-                                    </div>
+                                    <button class="tci-btn bg_darkkhaki" style="padding:3px;min-width:auto;border-bottom-left-radius:0;border-top-left-radius:0;">MRP?</button>
                                 </div>
                                 <div class="tci-bs-input-group input_partnumber">
                                     <div class="tci-bs-input-group-prepend">
-                                        <span class="tci-bs-input-group-text">料號:</span>
+                                        <span class="tci-bs-input-group-text">料號</span>
                                     </div>
-                                    <input type="text" class="tci-bs-custom-select" />
-                                    <button class="tci-icon bg_darkblue" style="width:40px"><i
+                                    <input type="text" class="tci-bs-custom-select"  style="border-bottom-right-radius:0;border-top-right-radius:0;"/>
+                                    <button class="tci-icon bg_darkblue" style="width:40px;border-bottom-left-radius:0;border-top-left-radius:0;"><i
                                             class="fa-solid fa-magnifying-glass"></i></button>
                                 </div>
                             </div>
                         </td>
+                        <td>大江生醫有限股份公司-分公司</td>
+                        <td>kg</td>
                         <td>100</td>
+                        <td>台灣冠庭</td>
                         <td>1</td>
-                        <td><button class="tci-btn bg_darkkhaki">請領單位<span>1</span></button></td>
-                        <td rowspan="2">
+                        <td><button class="tci-btn bg_darkkhaki" style="padding: 3px 5px;min-width: auto;">請領單位<span>1</span></button><br />
+                            <span>精準行銷部-<br /><span style="color: var(--color-orgin);">林詠翔VINCENT</span>
+                        </td>
+                        <td>
                             <div class="input_classification">
                                 <div class="tci-bs-input-group">
                                     <div class="tci-bs-input-group-prepend">
-                                        <span class="tci-bs-input-group-text">分類:</span>
+                                        <span class="tci-bs-input-group-text">分類</span>
                                     </div>
                                     <select class="tci-bs-custom-select">
                                         <option selected>Choose...</option>
@@ -112,7 +121,7 @@
                                 </div>
                                 <div class="tci-bs-input-group">
                                     <div class="tci-bs-input-group-prepend">
-                                        <span class="tci-bs-input-group-text">原因:</span>
+                                        <span class="tci-bs-input-group-text">原因</span>
                                     </div>
                                     <select class="tci-bs-custom-select">
                                         <option selected>機台/磨具測試或調劑領用</option>
@@ -123,104 +132,53 @@
                                 </div>
                             </div>
                         </td>
+                        <td><input type="text" class="tci-form-control" value="880400675"/></td>
                     </tr>
                     <tr>
-                        <th>單位</th>
-                        <th>請領數</th>
-                        <th>SAP專案號</th>
-                    </tr>
-                    <tr>
-                        <th style="width: 60px;">品名</th>
-                        <td>大江生醫有限股份公司-分公司</td>
-                        <td>kg</td>
-                        <td><input type="text" class="tci-form-control" /></td>
-                        <td><input type="text" class="tci-form-control" /></td>
-                    </tr>
-                    <!-- 2 -->
-                    <tr>
-                        <th>#</th>
-                        <th colspan="2">料號</th>
-                        <th>單價</th>
-                        <th>倉庫</th>
-                        <th>請領單位</th>
-                        <th>異動分類</th>
-                    </tr>
-                    <tr>
-                        <td rowspan="3">2</td>
-                        <td rowspan="2" colspan="2">
-                            <div class="input_part">
-                                <div class="tci-bs-input-group">
-                                    <div class="tci-bs-input-group-prepend">
-                                        <span class="tci-bs-input-group-text">廠別:</span>
-                                    </div>
-                                    <select class="tci-bs-custom-select">
-                                        <option selected>Choose...</option>
-                                        <option value="1">8505磐石生產s中心</option>
-                                        <option value="2">V505磐石生產中心虛擬廠</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                    <div class="btnGroups_company">
-                                        <button class="tci-btn bg_darkkhaki">MRP?</button>
-                                    </div>
-                                </div>
-                                <div class="tci-bs-input-group input_partnumber">
-                                    <div class="tci-bs-input-group-prepend">
-                                        <span class="tci-bs-input-group-text">料號:</span>
-                                    </div>
-                                    <input type="text" class="tci-bs-custom-select" />
-                                    <button class="tci-icon bg_darkblue" style="width:40px"><i
-                                            class="fa-solid fa-magnifying-glass"></i></button>
-                                </div>
-                            </div>
+                        <td colspan="10">
+                            <table class="tci-table tci-table-bordered">
+                                <thead>
+                                    <tr style="background-color: var(--color-light-gray);">
+                                        <th>日期</th>
+                                        <th>MRP元素</th>
+                                        <th style="width: 7%;">開始/核發日期</th>
+                                        <th>開單日期</th>
+                                        <th>MRP要素資料</th>
+                                        <th>重新排程日</th>
+                                        <th>例外</th>
+                                        <th>例外說明</th>
+                                        <th>收貨/需求</th>
+                                        <th>可用數量</th>
+                                        <th>儲存地點</th>
+                                        <th>SO類型&留樣資訊</th>
+                                        <th>業務員資訊</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022/06/02</td>
+                                        <td>工單需求</td>
+                                        <td>2022/06/02</td>
+                                        <td>2022/06/02</td>
+                                        <td>000010050347/PP01/PD</td>
+                                        <td></td>
+                                        <td>07</td>
+                                        <td>完成日期己在過去</td>
+                                        <td>48,753</td>
+                                        <td>48,753</td>
+                                        <td>W9F1</td>
+                                        <td></td>
+                                        <td>Scrap:0.00%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </td>
-                        <td>100</td>
-                        <td>1</td>
-                        <td><button class="tci-btn bg_darkkhaki">請領單位<span>1</span></button></td>
-                        <td rowspan="2">
-                            <div class="input_classification">
-                                <div class="tci-bs-input-group">
-                                    <div class="tci-bs-input-group-prepend">
-                                        <span class="tci-bs-input-group-text">分類:</span>
-                                    </div>
-                                    <select class="tci-bs-custom-select">
-                                        <option selected>Choose...</option>
-                                        <option value="1">8505磐石生產s中心</option>
-                                        <option value="2">V505磐石生產中心虛擬廠</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="tci-bs-input-group">
-                                    <div class="tci-bs-input-group-prepend">
-                                        <span class="tci-bs-input-group-text">原因:</span>
-                                    </div>
-                                    <select class="tci-bs-custom-select">
-                                        <option selected>機台/磨具測試或調劑領用</option>
-                                        <option value="1">8505磐石生產s中心</option>
-                                        <option value="2">V505磐石生產中心虛擬廠</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>單位</th>
-                        <th>請領數</th>
-                        <th>SAP專案號</th>
-                    </tr>
-                    <tr>
-                        <th style="width: 60px;">品名</th>
-                        <td>大江生醫有限股份公司-分公司</td>
-                        <td>kg</td>
-                        <td><input type="text" class="tci-form-control" /></td>
-                        <td><input type="text" class="tci-form-control" /></td>
                     </tr>
                 </tbody>
-
-                <tfoot style="color:var(--color-dark-red)">
-                    <tr>
-                        <th colspan="6">合計</th>
-                        <th style="text-align: right;">123</th>
+                <tfoot>
+                    <tr style="text-align: right;color:var(--color-dark-red)">
+                        <th colspan="9">合計</th>
+                        <th>123</th>
                     </tr>
                 </tfoot>
             </table>

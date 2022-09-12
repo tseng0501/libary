@@ -27,14 +27,14 @@
     width: 55%;
   }
   #page_invoicePaper02 .query .tci-field.short {
-    width: 30%;
+    width: 25%;
   }
   #page_invoicePaper02 .query .tci-field.short .tci-field-label {
     width: 63%;
     text-align: right;
   }
   #page_invoicePaper02 .query .tci-field.short .tci-field-value {
-    width: 28%;
+    width: 34%;
   }
   #page_invoicePaper02 .query2 {
     display: flex;

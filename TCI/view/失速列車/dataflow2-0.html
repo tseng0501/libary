@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dataflow2">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="../../../scripts/angular.min.js"></script>
+    <link rel="stylesheet" href="./tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>資料流2.0</title>
+</head>
+
+<body>
+    <div id="page_dataflow2" ng-controller="template">
+        <div class="pageHeader" style="margin: .5rem;margin-bottom: 1.5rem;">
+            <span class="pageHeaderTitle"><b style="font-size: 24px;">光速列車 2.0</b></span>
+        </div>
+        <div class="btnGroups tci-mb-2" style="margin: 1rem;">
+            <button class="tci-btn bg_darkblue">返回</button>
+        </div>
+        <section class="tableScroll" style="overflow-x: auto;">
+            <table class="tci-table tci-table-bordered" style="min-width: 1200px;">
+                <thead>
+                    <tr>
+                        <th rowspan="2"></th>
+                        <th rowspan="2" class="project" style="background-color: #fbfbfb;"></th>
+                        <th rowspan="2" class="title"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i> 建立商機</th>
+                        <th rowspan="2" class="title" style="background-color: #fbfbfb;"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>商機審核(EIP)</th>
+                        <th rowspan="2" class="title"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>產品設計需求/商開會議(EIP)</th>
+                        <th rowspan="2" class="title" style="background-color: #fbfbfb;"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>提案(EIP)</th>
+                        <th rowspan="2" class="title"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>上傳配方(EIP)</th>
+                        <th rowspan="2" class="title" style="background-color: #fbfbfb;"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>配方審核法規(SAP)</th>
+                        <th rowspan="2" class="title"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>提案/配方確認(EIP)</th>
+                        <th rowspan="2" class="title" style="background-color: #fbfbfb;"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>報價PM送簽(EIP)</th>
+                        <th rowspan="2" class="title"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>提打樣需求申請(EIP)</th>
+                        <th rowspan="2" class="title" style="background-color: #fbfbfb;"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>回覆打樣完成(EIP)</th>
+                        <th rowspan="2" class="title"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>確認配方(EIP)</th>
+                        <th rowspan="2" class="title" style="background-color: #fbfbfb;"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>綁定料號BOM(SAP)</th>
+                        <th rowspan="2" class="title"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>打樣平台確認(EIP)</th>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i>送出PMT草稿(EIP)<br/></th>
+                        <th class="title"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i>PMT送出SAP(EIP)</th>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i>採購回覆料況(SAP)</th>
+                        <th class="title"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i>生管確認排程(EIP)</th>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i>估價單轉訂單(SAP)</th>
+                        <th class="title"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i>客戶回簽訂單(SAP)</th>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i>銷售訂單完簽(EIP)</th>
+                        <th class="title" style="border-right: none;"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i></th>
+                        <th class="title" style="border-left: none;border-right: none;"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i></th>
+                        <th class="title" style="border-left: none;"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i></th>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i></th>
+                        <th class="title"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i></th>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color:#2894FF;"></i></th>
+                        <th rowspan="2" class="title"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>計劃單轉工單(SAP)</th>
+                        <th rowspan="2" class="title" style="background-color: #fbfbfb;"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>工單核發(SAP)</th>
+                        <th rowspan="2" class="title"><span class="block">&nbsp;</span><i class="fa-solid fa-code-commit" style="color: #2894FF;"></i>備料工單清冊明細狀態(SAP MES)</th>
+                    </tr>
+                    <tr>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color: green;"></i></th>
+                        <th class="title"><i class="fa-solid fa-code-commit" style="color: green;"></i></th>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color: green;"></i></th>
+                        <th class="title"><i class="fa-solid fa-code-commit" style="color: green;"></i></th>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color: green;"></i></th>
+                        <th class="title"><i class="fa-solid fa-code-commit" style="color: green;"></i></th>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color: green;"></i></th>
+                        <th class="title" style="border-right: none;"><i class="fa-solid fa-code-commit" style="color: green;"></i>提出仿單需求(EIP)</th>
+                        <th class="title" style="border-left: none;border-right: none;"><i class="fa-solid fa-code-commit" style="color: green;"></i>建立送檢委託單(EIP)</th>
+                        <th class="title" style="border-left: none;"><i class="fa-solid fa-code-commit" style="color: green;"></i>提出安定性測試(EIP)</th>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color: green;"></i>稿件製作(EIP)</th>
+                        <th class="title"><i class="fa-solid fa-code-commit" style="color: green;"></i>稿件審查</th>
+                        <th class="title" style="background-color: #fbfbfb;"><i class="fa-solid fa-code-commit" style="color: green;"></i>成本核發</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="text-align: center;" ng-repeat="data in table1">
+                        <td>{{data.id}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.value}}</td>
+                        <td>{{data.a1}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a2}}</td>
+                        <td>{{data.a3}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a4}}</td>
+                        <td>{{data.a5}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a6}}</td>
+                        <td>{{data.a7}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a8}}</td>
+                        <td>{{data.a9}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a10}}</td>
+                        <td>{{data.a11}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a12}}</td>
+                        <td>{{data.a13}}</td>
+                        <!-- <td style="background-color: var(--color-light-gray);"></td> -->
+                        <td style="background-color: #fbfbfb;">{{data.a14}}</td>
+                        <td>{{data.a15}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a16}}</td>
+                        <td>{{data.a17}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a18}}</td>
+                        <td>{{data.a19}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a20}}</td>
+                        <td style="border-right:none;">{{data.a21}}</td>
+                        <td style="border-right:none;border-left:none;">{{data.a22}}</td>
+                        <td style="border-left:none;">{{data.a23}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a24}}</td>
+                        <td>{{data.a25}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a26}}</td>
+                        <td>{{data.a27}}</td>
+                        <td style="background-color: #fbfbfb;">{{data.a28}}</td>
+                        <td>{{data.a29}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div style="text-align: center;width: 100%;">
+            <div class="pagination p3 tci-mt-2">
+                <button class="tci-icon"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+                <button class="tci-icon"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <input type="text" class="text_input" /><span class="text_span">/ 40</span>
+                <button class="tci-icon bg_lightgray">跳</button>
+                
+                <button class="tci-icon"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                <button class="tci-icon"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                <select class="text_setect">
+                    <option selected>25</option>
+                    <option value="1">50</option>
+                    <option value="2">70</option>
+                    <option value="3">100</option>
+                </select>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var Content = angular.module('dataflow2', []);
+        Content.controller('template', ['$scope', function ($scope) {
+            $scope.table1 = [
+                {
+                    id: 1, value: 'A專案', a1: null, a2: null, a3: null, a4: null, a5: null, a6: null, a7: '🟢', a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                    , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                },
+                {
+                    id: 2, value: 'B專案', a1: null, a2: null, a3: null, a4: null, a5: null, a6: null, a7: null, a8: null, a9: '🟢', a10: null, a11: null, a12: null, a13: null
+                    , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                },
+                {
+                    id: 3, value: 'C專案', a1: null, a2: null, a3: '🟢', a4: null, a5: null, a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                    , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                },
+                {
+                    id: 4, value: 'D專案', a1: null, a2: null, a3: '🟢', a4: null, a5: null, a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                    , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                },
+                {
+                    id: 5, value: 'E專案', a1: null, a2: null, a3: null, a4: null, a5: '🟢', a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                    , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                },
+                {
+                    id: 6, value: 'F專案', a1: null, a2: null, a3: null, a4: null, a5: null, a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                    , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: '🟢',a23:'🟢',a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                },
+                {
+                    id: 7, value: 'G專案', a1: null, a2: null, a3: null, a4: null, a5: null, a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                    , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: '🟢', a22: '🟢',a23:'🟢',a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                },
+                {
+                    id: 8, value: 'H專案', a1: null, a2: null, a3: '🟢', a4: null, a5: null, a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                    , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                },
+                {
+                    id: 9, value: 'I專案', a1: null, a2: null, a3: '🟢', a4: null, a5: null, a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                    , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                },
+                {
+                    id: 10, value: 'C專案', a1: null, a2: null, a3: '🟢', a4: null, a5: null, a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                    , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                },
+                // {
+                //     id: 11, value: 'C專案', a1: null, a2: null, a3: '🟢', a4: null, a5: null, a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                //     , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                // },
+                // {
+                //     id: 12, value: 'C專案', a1: null, a2: null, a3: '🟢', a4: null, a5: null, a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                //     , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                // },
+                // {
+                //     id: 13, value: 'C專案', a1: null, a2: null, a3: '🟢', a4: null, a5: null, a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                //     , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                // },
+                // {
+                //     id: 14, value: 'C專案', a1: null, a2: null, a3: '🟢', a4: null, a5: null, a6: null, a7: null, a8: null, a9: null, a10: null, a11: null, a12: null, a13: null
+                //     , a14: null, a15: null, a16: null, a17: null, a18: null, a19: null, a20: null, a21: null, a22: null,a23:null,a24:null,a25:null,a26:null,a27:null,a28:null,a29:null
+                // }
+            ]
+        }])
+    </script>
+</body>
+
+</html>

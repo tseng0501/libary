@@ -34,7 +34,7 @@
                     <div class="tci-field-label">
                         <span class="tci-field-text text-left">單據編號:</span>
                     </div>
-                    <input type="text" class="tci-field-value gray" style="color: var(--color-search);" disabled
+                    <input type="text" class="tci-field-value gray" style="color: var(--color-dark-blue);" disabled
                         value="訂單完成時自動填寫" />
                 </div>
             </div>
@@ -50,7 +50,7 @@
                         <option value="3">Three</option>
                     </select>
                 </div>
-                <div class="point">
+                <div class="point tci-ml-1">
                     <span class="tci-input-group-text">匯率：</span>
                     <input type="text" class="tci-form-control" style="width: 80px;" />
                 </div>
@@ -68,7 +68,8 @@
                             </select>
                         </th>
                         <th>摘要/說明</th>
-                        <th>金額</th>
+                        <th style="width: 20%;">金額</th>
+                        <th style="width: 20px;"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -76,6 +77,7 @@
                         <td>1</td>
                         <td><input type="text" class="tci-form-control" /></td>
                         <td><input type="text" class="tci-form-control" /></td>
+                        <td><button class="tci-icon bg_darkred"><i class="fa-solid fa-trash-can"></i></button></td>
                     </tr>
                 </tbody>
             </table>
@@ -96,6 +98,26 @@
 
                 </div>
             </div>
+        </section>
+        <section style="margin-top: 1rem;">
+            <table class="tci-table tci-table-bordered">
+                <thead>
+                    <tr style="text-align: center;background-color:var(--color-light-gray)">
+                        <th>請採單</th>
+                        <th>採購金額</th>
+                        <th>合約</th>
+                        <th>暫支單</th>
+                        <th>驗收單</th>
+                        <th>合計已請款(不含本單)</th>
+                        <th>合計待請款(含本單)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="7" style="color: var(--color-light-red);text-align: center;">查無此請採單號</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <hr>
         <section class="advancedPayment formBox_gray">

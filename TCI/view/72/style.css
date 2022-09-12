@@ -23,10 +23,6 @@
   width: 48%;
 }
 
-#page_invoicePaper .flex_between {
-  display: flex;
-  justify-content: space-between;
-}
 #page_invoicePaper .invoiceTable {
   overflow-x: auto;
 }

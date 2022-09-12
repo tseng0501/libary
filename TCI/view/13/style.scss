@@ -1,58 +1,99 @@
-#page_purchaseRequisition {
-    .purchaseTable {
-        .tci-field-label {
-            white-space: normal;
-        }
+.purchaseTable {
+    .tci-field-label {
+        white-space: normal;
+    }
 
+    .purchaseBox {
         .reason {
+            width: 100%;
+            .tci-valueBtn{
+                display: flex;
+            }
+        }
+        .tci-valueTable {
             width: 100%;
         }
     }
-
+}
+#page_purchaseRequisition {
+    .tableScroll {
+        table {
+            th,
+            td {
+                padding: 3px !important;
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {
-    #page_purchaseRequisition {
-        .purchaseTable {
-            .reason {
-                width: 65%;
-
+    .purchaseTable {
+        .purchaseBox {
+            .tci-field {
+                .tci-field-label {
+                    width: 35%;
+                }
                 .tci-field-value {
-                    width: 100%;
+                    width: 65%;
                 }
             }
-        }
-        .tci-field{
-            .tci-field-label{
-                width: 35%;
-            }
-            .tci-field-value{
+            .tci-valueTable {
                 width: 65%;
             }
         }
     }
 }
 
-@media (min-width: 1200px) {
-    #page_purchaseRequisition {
-        .purchaseTable {
-            .purchaseTable_form {
-                display: flex;
-                flex-wrap: wrap;
+@media (min-width: 992px) {
+    .purchaseTable {
+        .purchaseBox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .tci-field {
+                width: 48%;
                 justify-content: space-between;
-
-                .tci-field {
-                    width: 48%;
-
+                &.w100 {
+                    width: 100%;
                     .tci-field-label {
-                        width: 22%;
+                        width:  17%;
                     }
-
-                    .tci-field-value {
-                        width: 77%;
+                    .tci-valueTable {
+                        width: 83%;
+                    }
+                    .tci-field-value{
+                        width: 83%;
+                    }
+                }
+                &.date{
+                    width: 100%;
+                    justify-content: flex-start;
+                    .tci-field-label {
+                        width:  17%;
+                    }
+                    .tci-field-value{
+                        width: 31%;
+                    }
+                }
+                .tci-field-label {
+                    width: 35%;
+                }
+                .tci-field-value {
+                    width: 65%;
+                }
+                .tci-valueBtn {
+                    width: 65%;
+                }
+                &.reason {
+                    .tci-field-label {
+                        width: 17%;
+                    }
+                    .tci-valueBtn {
+                        width: 83%;
                     }
                 }
             }
+            
         }
     }
 }
@@ -66,7 +107,7 @@
         }
     }
 }
-#page_purchaseRequisition_print{
+#page_purchaseRequisition_print {
     .tableScroll {
         overflow-x: auto;
 
@@ -83,8 +124,8 @@
             }
         }
     }
-    #page_purchaseRequisition_print{
-        .tableScroll{
+    #page_purchaseRequisition_print {
+        .tableScroll {
             .tableAuto {
                 width: 100%;
             }

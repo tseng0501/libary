@@ -85,10 +85,10 @@
                 .order {
                     display: flex;
                     flex-wrap: wrap;
-                    width: 50%;
+                    width: 80%;
                     margin-right: 5px;
                     &.short {
-                        width: 30%;
+                        width: 20%;
                     }
                     .tci-input-group-text {
                         margin: 0 .5rem;
@@ -146,11 +146,11 @@
                 .order {
                     display: flex;
                     flex-wrap: wrap;
-                    width: 70%;
+                    width: 80%;
                     margin-right: 5px;
 
                     &.short {
-                        width: 30%;
+                        width: 20%;
                     }
 
                     .tci-input-group-text {
@@ -231,11 +231,11 @@
                         width: 23%;
 
                         .tci-field-label {
-                            width: 25%;
+                            width: 30%;
                         }
 
                         .tci-field-value {
-                            width: 75%;
+                            width: 70%;
                         }
                     }
                 }

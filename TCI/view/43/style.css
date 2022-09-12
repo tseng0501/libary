@@ -9,9 +9,6 @@
   background-color: var(--color-rosybrown);
   text-align: center;
 }
-#page_purchaseOrder .tableScroll .tci-table tbody th {
-  background-color: var(--color-light-gray);
-}
 
 @media (min-width: 768px) {
   #page_purchaseOrder .tableScroll {

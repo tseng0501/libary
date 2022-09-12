@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>查詢資料與選擇倉庫</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="page_selectWarehouse">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>查詢資料與選擇倉庫</b></span>
+        </div>
+        <button class="tci-btn bg_darkblue" data-bs-toggle="modal" data-bs-target="#selectWarehouseModal">查詢資料與選擇倉庫</button>
+        <div style="text-align: center;font-size: var(--font-size-lg);margin-bottom: 1rem;">
+            <span>34011756</span>位於工廠<span>8050</span>
+        </div>
+        <section style="overflow-x: auto;">
+            <table class="tci-table tci-table-bordered" style="min-width: 740px;">
+                <thead>
+                    <tr style="text-align: center;background-color:var(--color-light-gray)">
+                        <th style="width: 30px;">NO</th>
+                        <th>項目說明</th>
+                        <th>倉庫別</th>
+                        <th>批次</th>
+                        <th style="width: 100px;">製造日</th>
+                        <th style="width: 100px;">有效期</th>
+                        <th>供應商批次</th>
+                        <th>儲位</th>
+                        <th>剩餘量</th>
+                        <th>單位</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td style="text-align: center;">2022/22/22</td>
+                        <td style="text-align: center;">2022/22/22</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td style="text-align: right;">1</td>
+                        <td style="text-align: center;">PSD</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="10">此倉庫沒有該料號的庫存</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+         <!-- Modal -->
+         <div class="modal fade" id="selectWarehouseModal" tabindex="-1" aria-labelledby="selectWarehouseModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="selectWarehouseModalLabel">查詢資料與選擇倉庫</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="text-align: center;font-size: var(--font-size-lg);margin-bottom: 1rem;">
+                            <span>34011756</span>位於工廠<span>8050</span>
+                        </div>
+                        <section style="overflow-x: auto;">
+                            <table class="tci-table tci-table-bordered" style="min-width: 740px;">
+                                <thead>
+                                    <tr style="text-align: center;background-color:var(--color-light-gray)">
+                                        <th style="width: 30px;">NO</th>
+                                        <th>項目說明</th>
+                                        <th>倉庫別</th>
+                                        <th>批次</th>
+                                        <th style="width: 100px;">製造日</th>
+                                        <th style="width: 100px;">有效期</th>
+                                        <th>供應商批次</th>
+                                        <th>儲位</th>
+                                        <th>剩餘量</th>
+                                        <th>單位</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td style="text-align: center;">2022/22/22</td>
+                                        <td style="text-align: center;">2022/22/22</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td style="text-align: right;">1</td>
+                                        <td style="text-align: center;">PSD</td>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <td colspan="10">此倉庫沒有該料號的庫存</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="tci-btn bg_lightgray" data-bs-dismiss="modal">關閉</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- hedy 67 單裡面的查詢 -->
+

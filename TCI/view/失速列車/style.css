@@ -40,16 +40,19 @@
     justify-content: space-between;
   }
   #page_light .query .tci-field {
-    width: 45%;
+    width: 49%;
   }
   #page_light .query .tci-field .tci-field-label {
-    width: 35%;
+    width: 32%;
   }
   #page_light .query .tci-field .tci-field-value {
-    width: 65%;
+    width: 68%;
   }
   #page_light .query .tci-field .tci-valueBtn {
-    width: 65%;
+    width: 68%;
+  }
+  #page_light .query .tci-field .dropdown {
+    width: 68%;
   }
 }
 @media (min-width: 992px) {
@@ -60,169 +63,10 @@
     width: 100%;
   }
 }
-#page_dataFlow .cardContent {
-  display: flex;
-  flex-wrap: wrap;
-}
-#page_dataFlow .cardContent .block {
-  display: flex;
-}
-#page_dataFlow .cardContent .tci-card {
-  min-width: 162px;
-  margin-bottom: 30px;
-  margin-right: 5px;
-  width: 162px;
-}
-#page_dataFlow .cardContent .tci-card .tci-card-body {
-  margin: auto;
-  flex: inherit;
-}
-#page_dataFlow .cardContent .tci-card .tci-card-body .tci-card-title {
-  font-weight: bold;
-  font-size: var(--font-size-md);
-}
-#page_dataFlow .cardContent .tci-card .tci-card-body button {
-  padding: 3px 5px;
-}
-#page_dataFlow .cardContent .circleWidth {
-  width: 162px;
-}
-#page_dataFlow .cardContent .circleWidth .tci-cardradius {
-  border: #2a2a2a 1px solid;
-  min-width: 165px;
-  border-radius: 40rem;
-  position: relative;
-  height: 160px;
-}
-#page_dataFlow .cardContent .circleWidth .tci-cardradius .circleName {
-  bottom: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  font-size: var(--font-size-md);
-  font-weight: bold;
-}
-
-@media (min-width: 768px) {
-  #page_dataFlow .cardContent .tci-card {
-    width: 200px;
-  }
-  #page_dataFlow .cardContent .circleWidth {
-    width: 200px;
-  }
-  #page_dataFlow .cardContent .circleWidth .tci-cardradius {
-    width: 165px;
-    margin: auto;
-  }
-}
-#page_dataFlow2 .cardContent {
-  position: relative;
-}
-#page_dataFlow2 .cardContent .tci-card {
-  position: absolute;
-  min-height: 100px;
-  width: 200px;
-}
-
-@media (min-width: 1200px) {
-  #page_dataFlow .cardContent {
-    width: 1200px;
-    margin: auto;
-  }
-}
 .container {
   width: 1170px;
 }
 
-#page_steps {
-  font-size: 14px;
-}
-#page_steps .steps {
-  margin-top: 2rem;
-  text-align: center;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 5px;
-}
-#page_steps .steps li {
-  float: left;
-  flex: inherit;
-  position: relative;
-  margin-bottom: 10rem;
-  width: 100%;
-}
-#page_steps .steps li.more {
-  margin-bottom: 29rem;
-}
-#page_steps .step-num {
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  color: var(--color-snow);
-  background-color: #b9b9b9;
-  line-height: 30px;
-  border-radius: 50%;
-  text-align: center;
-}
-#page_steps .step_active .step-num {
-  background-color: #fff100;
-}
-#page_steps .step_pass .step-num {
-  background-color: #2ad613;
-}
-#page_steps .step-sub {
-  width: 100%;
-  position: absolute;
-}
-#page_steps .step_card {
-  line-height: 2;
-  background-color: var(--color-light-gray);
-  border-radius: var(--borderRadius);
-  padding: 5px;
-  box-shadow: var(--borderShadow);
-  margin: 1rem auto;
-  width: 90%;
-}
-#page_steps .step_card .step_card_title {
-  font-weight: bold;
-  cursor: pointer;
-}
-#page_steps .step_card .line_one {
-  height: 5px;
-  background-color: var(--color-dark-green);
-}
-#page_steps .step_card .line_two {
-  height: 5px;
-  background-color: var(--color-light-red);
-}
-#page_steps .greenTag {
-  font-size: var(--font-size-xs);
-  background-color: var(--color-dark-khaki);
-  color: var(--color-snow);
-  border-radius: var(--borderRadius);
-  padding: 0 5px;
-}
-#page_steps .borderbox {
-  padding: 2rem 0;
-  border-radius: var(--borderRadius);
-  flex-basis: min-content;
-}
-#page_steps .boxIcon {
-  height: 100%;
-  margin: auto 0;
-  font-size: 20px;
-}
-
-@media (min-width: 768px) {
-  #page_steps .steps li {
-    width: 195px;
-  }
-}
 /* 当屏幕为竖屏时应用的样式 */
 @media screen and (orientation: portrait) {
   /*要横屏显示的内容的外层盒子*/
@@ -387,4 +231,39 @@
   #page_test3 .content .cardContent {
     width: 100%;
   }
+}
+#page_dataflow2 .tableScroll {
+  overflow-x: auto;
+}
+#page_dataflow2 .tableScroll .tci-table {
+  min-width: 1400px;
+}
+#page_dataflow2 .tableScroll .tci-table thead {
+  opacity: 0.7;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+#page_dataflow2 .tableScroll .tci-table th,
+#page_dataflow2 .tableScroll .tci-table td {
+  border: 1px solid #dee2e6;
+}
+#page_dataflow2 .tableScroll .tci-table .project {
+  min-width: 110px;
+  border: none;
+}
+#page_dataflow2 .tableScroll .tci-table .title {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  vertical-align: inherit;
+  border-top: none;
+  border-bottom: none;
+}
+#page_dataflow2 .tableScroll .tci-table .block {
+  margin-top: 6rem;
+}
+#page_dataflow2 .tableScroll .tci-table .box {
+  background-color: var(--color-dark-green);
+  padding: 1px;
+}
+#page_dataflow2 .tableScroll .tci-table i::after {
+  content: "";
 }

@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /> -->
     <link rel="stylesheet" href="./tci-all.css">
     <link rel="stylesheet" href="./style.css">
@@ -46,9 +47,11 @@
                     <span class="tci-field-text text-left">建立時間起訖：</span>
                 </div>
                 <div class="tci-valueBtn">
-                    <input type="text" class="tci-form-control" value="2022/22/22" />
+                    <input type="text" class="tci-form-control" value="2022/22/22"/>
+                    <button class="tci-icon bg_darkkhaki" style="width: 80px;"><i class="fa fa-calendar" aria-hidden="true"></i></button>
                     <span class="tci-input-group-text">~</span>
                     <input type="text" class="tci-form-control" value="2022/22/22" />
+                    <button class="tci-icon bg_darkkhaki" style="width: 80px;"><i class="fa fa-calendar" aria-hidden="true"></i></button>
                 </div>
             </div>
             <div class="tci-field" style="display: flex;">
@@ -56,9 +59,11 @@
                     <span class="tci-field-text text-left">預計訂單日起迄：</span>
                 </div>
                 <div class="tci-valueBtn">
-                    <input type="text" class="tci-form-control" value="2022/22/22" />
+                    <input type="text" class="tci-form-control" value="2022/22/22"/>
+                    <button class="tci-icon bg_darkkhaki" style="width: 80px;"><i class="fa fa-calendar" aria-hidden="true"></i></button>
                     <span class="tci-input-group-text">~</span>
                     <input type="text" class="tci-form-control" value="2022/22/22" />
+                    <button class="tci-icon bg_darkkhaki" style="width: 80px;"><i class="fa fa-calendar" aria-hidden="true"></i></button>
                 </div>
             </div>
             <div class="tci-field">
@@ -87,25 +92,49 @@
             </div>
             <div class="tci-field">
                 <div class="tci-field-label">
-                    <span class="tci-field-text text-left">PM：&nbsp;<button class="tci-icon bg_darkblue"><i class="fa fa-user" aria-hidden="true"></i></button></span>
+                    <span class="tci-field-text text-left">PM：</span>
                 </div>
-                <select class="tci-field-value">
-                    <option selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
+                    <div class="dropdown" style="display: flex;">
+                        <input type="text" class="tci-form-control">
+                        <button class="tci-icon bg_darkblue dropdown-toggle" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                        <ul class="dropdown-menu" style="padding: 5px;">
+                            <li>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" style="width:20px;height: 20px;margin: 0;margin-left: -20px;"><span
+                                            style="margin:5px">Remember</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" style="width:20px;height: 20px;margin: 0;margin-left: -20px;"><span
+                                            style="margin:5px">Remember</span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             <div class="tci-field">
                 <div class="tci-field-label">
-                    <span class="tci-field-text text-left">業務：&nbsp;<button class="tci-icon bg_darkblue"><i class="fa fa-user" aria-hidden="true"></i></button></span>
+                    <span class="tci-field-text text-left">業務：</span>
                 </div>
-                <select class="tci-field-value">
-                    <option selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <div class="dropdown" style="display: flex;">
+                    <input type="text" class="tci-form-control">
+                    <button class="tci-icon bg_darkblue dropdown-toggle" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="padding: 5px;">
+                        <li>
+                            <div class="checkbox">
+                                <label><input type="checkbox" style="width:20px;height: 20px;margin: 0;margin-left: -20px;"><span
+                                        style="margin:5px">Remember</span></label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <label><input type="checkbox" style="width:20px;height: 20px;margin: 0;margin-left: -20px;"><span
+                                        style="margin:5px">Remember</span></label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="btnGroups tci-mb-1" style="margin: 1rem;">

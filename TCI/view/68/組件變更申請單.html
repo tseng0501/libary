@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../scripts/bootstrap5.2.0/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../scss/tci-all.css">
@@ -18,29 +18,317 @@
             <span class="pageHeaderTitle"><b>換料申請單</b></span>
         </div>
         <section class="changeRequestQuery">
-            <div class="tci-input-group tci-mb-3 single">
-                <div class="tci-input-group-prepend">
-                    <span class="tci-input-group-text">Single Refueling - Production Order / Outsourcing Purchase Order Number:</span>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">單次換料-生產訂單/委外代工採購單編號：</span>
                 </div>
-                <input type="text" class="tci-form-control" />
-                <button class="tci-btn bg_darkgreen">提交</button>
+                <div class="tci-valueBtn">
+                    <input type="text" class="tci-field-value" />
+                    <button class="tci-btn bg_darkgreen tci-ml-2">提交</button>
+                </div>
             </div>
-            <div class="tci-input-group tci-mb-3 bom">
-                <div class="tci-input-group-prepend">
-                    <span class="tci-input-group-text">Permanent Refill - BOM/Product Number:</span>
+            <div class="tci-field bom">
+                <div class="tci-field-label">
+                    <span class="tci-field-text">永久換料-BOM/產品編號：</span>
                 </div>
-                <input type="text" class="tci-form-control" />
-                <span style="font-size: 1.25rem;margin:0 .5rem">:</span>
-                <select class="tci-form-control">
-                    <option selected>Choose...</option>
-                    <option value="1">8505磐石生產中心</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <button class="tci-btn bg_darkgreen">提交</button>
+                <div class="tci-valueBtn">
+                    <input type="text" class="tci-field-value" />
+                    <span style="font-size: 1.25rem;margin:auto 3px">:</span>
+                    <select class="tci-form-control">
+                        <option selected>8505磐石生產中心</option>
+                        <option value="1">8505磐石生產中心</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <button class="tci-btn bg_darkgreen tci-ml-2">提交</button>
+                </div>
             </div>
         </section>
         <hr>
+        <section class="query">
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">申請部門：&nbsp;<button class="tci-icon bg_darkkhaki"><i
+                                class="fa-solid fa-building"></i></button></span>
+                </div>
+                <input type="text" class="tci-field-value" />
+            </div>
+            <div class="tci-field">
+                <div class="tci-field-label">
+                    <span class="tci-field-text text-left">各簽核者：</span>
+                </div>
+                <div class="valuebox">
+                    <div class="input-group">
+                        <span class="input-group-text">1.負責業務</span>
+                        <select class="form-select">
+                            <option selected>M02-HEDY.TSENG(曾曾在)</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">2.採購經辦</span>
+                        <select class="form-select">
+                            <option selected>原料製成研發組-HEDY.TSENG(曾曾在)</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">3.研發經辦</span>
+                        <select class="form-select">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">4.生產技術</span>
+                        <select class="form-select">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">5.產品設計</span>
+                        <select class="form-select">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">6.產銷經辦</span>
+                        <select class="form-select">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="margin-top: 1.75rem;">
+            <div class="big_title">
+                <div class="title_name">產品名稱：AVON Life SOD Premium Drink-50mL-2T</div>
+                <div class="title_num">產品編號：34011756</div>
+            </div>
+            <div class="tableBody" style="padding:.5rem;border: 2px solid var(--color-light-warning);">
+                <div class="row" style="text-align: center;font-size: var(--font-size-md);margin-top: 1rem;font-weight: bold;">
+                    <div class="col-lg-6"><span>原配方內容</span></div>
+                    <div class="col-lg-1 rotate_icon"><i class="fa fa-arrow-right"></i></div>
+                    <div class="col-lg-5"><span>替換配方內容</span></div>
+                </div>
+                <hr>
+                <div class="row tci-mb-2">
+                    <!--原配方-->
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-text">料號</span>
+                            <input type="text" readonly="readonly" class="form-control" value="21000005">
+                            <input type="hidden"value="21000005">
+                            <span class="input-group-text">廠商</span>
+                            <input type="text" readonly="readonly" class="form-control" value="TCI HK">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">產品名稱</span>
+                            <input type="text" readonly="readonly" class="form-control" value="山硝-50ml茶色膠原玻璃瓶(共用) 50ml glass bottle (YT/YS)">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">規格</span>
+                            <input type="text" readonly="readonly" class="form-control" value="&quot;DP50-28TCI口徑(茶色)/11,792支/板/40呎貨櫃&quot;">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">庫存</span>
+                            <input type="text" class="form-control" value="1629440"
+                                readonly="readonly" style="color:green;">
+                            <span class="input-group-text">單價</span>
+                            <input type="text" class="form-control" value="1.537"
+                                readonly="readonly" style="color:green;">
+                            <span class="input-group-text">比率(%)</span>
+                            <input type="text" readonly="readonly" class="form-control" value="0" style="color:var(--color-light-red);">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">庫存處理方式</span>
+                            <select class="form-control" style="visibility: visible;">
+                                <option value="">---請選擇---</option>
+                                <option value="共用包材/原料，其它產品可使用">共用包材/原料，其它產品可使用</option>
+                                <option value="舊版訂單可繼續使用完畢">舊版訂單可繼續使用完畢</option>
+                                <option value="無法使用，客戶回購">無法使用，客戶回購</option>
+                                <option value="無法使用，一般領料領出">無法使用，一般領料領出</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                        <div class="input-group"style="display:none">
+                            <span class="input-group-text" >類型</span>
+                            <select class="form-control"style="visibility: visible;">
+                                <option value="">---請選擇---</option>
+                                <option value="ZN01">正式訂單</option>
+                                <option value="ZN02">試製品訂單</option>
+                                <option value="ZN03">特殊採購訂單</option>
+                                <option value="ZD01">服務費訂單</option>
+                                <option value="ZF01">零元備品訂單</option>
+                                <option value="ZN99">遠期訂單</option>
+                            </select>
+                            <span class="input-group-text" >請選擇:</span>
+                            <input type="text"value="" class="form-control">
+                        </div>
+                        <input type="hidden" value="">
+                        <div class="input-group">
+                            <span class="input-group-text">已採購未進貨</span>
+                            <span class="input-group-text">單號</span>
+                            <input type="text" class="form-control" value="5522000023"
+                                readonly="readonly" style="color:var(--color-light-red);">
+                            <span class="input-group-text">數量</span>
+                            <input type="text" class="form-control" value="943360.000PCS"
+                                readonly="readonly" style="color:var(--color-light-red);">
+                            <span class="input-group-text">金額</span>
+                            <input type="text" class="form-control" value="JPY5405452.80"
+                                style="color:var(--color-light-red);">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">已採購未進貨</span>
+                            <span class="input-group-text">單號</span>
+                            <input type="text" class="form-control" value="5885002283"
+                                readonly="readonly" style="color:var(--color-light-red);">
+                            <span class="input-group-text">數量</span>
+                            <input type="text" class="form-control" value="943360.000PCS"
+                                readonly="readonly" style="color:var(--color-light-red);">
+                            <span class="input-group-text">金額</span>
+                            <input type="text" class="form-control" value="JPY6235609.60"
+                                style="color:var(--color-light-red);">
+                        </div>
+                        <input type="hidden" class="form-control" value=""
+                            style="color:var(--color-light-red);">
+                        <button type="button"
+                            class="tci-btn bg_darkred" style="width: 100%;">從原配方中刪除這個項目</button>
+                    </div>
+                    <!--箭頭-->
+                    <div class="col-lg-1 rotate_icon" style="margin: auto;text-align: center;">
+                        <i class="fa fa-arrow-right fa-2x"></i>
+                    </div>
+                    <!--新配方-->
+                    <div class="col-lg-5">
+                        <div class="input-group">
+                            <span class="input-group-text" style="background-color: var(--color-dark-red);color:var(--color-snow)">刪除項目</span>
+                            <span class="form-control">從原配方中刪除這個項目 : 21000005</span>
+                        </div>
+                        <div class="input-group" >
+                            <span class="input-group-text">料號</span>
+                            <input type="text" value="" class="form-control">
+                            <span class="input-group-text">廠別</span>
+                            <select class="form-control">
+                                <option value="8505">8505磐石生產中心</option>
+                            </select>
+                                <button type="button" class="btn tci-btn-bd-blue">查詢</button>
+                        </div>
+                        <div id="cItemRow1">
+                            <div class="input-group">
+                                <span class="input-group-text">產品名稱</span>
+                                <span class="form-control" ></span>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text">規格</span>
+                                <span class="form-control"></span>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text">廠商</span>
+                                <span class="form-control"></span>
+                                <span class="input-group-text">庫存</span>
+                                <span class="form-control" style="color:#0F0;"></span>
+                                <span class="input-group-text">單價</span>
+                                <span class="form-control" style="color:#0F0;"></span>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text">更換原因</span>
+                            <select class="form-control" style="visibility: visible;">
+                                <option value="">---請選擇---</option>
+                                <option value="成本控制">成本控制</option>
+                                <option value="物料短缺">物料短缺</option>
+                                <option value="品質異常">品質異常</option>
+                                <option value="物料表錯誤">物料表錯誤</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                        <div class="input-group" id="HiddenRow1">
+                            <span class="input-group-text">請輸入其他更換原因</span>
+                            <input type="text" value="" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tablefooter">
+                <div class="big_title">
+                    <div class="title_footer" style="color: var(--color-dark-red);">被換料總金額：<span>0</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="fileBox formBox_gray" style="margin-top:1rem;">
+            <div class="tci-input-group tci-mb-2 fileContentNo formBox_title" style="margin-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+                <div class="tci-input-group-prepend">
+                    <span class="tci-input-group-text tci-mr-2">檔案數:</span>
+                    <select class="tci-bs-custom-select" style="width:100px">
+                        <option selected>100</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="illustrate formBox_content" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                <div class="fileIllustrate">
+                    <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">序號:</span>
+                        </div>
+                        <div class="tci-form-control gray">1</div>
+                    </div>
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                </div>
+                <div class="fileIllustrate ">
+                    <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">序號:</span>
+                        </div>
+                        <div class="tci-form-control gray">1</div>
+                    </div>
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="btnGroups">
+            <button class="tci-btn bg_darkgreen">確認資料，儲存單據</button>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

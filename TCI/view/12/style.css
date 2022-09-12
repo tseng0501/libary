@@ -56,11 +56,11 @@
   #page_advancedPayment .advancedPaymentOrder .orderContent .order {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 80%;
     margin-right: 5px;
   }
   #page_advancedPayment .advancedPaymentOrder .orderContent .order.short {
-    width: 30%;
+    width: 20%;
   }
   #page_advancedPayment .advancedPaymentOrder .orderContent .order .tci-input-group-text {
     margin: 0 0.5rem;
@@ -99,11 +99,11 @@
   #page_advancedPayment_createView .advancedPaymentOrder .orderContent .order {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 80%;
     margin-right: 5px;
   }
   #page_advancedPayment_createView .advancedPaymentOrder .orderContent .order.short {
-    width: 30%;
+    width: 20%;
   }
   #page_advancedPayment_createView .advancedPaymentOrder .orderContent .order .tci-input-group-text {
     margin: 0 0.5rem;
@@ -159,10 +159,10 @@
     width: 23%;
   }
   #page_advancedPayment .advancedPayment .paymentContent .block .tci-field .tci-field-label {
-    width: 25%;
+    width: 30%;
   }
   #page_advancedPayment .advancedPayment .paymentContent .block .tci-field .tci-field-value {
-    width: 75%;
+    width: 70%;
   }
 }
 #page_advancedPayment_signoff .tableScroll {

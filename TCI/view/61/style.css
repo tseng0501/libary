@@ -8,13 +8,6 @@
   display: flex;
   width: 100%;
 }
-#page_quotation .dataForm .tci-valueBtn {
-  width: 100%;
-  display: flex;
-}
-#page_quotation .dataForm .tci-valueBtn span {
-  white-space: nowrap;
-}
 
 @media (min-width: 768px) {
   #page_quotation .quotationQuery .tci-field .tci-field-label {
@@ -28,31 +21,6 @@
   }
   #page_quotation .quotationQuery .tci-field .tci-field-value {
     width: 80%;
-  }
-  #page_quotation .dataForm {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #page_quotation .dataForm .tci-field {
-    width: 45%;
-  }
-  #page_quotation .dataForm .tci-valueBtn {
-    width: 70%;
-  }
-  #page_quotation .dataForm .tci-valueBtn span {
-    margin: auto;
-  }
-}
-@media (min-width: 992px) {
-  #page_quotation .dataForm {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  #page_quotation .dataForm .tci-field {
-    width: 30%;
-    margin-right: 2rem;
   }
 }
 #page_quotation_signoff .detailsBoxContent .tableScroll {

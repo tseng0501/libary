@@ -1,57 +1,76 @@
 #page_purchaseConfirmation {
     .purchaseConfirmationQuery {
         .tci-field {
-            flex-wrap: wrap;
-
-            .tci-field-value {
-                width: 100%;
+            .tci-field-label {
+                text-align: left;
+            }
+            &.type {
+                .tci-valueBtn {
+                    display: flex;
+                    width: 100%;
+                }
             }
         }
     }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     #page_purchaseConfirmation {
         .purchaseConfirmationQuery {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: end;
             .tci-field {
-                width: 58%;
+                width: 50%;
                 justify-content: space-between;
                 .tci-field-label {
-                    width: 55%;
+                    width: 60%;
+                    text-align: right;
                 }
 
                 .tci-field-value {
-                    width: 45%;
+                    width: 40%;
                 }
 
                 &.type {
-                    width: 40%;
-                    margin-left: .5rem;
+                    width: 50%;
+                    margin-left: 0.5rem;
                     justify-content: space-between;
+                    .tci-field-label {
+                        width: 25%;
+                    }
+                    .tci-valueBtn {
+                        width: 75%;
+                        .tci-field-value{
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
     }
 }
-@media (min-width:992px) {
+@media (min-width: 992px) {
     #page_purchaseConfirmation {
         .purchaseConfirmationQuery {
             .tci-field {
                 .tci-field-label {
-                    width: 40%;
-                }
-
-                .tci-field-value {
                     width: 60%;
                 }
 
-                &.type {
+                .tci-field-value {
                     width: 40%;
-                    .tci-field-value{
+                }
 
+                &.type {
+                    width: 35%;
+                    .tci-field-label {
+                        width: 25%;
+                    }
+                    .tci-valueBtn {
+                        width: 75%;
+                        .tci-field-value{
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -99,7 +118,7 @@
     }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     #page_purchaseConfirmation_signoff {
         .tableScroll {
             .tableContent {

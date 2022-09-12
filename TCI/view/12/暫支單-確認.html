@@ -47,24 +47,29 @@
                             <th style="text-align: center;">NTD</th>
                             <th style="text-align: center;">400.00</th>
                         </tr>
-                        <tr>
-                            <th colspan="4">請採單明細</th>
-                        </tr>
-                        <tr>
-                            <th colspan="2" style="background-color: var(--color-light-gray);">請採單號</th>
-                            <td colspan="2">23434243</td>
-                        </tr>
-                        <tr>
-                            <th colspan="2" style="background-color: var(--color-light-gray);">若無請採單號，請說明暫支原因</th>
-                            <td colspan="2">23434243</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="tableScroll">
-                <table class="tci-table tci-table-bordered tci-mt-1">
+            <section class="advancedPaymentOrder">
+                <div class="orderBox">
+                    <span class="orderTitle"><u>請採單明細</u></span>
+                </div>
+                <div class="orderContent">
+                    <div class="order short">
+                        <span class="tci-input-group-text">請採單號:</span>
+                        <input type="text" class="tci-form-control gray" value="無" disabled/>
+                    </div>
+                    <div class="order">
+                        <span class="tci-input-group-text">若無請採單號，請說明暫支原因: </span>
+                        <input type="text" class="tci-form-control gray" value="test" disabled/>
+    
+                    </div>
+                </div>
+            </section>
+            <section class="tableScroll" style="margin-top: 1rem;">
+                <table class="tci-table tci-table-bordered">
                     <thead>
-                        <tr style="background-color: var(--color-light-gray);text-align: center;">
+                        <tr style="text-align: center;background-color:var(--color-light-gray)">
                             <th>請採單</th>
                             <th>採購金額</th>
                             <th>合約</th>
@@ -75,12 +80,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="color: var(--color-light-red);text-align:center;">
-                            <td colspan="7">查無此請採單號 </td>
+                        <tr>
+                            <td colspan="7" style="color: var(--color-light-red);text-align: center;">查無此請採單號</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </section>
             <section class="advancedPayment formBox_gray">
                 <div class="payment formBox_title" style="display:flex">
                     <span class="tci-input-group-text">付款方式：</span>
@@ -242,8 +247,8 @@
                 </div>
             </div>
             <hr>
-            <section class="fileBox">
-                <div class="tci-input-group tci-mb-2 fileContentNo">
+            <section class="fileBox formBox_gray">
+                <div class="tci-input-group tci-mb-2 fileContentNo formBox_title" style="margin-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
                     <div class="tci-input-group-prepend">
                         <span class="tci-input-group-text tci-mr-2">檔案數:</span>
                         <select class="tci-bs-custom-select" style="width:100px">
@@ -254,9 +259,14 @@
                         </select>
                     </div>
                 </div>
-                <hr>
-                <div class="illustrate">
+                <div class="illustrate formBox_content" style="border-top-left-radius: 0;border-top-right-radius: 0;">
                     <div class="fileIllustrate">
+                        <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">序號:</span>
+                            </div>
+                            <div class="tci-form-control gray">1</div>
+                        </div>
                         <div class="tci-input-group tci-mr-1">
                             <div class="tci-input-group-prepend">
                                 <span class="tci-input-group-text">檔案:</span>
@@ -270,7 +280,13 @@
                             <input type="text" class="tci-form-control" />
                         </div>
                     </div>
-                    <div class="fileIllustrate">
+                    <div class="fileIllustrate ">
+                        <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">序號:</span>
+                            </div>
+                            <div class="tci-form-control gray">1</div>
+                        </div>
                         <div class="tci-input-group tci-mr-1">
                             <div class="tci-input-group-prepend">
                                 <span class="tci-input-group-text">檔案:</span>

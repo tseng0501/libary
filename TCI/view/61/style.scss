@@ -13,16 +13,6 @@
             }
         }
     }
-
-    .dataForm {
-        .tci-valueBtn {
-            width: 100%;
-            display: flex;
-            span{
-                white-space: nowrap;
-            }
-        }
-    }
 }
 
 @media (min-width:768px) {
@@ -45,40 +35,8 @@
                 }
             }
         }
-
-        .dataForm {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            .tci-field {
-                width: 45%;
-            }
-            .tci-valueBtn {
-                width: 70%;
-                span{
-                    margin:auto;
-                }
-            }
-        }
     }
 }
-
-@media (min-width:992px) {
-    #page_quotation {
-        .dataForm {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-
-            .tci-field {
-                width: 30%;
-                margin-right: 2rem;
-            }
-        }
-    }
-}
-
 
 // 簽核
 #page_quotation_signoff {

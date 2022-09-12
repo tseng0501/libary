@@ -20,31 +20,205 @@
         <section class="reserveInvoiceQuery">
             <div class="tci-field">
                 <div class="tci-field-label">
-                    <span class="tci-field-text text-left">請輸入A/R貸項通知單編號:</span>
+                    <span class="tci-field-text">請輸入A/R貸項通知單編號:</span>
                 </div>
-                <input type="number" class="tci-field-value" />
+                <input type="number" class="tci-field-value" value="2630000725" />
             </div>
             <div class="tci-field type">
                 <div class="tci-field-label">
-                    <span class="tci-field-text text-left">訂單類型:</span>
+                    <span class="tci-field-text">訂單類型:</span>
                 </div>
-                <select class="tci-field-value">
-                    <option selected>ZC01 折讓申請單</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                <div class="tci-valueBtn">
+                    <select class="tci-field-value">
+                        <option selected>DF03 特殊原料採購訂單</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <button class="tci-btn bg_darkblue">查詢</button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="tableScroll" style="overflow-x: auto;">
+            <table class="tci-table tci-table-bordered" style="min-width: 730px;">
+                <tbody>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">部門別</th>
+                        <td>M118</td>
+                        <th style="background-color: var(--color-light-gray);">貸項通知類型
+                        </th>
+                        <td>C09折讓單: 其他：需填入原因</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);width: 20%;">客戶編號</th>
+                        <td style="width: 25%;">M118</td>
+                        <th style="background-color: var(--color-light-gray);width: 20%;">客戶名稱</th>
+                        <td style="width: 25%;">BEAUTY MIND INTERNATIONAL PTE. LTD.</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">單據號碼</th>
+                        <td>M118</td>
+                        <th style="background-color: var(--color-light-gray);">製單日期</th>
+                        <td>2022/05/16</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">交易幣別</th>
+                        <td>32001804</td>
+                        <th style="background-color: var(--color-light-gray);">匯率</th>
+                        <td>27.66500</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">專案代號</th>
+                        <td>32001804</td>
+                        <th style="background-color: var(--color-light-gray);">專案名稱</th>
+                        <td>MELILEA-PearUnripe VC Powder(8g/20p/Box)</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">稅率</th>
+                        <td>0</td>
+                        <th style="background-color: var(--color-light-gray);">業務分組</th>
+                        <td>M118</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="tableScroll" style="overflow-x: auto;">
+            <table class="tci-table tci-table-bordered" style="min-width: 730px;">
+                <tbody>
+                    <tr style="background-color: var(--color-light-gray);text-align: center;">
+                        <th>NO</th>
+                        <th>料號</th>
+                        <th>品名 / 規格</th>
+                        <th>單位</th>
+                        <th>數量</th>
+                        <th>單價/PC</th>
+                        <th>小計</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;">11000161</td>
+                        <td>MELILEA-PearUnripe VC Powder-8g20p-V2-SG</td>
+                        <td style="text-align: center;">BOX</td>
+                        <td style="text-align: right;">32</td>
+                        <td style="text-align: right;">4</td>
+                        <td style="text-align: right;">123</td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td colspan="7">
+                            <table class="tci-table tci-table-bordered">
+                                <thead style="background-color: var(--color-light-gray);">
+                                    <tr>
+                                        <th>銷售退貨單號</th>
+                                        <th>AR發票編號</th>
+                                        <th>發票號碼</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2100012480</td>
+                                        <td>9100023958</td>
+                                        <td>9100023958</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot style="color: var(--color-light-red);text-align: right;">
+                    <tr>
+                        <th colspan="6">列小計</th>
+                        <th>125</th>
+                    </tr>
+                    <tr>
+                        <th colspan="6">稅</th>
+                        <th>125</th>
+                    </tr>
+                    <tr>
+                        <th colspan="6">(含稅)外幣總計</th>
+                        <th>125</th>
+                    </tr>
+                    <tr>
+                        <th colspan="6">本幣總計</th>
+                        <th>125</th>
+                    </tr>
+                    <tr style="text-align: left;color: var(--color-gray);font-size: var(--font-size-xs);">
+                        <th colspan="7">備註:</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section class="fileBox formBox_gray">
+            <div class="tci-input-group tci-mb-2 fileContentNo formBox_title"
+                style="margin-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+                <div class="tci-input-group-prepend">
+                    <span class="tci-input-group-text tci-mr-2">檔案數:</span>
+                    <select class="tci-bs-custom-select" style="width:100px">
+                        <option selected>100</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="illustrate formBox_content" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                <div class="fileIllustrate">
+                    <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">序號:</span>
+                        </div>
+                        <div class="tci-form-control gray">1</div>
+                    </div>
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                </div>
+                <div class="fileIllustrate ">
+                    <div class="tci-input-group tci-mr-1" style="width: 10%;">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">序號:</span>
+                        </div>
+                        <div class="tci-form-control gray">1</div>
+                    </div>
+                    <div class="tci-input-group tci-mr-1">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案:</span>
+                        </div>
+                        <input type="file" class="tci-form-control" />
+                    </div>
+                    <div class="tci-input-group">
+                        <div class="tci-input-group-prepend">
+                            <span class="tci-input-group-text">檔案說明:</span>
+                        </div>
+                        <input type="text" class="tci-form-control" />
+                    </div>
+                </div>
             </div>
         </section>
         <div class="btnGroups">
-            <button class="tci-btn bg_darkblue">查詢</button>
+            <button class="tci-btn bg_darkgreen">確認資料，預覽單據</button>
         </div>
-        <hr>
-        <section class="notExist">
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+        <!-- <section class="notExist">
             <div style="text-align: center;">
                 <span style="font-size: var(--font-size-lg);">此銷售單(銷退/AR貸項)不存在!</span>
             </div>
-        </section>
+        </section> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -45,6 +45,9 @@
         display: block;
         font-weight: bold;
         font-size: var(--font-size-lg);
+        // border-bottom-left-radius: 0;
+        // border-bottom-right-radius: 0;
+        margin-bottom: -2px;
     }
 
     .accordion-collapse {
@@ -62,12 +65,11 @@
 }
 
 .next_signer {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
 }
 
 // 簽核流程
 .processBoxContent {
-
     .fa-left-long {
         transform: rotate(90deg);
     }
@@ -81,7 +83,6 @@
 }
 
 @media (min-width: 768px) {
-
     //留言
     .messageBoxContent {
         display: flex;

@@ -1,41 +1,60 @@
-#page_purchaseConfirmation .purchaseConfirmationQuery .tci-field {
-  flex-wrap: wrap;
+#page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-label {
+  text-align: left;
 }
-#page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-value {
+#page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type .tci-valueBtn {
+  display: flex;
   width: 100%;
 }
 
 @media (min-width: 768px) {
   #page_purchaseConfirmation .purchaseConfirmationQuery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: end;
   }
   #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field {
-    width: 58%;
+    width: 50%;
     justify-content: space-between;
   }
   #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-label {
-    width: 55%;
+    width: 60%;
+    text-align: right;
   }
   #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-value {
-    width: 45%;
+    width: 40%;
   }
   #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type {
-    width: 40%;
+    width: 50%;
     margin-left: 0.5rem;
     justify-content: space-between;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type .tci-field-label {
+    width: 25%;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type .tci-valueBtn {
+    width: 75%;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type .tci-valueBtn .tci-field-value {
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
   #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-label {
-    width: 40%;
-  }
-  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-value {
     width: 60%;
   }
-  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type {
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field .tci-field-value {
     width: 40%;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type {
+    width: 35%;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type .tci-field-label {
+    width: 25%;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type .tci-valueBtn {
+    width: 75%;
+  }
+  #page_purchaseConfirmation .purchaseConfirmationQuery .tci-field.type .tci-valueBtn .tci-field-value {
+    width: 100%;
   }
 }
 #page_purchaseConfirmation_signoff .tableScroll {

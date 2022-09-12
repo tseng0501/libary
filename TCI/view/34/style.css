@@ -51,10 +51,10 @@
     width: auto;
   }
   #page_leaveForm .form .form-group .tci-field .dateTime .time {
-    width: 85px;
+    width: 180px;
   }
   #page_leaveForm .form .form-group .tci-field .dateTime .date {
-    width: 100px;
+    width: 80%;
   }
   #page_leaveForm .form .form-group .table_content {
     width: 80%;
@@ -68,13 +68,5 @@
   #page_leaveForm .form .form-group .attachments .tci-bs-input-group .tci-field-value {
     width: 100%;
     background-color: var(--color-snow);
-  }
-}
-@media (min-width: 992px) {
-  #page_leaveForm .form .form-group .tci-field .dateTime .time {
-    width: 120px;
-  }
-  #page_leaveForm .form .form-group .tci-field .dateTime .date {
-    width: 150px;
   }
 }

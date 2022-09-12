@@ -31,10 +31,6 @@
 }
 
 #page_invoicePaper {
-    .flex_between{
-        display: flex;
-        justify-content: space-between;
-    }
     .invoiceTable{
         overflow-x: auto;
         .tableScroll{

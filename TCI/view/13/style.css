@@ -1,38 +1,78 @@
-#page_purchaseRequisition .purchaseTable .tci-field-label {
+.purchaseTable .tci-field-label {
   white-space: normal;
 }
-#page_purchaseRequisition .purchaseTable .reason {
+.purchaseTable .purchaseBox .reason {
+  width: 100%;
+}
+.purchaseTable .purchaseBox .reason .tci-valueBtn {
+  display: flex;
+}
+.purchaseTable .purchaseBox .tci-valueTable {
   width: 100%;
 }
 
+#page_purchaseRequisition .tableScroll table th,
+#page_purchaseRequisition .tableScroll table td {
+  padding: 3px !important;
+}
+
 @media (min-width: 768px) {
-  #page_purchaseRequisition .purchaseTable .reason {
-    width: 65%;
-  }
-  #page_purchaseRequisition .purchaseTable .reason .tci-field-value {
-    width: 100%;
-  }
-  #page_purchaseRequisition .tci-field .tci-field-label {
+  .purchaseTable .purchaseBox .tci-field .tci-field-label {
     width: 35%;
   }
-  #page_purchaseRequisition .tci-field .tci-field-value {
+  .purchaseTable .purchaseBox .tci-field .tci-field-value {
+    width: 65%;
+  }
+  .purchaseTable .purchaseBox .tci-valueTable {
     width: 65%;
   }
 }
-@media (min-width: 1200px) {
-  #page_purchaseRequisition .purchaseTable .purchaseTable_form {
+@media (min-width: 992px) {
+  .purchaseTable .purchaseBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #page_purchaseRequisition .purchaseTable .purchaseTable_form .tci-field {
+  .purchaseTable .purchaseBox .tci-field {
     width: 48%;
+    justify-content: space-between;
   }
-  #page_purchaseRequisition .purchaseTable .purchaseTable_form .tci-field .tci-field-label {
-    width: 22%;
+  .purchaseTable .purchaseBox .tci-field.w100 {
+    width: 100%;
   }
-  #page_purchaseRequisition .purchaseTable .purchaseTable_form .tci-field .tci-field-value {
-    width: 77%;
+  .purchaseTable .purchaseBox .tci-field.w100 .tci-field-label {
+    width: 17%;
+  }
+  .purchaseTable .purchaseBox .tci-field.w100 .tci-valueTable {
+    width: 83%;
+  }
+  .purchaseTable .purchaseBox .tci-field.w100 .tci-field-value {
+    width: 83%;
+  }
+  .purchaseTable .purchaseBox .tci-field.date {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .purchaseTable .purchaseBox .tci-field.date .tci-field-label {
+    width: 17%;
+  }
+  .purchaseTable .purchaseBox .tci-field.date .tci-field-value {
+    width: 31%;
+  }
+  .purchaseTable .purchaseBox .tci-field .tci-field-label {
+    width: 35%;
+  }
+  .purchaseTable .purchaseBox .tci-field .tci-field-value {
+    width: 65%;
+  }
+  .purchaseTable .purchaseBox .tci-field .tci-valueBtn {
+    width: 65%;
+  }
+  .purchaseTable .purchaseBox .tci-field.reason .tci-field-label {
+    width: 17%;
+  }
+  .purchaseTable .purchaseBox .tci-field.reason .tci-valueBtn {
+    width: 83%;
   }
 }
 #page_purchaseRequisition_signoff .tableScroll {

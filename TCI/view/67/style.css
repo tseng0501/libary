@@ -1,17 +1,20 @@
-#page_goodsIssue .goodsIssueTable {
+#page_goodsIssue .tci-bs-input-group-text,
+#page_goodsIssue .tci-bs-custom-select {
+  padding: 3px;
+}
+#page_goodsIssue .tableScroll {
   overflow-x: auto;
 }
-#page_goodsIssue .goodsIssueTable .tci-table {
-  width: 900px;
+#page_goodsIssue .tableScroll .tci-table {
+  width: 1200px;
 }
-#page_goodsIssue .goodsIssueTable .tci-table tbody th {
+#page_goodsIssue .tableScroll .tci-table th {
+  padding: 3px;
   color: var(--color-sienna);
+  vertical-align: middle;
 }
-#page_goodsIssue .goodsIssueTable .tci-table .input_part .btnGroups_company {
-  width: 100%;
-}
-#page_goodsIssue .goodsIssueTable .tci-table .input_part .btnGroups_company button {
-  width: 100%;
+#page_goodsIssue .tableScroll .tci-table td {
+  padding: 3px;
 }
 #page_goodsIssue .goodsIssueOther .total {
   padding: 5px;
@@ -23,10 +26,6 @@
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
-#page_goodsIssue .goodsIssueOther .mark {
-  margin-bottom: 0.5rem;
-  padding: 5px;
-}
 
 @media (min-width: 768px) {
   #page_goodsIssue .goodsIssueQuery {
@@ -36,9 +35,6 @@
   }
   #page_goodsIssue .goodsIssueQuery .tci-bs-input-group {
     width: 33%;
-  }
-  #page_goodsIssue .goodsIssueTable .tci-table {
-    width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -50,11 +46,8 @@
   #page_goodsIssue .goodsIssueQuery .tci-bs-input-group {
     width: 33%;
   }
-  #page_goodsIssue .goodsIssueTable .tci-table .input_part .btnGroups_company {
-    width: auto;
-  }
-  #page_goodsIssue .goodsIssueTable .tci-table .input_part .btnGroups_company button {
-    width: auto;
+  #page_goodsIssue .tableScroll .tci-table {
+    width: 100%;
   }
 }
 #page_goodsIssue_signoff .tableScroll {

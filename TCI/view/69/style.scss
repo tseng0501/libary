@@ -1,5 +1,4 @@
 #page_goodsReceipt {
-
     .goodsReceiptQuery {
         .goodsReceiptQueryTitle {
             margin-bottom: 1rem;
@@ -13,65 +12,24 @@
             }
         }
     }
-
-    .goodsReceiptContent {
-        .tci-input-group {
-            .tci-form-control {
-                &.gray {
-                    background-color: var(--color-whitesmoke);
-                }
+    .tableScroll {
+        overflow-x: auto;
+        .tci-table {
+            width: 992px;
+            .input_part {
+                width: 100%;
             }
-        }
-
-        .input_part {
-            width: 100%;
-        }
-
-        .input_classification {
-            width: 100%;
-        }
-
-        .addTable {
-            margin-bottom: .5rem;
-
-            .addTableNo {
-                text-align: center;
-                font-size: 1.25rem;
-                font-weight: bold;
-                background-color: var(--color-rosybrown);
-                color: var(--color-snow);
-                border-radius: var(--borderRadius);
-            }
-            .addTableContent{
-                padding: 5px;
-                border: 3px solid var(--color-rosybrown);
-                border-radius: var(--borderRadius);
-                .tci-form-control.gray{
-                    background-color: var(--color-whitesmoke);
-                }
+            .input_partnumber {
+                width: 100%;
             }
         }
     }
-    .goodsReceiptOther{
-        .total{
-            padding: 5px;
-            border-radius: var(--borderRadius);
-            border: 3px solid var(--color-rosybrown);
-            margin-bottom: .5rem;
-            display: flex;
-            justify-content:space-between;
-            margin-bottom: .5rem;
-            font-weight: bold;
-        }
-        .mark{
-            margin-bottom: .5rem;
-            padding: 5px;
-        }
+    .tci-bs-input-group-text {
+        padding: 3px 5px;
     }
 }
 
-
-@media (min-width:768px) {
+@media (min-width: 768px) {
     #page_goodsReceipt {
         .goodsReceiptQuery {
             display: flex;
@@ -82,65 +40,10 @@
                 width: 33%;
             }
         }
-
-        .goodsReceiptContent {
-
-            .input_part {
-                display: flex;
-
-                .tci-bs-input-group {
-                    flex-wrap: inherit;
-
-                    &.input_partnumber {
-                        width: 65%;
-                    }
-                }
-            }
-
-            .input_classification {
-                display: flex;
-                flex-wrap: wrap;
-
-                .tci-bs-input-group {
-                    width: 50%;
-                }
-            }
-
-            .addTable {
-                display: flex;
-
-                .addTableNo {
-                    font-size: 1.5rem;
-                    width: 100px;
-                    margin-right: .5rem;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                .addTableContent {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    .tci-input-group {
-                        width: 23%;
-                        margin-right: 5px;
-
-                        &.w100 {
-                            width: 100%;
-                        }
-
-                        &.w60 {
-                            width: 75%;
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     #page_goodsReceipt {
         .goodsReceiptQuery {
             display: flex;
@@ -155,37 +58,42 @@
                 }
             }
         }
-    }
-}
-
-// 簽核&列印
-#page_goodsReceipt_signoff{
-    .tableScroll{
-        overflow-x: auto;
-        .tableContent{
-            width: 900px;
-        }
-    }
-}
-#page_goodsReceipt_print{
-    .print_table{
-        overflow-x: auto;
-        .tableContent{
-            width: 900px;
-        }
-    }
-}
-@media (min-width:768px) {
-    #page_goodsReceipt_signoff{
-        .tableScroll{
-            .tableContent{
+        .tableScroll {
+            .tci-table {
                 width: 100%;
             }
         }
     }
-    #page_goodsReceipt_print{
-        .print_table{
-            .tableContent{
+}
+
+// 簽核&列印
+#page_goodsReceipt_signoff {
+    .tableScroll {
+        overflow-x: auto;
+        .tableContent {
+            width: 900px;
+        }
+    }
+}
+#page_goodsReceipt_print {
+    .print_table {
+        overflow-x: auto;
+        .tableContent {
+            width: 900px;
+        }
+    }
+}
+@media (min-width: 768px) {
+    #page_goodsReceipt_signoff {
+        .tableScroll {
+            .tableContent {
+                width: 100%;
+            }
+        }
+    }
+    #page_goodsReceipt_print {
+        .print_table {
+            .tableContent {
                 width: 100%;
             }
         }

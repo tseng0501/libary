@@ -1,28 +1,60 @@
+#page_reserveInvoice .reserveInvoiceQuery .tci-field .tci-field-label {
+  text-align: left;
+}
+#page_reserveInvoice .reserveInvoiceQuery .tci-field.type .tci-valueBtn {
+  display: flex;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   #page_reserveInvoice .reserveInvoiceQuery {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
   }
   #page_reserveInvoice .reserveInvoiceQuery .tci-field {
-    width: 58%;
+    width: 50%;
     justify-content: space-between;
   }
   #page_reserveInvoice .reserveInvoiceQuery .tci-field .tci-field-label {
-    width: 55%;
+    width: 60%;
+    text-align: right;
   }
   #page_reserveInvoice .reserveInvoiceQuery .tci-field .tci-field-value {
-    width: 45%;
+    width: 40%;
   }
   #page_reserveInvoice .reserveInvoiceQuery .tci-field.type {
-    width: 40%;
+    width: 50%;
     margin-left: 0.5rem;
     justify-content: space-between;
   }
   #page_reserveInvoice .reserveInvoiceQuery .tci-field.type .tci-field-label {
-    width: 30%;
+    width: 25%;
   }
-  #page_reserveInvoice .reserveInvoiceQuery .tci-field.type .tci-field-value {
-    width: 70%;
+  #page_reserveInvoice .reserveInvoiceQuery .tci-field.type .tci-valueBtn {
+    width: 75%;
+  }
+  #page_reserveInvoice .reserveInvoiceQuery .tci-field.type .tci-valueBtn .tci-field-value {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  #page_reserveInvoice .reserveInvoiceQuery .tci-field .tci-field-label {
+    width: 60%;
+  }
+  #page_reserveInvoice .reserveInvoiceQuery .tci-field .tci-field-value {
+    width: 40%;
+  }
+  #page_reserveInvoice .reserveInvoiceQuery .tci-field.type {
+    width: 35%;
+  }
+  #page_reserveInvoice .reserveInvoiceQuery .tci-field.type .tci-field-label {
+    width: 25%;
+  }
+  #page_reserveInvoice .reserveInvoiceQuery .tci-field.type .tci-valueBtn {
+    width: 75%;
+  }
+  #page_reserveInvoice .reserveInvoiceQuery .tci-field.type .tci-valueBtn .tci-field-value {
+    width: 100%;
   }
 }
 #page_reserveInvoice_signoff .tableScroll0 {

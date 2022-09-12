@@ -18,71 +18,48 @@
             <span class="pageHeaderTitle"><b>試嘗申請單</b></span>
         </div>
         <section>
-            <div class="tci-input-group tci-mb-2">
-                <div class="tci-input-group-prepend">
-                    <span class="tci-input-group-text">申請日期:</span>
-                </div>
-                <div class="tci-form-control">2022/8/1</div>
+            <div style="text-align: right;font-size:var(--font-size-sm)">
+                <span>申請日期：<span>2022/22/22</span></span>
             </div>
             <div class="tci-mt-2">
                 <div class="lightGrayBack">
                     <span>品項</span>
                 </div>
-                <div class="form_item">
-                    <div class="tci-input-group tci-mb-2">
-                        <div class="tci-input-group-prepend">
-                            <span class="tci-input-group-text">試製料號:</span>
-                        </div>
-                        <input type="text" class="tci-form-control" />
-                    </div>
-                    <div class="tci-input-group tci-mb-2">
-                        <div class="tci-input-group-prepend">
-                            <span class="tci-input-group-text">RD料號:</span>
-                        </div>
-                        <input type="text" class="tci-form-control" />
-                    </div>
-                    <div class="tci-input-group tci-mb-2">
-                        <div class="tci-input-group-prepend">
-                            <span class="tci-input-group-text">試製專案號:</span>
-                        </div>
-                        <input type="text" class="tci-form-control" />
-                    </div>
-                    <div class="tci-input-group tci-mb-2">
-                        <div class="tci-input-group-prepend">
-                            <span class="tci-input-group-text">需求數量:</span>
-                        </div>
-                        <input type="text" class="tci-form-control" />
-                    </div>
-                    <div class="tci-input-group tci-mb-2">
-                        <div class="tci-input-group-prepend">
-                            <span class="tci-input-group-text">單位:</span>
-                        </div>
-                        <input type="text" class="tci-form-control" />
-                    </div>
-                    <div class="tci-input-group tci-mb-2">
-                        <div class="tci-input-group-prepend">
-                            <span class="tci-input-group-text">需求日期:</span>
-                        </div>
-                        <input type="text" class="tci-form-control" />
-                    </div>
-                    <div class="tci-input-group tci-mb-2">
-                        <div class="tci-input-group-prepend">
-                            <span class="tci-input-group-text">品名:</span>
-                        </div>
-                        <input type="text" class="tci-form-control" disabled />
-                    </div>
-                    <div class="tci-input-group tci-mb-2">
-                        <div class="tci-input-group-prepend">
-                            <span class="tci-input-group-text">品名:</span>
-                        </div>
-                        <input type="text" class="tci-form-control" disabled />
-                    </div>
-                    <div class="tci-input-group tci-mb-2">
-                        <div class="tci-input-group-prepend">
-                            <span class="tci-input-group-text">專案名:</span>
-                        </div>
-                        <input type="text" class="tci-form-control" disabled />
-                    </div>
+                <div class="tableSrcoll" style="overflow-x: auto;">
+                    <table class="tci-table tci-table-bordered" style="min-width: 730px;">
+                        <tbody>
+                            <tr>
+                                <th style="background-color: var(--color-light-gray);">試製料號</th>
+                                <td><input type="text" class="tci-form-control" value="30001356"/></td>
+                                <th style="background-color: var(--color-light-gray);">品名</th>
+                                <td><input type="text" class="tci-form-control gray" /></td>
+
+                            </tr>
+                            <tr>
+                                <th style="background-color: var(--color-light-gray);">RD料號</th>
+                                <td><input type="text" class="tci-form-control" value="30001356"/></td>
+                                <th style="background-color: var(--color-light-gray);">品名</th>
+                                <td><input type="text" class="tci-form-control gray"/></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color: var(--color-light-gray);">試製專案號</th>
+                                <td><input type="text" class="tci-form-control" value="880400901"/></td>
+                                <th style="background-color: var(--color-light-gray);">專案名</th>
+                                <td><input type="text" class="tci-form-control gray" /></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color: var(--color-light-gray);">需求數量</th>
+                                <td><input type="text" class="tci-form-control"  style="width: 200px;"/></td>
+                                <th style="background-color: var(--color-light-gray);">單位</th>
+                                <td><input type="text" class="tci-form-control"  style="width: 200px;"/></td>
+                            </tr>
+                            <tr>
+                                <th style="background-color: var(--color-light-gray);">需求日期</th>
+                                <td colspan="3"><input type="text" class="tci-form-control" style="width: 200px;" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  
                 </div>
             </div>
             <hr>
@@ -116,7 +93,7 @@
             </div>
             <div class="tci-input-group tci-mb-2">
                 <div class="tci-input-group-prepend">
-                    <span class="tci-input-group-text">試製品處理方式:</span>
+                    <span class="tci-input-group-text">是否需做效性測試:</span>
                 </div>
                 <div style="width: 100%;margin-bottom: .5rem;">
                     <div class="tci-form-check tci-form-check-inline">

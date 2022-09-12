@@ -14,17 +14,17 @@
             width: 1200px;
         }
     }
-    .up{
+    .up {
         cursor: pointer;
         color: var(--color-whitesmoke);
-        :hover{
+        :hover {
             color: var(--color-dark);
         }
     }
-    .down{
+    .down {
         cursor: pointer;
         color: var(--color-whitesmoke);
-        :hover{
+        :hover {
             color: var(--color-dark);
         }
     }
@@ -46,18 +46,21 @@
             justify-content: space-between;
 
             .tci-field {
-                width: 45%;
+                width: 49%;
 
                 .tci-field-label {
-                    width: 35%;
+                    width: 32%;
                 }
 
                 .tci-field-value {
-                    width: 65%;
+                    width: 68%;
                 }
 
                 .tci-valueBtn {
-                    width: 65%;
+                    width: 68%;
+                }
+                .dropdown {
+                    width: 68%;
                 }
             }
         }
@@ -74,239 +77,29 @@
             }
         }
     }
-
-}
-
-#page_dataFlow {
-    .cardContent {
-        display: flex;
-        flex-wrap: wrap;
-
-        // width: 992px;
-        .block {
-            display: flex;
-        }
-
-        .tci-card {
-            min-width: 162px;
-            margin-bottom: 30px;
-            margin-right: 5px;
-            width: 162px;
-
-            .tci-card-body {
-                margin: auto;
-                flex: inherit;
-
-                .tci-card-title {
-                    font-weight: bold;
-                    font-size: var(--font-size-md);
-                }
-
-                button {
-                    padding: 3px 5px;
-                }
-            }
-        }
-
-        .circleWidth {
-            width: 162px;
-
-            .tci-cardradius {
-                border: #2a2a2a 1px solid;
-                min-width: 165px;
-                // min-height: 140px;
-                border-radius: 40rem;
-                position: relative;
-                height: 160px;
-
-                .circleName {
-                    bottom: 0;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    align-items: center;
-                    display: flex;
-                    justify-content: center;
-                    font-size: var(--font-size-md);
-                    font-weight: bold;
-                }
-            }
-        }
-
-    }
-
-}
-
-@media (min-width: 768px) {
-    #page_dataFlow {
-        .cardContent {
-            .tci-card {
-                // min-width: 200px;
-                width: 200px;
-            }
-
-            .circleWidth {
-                width: 200px;
-
-                .tci-cardradius {
-                    width: 165px;
-                    margin: auto;
-                }
-            }
-        }
-    }
-}
-
-#page_dataFlow2 {
-    .cardContent {
-        position: relative;
-
-        .tci-card {
-            position: absolute;
-            min-height: 100px;
-            width: 200px;
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    #page_dataFlow {
-        .cardContent {
-            width: 1200px;
-            margin: auto;
-        }
-    }
 }
 
 ////
 .container {
     width: 1170px;
 }
-
-#page_steps {
-    font-size: 14px;
-
-    .steps {
-        margin-top: 2rem;
-        text-align: center;
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 5px;
-
-        // justify-content: center;
-        li {
-            float: left;
-            flex: inherit;
-            position: relative;
-            margin-bottom: 10rem;
-            width: 100%;
-
-            &.more {
-                margin-bottom: 29rem;
-            }
-        }
-    }
-
-    .step-num {
-        display: inline-block;
-        height: 30px;
-        width: 30px;
-        color: var(--color-snow);
-        background-color: #b9b9b9;
-        line-height: 30px;
-        border-radius: 50%;
-        text-align: center;
-        // border: 2px solid rgba(224, 224, 224, 1);
-    }
-
-    .step_active .step-num {
-        background-color: #fff100; //#f3862d;
-    }
-
-    .step_pass .step-num {
-        background-color: #2ad613;
-    }
-
-    .step-sub {
-        width: 100%;
-        position: absolute;
-    }
-
-    ///
-    .step_card {
-        line-height: 2;
-        background-color: var(--color-light-gray);
-        border-radius: var(--borderRadius);
-        padding: 5px;
-        box-shadow: var(--borderShadow);
-        margin: 1rem auto;
-        width: 90%;
-
-        .step_card_title {
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .line_one {
-            height: 5px;
-            background-color: var(--color-dark-green);
-        }
-
-        .line_two {
-            height: 5px;
-            background-color: var(--color-light-red);
-        }
-    }
-
-    .greenTag {
-        font-size: var(--font-size-xs);
-        background-color: var(--color-dark-khaki);
-        color: var(--color-snow);
-        border-radius: var(--borderRadius);
-        padding: 0 5px;
-    }
-
-    .borderbox {
-        // border: 2px #2a2a2a solid;
-        padding: 2rem 0;
-        border-radius: var(--borderRadius);
-        flex-basis: min-content;
-    }
-
-    .boxIcon {
-        height: 100%;
-        margin: auto 0;
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 768px) {
-    #page_steps {
-        .steps li {
-            width: 195px; //280
-        }
-    }
-}
 /* 当屏幕为竖屏时应用的样式 */
-@media screen and  (orientation:  portrait){
+@media screen and (orientation: portrait) {
     /*要横屏显示的内容的外层盒子*/
     #page_test3 {
         /* 设置基准点为左上角 */
-        transform-origin:top left;
+        transform-origin: top left;
         /* 以左上角为基准点，顺时针旋转90度 然后沿Y轴反方向平移100% */
         /* 为什么沿Y轴，因为旋转使坐标轴方向发生了变化 */
         transform: rotate(90deg) translateY(-100%);
         /*设置元素的宽度为 100%父元素的高度 并提高样式优先级 */
         width: 100vh !important;
-         /*设置元素的宽度为 100%父元素的宽度  并提高样式优先级 */
-        height: 100vw !important; 
+        /*设置元素的宽度为 100%父元素的宽度  并提高样式优先级 */
+        height: 100vw !important;
     }
 }
 
 //page_test3
-
 #page_test3 {
     .content {
         overflow-x: auto;
@@ -404,8 +197,6 @@
         background-color: #2ad613;
     }
 
-
-
     .modal-dialog {
         width: 95%;
 
@@ -416,7 +207,7 @@
         .modal_arrow {
             background-color: var(--color-dark-blue);
             color: #fff;
-            margin: auto .5rem;
+            margin: auto 0.5rem;
             padding: 2rem 1rem;
             border-radius: var(--borderRadius);
         }
@@ -435,19 +226,11 @@
 
                 .box {
                     margin: auto;
-
                 }
             }
 
             .box {
                 position: relative;
-
-                &.end {
-                    // border: 2px solid #2a2a2a;
-                    // padding: 5px;
-
-                }
-
                 .end {
                     bottom: -10px;
                     position: absolute;
@@ -491,15 +274,52 @@
             }
         }
     }
-
 }
 
 @media (min-width: 992px) {
     #page_test3 {
         .content {
-
             .cardContent {
                 width: 100%;
+            }
+        }
+    }
+}
+
+#page_dataflow2 {
+    .tableScroll {
+        overflow-x: auto;
+        .tci-table {
+            min-width: 1400px;
+            thead {
+                opacity: 0.7;
+                box-shadow: 3px 3px 3px 0 rgb(0 0 0 / 20%);
+            }
+            th,
+            td {
+                border: 1px solid #dee2e6;
+            }
+            .project {
+                min-width: 110px;
+                border: none;
+            }
+            .title {
+                writing-mode: vertical-rl;
+                vertical-align: inherit;
+                border-top: none;
+                border-bottom: none;
+            }
+            .block {
+                margin-top: 6rem;
+            }
+            .box {
+                background-color: var(--color-dark-green);
+                padding: 1px;
+            }
+            i {
+                &::after {
+                    content: "";
+                }
             }
         }
     }

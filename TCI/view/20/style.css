@@ -170,17 +170,17 @@
   overflow-x: auto;
 }
 #page_advancedBilling_signoff .tableScroll .tableContent {
-  width: 992px;
+  width: 768px;
 }
 
 #page_advancedBilling_print .print_table {
   overflow-x: auto;
 }
 #page_advancedBilling_print .print_table .tableContent {
-  width: 992px;
+  width: 768px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #page_advancedBilling_signoff .tableScroll .tableContent {
     width: 100%;
   }

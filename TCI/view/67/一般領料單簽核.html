@@ -187,7 +187,7 @@
                                     style="text-align: center;font-size:var(--font-size-xl);font-weight: bold;margin-bottom: 1rem;">
                                     <span>大江生醫股份有限公司 一般領料單資料</span>
                                 </div>
-                                <table class="tci-table tci-table-bordered" style="margin-bottom: 0;">
+                                <table class="tci-table tci-table-bordered">
                                     <tbody>
                                         <tr>
                                             <th style="background-color: var(--color-light-gray);">電子簽核編號</th>
@@ -209,7 +209,7 @@
                             <div class="tableContent">
                                 <table class="tci-table tci-table-bordered">
                                     <tbody>
-                                        <tr style="background-color: var(--color-light-gray);">
+                                        <tr style="background-color: var(--color-light-gray);text-align: center;">
                                             <th>NO</th>
                                             <th>料號</th>
                                             <th>品名</th>
@@ -224,15 +224,15 @@
                                             <th>SAP專案號</th>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
+                                            <td style="text-align: center;">1</td>
                                             <td>30000848
                                                 <button type="button" title="MRP供需狀況"
                                                     style="border-radius:5px;background-color:lightblue;color:blue;cursor: pointer;">MRP?</button>
                                             </td>
                                             <td>丹鳳牡丹萃取液(C)(創)_E</td>
                                             <td>20210916</td>
-                                            <td></td>
-                                            <td>g</td>
+                                            <td style="text-align: center;"></td>
+                                            <td style="text-align: center;">g</td>
                                             <td>100</td>
                                             <td>磐石保養品原料倉-低溫(WBM2)</td>
                                             <td>500.0000</td>
@@ -245,7 +245,7 @@
                                         <tr id="MD04TableBItem_1">
                                             <td colspan="12">
                                                 <table class="tci-table tci-table-bordered">
-                                                    <thead style="background-color: var(--color-light-gray);">
+                                                    <thead style="background-color: var(--color-light-gray);text-align: center;">
                                                         <tr>
                                                             <th>日期</th>
                                                             <th>MRP元素</th>
@@ -262,8 +262,8 @@
                                                             <th>業務員資訊</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody style="text-align: center;">
-                                                        <tr>
+                                                    <tbody>
+                                                        <tr style="text-align: center;">
                                                             <td>2022/08/16</td>
                                                             <td>庫存</td>
                                                             <td>2022/08/16</td>
@@ -289,9 +289,11 @@
                                             <th>163</th>
                                         </tr>
                                         <tr>
-                                            <th colspan="12" class="small_mark"
-                                                style="font-size: var(--font-size-xs);padding: 0 10px;">收料備註:
-                                            </th>
+                                            <td colspan="12" style="font-size: var(--font-size-xs);">
+                                                <span><b>收料備註:</b><br/>
+                                                    客訴，留樣確認
+                                                </span>
+                                            </td>
                                         </tr>
                                     </tfoot>
                                 </table>

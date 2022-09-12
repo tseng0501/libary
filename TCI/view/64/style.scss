@@ -1,35 +1,81 @@
-@media (min-width:768px) {
+#page_reserveInvoice {
+    .reserveInvoiceQuery {
+        .tci-field {
+            .tci-field-label {
+                text-align: left;
+            }
+            &.type {
+                .tci-valueBtn {
+                    display: flex;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
     #page_reserveInvoice {
         .reserveInvoiceQuery {
             display: flex;
-            justify-content: space-between;
+            justify-content: end;
             .tci-field {
-                width: 58%;
+                width: 50%;
                 justify-content: space-between;
                 .tci-field-label {
-                    width: 55%;
+                    width: 60%;
+                    text-align: right;
                 }
 
                 .tci-field-value {
-                    width: 45%;
+                    width: 40%;
                 }
 
                 &.type {
-                    width: 40%;
-                    margin-left: .5rem;
+                    width: 50%;
+                    margin-left: 0.5rem;
                     justify-content: space-between;
                     .tci-field-label {
-                        width: 30%;
+                        width: 25%;
                     }
-                    .tci-field-value{
-                        width: 70%;
+                    .tci-valueBtn {
+                        width: 75%;
+                        .tci-field-value{
+                            width: 100%;
+                        }
                     }
                 }
             }
         }
     }
 }
+@media (min-width: 992px) {
+    #page_reserveInvoice {
+        .reserveInvoiceQuery {
+            .tci-field {
+                .tci-field-label {
+                    width: 60%;
+                }
 
+                .tci-field-value {
+                    width: 40%;
+                }
+
+                &.type {
+                    width: 35%;
+                    .tci-field-label {
+                        width: 25%;
+                    }
+                    .tci-valueBtn {
+                        width: 75%;
+                        .tci-field-value{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 //簽核 列印
 #page_reserveInvoice_signoff {
@@ -41,15 +87,15 @@
         }
     }
 }
-#page_reserveInvoice_print{
-    .print_table{
+#page_reserveInvoice_print {
+    .print_table {
         overflow-x: auto;
-        .tableContent{
+        .tableContent {
             width: 900px;
         }
     }
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
     #page_reserveInvoice_signoff {
         .tableScroll0 {
             .tableContent {
@@ -57,11 +103,10 @@
             }
         }
     }
-    #page_reserveInvoice_print{
-        .print_table{
-            .tableContent{
+    #page_reserveInvoice_print {
+        .print_table {
+            .tableContent {
                 width: 100%;
-
             }
         }
     }

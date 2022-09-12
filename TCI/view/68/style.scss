@@ -1,31 +1,118 @@
 #page_changeRequest {
+    .input-group {
+        .input-group-text {
+            font-size: var(--font-size-sm);
+            padding: 0.25rem 0.3rem;
+        }
+        select,
+        input,
+        button {
+            font-size: var(--font-size-sm);
+            padding: 0.25rem 0.3rem;
+        }
+        .form-control {
+            font-size: var(--font-size-sm);
+            padding: 0.25rem 0.3rem;
+        }
+    }
     .changeRequestQuery {
-        .tci-input-group {
-            &.bom {
-                button {
+        .tci-field {
+            justify-content: space-between;
+            .tci-field-label {
+                text-align: left;
+            }
+            .tci-valueBtn {
+                display: flex;
+                width: 100%;
+                input {
                     width: 100%;
-                    margin-top: .5rem;
                 }
             }
+        }
+    }
+    .query {
+        .tci-field {
+            .valuebox {
+                width: 100%;
+            }
+        }
+    }
+    .big_title {
+        font-weight: bold;
+        font-size: var(--font-size-lg);
+        background-color: var(--color-light-warning);
+        padding: 1rem;
+    }
+    //icon
+    .rotate_icon {
+        i {
+            transform: rotate(90deg);
         }
     }
 }
 
 @media (min-width: 768px) {
     #page_changeRequest {
+        
         .changeRequestQuery {
-            .tci-input-group {
-                &.bom {
-                    button {
-                        width: auto;
-                        margin-top: 0;
+            .tci-field {
+                .tci-field-label {
+                    width: 100%;
+                }
+            }
+        }
+        .query {
+            .tci-field {
+                .tci-field-label {
+                    width: 20%;
+                }
+                .tci-field-value {
+                    width: 80%;
+                }
+                .valuebox {
+                    width: 80%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .input-group {
+                        width: 49%;
                     }
+                }
+            }
+        }
+        .big_title {
+            font-weight: bold;
+            font-size: var(--font-size-lg);
+            background-color: var(--color-light-warning);
+            padding: 1rem;
+            display: flex;
+            .title_name {
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    #page_changeRequest {
+        //icon
+        .rotate_icon {
+            i {
+                transform: rotate(0deg);
+            }
+        }
+        .changeRequestQuery {
+            .tci-field {
+                .tci-field-label {
+                    width: 54%;
+                    text-align: right;
+                }
+                .tci-valueBtn {
+                    width: 45%;
                 }
             }
         }
     }
 }
-
 // 簽核，列印
 #page_changeRequest_signoff {
     .tableScroll {

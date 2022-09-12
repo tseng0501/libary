@@ -17,172 +17,195 @@
         <div class="pageHeader">
             <span class="pageHeaderTitle"><b>專用原物料特採申請單-訂單特採</b></span>
         </div>
-        <div class="darkBorderCard">
-            <div class="darkBorderCardTitle">
-                <span>專用原物料特採申請單</span>
-            </div>
-            <div class="darkBorderCardContent purchaseTable">
-                <div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">特採類別:</span>
+        <div class="purchaseTable">
+            <div class="purchaseBox">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">特採類別:</span>
+                    </div>
+                    <div class="tci-valueBtn">
+                        <div class="form-check tci-form-check-inline">
+                            <input class="form-check-input" type="radio" name="orderRadios" id="orderRadios1"
+                                value="option1">
+                            <label class="form-check-label" for="orderRadios1">
+                                訂單特採
+                            </label>
                         </div>
-                        <div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="orderRadios" id="orderRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="orderRadios1">
-                                    訂單特採
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="orderRadios" id="orderRadios2"
-                                    value="option2">
-                                <label class="form-check-label" for="orderRadios2">
-                                    非訂單特採 (非業務單位使用)
-                                </label>
-                            </div>
+                        <div class="form-check tci-form-check-inline">
+                            <input class="form-check-input" type="radio" name="orderRadios" id="orderRadios2"
+                                value="option2" checked>
+                            <label class="form-check-label" for="orderRadios2">
+                                非訂單特採 (非業務單位使用)
+                            </label>
                         </div>
                     </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">申請單號:</span>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">申請單號:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">項目:</span>
+                    </div>
+                    <div class="tci-valueBtn">
+                        <div class="form-check tci-form-check-inline">
+                            <input class="form-check-input" type="radio" name="itemRadios" id="itemRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="itemRadios1">
+                                原料
+                            </label>
                         </div>
+                        <div class="form-check tci-form-check-inline">
+                            <input class="form-check-input" type="radio" name="itemRadios" id="itemRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="itemRadios2">
+                                包材
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">申請日期:</span>
+                    </div>
+                    <div class="tci-field-value">2022/7/29</div>
+                </div>
+                <div class="tci-field date">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">預計交貨日期:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                    <span style="margin: auto 5px;">(請再往前回推7個工作天)</span>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">申請部門:</span>
+                    </div>
+                    <div class="tci-field-value">
+                        <button class="tci-btn bg_darkblue" style="padding: 0 .5rem;">更改</button>
+                        <div style="margin: auto .5rem;">軟體研發組</div>
+                    </div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">指定採購部經辦:</span>
+                    </div>
+                    <select class="tci-field-value">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="tci-field w100">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">預估明細編號:</span>
+                    </div>
+                    <div class="tci-valueTable">
                         <input type="text" class="tci-field-value" />
-                    </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">項目:</span>
-                        </div>
                         <div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="itemRadios" id="itemRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="itemRadios1">
-                                    原料
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="itemRadios" id="itemRadios2"
-                                    value="option2">
-                                <label class="form-check-label" for="itemRadios2">
-                                    包材
-                                </label>
-                            </div>
+                            <table class="tci-table tci-table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th>負責業務</th>
+                                        <td colspan="3">Region EU-BD RU-M67-邰莉雅-DARIA.ZHURAVLEVA</td>
+                                    </tr>
+                                    <tr>
+                                        <th>產品名稱</th>
+                                        <td>KURS-CollagenAnti-AgingSerum-30ml/瓶/盒</td>
+                                        <th>訂單年月</th>
+                                        <td>2021/08/31</td>
+                                    </tr>
+                                    <tr>
+                                        <th>瓶顆包數量</th>
+                                        <td>10,000</td>
+                                        <th>台幣金額</th>
+                                        <td>550,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">申請日期:</span>
-                        </div>
-                        <div class="tci-field-value">2022/7/29</div>
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">客戶編號:</span>
                     </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">預計交貨日期<br/>(請再往前回推7個工作天):</span>
-                        </div>
-                        <input type="text" class="tci-field-value" />
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">客戶名稱:</span>
                     </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">申請部門:</span>
-                        </div>
-                        <div class="tci-field-value">
-                            <button class="tci-btn bg_darkblue" style="padding: 0 .5rem;">更改</button>
-                            <div style="margin: auto .5rem;">軟體研發組</div>
-                        </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">內部訂單號(專案編號):</span>
                     </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">指定採購部經辦:</span>
-                        </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">專案名稱:</span>
+                    </div>
+                    <input type="text" class="tci-field-value gray" disabled />
+                </div>
+                <div class="tci-field w100 reason">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">申請原因:</span>
+                    </div>
+                    <div class="tci-valueBtn">
                         <select class="tci-field-value">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option selected>請選擇...</option>
+                            <option value="1">訂單已回簽，BOM表未確認</option>
+                            <option value="2">其他</option>
                         </select>
-                    </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">預估明細編號:</span>
-                        </div>
-                        <input type="text" class="tci-field-value" />
-                    </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">客戶編號:</span>
-                        </div>
-                        <input type="text" class="tci-field-value" />
-                    </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">客戶名稱:</span>
-                        </div>
-                        <input type="text" class="tci-field-value" />
-                    </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">內部訂單號(專案編號):</span>
-                        </div>
-                        <input type="text" class="tci-field-value" />
-                    </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">專案名稱:</span>
-                        </div>
+                        <span style="white-space:nowrap;margin:auto 1rem;">訂單號碼<b style="color: var(--color-light-red);">*</b></span>
                         <input type="text" class="tci-field-value gray" disabled />
                     </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">申請原因:</span>
-                        </div>
-                        <div class="reason">
-                            <select class="tci-field-value">
-                                <option selected>請選擇...</option>
-                                <option value="1">訂單已回簽，BOM表未確認</option>
-                                <option value="2">其他</option>
-                            </select>
-                            <div class="tci-field" style="flex-wrap:wrap">
-                                <div class="tci-field-label">
-                                    <span class="tci-field-text text-left" style="width: 100%;"><b
-                                            style="color: red;">*</b>訂單號碼:</span>
-                                </div>
-                                <input type="text" class="tci-field-value" style="width: 100%;" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">工廠別:</span>
-                        </div>
-                        <input type="text" class="tci-field-value" />
-                    </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">輸入料號:</span>
-                        </div>
-                        <input type="text" class="tci-field-value" />
-                    </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">產品名稱:</span>
-                        </div>
-                        <input type="text" class="tci-field-value gray" disabled />
-                    </div>
-                    <div class="tci-field">
-                        <div class="tci-field-label">
-                            <span class="tci-field-text text-left">訂單數量:</span>
-                        </div>
-                        <div class="tci-field-value" style="justify-content: space-between;">
-                            <div style="margin: auto .5rem;">軟體研發組</div>
-                            <button class="tci-btn bg_darkblue" style="padding: 0 1rem;">顯示資料</button>
-                        </div>
-                    </div>
                 </div>
-                <div class="btnGroups">
-                    <button class="tci-btn bg_lightgray">全部清除</button>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">採購類別:</span>
+                    </div>
+                    <select class="tci-field-value">
+                        <option selected>請選擇...</option>
+                        <option value="1">訂購確認單</option>
+                        <option value="2">研發打樣</option>
+                    </select>
                 </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">工廠別:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">輸入料號:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">產品名稱:</span>
+                    </div>
+                    <input type="text" class="tci-field-value gray" disabled />
+                </div>
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text text-left">訂單數量:</span>
+                    </div>
+                    <input type="text" class="tci-field-value" />
+                </div>
+            </div>
+            <div class="btnGroups">
+                <button class="tci-btn bg_darkblue">顯示資料</button>
+                <button class="tci-btn bg_lightgray">全部清除</button>
             </div>
         </div>
         <div class="userCard_info">

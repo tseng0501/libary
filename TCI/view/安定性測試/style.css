@@ -1,0 +1,41 @@
+#page_stabilityTest .star {
+  color: var(--color-light-red);
+}
+#page_stabilityTest .form-control {
+  font-size: var(--font-size-sm);
+}
+#page_stabilityTest .form-control:disabled {
+  background-color: #eeeeee;
+}
+#page_stabilityTest .input-group .input-group-text {
+  font-size: var(--font-size-sm);
+  background-color: #eeeeee;
+}
+#page_stabilityTest .well {
+  min-height: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  box-shadow: var(--borderShadow);
+}
+
+@media (min-width: 768px) {
+  .well .groups {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .well .groups .input-group {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .well .groups {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .well .groups .input-group {
+    width: 33%;
+  }
+}

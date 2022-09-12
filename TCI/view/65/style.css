@@ -11,49 +11,8 @@
   width: 100%;
   margin-bottom: 0.5rem;
 }
-#page_generalInvoice .addTableBox {
-  border: 1px solid var(--color-rosybrown);
-  border-radius: var(--borderRadius);
-  margin-top: 0.5rem;
-}
-#page_generalInvoice .addTableBox .addTable {
-  display: flex;
-  margin: 5px;
-}
-#page_generalInvoice .addTableBox .addTable .addTableNo {
-  width: 50px;
-  background-color: var(--color-rosybrown);
-  margin-right: 0.5rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-#page_generalInvoice .addTableBox .addTable .addTableNo span {
-  width: 100%;
-  font-weight: bold;
-  color: var(--color-snow);
-}
-#page_generalInvoice .addTableBox .addTable .addTableContent {
-  padding: 5px;
-  border: 3px solid var(--color-rosybrown);
-  border-radius: var(--borderRadius);
-}
-#page_generalInvoice .addTableBox .addTableFooter {
-  border: 3px solid var(--color-rosybrown);
-  border-radius: var(--borderRadius);
-  margin: 5px;
-  text-align: right;
-  padding: 5px;
-}
-#page_generalInvoice .addTableBox .addTableFooter .addTableFooterTitle {
-  margin-right: 100px;
-  font-weight: bold;
-  color: var(--color-rosybrown);
-}
-#page_generalInvoice .addTableBox .addTableFooter .addTableFooterText,
-#page_generalInvoice .addTableBox .addTableFooter .addTableFooterTitle {
-  font-weight: bold;
-  color: var(--color-dark-red);
+#page_generalInvoice .tableScroll table th, #page_generalInvoice .tableScroll table td {
+  padding: 3px !important;
 }
 
 @media (min-width: 768px) {
@@ -71,24 +30,6 @@
   }
   #page_generalInvoice .invoiceContent .invoiceForm .tci-input-group.mark {
     width: 100%;
-  }
-  #page_generalInvoice .addTableBox .addTable .addTableNo {
-    width: 100px;
-  }
-  #page_generalInvoice .addTableBox .addTable .addTableContent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  #page_generalInvoice .addTableBox .addTable .addTableContent .tci-input-group {
-    width: 31%;
-    margin-right: 5px;
-  }
-  #page_generalInvoice .addTableBox .addTable .addTableContent .tci-input-group.type {
-    width: 60%;
-  }
-  #page_generalInvoice .addTableBox .addTable .addTableContent .tci-input-group.type .tci-input-group-text {
-    margin: 0 5px;
   }
   #page_generalInvoice .orderTableBox .orderTable {
     display: flex;
@@ -118,18 +59,6 @@
   #page_generalInvoice .invoiceContent .invoiceForm .tci-input-group.data_short {
     width: 15%;
   }
-  #page_generalInvoice .addTableBox .addTable .addTableNo {
-    width: 60px;
-  }
-  #page_generalInvoice .addTableBox .addTable .addTableContent .tci-input-group {
-    width: 16%;
-  }
-  #page_generalInvoice .addTableBox .addTable .addTableContent .tci-input-group.type {
-    width: 40%;
-  }
-  #page_generalInvoice .addTableBox .addTable .addTableContent .tci-input-group.type .tci-input-group-text {
-    margin: 0 5px;
-  }
   #page_generalInvoice .orderTableBox .orderTable .tci-input-group {
     width: 24%;
     margin-right: 10px;
@@ -153,5 +82,29 @@
   }
   #page_generalInvoice_signoff .tableScroll .content .tci-input-group {
     width: 48%;
+  }
+  #page_generalInvoice_signoff .completeInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+  }
+  #page_generalInvoice_signoff .completeInfo .tci-field {
+    width: 47%;
+  }
+  #page_generalInvoice_signoff .completeInfo .tci-field .tci-valueBtn {
+    display: flex;
+    width: 70%;
+  }
+  #page_generalInvoice_signoff .condensedInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+  }
+  #page_generalInvoice_signoff .condensedInfo .tci-field {
+    width: 46%;
   }
 }
