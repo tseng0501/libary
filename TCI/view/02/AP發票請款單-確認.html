@@ -9,42 +9,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="../../scss/tci-all.css">
     <link rel="stylesheet" href="./style.css">
-    <title>AP定金請求單</title>
+    <title>A/P發票請款單-確認</title>
 </head>
 
 <body>
-    <div class="container-fluid" id="page_depositForm">
+    <div class="container-fluid" id="page_invoicePaper02">
         <div class="pageHeader">
-            <span class="pageHeaderTitle"><b>AP定金請求單</b></span>
+            <span class="pageHeaderTitle"><b>A/P發票請款單-確認</b></span>
         </div>
         <div style="text-align: right;font-size: var(--font-size-sm);margin-bottom: 1rem;">
             <span
-                style="background-color: var(--color-alge);color: var(--color-snow);padding: 5px;border-radius: var(--borderRadius);">公司別：<b>大江生活</b></span>
+                style="font-size: var(--font-size-xs);background-color: var(--color-alge);color: var(--color-snow);padding: 2px;border-radius: var(--borderRadius);">公司別：<b>大江生活</b></span>
         </div>
-        <section class="query">
-            <div class="tci-field">
-                <div class="tci-field-label">
-                    <span class="tci-field-text text-left">單據別:</span>
-                </div>
-                <select class="tci-field-value">
-                    <option selected>A/P訂單請求</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-            <div class="tci-field long">
-                <div class="tci-field-label">
-                    <span class="tci-field-text text-left">文件編號:</span>
-                </div>
-                <div class="tci-valueBtn" style="display: flex;">
-                    <input type="text" class="tci-field-value" />
-                    <button class="tci-btn bg_lightgray tci-ml-1">查詢</button>
-                </div>
-            </div>
-        </section>
-        <hr>
         <section class="well">
+
             <div class="form">
                 <div class="left">
                     <div class="input-group mb-3">
@@ -72,50 +50,70 @@
                         style="font-size: var(--font-size-sm);">
                 </div>
             </div>
-            <div style="overflow-x: auto;">
-                <div style="min-width: 730px;">
-                    <div class="dataForm">
-                        <div style="display: flex;justify-content: space-between;font-size: var(--font-size-sm);">
-                            <span><b>廠商名稱：</b><span>汽車險^1789-YA</span></span>
-                            <span style="min-width:200px"><b>文件日期：</b><span>2009/12/31</span></span>
+            <section class="tableScorll" style="overflow-x: auto;margin-top: 1rem;">
+                <div style="min-width: 940px;">
+                    <div style="font-size: 13px;">
+                        <div style="display: flex;justify-content: space-between;">
+                            <span><b>廠商名稱：</b>美奐有限公司</span>
+                            <span style="width: 200px;"><b>文件日期：</b>2016/11/30</span>
                         </div>
-                        <div style="display: flex;justify-content: space-between;font-size: var(--font-size-sm);">
-                            <span><b>專案名稱：</b><span></span></span>
-                            <span style="min-width:200px"><b>文件號碼：</b><span>111</span></span>
+                        <div style="display: flex;justify-content: space-between;">
+                            <span><b>專案名稱：</b>美奐有限公司</span>
+                            <span style="width: 200px;"><b>文件號碼：</b> 878</span>
                         </div>
                     </div>
-                    <table class="tci-table tci-table-bordered">
+                    <table class="tci-table-bordered" style="padding: 3px;width:100%;font-size: 13px;margin-bottom: 1rem;">
                         <thead>
                             <tr style="text-align: center;background-color:var(--color-light-gray);">
-                                <th>NO</th>
+                                <th style="width: 20px;">NO</th>
                                 <th>項目號碼</th>
+                                <th>專案代號</th>
                                 <th>品名/規格</th>
                                 <th>倉庫</th>
                                 <th>數量</th>
                                 <th>單位</th>
                                 <th>單價</th>
                                 <th>小計</th>
+                                <th>採購單價/數量</th>
                                 <th>備註</th>
+                                <th>檢驗</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td style="text-align: center;">1</td>
-                                <td style="text-align: center;">會計科目114100</td>
-                                <td style="text-align: center;">預付費用</td>
-                                <td style="text-align: center;">預付費用</td>
-                                <td style="text-align: right;">1</td>
+                                <td style="text-align: center;">D35ZZ0021</td>
+                                <td style="text-align: center;">1222</td>
+                                <td>Home Dr.-黃精馬卡帝王錠(550mg/顆，3顆/包，15包/盒)-外盒</td>
+                                <td style="text-align: center;">S9</td>
+                                <td style="text-align: center;">5,250.00 </td>
                                 <td style="text-align: center;">kg</td>
-                                <td style="text-align: right;">NTD 6,707.0000</td>
-                                <td style="text-align: right;">NTD 6,707</td>
-                                <td></td>
+                                <td style="text-align: center;">NTD 15.5000</td>
+                                <td style="text-align: center;">NTD 79,825</td>
+                                <td style="text-align: center;">NTD 15.5000 / 5,150.00(差異:0.00%) </td>
+                                <td style="text-align: center;">S9</td>
+                                <td style="text-align: center;">免驗</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">1</td>
+                                <td style="text-align: center;">D35ZZ0021</td>
+                                <td style="text-align: center;">1222</td>
+                                <td>Home Dr.-黃精馬卡帝王錠(550mg/顆，3顆/包，15包/盒)-外盒</td>
+                                <td style="text-align: center;">S9</td>
+                                <td style="text-align: center;">5,250.00 </td>
+                                <td style="text-align: center;">kg</td>
+                                <td style="text-align: center;">NTD 15.5000</td>
+                                <td style="text-align: center;">NTD 79,825</td>
+                                <td style="text-align: center;">NTD 15.5000 / 5,150.00(差異:0.00%) </td>
+                                <td style="text-align: center;">S9</td>
+                                <td style="text-align: center;">免驗</td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td rowspan="2"></td>
-                                <td colspan="2">
-                                    <table style="width:100%;">
+                                <td></td>
+                                <td colspan="3" valign="top">
+                                    <table style="padding: 3px;width:100%;font-size: var(--font-size-xs);">
                                         <tbody>
                                             <tr>
                                                 <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">發票日期：</th>
@@ -132,8 +130,8 @@
                                         </tbody>
                                     </table>
                                 </td>
-                                <td colspan="3">
-                                    <table style="width:100%;">
+                                <td colspan="4" valign="top">
+                                    <table style="padding: 3px;width:100%;font-size: 13px;margin-bottom: 0;">
                                         <tbody>
                                             <tr>
                                                 <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">數量合計：</th>
@@ -150,11 +148,11 @@
                                         </tbody>
                                     </table>
                                 </td>
-                                <td colspan="3">
-                                    <table style="width:100%;">
+                                <td colspan="5" valign="top">
+                                    <table style="padding: 3px;width:100%;font-size: 13px;margin-bottom: 0;">
                                         <tbody>
                                             <tr>
-                                                <th style="border: 0;width: 30%;padding: 3px;">合　計：</th>
+                                                <th style="border: 0;width: 20%;padding: 3px;">合　計：</th>
                                                 <td style="border: 0;padding: 3px;">&nbsp;</td>
                                                 <td style="border: 0;text-align: right;padding: 3px;">NTD 6,707</td>
                                             </tr>
@@ -178,21 +176,22 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="5">
+                                <td></td>
+                                <td colspan="7">
                                     <table style="width:100%;">
                                         <tbody>
                                             <tr>
-                                                <th style="border: 0;width: 20%;">附　註：</th>
+                                                <th style="border: 0;width: 15%;">附　註：</th>
                                                 <td style="border: 0;">NTD 6,707</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </td>
-                                <td colspan="3">
+                                <td colspan="4">
                                     <table style="width:100%;">
                                         <tbody>
                                             <tr>
-                                                <th style="border: 0;width: 30%;">總　計：</th>
+                                                <th style="border: 0;width: 20%;">總　計：</th>
                                                 <td style="border: 0;text-align: right;">NTD 6,707</td>
                                             </tr>
                                         </tbody>
@@ -202,13 +201,67 @@
                         </tfoot>
                     </table>
                 </div>
+            </section>
+            <section class="fileBox formBox_gray">
+                <div class="tci-input-group tci-mb-2 fileContentNo formBox_title" style="margin-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+                    <div class="tci-input-group-prepend">
+                        <span class="tci-input-group-text tci-mr-2">檔案數:</span>
+                        <select class="tci-bs-custom-select" style="width:100px">
+                            <option selected>100</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="illustrate formBox_content" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+                    <div class="fileIllustrate">
+                        <div class="tci-input-group tci-mr-1" style="width: 13%;">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">序號:</span>
+                            </div>
+                            <div class="tci-form-control gray">1</div>
+                        </div>
+                        <div class="tci-input-group tci-mr-1">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">檔案:</span>
+                            </div>
+                            <input type="file" class="tci-form-control" />
+                        </div>
+                        <div class="tci-input-group">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">檔案說明:</span>
+                            </div>
+                            <input type="text" class="tci-form-control" />
+                        </div>
+                    </div>
+                    <div class="fileIllustrate ">
+                        <div class="tci-input-group tci-mr-1" style="width: 13%;">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">序號:</span>
+                            </div>
+                            <div class="tci-form-control gray">2</div>
+                        </div>
+                        <div class="tci-input-group tci-mr-1">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">檔案:</span>
+                            </div>
+                            <input type="file" class="tci-form-control" />
+                        </div>
+                        <div class="tci-input-group">
+                            <div class="tci-input-group-prepend">
+                                <span class="tci-input-group-text">檔案說明:</span>
+                            </div>
+                            <input type="text" class="tci-form-control" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="btnGroups  tci-mt-2">
+                <button class="tci-btn bg_lightgray">回上一頁</button>
+                <button class="tci-btn bg_darkgreen">儲存單據</button>
             </div>
         </section>
-
-        <div class="btnGroups">
-            <button class="tci-btn bg_lightgray">重新查詢</button>
-            <button class="tci-btn bg_darkgreen">確認資料，預覽單據</button>
-        </div>
         <div class="userCard_info">
             <span class="user_info">
                 <u><b>使用者資訊：</b>

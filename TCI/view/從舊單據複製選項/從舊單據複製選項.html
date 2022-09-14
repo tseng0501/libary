@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>從舊單據複製選項</title>
+</head>
+
+<body>
+    <div class="container-fluid " id="page_createAlternative">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>從舊單據複製選項</b></span>
+        </div>
+        <div style="text-align: center;">
+            <button class="tci-btn bg_darkblue" style="height: 50px;">從舊單據複製選項</button>
+        </div>
+        <section class="tci-mt-3" style="overflow-x: auto;">
+            <table class="tci-table tci-table-bordered" style="min-width:730px;">
+                <tbody>
+                    <tr>
+                        <th style="width: 20%;background-color: var(--color-light-gray);">申請部門&nbsp;<button class="tci-icon bg_darkkhaki"><i
+                                    class="fa-solid fa-building"></i></button></th>
+                        <td style="width: 30%;">軟體研發組</td>
+                        <th style="width: 20%;background-color: var(--color-light-gray);">託檢承辦人</th>
+                        <td style="width: 30%;">
+                            <select class="tci-form-control">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">專案編號</th>
+                        <td><input type="text" class="tci-form-control" /></td>
+                        <th style="background-color: var(--color-light-gray);">樣品名稱</th>
+                        <td><input type="text" class="tci-form-control" /></td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">專案編號</th>
+                        <td><textarea class="tci-form-control"></textarea></td>
+                        <th style="background-color: var(--color-light-gray);">費用說明(委外檢驗付款單位)</th>
+                        <td>
+                            <div>
+                                <div class="tci-form-check">
+                                    <input class="tci-form-check-input" type="radio"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <label class="tci-form-check-label" for="exampleRadios1">
+                                        TCI負擔-訂單編號
+                                    </label>
+                                    <input type="text" class="tci-form-control" />
+                                </div>
+                                <div class="tci-form-check">
+                                    <input class="tci-form-check-input" type="radio"
+                                        id="exampleRadios2" value="option2">
+                                    <label class="tci-form-check-label" for="exampleRadios2">
+                                        客戶負擔-統一編號
+                                    </label>
+                                    <input type="text" class="tci-form-control" />
+                                    <span> (由TCI開立發票向客戶收款)</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">報告抬頭</th>
+                        <td><input type="text" class="tci-form-control" /></td>
+                        <th style="background-color: var(--color-light-gray);">報告地址</th>
+                        <td><input type="text" class="tci-form-control" /></td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">報告方式</th>
+                        <td>
+                            <div>
+                                <div class="tci-form-check tci-form-check-inline">
+                                    <input class="tci-form-check-input" type="radio" id="Chinese" value="option1" checked>
+                                    <label class="tci-form-check-label" for="Chinese">
+                                        中文
+                                    </label>
+                                  </div>
+                                  <div class="tci-form-check tci-form-check-inline">
+                                    <input class="tci-form-check-input" type="radio" id="English" value="option2">
+                                    <label class="tci-form-check-label" for="English">
+                                        英文
+                                    </label>
+                                  </div>
+                                  <div class="tci-form-check tci-form-check-inline">
+                                    <input class="tci-form-check-input" type="checkbox" id="Photos" value="option1">
+                                    <label class="tci-form-check-label" for="Photos">隨附照片</label>
+                                  </div>
+                            </div>
+                        </td>
+                        <th style="background-color: var(--color-light-gray);">樣品類型</th>
+                        <td>
+                            <div>
+                                <div class="tci-form-check tci-form-check-inline tci-mb-2">
+                                    <input class="tci-form-check-input" type="radio" id="Finished" value="option1" checked>
+                                    <label class="tci-form-check-label" for="Finished">
+                                        成品
+                                    </label>
+                                  </div>
+                                  <div class="tci-form-check tci-form-check-inline tci-mb-2">
+                                    <input class="tci-form-check-input" type="radio" id="Semi-finished" value="option2">
+                                    <label class="tci-form-check-label" for="Semi-finished">
+                                        半成品
+                                    </label>
+                                  </div>
+                                  <div class="tci-form-check tci-form-check-inline tci-mb-2">
+                                    <input class="tci-form-check-input" type="radio" id="Raw" value="option2">
+                                    <label class="tci-form-check-label" for="Raw">
+                                        原料
+                                    </label>
+                                  </div>
+                                  <div class="tci-form-check tci-form-check-inline tci-mb-2">
+                                    <input class="tci-form-check-input" type="radio" id="Trial" value="option2">
+                                    <label class="tci-form-check-label" for="Trial">
+                                        試製品
+                                    </label>
+                                  </div>
+                                  <div class="tci-form-check tci-form-check-inline tci-mb-2">
+                                    <input class="tci-form-check-input" type="radio" id="Other" value="option2">
+                                    <label class="tci-form-check-label" for="Other" style="white-space: nowrap;">
+                                        其他
+                                    </label>
+                                    <input type="text" class="tci-form-control" />
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">外檢)檢驗單位</th>
+                        <td>
+                            <div>
+                                <div class="tci-form-check tci-form-check-inline">
+                                    <input class="tci-form-check-input" type="radio" id="Chinese" value="option1" checked>
+                                    <label class="tci-form-check-label" for="Chinese">
+                                        無指定
+                                    </label>
+                                  </div>
+                                  <div class="tci-form-check tci-form-check-inline">
+                                    <input class="tci-form-check-input" type="radio" id="Designated" value="option2">
+                                    <label class="tci-form-check-label" for="Designated" style="white-space: nowrap;">
+                                        指定檢驗機構
+                                    </label>
+                                    <input type="text" class="tci-form-control" />
+                                  </div>
+                            </div>
+                        </td>
+                        <th style="background-color: var(--color-light-gray);">備註</th>
+                        <td><textarea class="tci-form-control"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: var(--color-light-gray);">主要檢驗類型</th>
+                        <td>
+                            <select class="tci-form-control">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </td>
+                        <th style="background-color: var(--color-light-gray);">次要檢驗類型</th>
+                        <td>
+                            <select class="tci-form-control">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="userCard_info">
+            <span class="user_info">
+                <u><b>使用者資訊：</b>
+                    <span>大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷</span></u>
+            </span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

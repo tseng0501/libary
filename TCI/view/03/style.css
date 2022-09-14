@@ -1,115 +1,144 @@
-#page_businessTravel .journey th {
+.journey th {
   min-width: 100px;
 }
-#page_businessTravel .journey .weekdays_date {
+.journey .weekdays_date {
   text-align: center;
   font-weight: bold;
 }
-#page_businessTravel .journey .holiday_td {
+.journey .holiday_td {
   background-color: var(--color-whitesmoke);
 }
-#page_businessTravel .journey .holiday {
+.journey .holiday {
   text-align: center;
   font-weight: bold;
   color: var(--color-dark-red);
 }
-#page_businessTravel .journey .place {
+.journey .place {
   background-color: var(--color-alge);
   color: var(--color-snow);
   padding: 2px;
   border-radius: var(--borderRadius);
 }
-#page_businessTravel .journey .region {
+.journey .region {
   color: var(--color-dimgray);
 }
-#page_businessTravel .tableScroll {
+
+.tableScroll {
   overflow-x: auto;
 }
-#page_businessTravel .tableScroll .tci-table {
+.tableScroll .tci-table {
   width: 900px;
 }
-#page_businessTravel .businessTravelTable {
+
+.businessTravelTable {
   font-size: 0.5rem;
 }
-#page_businessTravel .reason .reasonContent .tci-field {
+
+.reason .reasonContent .tci-field {
   flex-wrap: wrap;
 }
-#page_businessTravel .reason .reasonContent .tci-field .tci-field-content {
+.reason .reasonContent .tci-field .tci-field-content {
   display: flex;
 }
-#page_businessTravel .reason .reasonContent .tci-form-control {
-  padding: 0;
+.reason .reasonContent .tci-field .tci-field-content button {
+  margin-left: 5px;
 }
-#page_businessTravel .reason .reasonContent table thead {
+.reason .reasonContent .tci-form-control {
+  padding: 3px 5px;
+}
+.reason .reasonContent table thead {
   background-color: var(--color-light-gray);
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  #page_businessTravel .tableScroll .tci-table {
+  .tableScroll .tci-table {
     width: 100%;
   }
-  #page_businessTravel .businessTravelTable {
+  .businessTravelTable {
     font-size: var(--font-size-sm);
   }
-  #page_businessTravel .businessTravelTable .tci-table .table_row {
+  .businessTravelTable .tci-table .table_row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #page_businessTravel .businessTravelTable .tci-table .table_row .tci-bs-input-group {
+  .businessTravelTable .tci-table .table_row .tci-bs-input-group {
     width: 48%;
   }
-  #page_businessTravel .itinerary .itineraryContent .formBox_date {
+  .itinerary .itineraryContent .formBox_date {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #page_businessTravel .itinerary .itineraryContent .formBox_date .tci-field {
+  .itinerary .itineraryContent .formBox_date .tci-field {
     width: 48%;
   }
-  #page_businessTravel .itinerary .itineraryContent .formBox_date .tci-field .tci-field-label {
+  .itinerary .itineraryContent .formBox_date .tci-field .tci-field-label {
     width: 30%;
   }
-  #page_businessTravel .itinerary .itineraryContent .formBox_date .tci-field .tci-field-value {
+  .itinerary .itineraryContent .formBox_date .tci-field .tci-field-value {
     width: 70%;
   }
-  #page_businessTravel .reason .reasonContent .tci-field {
+  .reason .reasonContent .tci-field {
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
   }
-  #page_businessTravel .reason .reasonContent .tci-field .tci-field-content {
+  .reason .reasonContent .tci-field .tci-field-label {
+    width: 25%;
+  }
+  .reason .reasonContent .tci-field .tci-field-content {
     display: flex;
-    width: 60%;
+    width: 75%;
+  }
+  .reason .reasonContent .tci-field .tci-field-content .tci-field-value {
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
-  #page_businessTravel .itinerary .itineraryContent .formBox_date {
+  .itinerary .itineraryContent .formBox_date {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #page_businessTravel .itinerary .itineraryContent .formBox_date .tci-field {
+  .itinerary .itineraryContent .formBox_date .tci-field {
     width: 25%;
   }
-  #page_businessTravel .itinerary .itineraryContent .formBox_date .tci-field .tci-field-label {
+  .itinerary .itineraryContent .formBox_date .tci-field .tci-field-label {
     width: 25%;
   }
-  #page_businessTravel .itinerary .itineraryContent .formBox_date .tci-field .tci-field-value {
+  .itinerary .itineraryContent .formBox_date .tci-field .tci-field-value {
     width: 70%;
   }
-  #page_businessTravel .reason .reasonContent table thead {
+  .reason .reasonContent .tci-field {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+  }
+  .reason .reasonContent .tci-field .tci-field-label {
+    width: 20%;
+  }
+  .reason .reasonContent .tci-field .tci-field-content {
+    display: flex;
+    width: 80%;
+  }
+  .reason .reasonContent .tci-field .tci-field-content .tci-field-value {
+    width: 100%;
+  }
+  .reason .reasonContent table thead {
     background-color: var(--color-light-gray);
     text-align: center;
   }
-  #page_businessTravel .reason .reasonContent table thead .date {
+  .reason .reasonContent table thead .date {
     width: 10%;
   }
 }
 @media (min-width: 1200px) {
-  #page_businessTravel .businessTravelTable .tci-table .table_row .tci-bs-input-group {
+  .businessTravelTable .tci-table .table_row .tci-bs-input-group {
     width: 30%;
   }
-  #page_businessTravel .businessTravelTable .tci-table .table_row .tci-bs-input-group.small {
+  .businessTravelTable .tci-table .table_row .tci-bs-input-group.small {
     width: 20%;
   }
 }

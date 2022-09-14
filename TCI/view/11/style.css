@@ -14,7 +14,7 @@
     width: 30%;
   }
   #page_depositForm .tci-field .tci-field-value {
-    width: 150px;
+    width: 68%;
   }
   #page_depositForm .tci-field.long {
     width: 45%;
@@ -26,6 +26,25 @@
   #page_depositForm .tci-field .tci-valueBtn .tci-field-value {
     width: 200px;
   }
+  #page_depositForm .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_depositForm .form .left {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #page_depositForm .form .left .input-group {
+    width: 60%;
+  }
+  #page_depositForm .form .left .input-group.type {
+    width: 30%;
+  }
+  #page_depositForm .form .input-group {
+    width: 25%;
+  }
 }
 @media (min-width: 992px) {
   #page_depositForm .query {
@@ -34,12 +53,6 @@
   }
   #page_depositForm .tci-field {
     width: 20%;
-  }
-  #page_depositForm .tci-field .tci-field-label {
-    width: 30%;
-  }
-  #page_depositForm .tci-field .tci-field-value {
-    width: 150px;
   }
   #page_depositForm .tci-field.long {
     width: 45%;
@@ -54,4 +67,17 @@
   #page_depositForm .tci-field .tci-valueBtn .tci-field-value {
     width: 200px;
   }
+  #page_depositForm .form .left .input-group {
+    width: 45%;
+  }
+  #page_depositForm .form .left .input-group.type {
+    width: 25%;
+  }
+}
+#page_acceptanceForm_print table td, #page_acceptanceForm_print table th {
+  padding: 3px;
+}
+
+#page_acceptanceForm_signoff table td, #page_acceptanceForm_signoff table th {
+  padding: 3px;
 }

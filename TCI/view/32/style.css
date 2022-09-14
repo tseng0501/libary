@@ -10,6 +10,18 @@
   width: 100%;
 }
 
+#page_jobhandover_createView .query {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#page_jobhandover_createView .query .tci-field {
+  width: 48%;
+}
+#page_jobhandover_createView .query .tci-field.w100 {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   #page_jobhandover .query {
     display: flex;
@@ -22,23 +34,54 @@
   #page_jobhandover .query .tci-field.w100 {
     width: 48%;
   }
+  #page_jobhandover_createView .query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_jobhandover_createView .query .tci-field {
+    width: 48%;
+  }
+  #page_jobhandover_createView .query .tci-field.w100 {
+    width: 48%;
+  }
 }
 @media (min-width: 992px) {
   #page_jobhandover .query {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   #page_jobhandover .query .tci-field {
-    width: 28%;
+    width: 25%;
+    margin-right: 1rem;
   }
   #page_jobhandover .query .tci-field.w100 {
-    width: 28%;
+    width: 25%;
   }
   #page_jobhandover .query .tci-field .tci-field-label {
     width: 40%;
   }
   #page_jobhandover .query .tci-field .tci-field-value {
-    width: 60%;
+    width: 55%;
+  }
+  #page_jobhandover_createView .query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  #page_jobhandover_createView .query .tci-field {
+    width: 25%;
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+  #page_jobhandover_createView .query .tci-field.w100 {
+    width: 25%;
+  }
+  #page_jobhandover_createView .query .tci-field .tci-field-label {
+    width: 40%;
+  }
+  #page_jobhandover_createView .query .tci-field .tci-field-value {
+    width: 55%;
   }
 }

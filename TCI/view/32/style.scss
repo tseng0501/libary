@@ -13,42 +13,92 @@
         }
     }
 }
-@media (min-width:768px) {
+#page_jobhandover_createView {
+    .query {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .tci-field {
+            width: 48%;
+
+            &.w100 {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
     #page_jobhandover {
         .query {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-    
+
             .tci-field {
                 width: 48%;
-    
+
                 &.w100 {
-                    width:  48%;
+                    width: 48%;
+                }
+            }
+        }
+    }
+    #page_jobhandover_createView {
+        .query {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .tci-field {
+                width: 48%;
+
+                &.w100 {
+                    width: 48%;
                 }
             }
         }
     }
 }
-@media (min-width:992px) {
+@media (min-width: 992px) {
     #page_jobhandover {
         .query {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-    
+            justify-content: flex-start;
             .tci-field {
-                width: 28%;
-                
+                width: 25%;
+                margin-right: 1rem;
                 &.w100 {
-                    width: 28%;
+                    width: 25%;
                 }
-                .tci-field-label{
+                .tci-field-label {
                     width: 40%;
                 }
-                .tci-field-value{
-                    width: 60%;
+                .tci-field-value {
+                    width: 55%;
+                }
+            }
+        }
+    }
+    #page_jobhandover_createView {
+        .query {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
 
+            .tci-field {
+                width: 25%;
+                justify-content: space-between;
+                margin-right: 1rem;
+                &.w100 {
+                    width: 25%;
+                }
+                .tci-field-label {
+                    width: 40%;
+                }
+                .tci-field-value {
+                    width: 55%;
                 }
             }
         }

@@ -1,0 +1,20 @@
+.tabsContent{
+    text-align: center;
+    margin: 1rem 0;
+    .nav-tabs{
+        padding: 5px 0;
+        white-space: nowrap;
+        overflow-x: auto;
+        display: block;
+    }
+    .nav-item{
+        display: inline-block;
+        .nav-link {
+            color: var(--color-dark);
+            &.active {
+                color: var(--color-snow);
+                background-color: var(--color-dark-khaki);
+            }
+        }
+    }
+}

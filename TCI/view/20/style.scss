@@ -46,8 +46,6 @@
             .tci-valueBtn {
                 display: flex;
                 width: 100%;
-                .tci-field-value {
-                }
             }
         }
     }
@@ -86,9 +84,22 @@
             }
         }
     }
-
 }
+#page_advancedBilling_createView{
+    .query {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
+        .tci-field {
+            width: 48%;
+
+            &.w100 {
+                width: 100%;
+            }
+        }
+    }
+}
 @media (min-width: 768px) {
     .advancedPayment {
         .paymentContent {
@@ -184,6 +195,23 @@
         }
 
 
+        .query {
+            .tci-field {
+                width: 33%;
+
+                &.w100 {
+                    width: 33%;
+                    .tci-field-label {
+                        width: 40%;
+                    }
+                }
+                .tci-field-value {
+                    width: 60%;
+                }
+            }
+        }
+    }
+    #page_advancedBilling_createView{
         .query {
             .tci-field {
                 width: 33%;
