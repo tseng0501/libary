@@ -75,16 +75,15 @@
         }
         .generalInvoiceOrder {
             .orderContent {
-                display: flex;
-
-                .order {
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 50%;
-                    margin-right: 5px;
-
-                    .tci-input-group-text {
-                        margin: 0 0.5rem;
+                .orderNum{
+                    margin-bottom: .5rem;
+                    font-size: var(--font-size-sm);
+                    .tci-field-value{
+                        width: 25%;
+                        display: inline;
+                        &.reason{
+                            width: 35%;
+                        }
                     }
                 }
             }
@@ -98,6 +97,7 @@
 
                     .tci-field {
                         width: 48%;
+                        margin: 5px 0;
 
                         .tci-field-label {
                             width: 20%;
@@ -116,7 +116,7 @@
 
                     .tci-field {
                         width: 48%;
-
+                        margin: 5px 0;
                         .tci-field-label {
                             width: 30%;
                         }
@@ -126,6 +126,32 @@
                         }
                     }
                 }
+                .block3 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .tci-field {
+                        width: 30%;
+                        margin: 5px 0;
+                        .tci-field-label {
+                            width: 30%;
+                        }
+
+                        .tci-field-value {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .page_01{
+        .query_view{
+            display: flex;
+            justify-content: space-between;
+            .query_view_left{
+                display: flex;
             }
         }
     }

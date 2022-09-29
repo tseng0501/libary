@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../scripts/angular.min.js"></script>
+    <script src="../../../scripts/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="../../../scripts/bootstrap5.2.0/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>A/P發票請款單-確認</title>
+</head>
+
+<body>
+    <div ng-controller="InvoiceBillView as ctrl">
+        <div class="container-fluid page_02" id="page_invoicePaper02_view" >
+            <div class="pageHeader">
+                <span class="pageHeaderTitle"><b>A/P發票請款單-確認</b></span>
+            </div>
+            <div style="text-align: right;font-size: var(--font-size-sm);margin-bottom: 1rem;">
+                <span
+                    style="font-size: var(--font-size-xs);background-color: var(--color-alge);color: var(--color-snow);padding: 2px;border-radius: var(--borderRadius);">公司別：<b>{{Data.company}}</b></span>
+            </div>
+            <section class="well">
+                <div class="form">
+                    <div class="left">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" style="font-size: var(--font-size-sm);">部門別</label>
+                            <div class="form-select"
+                                style="font-size: var(--font-size-sm);background-color: var(--color-whitesmoke)">
+                                {{Data.Department}}</div>
+                        </div>
+                        <div class="input-group mb-3 type">
+                            <label class="input-group-text" style="font-size: var(--font-size-sm);">組別</label>
+                            <div class="form-select"
+                                style="font-size: var(--font-size-sm);background-color: var(--color-whitesmoke)">
+                                {{Data.groups}}</div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3" style="width:200px;">
+                        <label class="input-group-text" style="font-size: var(--font-size-sm);">日期</label>
+                        <div class="form-select"
+                            style="font-size: var(--font-size-sm);background-color: var(--color-whitesmoke)">{{Data.Today}}
+                        </div>
+                    </div>
+                </div>
+                <section class="tableScorll" style="overflow-x: auto;margin-top: 1rem;">
+                    <div style="min-width: 940px;">
+                        <div style="font-size: 13px;">
+                            <div style="display: flex;justify-content: space-between;">
+                                <span><b>廠商名稱：</b>{{Data.tradeName}}</span>
+                                <span style="width: 200px;"><b>文件日期：</b>{{Data.fileDate}}</span>
+                            </div>
+                            <div style="display: flex;justify-content: space-between;">
+                                <span><b>專案名稱：</b>{{Data.projectName}}</span>
+                                <span style="width: 200px;"><b>文件號碼：</b>{{Data.fileNum}}</span>
+                            </div>
+                        </div>
+                        <table class="tci-table-bordered"
+                            style="padding: 3px;width:100%;font-size: 13px;margin-bottom: 1rem;">
+                            <thead>
+                                <tr style="text-align: center;background-color:var(--color-light-gray);">
+                                    <th style="width: 20px;">NO</th>
+                                    <th>項目號碼</th>
+                                    <th>專案代號</th>
+                                    <th>品名/規格</th>
+                                    <th>倉庫</th>
+                                    <th>數量</th>
+                                    <th>單位</th>
+                                    <th>單價</th>
+                                    <th>小計</th>
+                                    <th>採購單價/數量</th>
+                                    <th>備註</th>
+                                    <th>檢驗</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="data in Data.tableDocuments">
+                                    <td style="text-align: center;">{{data.id}}</td>
+                                    <td style="text-align: center;">{{data.projectNum}}</td>
+                                    <td style="text-align: center;">{{data.projectCode}}</td>
+                                    <td>{{data.project}}</td>
+                                    <td style="text-align: center;">{{data.warehouse}}</td>
+                                    <td style="text-align: center;">{{data.quantity}}</td>
+                                    <td style="text-align: center;">{{data.unit}}</td>
+                                    <td style="text-align: center;">{{data.price}}</td>
+                                    <td style="text-align: center;">{{data.subtotal}}</td>
+                                    <td style="text-align: center;">{{data.purchaseUnit}}</td>
+                                    <td style="text-align: center;">{{data.remark}}</td>
+                                    <td style="text-align: center;">{{data.inspection}}</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td colspan="3" valign="top">
+                                        <table style="padding: 3px;width:100%;font-size: var(--font-size-xs);">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">
+                                                        發票日期：</th>
+                                                    <td style="border: 0;padding: 3px;">{{Data.invoice.invoiceDate}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">發票聯式：</th>
+                                                    <td style="border: 0;padding: 3px;">{{Data.invoice.invoiceForm}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">發票編號：</th>
+                                                    <td style="border: 0;padding: 3px;">{{Data.invoice.invoiceNum}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td colspan="4" valign="top">
+                                        <table style="padding: 3px;width:100%;font-size: 13px;margin-bottom: 0;">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">
+                                                        數量合計：</th>
+                                                    <td style="border: 0;padding: 3px;">{{Data.pay.total}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">付款條件：</th>
+                                                    <td style="border: 0;padding: 3px;">{{Data.pay.terms}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">付款日期：</th>
+                                                    <td style="border: 0;padding: 3px;">{{Data.pay.paymentDate}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td colspan="5" valign="top">
+                                        <table style="padding: 3px;width:100%;font-size: 13px;margin-bottom: 0;">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border: 0;width: 20%;padding: 3px;">合　計：</th>
+                                                    <td style="border: 0;padding: 3px;">&nbsp;</td>
+                                                    <td style="border: 0;text-align: right;padding: 3px;">
+                                                        {{Data.amount.total}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">稅　額：</th>
+                                                    <td style="border: 0;padding: 3px;">&nbsp;</td>
+                                                    <td style="border: 0;text-align: right;padding: 3px;">
+                                                        {{Data.amount.tax}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">訂　金：</th>
+                                                    <td style="border: 0;padding: 3px;">{{Data.amount.PaNum}}</td>
+                                                    <td style="border: 0;text-align: right;padding: 3px;">
+                                                        {{Data.amount.deposit}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">小　計：</th>
+                                                    <td style="border: 0;padding: 3px;">&nbsp;</td>
+                                                    <td style="border: 0;text-align: right;padding: 3px;">
+                                                        {{Data.amount.subtotal}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td colspan="7">
+                                        <table style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">附　註：
+                                                    </th>
+                                                    <td style="border: 0;">{{Data.notes}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td colspan="4">
+                                        <table style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border: 0;width: 20%;">總　計：</th>
+                                                    <td style="border: 0;text-align: right;">{{Data.total}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </section>
+                <section class="fileBox formBox_gray">
+                    <div class="btnGroups mb-1">
+                        <button class="tci-btn bg_darkblue" data-bs-toggle="modal" data-bs-target="#addFileBoxModal"><i
+                                class="fa-solid fa-plus"></i>&nbsp;新增</button>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="table-secondary">
+                                <th style="text-align: center;width: 8%;">序號</th>
+                                <th>檔案</th>
+                                <th>檔案說明</th>
+                                <th style="width: 12%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in attachmentTable">
+                                <td style="text-align: center;">{{item.id}}</td>
+                                <td>{{item.attachment}}</td>
+                                <td>{{item.attachmentComment}}</td>
+                                <td style="text-align: center;">
+                                    <button class="tci-icon tci-btn-warning" data-bs-toggle="modal"
+                                        data-bs-target="#editFileBoxModal"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="tci-icon bg_darkred" data-bs-toggle="modal"
+                                        data-bs-target="#deleteFileBoxModal"><i class="fa-solid fa-trash-can"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+    
+                <div class="btnGroups  tci-mt-2">
+                    <button class="tci-btn bg_lightgray">回上一頁</button>
+                    <button class="tci-btn bg_darkgreen">儲存單據</button>
+                </div>
+            </section>
+            <div class="userCard_info">
+                <span class="user_info">
+                    <u><b>使用者資訊：</b>
+                        <span>{{Data.userCard_info}}</span></u>
+                </span>
+            </div>
+        </div>
+        <!-- 新增檔案 Modal -->
+        <div class="modal fade" id="addFileBoxModal" tabindex="-1" aria-labelledby="addFileBoxModalLabel" aria-hidden="true"
+            data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addFileBoxModalLabel">新增檔案</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-lg-12 mb-2">
+                            <label>選擇檔案 : </label>
+                            <input class="form-control" type="file" ng-model="ctrl.file" />
+                        </div>
+                        <div class="col-lg-12 mb-2">
+                            <label>檔案說明 : </label>
+                            <textarea class="form-control" ng-model="ctrl.fileDescription"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="tci-btn bg_lightgray" data-bs-dismiss="modal">關閉</button>
+                        <button type="button" class="tci-btn bg_darkgreen">確定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 編輯檔案 Modal -->
+        <div class="modal fade" id="editFileBoxModal" tabindex="-1" aria-labelledby="editFileBoxModalLabel"
+            aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editFileBoxModalLabel">編輯檔案</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-lg-12 mb-2">
+                            <label>選擇檔案 : </label>
+                            <input class="form-control" type="file" ng-model="ctrl.Data.file" />
+                        </div>
+                        <div class="col-lg-12 mb-2">
+                            <label>檔案說明 : </label>
+                            <textarea class="form-control" ng-model="ctrl.Data.fileDescription"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="tci-btn bg_lightgray" data-bs-dismiss="modal">關閉</button>
+                        <button type="button" class="tci-btn bg_darkgreen">確定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 刪除檔案 Modal -->
+        <div class="modal fade" id="deleteFileBoxModal" tabindex="-1" aria-labelledby="deleteFileBoxModalLabel"
+            aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteFileBoxModalLabel">刪除檔案</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span>是否確定刪除</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="tci-btn bg_lightgray" data-bs-dismiss="modal">取消</button>
+                        <button type="button" class="tci-btn bg_darkgreen">確定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../../../scripts/bootstrap5.2.0/bootstrap.bundle.min.js"></script>
+    <script>
+        const Container = angular.module('app', []);
+        Container.controller('InvoiceBillView', ['$scope', function ($scope) {
+            $scope.Data = {
+                company: '大江生活',
+                groups: '共用',
+                Department: '系統維運組',
+                Today: '2022/10/11',
+                tradeName: '美奐有限公司',
+                fileDate: '2022/10/20',
+                projectName: '美奐有限公司',
+                fileNum: '878',
+                userCard_info: '大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷',
+                tableDocuments: [
+                    {
+                        id: 1, projectNum: 'D35ZZ0021', projectCode: 4587744, project: 'Home Dr.-黃精馬卡帝王錠(550mg/顆，3顆/包，15包/盒)-外盒',
+                        warehouse: 'S16', quantity: '15,100', unit: 'PSD', price: 'NTD 15.5000', subtotal: 'NTD 79,825', purchaseUnit: 'NTD 15.5000 / 5,150.00(差異:0.00%)', remark: '122', inspection: '免驗'
+                    },
+                    {
+                        id: 2, projectNum: 'D35ZZ0021', projectCode: 4587744, project: 'Home Dr.-黃精馬卡帝王錠(550mg/顆，3顆/包，15包/盒)-外盒',
+                        warehouse: 'S16', quantity: '15,100', unit: 'PSD', price: 'NTD 15.5000', subtotal: 'NTD 79,825', purchaseUnit: 'NTD 15.5000 / 5,150.00(差異:0.00%)', remark: '122', inspection: '免驗'
+                    },
+                    {
+                        id: 3, projectNum: 'D35ZZ0021', projectCode: 4587744, project: 'Home Dr.-黃精馬卡帝王錠(550mg/顆，3顆/包，15包/盒)-外盒',
+                        warehouse: 'S16', quantity: '15,100', unit: 'PSD', price: 'NTD 15.5000', subtotal: 'NTD 79,825', purchaseUnit: 'NTD 15.5000 / 5,150.00(差異:0.00%)', remark: '122', inspection: '免驗'
+                    }
+                ],
+                invoice: {
+                    invoiceDate: '2022/6/14',
+                    invoiceForm: '2022/6/14',
+                    invoiceNum: '2022/6/14',
+                },
+                pay: {
+                    total: '0.0',
+                    terms: 'P TT當月結',
+                    paymentDate: '2020/10/01'
+                },
+                amount: {
+                    total: 'NTD 78',
+                    tax: '10',
+                    deposit: 'NTD 6,707',
+                    PaNum: '100%',
+                    subtotal: 'NTD 542,00'
+                },
+                notes: '15478',
+                total: 'NTD 8,000',
+
+            }
+            $scope.attachmentTable = [
+                { id: 1, attachment: '787.pdf', attachmentComment: '123456' },
+                { id: 2, attachment: '534537.pdf', attachmentComment: '45456' },
+            ]
+        }])
+    </script>
+</body>
+
+</html>

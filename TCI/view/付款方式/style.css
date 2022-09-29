@@ -1,0 +1,75 @@
+@media (min-width: 768px) {
+  .paymentContent .block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .paymentContent .block .tci-field {
+    width: 48%;
+    margin: 5px 0;
+  }
+  .paymentContent .block .tci-field .tci-field-label {
+    width: 20%;
+  }
+  .paymentContent .block .tci-field .tci-field-value {
+    width: 80%;
+  }
+  .paymentContent .block2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .paymentContent .block2 .tci-field {
+    width: 48%;
+    margin: 5px 0;
+  }
+  .paymentContent .block2 .tci-field .tci-field-label {
+    width: 30%;
+  }
+  .paymentContent .block2 .tci-field .tci-field-value {
+    width: 70%;
+  }
+  .paymentContent .block3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .paymentContent .block3 .tci-field {
+    width: 30%;
+    margin: 5px 0;
+  }
+  .paymentContent .block3 .tci-field .tci-field-label {
+    width: 30%;
+  }
+  .paymentContent .block3 .tci-field .tci-field-value {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .paymentContent .block2 {
+    justify-content: flex-start;
+  }
+  .paymentContent .block2 .tci-field {
+    margin-right: 1rem;
+    width: 48%;
+  }
+  .paymentContent .block2 .tci-field .tci-field-label {
+    width: 25%;
+  }
+  .paymentContent .block2 .tci-field .tci-field-value {
+    width: 75%;
+  }
+  .paymentContent .block {
+    justify-content: flex-start;
+  }
+  .paymentContent .block .tci-field {
+    margin-right: 1rem;
+    width: 23%;
+  }
+  .paymentContent .block .tci-field .tci-field-label {
+    width: 25%;
+  }
+  .paymentContent .block .tci-field .tci-field-value {
+    width: 75%;
+  }
+}

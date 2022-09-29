@@ -49,11 +49,13 @@
                 padding: 5px;
                 border-radius: var(--borderRadius);
                 box-shadow: var(--borderShadow);
-
+                text-align: left;
                 input {
                     margin-top: 3px;
                 }
-
+                label{
+                    font-size: var(--font-size-sm)
+                }
                 &.box_1 {
                     background-color: var(--color-light-blue);
 

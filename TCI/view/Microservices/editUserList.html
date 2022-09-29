@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../scripts/angular.min.js"></script>
+    <script src="../../../scripts/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="../../../scripts/bootstrap5.2.0/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./checkList.css">
+    <title>編輯user列表</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: var(--color-light-gray);">
+        <div class="container">
+            <a class="navbar-brand" href="./checkList.html">大江生醫</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Menu">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="./checkList.html">微服務列表</a>
+                    <a class="nav-link" href="./userList.html">user列表</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="Logout" style="justify-content: end;">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="./login.html">登出</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="MicroservicesList">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>編輯user列表</b></span>
+        </div>
+        <section>
+            <div class="col-lg-12 mb-3">
+                <label><span style="color:red">*</span> 帳號 : </label>
+                <input class="tci-form-control" type="text" placeholder="填寫帳號" style="max-width: 300px;" />
+            </div>
+            <div class="col-lg-12 mb-3">
+                <label><span style="color:red">*</span> 密碼 : </label>
+                <input class="tci-form-control" type="text" placeholder="填寫密碼" style="max-width: 300px;" />
+            </div>
+            <div class="col-lg-12 mb-3">
+                <label><span style="color:red">*</span> 名稱 : </label>
+                <input class="tci-form-control" type="text" placeholder="填寫名稱" style="max-width: 300px;" />
+            </div>
+            <div class="col-lg-12 mb-3">
+                <label><span style="color:red">*</span> 過期時間 : </label>
+                <input class="tci-form-control" type="date" style="max-width: 300px;" />
+            </div>
+            <div class="col-lg-12 mb-3">
+                <label><span style="color:red">*</span>  狀態: </label>
+                <label style="cursor:pointer;padding-top:5px;margin-left: 10px;"><input type="radio"
+                        value=1 />啟用</label>
+                <label style="cursor:pointer;padding-top:5px"><input type="radio" value=0 />停用</label>
+            </div>
+            <div class="col-lg-12 mb-3">
+                <label>備註 : </label>
+                <textarea class="tci-form-control" placeholder="填寫備註"></textarea>
+            </div>
+            <div>
+                <button class="tci-btn bg_darkgreen">儲存</button>
+                <button class="tci-btn bg_lightgray"><a href="./userList.html" class="" style="color:var(--color-snow)">返回User列表</a></button>
+                
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

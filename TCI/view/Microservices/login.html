@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../scripts/angular.min.js"></script>
+    <script src="../../../scripts/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="../../../scripts/bootstrap5.2.0/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./login.css">
+    <title>微服務登入</title>
+</head>
+
+<body class="text-center">
+    <div class="container-fluid" id="Login">
+        <div class="form-signin">
+            <img src="https://asap.tci-bio.com/TCIOne/Content/images/ibdlogo.png" alt="logo" class="mb-3 img">
+            <h2 class="mb-3">微服務登入</h2>
+            <div>
+                <label for="inputEmail" class="sr-only">帳號</label>
+                <input type="text" id="Account" name="Account" class="form-control" placeholder="帳號" required=""
+                    autofocus="" value="">
+                <label for="inputPassword" class="sr-only">密碼</label>
+                <input type="password" id="Password" name="Password" class="form-control" placeholder="密碼" required=""
+                    value="">
+
+                <div class="mt-2">
+                    <button type="susbmit" name="submit" class="tci-btn bg_darkgreen">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../scripts/angular.min.js"></script>
+    <script src="../../../scripts/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="../../../scripts/bootstrap5.2.0/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>A-一般請款單</title>
+</head>
+
+<body>
+    <div ng-controller="GeneralInvoice01 as ctrl">
+        <div class="container-fluid page_01" id="page_generalInvoice01" >
+            <div class="pageHeader">
+                <span class="pageHeaderTitle"><b>一般請款單01</b></span>
+            </div>
+            <section class="query">
+                <div style="text-align: right;font-size:var(--font-size-xs);">
+                    <span>日期:<span>2022/8/8</span></span>
+                </div>
+                <div class="content">
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">部門別:&nbsp;
+                                <button class="tci-icon bg_darkkhaki" data-bs-toggle="modal"
+                                    data-bs-target="#allDepartmentsModal"><i class="fa-solid fa-building"></i></button>
+                            </span>
+                        </div>
+                        <input type="text" class="tci-field-value gray" disabled value="軟體研發組"
+                            ng-model="ctrl.Data.Department" />
+                    </div>
+                    <div class="tci-field">
+                        <div class="tci-field-label">
+                            <span class="tci-field-text text-left">發票號碼:</span>
+                        </div>
+                        <input type="text" class="tci-field-value" ng-model="ctrl.Data.InvoiceNumber" />
+                    </div>
+                </div>
+            </section>
+            <section class="generalInvoice01Table">
+                <div class="pointData">
+                    <div class="point">
+                        <span class="tci-input-group-text">幣別：</span>
+                        <select class="tci-form-control" style="width: 120px;" ng-model="currencryChosen"
+                            ng-options="data.name for data in currencrySelect">
+                        </select>
+                    </div>
+                    <div class="point" style="margin-left: 5px;">
+                        <span class="tci-input-group-text">匯率：</span>
+                        <input type="text" class="tci-form-control" style="width: 50px;"
+                            value="{{currencryChosen.value}}" />
+                    </div>
+                </div>
+                <div class="tableScroll" style="overflow-x: auto;">
+                    <table class="tci-table tci-table-bordered" style="min-width:730px;">
+                        <thead>
+                            <tr>
+                                <th style="width: 80px;">項目
+                                    <select class="tci-form-control">
+                                        <option ng-repeat="item in index">{{item}}</option>
+                                    </select>
+                                </th>
+                                <th>費用分類<br /><button class="tci-btn bg_darkblue" style="padding:5px;"
+                                        data-bs-toggle="modal" data-bs-target="#classificationModal">費用分類</button></th>
+                                <th style="vertical-align:middle;">項目歸屬</th>
+                                <th style="vertical-align:middle;">摘要說明</th>
+                                <th style="width: 12%;vertical-align:middle;">專案編號</th>
+                                <th style="width: 10%;vertical-align:middle;">金額</th>
+                                <th style="width: 8px;vertical-align:middle;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="data in table">
+                                <td>{{data.id}}<br /><span ng-show="{{data.ditto}}"><button class="tci-btn bg_lightgray"
+                                            style="padding:0 5px;min-width: auto;">同上</button></span>
+                                </td>
+                                <td>
+                                    <select class="tci-form-control" ng-model="expenseChosen"
+                                        ng-options="item.name for item in expenseSelect">
+                                    </select>
+                                </td>
+                                <td><button class="tci-btn bg_darkblue" data-bs-toggle="modal"
+                                        data-bs-target="#allEmployeesAndDeptModal_radio">歸屬人</button><br /><span>{{data.belonger}}</span>
+                                </td>
+                                <td><input type="text" class="tci-form-control" ng-model="ctrl.Data.description" /></td>
+                                <td><input type="text" class="tci-form-control" / ng-model="ctrl.Data.projectCode"></td>
+                                <td><input type="text" class="tci-form-control" / ng-model="ctrl.Data.amount"></td>
+                                <td><button class="tci-icon bg_darkred"><i class="fa-solid fa-trash-can"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="generalInvoiceOrder">
+                <div class="orderContent">
+                    <div class="orderNum">
+                        <span class="tci-field-text">採購 / 請採(優先) / 合約單號：</span>
+                        <input type="text" class="tci-field-value" ng-model="ctrl.Data.contractNumber">
+                    </div>
+                    <div class="orderNum">
+                        <span class="tci-field-text">固定資產若無請採單/合約請說明原因：</span>
+                        <input type="text" class="tci-field-value reason" ng-model="ctrl.Data.contractReason">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="generalInvoicePayment formBox_gray">
+                <div class="payment formBox_title">
+                    <span class="tci-input-group-text">付款方式：</span>
+                    <select class="tci-form-control" style="width: 120px;" ng-model="paymentChosen"
+                        ng-options="data.id as data.name for data in paymentSelect">
+                    </select>
+                </div>
+                <div class="paymentContent formBox_content">
+                    <!-- 支票 -->
+                    <div class="block" ng-if="paymentChosen == 1">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">抬頭:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.cheque.payableTo" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">到期日:</span>
+                            </div>
+                            <input type="date" class="tci-field-value" ng-model="ctrl.Data.cheque.dueDate" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">回郵:</span>
+                            </div>
+                            <div class="tci-form-check tci-form-check-inline">
+                                <input class="tci-form-check-input" type="radio" name="exampleRadios" value=1
+                                    ng-model="ctrl.Data.cheque.status">
+                                <label class="tci-form-check-label" for="exampleRadios1">
+                                    有
+                                </label>
+                            </div>
+                            <div class="tci-form-check tci-form-check-inline">
+                                <input class="tci-form-check-input" type="radio" name="exampleRadios" value=0
+                                    ng-model="ctrl.Data.cheque.status">
+                                <label class="tci-form-check-label" for="exampleRadios2">
+                                    無
+                                </label>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!-- 領現 -->
+                    <div class="block2" ng-if="paymentChosen == 2">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">領款人:&nbsp;
+                                    <button class="tci-icon bg_darkblue" data-bs-toggle="modal"
+                                        data-bs-target="#allEmployeesModal"><i class="fa-solid fa-circle-user"></i></button>
+                                </span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.cash.payee"/>
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">簽收人:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.cash.recipient" />
+                        </div>
+                    </div>
+                    <!-- 公司T/T -->
+                    <div class="block2" ng-if="paymentChosen == 3">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">匯入公司:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.tocompany.transferTo" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">匯入日期:</span>
+                            </div>
+                            <input type="date" class="tci-field-value" ng-model="ctrl.Data.tocompany.transferDate" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">帳戶:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.tocompany.accountTo" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">付款條件:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.tocompany.PaymentTerm" />
+                        </div>
+                    </div>
+                    <!-- 公司卡 -->
+                    <div class="block3" ng-if="paymentChosen == 4">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">卡別:</span>
+                            </div>
+                            <select class="tci-field-value" ng-model="TCICreditCardChosen"
+                                ng-options="item.name for item in TCICreditCardSelect"></select>
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">簽字人:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.TCICreditCard.signature" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">簽帳日期:</span>
+                            </div>
+                            <input type="date" class="tci-field-value"
+                                ng-model="ctrl.Data.TCICreditCard.transactionDate" />
+                        </div>
+    
+    
+                    </div>
+                    <!-- 員工 -->
+                    <div class="block" ng-if="paymentChosen == 5">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">員工:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.employee.employee" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">帳戶:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.employee.account" />
+                        </div>
+                    </div>
+                    <!-- 臨櫃繳款 -->
+                    <div class="block" ng-if="paymentChosen == 6">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">抬頭:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.payCash.payableTo" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">到期日:</span>
+                            </div>
+                            <input type="date" class="tci-field-value" ng-model="ctrl.Data.payCash.DueDate" />
+                        </div>
+                    </div>
+                    <!-- 非員工個人 -->
+                    <div class="block3" ng-if="paymentChosen == 7">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">帳戶名稱:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.toperson.accountName" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">匯入日期:</span>
+                            </div>
+                            <input type="date" class="tci-field-value" ng-model="ctrl.Data.toperson.transferDate" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">帳號:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.toperson.account" />
+                        </div>
+                    </div>
+                    <!-- AE卡 -->
+                    <div class="block3" ng-if="paymentChosen == 8">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">卡號:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.creditCard.cardNo" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">簽字人:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.creditCard.signature" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">簽帳日期:</span>
+                            </div>
+                            <input type="date" class="tci-field-value"
+                                ng-model="ctrl.Data.creditCard.transactionDate" />
+                        </div>
+                    </div>
+                    <!-- 自動扣款 -->
+                    <div class="block2" ng-if="paymentChosen == 9">
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">抬頭:</span>
+                            </div>
+                            <input type="text" class="tci-field-value" ng-model="ctrl.Data.automatic.payableTo" />
+                        </div>
+                        <div class="tci-field">
+                            <div class="tci-field-label">
+                                <span class="tci-field-text text-left">扣款日期:</span>
+                            </div>
+                            <input type="date" class="tci-field-value" ng-model="ctrl.Data.automatic.withdrawal" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="btnGroups">
+                <button class="tci-btn bg_lightgray">全部清除</button>
+                <button class="tci-btn bg_darkgreen">確認資料，預覽單據</button>
+            </div>
+            <div class="userCard_info">
+                <span class="user_info">
+                    <u><b>使用者資訊：</b>
+                        <span>{{Data.userCard_info}}</span></u>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../../scripts/bootstrap5.2.0/bootstrap.bundle.min.js"></script>
+    <script>
+        const Container = angular.module('app', []);
+        Container.controller('GeneralInvoice01', ['$scope', function ($scope) {
+            //項目
+            var foo = [];
+            for (var i = 1; i <= 50; i++) {
+                foo.push(i);
+            }
+            $scope.index = foo;
+           //表格
+            $scope.table = [
+                { id: 1, ditto: false, belonger: '戰略數據中心' },
+                { id: 2, ditto: true, belonger: '戰略數據中心' },
+                { id: 3, ditto: true, belonger: '戰略數據中心' },
+                { id: 4, ditto: true, belonger: '戰略數據中心' },
+                { id: 5, ditto: true, belonger: '戰略數據中心' },
+            ];
+            //幣別
+            $scope.currencrySelect = [];
+            $scope.currencryChosen = $scope.currencrySelect[0];
+            //費用分類
+            $scope.expenseSelect = []
+            $scope.expenseChosen = $scope.expenseSelect[0];
+            //付款方式
+            $scope.paymentSelect = [
+                { id: 1, name: '支票' },
+                { id: 2, name: '領現' },
+                { id: 3, name: '公司T/T' },
+                { id: 4, name: '公司卡' },
+                { id: 5, name: '員工' },
+                { id: 6, name: '臨櫃繳款' },
+                { id: 7, name: '非員工個人' },
+                { id: 8, name: 'AE卡' },
+                { id: 9, name: '自動扣款' },
+            ];
+            $scope.paymentChosen = 1;
+            $scope.TCICreditCardSelect = [
+                { id: 1, name: '董事長卡' },
+                { id: 1, name: '鄭媽卡' },
+                { id: 1, name: 'Rei 卡' },
+                { id: 1, name: '關姐卡' },
+                { id: 1, name: 'Piepie 卡' },
+                { id: 1, name: 'Frank 卡' },
+                { id: 1, name: 'Vincent 卡' },
+                { id: 1, name: 'Vincent AE 卡' },
+                { id: 1, name: 'Eise.Lee 卡' },
+            ];
+            $scope.TCICreditCardChosen = 1;
+            $scope.Data = {
+                userCard_info: '大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷',
+            }
+        }])
+    </script>
+
+</body>
+
+</html>

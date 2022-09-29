@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../scripts/angular.min.js"></script>
+    <script src="../../../scripts/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="../../../scripts/bootstrap5.2.0/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>A-一般請款單-確認</title>
+</head>
+
+<body>
+    <div ng-controller="GeneralInvoice01View as ctrl">
+        <div class="container-fluid page_01" id="page_generalInvoice01_view" >
+            <div class="pageHeader">
+                <span class="pageHeaderTitle"><b>一般請款單01-確認</b></span>
+            </div>
+            <div class="query_view">
+                <div class="query_view_left" style="font-size: var(--font-size-sm);">
+                    <div style="margin-right:1rem;">
+                        <span><b>部門別：</b></span><span>{{Data.department}}</span>
+                    </div>
+                    <div style="margin-right:1rem;">
+                        <span><b>發票號碼：</b></span><span>{{Data.invoiceNumber}}</span>
+                    </div>
+                </div>
+                <div style="font-size: var(--font-size-sm);">
+                    <span><b>日期：</b></span><span>{{Data.today}}</span>
+                </div>
+            </div>
+    
+            <section>
+                <div class="tableScroll">
+                    <table class="tci-table tci-table-bordered">
+                        <tbody>
+                            <tr style="background-color: var(--color-light-gray);text-align: center;">
+                                <th style="width: 8%;">No</th>
+                                <th>費用分類</th>
+                                <th>項目歸屬</th>
+                                <th>摘要說明</th>
+                                <th>專案編號</th>
+                                <th style="width: 8%;">幣別</th>
+                                <th>金額</th>
+                            </tr>
+                            <tr ng-repeat="data in Data.tableView">
+                                <td style="text-align: center;">{{data.id}}</td>
+                                <td style="text-align: center;">{{data.category}}</td>
+                                <td style="text-align: center;">{{data.cost}}</td>
+                                <td>{{data.description}}</td>
+                                <td style="text-align: center;">{{data.projectCode}}</td>
+                                <td style="text-align: center;">{{data.currencry}}</td>
+                                <td style="text-align: right;">{{data.amount}}</td>
+                            </tr>
+                            <tr style="text-align: right;color:var(--color-light-red)">
+                                <th colspan="5">合計</th>
+                                <th style="text-align: center;">{{Data.currency}}</th>
+                                <th>{{Data.total}}</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2" style="background-color: var(--color-light-gray);text-align: center;">相關單據
+                                </th>
+                                <td colspan="5">
+                                    <span>固定資產若無請採單/合約原因說明：</span>{{Data.relatedDocuments}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <span>付款方式</span><br>
+                                    <span style="color: var(--color-light-red);">{{Data.cheque.name}}</span>
+                                </th>
+                                <th colspan="2">
+                                    <span>抬頭</span><br>
+                                    <span style="color: var(--color-light-red);">{{Data.cheque.payableTo}}</span>
+                                </th>
+                                <th colspan="2">
+                                    <span>到期日</span><br>
+                                    <span style="color: var(--color-light-red);">{{Data.cheque.dueDate}}</span>
+                                </th>
+                                <th>
+                                    <span>回郵</span><br>
+                                    <span style="color: var(--color-light-red);">{{Data.cheque.status}}</span>
+                                </th>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <div class="tci-field">
+                        <div class="tci-field-label" style="width: 20%;">
+                            <span class="tci-field-text text-left">單據說明:</span>
+                        </div>
+                        <textarea class="tci-field-value" style="width: 80%;">{{Data.DocumentDescription}}</textarea>
+                    </div>
+                </div>
+                <hr>
+                <section class="fileBox formBox_gray">
+                    <div class="btnGroups mb-1">
+                        <button class="tci-btn bg_darkblue" data-bs-toggle="modal" data-bs-target="#addFileBoxModal"><i
+                                class="fa-solid fa-plus"></i>&nbsp;新增</button>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="table-secondary">
+                                <th style="text-align: center;width: 5%;">序號</th>
+                                <th>檔案</th>
+                                <th>檔案說明</th>
+                                <th style="width: 5%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in attachmentTable">
+                                <td style="text-align: center;">{{item.id}}</td>
+                                <td>{{item.attachment}}</td>
+                                <td>{{item.attachmentComment}}</td>
+                                <td style="text-align: center;"><button class="tci-icon bg_darkred"><i
+                                            class="fa-solid fa-trash-can"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- Modal -->
+                <div class="modal fade" id="addFileBoxModal" tabindex="-1" aria-labelledby="addFileBoxModalLabel"
+                    aria-hidden="true" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="addFileBoxModalLabel">新增檔案</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-lg-12 mb-2">
+                                    <label>選擇檔案 : </label>
+                                    <input class="form-control" type="file" ng-model="ctrl.Data.attachment">
+                                </div>
+                                <div class="col-lg-12 mb-2">
+                                    <label>檔案說明 : </label>
+                                    <textarea class="form-control" ng-model="ctrl.Data.attachmentComment"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="tci-btn bg_lightgray" data-bs-dismiss="modal">關閉</button>
+                                <button type="button" class="tci-btn bg_darkgreen">確定</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="btnGroups">
+                <button class="tci-btn bg_lightgray">回上一頁</button>
+                <button class="tci-btn bg_darkgreen">儲存單據</button>
+            </div>
+            <div class="userCard_info">
+                <span class="user_info">
+                    <u><b>使用者資訊：</b>
+                        <span>{{Data.userCard_info}}</span></u>
+                </span>
+            </div>
+        </div>
+    </div>
+  
+    <script src="../../../scripts/bootstrap5.2.0/bootstrap.bundle.min.js"></script>
+    <script>
+        const Container = angular.module('GeneralInvoice01_view', []);
+        Container.controller('GeneralInvoice01View', ['$scope', '$q', function ($scope, $q) {
+            $scope.Data = {
+                department:'資訊服務部',
+                invoiceNumber:'1215545',
+                today:'2021/10/10',
+                tableView: [
+                    { id: 1, category: '租金支出', cost: '大江-戰略數據中心', description: 'ttest', projectCode: '無', currencry: 'NTD', amount: 100.00 },
+                    { id: 2, category: '新資費用', cost: '大江-戰略數據中心', description: 'ttest', projectCode: '無', currencry: 'NTD', amount: 100.00 },
+                    { id: 3, category: '文具租借', cost: '大江生活-戰略數據中心', description: 'ttest', projectCode: '無', currencry: 'NTD', amount: 100.00 },
+                ],
+                currency:'NTD',
+                total:'40.44',
+                relatedDocuments:'tettt',
+                cheque:{
+                    name:'支票',
+                    payableTo:'test',
+                    dueDate:'2021/10/07',
+                    status:'無'
+                },
+                cash:{
+                    name:'領現',
+                    payee:'',
+                    recipient:''
+                },
+                tocompany:{
+                    name:'公司T/T',
+                    transferTo:'',
+                    transferDate:'',
+                    accountTo:'',
+                    PaymentTerm:''
+                },
+                TCICreditCard:{
+                    name:'公司卡',
+                    TCICreditCardChosen:'',
+                    transactionDate:''
+                },
+                employee:{
+                    name:'員工',
+                    employee:'',
+                    account:'',
+                },
+                payCash:{
+                    name:'臨櫃繳款',
+                    payableTo:'',
+                    DueDate:'',
+                },
+                payCash:{
+                    name:'非員工個人',
+                    accountName:'',
+                    transferDate:'',
+                    account:''
+                },
+                payCash:{
+                    name:'AE卡',
+                    cardNo:'',
+                    signature:'',
+                    transactionDate:'',
+                },
+                automatic:{
+                    name:'自動扣款',
+                    payableTo:'',
+                    withdrawal:'',
+                },
+                userCard_info: '大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷',
+            }
+            $scope.attachmentTable = [
+                { id: 1, attachment: '787.pdf', attachmentComment: '123456' },
+                { id: 2, attachment: '534537.pdf', attachmentComment: '45456' },
+                { id: 3, attachment: 'dsjfhjh.pdf', attachmentComment: '水電費合計' },
+            ]
+        }])
+    </script>
+</body>
+
+</html>

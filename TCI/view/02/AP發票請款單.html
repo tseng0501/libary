@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="page_invoicePaper02">
+    <div class="container-fluid page_02" id="page_invoicePaper02">
         <div class="pageHeader">
             <span class="pageHeaderTitle"><b>A/P發票請款單</b></span>
         </div>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="tci-valueBtn" style="display: flex;justify-content: flex-end;">
                     <select class="tci-field-value">
-                        <option selected>收貨採購單</option>
+                        <option ng-repeat="data in documents">{{data.name}}</option>
                         <option value="1">A/P發票-文件號碼</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
@@ -180,7 +180,8 @@
                                     <table style="padding: 3px;width:100%;font-size: var(--font-size-xs);">
                                         <tbody>
                                             <tr>
-                                                <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">發票日期：</th>
+                                                <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">
+                                                    發票日期：</th>
                                                 <td style="border: 0;padding: 3px;">2022/6/14</td>
                                             </tr>
                                             <tr>
@@ -198,7 +199,8 @@
                                     <table style="padding: 3px;width:100%;font-size: 13px;margin-bottom: 0;">
                                         <tbody>
                                             <tr>
-                                                <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">數量合計：</th>
+                                                <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">
+                                                    數量合計：</th>
                                                 <td style="border: 0;padding: 3px;">0.00</td>
                                             </tr>
                                             <tr>

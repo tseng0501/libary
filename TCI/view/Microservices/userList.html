@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../scripts/angular.min.js"></script>
+    <script src="../../../scripts/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="../../../scripts/bootstrap5.2.0/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./checkList.css">
+    <title>user列表</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: var(--color-light-gray);">
+        <div class="container">
+            <a class="navbar-brand" href="./checkList.html">大江生醫</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Menu">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="./checkList.html">微服務列表</a>
+                    <a class="nav-link" href="./userList.html">user列表</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="Logout" style="justify-content: end;">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="./login.html">登出</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="MicroservicesUisitList">
+        <div class="pageHeader">
+            <span class="pageHeaderTitle"><b>user列表</b></span>
+        </div>
+        <div style="display: flex;justify-content:space-between;margin-bottom: .5rem;">
+            <a class="tci-btn bg_darkgreen no_style" href="./editUserList.html"><i class="fa-solid fa-plus"></i>&nbsp;新增</a>
+            <input type="text" class="tci-form-control" style="width: 200px;" name="name" placeholder="名稱模糊查詢">
+        </div>
+        <section>
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="text-center" style="background-color: var(--color-light-gray);">
+                        <th style="width: 8%;">編號</th>
+                        <th>帳號</th>
+                        <th>密碼</th>
+                        <th>名稱</th>
+                        <th>過期時間</th>
+                        <th>狀態</th>
+                        <th>備註</th>
+                        <th style="width: 12%;">操作</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td>1</td>
+                        <td>user1</td>
+                        <td>123123</td>
+                        <td>名稱是什麼</td>
+                        <td>2021/01/10</td>
+                        <td>啟用</td>
+                        <td>....</td>
+                        <td>
+                            <button class="tci-icon tci-btn-warning"><a href="./editUserList.html" style="color: var(--color-snow);"><i class="fa-solid fa-pencil"></i></a></button>
+                            <button class="tci-icon bg_darkred" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fa-solid fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>分頁 頁碼</div>
+        </section>
+    </div>
+
+     <!-- deleteModal-->
+     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">刪除</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span>是否確定刪除？</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="tci-btn bg_lightgray" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="tci-btn bg_darkgreen">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../../scripts/bootstrap5.2.0/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="page_invoicePaper02">
+    <div class="container-fluid page_02" id="page_invoicePaper02_view">
         <div class="pageHeader">
             <span class="pageHeaderTitle"><b>A/P發票請款單-確認</b></span>
         </div>
@@ -22,7 +22,6 @@
                 style="font-size: var(--font-size-xs);background-color: var(--color-alge);color: var(--color-snow);padding: 2px;border-radius: var(--borderRadius);">公司別：<b>大江生活</b></span>
         </div>
         <section class="well">
-
             <div class="form">
                 <div class="left">
                     <div class="input-group mb-3">
@@ -181,7 +180,7 @@
                                     <table style="width:100%;">
                                         <tbody>
                                             <tr>
-                                                <th style="border: 0;width: 15%;">附　註：</th>
+                                                <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">附　註：</th>
                                                 <td style="border: 0;">NTD 6,707</td>
                                             </tr>
                                         </tbody>
@@ -203,59 +202,29 @@
                 </div>
             </section>
             <section class="fileBox formBox_gray">
-                <div class="tci-input-group tci-mb-2 fileContentNo formBox_title" style="margin-bottom: 0;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
-                    <div class="tci-input-group-prepend">
-                        <span class="tci-input-group-text tci-mr-2">檔案數:</span>
-                        <select class="tci-bs-custom-select" style="width:100px">
-                            <option selected>100</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
+                <div class="btnGroups mb-1">
+                    <button class="tci-btn bg_darkblue" data-bs-toggle="modal" data-bs-target="#addFileBoxModal"><i
+                            class="fa-solid fa-plus"></i>&nbsp;新增</button>
                 </div>
-                <div class="illustrate formBox_content" style="border-top-left-radius: 0;border-top-right-radius: 0;">
-                    <div class="fileIllustrate">
-                        <div class="tci-input-group tci-mr-1" style="width: 13%;">
-                            <div class="tci-input-group-prepend">
-                                <span class="tci-input-group-text">序號:</span>
-                            </div>
-                            <div class="tci-form-control gray">1</div>
-                        </div>
-                        <div class="tci-input-group tci-mr-1">
-                            <div class="tci-input-group-prepend">
-                                <span class="tci-input-group-text">檔案:</span>
-                            </div>
-                            <input type="file" class="tci-form-control" />
-                        </div>
-                        <div class="tci-input-group">
-                            <div class="tci-input-group-prepend">
-                                <span class="tci-input-group-text">檔案說明:</span>
-                            </div>
-                            <input type="text" class="tci-form-control" />
-                        </div>
-                    </div>
-                    <div class="fileIllustrate ">
-                        <div class="tci-input-group tci-mr-1" style="width: 13%;">
-                            <div class="tci-input-group-prepend">
-                                <span class="tci-input-group-text">序號:</span>
-                            </div>
-                            <div class="tci-form-control gray">2</div>
-                        </div>
-                        <div class="tci-input-group tci-mr-1">
-                            <div class="tci-input-group-prepend">
-                                <span class="tci-input-group-text">檔案:</span>
-                            </div>
-                            <input type="file" class="tci-form-control" />
-                        </div>
-                        <div class="tci-input-group">
-                            <div class="tci-input-group-prepend">
-                                <span class="tci-input-group-text">檔案說明:</span>
-                            </div>
-                            <input type="text" class="tci-form-control" />
-                        </div>
-                    </div>
-                </div>
+                <table class="tci-table tci-table-bordered">
+                    <thead>
+                        <tr style="background-color: var(--color-whitesmoke);">
+                            <th style="text-align: center;width: 5%;">序號</th>
+                            <th>檔案</th>
+                            <th>檔案說明</th>
+                            <th style="width: 5%;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">1</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td style="text-align: center;"><button class="tci-icon bg_darkred"><i
+                                        class="fa-solid fa-trash-can"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             <div class="btnGroups  tci-mt-2">
                 <button class="tci-btn bg_lightgray">回上一頁</button>
@@ -271,6 +240,8 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
 </body>
 
 </html>

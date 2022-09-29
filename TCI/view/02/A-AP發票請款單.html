@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../scripts/angular.min.js"></script>
+    <script src="../../../scripts/jquery-2.2.4.min.js"></script>
+    <script src="../../../scripts/moment/moment.min.js"></script>
+    <link rel="stylesheet" href="../../../scripts/bootstrap5.2.0/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>A/P發票請款單</title>
+</head>
+
+<body>
+    <div ng-controller="InvoiceBill as ctrl">
+        <div class="container-fluid page_02" id="page_invoicePaper02" >
+            <div class="pageHeader">
+                <span class="pageHeaderTitle"><b>A/P發票請款單</b></span>
+            </div>
+    
+            <div style="text-align: right;font-size: var(--font-size-sm);margin-bottom: 1rem;">
+                <span
+                    style="font-size: var(--font-size-xs);background-color: var(--color-alge);color: var(--color-snow);padding: 2px;border-radius: var(--borderRadius);">公司別：<b>{{ctrl.Data.company}}</b></span>
+            </div>
+            <section class="query">
+                <div class="tci-field">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text">單據別:</span>
+                    </div>
+                    <div class="tci-valueBtn" style="display: flex;justify-content: flex-end;">
+                        <select class="tci-field-value" ng-model="ctrl.Data.documentName" ng-options="item.id as item.name for item in documents">
+                        </select>
+                        <input type="text" class="tci-field-value" value="160407-09-0001" style="width: 200px;" ng-model="ctrl.Data.documentNo">
+                    </div>
+                </div>
+                <div class="tci-field short">
+                    <div class="tci-field-label">
+                        <span class="tci-field-text">收貨採購單:</span>
+                    </div>
+                    <select class="tci-field-value">
+                        <option value="1" ng-model="ctrl.Data.goodsStatus">有</option>
+                        <option value="2" ng-model="ctrl.Data.goodsStatus">無</option>
+    
+                    </select>
+                </div>
+                <div class="btnGroups">
+                    <button class="tci-btn bg_darkblue" ng-click="searchShowHide()">查詢</button>
+                    <button class="tci-btn tci-btn-grass" ng-click="undeliveredListShowHide()">A/P 未送簽清單</button>
+                </div>
+            </section>
+            <!-- 選擇A/P未送簽清單，顯示以下內容 -->
+            <div style="display: flex;justify-content: end;margin-top: 1rem;" ng-show="undeliveredList">
+                <span style="margin: auto 3px;flex: none;">查詢訂單：</span>
+                <select class="tci-field-value" style="width: 80px;"
+                    ng-options="item.value for item in yearsSelect" ng-model="ctrl.Data.years"></select>
+                <span style="margin: auto 3px;flex: none;">年</span>
+    
+                <select class="tci-field-value" style="width: 70px;"
+                    ng-options="item.value for item in monthSelect" ng-model="ctrl.Data.month"></select>
+                <span style="margin: auto 3px;flex: none;">月，</span>
+    
+                <span style="margin: auto 3px;flex: none;">銷售人員</span>
+                <select class="tci-field-value" style="width: 120px;margin-right: 5px;">
+                    <option selected>無銷售人員</option>
+                    <option value="1">請選擇</option>
+                </select>
+                <button class="tci-btn bg_darkblue">查詢</button>
+            </div>
+            <hr>
+            <section class="well" ng-show="search">
+                <div class="form">
+                    <div class="left">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" style="font-size: var(--font-size-sm);">部門別&nbsp;<button
+                                    class="tci-icon bg_darkkhaki" data-bs-toggle="modal"
+                                    data-bs-target="#allDepartmentsModal"><i
+                                        class="fa-solid fa-building"></i></button></label>
+                            <input type="text" class="form-control" disabled value="大江-戰略數據中心">
+                        </div>
+                        <div class="input-group mb-3 type">
+                            <label class="input-group-text" style="font-size: var(--font-size-sm);">組別</label>
+                            <select class="form-select" style="font-size: var(--font-size-sm);" ng-model="ctrl.Data.groups"
+                            ng-options="item.id as item.name for item in groups">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3" style="width:200px;">
+                        <label class="input-group-text" style="font-size: var(--font-size-sm);">日期</label>
+                        <input type="text" class="form-control" disabled value={{currentDate}}
+                            style="font-size: var(--font-size-sm);">
+                    </div>
+                </div>
+                <section class="btnBox" style="text-align: center;">
+                    <button class="tci-btn {{data.color==0?'bg_darkblue':'tci-btn-orgin'}}" style="margin: 0 3px;"
+                        ng-repeat="data in documentsGroupsBtn">{{data.doc}}&nbsp;內容</button>
+                </section>
+                <section class="tableScorll" style="overflow-x: auto;margin-top: 1rem;">
+                    <div class="btnGroups">
+                        <button class="tci-btn bg_darkblue" style="padding: 3px;"> 顯示明細</button>
+                    </div>
+                    <div style="min-width: 940px;">
+                        <div style="font-size: 13px;">
+                            <div style="display: flex;justify-content: space-between;">
+                                <span><b>廠商名稱：</b>{{ctrl.Data.tradeName}}</span>
+                                <span style="width: 200px;"><b>文件日期：</b>{{ctrl.Data.fileDate}}</span>
+                            </div>
+                            <div style="display: flex;justify-content: space-between;">
+                                <span><b>專案名稱：</b>{{ctrl.Data.projectName}}</span>
+                                <span style="width: 200px;"><b>文件號碼：</b>{{ctrl.Data.fileNumber}}</span>
+                            </div>
+                        </div>
+                        <table class="tci-table-bordered" style="padding: 3px;width:100%;font-size: 13px;">
+                            <thead>
+                                <tr style="text-align: center;background-color:var(--color-light-gray);">
+                                    <th style="width: 20px;">NO</th>
+                                    <th>項目號碼</th>
+                                    <th>專案代號</th>
+                                    <th>品名/規格</th>
+                                    <th>倉庫</th>
+                                    <th>數量</th>
+                                    <th>單位</th>
+                                    <th>單價</th>
+                                    <th>小計</th>
+                                    <th>採購單價/數量</th>
+                                    <th>備註</th>
+                                    <th>檢驗</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="data in tableDocuments">
+                                    <td style="text-align: center;">{{data.id}}</td>
+                                    <td style="text-align: center;">{{data.projectNum}}</td>
+                                    <td style="text-align: center;">{{data.projectCode}}</td>
+                                    <td>{{data.project}}</td>
+                                    <td style="text-align: center;">{{data.warehouse}}</td>
+                                    <td style="text-align: center;">{{data.quantity}}</td>
+                                    <td style="text-align: center;">{{data.unit}}</td>
+                                    <td style="text-align: center;">{{data.price}}</td>
+                                    <td style="text-align: center;">{{data.subtotal}}</td>
+                                    <td style="text-align: center;">{{data.purchaseUnit}}</td>
+                                    <td style="text-align: center;">{{data.remark}}</td>
+                                    <td style="text-align: center;">{{data.inspection}}</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td colspan="3" valign="top">
+                                        <table style="padding: 3px;width:100%;font-size: var(--font-size-xs);">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">
+                                                        發票日期：</th>
+                                                    <td style="border: 0;padding: 3px;">{{ctrl.Data.invoice.invoiceDate}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">發票聯式：</th>
+                                                    <td style="border: 0;padding: 3px;">{{ctrl.Data.invoice.invoiceForm}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">發票編號：</th>
+                                                    <td style="border: 0;padding: 3px;">{{ctrl.Data.invoice.invoiceNum}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td colspan="4" valign="top">
+                                        <table style="padding: 3px;width:100%;font-size: 13px;margin-bottom: 0;">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">
+                                                        數量合計：</th>
+                                                    <td style="border: 0;padding: 3px;">{{ctrl.Data.invoice.total}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">付款條件：</th>
+                                                    <td style="border: 0;padding: 3px;">{{ctrl.Data.invoice.terms}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">付款日期：</th>
+                                                    <td style="border: 0;padding: 3px;">{{ctrl.Data.invoice.paymentDate}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td colspan="5" valign="top">
+                                        <table style="padding: 3px;width:100%;font-size: 13px;margin-bottom: 0;">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border: 0;width: 20%;padding: 3px;">合　計：</th>
+                                                    <td style="border: 0;padding: 3px;">&nbsp;</td>
+                                                    <td style="border: 0;text-align: right;padding: 3px;">{{ctrl.Data.amount.total}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">稅　額：</th>
+                                                    <td style="border: 0;padding: 3px;">&nbsp;</td>
+                                                    <td style="border: 0;text-align: right;padding: 3px;">{{ctrl.Data.amount.tax}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">訂　金：</th>
+                                                    <td style="border: 0;padding: 3px;">{{ctrl.Data.amount.PaNum}}</td>
+                                                    <td style="border: 0;text-align: right;padding: 3px;">{{ctrl.Data.amount.deposit}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th style="border: 0;padding: 3px;">小　計：</th>
+                                                    <td style="border: 0;padding: 3px;">&nbsp;</td>
+                                                    <td style="border: 0;text-align: right;padding: 3px;">{{ctrl.Data.amount.subtotal}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td colspan="7">
+                                        <table style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border: 0;width: 80px;padding: 3px;white-space: nowrap;">附　註：
+                                                    </th>
+                                                    <td style="border: 0;">{{ctrl.Data.notes}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td colspan="4">
+                                        <table style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border: 0;width: 20%;">總　計：</th>
+                                                    <td style="border: 0;text-align: right;">{{ctrl.Data.total}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div
+                            style="background-color: var(--color-light-red);color: var(--color-snow);padding: 5px;text-align: center;">
+                            <span>此單據已申請(單據編號<span>{{ctrl.Data.expiredDocument}}</span>)</span>
+                        </div>
+                    </div>
+                </section>
+                <div class="btnGroups  tci-mt-2">
+                    <button class="tci-btn bg_darkblue">重新查詢</button>
+                    <button class="tci-btn bg_darkgreen">確認資料，預覽單據</button>
+                </div>
+            </section>
+            <div class="userCard_info">
+                <div class="userCard_info">
+                    <span class="user_info">
+                        <u><b>使用者資訊：</b>
+                            <span>{{Data.userCard_info}}</span></u>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script src="../../../scripts/bootstrap5.2.0/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const Container = angular.module('app', []);
+        Container.controller('InvoiceBill', ['$scope', function ($scope) {
+            $scope.Data = {
+                userCard_info:'大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷',
+            };
+            $scope.currentDate = moment().format('YYYY/MM/DD');
+            $scope.search = false;
+            $scope.undeliveredList = false;
+            $scope.searchShowHide = function () {
+                $scope.search = $scope.search ? false : true;
+            }
+            $scope.undeliveredListShowHide = function () {
+                $scope.undeliveredList = $scope.undeliveredList ? false : true;
+            };
+            $scope.yearsSelect = [
+                { id: 1, value: '2020' },
+                { id: 2, value: '2021' },
+                { id: 3, value: '2022' },
+                { id: 4, value: '2023' },
+            ];
+            $scope.monthSelect = [
+                { id: 1, value: '2020' },
+                { id: 2, value: '2021' },
+                { id: 3, value: '2022' },
+                { id: 4, value: '2023' },
+            ];
+            $scope.documents = [
+                { id: 1, name: '採購單號' },
+                { id: 2, name: 'A/P發票-文件號碼' },
+                { id: 3, name: '專案代號' },
+            ];
+            $scope.groups = [
+                { id: 1, name: '共用' },
+                { id: 1, name: '電商組' },
+                { id: 1, name: '國際流通組' },
+            ];
+            $scope.documentsGroupsBtn = [
+                { id: 1, doc: '採購單 1254-555-222', color: 0 },
+                { id: 2, doc: '採購單 1254-555-000', color: 0 },
+                { id: 3, doc: '收採單 1254-555-222', color: 1 },
+                { id: 4, doc: '收採單 1254-555-000', color: 1 },
+            ];
+            $scope.tableDocuments = [
+                {
+                    id: 1, projectNum: 'D35ZZ0021', projectCode: 4587744, project: 'Home Dr.-黃精馬卡帝王錠(550mg/顆，3顆/包，15包/盒)-外盒',
+                    warehouse: 'S16', quantity: '15,100', unit: 'PSD', price: 'NTD 15.5000', subtotal: 'NTD 79,825', purchaseUnit: 'NTD 15.5000 / 5,150.00(差異:0.00%)', remark: '122', inspection: '免驗'
+                },
+                {
+                    id: 2, projectNum: 'D35ZZ0021', projectCode: 4587744, project: 'Home Dr.-黃精馬卡帝王錠(550mg/顆，3顆/包，15包/盒)-外盒',
+                    warehouse: 'S16', quantity: '15,100', unit: 'PSD', price: 'NTD 15.5000', subtotal: 'NTD 79,825', purchaseUnit: 'NTD 15.5000 / 5,150.00(差異:0.00%)', remark: '122', inspection: '免驗'
+                },
+                {
+                    id: 3, projectNum: 'D35ZZ0021', projectCode: 4587744, project: 'Home Dr.-黃精馬卡帝王錠(550mg/顆，3顆/包，15包/盒)-外盒',
+                    warehouse: 'S16', quantity: '15,100', unit: 'PSD', price: 'NTD 15.5000', subtotal: 'NTD 79,825', purchaseUnit: 'NTD 15.5000 / 5,150.00(差異:0.00%)', remark: '122', inspection: '免驗'
+                },
+            ]
+        }])
+    </script>
+</body>
+
+</html>

@@ -51,17 +51,16 @@
   #page_generalInvoice01 .query .content .tci-field .tci-field-value {
     width: 75%;
   }
-  #page_generalInvoice01 .generalInvoiceOrder .orderContent {
-    display: flex;
+  #page_generalInvoice01 .generalInvoiceOrder .orderContent .orderNum {
+    margin-bottom: 0.5rem;
+    font-size: var(--font-size-sm);
   }
-  #page_generalInvoice01 .generalInvoiceOrder .orderContent .order {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin-right: 5px;
+  #page_generalInvoice01 .generalInvoiceOrder .orderContent .orderNum .tci-field-value {
+    width: 25%;
+    display: inline;
   }
-  #page_generalInvoice01 .generalInvoiceOrder .orderContent .order .tci-input-group-text {
-    margin: 0 0.5rem;
+  #page_generalInvoice01 .generalInvoiceOrder .orderContent .orderNum .tci-field-value.reason {
+    width: 35%;
   }
   #page_generalInvoice01 .generalInvoicePayment .paymentContent .block {
     display: flex;
@@ -70,6 +69,7 @@
   }
   #page_generalInvoice01 .generalInvoicePayment .paymentContent .block .tci-field {
     width: 48%;
+    margin: 5px 0;
   }
   #page_generalInvoice01 .generalInvoicePayment .paymentContent .block .tci-field .tci-field-label {
     width: 20%;
@@ -84,12 +84,35 @@
   }
   #page_generalInvoice01 .generalInvoicePayment .paymentContent .block2 .tci-field {
     width: 48%;
+    margin: 5px 0;
   }
   #page_generalInvoice01 .generalInvoicePayment .paymentContent .block2 .tci-field .tci-field-label {
     width: 30%;
   }
   #page_generalInvoice01 .generalInvoicePayment .paymentContent .block2 .tci-field .tci-field-value {
     width: 70%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block3 .tci-field {
+    width: 30%;
+    margin: 5px 0;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block3 .tci-field .tci-field-label {
+    width: 30%;
+  }
+  #page_generalInvoice01 .generalInvoicePayment .paymentContent .block3 .tci-field .tci-field-value {
+    width: 70%;
+  }
+  .page_01 .query_view {
+    display: flex;
+    justify-content: space-between;
+  }
+  .page_01 .query_view .query_view_left {
+    display: flex;
   }
 }
 @media (min-width: 992px) {

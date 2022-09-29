@@ -106,10 +106,10 @@
     width: 25%;
   }
   .itinerary .itineraryContent .formBox_date .tci-field .tci-field-label {
-    width: 25%;
+    width: 30%;
   }
   .itinerary .itineraryContent .formBox_date .tci-field .tci-field-value {
-    width: 70%;
+    width: 65%;
   }
   .reason .reasonContent .tci-field {
     flex-wrap: wrap;

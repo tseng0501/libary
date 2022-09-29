@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../scripts/angular.min.js"></script>
+    <script src="../../../scripts/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="../../../scripts/bootstrap5.2.0/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../scss/tci-all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>出差暨旅費申請單-確認</title>
+</head>
+
+<body>
+    <div ng-controller="BusinessTravelView as template">
+        <div class="container-fluid page_03" id="page_businessTravel_view" >
+            <div class="pageHeader">
+                <span class="pageHeaderTitle"><b>出差暨旅費申請單-確認</b></span>
+            </div>
+            <section class="businessTravelTable">
+                <div class="tableScroll0">
+                    <table class="tci-table tci-table-bordered">
+                        <tbody>
+                            <tr>
+                                <th style="background-color: var(--color-light-gray);width: 20%;">經辦人</th>
+                                <td>
+                                    <div class="table_row">
+                                        <div class="tci-bs-input-group tci-mb-1 small">
+                                            <div class="tci-bs-input-group-prepend">
+                                                <span class="tci-bs-input-group-text">員工編號:</span>
+                                            </div>
+                                            <div class="tci-form-control gray">{{Data.employeeID}}</div>
+                                        </div>
+                                        <div class="tci-bs-input-group tci-mb-1">
+                                            <div class="tci-bs-input-group-prepend">
+                                                <span class="tci-bs-input-group-text">姓名:</span>
+                                            </div>
+                                            <div class="tci-form-control gray">{{Data.employeeName}}</div>
+    
+                                        </div>
+                                        <div class="tci-bs-input-group tci-mb-1">
+                                            <div class="tci-bs-input-group-prepend">
+                                                <span class="tci-bs-input-group-text">部門別:</span>
+                                            </div>
+                                            <div class="tci-form-control gray">{{Data.department}}</div>
+                                        </div>
+                                        <div class="tci-bs-input-group tci-mb-1 small">
+                                            <div class="tci-bs-input-group-prepend">
+                                                <span class="tci-bs-input-group-text">分機:</span>
+                                            </div>
+                                            <div class="tci-form-control gray">{{Data.Extension}}</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="background-color: var(--color-light-gray);">出差人員
+                                </th>
+                                <td>{{Data.applicant}}</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color: var(--color-light-gray);">國內/國外</th>
+                                <td>{{Data.category}}</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color: var(--color-light-gray);">返台</th>
+                                <td>{{Data.flyBack}}</td>
+                            </tr>
+                            <tr>
+                                <th style="background-color: var(--color-light-gray);">同行人員
+                                </th>
+                                <!-- 5個以上 顯示 勾選了5個人員資料 -->
+                                <td>{{Data.Companions}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="formBox_gray tci-mb-4 itinerary">
+                    <div class="formBox_title">
+                        <span>行程內容</span>
+                    </div>
+                    <div class="formBox_content itineraryContent">
+                        <div class="formBox_date">
+                            <div class="tci-field">
+                                <div class="tci-field-label">
+                                    <span class="tci-field-text text-left">開始日期:</span>
+                                </div>
+                                <div class="tci-field-value gray" style="align-items: center;" >{{Data.StartDate}}</div>
+                            </div>
+                            <div class="tci-field">
+                                <div class="tci-field-label">
+                                    <span class="tci-field-text text-left">結束日期:</span>
+                                </div>
+                                <div class="tci-field-value gray" style="align-items: center;" >{{Data.EndDate}}</div>
+                            </div>
+                            <div class="tci-field">
+                                <div class="tci-field-label">
+                                    <span class="tci-field-text text-left">出差地點:</span>
+                                </div>
+                                <div class="tci-field-value gray" style="align-items: center;" >{{Data.Journey}}</div>
+                            </div>
+                            <div class="tci-field">
+                                <div class="tci-field-label">
+                                    <span class="tci-field-text text-left">出差地區:</span>
+                                </div>
+                                <div class="tci-field-value gray" style="align-items: center;" >{{Data.region}}</div>
+                            </div>
+                        </div>
+                        <div class="tci-text-center">
+                            <span>行程(共計<span style="font-weight: bold;color: var(--color-dark-green);">{{Data.JourneyTotal}}</span>天)</span>
+                        </div>
+                        <hr>
+                        <div class="tableScroll">
+                            <table class="tci-table tci-table-bordered journey">
+                                <thead>
+                                    <tr style="text-align: center;">
+                                        <th style="color: var(--color-dark-red);background-color: var(--color-whitesmoke);">
+                                            星期天</th>
+                                        <th>星期一</th>
+                                        <th>星期二</th>
+                                        <th>星期三</th>
+                                        <th>星期四</th>
+                                        <th>星期五</th>
+                                        <th style="color: var(--color-dark-red);background-color: var(--color-whitesmoke);">
+                                            星期六</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="{{item.bg}}" ng-repeat="item in itinerary">
+                                            <div class="{{item.class}}"><span>{{item.date}}</span></div>
+                                            <div style="text-align: center;">
+                                                <span class="{{item.city?'place':''}}">{{item.city}}</span><br />
+                                                <span class="region">{{item.region}}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="formBox_gray reason tci-mb-4">
+                    <div class="formBox_title">
+                        <span>事由</span>
+                    </div>
+                    <div class="formBox_content reasonContent">
+                        <div class="visit">
+                            <div class="tci-field">
+                                <div class="tci-field-label">
+                                    <span class="tci-field-text text-left">拜訪客戶:</span>
+                                </div>
+                                <div class="tci-field-content">
+                                    <div class="tci-field-value gray" style="align-items: center;">
+                                        {{Data.salesCall.SalesCallStartDate}}</div>
+                                    <span style="margin: auto;">~</span>
+                                    <div class="tci-field-value gray" style="align-items: center;">
+                                        {{Data.salesCall.SalesCallEndDate}}</div>
+                                </div>
+                            </div>
+                            <div class="tableScroll">
+                                <table class="tci-table tci-table-bordered">
+                                    <thead>
+                                        <th class="date">拜訪期間</th>
+                                        <th>此次拜訪支援哪個業務(選填)</th>
+                                        <th>CRM客戶</th>
+                                        <th>拜訪目的</th>
+                                        <th>預計效益</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="item in Data.salesCall.data">
+                                            <td>
+                                                <div class="tci-field-content">
+                                                    <span>{{item.period}}</span>
+    
+                                                </div>
+                                            </td>
+                                            <td>{{item.whovisit}}</td>
+                                            <td>{{item.crm}}</td>
+                                            <td>{{item.purpose}}</td>
+                                            <td>{{item.benefit}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="participate">
+                            <div class="tci-field">
+                                <div class="tci-field-label">
+                                    <span class="tci-field-text text-left">參加展覽:</span>
+                                </div>
+                                <div class="tci-field-content">
+                                    <div class="tci-field-value gray" style="align-items: center;">
+                                        {{Data.exhibition.ExhibitionStartDate}}</div>
+                                    <span style="margin: auto;">~</span>
+                                    <div class="tci-field-value gray" style="align-items: center;">
+                                        {{Data.exhibition.ExhibitionEndDate}}</div>
+                                </div>
+                            </div>
+                            <div class="tableScroll">
+                                <table class="tci-table tci-table-bordered">
+                                    <thead>
+                                        <th class="date">拜訪期間</th>
+                                        <th>展覽名稱</th>
+                                        <th>拜訪目的</th>
+                                        <th>預計效益</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="item in Data.exhibition.data">
+                                            <td>
+                                                <div class="tci-field-content">
+                                                    <span>{{item.period}}</span>
+                                                </div>
+                                            </td>
+                                            <td>{{item.exhibitionName}}</td>
+                                            <td>{{item.purpose}}</td>
+                                            <td>{{item.benefit}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="procurement">
+                            <div class="tci-field">
+                                <div class="tci-field-label">
+                                    <span class="tci-field-text text-left">出國採購:</span>
+                                </div>
+                                <div class="tci-field-content">
+                                    <div class="tci-field-value gray" style="align-items: center;">
+                                        {{Data.procurement.ProcurementStartDate}}</div>
+                                    <span style="margin: auto;">~</span>
+                                    <div class="tci-field-value gray" style="align-items: center;">
+                                        {{Data.procurement.ProcurementEndDate}}</div>
+                                </div>
+                            </div>
+                            <div class="tableScroll">
+                                <table class="tci-table tci-table-bordered">
+                                    <thead>
+                                        <th class="date">拜訪期間</th>
+                                        <th>供應商名稱</th>
+                                        <th>拜訪目的</th>
+                                        <th>預計效益</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="item in Data.procurement.data">
+                                            <td>
+                                                <div class="tci-field-content">
+                                                    <span>{{item.period}}</span>
+                                                </div>
+                                            </td>
+                                            <td>{{item.supplierName}}</td>
+                                            <td>{{item.purpose}}</td>
+                                            <td>{{item.benefit}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="others">
+                            <div class="tci-field">
+                                <div class="tci-field-label">
+                                    <span class="tci-field-text text-left">其他事由:</span>
+                                </div>
+                                <div class="tci-field-content">
+                                    <div class="tci-field-value gray" style="align-items: center;">
+                                        {{Data.others.OthersStartDate}}</div>
+                                    <span style="margin: auto;">~</span>
+                                    <div class="tci-field-value gray" style="align-items: center;">
+                                        {{Data.others.OthersEndDate}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tableScroll">
+                                <table class="tci-table tci-table-bordered">
+                                    <thead>
+                                        <th class="date">拜訪期間</th>
+                                        <th>事由</th>
+                                        <th>事由說明</th>
+                                        <th>預計效益</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="item in Data.others.data">
+                                            <td>
+                                                <div class="tci-field-content">
+                                                    <span>{{item.period}}</span>
+                                                </div>
+                                            </td>
+                                            <td>{{item.purpose}}</td>
+                                            <td>{{item.description}}</td>
+                                            <td>{{item.benefit}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formBox_gray agency tci-mb-4">
+                    <div class="formBox_title">
+                        <span>代辦需求</span>
+                    </div>
+    
+                    <div class="formBox_content agencyContent">
+                        <div style="margin-bottom:2rem; color:var(--color-dark-red)">
+                            <span>提示:若有『非自費』支付之"機票/住宿/簽證/護照"等費用時,請務必勾選下方對應之代辦事項。</span>
+                        </div>
+                        <div class="tci-field" ng-repeat="item in Data.agencyServices">
+                            <div class="tci-field-label">
+                                <div class="tci-form-check tci-form-check-inline">
+                                    <input class="tci-form-check-input" type="checkbox" value="{{item.display}}"
+                                        ng-model="item.selected" disabled>&nbsp;
+                                    <span class="tci-field-text text-left">{{item.display}}:</span>
+                                </div>
+                            </div>
+                            <input type="text" class="tci-field-value gray" value="{{item.value}}" disabled />
+                        </div>
+                    </div>
+                </div>
+                <div class="formBox_gray advance">
+                    <div class="formBox_title">
+                        <span>預支旅費(單人)</span>
+                    </div>
+                    <div class="formBox_content advanceContent">
+                        <div>
+                            <div style="display: flex;">
+                                <select class="tci-form-control gray" style="width: 200px;" disabled>
+                                    <option selected>馬來西亞幣</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <input type="text" class="tci-form-control gray" value="10,000,000" disabled />
+                                <button class="tci-icon bg_darkred tci-ml-1" style="width: 60px;"><i
+                                        class="fa-solid fa-trash-can"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="btnGroups" style="text-align: right;">
+                <button class="tci-btn bg_lightgray">回上一頁</button>
+                <button class="tci-btn bg_darkgreen">儲存單據</button>
+            </div>
+            <div class="userCard_info">
+                <span class="user_info">
+                    <u><b>使用者資訊：</b>
+                        <span>{{Data.userCard_info}}</span></u>
+                </span>
+            </div>
+        </div>
+    </div>
+  
+    <script src="../../../scripts/bootstrap5.2.0/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const Container = angular.module('app', []);
+        Container.controller('BusinessTravelView', ['$scope', '$filter', function ($scope, $filter) {
+            $scope.itinerary = [
+                { id: 1, date: '', city: '', region: '', class: 'holiday', bg: 'holiday_td' },
+                { id: 2, date: '9/5', city: '阿拉伯聯合大公國', region: '卡瑪麗', class: 'weekdays_date', bg: '' },
+                { id: 3, date: '9/6', city: '阿拉伯聯合大公國', region: '卡瑪麗', class: 'weekdays_date', bg: '' },
+                { id: 4, date: '9/7', city: '阿拉伯聯合大公國', region: '卡瑪麗', class: 'weekdays_date', bg: '' },
+                { id: 5, date: '9/8', city: '阿拉伯聯合大公國', region: '卡瑪麗', class: 'weekdays_date', bg: '' },
+                { id: 6, date: '9/9', city: '阿拉伯聯合大公國', region: '卡瑪麗', class: 'weekdays_date', bg: '' },
+                { id: 6, date: '9/10', city: '阿拉伯聯合大公國', region: '卡瑪麗', class: 'holiday', bg: 'holiday_td' },
+            ];
+            //預支旅費(單人)
+            $scope.Data = {
+                employeeID:'2206A0011',
+                employeeName:'CLOUD.HSU許田坪',
+                department:'系統維運組',
+                extension:'2585',
+                applicant:'HSU許田坪',
+                category:'國內',
+                companions:'無',
+                flyBack:'是',
+                journeyTotal:20,
+                startDate:'2022/10/02',
+                endDate:'2022/10/10',
+                journey:'阿拉伯聯合大公園',
+                region:'大公園',
+                userCard_info:'大江生醫 - 軟體研發組 - 大江戰士TCI Warrior(2) - 2206A0011 - HEDY.TSENG - 曾莞婷',
+                //拜訪客戶
+                SalesCall: {
+                    SalesCallStartDate: '2022/10/08',
+                    SalesCallEndDate: '2022/11/20',
+                    data: [
+                        { id: 1, period: '2022/11/11~2022/11/15', whovisit: 'test', crm: 'test', purpose: 'testt', benefit: 'ttt' },
+                        { id: 2, period: '2022/11/11~2022/11/15', whovisit: 'test', crm: 'test', purpose: 'testt', benefit: 'ttt' },
+                        { id: 3, period: '2022/11/11~2022/11/15', whovisit: 'test', crm: 'test', purpose: 'testt', benefit: 'ttt' },
+                    ]
+                },
+                //參加展覽
+                Exhibition: {
+                    ExhibitionStartDate: '2022/10/08',
+                    ExhibitionEndDate: '2022/11/20',
+                    data: [
+                        { id: 1, period: '2022/11/11~2022/11/15', exhibitionName: '12', purpose: '4545', benefit: 'ttt' },
+                    ]
+                },
+                //出國採購
+                procurement: {
+                    ProcurementStartDate: '2022/10/08',
+                    ProcurementEndDate: '2022/11/20',
+                    data: [
+                        { id: 1, period: '2022/11/11~2022/11/15', supplierName: 'test', purpose: 'testt', benefit: 'ttt' },
+                    ]
+                },
+                //其他事由
+                others: {
+                    OthersStartDate: '2022/10/08',
+                    OthersEndDate: '2022/11/20',
+                    data: [
+                        { id: 1, period: '2022/11/11~2022/11/15', purpose: 'testt', description: 'ttt', benefit: 'ttt' },
+                    ]
+                },
+                //代辦需求
+                agencyServices: [
+                    { id: 1, name: 'BookingFlight', display: '代辦機票', value: '菲菲', check: true },
+                    { id: 2, name: 'BookingAccommodation', display: '代辦住宿', value: '菲菲', check: true },
+                    { id: 3, name: 'VisaService', display: '代辦簽證', value: '', check: true },
+                    { id: 4, name: 'PassportService', display: '代辦護照', value: '', check: true },
+                    { id: 5, name: 'PickServiceLeaving', display: '專車接送(搭機)', value: '', check: false },
+                    { id: 6, name: 'PickServiceArriving', display: '專車接送(接機)', value: '', check: false },
+                    { id: 7, name: 'Insurance', display: '代辦保險，備註', value: '', check: false },
+                    { id: 8, name: 'Others', display: '其他代辦', value: '', check: false },
+                ]
+            }
+        }])
+    </script>
+</body>
+
+</html>
+
+<!-- hedy 加入按鈕，按下去，出現下面的表格 -->

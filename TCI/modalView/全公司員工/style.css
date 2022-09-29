@@ -44,9 +44,13 @@
   padding: 5px;
   border-radius: var(--borderRadius);
   box-shadow: var(--borderShadow);
+  text-align: left;
 }
 #page_allEmployees_modal .container .row_display .box input {
   margin-top: 3px;
+}
+#page_allEmployees_modal .container .row_display .box label {
+  font-size: var(--font-size-sm);
 }
 #page_allEmployees_modal .container .row_display .box.box_1 {
   background-color: var(--color-light-blue);

@@ -1,4 +1,4 @@
-#page_invoicePaper02{
+.page_02{
 
     .btnBox{
         background-color: var(--color-light-blue);
@@ -12,7 +12,7 @@
     }
 }
 @media (min-width:768px) {
-    #page_invoicePaper02 {
+    .page_02 {
         .query {
             display: flex;
             flex-wrap: wrap;
@@ -70,7 +70,7 @@
 }
 
 @media (min-width:992px) {
-    #page_invoicePaper02 {
+    .page_02 {
         .query {
             .tci-field {
                 width: 50%;

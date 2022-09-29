@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--color-light-gray);
+}
+#Login{
+    .container-fluid {
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0.7;
+    }
+    .img{
+        width: 50%;
+    }
+    .form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: auto;
+        .checkbox {
+            font-weight: 400;
+        }
+        .form-control {
+            position: relative;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
+}
