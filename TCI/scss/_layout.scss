@@ -117,38 +117,7 @@ body {
     }
 }
 
-//列印的button
-.print_btn {
-    .btnGroups {
-        text-align: center;
 
-        button {
-            width: 100%;
-            margin-bottom: .5rem;
-        }
-    }
-}
-
-.print_table {
-    margin-top: 1rem;
-
-    .tableContent {
-        margin-bottom: 2rem;
-
-        .tci-table-bordered td,
-        .tci-table-bordered th {
-            border: 1px solid var(--color-dark);
-        }
-
-        .tableScroll {
-            overflow-x: auto;
-
-            .tableAuto {
-                width: 900px;
-            }
-        }
-    }
-}
 
 .btnGroups {
     text-align: right;
@@ -196,36 +165,6 @@ body {
         }
     }
 
-    //列印的button
-    .print_btn {
-        .btnGroups {
-            text-align: center;
-
-            button {
-                width: auto;
-                height: 60px;
-                margin-bottom: .5rem;
-            }
-        }
-    }
-
-    //列印表格
-    .print_table {
-        .tableContent {
-            margin-bottom: 2rem;
-
-            .tci-table-bordered td,
-            .tci-table-bordered th {
-                border: 1px solid var(--color-dark);
-            }
-
-            .tableScroll {
-                .tableAuto {
-                    width: 100%;
-                }
-            }
-        }
-    }
     //檔案數
     .fileBox {
         .illustrate {
